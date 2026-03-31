@@ -1,0 +1,41 @@
+/* iOS 26 Design System Tokens */
+:root {
+  --ios-bg: #000000;
+  --ios-glass: rgba(28, 28, 30, 0.7);
+  --ios-glass-heavy: rgba(18, 18, 18, 0.9);
+  --ios-accent: #7f0df2; /* Updated to Purple for consistency */
+  --ios-accent-gradient: linear-gradient(135deg, #7f0df2, #a855f7);
+  --ios-text: #FFFFFF;
+  --ios-text-secondary: rgba(255, 255, 255, 0.6);
+  --ios-blur: 40px;
+  --ios-radius: 32px;
+  --ios-border: rgba(255, 255, 255, 0.12);
+  --ios-easing: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root[data-theme='light'] {
+  --ios-bg: #ffffff;
+  --ios-glass: rgba(255, 255, 255, 0.85);
+  --ios-glass-heavy: rgba(255, 255, 255, 0.95);
+  --ios-text: #000000;
+  --ios-text-secondary: rgba(0, 0, 0, 0.6);
+  --ios-border: rgba(0, 0, 0, 0.1);
+}
+
+.ios-glass {
+  background: var(--ios-glass);
+  backdrop-filter: blur(var(--ios-blur));
+  -webkit-backdrop-filter: blur(var(--ios-blur));
+  border: 1px solid var(--ios-border);
+}
+
+.ios-card {
+  border-radius: var(--ios-radius);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s var(--ios-easing);
+}
+
+.ios-card:active {
+  transform: scale(0.96);
+}

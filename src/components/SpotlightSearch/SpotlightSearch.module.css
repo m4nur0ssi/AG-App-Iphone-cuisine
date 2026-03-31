@@ -1,0 +1,124 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
+}
+
+.modal {
+    width: 90%;
+    max-width: 600px;
+    background: var(--ios-glass-heavy);
+    border: 1px solid var(--ios-border);
+    border-radius: 28px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    animation: modalIn 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.searchContainer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--ios-border);
+}
+
+.searchIcon {
+    font-size: 1.5rem;
+}
+
+.input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--color-text-primary);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.closeBtn {
+    background: var(--ios-glass);
+    border: 1px solid var(--ios-border);
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--ios-text);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.closeBtn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    transform: translateY(-2px);
+}
+
+.results {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 12px;
+}
+
+.resultItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-smooth);
+}
+
+.resultItem:hover {
+    background: rgba(127, 13, 242, 0.1);
+    transform: translateX(4px);
+}
+
+.thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.resultTitle {
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+.resultMeta {
+    font-size: 0.8rem;
+    color: var(--color-text-tertiary);
+}
+
+.noResult,
+.placeholderText {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--color-text-tertiary);
+    font-style: italic;
+}
