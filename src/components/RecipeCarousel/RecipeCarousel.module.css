@@ -92,6 +92,12 @@
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
+:root[data-theme='light'] .titlePillWrapper {
+    background: rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
 :root[data-theme='light'] .viewAll {
     background: rgba(0, 0, 0, 0.05);
     border-color: rgba(0, 0, 0, 0.1);

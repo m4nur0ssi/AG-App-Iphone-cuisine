@@ -8,6 +8,7 @@
     -webkit-backdrop-filter: none;
 }
 
+
 .recipeContainer {
     display: flex;
     flex-direction: column;
@@ -18,8 +19,9 @@
     will-change: transform, opacity; /* Force GPU acceleration */
 }
 
-.isGrid .recipeContainer {
+.recipeContainer.isGrid {
     max-width: none;
+    width: 100%;
 }
 
 .titlePill {
@@ -47,11 +49,13 @@
     border-radius: 18px;
 }
 
+
 [data-theme='light'] .titlePill {
-    background: rgba(0, 0, 0, 0.03) !important;
-    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    background: rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 [data-theme='light'] .titlePill .titleText {

@@ -1,9 +1,11 @@
 .gridContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes par défaut sur mobile as requested */
-    gap: 16px;
-    padding: 10px 16px 120px 16px; /* Padding bas pour la BottomNav */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns strictly for mobile */
+    gap: 12px;
+    padding: 10px 12px 120px 12px;
     width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal truncation/scrolling */
 }
 
 @media (min-width: 768px) {
