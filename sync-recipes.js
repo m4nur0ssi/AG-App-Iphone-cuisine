@@ -397,11 +397,12 @@ async function syncRecipes() {
                 }
 
                 // Passer TOUTES les images par le proxy Vercel pour éviter le Mixed Content
-                // On ajoute un cache-buster basé sur la date de modification du post
-                // Ainsi, quand une photo est changée dans WordPress, l'URL change et le cache est invalidé
+                // On ajoute un cache-buster basé sur la date de modification du post + timestamp de synchro globale
+                // Ainsi, à chaque déploiement/synchro, on force le rafraîchissement des images (Netlify Edge Cache)
                 const postModified = new Date(post.modified || post.date).getTime();
+                const globalSyncTime = Date.now();
                 if (featuredImage && featuredImage.startsWith('http://')) {
-                    featuredImage = `/api/image-proxy?url=${encodeURIComponent(featuredImage)}&v=${postModified}`;
+                    featuredImage = `/api/image-proxy?url=${encodeURIComponent(featuredImage)}&v=${postModified}-${globalSyncTime}`;
                 }
 
 
