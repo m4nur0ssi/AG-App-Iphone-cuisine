@@ -1,0 +1,15 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes par défaut sur mobile as requested */
+    gap: 16px;
+    padding: 10px 16px 120px 16px; /* Padding bas pour la BottomNav */
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .gridContainer {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 30px;
+        padding: 40px;
+    }
+}

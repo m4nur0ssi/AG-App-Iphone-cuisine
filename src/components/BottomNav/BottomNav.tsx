@@ -14,7 +14,7 @@ const RecipeSheet = dynamic(() => import('@/components/RecipeSheet/RecipeSheet')
 
 // Icons 
 const StorefrontIcon = () => (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
         <polyline points="9 22 9 12 15 12 15 22" />
     </svg>
@@ -35,16 +35,16 @@ const SearchIcon = () => (
 
 const BasketIcon = () => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="m3.5 13 1.5 7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2l1.5-7" />
-        <path d="M19 13H5" />
-        <path d="m8 13 3-5 3 5" />
+        <path d="M3 11h18" />
+        <path d="m4.5 11 1.6 7.4a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6l1.6-7.4" />
+        <path d="m9 11 1-5c.2-.6.8-1 1.4-1h1.2c.6 0 1.2.4 1.4 1l1 5" />
     </svg>
 );
 
 export default function BottomNav() {
     const pathname = usePathname();
     const router = useRouter();
-    const [stats, setStats] = useState({ shopping: 0 });
+    const [stats, setStats] = useState({ shopping: 0, favorites: 0 });
     const [mounted, setMounted] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
@@ -55,7 +55,7 @@ export default function BottomNav() {
     const dockRef = useRef<HTMLDivElement>(null);
 
     const navItems = [
-        { id: 'favoris', label: 'Favoris', Icon: HeartIcon, path: '/favorites' },
+        { id: 'favoris', label: 'Favoris', Icon: HeartIcon, path: '/favorites', badge: stats.favorites },
         { id: 'panier', label: 'Liste', Icon: BasketIcon, path: '/shopping-list', badge: stats.shopping },
         { id: 'decouvrir', label: 'Accueil', Icon: StorefrontIcon, path: '/' },
         { id: 'mode', label: 'Mode', isComponent: true, component: <ThemeToggle /> },
@@ -86,13 +86,23 @@ export default function BottomNav() {
         window.addEventListener('recipeViewed', updateLastViewed);
         
         const updateStats = () => {
+            // Shopping list
             const shopData = JSON.parse(localStorage.getItem('magic-shopping-list') || '{}');
             const totalItems = Object.values(shopData).reduce((acc: number, val: any) => acc + (val.ingredients?.length || 0), 0);
-            setStats({ shopping: totalItems as number });
+            
+            // Favorites
+            const favoriteData = JSON.parse(localStorage.getItem('favorites') || '[]');
+            const totalFavorites = favoriteData.length;
+
+            setStats({ 
+                shopping: totalItems as number,
+                favorites: totalFavorites as number
+            });
         };
         updateStats();
         window.addEventListener('storage', updateStats);
         window.addEventListener('shoppingListUpdated', updateStats);
+        window.addEventListener('magic-favorite-change', updateStats);
         
         // Match active index on load
         const idx = navItems.findIndex(item => 
@@ -105,6 +115,7 @@ export default function BottomNav() {
             window.removeEventListener('recipeViewed', updateLastViewed);
             window.removeEventListener('storage', updateStats);
             window.removeEventListener('shoppingListUpdated', updateStats);
+            window.removeEventListener('magic-favorite-change', updateStats);
         };
     }, [pathname]);
 

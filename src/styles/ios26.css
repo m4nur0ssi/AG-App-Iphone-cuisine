@@ -15,11 +15,12 @@
 
 :root[data-theme='light'] {
   --ios-bg: #ffffff;
-  --ios-glass: rgba(255, 255, 255, 0.85);
-  --ios-glass-heavy: rgba(255, 255, 255, 0.95);
+  --ios-glass: rgba(255, 255, 255, 0); 
+  --ios-glass-heavy: rgba(255, 255, 255, 1);
   --ios-text: #000000;
   --ios-text-secondary: rgba(0, 0, 0, 0.6);
-  --ios-border: rgba(0, 0, 0, 0.1);
+  --ios-border: rgba(0, 0, 0, 0.05);
+  --ios-blur: 0px;
 }
 
 .ios-glass {

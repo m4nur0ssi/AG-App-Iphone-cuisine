@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import Header from '../components/Header/Header';
 import RecipeCarousel from '../components/RecipeCarousel/RecipeCarousel';
+import RecipeGrid from '../components/RecipeGrid/RecipeGrid';
 import dynamic from 'next/dynamic';
 const MagicFilterBar = dynamic(() => import('../components/MagicFilterBar/MagicFilterBar'), { ssr: false });
 import { mockRecipes } from '../data/mockData';
@@ -119,11 +120,9 @@ export default function Home() {
                         transition={{ duration: 0.4 }}
                     >
                         {activeTags.length > 0 && (
-                            <div className={styles.resultsWrapper}>
-                                <RecipeCarousel 
+                            <div className={styles.resultsWrapper} style={{ width: '100%' }}>
+                                <RecipeGrid 
                                     recipes={filteredRecipes} 
-                                    title="" 
-                                    size="small"
                                 />
                             </div>
                         )}

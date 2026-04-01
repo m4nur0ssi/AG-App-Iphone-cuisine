@@ -10,6 +10,7 @@ interface FilterItem {
     name: string;
     icon: string | React.ReactNode;
     tag?: string;
+    color?: string;
 }
 
 const AFRICA_SILHOUETTE = (
@@ -29,35 +30,35 @@ interface MagicFilterBarProps {
 }
 
 const categories: FilterItem[] = [
-    { id: 'aperitifs', name: 'Apéritifs', icon: '🍹' },
-    { id: 'entrees', name: 'Entrées', icon: '🥗' },
-    { id: 'plats', name: 'Plats', icon: '🍲' },
-    { id: 'vegetarien', name: 'Végé', icon: '🥬' },
-    { id: 'desserts', name: 'Desserts', icon: '🍰' },
-    { id: 'patisserie', name: 'Pâtisserie', icon: '🥐' },
-    { id: 'restaurant', name: 'Restaurant', icon: '🍽️' },
+    { id: 'aperitifs', name: 'Apéritifs', icon: '', color: '#FF7E5F' },
+    { id: 'entrees', name: 'Entrées', icon: '', color: '#76B852' },
+    { id: 'plats', name: 'Plats', icon: '', color: '#8E2DE2' },
+    { id: 'vegetarien', name: 'Végé', icon: '', color: '#00C853' },
+    { id: 'desserts', name: 'Desserts', icon: '', color: '#F80759' },
+    { id: 'patisserie', name: 'Pâtisserie', icon: '', color: '#FFB347' },
+    { id: 'restaurant', name: 'Restaurant', icon: '', color: '#4facfe' },
 ];
 
 const countries: FilterItem[] = [
-    { id: 'france', name: 'France', icon: '🇫🇷', tag: 'France' },
-    { id: 'italie', name: 'Italie', icon: '🇮🇹', tag: 'Italie' },
-    { id: 'espagne', name: 'Espagne', icon: '🇪🇸', tag: 'Espagne' },
-    { id: 'grece', name: 'Grèce', icon: '🇬🇷', tag: 'Grece' },
-    { id: 'liban', name: 'Liban', icon: '🇱🇧', tag: 'Liban' },
-    { id: 'usa', name: 'USA', icon: '🇺🇸', tag: 'USA' },
-    { id: 'mexique', name: 'Mexique', icon: '🇲🇽', tag: 'Mexique' },
-    { id: 'orient', name: 'Orient', icon: '🕌', tag: 'Orient' },
-    { id: 'asie', name: 'Asie', icon: '🥢', tag: 'Asie' },
-    { id: 'afrique', name: 'Afrique', icon: AFRICA_SILHOUETTE, tag: 'Afrique' },
+    { id: 'france', name: 'France', icon: '🇫🇷', tag: 'France', color: '#0055A4' },
+    { id: 'italie', name: 'Italie', icon: '🇮🇹', tag: 'Italie', color: '#008C45' },
+    { id: 'espagne', name: 'Espagne', icon: '🇪🇸', tag: 'Espagne', color: '#F1BF00' },
+    { id: 'grece', name: 'Grèce', icon: '🇬🇷', tag: 'Grece', color: '#0D5EAF' },
+    { id: 'liban', name: 'Liban', icon: '🇱🇧', tag: 'Liban', color: '#EE161F' },
+    { id: 'usa', name: 'USA', icon: '🇺🇸', tag: 'USA', color: '#B22234' },
+    { id: 'mexique', name: 'Mexique', icon: '🇲🇽', tag: 'Mexique', color: '#006847' },
+    { id: 'orient', name: 'Orient', icon: '🕌', tag: 'Orient', color: '#8B4513' },
+    { id: 'asie', name: 'Asie', icon: '🥢', tag: 'Asie', color: '#E41E26' },
+    { id: 'afrique', name: 'Afrique', icon: AFRICA_SILHOUETTE, tag: 'Afrique', color: '#FFD700' },
 ];
 
 const trends: FilterItem[] = [
-    { id: 'healthy', name: 'Healthy', icon: '🥗', tag: 'Healthy' },
-    { id: 'astuces', name: 'Astuces', icon: '💡', tag: 'Astuces' },
-    { id: 'airfryer', name: 'Airfryer', icon: '💨', tag: 'Airfryer' },
-    { id: 'barbecue', name: 'Barbecue', icon: '🍖', tag: 'Barbecue' },
-    { id: 'pas-cher', name: 'Pas Cher', icon: '🪙', tag: 'Pas cher' },
-    { id: 'express', name: 'Express', icon: '⚡', tag: 'Express' },
+    { id: 'healthy', name: 'Healthy', icon: '', tag: 'Healthy', color: '#A8E063' },
+    { id: 'astuces', name: 'Astuces', icon: '', tag: 'Astuces', color: '#FFD700' },
+    { id: 'airfryer', name: 'Airfryer', icon: '', tag: 'Airfryer', color: '#43C6AC' },
+    { id: 'barbecue', name: 'Barbecue', icon: '', tag: 'Barbecue', color: '#FF416C' },
+    { id: 'pas-cher', name: 'Pas Cher', icon: '', tag: 'Pas cher', color: '#0BA360' },
+    { id: 'express', name: 'Express', icon: '', tag: 'Express', color: '#FDFC47' },
 ];
 
 export default function MagicFilterBar({ 
@@ -137,14 +138,35 @@ export default function MagicFilterBar({
                                         const itemTag = item.tag || item.id;
                                         const isSelected = activeTags.includes(itemTag);
                                         return (
-                                            <button
+                                            <motion.button
                                                 key={item.id}
                                                 className={`${styles.subItem} ${isSelected ? styles.selected : ''}`}
-                                                onClick={() => onSelect(itemTag)}
+                                                onClick={() => {
+                                                    onSelect(itemTag);
+                                                    if (typeof navigator !== 'undefined' && navigator.vibrate) {
+                                                        navigator.vibrate(isSelected ? [10] : [15, 30, 15]);
+                                                    }
+                                                }}
+                                                whileHover={{ scale: 1.02 }}
+                                                whileTap={{ scale: 0.95 }}
+                                                style={{ 
+                                                    '--active-color': item.color || '#ff3b30'
+                                                } as any}
                                             >
+                                                {isSelected && (
+                                                    <motion.div 
+                                                        layoutId="aura-glow"
+                                                        className={styles.auraGlow}
+                                                        initial={{ opacity: 0 }}
+                                                        animate={{ opacity: 1 }}
+                                                        exit={{ opacity: 0 }}
+                                                        transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                                                        style={{ background: `radial-gradient(circle, ${item.color || '#ff3b30'} 0%, transparent 70%)` }}
+                                                    />
+                                                )}
                                                 <span className={styles.itemIcon}>{item.icon}</span>
                                                 <span className={styles.itemName}>{item.name}</span>
-                                            </button>
+                                            </motion.button>
                                         );
                                     })}
                                 </div>

@@ -7,7 +7,7 @@ import Header from '@/components/Header/Header';
 import MagicFilterBar from '@/components/MagicFilterBar/MagicFilterBar';
 import FavoriteButton from '@/components/FavoriteButton/FavoriteButton';
 import ShareButton from '@/components/ShareButton/ShareButton';
-import VoteButton from '@/components/VoteButton/VoteButton';
+import VoteButton from '@/components/VoteButton/VoteButtonSheet';
 import VideoSection from '@/components/VideoSection/VideoSection';
 import { Recipe } from '@/types';
 import { scaleQuantity } from '@/lib/utils';
@@ -72,9 +72,9 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
     }, [recipe.category]);
 
     // Persistence
-    const [checkedSteps, setCheckedSteps] = useLocalStorage<boolean[]>(`recipe-steps-${recipe.id}`, new Array(recipe.steps.length).fill(false));
+    const [checkedSteps, setCheckedSteps] = useLocalStorage<boolean[]>(`recipe-steps-${recipe.id}`, new Array(recipe?.steps?.length || 0).fill(false));
     // Par défaut, rien n'est coché pour la liste de courses (Selection unique demandée par le client)
-    const [checkedIngredients, setCheckedIngredients] = useLocalStorage<boolean[]>(`recipe-ing-v2-${recipe.id}`, new Array(recipe.ingredients.length).fill(false));
+    const [checkedIngredients, setCheckedIngredients] = useLocalStorage<boolean[]>(`recipe-ing-v2-${recipe.id}`, new Array(recipe?.ingredients?.length || 0).fill(false));
 
     // Logic d'auto-reset après 5h d'absence (Mémoire Courte Design 2026)
     useEffect(() => {
@@ -87,8 +87,8 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
                 const timeSinceExit = Date.now() - parseInt(lastExit);
                 if (timeSinceExit > RESET_DELAY) {
                     // On force le reset des données
-                    setCheckedSteps(new Array(recipe.steps.length).fill(false));
-                    setCheckedIngredients(new Array(recipe.ingredients.length).fill(false));
+                    setCheckedSteps(new Array(recipe?.steps?.length || 0).fill(false));
+                    setCheckedIngredients(new Array(recipe?.ingredients?.length || 0).fill(false));
                 }
             }
 
@@ -558,27 +558,41 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                     >
-                        <motion.div 
-                            className={styles.categoryTag} 
-                            style={{ 
-                                background: theme.bg, 
-                                color: theme.accent,
-                                '--country-color': countryColor 
-                            } as React.CSSProperties}
-                            whileHover={{ scale: 1.05, background: countryColor, color: '#fff' }}
-                            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-                        >
-                            <span>
-                                {(() => {
-                                    const tags = recipe.tags?.map(t => t.toLowerCase()) || [];
-                                    if (recipe.category === 'vegetarien' || tags.some(t => t.includes('végé') || t.includes('vege') || t.includes('vegetarien'))) {
-                                        return 'VÉGÉTARIEN';
-                                    }
-                                    return recipe.category === 'aperitifs' ? 'APÉRITIFS' : recipe.category.toUpperCase();
-                                })()}
-                            </span>
-                            {flag && <span className={styles.categoryFlag}>{flag}</span>}
-                        </motion.div>
+                        {/* Barre d'action Catégorie Apple Style */}
+                        <div className={styles.categoryCommandCenter}>
+                            <FavoriteButton
+                                recipeId={recipe.id}
+                                initialFavorite={recipe.isFavorite}
+                                imageUrl={recipe.image}
+                                className={styles['favorite-btn-action']}
+                            />
+
+                            <motion.div 
+                                className={styles.categoryTag} 
+                                style={{ 
+                                    background: theme.bg, 
+                                    color: theme.accent,
+                                    '--country-color': countryColor 
+                                } as React.CSSProperties}
+                            >
+                                <span>
+                                    {(() => {
+                                        const tags = recipe.tags?.map(t => t.toLowerCase()) || [];
+                                        if (recipe.category === 'vegetarien' || tags.some(t => t.includes('végé') || t.includes('vege') || t.includes('vegetarien'))) {
+                                            return 'VÉGÉTARIEN';
+                                        }
+                                        return recipe.category === 'aperitifs' ? 'APÉRITIFS' : recipe.category.toUpperCase();
+                                    })()}
+                                </span>
+                                {flag && <span className={styles.categoryFlag}>{flag}</span>}
+                            </motion.div>
+
+                            <ShareButton 
+                                url={`${typeof window !== 'undefined' ? window.location.origin : ''}/recipe/${recipe.id}`} 
+                                title={recipe.title} 
+                                className={styles['share-btn-action']}
+                            />
+                        </div>
 
                         <div className={styles.heroMainContent}>
                             <h1 className={styles.heroTitleElegant}>
@@ -617,20 +631,9 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
                         )}
                     </motion.div>
 
-                    {/* Colonne DROITE : Photo */}
+                    {/* Colonne DROITE : Photo avec Actions interactives */}
                     <div className={styles.heroImageColumn}>
-                        <div className={styles.actions}>
-                            <VoteButton 
-                                recipeId={recipe.id}
-                                initialVotes={recipe.votes || 0}
-                            />
-                            <ShareButton />
-                            <FavoriteButton
-                                recipeId={recipe.id}
-                                initialFavorite={recipe.isFavorite}
-                                imageUrl={recipe.image}
-                            />
-                        </div>
+                        {/* 1. Carte Image avec bouton Flamme superposé */}
                         <div className={styles.imageCardContainer}>
                             {recipe.image ? (
                                 <Image
@@ -650,6 +653,23 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
                                 </div>
                             )}
                             <div className={styles.imageGlassOverlay} />
+                            
+                            {/* Superposition du bouton flamme (Vote) en haut à droite */}
+                            <div className={styles.flameOverlay}>
+                                <VoteButton 
+                                    recipeId={recipe.id}
+                                    initialVotes={recipe.votes || 0}
+                                />
+                            </div>
+                        </div>
+
+                        {/* 2. Hashtags centrés sous la photo */}
+                        <div className={styles.detailsHashtags}>
+                            {recipe.tags?.filter(t => !countryFlags[t.toLowerCase()]).slice(0, 3).map(tag => (
+                                <span key={tag} className={styles.detailTag}>
+                                    #{tag.toUpperCase()}
+                                </span>
+                            ))}
                         </div>
                     </div>
                 </div>

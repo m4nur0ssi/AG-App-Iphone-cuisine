@@ -31,80 +31,34 @@
     }
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 340px auto 30px; /* PC Clearance increased */
-    padding: 16px 24px;
-    border-radius: 20px;
+.main {
+    padding-top: 100px; /* Espace pour le header sticky */
     max-width: 1200px;
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-    .header {
-        margin-top: 250px !important; /* Mobile Clearance increased from 150px */
-    }
-}
-
-.title {
-    font-size: clamp(1.4rem, 4vw, 2.2rem);
-    font-weight: 900;
-    letter-spacing: -1.5px;
-    line-height: 1.1;
-    margin: 0;
-    background: linear-gradient(90deg, #5856D6, #007AFF, #5AC8FA, #4CD964);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: rainbowShine 6s linear infinite;
+.categoryInfo {
+    padding: 20px 16px 10px;
+    text-align: center;
 }
 
 .count {
-    color: var(--color-text-tertiary);
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px 40px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 32px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .empty {
     text-align: center;
-    padding: 80px 20px;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-@keyframes rainbowShine {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 200% 50%; }
+    padding: 100px 20px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1.1rem;
 }
 
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        gap: 12px;
-        text-align: center;
-        margin: 20px 15px;
-        padding: 20px;
-    }
-    
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
+    .main {
+        padding-top: 80px;
     }
 }

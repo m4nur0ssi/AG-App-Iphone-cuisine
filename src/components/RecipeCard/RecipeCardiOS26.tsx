@@ -16,6 +16,7 @@ interface RecipeCardiOS26Props {
     recipe: Recipe;
     onPlayToggle?: (playing: boolean) => void;
     size?: 'large' | 'small';
+    isGrid?: boolean;
     isFavoritesPage?: boolean;
     hideTitle?: boolean;
     hideVideo?: boolean;
@@ -29,6 +30,7 @@ export default function RecipeCardiOS26({
     recipe, 
     onPlayToggle, 
     size = 'large',
+    isGrid = false,
     isFavoritesPage = false,
     hideTitle = false,
     hideVideo = false,
@@ -89,7 +91,7 @@ export default function RecipeCardiOS26({
     };
 
     return (
-        <div className={styles.recipeContainer}>
+        <div className={`${styles.recipeContainer} ${isGrid ? styles.isGrid : ''}`}>
             {/* 1. Floating Title Pill ABOVE the card */}
             {!hideTitle && (
                 <motion.div 
@@ -139,46 +141,12 @@ export default function RecipeCardiOS26({
 
                 {/* Overlays */}
                 
-                {/* Top Left: Country Flag Round Button */}
+                {/* Top Center: Country Flag + Name Pill */}
                 {flag && !isIntroMode && (
-                    <div className={styles.topLeftBadge}>
-                        <div className={styles.roundBadge}>
-                            {flag}
-                        </div>
-                    </div>
-                )}
-
-                {/* Top Right: Action Pill (Share, Fav, Vote) */}
-                {!isIntroMode && (
-                    <div 
-                        className={styles.topRightActions}
-                        onClick={(e) => {
-                            e.stopPropagation();
-                        }}
-                    >
-                        <div className={styles.unifiedActionWell}>
-                            <div className={styles.miniAction}>
-                                <ShareButton 
-                                    url={`/recipe/${recipe.id}`} 
-                                    title={recipe.title} 
-                                    className={styles.miniAction}
-                                />
-                            </div>
-                            <div className={styles.miniAction}>
-                                <FavoriteButton 
-                                    recipeId={recipe.id} 
-                                    initialFavorite={recipe.isFavorite} 
-                                    className={styles.miniAction}
-                                />
-                            </div>
-                            {/* Vote Button (Flame) on the right */}
-                            <div className={styles.miniAction}>
-                                <VoteButton 
-                                    recipeId={recipe.id} 
-                                    initialVotes={recipe.votes || 0}
-                                    hideCount
-                                />
-                            </div>
+                    <div className={styles.centerTopBadge}>
+                        <div className={styles.countryPill}>
+                            <span className={styles.flagIcon}>{flag}</span>
+                            <span className={styles.countryName}>{recipeCountryTag?.toUpperCase()}</span>
                         </div>
                     </div>
                 )}

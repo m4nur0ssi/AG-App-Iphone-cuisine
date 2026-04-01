@@ -3,8 +3,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import Header from '@/components/Header/Header';
-import RecipeCard from '@/components/RecipeCard/RecipeCardV2';
-import MagicFilterBar from '@/components/MagicFilterBar/MagicFilterBar';
+import RecipeGrid from '@/components/RecipeGrid/RecipeGrid';
 import styles from './category.module.css';
 
 interface CategoryClientProps {
@@ -14,31 +13,26 @@ interface CategoryClientProps {
     categories: any;
 }
 
-export default function CategoryClient({ id, category, recipes, categories }: CategoryClientProps) {
-    const router = useRouter();
-
+export default function CategoryClient({ id, category, recipes }: CategoryClientProps) {
     return (
         <div className={styles.page}>
             <div className={styles.stickyHeaderMenu}>
-                <Header showBack={true} />
+                <Header 
+                    title={category.name.toUpperCase()} 
+                    showBack={true} 
+                />
             </div>
 
-            <div className={styles.header}>
-                <h1 className={styles.title}>
-                    Recettes : {category.name}
-                </h1>
-                <span className={styles.count}>{recipes.length} recette{recipes.length > 1 ? 's' : ''}</span>
-            </div>
             <main className={styles.main}>
-                <div className={styles.grid}>
-                    {recipes.map((recipe) => (
-                        <RecipeCard key={recipe.id} recipe={recipe} />
-                    ))}
+                <div className={styles.categoryInfo}>
+                    <span className={styles.count}>{recipes.length} RECETTE{recipes.length > 1 ? 'S' : ''} DISPONIBLE{recipes.length > 1 ? 'S' : ''}</span>
                 </div>
+                
+                <RecipeGrid recipes={recipes} />
 
                 {recipes.length === 0 && (
                     <div className={styles.empty}>
-                        <p>Aucune recette trouvée dans cette catégorie.</p>
+                        <p>Aucune recette trouvée dans cette catégorie 🥣</p>
                     </div>
                 )}
             </main>

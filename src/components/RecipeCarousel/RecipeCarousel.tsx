@@ -25,40 +25,35 @@ export default function RecipeCarousel({ recipes, title = "Nouvelles Recettes �
         const clean = cat.replace('✨', '').trim().toLowerCase();
         
         switch (clean) {
-            case 'aperitifs': return 'linear-gradient(90deg, #F59E0B, #EA580C)';
-            case 'entrees': return 'linear-gradient(90deg, #10B981, #059669)';
+            case 'aperitifs': 
+            case 'apéro gourmand': return 'linear-gradient(135deg, #F59E0B, #EA580C)';
+            case 'entrees': 
+            case 'entrées fraîches': return 'linear-gradient(135deg, #10B981, #059669)';
             case 'plats': 
-            case 'plat de chef': return 'linear-gradient(90deg, #3B82F6, #4F46E5)';
+            case 'plats de chef': 
+            case 'plat de chef': return 'linear-gradient(135deg, #3B82F6, #4F46E5)';
             case 'desserts':
-            case 'douceur sucrée': return 'linear-gradient(90deg, #EC4899, #9333EA)';
-            default: return 'linear-gradient(90deg, #10B981, #3B82F6)';
+            case 'douceurs sucrées':
+            case 'douceur sucrée': return 'linear-gradient(135deg, #EC4899, #9333EA)';
+            case 'thématiques du moment': return 'linear-gradient(135deg, #7f0df2, #a855f7)';
+            case 'les nouveautés': return 'linear-gradient(135deg, #10b981, #3b82f6)';
+            default: return 'linear-gradient(135deg, #10B981, #3B82F6)';
         }
     };
 
-    const titleGradient = getCategoryGradient(title);
+    const cardGradient = getCategoryGradient(title);
 
     return (
         <section className={`${styles.section} ${size === 'small' ? styles.compactSection : ''}`}>
-            {title && (
-                <div className={styles.header}>
-                    <div className={styles.titlePillWrapper}>
-                        <h2 
-                            className={styles.sectionTitle}
-                            style={{ 
-                                backgroundImage: titleGradient,
-                                WebkitBackgroundClip: 'text',
-                                backgroundClip: 'text',
-                                WebkitTextFillColor: 'transparent'
-                            }}
-                        >
-                            {title}
-                        </h2>
-                    </div>
-                </div>
-            )}
-            
             <div className={styles.scrollContainer} ref={containerRef}>
                 <div className={styles.track}>
+                    {/* Première carte : Le Titre de la Thématique */}
+                    <CategoryTitleCard 
+                        title={title} 
+                        gradient={cardGradient} 
+                        size={size} 
+                    />
+
                     {limitedRecipes.map((recipe, index) => (
                         <CarouselItem 
                             key={recipe.id} 
@@ -86,6 +81,44 @@ export default function RecipeCarousel({ recipes, title = "Nouvelles Recettes �
     );
 }
 
+function CategoryTitleCard({ title, gradient, size }: { title: string, gradient: string, size: 'large' | 'small' }) {
+    const cleanTitle = title.replace('✨', '').trim();
+    const words = cleanTitle.split(' ');
+
+    const renderArtisticTitle = () => {
+        return words.map((word, i) => {
+            const isConnectionWord = ['du', 'de', 'la', 'le', 'pour', 'les', 'au'].includes(word.toLowerCase());
+            // Logique artistique : alterner ou forcer le script sur les mots de liaison/deuxièmes mots
+            const isScript = isConnectionWord || (words.length > 1 && i === 1);
+            
+            return (
+                <span 
+                    key={i} 
+                    className={isScript ? styles.scriptWord : styles.boldWord}
+                >
+                    {word}{i < words.length - 1 ? ' ' : ''}
+                </span>
+            );
+        });
+    };
+
+    return (
+        <div className={`${styles.itemWrapper} ${size === 'small' ? styles.itemSmall : styles.itemLarge}`}>
+            <div 
+                className={`${styles.titleCard} ${size === 'small' ? styles.titleCardSmall : ''}`}
+                style={{ background: gradient }}
+            >
+                <div className={styles.titleCardContent}>
+                    <h2 className={styles.categoryMainTitle}>
+                        {renderArtisticTitle()}
+                    </h2>
+                    <div className={styles.titleCardGlass} />
+                </div>
+            </div>
+        </div>
+    );
+}
+
 function CarouselItem({ recipe, containerRef, size }: { recipe: Recipe, index: number, containerRef: React.RefObject<HTMLDivElement>, size: 'large' | 'small' }) {
     const itemRef = useRef<HTMLDivElement>(null);
     const { scrollXProgress } = useScroll({ target: itemRef, container: containerRef, offset: ["start end", "end start"] });
@@ -104,38 +137,20 @@ function CarouselItem({ recipe, containerRef, size }: { recipe: Recipe, index: n
 
 function ViewAllItem({ category, containerRef, size }: { category: string, containerRef: React.RefObject<HTMLDivElement>, size: 'large' | 'small' }) {
     const itemRef = useRef<HTMLDivElement>(null);
-    const { scrollXProgress } = useScroll({ target: itemRef, container: containerRef, offset: ["start end", "end start"] });
-    const opacity = 1;
-
-    const getCategoryGradient = (cat: string) => {
-        switch (cat?.toLowerCase()) {
-            case 'aperitifs': return 'linear-gradient(135deg, #F59E0B, #EA580C)';
-            case 'entrees': return 'linear-gradient(135deg, #10B981, #059669)';
-            case 'plats': return 'linear-gradient(135deg, #3B82F6, #4F46E5)';
-            case 'desserts': return 'linear-gradient(135deg, #EC4899, #9333EA)';
-            default: return 'linear-gradient(135deg, #10B981, #3B82F6)';
-        }
-    };
 
     return (
         <motion.div
             ref={itemRef}
             className={`${styles.itemWrapper} ${size === 'small' ? styles.itemSmall : styles.itemLarge}`}
-            style={{ opacity }}
         >
             <Link 
                 href={`/category/${category}`}
                 className={styles.viewAllCard}
-                style={{ background: getCategoryGradient(category) }}
             >
                 <div className={styles.viewAllContent}>
-                    <span className={styles.viewAllIcon}>📁</span>
                     <h3 className={styles.viewAllText}>VOIR TOUT</h3>
-                    <p className={styles.viewAllSub}>{category.toUpperCase()}</p>
+                    <div className={styles.viewAllGlass} />
                 </div>
-                
-                {/* Glass Reflection overlay */}
-                <div className={styles.viewAllGlass} />
             </Link>
         </motion.div>
     );

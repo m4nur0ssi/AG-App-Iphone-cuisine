@@ -623,7 +623,10 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                                 recipeId={recipe.id}
                                 initialVotes={recipe.votes || 0}
                             />
-                            <ShareButton />
+                            <ShareButton 
+                                title={recipe.title}
+                                url={typeof window !== 'undefined' ? window.location.href : ''}
+                            />
                             <FavoriteButton
                                 recipeId={recipe.id}
                                 initialFavorite={recipe.isFavorite}

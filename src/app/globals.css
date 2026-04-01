@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-/* SPLASH SCREEN FIX : Désactivé pour stabiliser l'affichage iOS 26 */
+/* SPLASH SCREEN FIX : Hiding content while the splash screen is active */
 .main-content-wrapper {
     transition: opacity 0.5s ease-in-out;
-    opacity: 1 !important;
-    visibility: visible !important;
-    animation: force-reveal 0.5s calc(var(--splash-timeout, 4s) + 1s) forwards;
+    opacity: 1;
+    visibility: visible;
 }
 
-@keyframes force-reveal {
-    from { opacity: 0; visibility: hidden; }
-    to { opacity: 1; visibility: visible; }
+html.is-splashing .main-content-wrapper {
+    opacity: 0 !important;
+    visibility: hidden !important;
 }
 
 :root {
@@ -65,7 +64,7 @@
 :root[data-theme='light'] {
   --color-bg-primary: #ffffff;
   --color-bg-secondary: #ffffff;
-  --color-bg-tertiary: #f2f2f7;
+  --color-bg-tertiary: #ffffff;
 
   --color-text-primary: #000000;
   --color-text-secondary: rgba(0, 0, 0, 0.7);
@@ -75,7 +74,7 @@
   --glass-bg-dark: rgba(255, 255, 255, 0.98);
   --glass-border: rgba(0, 0, 0, 0.1);
 
-  --liquid-bg: rgba(0, 0, 0, 0.04);
+  --liquid-bg: transparent;
   --liquid-border: rgba(0, 0, 0, 0.1);
   --liquid-highlight: rgba(0, 0, 0, 0.05);
   --liquid-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
@@ -150,10 +149,10 @@
 }
 
 .well-container {
-  background: rgba(40, 40, 40, 0.4);
+  background: var(--apple-glass);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--apple-border);
   border-radius: 28px;
   padding: 16px;
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 interface FavoriteButtonProps {
     recipeId: string;
@@ -43,20 +44,34 @@ export default function FavoriteButton({ recipeId, initialFavorite = false, imag
             fetch(imageUrl, { mode: 'no-cors' }).catch(() => { });
         }
 
+        // Vibrate for feedback
+        if (typeof navigator !== 'undefined' && navigator.vibrate) {
+            navigator.vibrate(newState ? [15, 30, 15] : [10]);
+        }
+
+        // Emit events for global updates
         window.dispatchEvent(new Event('storage'));
         window.dispatchEvent(new Event('magic-favorite-change'));
     };
 
     return (
-        <div
-            className={className || ''}
+        <motion.div
+            className={`${className || ''} ${isFavorite ? 'active-favorite' : ''}`}
             onClick={toggleFavorite}
+            whileTap={{ scale: 0.8 }}
+            whileHover={{ scale: 1.1 }}
             role="button"
             tabIndex={0}
             aria-label={isFavorite ? 'Retirer des favoris' : 'Ajouter aux favoris'}
-            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
+            style={{ 
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center', 
+                cursor: 'pointer',
+                transition: 'all 0.3s ease'
+            }}
         >
             <HeartIcon filled={isFavorite} />
-        </div>
+        </motion.div>
     );
 }
