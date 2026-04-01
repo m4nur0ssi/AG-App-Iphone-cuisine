@@ -55,9 +55,8 @@ export async function GET(request: NextRequest) {
         return new NextResponse(buffer, {
             headers: {
                 'Content-Type': contentType,
-                // Cache réduit : 1h navigateur, 2h CDN Vercel avec revalidation
-                // Pour forcer un refresh immédiat, ajouter ?v=timestamp à l'URL
-                'Cache-Control': 'public, max-age=3600, s-maxage=7200, stale-while-revalidate=3600',
+                // Désactivation du cache CDN pour éviter l'empoisonnement persistant sur Netlify
+                'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
                 'Access-Control-Allow-Origin': '*',
             },
         });
