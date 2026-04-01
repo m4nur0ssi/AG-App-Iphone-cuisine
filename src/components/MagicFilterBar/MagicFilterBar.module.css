@@ -43,6 +43,14 @@
     color: #000000;
 }
 
+:root[data-theme='light'] .dockItem {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+:root[data-theme='light'] .dockItem.active {
+    color: #000000;
+}
+
 .activeIndicator {
     position: absolute;
     inset: 0;
@@ -50,6 +58,17 @@
     border-radius: 19px;
     z-index: -1;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+:root[data-theme='light'] .activeIndicator {
+    background: rgba(0, 0, 0, 0.05); /* Soft grey indicator for light mode */
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+:root[data-theme='light'] .wellDock {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.08);
 }
 
 .unfoldedWrapper {

@@ -49,11 +49,11 @@ export default function RecipeCardiOS26({
 
     const getCategoryGradient = (category: string) => {
         switch (category?.toLowerCase()) {
-            case 'aperitifs': return 'linear-gradient(90deg, #F59E0B, #EA580C)';
-            case 'entrees': return 'linear-gradient(90deg, #10B981, #059669)';
-            case 'plats': return 'linear-gradient(90deg, #3B82F6, #4F46E5)';
-            case 'desserts': return 'linear-gradient(90deg, #EC4899, #9333EA)';
-            default: return 'linear-gradient(90deg, #10B981, #3B82F6)';
+            case 'aperitifs': return 'linear-gradient(90deg, #F59E0B, #FBBF24)'; /* Gold to bright amber */
+            case 'entrees': return 'linear-gradient(90deg, #10B981, #34D399)'; /* Emerald to mint */
+            case 'plats': return 'linear-gradient(90deg, #3B82F6, #60A5FA)'; /* Azure to sky blue */
+            case 'desserts': return 'linear-gradient(90deg, #EC4899, #F472B6)'; /* Pink to soft pink */
+            default: return 'linear-gradient(90deg, #10B981, #60A5FA)';
         }
     };
     const titleGradient = getCategoryGradient(recipe.category);

@@ -47,28 +47,27 @@
     border-radius: 18px;
 }
 
-.isGrid .titlePill .titleText {
-    font-size: 0.7rem; /* Plus petit pour tout faire rentrer */
-    letter-spacing: 0.2px;
+[data-theme='light'] .titlePill {
+    background: rgba(0, 0, 0, 0.03) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+[data-theme='light'] .titlePill .titleText {
+    color: #111827 !important; /* Rich black for readability */
+    background: none !important;
+    -webkit-text-fill-color: #111827 !important;
 }
 
 .titlePill .titleText {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.1rem; /* Tiny bit smaller to fit better */
-    font-weight: 900; /* Extra bold for impact */
+    font-size: 1.15rem;
+    font-weight: 950;
     margin: 0;
     white-space: nowrap;
     text-transform: capitalize;
-}
-
-[data-theme='light'] .titlePill {
-    background: transparent;
-    border-color: transparent;
-}
-
-[data-theme='light'] .titlePill .titleText {
-    color: inherit;
-    /* Allow the inline gradient from the component to work */
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
 }
 
 .card {
