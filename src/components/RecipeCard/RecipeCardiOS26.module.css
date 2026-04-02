@@ -27,26 +27,28 @@
 .titlePill {
     width: 100%;
     max-width: 240px;
-    height: 48px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 16px;
-    background: transparent;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    border: none;
-    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.05); /* Look bouton */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 22px; /* Arrondi parfait */
     z-index: 50;
     cursor: pointer;
     transition: all 0.4s var(--ios-easing);
-    overflow: hidden; /* Important pour les titres longs */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .isGrid .titlePill {
     height: 36px; /* Plus compact */
     padding: 0 10px;
     border-radius: 18px;
+    max-width: none;
 }
 
 

@@ -50,6 +50,7 @@ export default function HeroCarousel({ recipes }: HeroCarouselProps) {
                                 src={recipes[currentIndex].image || "/placeholder-recipe.jpg"}
                                 alt={recipes[currentIndex].title}
                                 fill
+                                priority={true}
                                 className={styles.slideImage}
                                 style={{ objectFit: 'cover' }}
                             />

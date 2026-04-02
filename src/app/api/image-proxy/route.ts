@@ -55,8 +55,8 @@ export async function GET(request: NextRequest) {
         return new NextResponse(buffer, {
             headers: {
                 'Content-Type': contentType,
-                // Désactivation du cache CDN pour éviter l'empoisonnement persistant sur Netlify
-                'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+                // Activation du cache pour améliorer les performances sur mobile
+                'Cache-Control': 'public, max-age=31536000, immutable',
                 'Access-Control-Allow-Origin': '*',
             },
         });

@@ -142,7 +142,7 @@ export default function RecipeCardiOS26({
                 {/* Overlays */}
                 
                 {/* Top Center: Country Flag + Name Pill */}
-                {flag && !isIntroMode && (
+                {flag && !isIntroMode && size === 'large' && !isGrid && (
                     <div className={styles.centerTopBadge}>
                         <div className={styles.countryPill}>
                             <span className={styles.flagIcon}>{flag}</span>
