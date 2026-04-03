@@ -1,12 +1,264 @@
 import { Recipe } from '../types';
-    
+
 /**
  * Recettes synchronisées depuis WordPress
- * Dernière mise à jour: 01/04/2026 21:19:30
- * Total: 172 recettes
+ * Dernière mise à jour: 03/04/2026 12:28:00
+ * Total: 175 recettes
  */
-export const exportSyncId = "1775071170575";
+export const exportSyncId = "1775209792847";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "4797",
+        "title": "Croquetas de Jambon (version budget)",
+        "description": "Découvrez une recette de croquetas de jambon dorées, croustillantes et délicieuses, une version budget du classique espagnol, parfaites pour l&rsquo;apéritif ou comme tapas.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1775209010867.jpg&v=1775209015000",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7287279168671223072\" data-video-id=\"7287279168671223072\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7287279168671223072\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             150g de pancetta coupée en dés"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             2 cuillères à soupe de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 grande échalote, finement hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             100g de jambon Serrano, finement haché"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             4 cuillères à soupe de farine tout usage"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Environ 600ml de lait demi-écrémé ou entier"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100g de Manchego râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Une petite pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Une grande pincée de granulés d&rsquo;ail, de muscade et de poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🍗\n             1/2 cube de bouillon de poulet de bonne qualité"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             1 grand œuf battu avec un filet de lait (pour la panure)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Environ 100g de farine tout usage (pour la panure)"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             Environ 75g de chapelure (pour la panure)"
+            }
+        ],
+        "steps": [
+            "Ajouter la pancetta dans une poêle froide et monter le feu à vif.",
+            "Une fois la pancetta presque croustillante, baisser le feu à moyen et ajouter le beurre, l&rsquo;échalote et le jambon Serrano.",
+            "Cuire jusqu&rsquo;à ce que l&rsquo;échalote soit ramollie et la viande croustillante.",
+            "Incorporer la farine et remuer jusqu&rsquo;à ce qu&rsquo;elle soit bien mélangée, cuire quelques minutes jusqu&rsquo;à ce qu&rsquo;elle dégage une odeur de noisette et parfumée.",
+            "Verser le lait en remuant continuellement.",
+            "Une fois incorporé et épaissi, mélanger les assaisonnements et le fromage.",
+            "Une fois le fromage fondu, verser le mélange dans un plat/plateau froid.",
+            "Une fois refroidi à température ambiante, placer au réfrigérateur pendant au moins 4 heures ou toute une nuit, ou alternativement au congélateur pendant environ 1 à 2 heures.",
+            "Une fois refroidi, retirer du réfrigérateur/congélateur et rouler des cuillères à soupe bombées en la forme désirée (l&rsquo;auteur recommande de le faire après avoir légèrement enrobé la croqueta de farine pour moins de désordre).",
+            "Enrober de farine, puis du mélange d&rsquo;œuf et enfin de chapelure.",
+            "Faire frire dans de l&rsquo;huile chaude pendant environ 2-3 minutes jusqu&rsquo;à ce qu&rsquo;elles soient dorées et bien chaudes à l&rsquo;intérieur.",
+            "Déguster avec un verre de sangria glacée ou une bière espagnole."
+        ],
+        "tags": [
+            "Espagne",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "4794",
+        "title": "Légumes rôtis à l&rsquo;italienne et ricotta",
+        "description": "Une recette simple et rapide de légumes rôtis (pommes de terre, tomates cerises, pois chiches) assaisonnés aux herbes, miel et vinaigre balsamique, servis sur un lit de ricotta crémeuse et parsemés de parmesan et d&rsquo;herbes fraîches. Idéal pou...",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7489093004754423062\" data-video-id=\"7489093004754423062\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7489093004754423062\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             450g de pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             300g de tomates cerises"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             180g de pois chiche"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 cas de thym"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 cas de persillade"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 cac d’ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             4 cas d’huile d’olive"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cas de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             2 cas de vinaigre balsamique"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 ricotta (250g)"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Herbes fraîches (basilic…)"
+            }
+        ],
+        "steps": [
+            "Mélanger dans un plat des petites pommes de terre coupées en 2 (ou des grosses en petits morceaux) avec les tomates cerises et les pois chiches.",
+            "Ajouter la persillade, le thym, l’ail, le miel, l’huile d’olive et le vinaigre balsamique. Bien mélanger.",
+            "Faire cuire les légumes au four pendant 30-35 minutes à 200 degrés, en mélangeant à mi-cuisson.",
+            "Étaler une bonne couche de ricotta au fond de l’assiette (vous pouvez aussi utiliser de la burrata ou de la mozzarella).",
+            "Disposer les légumes bien rôtis sur la ricotta.",
+            "Parsemer de parmesan râpé et d&rsquo;herbes fraîches (comme du basilic)."
+        ],
+        "tags": [
+            "Healthy",
+            "Italie",
+            "rapide",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "4761",
+        "title": "Casatiello napoletano",
+        "description": "Le Casatiello napoletano est un pain salé traditionnel de Naples, généralement préparé pour Pâques. Il est richement garni de fromages, de charcuteries comme le saucisson sec et les lardons, et décoré d&rsquo;œufs entiers sur le dessus avant d&rsq...",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Fcasatiello-calendario-2024.jpeg&v=1775123707000",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7494675433317960962\" data-video-id=\"7494675433317960962\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7494675433317960962\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n 600 g de farine 00"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n 350 g d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 20 g de levure de boulanger"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 10 g de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Poivre au goût (pour la pâte)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 200 g de saucisson sec"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n 100 g de lardons nature"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 200 g d&rsquo;Emmental"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 250 g de scamorza (ou fromage doux)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 80 g de Parmigiano"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Poivre au goût (pour la garniture)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 80-100 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 4 œufs (pour la décoration)"
+            }
+        ],
+        "steps": [
+            "1. Préparation de la pâte: Dans un bol, versez la farine, l&rsquo;eau et la levure de boulanger. Mélangez avec une spatule en bois. Ajoutez ensuite le sel et continuez à mélanger. Pétrissez bien la pâte à la main pendant environ 10 minutes, jusqu&rsquo;à obtenir une pâte lisse.",
+            "2. Levée: Placez la pâte dans un récipient avec un filet d&rsquo;huile d&rsquo;olive, couvrez avec du film plastique et laissez lever pendant 2 heures à température ambiante.",
+            "3. Étaler la pâte: Une fois la pâte levée, étalez-la bien avec un rouleau à pâtisserie ou avec les mains. Étalez uniformément le beurre sur toute la surface de la pâte.",
+            "4. Garniture: Répartissez le saucisson, les lardons, l&rsquo;Emmental, la scamorza et le Parmigiano sur la pâte, en laissant le bord libre. Ajoutez du poivre selon votre goût.",
+            "5. Fermeture: Coupez légèrement les bords et roulez la pâte sur elle-même pour former un cylindre. Faites des incisions en forme de croix sur les bords coupés.",
+            "6. Ajout des œufs: Placez 4 œufs au-dessus de la pâte et utilisez les incisions pour décorer.",
+            "7. Préparation à la cuisson: Mettez la pâte dans un moule préalablement beurré et couvrez. Laissez reposer pendant encore 30 minutes.",
+            "8. Cuisson: Faites cuire dans un four préchauffé à 180°C pendant environ une heure, en plaçant le moule dans la partie inférieure du four."
+        ],
+        "tags": [
+            "Italie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "4728",
         "title": "Cheesecake Kinder Bueno",
