@@ -298,6 +298,14 @@ function determineCategory(post, ingredients = []) {
         return 'pâques';
     }
     
+    if (fullText.includes('glaces') || fullText.includes('glace') || fullText.includes('sorbet')) {
+        return 'glaces';
+    }
+    
+    if (fullText.includes('rafraîchissement') || fullText.includes('boisson') || fullText.includes('cocktail')) {
+        return 'boissons';
+    }
+    
     // 4. Logique Simplissime (Peu d'ingrédients)
     if (fullText.includes('simplissime') || fullText.includes('rapide') || (ingredients.length > 0 && ingredients.length <= 5)) {
         return 'simplissime';

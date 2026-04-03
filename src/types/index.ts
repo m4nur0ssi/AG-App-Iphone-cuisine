@@ -3,7 +3,7 @@ export interface Recipe {
     title: string;
     description: string;
     image: string;
-    category: 'aperitifs' | 'entrees' | 'plats' | 'desserts' | 'patisserie' | 'restaurant' | 'vegetarien' | 'glaces' | 'boissons';
+    category: 'aperitifs' | 'entrees' | 'plats' | 'desserts' | 'patisserie' | 'restaurant' | 'vegetarien' | 'glaces' | 'boissons' | 'simplissime' | 'pâques' | 'noël';
 
     difficulty: 'facile' | 'moyen' | 'difficile';
     prepTime: number; // minutes
