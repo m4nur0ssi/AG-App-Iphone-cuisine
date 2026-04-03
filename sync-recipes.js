@@ -26,28 +26,36 @@ const SYNC_STATS_PATH = path.join(__dirname, 'src', 'data', 'sync-stats.json');
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 function decodeHtmlEntities(text) {
-
     if (!text) return '';
-    return text
-        .replace(/&#038;/g, '&')
-        .replace(/&amp;/g, '&')
-        .replace(/&#8217;/g, "'")
-        .replace(/&rsquo;/g, "'")
-        .replace(/&#8211;/g, "-")
-        .replace(/&ndash;/g, "-")
-        .replace(/&nbsp;/g, " ")
-        .replace(/&Agrave;/g, "À")
-        .replace(/&agrave;/g, "à")
-        .replace(/&Eacute;/g, "É")
-        .replace(/&eacute;/g, "é")
-        .replace(/&Egrave;/g, "È")
-        .replace(/&egrave;/g, "è")
-        .replace(/&circ;/g, "^")
-        .replace(/&icirc;/g, "î")
-        .replace(/&ocirc;/g, "ô")
-        .replace(/&ucirc;/g, "û")
-        .replace(/<[^>]*>?/gm, '') // Enlève aussi les balises HTML restantes
-        .trim();
+    
+    // Map of common named entities
+    const entities = {
+        '&#038;': '&', '&amp;': '&', '&#8217;': "'", '&rsquo;': "'", 
+        '&#8211;': '-', '&ndash;': '-', '&nbsp;': ' ', '&Agrave;': 'À', 
+        '&agrave;': 'à', '&Eacute;': 'É', '&eacute;': 'é', '&Egrave;': 'È', 
+        '&egrave;': 'è', '&circ;': '^', '&icirc;': 'î', '&ocirc;': 'ô', 
+        '&ucirc;': 'û', '&lt;': '<', '&gt;': '>', '&quot;': '"', 
+        '&apos;': "'", '&deg;': '°', '&euro;': '€', '&#8230;': '...',
+        '&#8220;': '"', '&#8221;': '"', '&#8216;': "'", '&#8242;': "'", '&#8243;': '"'
+    };
+    
+    // 1. Handle common named entities
+    let decoded = text.replace(/&[a-z0-9#]+;/gi, (match) => entities[match] || match);
+    
+    // 2. Handle decimal numeric entities (Ex: &#233;)
+    decoded = decoded.replace(/&#(\d+);/g, (match, dec) => {
+        return String.fromCharCode(parseInt(dec, 10));
+    });
+    
+    // 3. Handle hexadecimal numeric entities (Ex: &#xe9;)
+    decoded = decoded.replace(/&#x([a-f0-9]+);/gi, (match, hex) => {
+        return String.fromCharCode(parseInt(hex, 16));
+    });
+    
+    // 4. Remove remaining HTML tags
+    decoded = decoded.replace(/<[^>]*>?/gm, '');
+    
+    return decoded.trim();
 }
 
 const ingredientEmojiMap = {
@@ -267,9 +275,10 @@ function extractRecipeData(content) {
 }
 
 
-function determineCategory(post) {
+function determineCategory(post, ingredients = []) {
     const title = (post.title?.rendered || '').toLowerCase();
     const content = (post.content?.rendered || '').toLowerCase();
+    const fullText = title + ' ' + content;
 
     // 1. Détection par slugs WordPress
     let catSlug = [];
@@ -280,9 +289,24 @@ function determineCategory(post) {
         }
     }
 
-    // 2. Détection par mots-clés si slugs absents ou imprécis
-    const isPatisserie = catSlug.some(s => s.includes('patisserie')) || 
-                        title.includes('gâteau') || title.includes('torta') || title.includes('cake');
+    // 2. Mots-clés de secours pour éviter les erreurs de catégorie WP
+    const savoryKeywords = ['jambon', 'poulet', 'boeuf', 'bœuf', 'viande', 'poisson', 'légume', 'salé', 'tacos', 'pasta', 'pizza', 'fromage'];
+    const hasSavory = savoryKeywords.some(kw => title.includes(kw));
+
+    // 3. Logique Thématique (Pâques, Noël...)
+    if (fullText.includes('pâques') || fullText.includes('agneau') || fullText.includes('chocolat de pâques')) {
+        return 'pâques';
+    }
+    
+    // 4. Logique Simplissime (Peu d'ingrédients)
+    if (fullText.includes('simplissime') || fullText.includes('rapide') || (ingredients.length > 0 && ingredients.length <= 5)) {
+        return 'simplissime';
+    }
+
+    // 5. Détection de catégorie standard
+    const isPatisserie = (catSlug.some(s => s.includes('patisserie')) && !hasSavory) || 
+                        title.includes('gâteau') || title.includes('cake') || 
+                        (title.includes('torta') && !title.includes('tortilla'));
                         
     const isDessertMatch = catSlug.some(s => s.includes('dessert') || s.includes('sucre')) ||
                           title.includes('fondant') || title.includes('biscuits') || title.includes('dessert');
@@ -375,7 +399,7 @@ async function syncRecipes() {
             // Mapping des résultats
             const pageRecipes = cleanPosts.map((post, index) => {
                 const { description, ingredients, steps, videoHtml, address, difficulty, prepTime, cookTime } = extractRecipeData(post.content.rendered);
-                const category = determineCategory(post);
+                const category = determineCategory(post, ingredients);
                 let featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || '';
 
                 // --- FALLBACK IMAGE : Si pas d'image mise en avant, on cherche dans le contenu ---

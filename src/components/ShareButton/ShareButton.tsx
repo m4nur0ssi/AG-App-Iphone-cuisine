@@ -32,6 +32,11 @@ export default function ShareButton({ url, title, className }: ShareButtonProps)
             url: finalUrl,
         };
 
+        // Vibrate for feedback
+        if (typeof navigator !== 'undefined' && navigator.vibrate) {
+            navigator.vibrate([15]);
+        }
+
         if (typeof navigator !== 'undefined' && navigator.share) {
             navigator.share(shareData)
                 .then(() => console.log('Shared successfully'))

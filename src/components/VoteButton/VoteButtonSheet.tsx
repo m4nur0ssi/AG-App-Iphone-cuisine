@@ -15,9 +15,9 @@ const PremiumFlame = ({ active }: { active: boolean }) => (
     <svg width="30" height="30" viewBox="2 2 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
             <linearGradient id="fireGradient" x1="16" y1="30" x2="16" y2="2">
-                <stop offset="0%" stopColor="#FB923C" />
-                <stop offset="50%" stopColor="#EA580C" />
-                <stop offset="100%" stopColor="#DC2626" />
+                <stop offset="0%" stopColor="#ef4444" />
+                <stop offset="50%" stopColor="#dc2626" />
+                <stop offset="100%" stopColor="#991b1b" />
             </linearGradient>
         </defs>
         

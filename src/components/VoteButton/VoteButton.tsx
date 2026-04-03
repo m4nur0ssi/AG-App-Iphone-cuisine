@@ -13,8 +13,9 @@ interface VoteButtonProps {
 
 const FlameIcon = ({ active }: { active: boolean }) => (
     <svg width="22" height="22" viewBox="0 0 24 24" fill={active ? "#ff3b30" : "none"} stroke={active ? "#ff3b30" : "currentColor"} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3 2.5.5 4.5 2.5 4.5 5.5a3 3 0 0 1-6 0c0-1 .5-2 1-3-.5 1-1 2-1 3Z" />
-        <path d="M15.81 10.31a6.48 6.48 0 0 1 1.69 4.19 5.5 5.5 0 1 1-11 0c0-3.98 3.17-7.22 7.12-7.48.33-.02.66-.02.99 0 .2.01.4.03.6.06.8.11 1.55.38 2.22.78.33.2.6.45.81.74a.16.16 0 0 1-.24.21Z" />
+        <path d="M12 2c0 0-2 4-2 7.5s2 4.5 2 4.5 2-1 2-4.5S12 2 12 2z" />
+        <path d="M12 2C12 2 7 8 7 14c0 3 2 5 5 5s5-2 5-5c0-6-5-12-5-12z" />
+        <path d="M12 7c0 4-1.5 6-1.5 8 0 1 .5 2 1.5 2s1.5-1 1.5-2c0-2-1.5-4-1.5-8z" opacity={active ? 1 : 0.4} />
     </svg>
 );
 
@@ -48,6 +49,11 @@ export default function VoteButton({ recipeId, initialVotes = 0, className, hide
         let votedRecipes = JSON.parse(localStorage.getItem('voted_recipes') || '[]');
         if (!votedRecipes.includes(recipeId)) votedRecipes.push(recipeId);
         localStorage.setItem('voted_recipes', JSON.stringify(votedRecipes));
+
+        // Vibrate for feedback
+        if (typeof navigator !== 'undefined' && navigator.vibrate) {
+            navigator.vibrate([15]);
+        }
 
         try {
             await fetch('/api/votes', {

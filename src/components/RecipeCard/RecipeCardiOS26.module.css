@@ -61,9 +61,8 @@
 }
 
 [data-theme='light'] .titlePill .titleText {
-    color: #111827 !important; /* Rich black for readability */
-    background: none !important;
-    -webkit-text-fill-color: #111827 !important;
+    /* Keep gradients in light mode for consistency */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .titlePill .titleText {
@@ -126,9 +125,9 @@
 
 .isGrid .card {
     width: 100%;
-    height: 280px; /* Aligné sur grid mobile */
-    border-radius: 34px;
-    box-shadow: 0 20px 60px -15px rgba(0, 0, 0, 0.5);
+    height: 260px; /* Un peu plus compact pour fitter sur écran */
+    border-radius: 28px;
+    box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.4);
 }
 
 /* Lien overlay transparent sur toute la carte */
@@ -292,47 +291,67 @@
     pointer-events: none;
 }
 
-.centerTopBadge {
+.topCenterActions {
     position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: fit-content;
-    z-index: 20;
-    pointer-events: none;
+    top: 10px; /* Precise top-center placement */
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 40;
+    pointer-events: none; /* Crucial for not blocking image clicks */
 }
 
-.countryPill {
+.actionWell {
+    display: flex;
+    flex-direction: row; /* Horizontal pill as requested */
+    align-items: center;
+    justify-content: center;
+    gap: 22px; /* Premium spacing between floating icons */
+    padding: 8px 24px;
+    background: rgba(255, 255, 255, 0.08); /* Minimalist glass pill */
+    backdrop-filter: blur(25px) saturate(1.8);
+    -webkit-backdrop-filter: blur(25px) saturate(1.8);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 30px; /* Perfect pill shape */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    pointer-events: auto; /* Re-enable clicks for buttons */
+}
+
+[data-theme='light'] .actionWell {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.premiumActionBtn {
+    width: 28px !important;
+    height: 28px !important;
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 6px 14px;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    border-radius: 0 !important; /* Minimalist icon-only look */
+    color: white !important;
+    background: transparent !important; /* Force transparent as requested */
+    border: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    padding: 0 !important;
 }
 
-.flagIcon {
-    font-size: 1.2rem;
-    line-height: 1;
+[data-theme='light'] .premiumActionBtn {
+    color: #4b5563 !important;
 }
 
-.countryName {
-    font-size: 0.75rem;
-    font-weight: 900;
-    letter-spacing: 1.8px;
-    color: white;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+.premiumActionBtn:hover {
+    transform: scale(1.25);
 }
 
-.topRightActions {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 40;
+.premiumActionBtn:active {
+    transform: scale(0.9);
 }
 
 .hashtagContainer {
@@ -512,10 +531,7 @@
 }
 
 [data-theme='light'] .title {
-    -webkit-text-fill-color: #000 !important;
-    color: #000 !important;
-    filter: none;
-    background: none !important;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 /* ── Mode Small (Carrousel) ─────────────────── */

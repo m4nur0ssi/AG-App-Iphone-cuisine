@@ -30,13 +30,16 @@ interface MagicFilterBarProps {
 }
 
 const categories: FilterItem[] = [
-    { id: 'aperitifs', name: 'Apéritifs', icon: '', color: '#FF7E5F' },
-    { id: 'entrees', name: 'Entrées', icon: '', color: '#76B852' },
-    { id: 'plats', name: 'Plats', icon: '', color: '#8E2DE2' },
-    { id: 'vegetarien', name: 'Végé', icon: '', color: '#00C853' },
-    { id: 'desserts', name: 'Desserts', icon: '', color: '#F80759' },
-    { id: 'patisserie', name: 'Pâtisserie', icon: '', color: '#FFB347' },
-    { id: 'restaurant', name: 'Restaurant', icon: '', color: '#4facfe' },
+    { id: 'pâques', name: 'Pâques', icon: '🐰', color: '#ffcc33' },
+    { id: 'aperitifs', name: 'Apéritifs', icon: '🍹', color: '#FF7E5F' },
+    { id: 'entrees', name: 'Entrées', icon: '🥗', color: '#76B852' },
+    { id: 'plats', name: 'Plats', icon: '🍛', color: '#8E2DE2' },
+    { id: 'vegetarien', name: 'Végé', icon: '🥕', color: '#00C853' },
+    { id: 'desserts', name: 'Desserts', icon: '🍰', color: '#F80759' },
+    { id: 'glaces', name: 'Les Glaces', icon: '🍦', color: '#F472B6' },
+    { id: 'boissons', name: 'Rafraîchissements', icon: '🍹', color: '#3B82F6' },
+    { id: 'patisserie', name: 'Pâtisserie', icon: '🥐', color: '#FFB347' },
+    { id: 'restaurant', name: 'Restaurant', icon: '📍', color: '#4facfe' },
 ];
 
 const countries: FilterItem[] = [
@@ -53,12 +56,13 @@ const countries: FilterItem[] = [
 ];
 
 const trends: FilterItem[] = [
-    { id: 'healthy', name: 'Healthy', icon: '', tag: 'Healthy', color: '#A8E063' },
-    { id: 'astuces', name: 'Astuces', icon: '', tag: 'Astuces', color: '#FFD700' },
-    { id: 'airfryer', name: 'Airfryer', icon: '', tag: 'Airfryer', color: '#43C6AC' },
-    { id: 'barbecue', name: 'Barbecue', icon: '', tag: 'Barbecue', color: '#FF416C' },
-    { id: 'pas-cher', name: 'Pas Cher', icon: '', tag: 'Pas cher', color: '#0BA360' },
-    { id: 'express', name: 'Express', icon: '', tag: 'Express', color: '#FDFC47' },
+    { id: 'simplissime', name: 'Simplissime', icon: '✨', tag: 'simplissime', color: '#FFD700' },
+    { id: 'healthy', name: 'Healthy', icon: '🥗', tag: 'Healthy', color: '#A8E063' },
+    { id: 'astuces', name: 'Astuces', icon: '💡', tag: 'Astuces', color: '#FFD700' },
+    { id: 'airfryer', name: 'Airfryer', icon: '🌬️', tag: 'Airfryer', color: '#43C6AC' },
+    { id: 'barbecue', name: 'Barbecue', icon: '🍖', tag: 'Barbecue', color: '#FF416C' },
+    { id: 'pas-cher', name: 'Pas Cher', icon: '💰', tag: 'Pas cher', color: '#0BA360' },
+    { id: 'express', name: 'Express', icon: '⚡', tag: 'Express', color: '#FDFC47' },
 ];
 
 export default function MagicFilterBar({ 
@@ -164,7 +168,9 @@ export default function MagicFilterBar({
                                                         style={{ background: `radial-gradient(circle, ${item.color || '#ff3b30'} 0%, transparent 70%)` }}
                                                     />
                                                 )}
-                                                <span className={styles.itemIcon}>{item.icon}</span>
+                                                {activeGroup === 'countries' && item.icon && (
+                                                    <span className={styles.itemIcon}>{item.icon}</span>
+                                                )}
                                                 <span className={styles.itemName}>{item.name}</span>
                                             </motion.button>
                                         );

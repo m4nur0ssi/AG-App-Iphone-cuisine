@@ -260,13 +260,15 @@ export default function BottomNav() {
                                     onPointerUp={handlePointerUp}
                                     onPointerCancel={() => setIsDragging(false)}
                                 >
-                                    <motion.div 
-                                        className={styles.stitchIndicator}
-                                        style={{ 
-                                            x: xTransform,
-                                            width: `${100 / navItems.length}%`
-                                        }}
-                                    />
+                                    <div className={styles.indicatorTrack}>
+                                        <motion.div 
+                                            className={styles.stitchIndicator}
+                                            style={{ 
+                                                x: xTransform,
+                                                width: `${100 / navItems.length}%`
+                                            }}
+                                        />
+                                    </div>
 
                                     {navItems.map((item, index) => {
                                         const isActive = activeIndex === index;

@@ -1,94 +1,95 @@
 import { Recipe } from '../types';
-
+    
 /**
  * Recettes synchronisées depuis WordPress
- * Dernière mise à jour: 03/04/2026 12:28:00
+ * Dernière mise à jour: 03/04/2026 15:27:54
  * Total: 175 recettes
  */
-export const exportSyncId = "1775209792847";
+export const exportSyncId = "1775222874196";
 export const mockRecipes: Recipe[] = [
     {
         "id": "4797",
-        "title": "Croquetas de Jambon (version budget)",
-        "description": "Découvrez une recette de croquetas de jambon dorées, croustillantes et délicieuses, une version budget du classique espagnol, parfaites pour l&rsquo;apéritif ou comme tapas.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1775209010867.jpg&v=1775209015000",
-        "category": "patisserie",
+        "title": "Croquetas de Jambon",
+        "description": "Découvrez une recette de croquetas de jambon dorées, croustillantes et délicieuses, une version budget du classique espagnol, parfaites pour l'apéritif ou comme tapas.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Fcroquette.jpeg&v=1775222289000-1775222867390",
+        "category": "aperitifs",
         "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
+        "prepTime": 240,
+        "cookTime": 120,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7287279168671223072\" data-video-id=\"7287279168671223072\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7287279168671223072\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7287279168671223072\" data-video-id=\"7287279168671223072\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7287279168671223072\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🥣\n             150g de pancetta coupée en dés"
+                "name": "🥣 150g de pancetta coupée en dés"
             },
             {
                 "quantity": "",
-                "name": "🧈\n             2 cuillères à soupe de beurre"
+                "name": "🧈 2 cuillères à soupe de beurre"
             },
             {
                 "quantity": "",
-                "name": "🧅\n             1 grande échalote, finement hachée"
+                "name": "🧅 1 grande échalote, finement hachée"
             },
             {
                 "quantity": "",
-                "name": "🥓\n             100g de jambon Serrano, finement haché"
+                "name": "🥓 100g de jambon Serrano, finement haché"
             },
             {
                 "quantity": "",
-                "name": "🌾\n             4 cuillères à soupe de farine tout usage"
+                "name": "🌾 4 cuillères à soupe de farine tout usage"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             Environ 600ml de lait demi-écrémé ou entier"
+                "name": "🥛 Environ 600ml de lait demi-écrémé ou entier"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             100g de Manchego râpé"
+                "name": "🥣 100g de Manchego râpé"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             Une petite pincée de sel"
+                "name": "🧂 Une petite pincée de sel"
             },
             {
                 "quantity": "",
-                "name": "🌶️\n             Une grande pincée de granulés d&rsquo;ail, de muscade et de poivre noir"
+                "name": "🌶️ Une grande pincée de granulés d'ail, de muscade et de poivre noir"
             },
             {
                 "quantity": "",
-                "name": "🍗\n             1/2 cube de bouillon de poulet de bonne qualité"
+                "name": "🍗 1/2 cube de bouillon de poulet de bonne qualité"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             1 grand œuf battu avec un filet de lait (pour la panure)"
+                "name": "🥛 1 grand œuf battu avec un filet de lait (pour la panure)"
             },
             {
                 "quantity": "",
-                "name": "🌾\n             Environ 100g de farine tout usage (pour la panure)"
+                "name": "🌾 Environ 100g de farine tout usage (pour la panure)"
             },
             {
                 "quantity": "",
-                "name": "🥖\n             Environ 75g de chapelure (pour la panure)"
+                "name": "🥖 Environ 75g de chapelure (pour la panure)"
             }
         ],
         "steps": [
             "Ajouter la pancetta dans une poêle froide et monter le feu à vif.",
-            "Une fois la pancetta presque croustillante, baisser le feu à moyen et ajouter le beurre, l&rsquo;échalote et le jambon Serrano.",
-            "Cuire jusqu&rsquo;à ce que l&rsquo;échalote soit ramollie et la viande croustillante.",
-            "Incorporer la farine et remuer jusqu&rsquo;à ce qu&rsquo;elle soit bien mélangée, cuire quelques minutes jusqu&rsquo;à ce qu&rsquo;elle dégage une odeur de noisette et parfumée.",
+            "Une fois la pancetta presque croustillante, baisser le feu à moyen et ajouter le beurre, l'échalote et le jambon Serrano.",
+            "Cuire jusqu'à ce que l'échalote soit ramollie et la viande croustillante.",
+            "Incorporer la farine et remuer jusqu'à ce qu'elle soit bien mélangée, cuire quelques minutes jusqu'à ce qu'elle dégage une odeur de noisette et parfumée.",
             "Verser le lait en remuant continuellement.",
             "Une fois incorporé et épaissi, mélanger les assaisonnements et le fromage.",
             "Une fois le fromage fondu, verser le mélange dans un plat/plateau froid.",
             "Une fois refroidi à température ambiante, placer au réfrigérateur pendant au moins 4 heures ou toute une nuit, ou alternativement au congélateur pendant environ 1 à 2 heures.",
-            "Une fois refroidi, retirer du réfrigérateur/congélateur et rouler des cuillères à soupe bombées en la forme désirée (l&rsquo;auteur recommande de le faire après avoir légèrement enrobé la croqueta de farine pour moins de désordre).",
-            "Enrober de farine, puis du mélange d&rsquo;œuf et enfin de chapelure.",
-            "Faire frire dans de l&rsquo;huile chaude pendant environ 2-3 minutes jusqu&rsquo;à ce qu&rsquo;elles soient dorées et bien chaudes à l&rsquo;intérieur.",
+            "Une fois refroidi, retirer du réfrigérateur/congélateur et rouler des cuillères à soupe bombées en la forme désirée (l'auteur recommande de le faire après avoir légèrement enrobé la croqueta de farine pour moins de désordre).",
+            "Enrober de farine, puis du mélange d'œuf et enfin de chapelure.",
+            "Faire frire dans de l'huile chaude pendant environ 2-3 minutes jusqu'à ce qu'elles soient dorées et bien chaudes à l'intérieur.",
             "Déguster avec un verre de sangria glacée ou une bière espagnole."
         ],
         "tags": [
             "Espagne",
-            "Pas cher"
+            "Pas cher",
+            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -96,67 +97,67 @@ export const mockRecipes: Recipe[] = [
     },
     {
         "id": "4794",
-        "title": "Légumes rôtis à l&rsquo;italienne et ricotta",
-        "description": "Une recette simple et rapide de légumes rôtis (pommes de terre, tomates cerises, pois chiches) assaisonnés aux herbes, miel et vinaigre balsamique, servis sur un lit de ricotta crémeuse et parsemés de parmesan et d&rsquo;herbes fraîches. Idéal pou...",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "patisserie",
+        "title": "Légumes rôtis à l'italienne et ricotta",
+        "description": "Une recette simple et rapide de légumes rôtis (pommes de terre, tomates cerises, pois chiches) assaisonnés aux herbes, miel et vinaigre balsamique, servis sur un lit de ricotta crémeuse et parsemés de parmesan et d'herbes fraîches. Idéal pour un repas végétarien aux saveurs italiennes.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Fcarottes-roties.jpg&v=1775222381000-1775222867389",
+        "category": "simplissime",
         "difficulty": "moyen",
-        "prepTime": 15,
+        "prepTime": 35,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7489093004754423062\" data-video-id=\"7489093004754423062\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7489093004754423062\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7489093004754423062\" data-video-id=\"7489093004754423062\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7489093004754423062\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🍎\n             450g de pommes de terre"
+                "name": "🍎 450g de pommes de terre"
             },
             {
                 "quantity": "",
-                "name": "🍅\n             300g de tomates cerises"
+                "name": "🍅 300g de tomates cerises"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             180g de pois chiche"
+                "name": "🥣 180g de pois chiche"
             },
             {
                 "quantity": "",
-                "name": "🌿\n             1 cas de thym"
+                "name": "🌿 1 cas de thym"
             },
             {
                 "quantity": "",
-                "name": "🌿\n             1 cas de persillade"
+                "name": "🌿 1 cas de persillade"
             },
             {
                 "quantity": "",
-                "name": "🧄\n             1 cac d’ail"
+                "name": "🧄 1 cac d’ail"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             Sel"
+                "name": "🧂 Sel"
             },
             {
                 "quantity": "",
-                "name": "🍾\n             4 cas d’huile d’olive"
+                "name": "🍾 4 cas d’huile d’olive"
             },
             {
                 "quantity": "",
-                "name": "🍯\n             1 cas de miel"
+                "name": "🍯 1 cas de miel"
             },
             {
                 "quantity": "",
-                "name": "🍾\n             2 cas de vinaigre balsamique"
+                "name": "🍾 2 cas de vinaigre balsamique"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             1 ricotta (250g)"
+                "name": "🥣 1 ricotta (250g)"
             },
             {
                 "quantity": "",
-                "name": "🧀\n             Parmesan"
+                "name": "🧀 Parmesan"
             },
             {
                 "quantity": "",
-                "name": "🌿\n             Herbes fraîches (basilic…)"
+                "name": "🌿 Herbes fraîches (basilic…)"
             }
         ],
         "steps": [
@@ -165,7 +166,7 @@ export const mockRecipes: Recipe[] = [
             "Faire cuire les légumes au four pendant 30-35 minutes à 200 degrés, en mélangeant à mi-cuisson.",
             "Étaler une bonne couche de ricotta au fond de l’assiette (vous pouvez aussi utiliser de la burrata ou de la mozzarella).",
             "Disposer les légumes bien rôtis sur la ricotta.",
-            "Parsemer de parmesan râpé et d&rsquo;herbes fraîches (comme du basilic)."
+            "Parsemer de parmesan râpé et d'herbes fraîches (comme du basilic)."
         ],
         "tags": [
             "Healthy",
@@ -173,80 +174,80 @@ export const mockRecipes: Recipe[] = [
             "rapide",
             "Végé"
         ],
-        "isFeatured": false,
+        "isFeatured": true,
         "isFavorite": false,
         "address": ""
     },
     {
         "id": "4761",
         "title": "Casatiello napoletano",
-        "description": "Le Casatiello napoletano est un pain salé traditionnel de Naples, généralement préparé pour Pâques. Il est richement garni de fromages, de charcuteries comme le saucisson sec et les lardons, et décoré d&rsquo;œufs entiers sur le dessus avant d&rsq...",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Fcasatiello-calendario-2024.jpeg&v=1775123707000",
-        "category": "patisserie",
+        "description": "Le Casatiello napoletano est un pain salé traditionnel de Naples, généralement préparé pour Pâques. Il est richement garni de fromages, de charcuteries comme le saucisson sec et les lardons, et décoré d'œufs entiers sur le dessus avant d'être cuit au four.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Fcasatiello-calendario-2024.jpeg&v=1775123707000-1775222867390",
+        "category": "pâques",
         "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
+        "prepTime": 10,
+        "cookTime": 120,
         "servings": 4,
         "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7494675433317960962\" data-video-id=\"7494675433317960962\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7494675433317960962\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🌾\n 600 g de farine 00"
+                "name": "🌾 600 g de farine 00"
             },
             {
                 "quantity": "",
-                "name": "💧\n 350 g d&rsquo;eau"
+                "name": "💧 350 g d'eau"
             },
             {
                 "quantity": "",
-                "name": "🥣\n 20 g de levure de boulanger"
+                "name": "🥣 20 g de levure de boulanger"
             },
             {
                 "quantity": "",
-                "name": "🧂\n 10 g de sel"
+                "name": "🧂 10 g de sel"
             },
             {
                 "quantity": "",
-                "name": "🌶️\n Poivre au goût (pour la pâte)"
+                "name": "🌶️ Poivre au goût (pour la pâte)"
             },
             {
                 "quantity": "",
-                "name": "🥣\n 200 g de saucisson sec"
+                "name": "🥣 200 g de saucisson sec"
             },
             {
                 "quantity": "",
-                "name": "🥓\n 100 g de lardons nature"
+                "name": "🥓 100 g de lardons nature"
             },
             {
                 "quantity": "",
-                "name": "🥣\n 200 g d&rsquo;Emmental"
+                "name": "🥣 200 g d'Emmental"
             },
             {
                 "quantity": "",
-                "name": "🥣\n 250 g de scamorza (ou fromage doux)"
+                "name": "🥣 250 g de scamorza (ou fromage doux)"
             },
             {
                 "quantity": "",
-                "name": "🥣\n 80 g de Parmigiano"
+                "name": "🥣 80 g de Parmigiano"
             },
             {
                 "quantity": "",
-                "name": "🌶️\n Poivre au goût (pour la garniture)"
+                "name": "🌶️ Poivre au goût (pour la garniture)"
             },
             {
                 "quantity": "",
-                "name": "🧈\n 80-100 g de beurre"
+                "name": "🧈 80-100 g de beurre"
             },
             {
                 "quantity": "",
-                "name": "🥚\n 4 œufs (pour la décoration)"
+                "name": "🥚 4 œufs (pour la décoration)"
             }
         ],
         "steps": [
-            "1. Préparation de la pâte: Dans un bol, versez la farine, l&rsquo;eau et la levure de boulanger. Mélangez avec une spatule en bois. Ajoutez ensuite le sel et continuez à mélanger. Pétrissez bien la pâte à la main pendant environ 10 minutes, jusqu&rsquo;à obtenir une pâte lisse.",
-            "2. Levée: Placez la pâte dans un récipient avec un filet d&rsquo;huile d&rsquo;olive, couvrez avec du film plastique et laissez lever pendant 2 heures à température ambiante.",
+            "1. Préparation de la pâte: Dans un bol, versez la farine, l'eau et la levure de boulanger. Mélangez avec une spatule en bois. Ajoutez ensuite le sel et continuez à mélanger. Pétrissez bien la pâte à la main pendant environ 10 minutes, jusqu'à obtenir une pâte lisse.",
+            "2. Levée: Placez la pâte dans un récipient avec un filet d'huile d'olive, couvrez avec du film plastique et laissez lever pendant 2 heures à température ambiante.",
             "3. Étaler la pâte: Une fois la pâte levée, étalez-la bien avec un rouleau à pâtisserie ou avec les mains. Étalez uniformément le beurre sur toute la surface de la pâte.",
-            "4. Garniture: Répartissez le saucisson, les lardons, l&rsquo;Emmental, la scamorza et le Parmigiano sur la pâte, en laissant le bord libre. Ajoutez du poivre selon votre goût.",
+            "4. Garniture: Répartissez le saucisson, les lardons, l'Emmental, la scamorza et le Parmigiano sur la pâte, en laissant le bord libre. Ajoutez du poivre selon votre goût.",
             "5. Fermeture: Coupez légèrement les bords et roulez la pâte sur elle-même pour former un cylindre. Faites des incisions en forme de croix sur les bords coupés.",
             "6. Ajout des œufs: Placez 4 œufs au-dessus de la pâte et utilisez les incisions pour décorer.",
             "7. Préparation à la cuisson: Mettez la pâte dans un moule préalablement beurré et couvrez. Laissez reposer pendant encore 30 minutes.",
@@ -263,7 +264,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4728",
         "title": "Cheesecake Kinder Bueno",
         "description": "Super crémeux, chocolaté et noisetté, parfait pour tous les amateurs de Kinder Bueno Blanc !",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fcheesecake-au-kinder-bueno.jpeg&v=1774881264000-1775071130147",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fcheesecake-au-kinder-bueno.jpeg&v=1774881264000-1775222867394",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 60,
@@ -347,7 +348,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4725",
         "title": "Crispy Beef Tacos",
         "description": "Une recette de tacos au bœuf croustillants, garnis de fromage mozzarella, accompagnés d'une sauce maison crémeuse et d'une salsa fraîche.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FCrispy-Braised-Chipotle-Beef-Tacos-1.jpeg&v=1774880651000-1775071130151",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FCrispy-Braised-Chipotle-Beef-Tacos-1.jpeg&v=1774880651000-1775222867399",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -495,7 +496,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4722",
         "title": "Crispy Smashed Potatoes",
         "description": "Des pommes de terre écrasées ultra croustillantes à l'extérieur et moelleuses à l'intérieur, incroyablement addictives.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fair-fryer-smashed-potatoes-4-683x1024-1.jpeg&v=1774881557000-1775071130147",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fair-fryer-smashed-potatoes-4-683x1024-1.jpeg&v=1774881557000-1775222867394",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -547,7 +548,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4719",
         "title": "Choux vanille caramel",
         "description": "Une recette classique de choux à la crème, garnis d'une onctueuse crème pâtissière à la vanille et d'une crème montée, le tout dans une pâte à choux légère et dorée.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fchou.jpeg&v=1774880770000-1775071130149",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fchou.jpeg&v=1774880770000-1775222867397",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 30,
@@ -638,7 +639,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4716",
         "title": "Cheesy Beef Crunch Pockets",
         "description": "Des poches croustillantes et savoureuses garnies de bœuf haché, de poivrons, de maïs et de mozzarella fondante, le tout enveloppé dans des galettes de pain plat et cuit au four jusqu'à obtenir une texture dorée et croustillante.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fcheesy.jpeg&v=1774880857000-1775071130148",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fcheesy.jpeg&v=1774880857000-1775222867396",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 3,
@@ -716,7 +717,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4714",
         "title": "Pommes de terre Hasselback, poulet crémeux Cajun et broccolini à l'air fryer",
         "description": "Un repas réconfortant, facile et sain, composé de pommes de terre Hasselback croustillantes, de poulet crémeux à la cajun et de broccolini cuit à l'air fryer.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fpatate.jpeg&v=1774881004000-1775071130148",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fpatate.jpeg&v=1774881004000-1775222867395",
         "category": "plats",
         "difficulty": "facile",
         "prepTime": 45,
@@ -827,7 +828,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4708",
         "title": "Gratin de poulet et pommes de terre à la béchamel",
         "description": "Un gratin savoureux et facile à préparer, combinant des pommes de terre dorées, du poulet tendre et une sauce béchamel onctueuse, le tout gratiné au four.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fob_2685fb_gratin-poulet-pomme-de-terre-creme.jpeg&v=1774947963000-1775071130146",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fob_2685fb_gratin-poulet-pomme-de-terre-creme.jpeg&v=1774947963000-1775222867392",
         "category": "plats",
         "difficulty": "facile",
         "prepTime": 25,
@@ -920,7 +921,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4705",
         "title": "Creamy Vodka Tortiglioni & Burrata",
         "description": "Une recette réconfortante de pâtes Tortiglioni ou Rigatoni dans une sauce crémeuse à la vodka, riche et épicée, sublimée par de la burrata fraîche. Parfaite pour célébrer le printemps.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774707517069.jpg&v=1774707527000-1775071130152",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774707517069.jpg&v=1774707527000-1775222867399",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 1,
@@ -1011,7 +1012,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4702",
         "title": "Hot Chili Chicken Burgers",
         "description": "Préparez des burgers de poulet épicés avec des pains maison infusés aux chips de nacho, du poulet mariné et pané aux nacho, le tout frit et cuit au four pour un repas savoureux et croustillant, parfait pour l'iftar.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FHot-chilibroodjes-eindresultaat-Kookmutsjes-copyright-867x1300-1.jpeg&v=1774948336000-1775071130145",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FHot-chilibroodjes-eindresultaat-Kookmutsjes-copyright-867x1300-1.jpeg&v=1774948336000-1775222867391",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 5,
@@ -1105,16 +1106,16 @@ export const mockRecipes: Recipe[] = [
             "Spicy",
             "USA"
         ],
-        "isFeatured": true,
+        "isFeatured": false,
         "isFavorite": false,
         "address": ""
     },
     {
         "id": "4695",
         "title": "KEBBEH BIL SANIYEH",
-        "description": "Un hommage à mon peuple qui vit des heures sombres&#8230; Le Kebbeh Bil Saniyeh est un plat libanais traditionnel à base de boulghour et de viande hachée, cuit au four, parfait pour un repas convivial.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fimg_6042.jpeg&v=1774698431000-1775071130153",
-        "category": "plats",
+        "description": "Un hommage à mon peuple qui vit des heures sombres... Le Kebbeh Bil Saniyeh est un plat libanais traditionnel à base de boulghour et de viande hachée, cuit au four, parfait pour un repas convivial.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fimg_6042.jpeg&v=1774698431000-1775222867401",
+        "category": "simplissime",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 40,
@@ -1223,8 +1224,8 @@ export const mockRecipes: Recipe[] = [
         "id": "4692",
         "title": "Couscous Marocain",
         "description": "Un couscous marocain traditionnel et généreux, composé de légumes variés, de poulet, d'agneau et de merguez, servi avec une semoule parfumée. Une garniture sucrée aux raisins secs est proposée en option pour une touche d'originalité.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecette-couscous-marocain.jpeg&v=1774698554000-1775071130153",
-        "category": "plats",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecette-couscous-marocain.jpeg&v=1774698554000-1775222867401",
+        "category": "pâques",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
@@ -1346,8 +1347,8 @@ export const mockRecipes: Recipe[] = [
         "id": "4682",
         "title": "Filet de bœuf façon Rossini",
         "description": "Un plat classique et festif, idéal pour utiliser les restes de foie gras des fêtes.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Ffilet-boeuf-rossini-gastronomique-scaled-1.jpeg&v=1774614248000-1775071130155",
-        "category": "plats",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Ffilet-boeuf-rossini-gastronomique-scaled-1.jpeg&v=1774614248000-1775222867403",
+        "category": "simplissime",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
@@ -1378,7 +1379,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4679",
         "title": "Bao Buns au Magret",
         "description": "Recette pour préparer la pâte de 10 Bao Buns, garnis au magret de canard.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fbao.jpeg&v=1774614295000-1775071130155",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fbao.jpeg&v=1774614295000-1775222867403",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -1434,7 +1435,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4676",
         "title": "Cheesecake à la vanille",
         "description": "Un cheesecake gourmand à la vanille, composé d'une croûte de biscuits au cacao, d'un croustillant praliné noisette avec des crêpes dentelles, d'une crème onctueuse au fromage frais et mascarpone, et d'une ganache au chocolat blanc.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FCheesecake.jpeg&v=1774614341000-1775071130154",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FCheesecake.jpeg&v=1774614341000-1775222867402",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -3551,7 +3552,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4088",
         "title": "Saint-Félicien fondant aux oignons caramélisés",
         "description": "Un Saint-Félicien ultra fondant, entouré d’oignons caramélisés, de poivrons et de jambon cru croustillant… le tout à tartiner sur du pain chaud 🤤",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FRecette-Tentation-a-partager-Saint-Valentin.jpg&v=1774530658000-1775071130155",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FRecette-Tentation-a-partager-Saint-Valentin.jpg&v=1774530658000-1775222867404",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 60,
@@ -5417,7 +5418,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4022",
         "title": "Shish Taouk Libanais",
         "description": "Recette de brochettes de poulet marinées à la libanaise, servies avec une sauce à l'ail et un mélange d'oignons et persil. Idéal pour un repas convivial au barbecue.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fh%C3%A4hnchen-shish-taouk-web.jpg&v=1774521646000-1775071130173",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fh%C3%A4hnchen-shish-taouk-web.jpg&v=1774521646000-1775222867426",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 120,
@@ -5495,7 +5496,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4019",
         "title": "Eggplant Fatteh (Fatteh aux aubergines)",
         "description": "Le Fatteh aux aubergines est un plat moyen-oriental apprécié, facile à préparer et parfait pour impressionner avec un minimum d'effort. Cette version végétalienne utilise du yaourt de soja non sucré.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774521664248.jpg&v=1774521677000-1775071130172",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774521664248.jpg&v=1774521677000-1775222867425",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 20,
@@ -5586,7 +5587,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4016",
         "title": "Kessra Farcie Algérienne",
         "description": "Une Kessra Farcie Algérienne, simple à réaliser et délicieuse, parfaite pour un repas convivial.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773831361248.jpg&v=1774521741000-1775071130171",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773831361248.jpg&v=1774521741000-1775222867424",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -5662,7 +5663,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4013",
         "title": "Mahmoos Gutaifi",
         "description": "Un plat de poulet et riz originaire d'Arabie Saoudite, parfumé aux épices et servi avec une sauce au yaourt.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fimage-recette-de-Mahmoos-Gutaifi.jpeg&v=1774521759000-1775071130171",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fimage-recette-de-Mahmoos-Gutaifi.jpeg&v=1774521759000-1775222867424",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -5764,8 +5765,8 @@ export const mockRecipes: Recipe[] = [
         "id": "4011",
         "title": "Soutzoukakia de Smyrne (Boulettes de viande sauce tomate)",
         "description": "Une recette familiale de boulettes de viande (soutzoukakia) de Smyrne, servies dans une sauce tomate parfumée au cumin et à la cannelle, transmise de génération en génération.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773831157362.jpg&v=1774521828000-1775071130170",
-        "category": "plats",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773831157362.jpg&v=1774521828000-1775222867423",
+        "category": "pâques",
         "difficulty": "moyen",
         "prepTime": 30,
         "cookTime": 10,
@@ -5868,7 +5869,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4008",
         "title": "Koobideh Kebab et Salade Shirazi",
         "description": "Une recette traditionnelle iranienne de Koobideh Kebab, accompagnée d'une rafraîchissante Salade Shirazi et d'un beurre citronné.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773831071825.jpg&v=1774521891000-1775071130170",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773831071825.jpg&v=1774521891000-1775222867422",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -5963,7 +5964,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4005",
         "title": "Kefta au tahini au four",
         "description": "Un plat parfumé, fondant et ultra savoureux.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774521905652.jpg&v=1774521913000-1775071130170",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774521905652.jpg&v=1774521913000-1775222867421",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 40,
@@ -6064,7 +6065,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4002",
         "title": "Lahsa Yéménite",
         "description": "Un plat yéménite traditionnel à base d'oignons, de tomates et d'œufs, mijoté avec des épices et du fromage liquide, puis servi avec du pain. Idéal pour le petit-déjeuner.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fmaxresdefault.jpeg&v=1774521932000-1775071130169",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fmaxresdefault.jpeg&v=1774521932000-1775222867420",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 20,
@@ -6141,7 +6142,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4000",
         "title": "Kebbé (Kibbeh)",
         "description": "Recette de la kebbé, une spécialité du Moyen-Orient tellement bonne !",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FNOURA_CARTE_2024_%C2%A9MARY_DEVINAT_55-Personnalise.jpeg&v=1774521994000-1775071130169",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FNOURA_CARTE_2024_%C2%A9MARY_DEVINAT_55-Personnalise.jpeg&v=1774521994000-1775222867420",
         "category": "entrees",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -6233,7 +6234,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3997",
         "title": "Kesra farcie à la viande hachée",
         "description": "Une délicieuse Kesra farcie à la viande hachée, prête en seulement 30 minutes. Cette recette permet de réaliser deux galettes de taille moyenne.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522013384.jpg&v=1774522029000-1775071130168",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522013384.jpg&v=1774522029000-1775222867419",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 30,
@@ -6326,7 +6327,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3994",
         "title": "Kibbeh au Bulgur",
         "description": "Une délicieuse et savoureuse recette de kibbeh au boulgour du Moyen-Orient.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522049419.jpg&v=1774522053000-1775071130168",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522049419.jpg&v=1774522053000-1775222867418",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 60,
@@ -6406,7 +6407,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3991",
         "title": "Riz jaune du Moyen-Orient",
         "description": "Un délicieux riz jaune du Moyen-Orient, parfumé au curcuma et au thym, agrémenté de légumes (carotte, céleri, oignon), d'amandes grillées et de raisins secs. Une recette végétarienne et saine, parfaite comme plat principal ou accompagnement.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522065626.jpg&v=1774522098000-1775071130167",
+        "image": "",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 1,
@@ -6488,7 +6489,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3989",
         "title": "Falafels libanais maison",
         "description": "Découvrez comment préparer de délicieux falafels libanais maison, inspirés des saveurs authentiques du Liban, avec des options de cuisson à la poêle ou au four pour une version plus légère.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773830414276.jpg&v=1774522161000-1775071130167",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773830414276.jpg&v=1774522161000-1775222867417",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 720,
@@ -6573,7 +6574,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3986",
         "title": "Pita farci kefta de poulet (Arayes)",
         "description": "Ce plat, aussi appelé Arayes, est une spécialité du Moyen-Orient. Il s'agit de pains pita farcis d'une préparation savoureuse à base de kefta de poulet, d'oignon, d'herbes et d'épices, puis dorés à la poêle et servis avec une sauce au tahini et fromage blanc.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773830271409.jpg&v=1774522221000-1775071130166",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773830271409.jpg&v=1774522221000-1775222867417",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -6649,7 +6650,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3983",
         "title": "Shawarma au poulet avec sauce à l'ail et frites",
         "description": "Une recette facile de shawarma au poulet maison, accompagné d'une sauce à l'ail crémeuse, d'oignons au sumac et de frites, le tout enveloppé dans un wrap grillé.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FH%C3%A4hnchen-Schawarma-selber-machen-Rezept.jpg&v=1774522285000-1775071130165",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FH%C3%A4hnchen-Schawarma-selber-machen-Rezept.jpg&v=1774522285000-1775222867416",
         "category": "plats",
         "difficulty": "facile",
         "prepTime": 15,
@@ -6747,7 +6748,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3978",
         "title": "Msemmen - Crêpe marocaine feuilletée",
         "description": "Le Msemmen est une crêpe marocaine feuilletée traditionnelle, préparée à base de farine et de semoule, puis pliée et cuite à la poêle jusqu'à obtenir une texture dorée et croustillante. Il peut être dégusté chaud, nature, avec du sirop ou en accompagnement de plats salés.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773829966741.jpg&v=1774522353000-1775071130165",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773829966741.jpg&v=1774522353000-1775222867416",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 20,
@@ -6809,7 +6810,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3975",
         "title": "Bambas de Nata",
         "description": "Une pâtisserie espagnole classique : de moelleux petits pains à la levure garnis de crème fouettée légèrement sucrée. C'est une gourmandise simple et très appréciée, que l'on trouve couramment dans les boulangeries en Espagne.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773829876550.jpg&v=1774522419000-1775071130164",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773829876550.jpg&v=1774522419000-1775222867415",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 10,
@@ -6891,7 +6892,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3972",
         "title": "Patatas con carne (Ragoût de pommes de terre au bœuf)",
         "description": "Un ragoût de pommes de terre au bœuf, plat emblématique de la cuisine espagnole, simple, savoureux et nourrissant, idéal pour toute la famille. Ses origines rurales en font un plat économique et réconfortant, combinant des ingrédients basiques mais essentiels.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522437973.jpg&v=1774522453000-1775071130164",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522437973.jpg&v=1774522453000-1775222867415",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 10,
@@ -6967,7 +6968,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3969",
         "title": "Œufs à l'espagnole",
         "description": "Une recette savoureuse d'œufs à l'espagnole, parfaite pour une personne qui mange bien, avec des poivrons, des tomates et des épices.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Foeufs-a-lespagnole-legumes-dete-et-jambon-1-scaled-1.jpeg&v=1774522519000-1775071130163",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Foeufs-a-lespagnole-legumes-dete-et-jambon-1-scaled-1.jpeg&v=1774522519000-1775222867414",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -7044,7 +7045,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3967",
         "title": "San Sebastian Cheesecake",
         "description": "Une recette détaillée pour un cheesecake basque brûlé, crémeux à l'intérieur et caramélisé à l'extérieur, parfait pour un dessert gourmand.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2F20250203203320-San-Sebastian-Cheesecake-Recipe-Cvjeya-ttuS_9339a0de-e42b-4182-94cd-11cb0b296bc2.jpeg&v=1774522583000-1775071130163",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2F20250203203320-San-Sebastian-Cheesecake-Recipe-Cvjeya-ttuS_9339a0de-e42b-4182-94cd-11cb0b296bc2.jpeg&v=1774522583000-1775222867414",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 120,
@@ -7090,7 +7091,7 @@ export const mockRecipes: Recipe[] = [
             "Après avoir bien mélangé, incorporer les œufs un par un.",
             "Ajouter le jus de citron, le sel, l'extrait de vanille, la farine et bien mélanger.",
             "Ajouter ensuite la crème et incorporer délicatement à la cuillère ou à la spatule (ne pas utiliser de mixeur).",
-            "Verser le mélange bien homogène dans un moule à gâteau de 9&#215;4 pouces après avoir placé du papier sulfurisé.",
+            "Verser le mélange bien homogène dans un moule à gâteau de 9×4 pouces après avoir placé du papier sulfurisé.",
             "Préchauffer le four à 450F (environ 230°C).",
             "Cuire au four jusqu'à ce que le dessus soit brûlé.",
             "Laisser refroidir à température ambiante pendant 2 heures.",
@@ -7107,7 +7108,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3965",
         "title": "Patatas Bravas comme à Madrid",
         "description": "Revivez l'ambiance des vacances à Madrid avec ces Patatas Bravas croustillantes et leur sauce épicée, parfaites pour un apéro convivial.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773829018639.jpg&v=1774522653000-1775071130162",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773829018639.jpg&v=1774522653000-1775222867413",
         "category": "aperitifs",
         "difficulty": "moyen",
         "prepTime": 30,
@@ -7175,7 +7176,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3962",
         "title": "Papas aliñás",
         "description": "Une recette espagnole classique et rafraîchissante, parfaite pour l'été. Cette tapa andalouse se compose de pommes de terre, d'oignon, d'œufs durs et de thon (ou melva), le tout assaisonné généreusement d'huile d'olive vierge extra et de vinaigre de Xérès.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FPapas-ali%C3%B1%C3%A1s.jpeg&v=1774522678000-1775071130162",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FPapas-ali%C3%B1%C3%A1s.jpeg&v=1774522678000-1775222867413",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 120,
@@ -7236,7 +7237,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3960",
         "title": "Torrijas Caramelisées",
         "description": "Une recette de Torrijas traditionnelles espagnoles, tendres à l'intérieur et croustillantes à l'extérieur grâce à un délicieux caramel maison, parfaites pour la Semaine Sainte et à accompagner d'une boule de glace.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773828797191.jpg&v=1774522742000-1775071130161",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773828797191.jpg&v=1774522742000-1775222867412",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 30,
@@ -7305,7 +7306,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3957",
         "title": "BUENO NYC COOKIES",
         "description": "Une recette pour des cookies géants et ultra gourmands, inspirés de New York, fourrés à la pâte à tartiner Bueno et agrémentés de morceaux de Kinder Bueno.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522759254.jpg&v=1774522769000-1775071130160",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522759254.jpg&v=1774522769000-1775222867411",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 60,
@@ -7380,7 +7381,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3955",
         "title": "Fluffy American Pancakes",
         "description": "Une recette simple pour préparer des pancakes américains moelleux, parfaits pour un petit-déjeuner gourmand.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773828643418.jpg&v=1774522829000-1775071130160",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773828643418.jpg&v=1774522829000-1775222867410",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -7429,7 +7430,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3949",
         "title": "Les meilleurs cinnamon rolls",
         "description": "Découvrez la recette des meilleurs cinnamon rolls, avec une pâte moelleuse, une garniture généreuse à la cannelle et un glaçage crémeux au Saint Môret. Parfaits pour un goûter réconfortant ou un brunch gourmand.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773827996438-scaled.jpg&v=1774522897000-1775071130159",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773827996438-scaled.jpg&v=1774522897000-1775222867409",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 10,
@@ -7497,7 +7498,7 @@ export const mockRecipes: Recipe[] = [
         "steps": [
             "**Préparation de la pâte :** Dans un grand bol, mélanger la farine, le sucre blanc et le sel. Ajouter la levure fraîche émiettée, le lait tiède, le beurre fondu et les œufs. Pétrir la pâte pendant environ 10 minutes jusqu'à ce qu'elle soit lisse et élastique. Couvrir et laisser lever dans un endroit chaud pendant 1h30 à 2h, ou jusqu'à ce qu'elle double de volume.",
             "**Préparation de la garniture :** Pendant ce temps, mélanger la cassonade et la cannelle en poudre dans un petit bol.",
-            "**Façonnage des rolls :** Dégazer la pâte et l'étaler en un grand rectangle (environ 40&#215;50 cm) sur un plan de travail légèrement fariné. Étaler uniformément les 50 g de beurre doux ramolli sur toute la surface de la pâte. Saupoudrer ensuite généreusement le mélange cassonade-cannelle.",
+            "**Façonnage des rolls :** Dégazer la pâte et l'étaler en un grand rectangle (environ 40×50 cm) sur un plan de travail légèrement fariné. Étaler uniformément les 50 g de beurre doux ramolli sur toute la surface de la pâte. Saupoudrer ensuite généreusement le mélange cassonade-cannelle.",
             "**Roulage et découpe :** Rouler la pâte serrée sur elle-même en partant du côté le plus long pour former un boudin. Couper le boudin en 12 à 15 tronçons égaux d'environ 3-4 cm d'épaisseur.",
             "**Seconde levée et cuisson :** Placer les cinnamon rolls dans un plat de cuisson beurré ou tapissé de papier sulfurisé, en laissant un peu d'espace entre chaque. Couvrir et laisser lever une seconde fois pendant 30 à 45 minutes. Préchauffer le four à 180°C. Badigeonner les rolls d'un peu de lait avant d'enfourner pour un dessus doré. Cuire pendant 20 à 25 minutes, jusqu'à ce qu'ils soient bien dorés et moelleux.",
             "**Préparation du glaçage :** Pendant que les cinnamon rolls refroidissent légèrement, mélanger le Saint Môret, le sucre glace et 1 à 2 cuillères à soupe de lait (et la vanille si désiré) jusqu'à obtenir un glaçage lisse et crémeux.",
@@ -7517,7 +7518,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3946",
         "title": "Cookies sans beurre",
         "description": "Découvrez une recette de cookies moelleux et gourmands, préparés sans beurre mais avec de la margarine, pour une texture parfaite et un goût délicieux. Faciles à réaliser, ils sont idéaux pour une pause sucrée.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522912556.jpg&v=1774522921000-1775071130158",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522912556.jpg&v=1774522921000-1775222867408",
         "category": "desserts",
         "difficulty": "facile",
         "prepTime": 30,
@@ -7586,7 +7587,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3943",
         "title": "Tenders de poulet avec Mac & Cheese",
         "description": "Une recette populaire de tenders de poulet croustillants au miel piquant, accompagnés d'un Mac & Cheese crémeux et gratiné. Idéal pour un repas convivial, ce plat est une version revisitée d'une recette virale.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522936966.jpg&v=1774522950000-1775071130157",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522936966.jpg&v=1774522950000-1775222867408",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 20,
@@ -7700,7 +7701,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3938",
         "title": "Classic Tomato Basil Bruschetta",
         "description": "Une recette simple et classique de bruschetta avec une garniture fraîche de tomates, basilic, oignon rouge, assaisonnée d'huile d'olive et de sauce balsamique, servie sur du pain grillé avec de la mozzarella fraîche.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773827443436.jpg&v=1774523011000-1775071130157",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773827443436.jpg&v=1774523011000-1775222867407",
         "category": "aperitifs",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -7837,7 +7838,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3932",
         "title": "Grilled Lamb Chops With Vegetables",
         "description": "Grilled Lamb Chops With Vegetables - Perfect Choice For Christmas Dinner 😋",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Ftravers.jpg&v=1774523041000-1775071130156",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Ftravers.jpg&v=1774523041000-1775222867406",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -7933,7 +7934,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3930",
         "title": "Easy Grilled Eggplant Contorno",
         "description": "Une recette simple d'aubergines grillées, assaisonnées d'une vinaigrette méditerranéenne à base d'huile d'olive, de vinaigre de vin blanc, d'ail, de persil frais et de piment.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773827201356.jpg&v=1774523104000-1775071130156",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773827201356.jpg&v=1774523104000-1775222867405",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -7994,7 +7995,7 @@ export const mockRecipes: Recipe[] = [
         "id": "3927",
         "title": "Arayes Skewers (Rouleaux de viande grillés)",
         "description": "Élevez votre barbecue avec ces amusants rouleaux de viande grillés! C'est un plat qui plaît à coup sûr et très amusant à préparer en famille.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Farayes-Kafta-.jpg&v=1774523123000-1775071130155",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Farayes-Kafta-.jpg&v=1774523123000-1775222867404",
         "category": "plats",
         "difficulty": "facile",
         "prepTime": 15,

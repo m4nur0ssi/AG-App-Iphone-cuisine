@@ -30,10 +30,17 @@ async function isRecipeWithGemini(description, title) {
         "summary": "Petit résumé", 
         "ingredients": ["ing1", "ing2"], 
         "steps": ["étape 1", "étape 2"], 
-        "category": "aperitifs|entrees|plats|desserts|patisserie|vegetarien", 
+        "category": "aperitifs|entrees|plats|desserts|patisserie|vegetarien|glaces|boissons", 
         "tags": ["tag1"], 
         "photoSearchKeyword": "mot clé pour photo" 
     }
+    
+    GUIDE CATÉGORIES :
+    - "glaces" : Sorbets, glaces, parfaits glacés.
+    - "boissons" : Rafraîchissements, jus, cocktails, smoothies.
+    - "aperitifs" : Amuse-bouches, tapas, dips.
+    - "patisserie" : Pâtisseries complexes, gâteaux élaborés.
+    - "desserts" : Desserts simples, fruits, crèmes.
     
     IMPORTANCE POUR LES TAGS : 
     1. RÉGIME/TENDANCE : Si sain/équilibré -> "Healthy". Si végétarien -> "Végé". Si convivial/enfants -> "Famille". Si grillade -> "Barbecue". Si ingrédients basiques/économiques -> "Pas cher".
@@ -251,7 +258,11 @@ async function processRecipe({ videoUrl, description, author, title, country }) 
         };
     }
 
-    if (['dessert', 'patisserie', 'sucré'].some(c => analysis.category.toLowerCase().includes(c))) analysis.category = 'desserts';
+    const lowCat = analysis.category.toLowerCase();
+    if (['dessert', 'patisserie', 'sucré'].some(c => lowCat.includes(c))) analysis.category = 'desserts';
+    if (['glace', 'sorbet'].some(c => lowCat.includes(c))) analysis.category = 'glaces';
+    if (['boisson', 'rafraîchissement', 'jus', 'cocktail'].some(c => lowCat.includes(c))) analysis.category = 'boissons';
+    if (['entrée', 'aperitif', 'apéro'].some(c => lowCat.includes(c))) analysis.category = 'aperitifs';
 
     console.log(`   🖼️ Recherche d'une photo pour: ${analysis.photoSearchKeyword}...`);
     let photoUrl = '';

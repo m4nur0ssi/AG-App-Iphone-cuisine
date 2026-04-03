@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Recipe } from '@/types';
@@ -24,6 +24,8 @@ interface RecipeCardiOS26Props {
     isIntroMode?: boolean;
     onSheetOpen?: () => void;
     onSheetClose?: () => void;
+    customGradient?: string;
+    customOnClick?: () => void;
 }
 
 export default function RecipeCardiOS26({ 
@@ -37,7 +39,9 @@ export default function RecipeCardiOS26({
     onCloseSplash,
     isIntroMode = false,
     onSheetOpen,
-    onSheetClose
+    onSheetClose,
+    customGradient,
+    customOnClick
 }: RecipeCardiOS26Props) {
     const [isPlaying, setIsPlaying] = useState(false);
     const [isSheetOpen, setIsSheetOpen] = useState(false);
@@ -48,12 +52,28 @@ export default function RecipeCardiOS26({
     }, [isPlaying, onPlayToggle]);
 
     const getCategoryGradient = (category: string) => {
-        switch (category?.toLowerCase()) {
-            case 'aperitifs': return 'linear-gradient(90deg, #F59E0B, #FBBF24)'; /* Gold to bright amber */
-            case 'entrees': return 'linear-gradient(90deg, #10B981, #34D399)'; /* Emerald to mint */
-            case 'plats': return 'linear-gradient(90deg, #3B82F6, #60A5FA)'; /* Azure to sky blue */
-            case 'desserts': return 'linear-gradient(90deg, #EC4899, #F472B6)'; /* Pink to soft pink */
-            default: return 'linear-gradient(90deg, #10B981, #60A5FA)';
+        if (customGradient) return customGradient;
+
+        const cat = category?.toLowerCase().replace(/[^\w\s]/gi, '').trim() || 'all';
+
+        switch (cat) {
+            case 'aperitifs': 
+            case 'apéritifs':
+            case 'apéro gourmand': return 'linear-gradient(90deg, #F59E0B, #EA580C)';
+            case 'entrees': 
+            case 'entrées':
+            case 'entrées fraîches': return 'linear-gradient(90deg, #10B981, #059669)';
+            case 'plats': 
+            case 'plats de chef': return 'linear-gradient(90deg, #3B82F6, #4F46E5)';
+            case 'desserts':
+            case 'pâtisserie':
+            case 'douceurs sucrées': return 'linear-gradient(90deg, #EC4899, #9333EA)';
+            case 'thématiques du moment': return 'linear-gradient(90deg, #10b981, #3b82f6)'; // Blue-green
+            case 'les nouveautés': return 'linear-gradient(90deg, #10b981, #3b82f6)';
+            case 'nouveautés spéciales pâques': 
+            case 'spécial pâques': return 'linear-gradient(90deg, #F59E0B, #FFCC33)';
+            case 'coups de cœur simplissimes': return 'linear-gradient(90deg, #4facfe, #00f2fe)';
+            default: return 'linear-gradient(90deg, #10B981, #3B82F6)';
         }
     };
     const titleGradient = getCategoryGradient(recipe.category);
@@ -71,11 +91,42 @@ export default function RecipeCardiOS26({
     const recipeCountryTag = recipe.tags?.find(t => countries.includes(t.toLowerCase()));
     const flag = recipeCountryTag ? countryFlags[recipeCountryTag.toLowerCase()] : null;
 
-    // Filter out country tags for hashtags
-    const hashtags = recipe.tags?.filter(t => !countries.includes(t.toLowerCase())).slice(0, 3) || [];
+    // --- Hashtag Logic (iOS 26 Unified Style) ---
+    const hashtags = useMemo(() => {
+        let baseTags = recipe.tags?.filter(t => !countries.includes(t.toLowerCase())) || [];
+        
+        // Regrouper 'simple', 'facile', 'simplissime' sous un seul '#SIMPLISSIME'
+        const hasSimplissimeCore = baseTags.some(t => {
+            const low = t.toLowerCase();
+            return low === 'simple' || low === 'facile' || low === 'simplissime';
+        });
+
+        // Filtrer les originaux simplissimes
+        let filtered = baseTags.filter(t => {
+            const low = t.toLowerCase();
+            return low !== 'simple' && low !== 'facile' && low !== 'simplissime';
+        });
+
+        const final: string[] = [];
+        if (hasSimplissimeCore) final.push('SIMPLISSIME');
+        
+        // Ajouter le reste jusqu'à 3
+        filtered.forEach(t => {
+            if (final.length < 3) final.push(t);
+        });
+
+        return final;
+    }, [recipe.tags, countries]);
 
     const handleOpenDetail = (e: React.MouseEvent) => {
         e.stopPropagation();
+        if (customOnClick) {
+            customOnClick();
+            return;
+        }
+        if (typeof navigator !== 'undefined' && navigator.vibrate) {
+            navigator.vibrate(10);
+        }
         onSheetOpen?.();
         setIsSheetOpen(true);
     };
@@ -121,7 +172,14 @@ export default function RecipeCardiOS26({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 onClick={() => {
+                    if (customOnClick) {
+                        customOnClick();
+                        return;
+                    }
                     if (onCloseSplash) onCloseSplash();
+                    if (typeof navigator !== 'undefined' && navigator.vibrate) {
+                        navigator.vibrate(10);
+                    }
                     onSheetOpen?.();
                     setIsSheetOpen(true);
                 }}
@@ -141,14 +199,34 @@ export default function RecipeCardiOS26({
 
                 {/* Overlays */}
                 
-                {/* Top Center: Country Flag + Name Pill */}
-                {flag && !isIntroMode && size === 'large' && !isGrid && (
-                    <div className={styles.centerTopBadge}>
-                        <div className={styles.countryPill}>
-                            <span className={styles.flagIcon}>{flag}</span>
-                            <span className={styles.countryName}>{recipeCountryTag?.toUpperCase()}</span>
+                {/* Top Center: Tactical Actions (Premium Glass Well) */}
+                {!isIntroMode && (
+                    <motion.div 
+                        className={styles.topCenterActions}
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3 }}
+                    >
+                        <div className={styles.actionWell}>
+                            <ShareButton 
+                                url={`${typeof window !== 'undefined' ? window.location.origin : ''}/recipe/${recipe.id}`} 
+                                title={recipe.title}
+                                className={styles.premiumActionBtn}
+                            />
+                            <FavoriteButton
+                                recipeId={recipe.id}
+                                initialFavorite={recipe.isFavorite}
+                                imageUrl={recipe.image}
+                                className={styles.premiumActionBtn}
+                            />
+                            <VoteButton 
+                                recipeId={recipe.id}
+                                initialVotes={recipe.votes || 0}
+                                className={styles.premiumActionBtn}
+                                hideCount={true}
+                            />
                         </div>
-                    </div>
+                    </motion.div>
                 )}
 
                 {/* Central Play Button (if has video) */}

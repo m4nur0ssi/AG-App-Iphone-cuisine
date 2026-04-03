@@ -11,9 +11,11 @@ interface RecipeCarouselProps {
     recipes: Recipe[];
     title?: string;
     size?: 'large' | 'small';
+    onTitleClick?: (title: string) => void;
+    onCardClick?: (recipe: Recipe) => void;
 }
 
-export default function RecipeCarousel({ recipes, title = "Nouvelles Recettes ✨", size = 'large' }: RecipeCarouselProps) {
+export default function RecipeCarousel({ recipes, title = "Nouvelles Recettes ✨", size = 'large', onTitleClick, onCardClick }: RecipeCarouselProps) {
     const containerRef = useRef<HTMLDivElement>(null);
     
     // On limite à 15 recettes + 1 carte "Voir Tout" à la fin
@@ -22,20 +24,26 @@ export default function RecipeCarousel({ recipes, title = "Nouvelles Recettes �
 
     const getCategoryGradient = (cat: string) => {
         // Nettoyer le titre pour le mapping (ex: "Douceur sucrée ✨" -> "douceur sucrée")
-        const clean = cat.replace('✨', '').trim().toLowerCase();
+        const clean = cat.replace(/[^\w\s]/gi, '').trim().toLowerCase();
         
         switch (clean) {
             case 'aperitifs': 
+            case 'apéritifs':
             case 'apéro gourmand': return 'linear-gradient(135deg, #F59E0B, #EA580C)';
             case 'entrees': 
+            case 'entrées':
             case 'entrées fraîches': return 'linear-gradient(135deg, #10B981, #059669)';
             case 'plats': 
             case 'plats de chef': 
             case 'plat de chef': return 'linear-gradient(135deg, #3B82F6, #4F46E5)';
             case 'desserts':
+            case 'pâtisserie':
             case 'douceurs sucrées':
             case 'douceur sucrée': return 'linear-gradient(135deg, #EC4899, #9333EA)';
-            case 'thématiques du moment': return 'linear-gradient(135deg, #7f0df2, #a855f7)';
+            case 'thématiques du moment': return 'linear-gradient(135deg, #10b981, #3b82f6)';
+            case 'nouveautés spéciales pâques':
+            case 'spécial pâques': return 'linear-gradient(135deg, #F59E0B, #FFCC33)';
+            case 'coups de cœur simplissimes': return 'linear-gradient(135deg, #4facfe, #00f2fe)';
             case 'les nouveautés': return 'linear-gradient(135deg, #10b981, #3b82f6)';
             default: return 'linear-gradient(135deg, #10B981, #3B82F6)';
         }
@@ -52,6 +60,7 @@ export default function RecipeCarousel({ recipes, title = "Nouvelles Recettes �
                         title={title} 
                         gradient={cardGradient} 
                         size={size} 
+                        onClick={() => onTitleClick?.(title)}
                     />
 
                     {limitedRecipes.map((recipe, index) => (
@@ -61,6 +70,8 @@ export default function RecipeCarousel({ recipes, title = "Nouvelles Recettes �
                             index={index} 
                             containerRef={containerRef}
                             size={size}
+                            parentTitle={title}
+                            onCardClick={onCardClick}
                         />
                     ))}
 
@@ -81,13 +92,13 @@ export default function RecipeCarousel({ recipes, title = "Nouvelles Recettes �
     );
 }
 
-function CategoryTitleCard({ title, gradient, size }: { title: string, gradient: string, size: 'large' | 'small' }) {
-    const cleanTitle = title.replace('✨', '').trim();
+function CategoryTitleCard({ title, gradient, size, onClick }: { title: string, gradient: string, size: 'large' | 'small', onClick?: () => void }) {
+    const cleanTitle = title.trim();
     const words = cleanTitle.split(' ');
 
     const renderArtisticTitle = () => {
         return words.map((word, i) => {
-            const isConnectionWord = ['du', 'de', 'la', 'le', 'pour', 'les', 'au'].includes(word.toLowerCase());
+            const isConnectionWord = ['du', 'de', 'la', 'le', 'pour', 'les', 'au', 'en'].includes(word.toLowerCase());
             // Logique artistique : alterner ou forcer le script sur les mots de liaison/deuxièmes mots
             const isScript = isConnectionWord || (words.length > 1 && i === 1);
             
@@ -105,8 +116,9 @@ function CategoryTitleCard({ title, gradient, size }: { title: string, gradient:
     return (
         <div className={`${styles.itemWrapper} ${size === 'small' ? styles.itemSmall : styles.itemLarge}`}>
             <div 
-                className={`${styles.titleCard} ${size === 'small' ? styles.titleCardSmall : ''}`}
+                className={`${styles.titleCard} ${size === 'small' ? styles.titleCardSmall : ''} ${onClick ? styles.clickable : ''}`}
                 style={{ background: gradient }}
+                onClick={onClick}
             >
                 <div className={styles.titleCardContent}>
                     <h2 className={styles.categoryMainTitle}>
@@ -119,10 +131,30 @@ function CategoryTitleCard({ title, gradient, size }: { title: string, gradient:
     );
 }
 
-function CarouselItem({ recipe, containerRef, size }: { recipe: Recipe, index: number, containerRef: React.RefObject<HTMLDivElement>, size: 'large' | 'small' }) {
+function CarouselItem({ recipe, containerRef, size, parentTitle, onCardClick }: { recipe: Recipe, index: number, containerRef: React.RefObject<HTMLDivElement>, size: 'large' | 'small', parentTitle?: string, onCardClick?: (recipe: Recipe) => void }) {
     const itemRef = useRef<HTMLDivElement>(null);
     const { scrollXProgress } = useScroll({ target: itemRef, container: containerRef, offset: ["start end", "end start"] });
     const opacity = 1;
+
+    // Mapping parent title to specific gradient for recipe titles
+    const getRecipeGradient = (pTitle: string) => {
+        const clean = pTitle.replace(/[^\w\s]/gi, '').trim().toLowerCase();
+        switch (clean) {
+            case 'thématiques du moment': 
+            case 'les thématiques du moment': return 'linear-gradient(90deg, #10b981, #3b82f6)'; // Blue-green
+            case 'les nouveautés': return 'linear-gradient(90deg, #10b981, #3b82f6)';
+            case 'nouveautés spéciales pâques': 
+            case 'spécial pâques': return 'linear-gradient(90deg, #F59E0B, #FFCC33)';
+            case 'coups de cœur simplissimes': return 'linear-gradient(90deg, #4facfe, #00f2fe)';
+            case 'apéro gourmand': return 'linear-gradient(90deg, #F59E0B, #EA580C)';
+            case 'entrées fraîches': return 'linear-gradient(90deg, #10B981, #059669)';
+            case 'plats de chef': return 'linear-gradient(90deg, #3B82F6, #4F46E5)';
+            case 'douceurs sucrées': return 'linear-gradient(90deg, #EC4899, #9333EA)';
+            default: return undefined;
+        }
+    };
+
+    const customGradient = parentTitle ? getRecipeGradient(parentTitle) : undefined;
 
     return (
         <motion.div
@@ -130,7 +162,12 @@ function CarouselItem({ recipe, containerRef, size }: { recipe: Recipe, index: n
             className={`${styles.itemWrapper} ${size === 'small' ? styles.itemSmall : styles.itemLarge}`}
             style={{ opacity }}
         >
-            <RecipeCardiOS26 recipe={recipe} size={size} />
+            <RecipeCardiOS26 
+                recipe={recipe} 
+                size={size} 
+                customGradient={customGradient} 
+                customOnClick={onCardClick ? () => onCardClick(recipe) : undefined}
+            />
         </motion.div>
     );
 }

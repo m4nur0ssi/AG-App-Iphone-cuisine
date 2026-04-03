@@ -41,7 +41,7 @@
     -webkit-backdrop-filter: blur(30px) saturate(180%);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 35px;
-    padding: 8px;
+    padding: 0 8px; /* Horizontal padding only */
     flex: 1; /* Prend l'espace restant */
     height: 72px;
     box-shadow: 
@@ -73,16 +73,21 @@
     background: #e0352b;
 }
 
+.indicatorTrack {
+    position: absolute;
+    inset: 8px; /* Offset for internal items */
+    pointer-events: none;
+    z-index: 0;
+}
+
 .stitchIndicator {
     position: absolute;
-    top: 8px;
-    bottom: 8px;
+    top: 0;
+    bottom: 0;
     left: 0;
     background: rgba(255, 255, 255, 0.12); /* Brighter pill */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 28px;
-    z-index: 0;
-    pointer-events: none;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -119,6 +124,8 @@
     justify-content: center;
     color: rgba(255, 255, 255, 0.4);
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    width: 24px;
+    height: 24px;
 }
 
 .icon svg {
@@ -163,16 +170,17 @@
     box-shadow: 0 4px 10px rgba(255, 59, 48, 0.4);
 }
 
-/* Light Theme Overrides */
+/* Light Theme Overrides (More Transparent / Pure Glass) */
 [data-theme='light'] .stitchDock {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.35); /* Transparent glass look */
     border-color: rgba(0, 0, 0, 0.05);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme='light'] .stitchIndicator {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.04);
     border-color: rgba(0, 0, 0, 0.03);
+    box-shadow: none;
 }
 
 [data-theme='light'] .icon {

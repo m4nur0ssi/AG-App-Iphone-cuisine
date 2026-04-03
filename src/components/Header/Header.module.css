@@ -114,21 +114,23 @@
 }
 
 .mainTitle {
-    font-size: 22px;
-    font-weight: 900;
-    letter-spacing: -0.8px;
+    font-size: 20px;
+    font-weight: 950;
+    letter-spacing: -1.2px;
     font-family: 'Outfit', sans-serif;
     background: linear-gradient(
         90deg,
-        #10b981 0%,
-        #3b82f6 35%,
-        #a855f7 70%,
+        #60a5fa 0%,
+        #3b82f6 25%,
+        #8b5cf6 50%,
+        #ec4899 75%,
         #f43f5e 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 2px 10px rgba(59, 130, 246, 0.25));
+    filter: drop-shadow(0 4px 15px rgba(59, 130, 246, 0.4));
+    transition: all 0.4s ease;
 }
 
 .headerClearBtn {

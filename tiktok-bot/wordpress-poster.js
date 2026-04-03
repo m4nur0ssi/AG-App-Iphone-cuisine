@@ -171,8 +171,10 @@ async function postToWordPressXMLRPC(recipe) {
 
     let categoryName = 'Plats';
     const catSearch = (recipe.category || '').toLowerCase();
-    if (catSearch.includes('apéritif') || catSearch.includes('boisson') || catSearch.includes('aperitifs')) categoryName = 'Apéritifs';
+    if (catSearch.includes('apéritif') || catSearch.includes('boisson') || catSearch.includes('aperitifs') || catSearch.includes('boissons')) categoryName = 'Apéritifs';
     else if (catSearch.includes('dessert') || catSearch.includes('pâtisserie') || catSearch.includes('gâteau') || catSearch.includes('sucré')) categoryName = 'Desserts';
+    else if (catSearch.includes('glace') || catSearch.includes('sorbet') || catSearch.includes('glaces')) categoryName = 'Les Glaces';
+    else if (catSearch.includes('rafraîchissement') || catSearch.includes('rafraichissement')) categoryName = 'Rafraîchissements';
     else if (catSearch.includes('entrée')) categoryName = 'Entrées';
 
     let featuredImageId = null;
