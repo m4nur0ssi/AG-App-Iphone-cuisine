@@ -8,27 +8,27 @@ const SplashScreen = dynamic(() => import('@/components/SplashScreen/SplashScree
 const BottomNav = dynamic(() => import('@/components/BottomNav/BottomNav'), { ssr: false })
 
 const outfit = Outfit({ 
-    subsets: ['latin'],
+    subsets: ['latin', 'latin-ext'],
     variable: '--font-outfit',
     display: 'swap',
 })
 
 const dancingScript = Dancing_Script({ 
-    subsets: ['latin'],
+    subsets: ['latin', 'latin-ext'],
     variable: '--font-dancing',
     display: 'swap',
 })
 
 const bebasNeue = Bebas_Neue({
     weight: '400',
-    subsets: ['latin'],
+    subsets: ['latin', 'latin-ext'],
     variable: '--font-bebas',
     display: 'swap',
 })
 
 const pinyonScript = Pinyon_Script({
     weight: '400',
-    subsets: ['latin'],
+    subsets: ['latin', 'latin-ext'],
     variable: '--font-pinyon',
     display: 'swap',
 })

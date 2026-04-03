@@ -184,6 +184,7 @@ export default function RecipeCardiOS26({
                     setIsSheetOpen(true);
                 }}
             >
+
                 {/* Image */}
                 <div className={styles.imageWrapper}>
                     {recipe.image && (
@@ -199,34 +200,16 @@ export default function RecipeCardiOS26({
 
                 {/* Overlays */}
                 
-                {/* Top Center: Tactical Actions (Premium Glass Well) */}
+                {/* Top Right: Heart Accent (Minimalist) */}
                 {!isIntroMode && (
-                    <motion.div 
-                        className={styles.topCenterActions}
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3 }}
-                    >
-                        <div className={styles.actionWell}>
-                            <ShareButton 
-                                url={`${typeof window !== 'undefined' ? window.location.origin : ''}/recipe/${recipe.id}`} 
-                                title={recipe.title}
-                                className={styles.premiumActionBtn}
-                            />
-                            <FavoriteButton
-                                recipeId={recipe.id}
-                                initialFavorite={recipe.isFavorite}
-                                imageUrl={recipe.image}
-                                className={styles.premiumActionBtn}
-                            />
-                            <VoteButton 
-                                recipeId={recipe.id}
-                                initialVotes={recipe.votes || 0}
-                                className={styles.premiumActionBtn}
-                                hideCount={true}
-                            />
-                        </div>
-                    </motion.div>
+                    <div className={styles.topRightHeart} onClick={(e) => e.stopPropagation()}>
+                        <FavoriteButton
+                            recipeId={recipe.id}
+                            initialFavorite={recipe.isFavorite}
+                            imageUrl={recipe.image}
+                            className={styles.minimalistHeart}
+                        />
+                    </div>
                 )}
 
                 {/* Central Play Button (if has video) */}
@@ -267,20 +250,7 @@ export default function RecipeCardiOS26({
                     </div>
                 )}
 
-                {/* Bottom Right: Hashtags */}
-                {!isIntroMode && hashtags.length > 0 && (
-                    <div className={styles.hashtagContainer}>
-                        {hashtags.map((tag, i) => (
-                            <div 
-                                key={i} 
-                                className={styles.tagBadge}
-                                style={{ background: getHashTagColor(i) }}
-                            >
-                                #{tag.toUpperCase()}
-                            </div>
-                        ))}
-                    </div>
-                )}
+                {/* Removals as per request: no bottom bars, no hashtags */}
             </motion.div>
 
             {/* Recipe Sheet */}

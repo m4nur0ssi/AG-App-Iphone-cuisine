@@ -109,6 +109,17 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
         return () => clearTimeout(t);
     }, [recipe.id, recipe.servings]);
 
+    const formatDuration = (totalMinutes: number) => {
+        if (!totalMinutes) return '';
+        const hours = Math.floor(totalMinutes / 60);
+        const minutes = totalMinutes % 60;
+        
+        if (hours > 0) {
+            return minutes > 0 ? `${hours}h ${minutes}min` : `${hours}h`;
+        }
+        return `${totalMinutes} min`;
+    };
+
     // Synchronisation de la couleur du dock au montage
     useEffect(() => {
         if (recipe.category) {
@@ -720,7 +731,7 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
                 {recipe.category !== 'restaurant' && (recipe.prepTime || recipe.cookTime) && (
                     <div className={styles.metaItem}>
                         <div className={styles.metaContent}>
-                            <div className={styles.metaValue}>{(recipe.prepTime || 0) + (recipe.cookTime || 0)} min</div>
+                            <div className={styles.metaValue}>{formatDuration((recipe.prepTime || 0) + (recipe.cookTime || 0))}</div>
                         </div>
                     </div>
                 )}

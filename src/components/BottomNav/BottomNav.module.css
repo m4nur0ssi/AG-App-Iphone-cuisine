@@ -134,8 +134,7 @@
 }
 
 .iconActive {
-    color: #ff3b30; /* Apple Music Red */
-    transform: scale(1.1);
+    color: #ffffff; /* Premium white for active tab icon */
 }
 
 .label {
@@ -147,8 +146,8 @@
 }
 
 .activeLabel {
-    color: #ff3b30; /* Apple Music Red */
-    font-weight: 900;
+    color: #ffffff; /* Premium white for active tab label */
+    font-weight: 950;
 }
 
 /* Badge */

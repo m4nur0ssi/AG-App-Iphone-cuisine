@@ -26,8 +26,8 @@
     height: 92vh;
     max-width: 800px;
     margin: 0 auto;
-    background: var(--ios-bg);
-    color: var(--ios-text);
+    background: var(--ios-26-bg);
+    color: var(--ios-26-text-main);
     z-index: 5100;
     border-radius: 44px 44px 0 0;
     box-shadow: 0 -20px 60px rgba(0, 0, 0, 0.5);
@@ -35,7 +35,7 @@
     user-select: none;
     -webkit-user-select: none;
     pointer-events: auto;
-    border: 1px solid var(--ios-border);
+    border: 1px solid var(--ios-26-border);
 }
 
 .dragHandle {
@@ -45,8 +45,8 @@
     transform: translateX(-50%);
     width: 40px;
     height: 5px;
-    background: var(--ios-text-secondary);
-    opacity: 0.2;
+    background: var(--ios-26-text-muted, rgba(255, 255, 255, 0.2));
+    opacity: 0.8;
     border-radius: 3px;
     z-index: 10;
 }

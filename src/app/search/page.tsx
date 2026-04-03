@@ -16,11 +16,14 @@ export default function SearchPage() {
     const filteredRecipes = useMemo(() => {
         if (!searchQuery.trim()) return [];
 
-        const query = searchQuery.toLowerCase().trim();
+        const normalizeText = (text: string) => 
+            text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+        const query = normalizeText(searchQuery.trim());
         return mockRecipes.filter(recipe =>
-            recipe.title.toLowerCase().includes(query) ||
-            recipe.description.toLowerCase().includes(query) ||
-            recipe.tags?.some((tag: string) => tag.toLowerCase().includes(query))
+            normalizeText(recipe.title).includes(query) ||
+            normalizeText(recipe.description).includes(query) ||
+            recipe.tags?.some((tag: string) => normalizeText(tag).includes(query))
         );
     }, [searchQuery]);
 

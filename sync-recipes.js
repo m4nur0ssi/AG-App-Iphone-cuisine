@@ -290,7 +290,7 @@ function determineCategory(post, ingredients = []) {
     }
 
     // 2. Mots-clés de secours pour éviter les erreurs de catégorie WP
-    const savoryKeywords = ['jambon', 'poulet', 'boeuf', 'bœuf', 'viande', 'poisson', 'légume', 'salé', 'tacos', 'pasta', 'pizza', 'fromage'];
+    const savoryKeywords = ['jambon', 'poulet', 'boeuf', 'bœuf', 'viande', 'poisson', 'légume', 'salé', 'tacos', 'pasta', 'pizza', 'fromage', 'oignon', 'oignons', 'saint-félicien'];
     const hasSavory = savoryKeywords.some(kw => title.includes(kw));
 
     // 3. Logique Thématique (Pâques, Noël...)
@@ -317,7 +317,7 @@ function determineCategory(post, ingredients = []) {
                         (title.includes('torta') && !title.includes('tortilla'));
                         
     const isDessertMatch = catSlug.some(s => s.includes('dessert') || s.includes('sucre')) ||
-                          title.includes('fondant') || title.includes('biscuits') || title.includes('dessert');
+                          ((title.includes('fondant') || title.includes('biscuits') || title.includes('dessert')) && !hasSavory);
 
     if (isPatisserie) return 'patisserie';
     if (isDessertMatch) return 'desserts';

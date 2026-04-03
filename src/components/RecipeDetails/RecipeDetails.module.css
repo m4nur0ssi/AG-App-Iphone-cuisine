@@ -135,36 +135,43 @@
 .categoryCommandCenter {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Pour l'alignement sur les bords */
+    justify-content: space-between;
     width: 100%;
     max-width: clamp(340px, 90vw, 650px);
-    margin: -15px auto 35px auto;
-    padding: 0 10px; /* Ajusté pour coller visuellement aux bords de la carte */
+    margin: -10px auto 35px auto; /* Ajusté pour recentrer l'ensemble */
+    padding: 0 10px;
     z-index: 50;
 }
 
-/* Boutons Favori & Partage : Version XXL (66px) pour Impact Tactile */
+/* Boutons Favori & Partage : Version XXL pour Impact Tactile */
 .categoryCommandCenter :global(.favorite-btn-action),
 .categoryCommandCenter :global(.share-btn-action) {
-    width: 52px; /* Réduit pour matcher le look raffiné */
-    height: 52px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    color: white;
+}
+
+[data-theme='light'] .categoryCommandCenter :global(.favorite-btn-action),
+[data-theme='light'] .categoryCommandCenter :global(.share-btn-action) {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1.5px solid #000000; /* Traits noirs comme demandé */
+    color: #000000;
 }
 
 .categoryCommandCenter :global(.favorite-btn-action) svg,
 .categoryCommandCenter :global(.share-btn-action) svg {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
 }
 
 .categoryTag {
@@ -173,17 +180,23 @@
     justify-content: center;
     gap: 8px;
     padding: 0 24px;
-    height: 42px; /* Plus petit et élégant */
-    border-radius: 21px;
+    height: 50px;
+    border-radius: 25px;
     font-size: 13px;
-    font-weight: 800;
+    font-weight: 900;
     letter-spacing: 2.5px;
     background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    margin: 0 auto;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    margin: 0;
+    transform: translateY(2px); /* Correctif pour aligner sur les boutons */
+}
+
+[data-theme='light'] .categoryTag {
+    background: rgba(0, 0, 0, 0.02);
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
 }
 
 .heroMainContent {

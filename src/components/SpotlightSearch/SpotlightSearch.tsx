@@ -18,10 +18,15 @@ export default function SpotlightSearch({
     const inputRef = useRef<HTMLInputElement>(null);
     const router = useRouter();
 
+    const normalizeText = (text: string) => 
+        text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+    const normalizedQuery = normalizeText(query);
+
     const filteredRecipes = query.trim().length > 1
         ? mockRecipes.filter(r =>
-            r.title.toLowerCase().includes(query.toLowerCase()) ||
-            r.tags?.some((t: string) => t.toLowerCase().includes(query.toLowerCase()))
+            normalizeText(r.title).includes(normalizedQuery) ||
+            r.tags?.some((t: string) => normalizeText(t).includes(normalizedQuery))
         )
         : [];
 

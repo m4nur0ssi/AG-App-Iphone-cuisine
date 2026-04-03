@@ -33,14 +33,17 @@ export default function Home() {
     };
 
     const handleCarouselTitleClick = (title: string) => {
-        // Find corresponding tag
-        const cleanTitle = title.replace(/[^\w\s]/gi, '').trim().toLowerCase();
+        // Strip emojis but KEEP accents (very important for French labels mapping)
+        const cleanTitle = title.replace(/[^\w\sàâäéèêëîïôöùûüçÀÂÄÉÈÊËÎÏÔÖÙÛÜÇ]/g, '').toLowerCase().trim();
         
-        // Exact mappings based on labels
         const mapping: Record<string, string> = {
+            'thématiques du moment': 'thématiques',
+            'thématiques': 'thématiques',
+            'les nouveautés': 'nouveautés',
             'spécial pâques': 'pâques',
             'paques': 'pâques',
             'pâques': 'pâques',
+            'pâques est là': 'pâques',
             'simplissime': 'simplissime',
             'apéro gourmand': 'aperitifs',
             'entrées fraîches': 'entrees',
@@ -83,32 +86,57 @@ export default function Home() {
                 }
 
                 if (tagLower === 'simplissime') {
-                    return recipeTags.includes('simplissime');
+                    return recipeTags.includes('simplissime') || recipeCat === 'simplissime';
+                }
+
+                if (tagLower === 'italie' || tagLower === 'dolce vita') {
+                    return recipeTags.includes('italie') || recipeTags.includes('italy') || 
+                           recipeTags.includes('dolce vita') || recipeCat === 'italie';
                 }
 
                 if (tagLower === 'glaces') {
                     return recipeTags.some(t => t.includes('glace') || t.includes('sorbet')) || 
-                           recipe.title.toLowerCase().includes('glace') || recipe.title.toLowerCase().includes('sorbet');
+                           recipe.title.toLowerCase().includes('glace') || recipe.title.toLowerCase().includes('sorbet') ||
+                           recipeCat === 'glaces';
                 }
 
                 if (tagLower === 'boissons') {
                     return recipeTags.some(t => t.includes('boisson') || t.includes('cocktail') || t.includes('jus')) || 
-                           recipe.title.toLowerCase().includes('boisson') || recipe.title.toLowerCase().includes('cocktail');
+                           recipe.title.toLowerCase().includes('boisson') || recipe.title.toLowerCase().includes('cocktail') ||
+                           recipeCat === 'boissons';
                 }
 
-                const countryList = ['france', 'italie', 'espagne', 'grece', 'liban', 'usa', 'mexique', 'orient', 'maroc', 'japon', 'asie', 'afrique'];
-                if (countryList.includes(tagLower)) {
-                    return recipeTags.some(t => t.toLowerCase() === tagLower);
+                if (tagLower === 'thématiques' || tagLower === 'thématique') {
+                    const themedKeywords = ['glace', 'sorbet', 'boisson', 'cocktail', 'pâques', 'paques', 'noël', 'noel', 'agneau', 'chocolat'];
+                    const themedCats = ['glaces', 'boissons', 'pâques', 'noël', 'simplissime', 'italie'];
+                    return recipeTags.some(t => themedKeywords.includes(t.toLowerCase())) || 
+                           themedCats.includes(recipeCat) ||
+                           themedKeywords.some(kw => recipe.title.toLowerCase().includes(kw));
                 }
 
-                return recipeCat === tagLower || recipeTags.some(t => t.includes(tagLower));
+                if (tagLower === 'nouveautés' || tagLower === 'nouveauté') {
+                    const sorted = [...mockRecipes].sort((a, b) => parseInt(b.id) - parseInt(a.id));
+                    const latestIds = sorted.slice(0, 20).map(r => r.id);
+                    return latestIds.includes(recipe.id);
+                }
+
+                return recipeCat === tagLower || 
+                       recipeTags.some(t => t.includes(tagLower)) ||
+                       (tagLower === 'aperitifs' && (recipeCat === 'apéro' || recipeCat === 'aperitif' || recipeCat === 'aperitifs')) ||
+                       (tagLower === 'entrees' && (recipeCat === 'entrée' || recipeCat === 'entrees'));
             });
         });
     }, [activeTags]);
 
     const activeFiltersLabel = useMemo(() => {
         if (activeTags.length === 0) return "Les Recettes Magiques";
-        return activeTags.map(t => t.charAt(0).toUpperCase() + t.slice(1).replace('pâques', 'Pâques').replace('paques', 'Paques')).join(" + ");
+        return activeTags.map(t => {
+            const low = t.toLowerCase();
+            if (low === 'thématiques' || low === 'thématique') return 'THÉMATIQUES';
+            if (low === 'nouveautés' || low === 'nouveauté') return 'NOUVEAUTÉS';
+            if (low === 'simplissime') return 'SIMPLISSIME';
+            return t.charAt(0).toUpperCase() + t.slice(1).replace('pâques', 'Pâques').replace('paques', 'Paques');
+        }).join(" + ");
     }, [activeTags]);
 
     const categorizedRecipes = useMemo(() => {
@@ -162,8 +190,11 @@ export default function Home() {
             else if (isPlat) finalCat = 'plats';
             else if (isApero) finalCat = 'aperitifs';
             else if (isEntree) finalCat = 'entrees';
-
-            if (finalCat === 'patisserie' && isSavory) finalCat = 'plats';
+            else if (cat === 'simplissime') finalCat = 'simplissime';
+            else if (cat === 'italie') finalCat = 'restaurant';
+            else if (cat === 'restaurant') finalCat = 'restaurant';
+            else if (cat === 'patisserie') finalCat = 'patisserie';
+            else if (cat === 'vegetarien') finalCat = 'vegetarien';
 
             if (!groups[finalCat]) groups[finalCat] = [];
             groups[finalCat].push(recipe);
@@ -177,19 +208,77 @@ export default function Home() {
             .slice(0, 12);
     }, []);
 
-    const categories = ['aperitifs', 'entrees', 'plats', 'desserts', 'glaces', 'boissons', 'patisserie', 'restaurant', 'vegetarien'];
+    const categories = ['aperitifs', 'entrees', 'plats', 'desserts', 'patisserie', 'restaurant', 'vegetarien'];
     const categoryLabels: Record<string, string> = {
-        'aperitifs': '🍸 Apéro Gourmand',
-        'entrees': '🥗 Entrées Fraîches',
-        'plats': '🍛 Plats de Chef',
-        'desserts': '🍰 Douceurs Sucrées',
-        'glaces': '🍦 Les Glaces',
-        'boissons': '🍹 Rafraîchissements',
-        'patisserie': '🥐 Atelier Pâtisserie',
-        'restaurant': '📍 Comme au Resto',
-        'vegetarien': '🥗 Green & Healthy',
-        'Autres': '🥣 Le Reste du Monde'
+        'aperitifs': 'Apéro Gourmand',
+        'entrees': 'Entrées Fraîches',
+        'plats': 'Plats de Chef',
+        'desserts': 'Douceurs Sucrées',
+        'glaces': 'Les Glaces',
+        'boissons': 'Rafraîchissements',
+        'simplissime': 'Simplissime',
+        'patisserie': 'Atelier Pâtisserie',
+        'restaurant': 'Comme au Resto',
+        'vegetarien': 'Green & Healthy',
+        'Autres': 'Le Reste du Monde'
     };
+
+    const thematicThemes = [
+        {
+            id: 'easter-2024',
+            title: 'Pâques est là',
+            description: 'Un délicieux plat d\'agneau Pascal.',
+            image: '/images/themes/paques.jpg',
+            category: 'plats',
+            tags: ['Pâques'],
+            isFavorite: false
+        },
+        {
+            id: 'xmas-2024',
+            title: 'C\'est Noël',
+            description: 'La magie des fêtes dans votre assiette.',
+            image: '/images/themes/noel.jpg',
+            category: 'plats',
+            tags: ['Noël'],
+            isFavorite: false
+        },
+        {
+            id: 'theme-glaces',
+            title: 'Les Glaces',
+            description: 'Une sélection de sorbets et glaces artisanales.',
+            image: '/images/themes/glaces.jpg',
+            category: 'desserts',
+            tags: ['glaces'],
+            isFavorite: false
+        },
+        {
+            id: 'theme-refresh',
+            title: 'Rafraîchissements',
+            description: 'Des boissons fraîches pour tous les goûts.',
+            image: '/images/themes/rafraichissements.jpg',
+            category: 'boissons',
+            tags: ['boissons'],
+            isFavorite: false
+        },
+        {
+            id: 'theme-simplissime',
+            title: 'Simplissime',
+            description: 'Mini poivrons farcis à la grecque.',
+            image: '/images/themes/simplissime.jpg',
+            category: 'aperitifs',
+            tags: ['simplissime'],
+            isFavorite: false
+        },
+        {
+            id: 'theme-dolce-vita',
+            title: 'La Dolce Vita',
+            description: 'Boulettes de viandes ultra gourmandes.',
+            image: '/images/themes/dolce-vita.jpg',
+            category: 'plats',
+            tags: ['italie'],
+            isFavorite: false
+        }
+    ];
 
     return (
         <div className={styles.page}>
@@ -218,70 +307,22 @@ export default function Home() {
                     >
                         {activeTags.length > 0 && (
                             <div className={styles.resultsWrapper}>
-                                <RecipeGrid
-                                    recipes={filteredRecipes}
-                                />
+                                {activeTags.includes('thématiques') ? (
+                                    <RecipeGrid
+                                        recipes={thematicThemes as any}
+                                        onRecipeClick={(recipe) => handleCarouselTitleClick(recipe.title)}
+                                    />
+                                ) : (
+                                    <RecipeGrid
+                                        recipes={filteredRecipes}
+                                    />
+                                )}
                             </div>
                         )}
                         {activeTags.length === 0 && (
                             <>
                                 <RecipeCarousel
-                                    recipes={[
-                                        {
-                                            id: 'easter-2024',
-                                            title: 'Pâques est là',
-                                            description: 'Un délicieux plat d\'agneau Pascal.',
-                                            image: '/images/themes/paques.jpg',
-                                            category: 'plats',
-                                            tags: ['Pâques'],
-                                            isFavorite: false
-                                        },
-                                        {
-                                            id: 'xmas-2024',
-                                            title: 'C\'est Noël',
-                                            description: 'La magie des fêtes dans votre assiette.',
-                                            image: '/images/themes/noel.jpg',
-                                            category: 'plats',
-                                            tags: ['Noël'],
-                                            isFavorite: false
-                                        },
-                                        {
-                                            id: 'theme-glaces',
-                                            title: 'Les Glaces',
-                                            description: 'Une sélection de sorbets et glaces artisanales.',
-                                            image: '/images/themes/glaces.png',
-                                            category: 'desserts',
-                                            tags: ['glace'],
-                                            isFavorite: false
-                                        },
-                                        {
-                                            id: 'theme-refresh',
-                                            title: 'Rafraîchissements',
-                                            description: 'Des boissons fraîches pour tous les goûts.',
-                                            image: '/images/themes/rafraichissements.png',
-                                            category: 'aperitifs',
-                                            tags: ['boisson'],
-                                            isFavorite: false
-                                        },
-                                        {
-                                            id: 'theme-simplissime',
-                                            title: 'Simplissime',
-                                            description: 'Mini poivrons farcis à la grecque.',
-                                            image: '/images/themes/simplissime.jpg',
-                                            category: 'aperitifs',
-                                            tags: ['Simple', 'Grece', 'simplissime'],
-                                            isFavorite: false
-                                        },
-                                        {
-                                            id: 'theme-dolce-vita',
-                                            title: 'La Dolce Vita',
-                                            description: 'Boulettes de viandes ultra gourmandes.',
-                                            image: '/images/themes/dolce-vita.jpg',
-                                            category: 'plats',
-                                            tags: ['Italie'],
-                                            isFavorite: false
-                                        }
-                                    ] as any}
+                                    recipes={thematicThemes as any}
                                     title="Thématiques du Moment"
                                     size="large"
                                     onTitleClick={handleCarouselTitleClick}
@@ -292,6 +333,7 @@ export default function Home() {
                                     recipes={newRecipes}
                                     title="Les Nouveautés"
                                     size="small"
+                                    onTitleClick={handleCarouselTitleClick}
                                 />
 
                                 <div className={styles.sectionsContainer}>

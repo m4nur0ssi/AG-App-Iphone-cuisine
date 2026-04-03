@@ -6,9 +6,10 @@ import { motion } from 'framer-motion';
 
 interface RecipeGridProps {
     recipes: Recipe[];
+    onRecipeClick?: (recipe: Recipe) => void;
 }
 
-export default function RecipeGrid({ recipes }: RecipeGridProps) {
+export default function RecipeGrid({ recipes, onRecipeClick }: RecipeGridProps) {
     return (
         <div className={styles.gridContainer}>
             {recipes.map((recipe, index) => (
@@ -18,7 +19,11 @@ export default function RecipeGrid({ recipes }: RecipeGridProps) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.05, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 >
-                    <RecipeCardiOS26 recipe={recipe} isGrid={true} />
+                    <RecipeCardiOS26 
+                        recipe={recipe} 
+                        isGrid={true} 
+                        customOnClick={onRecipeClick ? () => onRecipeClick(recipe) : undefined}
+                    />
                 </motion.div>
             ))}
         </div>

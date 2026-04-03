@@ -67,10 +67,17 @@
 
 .titlePill .titleText {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     font-weight: 950;
     margin: 0;
-    white-space: nowrap;
+    line-height: 1.1;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-transform: capitalize;
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
 }
@@ -85,6 +92,8 @@
     box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.6);
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     touch-action: pan-x pan-y;
+    cursor: pointer;
+    z-index: 10;
 }
 
 [data-theme='light'] .card {
@@ -127,16 +136,6 @@
     width: 100%;
     height: 260px; /* Un peu plus compact pour fitter sur écran */
     border-radius: 28px;
-    box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.4);
-}
-
-/* Lien overlay transparent sur toute la carte */
-.cardLink {
-    position: absolute;
-    inset: 0;
-    z-index: 10;
-    display: block;
-    text-decoration: none;
 }
 
 .videoInCard {
@@ -291,16 +290,27 @@
     pointer-events: none;
 }
 
-.topCenterActions {
+.topRightHeart {
     position: absolute;
-    top: 10px; /* Precise top-center placement */
-    left: 0;
-    right: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 40;
-    pointer-events: none; /* Crucial for not blocking image clicks */
+    top: 24px;
+    right: 24px;
+    z-index: 50;
+    pointer-events: auto;
+}
+
+.minimalistHeart {
+    color: rgba(255, 255, 255, 0.95) !important;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+    -webkit-filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+}
+
+[data-theme='light'] .minimalistHeart {
+    color: #4b5563 !important;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.topCenterActions {
+    display: none !important; /* Removed as requested */
 }
 
 .actionWell {
@@ -355,16 +365,7 @@
 }
 
 .hashtagContainer {
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-    right: 10px;
-    display: flex;
-    flex-wrap: wrap; /* Évite la troncature en passant à la ligne */
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    z-index: 40;
+    display: none !important; /* Removed as requested */
 }
 
 .tagBadge {
