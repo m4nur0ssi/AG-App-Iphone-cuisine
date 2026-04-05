@@ -9,6 +9,7 @@ import dynamic from 'next/dynamic';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import SpotlightSearch from '../SpotlightSearch/SpotlightSearch';
 import { mockRecipes } from '@/data/mockData';
+import { useTimer } from '@/components/Timer/TimerContext';
 
 const RecipeSheet = dynamic(() => import('@/components/RecipeSheet/RecipeSheet'), { ssr: false });
 
@@ -52,6 +53,7 @@ export default function BottomNav() {
     const [isMiniMode, setIsMiniMode] = useState(false);
     const [lastViewed, setLastViewed] = useState<any>(null);
     const [isSheetOpen, setIsSheetOpen] = useState(false);
+    const { activeTimer } = useTimer();
     const dockRef = useRef<HTMLDivElement>(null);
 
     const navItems = [
@@ -179,6 +181,23 @@ export default function BottomNav() {
         handleVibrate(10);
     };
 
+    const renderSearchOrTimer = () => {
+        if (activeTimer) {
+            const mins = Math.floor(activeTimer.remaining / 60);
+            const secs = activeTimer.remaining % 60;
+            return (
+                <div className={`${styles.timerBadge} ${activeTimer.remaining > 0 ? styles.pulse : ''}`}>
+                    <span className={styles.timerValue}>{mins}:{secs.toString().padStart(2, '0')}</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                </div>
+            );
+        }
+        return <SearchIcon />;
+    };
+    
     const handleRecipeSelect = (recipe: any) => {
         setLastViewed(recipe);
         setIsSheetOpen(true);
@@ -239,7 +258,7 @@ export default function BottomNav() {
                                     setIsSearchOpen(true);
                                     handleVibrate(15);
                                 }}>
-                                    <SearchIcon />
+                                    {renderSearchOrTimer()}
                                 </div>
                             </motion.div>
                         )}
@@ -314,7 +333,7 @@ export default function BottomNav() {
                                         handleVibrate(15);
                                     }}
                                 >
-                                    <SearchIcon />
+                                    {renderSearchOrTimer()}
                                 </motion.div>
                             </motion.div>
                         )}

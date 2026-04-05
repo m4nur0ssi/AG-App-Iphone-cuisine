@@ -163,9 +163,12 @@
 
 [data-theme='light'] .categoryCommandCenter :global(.favorite-btn-action),
 [data-theme='light'] .categoryCommandCenter :global(.share-btn-action) {
-    background: rgba(0, 0, 0, 0.03);
-    border: 1.5px solid #000000; /* Traits noirs comme demandé */
+    background: transparent;
+    border: 1.5px solid #000000;
     color: #000000;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
 }
 
 .categoryCommandCenter :global(.favorite-btn-action) svg,
@@ -509,6 +512,159 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
+.addressDisplayLarge {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 28px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    border: 1.5px solid rgba(0, 0, 0, 0.04);
+    margin: 36px 0;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.addressDisplayLarge:hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.addressIconLarge {
+    font-size: 38px;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.12));
+}
+
+.addressContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.addressLabel {
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #8e8e93;
+    text-transform: uppercase;
+}
+
+.addressTextLarge {
+    font-size: 20px;
+    font-weight: 800;
+    color: #1d1d1f;
+    line-height: 1.25;
+    letter-spacing: -0.6px;
+}
+
+/* RE-DESIGN iOS 26 PRO - Boutons d'action */
+.restaurantActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 28px 0;
+}
+
+.mapBtn {
+    flex: 1;
+    min-width: 140px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #FFFFFF;
+    border: 1.2px solid rgba(0, 0, 0, 0.06);
+    border-radius: 18px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #1d1d1f;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.mapBtn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+.mapBtn:active {
+    transform: scale(0.95);
+}
+
+.mapBtnIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.googleMaps {
+    color: #4285F4;
+    border-bottom: 3.5px solid #4285F4;
+}
+
+.appleMaps {
+    color: #1d1d1f;
+    border-bottom: 3.5px solid #1d1d1f;
+}
+
+.websiteBtn {
+    color: #0071e3;
+    border-bottom: 3.5px solid #0071e3;
+}
+
+.serviceMiniCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 14px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    border: 1.2px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.serviceMiniCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.serviceIcon {
+    font-size: 22px;
+}
+
+.serviceLabel {
+    font-size: 11px;
+    font-weight: 800;
+    color: #1d1d1f;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.restaurantFeaturesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.addressIcon {
+    font-size: 20px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.restaurantFeatures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
 .tabBtn {
     flex: 1;
     display: flex;
@@ -724,10 +880,32 @@
 /* =====================================================
    GRILLE INGRÉDIENTS — 2 cols compactes
    ===================================================== */
+.heroGrid {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    align-items: center; /* Aligne verticalement le texte et l'image */
+    z-index: 2;
+    gap: 20px;
+}
+
 .ingredientsGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+}
+
+.websiteBtn {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+}
+
+.websiteBtn:hover {
+    background: rgba(59, 130, 246, 0.2);
+}
+@media (max-width: 768px) {
+    .restaurantActions {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 340px) {
@@ -1199,6 +1377,7 @@
     filter: brightness(1.1);
     transform: translateY(-2px) scale(1.02);
 }
+
 
 .navBtn:disabled {
     opacity: 0.15;
@@ -1946,4 +2125,208 @@
         width: 58px;
         height: 58px;
     }
+}
+
+/* =====================================================
+   RESTAURANT ENHANCEMENTS - iOS 26 Magic Style
+   ===================================================== */
+.restaurantActions {
+    display: flex;
+    gap: 12px;
+    margin: 20px 0;
+    padding: 0 5px;
+}
+
+.mapBtn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 14px;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.googleMaps {
+    background: #4285F4 !important;
+    color: white !important;
+    box-shadow: 0 8px 25px rgba(66, 133, 244, 0.35);
+}
+
+.appleMaps {
+    background: #000000 !important;
+    color: white !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.mapBtnIcon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Design premium pour les badges de services (WordPress style) */
+.restaurantFeatures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.featureBadge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.featureIcon {
+    font-size: 14px;
+}
+
+/* ---- Google Reviews iOS 26 ---- */
+.reviewsSection {
+    margin-top: 40px;
+    padding: 0 5px;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sectionTitle {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--color-text-primary);
+    letter-spacing: -0.5px;
+}
+
+.overallRating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ratingValue {
+    font-weight: 900;
+    font-size: 14px;
+    color: var(--color-accent-gold);
+}
+
+.ratingStars {
+    color: var(--color-accent-gold);
+    display: flex;
+    gap: 2px;
+    font-size: 10px;
+}
+
+.reviewsList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.reviewCard {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.reviewCard:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.reviewHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.authorInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.authorAvatar {
+    width: 36px;
+    height: 36px;
+    background: var(--accent);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 14px;
+    box-shadow: var(--accent-glow);
+}
+
+.authorName {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--color-text-primary);
+}
+
+.reviewDate {
+    font-size: 11px;
+    color: var(--color-text-tertiary);
+    font-weight: 600;
+}
+
+.starSmall {
+    color: var(--color-accent-gold);
+    font-size: 12px;
+}
+
+.reviewContent {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    font-style: italic;
+}
+
+/* Bloc Adresse dédié */
+.addressDisplay {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: rgba(var(--dynamic-accent-rgb), 0.05);
+    border: 1px solid rgba(var(--dynamic-accent-rgb), 0.15);
+    border-radius: 18px;
+    margin-bottom: 24px;
+}
+
+.addressIcon {
+    font-size: 20px;
+    filter: drop-shadow(0 0 10px rgba(var(--dynamic-accent-rgb), 0.3));
+}
+
+.addressText {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    line-height: 1.4;
 }

@@ -46,9 +46,9 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
 
     // Tabs
     const availableTabs: { id: TabId; label: string; count?: number }[] = [
-        { id: 'ingredients', label: 'Ingrédients', count: recipe.ingredients.length },
-        { id: 'steps', label: 'Étapes', count: recipe.steps.length },
-        ...(recipe.videoHtml ? [{ id: 'video' as TabId, label: 'Vidéo' }] : []),
+        { id: 'ingredients', label: 'Ingrédients', count: recipe?.ingredients?.length || 0 },
+        { id: 'steps', label: 'Étapes', count: recipe?.steps?.length || 0 },
+        ...(recipe?.videoHtml ? [{ id: 'video' as TabId, label: 'Vidéo' }] : []),
     ];
 
     // Default to 'steps' if no ingredients (restaurant), else 'ingredients'
@@ -71,44 +71,35 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
     }, [recipe.category]);
 
     // Persistence
-    const [checkedSteps, setCheckedSteps] = useLocalStorage<boolean[]>(`recipe-steps-${recipe.id}`, new Array(recipe.steps.length).fill(false));
-    // Par défaut, rien n'est coché pour la liste de courses (Selection unique demandée par le client)
-    const [checkedIngredients, setCheckedIngredients] = useLocalStorage<boolean[]>(`recipe-ing-v2-${recipe.id}`, new Array(recipe.ingredients.length).fill(false));
+    const [checkedSteps, setCheckedSteps] = useLocalStorage<boolean[]>(`recipe-steps-${recipe.id}`, new Array(recipe?.steps?.length || 0).fill(false));
+    const [checkedIngredients, setCheckedIngredients] = useLocalStorage<boolean[]>(`recipe-ing-v2-${recipe.id}`, new Array(recipe?.ingredients?.length || 0).fill(false));
 
-    // Logic d'auto-reset après 5h d'absence (Mémoire Courte Design 2026)
+    // Reset logic
     useEffect(() => {
         if (typeof window !== 'undefined') {
             const exitKey = `recipe-exit-${recipe.id}`;
             const lastExit = localStorage.getItem(exitKey);
-            const RESET_DELAY = 5 * 60 * 60 * 1000; // 5 heures
+            const RESET_DELAY = 5 * 60 * 60 * 1000;
 
             if (lastExit) {
                 const timeSinceExit = Date.now() - parseInt(lastExit);
                 if (timeSinceExit > RESET_DELAY) {
-                    // On force le reset des données
-                    setCheckedSteps(new Array(recipe.steps.length).fill(false));
-                    setCheckedIngredients(new Array(recipe.ingredients.length).fill(false));
+                    setCheckedSteps(new Array(recipe?.steps?.length || 0).fill(false));
+                    setCheckedIngredients(new Array(recipe?.ingredients?.length || 0).fill(false));
                 }
             }
-
-            // Enregistre l'heure de sortie
-            return () => {
-                localStorage.setItem(exitKey, Date.now().toString());
-            };
+            return () => localStorage.setItem(exitKey, Date.now().toString());
         }
     }, [recipe.id]);
 
     const ratio = useMemo(() => servings / (recipe.servings || 4), [servings, recipe.servings]);
 
-    // Mount animation & Reset check
     useEffect(() => {
         const t = setTimeout(() => setMounted(true), 50);
-        // Réinitialisation des portions quand on change de recette (swipe)
-        setServings(recipe.servings || 4); 
+        setServings(recipe.servings || 4);
         return () => clearTimeout(t);
     }, [recipe.id, recipe.servings]);
 
-    // Synchronisation de la couleur du dock au montage
     useEffect(() => {
         if (recipe.category) {
             const event = new CustomEvent('magic-category-change', { detail: recipe.category });
@@ -116,47 +107,18 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
         }
     }, [recipe.category]);
 
-    // Wake Lock
     useEffect(() => {
         let wakeLock: any = null;
         const requestWakeLock = async () => {
-            try {
-                if ('wakeLock' in navigator) {
-                    wakeLock = await (navigator as any).wakeLock.request('screen');
-                }
-            } catch (err: any) {
-                console.error(`${err.name}, ${err.message}`);
-            }
+            try { if ('wakeLock' in navigator) wakeLock = await (navigator as any).wakeLock.request('screen'); }
+            catch (err) {}
         };
-
         requestWakeLock();
-
-        if (typeof window !== 'undefined') {
-            window.localStorage.setItem('active-recipe-id', recipe.id);
-            
-            // Sync initial state with shopping list
-            const syncWithShoppingList = () => {
-                const listData = JSON.parse(window.localStorage.getItem('magic-shopping-list') || '{}');
-                if (!listData[recipe.id]) {
-                    // Si la recette n'est plus dans la liste, on décoche tout (demande client)
-                    setCheckedIngredients(new Array(recipe.ingredients.length).fill(false));
-                }
-            };
-            
-            syncWithShoppingList();
-            window.addEventListener('shoppingListUpdated', syncWithShoppingList);
-            return () => window.removeEventListener('shoppingListUpdated', syncWithShoppingList);
-        }
-
-        return () => {
-            if (wakeLock !== null) wakeLock.release();
-        };
-    }, [recipe.id]);
+        return () => { if (wakeLock !== null) wakeLock.release(); };
+    }, []);
 
     const triggerHaptic = () => {
-        if (typeof window !== 'undefined' && 'vibrate' in navigator) {
-            navigator.vibrate(10);
-        }
+        if (typeof window !== 'undefined' && 'vibrate' in navigator) navigator.vibrate(10);
     };
 
     const minSwipeDistance = 50;
@@ -164,39 +126,23 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
 
     const onTouchStart = (e: React.TouchEvent) => {
         touchEnd.current = null;
-        touchStart.current = {
-            x: e.targetTouches[0].clientX,
-            y: e.targetTouches[0].clientY
-        };
+        touchStart.current = { x: e.targetTouches[0].clientX, y: e.targetTouches[0].clientY };
     };
 
     const onTouchMove = (e: React.TouchEvent) => {
-        touchEnd.current = {
-            x: e.targetTouches[0].clientX,
-            y: e.targetTouches[0].clientY
-        };
+        touchEnd.current = { x: e.targetTouches[0].clientX, y: e.targetTouches[0].clientY };
     };
 
     const onTouchEnd = () => {
         if (!touchStart.current || !touchEnd.current) return;
-        
         const distanceX = touchStart.current.x - touchEnd.current.x;
         const distanceY = Math.abs(touchStart.current.y - touchEnd.current.y);
-        
         if (distanceY > maxVerticalDiff || Math.abs(distanceX) < minSwipeDistance) return;
-
-        const isLeftSwipe = distanceX > minSwipeDistance;
-        const isRightSwipe = distanceX < -minSwipeDistance;
-
-        if (isLeftSwipe && nextId) {
-            triggerHaptic();
-            setSlideDirection('left');
-            setIsNavigating(true);
+        if (distanceX > minSwipeDistance && nextId) {
+            triggerHaptic(); setSlideDirection('left'); setIsNavigating(true);
             setTimeout(() => router.push(`/recipe/${nextId}`), 250);
-        } else if (isRightSwipe && prevId) {
-            triggerHaptic();
-            setSlideDirection('right');
-            setIsNavigating(true);
+        } else if (distanceX < -minSwipeDistance && prevId) {
+            triggerHaptic(); setSlideDirection('right'); setIsNavigating(true);
             setTimeout(() => router.push(`/recipe/${prevId}`), 250);
         }
     };
@@ -204,50 +150,21 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
     const switchTab = (tab: TabId) => {
         setPrevTab(activeTab);
         setActiveTab(tab);
-        // Scroll to top of tab content
-        if (tabContentRef.current) {
-            tabContentRef.current.scrollTop = 0;
-        }
+        if (tabContentRef.current) tabContentRef.current.scrollTop = 0;
     };
 
     const toggleStep = (index: number) => {
-        // Sécurité mobile : si on a bougé de plus de 10px, on considère que c'est un scroll, pas un clic
-        if (touchStart.current && touchEnd.current) {
-            const dx = Math.abs(touchStart.current.x - touchEnd.current.x);
-            const dy = Math.abs(touchStart.current.y - touchEnd.current.y);
-            if (dx > 10 || dy > 10) return;
-        }
-
         const newChecked = [...checkedSteps];
         newChecked[index] = !newChecked[index];
         setCheckedSteps(newChecked);
         triggerHaptic();
-
-        if (typeof window !== 'undefined') {
-            window.localStorage.setItem('active-recipe-id', recipe.id);
-        }
-
         if (newChecked[index]) {
-            const stepText = recipe.steps[index];
-            const minutes = parseDuration(stepText);
-            if (minutes) {
-                const cleanLabel = stripHtml(stepText);
-                const shortLabel = cleanLabel.length > 50
-                    ? cleanLabel.substring(0, 47) + '...'
-                    : cleanLabel;
-                startTimer(minutes, shortLabel);
-            }
+            const minutes = parseDuration(recipe.steps[index]);
+            if (minutes) startTimer(minutes, stripHtml(recipe.steps[index]).substring(0, 50));
         }
     };
 
     const toggleIngredient = (index: number) => {
-        // Sécurité mobile : si on a bougé de plus de 10px, on considère que c'est un scroll, pas un clic
-        if (touchStart.current && touchEnd.current) {
-            const dx = Math.abs(touchStart.current.x - touchEnd.current.x);
-            const dy = Math.abs(touchStart.current.y - touchEnd.current.y);
-            if (dx > 10 || dy > 10) return;
-        }
-
         const newChecked = [...checkedIngredients];
         newChecked[index] = !newChecked[index];
         setCheckedIngredients(newChecked);
@@ -255,826 +172,215 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
     };
 
     const copyIngredients = async () => {
-        try {
-            const selectedIngredients = recipe.ingredients
-                .filter((_, idx) => checkedIngredients[idx]) // On ne prend que les COCHÉS (demande client)
-                .map(ing => {
-                    if (ing.quantity) {
-                        return `- ${scaleQuantity(ing.quantity, ratio)} ${ing.name.replace(/^[\uD83C-\uDBFF\uDC00-\uDFFF]+\s*/, '')}`;
-                    } else {
-                        // On nettoie l'émoji éventuel avant de scaler le nom complet
-                        const cleanName = ing.name.replace(/^[\uD83C-\uDBFF\uDC00-\uDFFF]+\s*/, '');
-                        return `- ${scaleQuantity(cleanName, ratio)}`;
-                    }
-                });
-
-            if (selectedIngredients.length === 0) {
-                alert('Veuillez cocher au moins un ingrédient à mettre dans votre panier ! 🛒');
-                return;
-            }
-
-            const text = selectedIngredients.join('\n');
-            const fullText = `🛒 Liste de courses : ${recipe.title}\n\n${text}`;
-
-            if (navigator.clipboard && window.isSecureContext) {
-                await navigator.clipboard.writeText(fullText);
-            } else {
-                const textArea = document.createElement("textarea");
-                textArea.value = fullText;
-                document.body.appendChild(textArea);
-                textArea.select();
-                document.execCommand('copy');
-                document.body.removeChild(textArea);
-            }
-
-            if (typeof window !== 'undefined') {
-                const existingData = JSON.parse(window.localStorage.getItem('magic-shopping-list') || '{}');
-                
-                // On transforme les strings en objets pour gérer le "coché"
-                const ingredientObjects = selectedIngredients.map(name => ({
-                    name,
-                    checked: false
-                }));
-
-                existingData[recipe.id] = {
-                    title: recipe.title,
-                    ingredients: ingredientObjects
-                };
-                window.localStorage.setItem('magic-shopping-list', JSON.stringify(existingData));
-                
-                // Notifier le Header immédiatement
-                window.dispatchEvent(new Event('shoppingListUpdated'));
-                triggerHaptic();
-            }
-        } catch (err) {
-            console.error('Erreur lors de la copie/ajout à la liste:', err);
-            alert('Impossible de copier la liste automatiquement.');
-        }
+        const selected = recipe.ingredients
+            .filter((_, idx) => checkedIngredients[idx])
+            .map(ing => `- ${scaleQuantity(ing.quantity || ing.name, ratio)} ${ing.quantity ? ing.name : ''}`);
+        
+        if (selected.length === 0) return alert('Sélectionnez des ingrédients !');
+        
+        const fullText = `🛒 ${recipe.title}\n\n${selected.join('\n')}`;
+        await navigator.clipboard.writeText(fullText);
+        
+        const existing = JSON.parse(localStorage.getItem('magic-shopping-list') || '{}');
+        existing[recipe.id] = { title: recipe.title, ingredients: selected.map(n => ({ name: n, checked: false })) };
+        localStorage.setItem('magic-shopping-list', JSON.stringify(existing));
+        window.dispatchEvent(new Event('shoppingListUpdated'));
+        triggerHaptic();
     };
-
-    const difficultyColors = {
-        facile: '#10b981',
-        moyen: '#f59e0b',
-        difficile: '#ef4444'
-    };
-
-    // Animation for progression
-    const progress = useMemo(() => {
-        const checkedCount = checkedSteps.filter(Boolean).length;
-        return recipe.steps.length > 0 ? (checkedCount / recipe.steps.length) * 100 : 0;
-    }, [checkedSteps, recipe.steps.length]);
-
-    const isSpeakingRef = useRef(false);
 
     const speak = (text: string) => {
-        if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-            window.speechSynthesis.cancel();
-            const utterance = new SpeechSynthesisUtterance(stripHtml(text));
-            utterance.lang = 'fr-FR';
-            utterance.rate = 1.0;
-            
-            utterance.onstart = () => {
-                isSpeakingRef.current = true;
-                // On stoppe la reconnaissance pour éviter de se détecter soi-même
-                if (recognitionRef.current) {
-                    try { recognitionRef.current.stop(); } catch(e) {}
-                }
-                // Sécurité : si onend ne se déclenche jamais
-                setTimeout(() => {
-                    if (isSpeakingRef.current) {
-                        isSpeakingRef.current = false;
-                        if (focusMode) startRecognition();
-                    }
-                }, 8000);
-            };
-            
-            utterance.onend = () => {
-                isSpeakingRef.current = false;
-                if (focusMode) {
-                    setTimeout(startRecognition, 300);
-                }
-            };
-
-            window.speechSynthesis.speak(utterance);
-        }
+        if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(stripHtml(text));
+        utterance.lang = 'fr-FR';
+        utterance.onstart = () => { setIsListening(false); };
+        utterance.onend = () => { if (focusMode) setTimeout(startRecognition, 300); };
+        window.speechSynthesis.speak(utterance);
     };
 
     const recognitionRef = useRef<any>(null);
+    const startRecognition = useCallback(() => {
+        const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+        if (!SpeechRecognition || !focusMode) return;
+        const recognition = new SpeechRecognition();
+        recognition.lang = 'fr-FR';
+        recognition.onstart = () => setIsListening(true);
+        recognition.onend = () => { setIsListening(false); if (focusMode) setTimeout(startRecognition, 300); };
+        recognition.onresult = (e: any) => {
+            const transcript = e.results[e.results.length - 1][0].transcript.toLowerCase();
+            if (/suivant|prochain/.test(transcript)) handleNextStep();
+            else if (/précédent|retour/.test(transcript)) handlePrevStep();
+            else if (/répète/.test(transcript)) speak(recipe.steps[activeStepIndex]);
+        };
+        recognition.start();
+        recognitionRef.current = recognition;
+    }, [focusMode, activeStepIndex]);
 
     const handleNextStep = () => {
-        if (!checkedSteps[activeStepIndex]) toggleStep(activeStepIndex);
-        if (activeStepIndex < recipe.steps.length - 1) {
-            const nextIdx = activeStepIndex + 1;
-            setActiveStepIndex(nextIdx);
-            
-            // Lancer le timer de l'étape suivante si elle contient un temps
-            const nextStep = recipe.steps[nextIdx];
-            const minutes = parseDuration(nextStep);
-            if (minutes) {
-                const cleanLabel = stripHtml(nextStep);
-                const shortLabel = cleanLabel.length > 50
-                    ? cleanLabel.substring(0, 47) + '...'
-                    : cleanLabel;
-                startTimer(minutes, shortLabel);
-            }
-        } else {
-            setFocusMode(false);
-            if (typeof window !== 'undefined') {
-                alert('Félicitations ! Recette terminée ! 🥂');
-            }
-        }
+        if (activeStepIndex < recipe.steps.length - 1) setActiveStepIndex(activeStepIndex + 1);
+        else setFocusMode(false);
     };
 
-    const handlePrevStep = () => {
-        if (activeStepIndex > 0) {
-            setActiveStepIndex(prev => prev - 1);
-        }
-    };
+    const handlePrevStep = () => { if (activeStepIndex > 0) setActiveStepIndex(activeStepIndex - 1); };
 
-    const handleRepeatStep = () => {
-        speak(recipe.steps[activeStepIndex]);
-    };
-
-    // Refs pour accéder aux handlers frais dans les closures de l'écoute vocale
-    const handlersRef = useRef({ handleNextStep, handlePrevStep, handleRepeatStep });
     useEffect(() => {
-        handlersRef.current = { handleNextStep, handlePrevStep, handleRepeatStep };
-    }, [handleNextStep, handlePrevStep, handleRepeatStep]);
+        if (focusMode) { speak(recipe.steps[activeStepIndex]); startRecognition(); }
+        return () => { window.speechSynthesis.cancel(); if (recognitionRef.current) recognitionRef.current.stop(); };
+    }, [focusMode, activeStepIndex, startRecognition]);
 
-    // Voice recognition logic moved to stable scope
-    const startRecognition = useCallback(() => {
-        if (typeof window !== 'undefined') {
-            const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-            if (SpeechRecognition && !recognitionRef.current && focusMode && !isSpeakingRef.current) {
-                const recognition = new SpeechRecognition();
-                recognition.lang = 'fr-FR';
-                recognition.continuous = true;
-                recognition.interimResults = false;
-                
-                recognition.onstart = () => {
-                    setIsListening(true);
-                    console.log('🎤 Micro activé');
-                };
-                recognition.onend = () => {
-                    setIsListening(false);
-                    recognitionRef.current = null;
-                    if (focusMode && !isSpeakingRef.current) {
-                        setTimeout(startRecognition, 250);
-                    }
-                };
-                
-                recognition.onresult = (event: any) => {
-                    if (isSpeakingRef.current) return;
+    const progress = (checkedSteps.filter(Boolean).length / (recipe?.steps?.length || 1)) * 100;
 
-                    const transcript = event.results[event.results.length - 1][0].transcript.toLowerCase();
-                    console.log('🗣️ Commande reçue:', transcript);
-                    
-                    if (/suivant|prochain|allez|aller|go|on y va|prêt|c'est bon/.test(transcript)) {
-                        handlersRef.current.handleNextStep();
-                    } 
-                    else if (/précédent|retour|avant|revenir|reviens/.test(transcript)) {
-                        handlersRef.current.handlePrevStep();
-                    } 
-                    else if (/répète|répéter|encore|qu'est-ce|pardon|comment|redis/.test(transcript)) {
-                        handlersRef.current.handleRepeatStep();
-                    }
-                    else if (/quitter|stop|terminer|fin|fermer/.test(transcript)) {
-                        setFocusMode(false);
-                    }
-                };
-
-                recognition.onerror = (err: any) => {
-                    if (err.error !== 'no-speech' && err.error !== 'aborted') {
-                        console.error('❌ Erreur Micro:', err.error);
-                    }
-                };
-                
-                try {
-                    recognition.start();
-                    recognitionRef.current = recognition;
-                } catch (e) {
-                    recognitionRef.current = null;
-                }
-            }
-        }
-    }, [focusMode]);
-
-    // Voice recognition & TTS effect
-    useEffect(() => {
-        if (focusMode) {
-            startRecognition();
-        } else {
-            if (recognitionRef.current) {
-                try {
-                    recognitionRef.current.stop();
-                } catch (e) {}
-                recognitionRef.current = null;
-            }
-            if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-                window.speechSynthesis.cancel();
-            }
-        }
-        return () => {
-            if (recognitionRef.current) {
-                try {
-                    recognitionRef.current.stop();
-                } catch (e) {}
-                recognitionRef.current = null;
-            }
-            if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-                window.speechSynthesis.cancel();
-            }
-        };
-    }, [focusMode, startRecognition]);
-
-    // Speak when changing step in focus mode
-    useEffect(() => {
-        if (focusMode) {
-            speak(recipe.steps[activeStepIndex]);
-        }
-    }, [activeStepIndex]);
-
-    const checkedCount = checkedIngredients.filter(Boolean).length;
-
-    const countryFlags: Record<string, string> = {
-        france: '🇫🇷', italie: '🇮🇹', espagne: '🇪🇸', grece: '🇬🇷', 
-        liban: '🇱🇧', usa: '🇺🇸', mexique: '🇲🇽', orient: '🕌',
-        autre: '🗺️'
-    };
-
-    const countryColors: Record<string, string> = {
-        france: '#0055A4', italie: '#008C45', espagne: '#F1BF00', grece: '#005BAE',
-        liban: '#EE161F', usa: '#3C3B6E', mexique: '#006847', orient: '#C1272D',
-        autre: '#666666'
-    };
-    
+    const countryFlags: Record<string, string> = { france: '🇫🇷', italie: '🇮🇹', espagne: '🇪🇸', grece: '🇬🇷', liban: '🇱🇧', usa: '🇺🇸', mexique: '🇲🇽', orient: '🕌', autre: '🗺️' };
     const recipeCountryTag = recipe.tags?.find(t => countryFlags[t.toLowerCase()]);
     const flag = recipeCountryTag ? countryFlags[recipeCountryTag.toLowerCase()] : null;
-    const countryColor = recipeCountryTag ? countryColors[recipeCountryTag.toLowerCase()] : theme.accent;
 
     return (
         <>
             {!focusMode && (
                 <div className={styles.stickyHeaderMenu}>
-                    <Header 
-                        title={recipe.title} 
-                        showBack={false} 
-                        backUrl={`/category/${recipe.category}`}
-                        large={true}
-                        recipeId={recipe.id}
-                    />
-                    <MagicFilterBar 
-                        activeTags={recipe.tags || []} 
-                        onSelect={(tag: string) => {
-                            if (tag === '') router.push('/');
-                            else router.push(`/?tag=${tag}`);
-                        }} 
-                    />
+                    <Header title={recipe.title} showBack={false} backUrl={`/category/${recipe.category}`} large={true} recipeId={recipe.id} />
+                    <MagicFilterBar activeTags={recipe.tags || []} onSelect={(tag) => router.push(tag === '' ? '/' : `/?tag=${tag}`)} />
                 </div>
             )}
             <div
                 className={`${styles.page} ${mounted ? styles.pageVisible : ''} ${isNavigating ? (slideDirection === 'left' ? styles.slideOutLeft : styles.slideOutRight) : ''}`}
-                style={{
-                    // @ts-ignore
-                    '--dynamic-accent': theme.accent,
-                    '--dynamic-accent-glow': theme.glow,
-                    '--dynamic-accent-bg': theme.bg,
-                    '--dynamic-accent-rgb': theme.rgb,
-                    '--country-color': countryColor || theme.accent
-                } as React.CSSProperties}
-                onTouchStart={onTouchStart}
-                onTouchMove={onTouchMove}
-                onTouchEnd={onTouchEnd}
+                style={{ '--dynamic-accent': theme.accent, '--dynamic-accent-glow': theme.glow, '--dynamic-accent-bg': theme.bg, '--dynamic-accent-rgb': theme.rgb } as any}
+                onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}
             >
-
-            {/* Nouveau Hero Split-Screen UX Premium */}
-            <div className={styles.heroNewLayout}>
-                <div className={styles.heroGrid}>
-                    {/* Colonne GAUCHE : Blabla (Infos) */}
-                    <motion.div 
-                        className={styles.heroTextColumn}
-                        initial={{ opacity: 0, x: -70 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    >
-                        <motion.div 
-                            className={styles.categoryTag} 
-                            style={{ 
-                                background: theme.bg, 
-                                color: theme.accent,
-                                '--country-color': countryColor 
-                            } as React.CSSProperties}
-                            whileHover={{ scale: 1.05, background: countryColor, color: '#fff' }}
-                            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-                        >
-                            <span>
-                                {(() => {
-                                    const tags = recipe.tags?.map(t => t.toLowerCase()) || [];
-                                    if (recipe.category === 'vegetarien' || tags.some(t => t.includes('végé') || t.includes('vege') || t.includes('vegetarien'))) {
-                                        return 'VÉGÉTARIEN';
-                                    }
-                                    return recipe.category === 'aperitifs' ? 'APÉRITIFS' : recipe.category.toUpperCase();
-                                })()}
-                            </span>
-                            {flag && <span className={styles.categoryFlag}>{flag}</span>}
-                        </motion.div>
-
-                        <div className={styles.heroMainContent}>
-                            <h1 className={styles.heroTitleElegant}>
-                                <SplitTitle text={recipe.title} noAnimation={true} />
-                            </h1>
-                            
-                            {recipe.description && (
-                                <div 
-                                    className={styles.heroDescription}
-                                    dangerouslySetInnerHTML={{ __html: recipe.description }}
-                                />
+                <div className={styles.heroNewLayout}>
+                    <div className={styles.heroGrid}>
+                        <div className={styles.heroTextColumn}>
+                            <div className={styles.categoryTag} style={{ background: theme.bg, color: theme.accent } as any}>
+                                <span>{recipe.category.toUpperCase()}</span>
+                                {flag && <span className={styles.categoryFlag}>{flag}</span>}
+                            </div>
+                            <div className={styles.heroMainContent}>
+                                <h1 className={styles.heroTitleElegant}><SplitTitle text={recipe.title} noAnimation={true} /></h1>
+                                {recipe.description && <div className={styles.heroDescription} dangerouslySetInnerHTML={{ __html: recipe.description }} />}
+                            </div>
+                            {recipe.category !== 'restaurant' && recipe.steps.length > 0 && (
+                                <button className={styles.heroFocusBtn} onClick={() => { setFocusMode(true); triggerHaptic(); }}>
+                                    <span>Lancer la préparation</span>
+                                </button>
                             )}
                         </div>
-
-                        {/* Bouton Lancer cuisine dans le Hero pour mobile & desktop */}
-                        {recipe.category !== 'restaurant' && recipe.steps.length > 0 && !focusMode && (
-                            <button className={styles.heroFocusBtn} onClick={() => {
-                                setFocusMode(true);
-                                setActiveStepIndex(0);
-                                triggerHaptic();
-                                // Scroll auto vers le focus card (HUD)
-                                window.scrollTo({ top: 0, behavior: 'smooth' });
-                                
-                                // On attend un peu que le mode focus s'active
-                                setTimeout(() => {
-                                    speak(recipe.steps[0]);
-                                }, 500);
-                            }}>
-                                <span className={styles.focusBtnIcon}>
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                        <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" />
-                                    </svg>
-                                </span>
-                                <span className={styles.focusBtnText}>Lancer la préparation</span>
-                            </button>
-                        )}
-                    </motion.div>
-
-                    {/* Colonne DROITE : Photo */}
-                    <div className={styles.heroImageColumn}>
-                        <div className={styles.actions}>
-                            <VoteButton 
-                                recipeId={recipe.id}
-                                initialVotes={recipe.votes || 0}
-                            />
-                            <ShareButton 
-                                title={recipe.title}
-                                url={typeof window !== 'undefined' ? window.location.href : ''}
-                            />
-                            <FavoriteButton
-                                recipeId={recipe.id}
-                                initialFavorite={recipe.isFavorite}
-                                imageUrl={recipe.image}
-                            />
+                        <div className={styles.heroImageColumn}>
+                            <div className={styles.actions}>
+                                <VoteButton recipeId={recipe.id} initialVotes={recipe.votes || 0} />
+                                <ShareButton title={recipe.title} url={typeof window !== 'undefined' ? window.location.href : ''} />
+                                <FavoriteButton recipeId={recipe.id} initialFavorite={recipe.isFavorite} imageUrl={recipe.image} />
+                            </div>
+                            <div className={styles.imageCardContainer}>
+                                {recipe.image ? <Image src={recipe.image} alt={recipe.title} fill className={styles.imageMain} priority /> : <div className={styles.imagePlaceholderLarge}>🍽️</div>}
+                                <div className={styles.imageGlassOverlay} />
+                            </div>
                         </div>
-                        <div className={styles.imageCardContainer}>
-                            {recipe.image ? (
-                                <Image
-                                    src={recipe.image}
-                                    alt={recipe.title}
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 700px, 800px"
-                                    className={styles.imageMain}
-                                    style={{ objectFit: 'cover' }}
-                                    priority={true}
-                                />
-                            ) : (
-                                <div className={styles.imagePlaceholderLarge}>
-                                    {recipe.category === 'aperitifs' ? '🍹' :
-                                        recipe.category === 'desserts' ? '🍰' :
-                                            recipe.category === 'plats' ? '🍲' : '🥗'}
+                    </div>
+                </div>
+
+                <div className={styles.metaStrip}>
+                    <div className={styles.metaItem}>
+                        <span>{recipe.category === 'restaurant' ? '📍' : '👥'}</span>
+                        <div>
+                            <div className={styles.metaLabel}>{recipe.category === 'restaurant' ? 'Lieu' : 'Portions'}</div>
+                            <div className={styles.metaValue}>{recipe.category === 'restaurant' ? (recipe.address || 'À découvrir') : servings}</div>
+                        </div>
+                    </div>
+                    <div className={styles.metaDivider} />
+                    <div className={styles.metaItem}>
+                        <span>{recipe.category === 'restaurant' ? '💰' : '⭐'}</span>
+                        <div>
+                            <div className={styles.metaLabel}>{recipe.category === 'restaurant' ? 'Gamme' : 'Difficulté'}</div>
+                            <div className={styles.metaValue}>{recipe.category === 'restaurant' ? 'Restaurant' : recipe.difficulty}</div>
+                        </div>
+                    </div>
+                </div>
+
+                {recipe.category === 'restaurant' && (
+                    <div className={styles.practicalInfoSection}>
+                        <div className={styles.addressCard}>
+                            <span className={styles.metallicLabel}>ADRESSE POSTALE</span>
+                            <div className={styles.addressDisplay}>
+                                <div className={styles.addressIconWrap}>📍</div>
+                                <div className={styles.addressValueLarge}>{recipe.address}</div>
+                            </div>
+                        </div>
+                        {recipe.ingredients && (
+                            <div className={styles.servicesGrid}>
+                                {recipe.ingredients.map((s, i) => (
+                                    <div key={i} className={styles.serviceCard}>✨ {s.name}</div>
+                                ))}
+                            </div>
+                        )}
+                        <div className={styles.actionButtonsGrid}>
+                            <a href={`https://maps.google.com/?q=${encodeURIComponent(recipe.address || '')}`} target="_blank" className={styles.primaryActionBtn}>Google Maps</a>
+                            <a href={`http://maps.apple.com/?q=${encodeURIComponent(recipe.address || '')}`} target="_blank" className={styles.primaryActionBtn}>Apple Plans</a>
+                            {recipe.website && <a href={recipe.website} target="_blank" className={styles.primaryActionBtn}>Site Officiel</a>}
+                        </div>
+                    </div>
+                )}
+
+                {recipe.category !== 'restaurant' && (
+                    <div className={styles.tabsWrapper}>
+                        <div className={styles.tabsBar}>
+                            {availableTabs.map(tab => (
+                                <button key={tab.id} onClick={() => switchTab(tab.id)} className={`${styles.tabBtn} ${activeTab === tab.id ? styles.tabBtnActive : ''}`}>
+                                    {tab.label} {tab.count !== undefined && <span className={styles.tabCount}>{tab.count}</span>}
+                                </button>
+                            ))}
+                        </div>
+                        <div className={styles.tabContent} ref={tabContentRef}>
+                            {activeTab === 'ingredients' && (
+                                <div className={styles.ingredientsList}>
+                                    {recipe.ingredients.map((ing, i) => (
+                                        <div key={i} className={`${styles.ingredientCard} ${checkedIngredients[i] ? styles.ingredientDone : ''}`} onClick={() => toggleIngredient(i)}>
+                                            <div className={styles.ingIconWrap}>{getIngredientVisual(ing.name) || '🥗'}</div>
+                                            <div className={styles.ingInfo}>
+                                                <span className={styles.ingQty}>{scaleQuantity(ing.quantity || '', ratio)}</span>
+                                                <span className={styles.ingName}>{ing.name}</span>
+                                            </div>
+                                        </div>
+                                    ))}
+                                    <button className={styles.copyBtn} onClick={copyIngredients}>Ajouter au panier 🛒</button>
                                 </div>
                             )}
-                            <div className={styles.imageGlassOverlay} />
+                            {activeTab === 'steps' && (
+                                <div className={styles.stepsList}>
+                                    {recipe.steps.map((step, i) => (
+                                        <div key={i} className={`${styles.stepCard} ${checkedSteps[i] ? styles.stepDone : ''}`} onClick={() => toggleStep(i)}>
+                                            <div className={styles.stepBubble}>{checkedSteps[i] ? '✓' : i + 1}</div>
+                                            <div className={styles.stepBody}><SmartText text={step} /></div>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                            {activeTab === 'video' && recipe.videoHtml && <VideoSection videoHtml={recipe.videoHtml} />}
                         </div>
                     </div>
-                </div>
-            </div>
-
-            {/* Metadata strip */}
-            <div className={styles.metaStrip}>
-                <div className={styles.metaItem}>
-                    <span className={styles.metaIcon}>
-                        {recipe.category === 'restaurant' ? '📍' : '👥'}
-                    </span>
-                    <div>
-                        <div className={styles.metaLabel}>
-                            {recipe.category === 'restaurant' ? 'Lieu' : 'Portions'}
-                        </div>
-                        {recipe.category === 'restaurant' ? (
-                            <div className={styles.metaValue}>{recipe.address || 'À découvrir'}</div>
-                        ) : (
-                            <div className={styles.servingsControl}>
-                                <button
-                                    className={styles.servingBtn}
-                                    onClick={() => setServings(Math.max(1, servings - 1))}
-                                >
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    </svg>
-                                </button>
-                                <span className={styles.servingsNumber}>{servings}</span>
-                                <button
-                                    className={styles.servingBtn}
-                                    onClick={() => setServings(servings + 1)}
-                                >
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <line x1="12" y1="5" x2="12" y2="19"></line>
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    </svg>
-                                </button>
-                            </div>
-                        )}
-                    </div>
-                </div>
-
-                <div className={styles.metaDivider} />
-
-                <div className={styles.metaItem}>
-                    <span className={styles.metaIcon}>
-                        {recipe.category === 'restaurant' ? '💰' : '⭐'}
-                    </span>
-                    <div>
-                        <div className={styles.metaLabel}>
-                            {recipe.category === 'restaurant' ? 'Gamme' : 'Difficulté'}
-                        </div>
-                        <div
-                            className={styles.metaValue}
-                            style={{ color: recipe.category === 'restaurant' ? 'var(--color-accent-gold)' : (difficultyColors as any)[recipe.difficulty] }}
-                        >
-                            {recipe.category === 'restaurant' ? 'Restaurant' : recipe.difficulty.charAt(0).toUpperCase() + recipe.difficulty.slice(1)}
-                        </div>
-                    </div>
-                </div>
-
-                {recipe.category !== 'restaurant' && (recipe.prepTime || recipe.cookTime) && (
-                    <>
-                        <div className={styles.metaDivider} />
-                        <div className={styles.metaItem}>
-                            <span className={styles.metaIcon}>⏱️</span>
-                            <div>
-                                <div className={styles.metaLabel}>Temps</div>
-                                <div className={styles.metaValue}>{(recipe.prepTime || 0) + (recipe.cookTime || 0)} min</div>
-                            </div>
-                        </div>
-                    </>
                 )}
             </div>
 
-            {/* Description pour restaurants */}
-            {recipe.description && recipe.category === 'restaurant' && (
-                <div className={styles.descriptionSection}>
-                    <div
-                        className={styles.recipeDescription}
-                        dangerouslySetInnerHTML={{ __html: recipe.description }}
-                    />
-                </div>
-            )}
-
-            {/* TABS */}
-            {recipe.category !== 'restaurant' && (
-                <div className={styles.tabsWrapper}>
-                    <div className={styles.tabsBar}>
-                        {availableTabs.map((tab) => (
-                            <button
-                                key={tab.id}
-                                className={`${styles.tabBtn} ${activeTab === tab.id ? styles.tabBtnActive : ''}`}
-                                onClick={() => switchTab(tab.id)}
-                            >
-                                <span>{tab.label}</span>
-                                {tab.count !== undefined && (
-                                    <span className={`${styles.tabCount} ${activeTab === tab.id ? styles.tabCountActive : ''}`}>
-                                        {tab.count}
-                                    </span>
-                                )}
-                            </button>
-                        ))}
-                        {/* Indicateur glissant */}
-                        <div
-                            className={styles.tabIndicator}
-                            style={{
-                                left: `calc(4px + ${availableTabs.findIndex(t => t.id === activeTab)} * ((100% - 8px) / ${availableTabs.length}))`,
-                                width: `calc((100% - 8px) / ${availableTabs.length})`
-                            }}
-                        />
-                    </div>
-
-                    {/* Header du tab ingrédients (Sorti du tabPanel pour être sticky via CSS) */}
-                    {activeTab === 'ingredients' && (
-                        <div className={styles.stickyPanelHeader}>
-                            <div className={styles.ingredientsActionBlock}>
-                                <div className={styles.ingredientProgress}>
-                                    <span className={styles.ingredientProgressText}>
-                                        {checkedCount} sélectionné{checkedCount > 1 ? 's' : ''}
-                                    </span>
-                                </div>
-                                <div className={styles.tabActionsUnified}>
-                                    <MagicConverter />
-                                    <button className={styles.copyBtn} onClick={copyIngredients}>
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-                                            <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
-                                        </svg>
-                                        Mettre au panier
-                                    </button>
-                                </div>
+            <AnimatePresence>
+                {focusMode && (
+                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className={styles.focusOverlay} style={{ '--dynamic-accent': theme.accent } as any}>
+                        <div className={styles.focusHeader}>
+                            <h2 className={styles.focusTitle}>{recipe.title}</h2>
+                            <button onClick={() => setFocusMode(false)}>Quitter</button>
+                        </div>
+                        <div className={styles.focusContent}>
+                            <div className={styles.focusStepCard}>
+                                <div className={styles.focusStepNumber}>Étape {activeStepIndex + 1}</div>
+                                <div className={styles.focusStepText}><SmartText text={recipe.steps[activeStepIndex]} /></div>
                             </div>
                         </div>
-                    )}
-
-                    {/* Contenu des tabs - scrollable individuellement */}
-                    <div className={styles.tabContent} ref={tabContentRef} key={activeTab}>
-
-                        {/* TAB: Ingrédients */}
-                        {activeTab === 'ingredients' && (
-                            <div className={styles.tabPanel}>
-
-                                <div className={styles.ingredientsGrid}>
-                                    {recipe.ingredients.map((ing, idx) => (
-                                        <div
-                                            key={idx}
-                                            className={`${styles.ingredientCard} ${checkedIngredients[idx] ? styles.ingredientDone : ''}`}
-                                            style={{ animationDelay: `${idx * 40}ms` }}
-                                            onClick={() => toggleIngredient(idx)}
-                                        >
-                                            <div className={styles.hiddenCheck}>
-                                                <input
-                                                    type="checkbox"
-                                                    checked={checkedIngredients[idx]}
-                                                    readOnly
-                                                />
-                                            </div>
-
-                                            {/* Icône ingrédient */}
-                                            <div className={styles.ingIconWrap}>
-                                                {(() => {
-                                                    const visual = ing.image || getIngredientVisual(ing.name);
-                                                    if (visual) {
-                                                        return <img src={visual} alt="" className={styles.ingImg} />;
-                                                    }
-                                                    
-                                                    // Nettoyage de l'émoji d'origine (on vire les 🥣 et 🥚)
-                                                    const cleanMatch = ing.name.match(/^[\uD83C-\uDBFF\uDC00-\uDFFF\u2600-\u27BF\s]*([\s\S]*)/);
-                                                    const nameWithoutEmoji = cleanMatch ? cleanMatch[1].trim() : ing.name;
-
-                                                    // Fallback sur un émoji intelligent si pas de photo
-                                                    const smartEmoji = (() => {
-                                                        const n = nameWithoutEmoji.toLowerCase();
-                                                        if (n.includes('miel')) return '🍯';
-                                                        if (n.includes('poivron')) return '🫑';
-                                                        if (n.includes('herbe') || n.includes('aneth') || n.includes('ciselé')) return '🌿';
-                                                        if (n.includes('fromage') || n.includes('feta')) return '🧀';
-                                                        if (n.includes('viande') || n.includes('poulet')) return '🥩';
-                                                        if (n.includes('fruit')) return '🍎';
-                                                        return '🥗'; // Fallback générique premium au lieu du bol bleu
-                                                    })();
-
-                                                    return <span className={styles.ingEmoji}>{smartEmoji}</span>;
-                                                })()}
-
-                                                {/* Checkmark overlay */}
-                                                <div className={`${styles.ingCheckOverlay} ${checkedIngredients[idx] ? styles.ingCheckVisible : ''}`}>
-                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
-                                                        <polyline points="20 6 9 17 4 12" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-
-                                            <div className={styles.ingInfo}>
-                                                {(() => {
-                                                    let displayQty = ing.quantity;
-                                                    // Nettoyage STRICT du nom pour l'affichage (Plus d'émojis, plus de Bowl)
-                                                    // Nettoyage du nom pour l'affichage sans détruire les lignes
-                                                    let displayName = ing.name
-                                                        // .replace(/\n/g, ' ') // On garde les retours à la ligne
-                                                        // .replace(/\s+/g, ' ')
-                                                        // Supprime TOUS les caractères spéciaux / émojis du début
-                                                        .replace(/^[\uD83C-\uDBFF\uDC00-\uDFFF\u2600-\u27BF\s]+/, '')
-                                                        .trim();
-                                                    
-                                                    if (!displayQty) {
-                                                        const qtyRegex = /^(\d+(?:[.,]\d+)?\s*(?:g|kg|ml|cl|l|cas|cac|c\.à\.s|c\.à\.c|c\.\s*à\s*(?:soupe|café)|verre|pincée|grammes?|millilitres?|centilitres?|boîtes?|boite|sachets?|pots?|bottes?|tasses?|filets?|tranches?|gousses?|morceaux?|cuillères?|pincées?)?)(?:\s+(.*))?$/i;
-                                                        const match = displayName.match(qtyRegex);
-                                                        if (match) {
-                                                            displayQty = match[1].trim();
-                                                            displayName = (match[2] || '').trim();
-                                                        }
-                                                    }
-
-                                                    if (!displayQty && displayName) {
-                                                         const wordQtyRegex = /^(un|une|deux|trois|quatre|cinq|six|sept|huit|neuf|dix)\s+(.*)/i;
-                                                         const match = displayName.match(wordQtyRegex);
-                                                         if (match) {
-                                                             displayQty = match[1];
-                                                             displayName = match[2];
-                                                         }
-                                                    }
-
-                                                    // Protection finale : si le nom commence encore par "De ", "D'"
-                                                    displayName = displayName.replace(/^(?:de\s+|d'|du\s+|des\s+)/i, '').trim();
-
-                                                    return (
-                                                        <>
-                                                            <span className={styles.ingQty} style={{ color: 'var(--country-color, var(--dynamic-accent))' }}>{scaleQuantity(displayQty, ratio)}</span>
-                                                            <span className={styles.ingName}>
-                                                                {displayName.charAt(0).toUpperCase() + displayName.slice(1)}
-                                                            </span>
-                                                        </>
-                                                    );
-                                                })()}
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
-
-                        {/* TAB: Étapes */}
-                        {activeTab === 'steps' && (
-                            <div className={styles.tabPanel}>
-                                <div className={styles.stepsProgressBar}>
-                                    <div className={styles.stepsProgressHeader}>
-                                        <span className={styles.stepsProgressLabel}>Progression</span>
-                                        <span className={styles.progressBadge}>{Math.round(progress)}%</span>
-                                    </div>
-                                    <div className={styles.progressTrack}>
-                                        <div className={styles.progressFill} style={{ width: `${progress}%` }} />
-                                    </div>
-                                </div>
-
-                                <div className={styles.stepsList}>
-                                    {recipe.steps.map((step, index) => (
-                                        <div
-                                            key={index}
-                                            className={`${styles.stepCard} ${checkedSteps[index] ? styles.stepDone : ''}`}
-                                            onClick={() => toggleStep(index)}
-                                            style={{ animationDelay: `${index * 50}ms` }}
-                                        >
-                                            <div className={styles.stepBubble}>
-                                                {checkedSteps[index] ? (
-                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                                                        <polyline points="20 6 9 17 4 12" />
-                                                    </svg>
-                                                ) : (
-                                                    <span>{index + 1}</span>
-                                                )}
-                                            </div>
-                                            <div className={styles.stepBody}>
-                                                <SmartText text={step} />
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
-
-                        {/* TAB: Vidéo */}
-                        {activeTab === 'video' && recipe.videoHtml && (
-                            <div className={styles.tabPanel}>
-                                <VideoSection videoHtml={recipe.videoHtml} />
-                            </div>
-                        )}
-                    </div>
-                </div>
-            )}
-
-            {/* Pour les restaurants: description complète */}
-            {recipe.category === 'restaurant' && recipe.description && (
-                <div className={styles.tabsWrapper}>
-                    <div className={styles.restaurantContent}>
-                        <div className={styles.recipeDescription}
-                            dangerouslySetInnerHTML={{ __html: recipe.description }}
-                        />
-                    </div>
-                </div>
-            )}
-
-            {/* Focus Mode Overlay */}
-            {focusMode && (
-                <div
-                    className={styles.focusOverlay}
-                    style={{
-                        // @ts-ignore
-                        '--dynamic-accent': theme.accent,
-                        '--dynamic-accent-glow': theme.glow,
-                        '--dynamic-accent-bg': theme.bg
-                    }}
-                >
-                    <div className={styles.focusHeader}>
-                        <div className={styles.focusTitle}>
-                            <SplitTitle text={recipe.title} noAnimation={true} />
+                        <div className={styles.focusHud}>
+                            <button onClick={handlePrevStep} disabled={activeStepIndex === 0}>Précédent</button>
+                            <button onClick={() => speak(recipe.steps[activeStepIndex])}>Répéter</button>
+                            <button onClick={handleNextStep}>Suivant</button>
                         </div>
-                        <button className={styles.focusClose} onClick={() => {
-                            setFocusMode(false);
-                            triggerHaptic();
-                        }}>✕ Quitter</button>
-                    </div>
-
-                    {/* Progress dans focus mode : on utilise le même calcul de progression que la vue habituelle */}
-                    <div className={styles.focusProgress}>
-                        <div className={styles.focusProgressFill} style={{ width: `${progress}%` }} />
-                    </div>
-
-                    <div className={styles.focusContent}>
-                        <AnimatePresence mode="wait">
-                            <motion.div
-                                key={activeStepIndex}
-                                className={styles.focusStepCard}
-                                initial={{ opacity: 0, scale: 0.9, filter: 'blur(10px)' }}
-                                animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
-                                exit={{ opacity: 0, scale: 1.1, filter: 'blur(10px)' }}
-                                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                            >
-                                <div className={styles.focusStepHeader}>
-                                    <div className={styles.focusStepNumber}>Étape {activeStepIndex + 1} / {recipe.steps.length}</div>
-                                    {isListening && (
-                                        <div className={styles.listeningHud}>
-                                            <div className={styles.listeningDot} />
-                                            <span>Assistant Actif</span>
-                                        </div>
-                                    )}
-                                </div>
-                                <h2 className={styles.focusStepText}>
-                                    <SmartText text={recipe.steps[activeStepIndex]} />
-                                </h2>
-                            </motion.div>
-                        </AnimatePresence>
-                    </div>
-
-                    {/* CONTRÔLES TACTILES ET VOCAUX (HUD FLOTTANT) */}
-                    <div className={styles.focusHudWrapper}>
-                        <motion.div 
-                            className={styles.focusHud}
-                            initial={{ y: 50, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: 0.5, duration: 0.8 }}
-                        >
-                            <button
-                                className={`${styles.hudBtn} ${styles.hudBtnPrev}`}
-                                disabled={activeStepIndex === 0}
-                                onClick={() => {
-                                    handlePrevStep();
-                                    triggerHaptic();
-                                }}
-                            >
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M15 18l-6-6 6-6" />
-                                </svg>
-                                <span>Précédent</span>
-                            </button>
-
-                            <button
-                                className={`${styles.hudBtn} ${styles.hudBtnRepeat}`}
-                                onClick={() => {
-                                    handleRepeatStep();
-                                    triggerHaptic();
-                                }}
-                            >
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M1 4v6h6" />
-                                    <path d="M3.51 15a9 9 0 102.13-9.36L1 10" />
-                                </svg>
-                            </button>
-
-                            <button
-                                className={`${styles.hudBtn} ${styles.hudBtnNext}`}
-                                onClick={() => {
-                                    handleNextStep();
-                                    triggerHaptic();
-                                }}
-                            >
-                                {activeStepIndex === recipe.steps.length - 1 ? (
-                                    <>
-                                        <span>Terminer</span>
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                                            <polyline points="20 6 9 17 4 12" />
-                                        </svg>
-                                    </>
-                                ) : (
-                                    <>
-                                        <span>Suivant</span>
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M9 18l6-6-6-6" />
-                                        </svg>
-                                    </>
-                                )}
-                            </button>
-                        </motion.div>
-                        
-                        {/* Indicateur vocal basique */}
-                        <div className={styles.voiceCommandsHint}>
-                            &quot;Suivant&quot; • &quot;Précédent&quot; • &quot;Répète&quot;
-                        </div>
-                    </div>
-                </div>
-            )}
-        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </>
     );
 }

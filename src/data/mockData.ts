@@ -13401,7 +13401,7 @@ export const mockRecipes: Recipe[] = [
     {
         "id": "1300",
         "title": "Joji - Paris 4",
-        "description": "Joji est un restaurant asiatique et plus particulièrement japonais. Nous ne sommes pas ici dans un restaurant avec buffet autour duquel vous trouverez des frites et des nuggets. Vous ne trouverez pas non plus de sushi, de maki ou de brochettes au fromage.\nici, vous vous trouvez dans un restaurant chaleureusement décoré avec du bois et de la musique. La cuisine y est soignée et typique. L'accueil est très sympa et aux petits soins.\nMon plat préféré : Croquettes d’effiloché de porc au kimchi, s...",
+        "description": "Joji est un restaurant asiatique et plus particulièrement japonais. Nous ne sommes pas ici dans un restaurant avec buffet autour duquel vous trouverez des frites et des nuggets. Vous ne trouverez pas non plus de sushi, de maki ou de brochettes au fromage.\nici, vous vous trouvez dans un restaurant chaleureusement décoré avec du bois et de la musique. La cuisine y est soignée et typique. L'accueil est très sympa et aux petits soins.\nMon plat préféré : Croquettes d’effiloché de porc au kimchi, sauce Haixian",
         "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2022%2F09%2F7ECA4B5D-8EF8-4674-8567-C29B4AA61CCC.jpeg&v=1753388996000-1775228795977",
         "category": "restaurant",
         "difficulty": "moyen",
@@ -13411,10 +13411,18 @@ export const mockRecipes: Recipe[] = [
         "videoHtml": "",
         "ingredients": [],
         "steps": [
-            "Joji est un restaurant asiatique et plus particulièrement japonais. Nous ne sommes pas ici dans un restaurant avec buffet autour duquel vous trouverez des frites et des nuggets. Vous ne trouverez pas non plus de sushi, de maki ou de brochettes au fromage. ici, vous vous trouvez dans un restaurant chaleureusement décoré avec du bois et de la musique. La cuisine y est soignée et typique. L'accueil est très sympa et aux petits soins. Mon plat préféré : Croquettes d’effiloché de porc au kimchi, sauce Haixian",
-            "l’accueil, l’ambiance, la musique, le visuel des plats",
+            "L’accueil, l’ambiance, la musique, le visuel des plats",
             "Un peu cher, pas le meilleur japonais pour moi",
             "5 Rue de Turenne, 75004 Paris, France https://www.instagram.com/joji_bistro/"
+        ],
+        "address": "5 Rue de Turenne, 75004 Paris, France",
+        "website": "https://www.instagram.com/joji_bistro/",
+        "reviews": [
+            { "author": "Manu R.", "rating": 5, "content": "Une expérience incroyable, les croquettes d'effiloché de porc sont à tomber ! Déco boisée très chaleureuse.", "date": "Il y a 2 jours" },
+            { "author": "Sophie M.", "rating": 5, "content": "Le meilleur japonais du quartier. Loin des buffets à volonté, ici tout est authentique. Le personnel est aux petits soins.", "date": "Il y a 1 semaine" },
+            { "author": "Thomas L.", "rating": 4, "content": "Très bonne cuisine soignée. Le cadre est calme et parfait pour une soirée posée. Un peu d'attente mais ça vaut le coup.", "date": "Il y a 2 semaines" },
+            { "author": "Léa D.", "rating": 5, "content": "Une pépite ! La déco est magnifique et les saveurs sont incroyables. Je recommande vivement les takoyakis revisités.", "date": "Il y a 1 mois" },
+            { "author": "Julien P.", "rating": 5, "content": "Enfin un vrai restaurant japonais avec du goût et du caractère. L'adresse idéale dans le 4ème.", "date": "Il y a 2 mois" }
         ],
         "tags": [
             "France",
@@ -13422,8 +13430,7 @@ export const mockRecipes: Recipe[] = [
             "Asie"
         ],
         "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
+        "isFavorite": false
     },
     {
         "id": "1214",

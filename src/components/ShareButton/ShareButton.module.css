@@ -3,25 +3,20 @@
     height: 44px;
     border-radius: 50%;
     background: transparent;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1.5px solid #000; /* Identique au bouton favori */
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 10;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    font-size: 1.1rem;
-    color: white;
+    color: #000;
 }
 
 .actionBtn:hover {
     transform: scale(1.1);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .actionBtn:active {

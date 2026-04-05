@@ -119,6 +119,7 @@ function extractRecipeData(content) {
     let steps = [];
     let videoHtml = '';
     let address = '';
+    let website = '';
     let difficulty = 'moyen';
     let prepTime = 15;
     let cookTime = 30;
@@ -139,6 +140,20 @@ function extractRecipeData(content) {
     const prepMatch = cleanContent.match(/Prép[^:]*:\s*(\d+)\s*(min|h)/i);
     const cookMatch = cleanContent.match(/Cuisson\s*:\s*(\d+)\s*(min|h)/i);
     const totalMatch = cleanContent.match(/Total\s*:\s*(\d+)\s*(min|h)/i);
+
+    // Extraction de l'adresse (Pattern : "Adresse : ...")
+    const addressMatch = cleanContent.match(/Adresse\s*:\s*([^<]+)/i);
+    if (addressMatch) address = addressMatch[1].trim();
+
+    // Extraction du site web (Heuristique : "Site", "Résevations", "Lien", ou simplement un lien avec "site/web")
+    const websiteMatch = cleanContent.match(/(?:Site|Réservation|Lien|Web)\s*(?::)?\s*<a[^>]*href=["'](https?:\/\/[^"']+)["']/i);
+    if (websiteMatch) {
+        website = websiteMatch[1];
+    } else {
+        // Fallback : On cherche n'importe quel lien qui contient 'site' ou 'web' ou 'insta'
+        const anyLinkMatch = cleanContent.match(/<a[^>]*href=["'](https?:\/\/[^"']*(?:site|web|book|insta|link)[^"']*)["']/i);
+        if (anyLinkMatch) website = anyLinkMatch[1];
+    }
 
     if (prepMatch) {
         prepTime = parseInt(prepMatch[1]);
@@ -267,11 +282,7 @@ function extractRecipeData(content) {
     description = decodeHtmlEntities(rawDescription.replace(/<img[^>]*>/gi, '').replace(/<a[^>]*>\s*<\/a>/gi, '').trim());
     if (description.length > 500) description = description.substring(0, 497) + '...';
 
-    // Extraction adresse
-    const addrMatch = description.match(/(\d+\s+[^,\n\r]+,\s*\d{5}\s+[^<\n\r]+)|📍\s*([^<\n\r]+)|Adresse\s*:\s*([^<\n\r]+)/i);
-    if (addrMatch) address = (addrMatch[1] || addrMatch[2] || addrMatch[3]).trim();
-
-    return { description, ingredients, steps, videoHtml, address, difficulty, prepTime, cookTime };
+    return { description, ingredients, steps, videoHtml, address, website, difficulty, prepTime, cookTime };
 }
 
 
@@ -406,7 +417,7 @@ async function syncRecipes() {
 
             // Mapping des résultats
             const pageRecipes = cleanPosts.map((post, index) => {
-                const { description, ingredients, steps, videoHtml, address, difficulty, prepTime, cookTime } = extractRecipeData(post.content.rendered);
+                const { description, ingredients, steps, videoHtml, address, website, difficulty, prepTime, cookTime } = extractRecipeData(post.content.rendered);
                 const category = determineCategory(post, ingredients);
                 let featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || '';
 
@@ -509,7 +520,8 @@ async function syncRecipes() {
                     tags: tagNames,
                     isFeatured: page === 1 && index === 0,
                     isFavorite: false,
-                    address: address
+                    address: address,
+                    website: website
                 };
             });
 

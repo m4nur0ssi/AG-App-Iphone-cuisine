@@ -19,6 +19,16 @@ export interface Recipe {
     isVoted?: boolean;
     votes?: number;
     address?: string;
+    website?: string;
+    reviews?: Review[];
+}
+
+export interface Review {
+    author: string;
+    rating: number; // 0-5
+    content: string;
+    date: string;
+    avatar?: string;
 }
 
 

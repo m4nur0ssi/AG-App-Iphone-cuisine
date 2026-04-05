@@ -13,6 +13,8 @@ import styles from './page.module.css';
 export default function Home() {
     const [scrolled, setScrolled] = useState(false);
     const [activeTags, setActiveTags] = useState<string[]>([]);
+    const [touchStart, setTouchStart] = useState<number>(0);
+    const [touchEnd, setTouchEnd] = useState<number>(0);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -65,6 +67,23 @@ export default function Home() {
 
     const clearAllFilters = () => {
         setActiveTags([]);
+    };
+
+    const handleTouchStart = (e: React.TouchEvent) => {
+        setTouchStart(e.targetTouches[0].clientX);
+    };
+
+    const handleTouchMove = (e: React.TouchEvent) => {
+        setTouchEnd(e.targetTouches[0].clientX);
+    };
+
+    const handleTouchEnd = () => {
+        if (touchStart < 100 && (touchEnd - touchStart) > 100) {
+            if (activeTags.length > 0) {
+                clearAllFilters();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
     };
 
     const filteredRecipes = useMemo(() => {
@@ -168,16 +187,19 @@ export default function Home() {
                           title.includes('cocktail') || tags.includes('aperitif') || tags.includes('apéro') ||
                           cat.includes('aperitifs') || cat.includes('apéro') || title.includes('houmous');
 
-            const isEntree = title.includes('salade') || title.includes('soupe') || title.includes('velouté') ||
-                           title.includes('œuf') || title.includes('entrée') || tags.includes('entrée') ||
-                           cat.includes('entrees') || cat.includes('entrée') || title.includes('carpaccio');
+            const isEntree = (title.includes('salade') || title.includes('soupe') || title.includes('velouté') ||
+                           (title.includes('œuf') && !title.includes('bœuf')) || title.includes('entrée') || tags.includes('entrée') ||
+                           cat.includes('entrees') || cat.includes('entrée') || title.includes('carpaccio')) && !title.includes('apéro');
 
             const isDessertRaw = (title.includes('gâteau') || title.includes('chocolat') || title.includes('sucre') || 
                                title.includes('cookies') || title.includes('tiramisu') || title.includes('crêpe') ||
                                cat.includes('dessert') || cat.includes('patisserie')) && !isSavory;
 
-            const isIceCream = (title.includes('glace') || title.includes('sorbet') || tags.includes('glace') || tags.includes('sorbet')) && !isSavory;
+            const isIceCream = (title.includes('glace') || title.includes('sorbet') || tags.includes('glace') || tags.includes('sorbet')) && 
+                               !isSavory && !title.includes('glaçage') && !title.includes('gâteau');
+            
             const isBeverage = (title.includes('boisson') || title.includes('cocktail') || title.includes('jus') || 
+                              title.includes('alcool') || title.includes('vin') || title.includes('bière') ||
                               tags.includes('boisson') || tags.includes('cocktail') || tags.includes('jus')) && !isSavory;
 
             const isDessert = isDessertRaw && !isIceCream;
@@ -296,7 +318,12 @@ export default function Home() {
                 />
             </div>
 
-            <main className={styles.main}>
+            <main 
+                className={styles.main}
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+            >
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={activeTags.join('-')}
