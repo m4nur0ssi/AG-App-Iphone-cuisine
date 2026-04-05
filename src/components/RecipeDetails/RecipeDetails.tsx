@@ -823,7 +823,7 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
                                                 ))}
                                             </div>
                                         </div>
-                                        <p className={styles.reviewContent}>"{review.content}"</p>
+                                        <p className={styles.reviewContent}>&quot;{review.content}&quot;</p>
                                     </div>
                                 ))}
                             </div>
