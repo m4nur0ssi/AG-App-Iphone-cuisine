@@ -109,9 +109,9 @@ jobs:
 
 
       - name: Synchronisation complete depuis WordPress
-        if: ${{ github.event.inputs.trigger_source != 'tiktok-shortcut' }}
+        if: ${{ github.event.inputs.trigger_source != 'tiktok-shortcut' || github.event_name == 'repository_dispatch' }}
         run: |
-          node sync-recipes.js --delete-id=${{ github.event.inputs.delete_id }} || echo "Ignored sync error"
+          node sync-recipes.js --delete-id=${{ github.event.inputs.delete_id || github.event.client_payload.delete_id || '' }} || echo "Ignored sync error"
         env:
           WP_PUBLIC_IP: ${{ secrets.WP_PUBLIC_IP }}
         continue-on-error: true
