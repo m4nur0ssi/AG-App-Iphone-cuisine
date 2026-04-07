@@ -19,8 +19,12 @@ on:
         description: "ID de la recette a supprimer de force (optionnel)"
         required: false
         default: ""
-  schedule:
-    - cron: "0 */2 * * *"
+  repository_dispatch:
+    types:
+      - wp_recipe_published
+      - wp_recipe_updated
+      - wp_recipe_deleted
+      - wp_full_sync
 
 jobs:
   process:
