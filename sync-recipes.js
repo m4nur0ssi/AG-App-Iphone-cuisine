@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const fetch = require('node-fetch');
+// fetch() est disponible nativement depuis Node 18 — pas besoin de node-fetch
 
 /**
  * sync-recipes.js — App iPhone
