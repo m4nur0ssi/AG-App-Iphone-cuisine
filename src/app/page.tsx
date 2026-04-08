@@ -106,10 +106,10 @@ export default function Home() {
 
                 // Thématiques saisonnières
                 if (tagLower === 'voila-lete') {
-                    return recipe.category === 'voila-lete' || recipeTags.some(t => t.includes('été') || t.includes('ete') || t.toLowerCase().includes('voilà') || t.includes('voila-lete'));
+                    return (recipe.category as string) === 'voila-lete' || recipeTags.some(t => t.includes('été') || t.includes('ete') || t.toLowerCase().includes('voilà') || t.includes('voila-lete'));
                 }
                 if (tagLower === 'cest-lhiver') {
-                    return recipe.category === 'cest-lhiver' || recipeTags.some(t => t.includes('hiver') || t.toLowerCase().includes("c'est l'hiver") || t.includes('cest-lhiver'));
+                    return (recipe.category as string) === 'cest-lhiver' || recipeTags.some(t => t.includes('hiver') || t.toLowerCase().includes("c'est l'hiver") || t.includes('cest-lhiver'));
                 }
 
                 if (tagLower === 'simplissime') {
