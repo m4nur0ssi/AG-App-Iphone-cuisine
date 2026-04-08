@@ -101,7 +101,7 @@ export default function Home() {
                 }
 
                 if (tagLower === 'pâques' || tagLower === 'paques') {
-                    return recipeTags.some(t => t.toLowerCase() === 'pâques' || t.toLowerCase() === 'paques' || t.toLowerCase() === 'agneau');
+                    return recipeTags.some(t => t.toLowerCase() === 'pâques' || t.toLowerCase() === 'paques' || t.toLowerCase() === 'agneau') || recipe.title.toLowerCase().includes('agneau');
                 }
 
                 if (tagLower === 'simplissime') {
