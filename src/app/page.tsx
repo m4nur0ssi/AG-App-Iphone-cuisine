@@ -104,6 +104,14 @@ export default function Home() {
                     return recipeTags.some(t => t.toLowerCase() === 'pâques' || t.toLowerCase() === 'paques' || t.toLowerCase() === 'agneau') || recipe.title.toLowerCase().includes('agneau');
                 }
 
+                // Thématiques saisonnières
+                if (tagLower === 'voila-lete') {
+                    return recipe.category === 'voila-lete' || recipeTags.some(t => t.includes('été') || t.includes('ete') || t.toLowerCase().includes('voilà') || t.includes('voila-lete'));
+                }
+                if (tagLower === 'cest-lhiver') {
+                    return recipe.category === 'cest-lhiver' || recipeTags.some(t => t.includes('hiver') || t.toLowerCase().includes("c'est l'hiver") || t.includes('cest-lhiver'));
+                }
+
                 if (tagLower === 'simplissime') {
                     return recipeTags.includes('simplissime') || recipeCat === 'simplissime';
                 }
@@ -298,6 +306,24 @@ export default function Home() {
             image: '/images/themes/dolce-vita.jpg',
             category: 'plats',
             tags: ['italie'],
+            isFavorite: false
+        },
+        {
+            id: 'voila-lete',
+            title: "Voilà l'Été ☀️",
+            description: 'Les meilleures recettes estivales.',
+            image: '/images/themes/voila-lete.jpg',
+            category: 'plats',
+            tags: ['voila-lete'],
+            isFavorite: false
+        },
+        {
+            id: 'cest-lhiver',
+            title: "C'est l'Hiver ❄️",
+            description: 'Recettes chaleureuses pour les jours froids.',
+            image: '/images/themes/cest-lhiver.jpg',
+            category: 'plats',
+            tags: ['cest-lhiver'],
             isFavorite: false
         }
     ];
