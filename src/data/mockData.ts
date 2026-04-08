@@ -2,11 +2,168 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/04/2026 15:40:14
- * Total: 185 recettes
+ * Dernière mise à jour: 08/04/2026 17:17:16
+ * Total: 186 recettes
  */
-export const exportSyncId = "1775662814185";
+export const exportSyncId = "1775668636834";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5003",
+        "title": "Salade de Tortellini Croustillants à l&rsquo;Airfryer",
+        "description": "Fini les salades natures et sans saveur ! Essayez cette salade fraîche et gourmande avec des tortellini croustillants préparés à l&rsquo;airfryer, agrémentée de légumes frais et d&rsquo;une sauce onctueuse.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1775668322978.jpg&v=1775675549000",
+        "category": "entrees",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7614838971708755222\" data-video-id=\"7614838971708755222\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7614838971708755222\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             4 cas de fromage blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d’olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Vinaigre"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Fromage râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n             Concombre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Echalotes"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomates cerise"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Mozza"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Tortellini"
+            }
+        ],
+        "steps": [
+            "Faire cuire les tortellini dans l&rsquo;eau pendant 1 à 2 minutes.",
+            "Égoutter les tortellini. Les placer dans l&rsquo;airfryer avec le fromage râpé, le parmesan, la mozza et un filet d&rsquo;huile d&rsquo;olive.",
+            "Faire dorer les tortellini et les fromages dans l&rsquo;airfryer pendant 10 minutes à 180°C pour qu&rsquo;ils soient bien croustillants.",
+            "Pendant ce temps, préparer la sauce en mélangeant le fromage blanc, l&rsquo;huile d&rsquo;olive, le sel, le poivre et le vinaigre.",
+            "Laver et couper le concombre, les échalotes et les tomates cerise.",
+            "Dans un grand saladier, mélanger les tortellini croustillants, les légumes coupés et la sauce. Servir frais."
+        ],
+        "tags": [
+            "Entrées",
+            "Healthy",
+            "Italie",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5002",
+        "title": "Salade de Tortellini Croustillants à l&rsquo;Airfryer",
+        "description": "Une salade estivale et gourmande, composée de tortellini cuits à l&rsquo;airfryer pour un croustillant irrésistible, mélangés à des légumes frais (concombre, tomates cerise, échalotes, mozza) et une sauce onctueuse au fromage blanc, huile d&rsquo;oli",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1775668322042.jpg&v=1775675549000",
+        "category": "entrees",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7614838971708755222\" data-video-id=\"7614838971708755222\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7614838971708755222\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             4 cas de fromage blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d’olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Vinaigre"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Fromage râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n             Concombre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Echalotes"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomates cerise"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Mozza"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Tortellini"
+            }
+        ],
+        "steps": [
+            "Dans un bol, préparer la sauce en mélangeant 4 cuillères à soupe de fromage blanc, de l&rsquo;huile d&rsquo;olive, du sel, du poivre, du vinaigre, du fromage râpé et du parmesan.",
+            "Laver et couper le concombre, les échalotes, les tomates cerise et la mozza en morceaux.",
+            "Faire cuire les tortellini dans de l&rsquo;eau bouillante pendant 1 à 2 minutes.",
+            "Égoutter les tortellini et les transférer dans l&rsquo;airfryer. Ajouter les fromages (râpé et parmesan) et un filet d&rsquo;huile d&rsquo;olive.",
+            "Faire dorer les tortellini à 180°C dans l&rsquo;airfryer pendant 10 minutes, jusqu&rsquo;à ce qu&rsquo;ils soient bien croustillants.",
+            "Dans un grand saladier, mélanger les légumes coupés, les tortellini croustillants et la sauce préparée. Servir frais."
+        ],
+        "tags": [
+            "Entrées",
+            "Italie",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "4998",
         "title": "Cocktail Bora Bora sans alcool",
@@ -7667,192 +7824,6 @@ export const mockRecipes: Recipe[] = [
             "Famille",
             "Grèce",
             "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "4076",
-        "title": "Chicken Gyros Maison",
-        "description": "Préparez de délicieux gyros de poulet maison avec cette recette complète. Elle inclut la marinade pour le poulet, la préparation du pain pita, un tzatziki frais et une sauce russe épicée pour un repas convivial et savoureux.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fgyros-au-poulet-bbq.jpg&v=1774521653000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7427923005415673120\" data-video-id=\"7427923005415673120\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7427923005415673120\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             1 kg de cuisses de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 gros oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1/4 dl d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             3 gousses d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 1/2 c. à café de coriandre moulue"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             2 c. à café de cumin moulu"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             2 c. à café de paprika moulu"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 1/2 c. à café de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             ½ c. à café de curcuma"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             ¼ c. à café de cannelle"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1/2 c. à café de poivre noir moulu"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             2 c. à soupe de jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 dl de yaourt"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             1.5 dl d&rsquo;eau tiède"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             1.5 dl de lait tiède"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 c. à soupe de sucre en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 c. à soupe de levure sèche ou 20 g de levure fraîche"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Thym"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 c. à café de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             7.5 dl de farine de blé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             3 c. à soupe d&rsquo;huile"
-            },
-            {
-                "quantity": "",
-                "name": "🥒\n             1 concombre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             5 dl de yaourt grec"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             2 c. à soupe d&rsquo;aneth frais"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 c. à soupe d&rsquo;huile d&rsquo;olive extra vierge"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1 c. à soupe de jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 petite gousse d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre noir"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 dl de mayonnaise"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 c. à soupe de ketchup"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 c. à café de raifort"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 c. à soupe de sauce chili syrienne"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 c. à café de vinaigre de vin blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Légumes de votre choix (pour le service)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Frites (pour le service)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Origan (pour le service)"
-            }
-        ],
-        "steps": [
-            "Dans un bol, mélangez le poulet avec toutes les épices sèches, l&rsquo;oignon, le citron, l&rsquo;ail et le yaourt. Mélangez bien, couvrez de film plastique et réfrigérez. Laissez mariner le poulet au réfrigérateur pendant au moins une heure, idéalement toute une nuit.",
-            "Préchauffez le four à 250 degrés.",
-            "Placez le poulet mariné sur une plaque de cuisson ou une poêle à griller et faites-le griller au four pendant 20 minutes.",
-            "Pour le pain pita : Dans un bol, mélangez l&rsquo;eau, le lait, le sucre en poudre et la levure sèche. Couvrez de film plastique et laissez reposer à température ambiante pendant 10 minutes.",
-            "Ajoutez le sel, la farine de blé et le thym, puis mélangez uniformément (à la main ou avec une cuillère).",
-            "Ajoutez l&rsquo;huile et pétrissez uniformément. Couvrez de film plastique et laissez lever à température ambiante pendant 1 heure.",
-            "Déposez la pâte sur un plan de travail fariné et divisez-la en 6 morceaux. Roulez chaque morceau en boule, puis aplatissez-le en un pain de type tortilla d&rsquo;environ 17-20 cm de diamètre.",
-            "Faites chauffer une poêle sur la cuisinière et faites cuire chaque pain environ 2 minutes et demie à 3 minutes de chaque côté.",
-            "Pour le tzatziki : Dans un bol, versez le yaourt grec (idéalement dans une serviette pour qu&rsquo;il s&rsquo;égoutte pendant 1 à 2 heures).",
-            "Râpez le concombre et pressez-le pour en extraire le liquide.",
-            "Mélangez le concombre râpé avec l&rsquo;aneth, le citron, l&rsquo;huile d&rsquo;olive, l&rsquo;ail, le sel et le poivre.",
-            "Pour la sauce russe : Mélangez la mayonnaise, le ketchup, le raifort, la sauce chili syrienne, le vinaigre de vin blanc, le sel et le poivre.",
-            "Sortez le poulet, coupez-le en morceaux et disposez-le sur le pain pita. Garnissez de légumes de votre choix, de frites, d&rsquo;origan et des sauces (tzatziki et sauce russe).",
-            "Roulez le tout et dégustez votre délicieux gyros !"
-        ],
-        "tags": [
-            "barbecue",
-            "Famille",
-            "Grèce"
         ],
         "isFeatured": false,
         "isFavorite": false,
