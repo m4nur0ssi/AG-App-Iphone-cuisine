@@ -2,11 +2,67 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/04/2026 15:09:44
- * Total: 192 recettes
+ * Dernière mise à jour: 09/04/2026 16:23:48
+ * Total: 193 recettes
  */
-export const exportSyncId = "1775747384469";
+export const exportSyncId = "1775751828095";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5025",
+        "title": "Top 3 meilleures recettes de knacki",
+        "description": "Trois façons délicieuses et simples de préparer les knackis, des saucisses populaires et faciles à cuisiner.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1775751559947.jpg&v=1775758775000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7595638473307082006\" data-video-id=\"7595638473307082006\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7595638473307082006\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Knackis (saucisses)"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             Pain de hot-dog ou pain de mie"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Ketchup"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Fromage râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre ou huile"
+            }
+        ],
+        "steps": [
+            "Préparer les knackis en les incisant légèrement pour une meilleure cuisson.",
+            "Recette 1 : Faire griller les knackis à la poêle avec un peu de beurre jusqu&rsquo;à ce qu&rsquo;ils soient dorés, les servir dans un pain avec moutarde et ketchup.",
+            "Recette 2 : Enrouler les knackis dans du fromage râpé et les passer au four ou à la poêle jusqu&rsquo;à ce que le fromage soit fondu et gratiné.",
+            "Recette 3 : Couper les knackis en rondelles et les faire revenir avec des œufs brouillés pour un repas rapide et gourmand.",
+            "Servir chaud et déguster immédiatement."
+        ],
+        "tags": [
+            "France",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5022",
         "title": "Sandwich chaud à la viande hachée (style Patty melt)",
