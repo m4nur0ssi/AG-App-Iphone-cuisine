@@ -2,11 +2,103 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/04/2026 05:04:37
- * Total: 186 recettes
+ * Dernière mise à jour: 09/04/2026 10:16:40
+ * Total: 187 recettes
  */
-export const exportSyncId = "1775711077361";
+export const exportSyncId = "1775729800967";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5007",
+        "title": "Gnocchis crémeux au poulet, champignons et parmesan",
+        "description": "Une recette ultra gourmande de gnocchis dans une sauce crémeuse au bouillon de volaille, champignons, brocolis et parmesan, avec des filets de poulet grillés au paprika. Prête en 20 minutes seulement !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1775729550798.jpg&v=1775736765000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7625327110466571543\" data-video-id=\"7625327110466571543\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7625327110466571543\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             500g de gnocchis"
+            },
+            {
+                "quantity": "",
+                "name": "🍗\n             300g de filet de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café d&rsquo;ail en poudre + sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             15g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             250g de champignons"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             400ml de bouillon de volaille"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             20cl de crème légère"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             2 cuillères à soupe de maïzena + 5cl d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             40g de parmesan râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil"
+            },
+            {
+                "quantity": "",
+                "name": "🥦\n             Brocolis (quantité non précisée)"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Sauce soja (quantité non précisée)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Filet d&rsquo;huile"
+            }
+        ],
+        "steps": [
+            "Couper finement les champignons et le brocoli.",
+            "Recouvrir les filets de poulet avec l&rsquo;ail, le paprika et le sel.",
+            "Faire cuire le poulet dans une poêle avec la moitié du beurre et un filet d&rsquo;huile jusqu&rsquo;à ce qu&rsquo;il soit bien grillé, puis le réserver.",
+            "Dans la même poêle, ajouter le reste du beurre et les champignons, les faire dorer pendant 7 à 8 minutes.",
+            "Ajouter les brocolis, verser le bouillon de volaille, la crème, le mélange maïzena + eau et le parmesan râpé.",
+            "Couvrir et laisser cuire quelques minutes.",
+            "Ajouter la sauce soja, les gnocchis et le persil, mélanger.",
+            "Laisser mijoter 2 minutes puis ajouter le poulet grillé avant de servir."
+        ],
+        "tags": [
+            "Healthy",
+            "Italie",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5002",
         "title": "Salade de Tortellini Croustillants à l&rsquo;Airfryer",
