@@ -2,11 +2,102 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/04/2026 10:29:54
- * Total: 188 recettes
+ * Dernière mise à jour: 09/04/2026 14:40:52
+ * Total: 189 recettes
  */
-export const exportSyncId = "1775730594703";
+export const exportSyncId = "1775745652630";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5013",
+        "title": "Salade de pâtes croustillantes",
+        "description": "Une salade originale à base de pâtes cuites au air fryer pour un effet croustillant, mélangées à de la laitue, des tomates cerises et une sauce crémeuse au yogourt.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1775745397132.jpg&v=1775752612000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7607184647579127048\" data-video-id=\"7607184647579127048\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7607184647579127048\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍝\n             250 à 300 g de pâtes"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             3 tasses de laitue iceberg hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 tasse de tomates cerises coupées en deux"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon rouge tranché finement"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             2 c. à soupe de persil haché"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 c. à thé d&rsquo;aneth haché"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             2 c. à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 c. à soupe de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel et poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/2 tasse de yogourt nature"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             2 c. à soupe de crème sure"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 c. à thé de moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 c. à thé de jus de cornichon"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1/2 c. à thé de poudre d&rsquo;ail"
+            }
+        ],
+        "steps": [
+            "Cuire les pâtes al dente 8-10 min dans l&rsquo;eau salée. Égoutter et laisser sécher.",
+            "Mélanger les pâtes avec l&rsquo;huile d&rsquo;olive, le paprika, le parmesan, le sel et le poivre.",
+            "Cuire les pâtes assaisonnées au air fryer à 390 °F pendant 15-18 min en secouant à mi-cuisson.",
+            "Préparer la sauce en mélangeant le yogourt nature, la crème sure, la moutarde, le jus de cornichon, la poudre d&rsquo;ail, le sel et le poivre.",
+            "Dans un grand bol, assembler la laitue, les tomates cerises, l&rsquo;oignon rouge, le persil, l&rsquo;aneth et les pâtes croustillantes. Ajouter la sauce et mélanger."
+        ],
+        "tags": [
+            "France",
+            "Healthy",
+            "Italie",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5010",
         "title": "Secret onion dish",
