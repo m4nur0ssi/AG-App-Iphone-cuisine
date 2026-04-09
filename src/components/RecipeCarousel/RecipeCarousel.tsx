@@ -98,9 +98,9 @@ function CategoryTitleCard({ title, gradient, size, onClick }: { title: string, 
 
     const renderArtisticTitle = () => {
         return words.map((word, i) => {
-            const isConnectionWord = ['du', 'de', 'la', 'le', 'pour', 'les', 'au', 'en'].includes(word.toLowerCase());
-            // Logique artistique : alterner ou forcer le script sur les mots de liaison/deuxièmes mots
-            const isScript = isConnectionWord || (words.length > 1 && i === 1);
+            const isConnectionWord = ['du', 'de', 'la', 'le', 'pour', 'les', 'au', 'aux', 'en', 'et'].includes(word.toLowerCase());
+            // Seuls les mots de liaison sont en cursive pour garantir que le mot principal reste en gras
+            const isScript = isConnectionWord;
             
             return (
                 <span 

@@ -92,6 +92,19 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
         }
     }, [recipe.id]);
 
+    // Listener pour le reset du chrono (X cliqué ou fin du temps)
+    useEffect(() => {
+        const handleReset = (e: any) => {
+            if (String(e.detail?.recipeId) === String(recipe.id)) {
+                setCheckedSteps(new Array(recipe?.steps?.length || 0).fill(false));
+                setCheckedIngredients(new Array(recipe?.ingredients?.length || 0).fill(false));
+                if (typeof window !== 'undefined' && 'vibrate' in navigator) navigator.vibrate([10, 30, 10]);
+            }
+        };
+        window.addEventListener('timerReset', handleReset);
+        return () => window.removeEventListener('timerReset', handleReset);
+    }, [recipe.id, recipe.steps?.length, recipe.ingredients?.length, setCheckedSteps, setCheckedIngredients]);
+
     const ratio = useMemo(() => servings / (recipe.servings || 4), [servings, recipe.servings]);
 
     useEffect(() => {
@@ -160,7 +173,7 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
         triggerHaptic();
         if (newChecked[index]) {
             const minutes = parseDuration(recipe.steps[index]);
-            if (minutes) startTimer(minutes, stripHtml(recipe.steps[index]).substring(0, 50));
+            if (minutes) startTimer(minutes, stripHtml(recipe.steps[index]).substring(0, 50), recipe.id);
         }
     };
 

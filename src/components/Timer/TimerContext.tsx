@@ -4,15 +4,15 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import TimerDisplay from './TimerDisplay';
 
 interface TimerContextType {
-    activeTimer: { duration: number; remaining: number; label: string } | null;
-    startTimer: (minutes: number, label: string) => void;
+    activeTimer: { duration: number; remaining: number; label: string; recipeId?: string } | null;
+    startTimer: (minutes: number, label: string, recipeId?: string) => void;
     stopTimer: () => void;
 }
 
 const TimerContext = createContext<TimerContextType | undefined>(undefined);
 
 export function TimerProvider({ children }: { children: React.ReactNode }) {
-    const [activeTimer, setActiveTimer] = useState<{ duration: number; remaining: number; label: string } | null>(null);
+    const [activeTimer, setActiveTimer] = useState<{ duration: number; remaining: number; label: string; recipeId?: string } | null>(null);
 
     useEffect(() => {
         let interval: NodeJS.Timeout;
@@ -26,31 +26,34 @@ export function TimerProvider({ children }: { children: React.ReactNode }) {
                 new Notification('Cuisine terminée !', { body: `Le temps est écoulé pour : ${activeTimer.label}` });
             }
             alert(`Fin du temps pour : ${activeTimer.label}`);
+            
+            // Reinitialiser les étapes de la recette concernée
+            if (activeTimer.recipeId) {
+                window.dispatchEvent(new CustomEvent('timerReset', { detail: { recipeId: activeTimer.recipeId } }));
+            }
+            
             setActiveTimer(null);
         }
         return () => clearInterval(interval);
     }, [activeTimer]);
 
-    const startTimer = (minutes: number, label: string) => {
-        setActiveTimer({ duration: minutes * 60, remaining: minutes * 60, label });
+    const startTimer = (minutes: number, label: string, recipeId?: string) => {
+        setActiveTimer({ duration: minutes * 60, remaining: minutes * 60, label, recipeId });
         if (typeof Notification !== 'undefined' && Notification.permission !== 'granted') {
             Notification.requestPermission();
         }
     };
 
-    const stopTimer = () => setActiveTimer(null);
+    const stopTimer = () => {
+        if (activeTimer?.recipeId) {
+            window.dispatchEvent(new CustomEvent('timerReset', { detail: { recipeId: activeTimer.recipeId } }));
+        }
+        setActiveTimer(null);
+    };
 
     return (
         <TimerContext.Provider value={{ activeTimer, startTimer, stopTimer }}>
             {children}
-            {activeTimer && (
-                <TimerDisplay
-                    duration={activeTimer.duration}
-                    remaining={activeTimer.remaining}
-                    label={activeTimer.label}
-                    onStop={stopTimer}
-                />
-            )}
         </TimerContext.Provider>
     );
 }

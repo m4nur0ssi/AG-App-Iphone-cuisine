@@ -2,14 +2,16 @@
 
 import React from 'react';
 import { useTimer } from '../Timer/TimerContext';
+import { decodeHtml } from '@/lib/utils';
 
 interface SmartTextProps {
     text: string;
 }
 
 export default function SmartText({ text }: SmartTextProps) {
+    const decodedText = decodeHtml(text);
     // Regex to find durations
-    const parts = text.split(/(\d+(?:\s?h|heures?|min|minutes?))/gi);
+    const parts = decodedText.split(/(\d+(?:\s?h|heures?|min|minutes?))/gi);
 
     return (
         <span>

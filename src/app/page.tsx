@@ -6,7 +6,9 @@ import RecipeCarousel from '../components/RecipeCarousel/RecipeCarousel';
 import RecipeGrid from '../components/RecipeGrid/RecipeGrid';
 import dynamic from 'next/dynamic';
 const MagicFilterBar = dynamic(() => import('../components/MagicFilterBar/MagicFilterBar'), { ssr: false });
+import { useRouter } from 'next/navigation';
 import { mockRecipes } from '../data/mockData';
+import { decodeHtml } from '../lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './page.module.css';
 
@@ -101,7 +103,8 @@ export default function Home() {
                 }
 
                 if (tagLower === 'pâques' || tagLower === 'paques') {
-                    return recipeTags.some(t => t.toLowerCase() === 'pâques' || t.toLowerCase() === 'paques' || t.toLowerCase() === 'agneau') || recipe.title.toLowerCase().includes('agneau');
+                    return recipeTags.some(t => t.toLowerCase() === 'pâques' || t.toLowerCase() === 'paques' || t.toLowerCase() === 'agneau') || 
+                           recipe.title.toLowerCase().includes('agneau') || recipe.title.toLowerCase().includes('pâques');
                 }
 
                 // Thématiques saisonnières
@@ -145,6 +148,11 @@ export default function Home() {
                     return recipeTags.some(t => themedKeywords.includes(t.toLowerCase())) || 
                            themedCats.includes(recipeCat) ||
                            themedKeywords.some(kw => recipe.title.toLowerCase().includes(kw));
+                }
+
+                if (tagLower === 'desserts' || tagLower === 'patisserie') {
+                    return recipeCat === 'desserts' || recipeCat === 'patisserie' || 
+                           recipeTags.some(t => t.toLowerCase().includes('dessert') || t.toLowerCase().includes('pâtis') || t.toLowerCase().includes('patis'));
                 }
 
                 if (tagLower === 'nouveautés' || tagLower === 'nouveauté') {

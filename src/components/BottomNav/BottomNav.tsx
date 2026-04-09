@@ -10,6 +10,7 @@ import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import SpotlightSearch from '../SpotlightSearch/SpotlightSearch';
 import { mockRecipes } from '@/data/mockData';
 import { useTimer } from '@/components/Timer/TimerContext';
+import { decodeHtml } from '@/lib/utils';
 
 const RecipeSheet = dynamic(() => import('@/components/RecipeSheet/RecipeSheet'), { ssr: false });
 
@@ -35,10 +36,10 @@ const SearchIcon = () => (
 );
 
 const BasketIcon = () => (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 11h18" />
-        <path d="m4.5 11 1.6 7.4a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6l1.6-7.4" />
-        <path d="m9 11 1-5c.2-.6.8-1 1.4-1h1.2c.6 0 1.2.4 1.4 1l1 5" />
+    <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="9" cy="21" r="1" />
+        <circle cx="20" cy="21" r="1" />
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
     </svg>
 );
 
@@ -53,8 +54,11 @@ export default function BottomNav() {
     const [isMiniMode, setIsMiniMode] = useState(false);
     const [lastViewed, setLastViewed] = useState<any>(null);
     const [isSheetOpen, setIsSheetOpen] = useState(false);
-    const { activeTimer } = useTimer();
+    const [showTimerMode, setShowTimerMode] = useState(false);
+    const [isTimerExpanded, setIsTimerExpanded] = useState(false);
+    const { activeTimer, stopTimer } = useTimer();
     const dockRef = useRef<HTMLDivElement>(null);
+    const autoCloseTimerRef = useRef<NodeJS.Timeout | null>(null);
 
     const navItems = [
         { id: 'favoris', label: 'Favoris', Icon: HeartIcon, path: '/favorites', badge: stats.favorites },
@@ -63,6 +67,70 @@ export default function BottomNav() {
         { id: 'mode', label: 'Mode', isComponent: true, component: <ThemeToggle /> },
     ];
 
+    // Toggle between Search and Timer every 3 seconds if timer is active
+    useEffect(() => {
+        const hasTimer = !!activeTimer;
+        if (!hasTimer) {
+            setShowTimerMode(false);
+            setIsTimerExpanded(false);
+            return;
+        }
+
+        const interval = setInterval(() => {
+            setShowTimerMode(prev => !prev);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, [!!activeTimer]);
+
+    const expandTimer = () => {
+        setIsTimerExpanded(true);
+        handleVibrate(15);
+        
+        // Auto-close after 2 seconds
+        if (autoCloseTimerRef.current) clearTimeout(autoCloseTimerRef.current);
+        autoCloseTimerRef.current = setTimeout(() => {
+            setIsTimerExpanded(false);
+        }, 2000);
+    };
+
+    const handleSearchOrTimerClick = (e: React.MouseEvent) => {
+        handleVibrate(15);
+        
+        const isCurrentlyChrono = activeTimer && (showTimerMode || isMiniMode);
+        
+        if (isCurrentlyChrono) {
+            setIsTimerExpanded(!isTimerExpanded);
+        } else {
+            setIsSearchOpen(true);
+            setIsTimerExpanded(false);
+        }
+    };
+
+    const renderSearchOrTimer = (forceChronoOnly = false) => {
+        if (activeTimer) {
+            const mins = Math.floor(activeTimer.remaining / 60);
+            const secs = activeTimer.remaining % 60;
+            const timeStr = `${mins}:${secs.toString().padStart(2, '0')}`;
+
+            if (forceChronoOnly) {
+                return (
+                    <div className={styles.timerBadge}>
+                        <span className={styles.timerValue}>{timeStr}</span>
+                    </div>
+                );
+            }
+
+            if (showTimerMode) {
+                return (
+                    <div className={`${styles.timerBadge} ${activeTimer.remaining > 0 ? styles.pulse : ''}`}>
+                        <span className={styles.timerValue}>{timeStr}</span>
+                    </div>
+                );
+            }
+        }
+        return <SearchIcon />;
+    };
 
     useEffect(() => {
         setMounted(true);
@@ -181,23 +249,6 @@ export default function BottomNav() {
         handleVibrate(10);
     };
 
-    const renderSearchOrTimer = () => {
-        if (activeTimer) {
-            const mins = Math.floor(activeTimer.remaining / 60);
-            const secs = activeTimer.remaining % 60;
-            return (
-                <div className={`${styles.timerBadge} ${activeTimer.remaining > 0 ? styles.pulse : ''}`}>
-                    <span className={styles.timerValue}>{mins}:{secs.toString().padStart(2, '0')}</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
-                        <circle cx="12" cy="12" r="10" />
-                        <polyline points="12 6 12 12 16 14" />
-                    </svg>
-                </div>
-            );
-        }
-        return <SearchIcon />;
-    };
-    
     const handleRecipeSelect = (recipe: any) => {
         setLastViewed(recipe);
         setIsSheetOpen(true);
@@ -247,19 +298,19 @@ export default function BottomNav() {
                                     {lastViewed ? (
                                         <>
                                             <img src={lastViewed.image} alt={lastViewed.title} className={styles.miniThumb} />
-                                            <span className={styles.miniTitle}>{lastViewed.title}</span>
+                                            <span className={styles.miniTitle}>{decodeHtml(lastViewed.title)}</span>
                                         </>
                                     ) : (
                                         <span className={styles.miniTitle}>Les Recettes Magiques</span>
                                     )}
                                 </div>
 
-                                <div className={styles.miniRight} onClick={() => {
-                                    setIsSearchOpen(true);
-                                    handleVibrate(15);
-                                }}>
-                                    {renderSearchOrTimer()}
-                                </div>
+                                <motion.div 
+                                    className={styles.miniRight} 
+                                    onClick={handleSearchOrTimerClick}
+                                >
+                                    {renderSearchOrTimer(true)}
+                                </motion.div>
                             </motion.div>
                         )}
 
@@ -328,13 +379,37 @@ export default function BottomNav() {
                                 <motion.div
                                     className={styles.isolatedSearchBtn}
                                     whileTap={{ scale: 0.85 }}
-                                    onClick={() => {
-                                        setIsSearchOpen(true);
-                                        handleVibrate(15);
-                                    }}
+                                    onClick={handleSearchOrTimerClick}
                                 >
                                     {renderSearchOrTimer()}
                                 </motion.div>
+
+                                <AnimatePresence>
+                                    {isTimerExpanded && activeTimer && (
+                                        <motion.div 
+                                            className={styles.expandedTimerBubble}
+                                            initial={{ opacity: 0, y: 20, scale: 0.8 }}
+                                            animate={{ opacity: 1, y: 0, scale: 1 }}
+                                            exit={{ opacity: 0, y: 20, scale: 0.8 }}
+                                        >
+                                            <div className={styles.expandedTime}>
+                                                {Math.floor(activeTimer.remaining / 60)}:{(activeTimer.remaining % 60).toString().padStart(2, '0')}
+                                            </div>
+                                            <div 
+                                                className={styles.closeTimerBtn}
+                                                onClick={(e) => {
+                                                    e.stopPropagation();
+                                                    stopTimer();
+                                                    setIsTimerExpanded(false);
+                                                }}
+                                            >
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
+                                                    <path d="M18 6L6 18M6 6l12 12" />
+                                                </svg>
+                                            </div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
                             </motion.div>
                         )}
                     </AnimatePresence>

@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { mockRecipes } from '@/data/mockData';
+import { decodeHtml } from '@/lib/utils';
 import styles from './SpotlightSearch.module.css';
 
 export default function SpotlightSearch({ 
@@ -76,7 +77,7 @@ export default function SpotlightSearch({
                             >
                                 <img src={recipe.image} alt="" className={styles.thumb} />
                                 <div className={styles.resultInfo}>
-                                    <div className={styles.resultTitle}>{recipe.title}</div>
+                                    <div className={styles.resultTitle}>{decodeHtml(recipe.title)}</div>
                                     <div className={styles.resultMeta}>{recipe.category} • {recipe.difficulty}</div>
                                 </div>
                             </div>

@@ -1,0 +1,56 @@
+
+> les-recettes-magiques@18.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env
+
+   Creating an optimized production build ...
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: Unable to snapshot resolve dependencies
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: Unable to snapshot resolve dependencies
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+
+Failed to compile.
+
+./src/app/page.tsx
+225:8  Warning: React Hook useMemo has an unnecessary dependency: 'filteredRecipes'. Either exclude it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/recipe/[id]/RecipeClient.tsx
+93:8  Warning: React Hook useEffect has missing dependencies: 'recipe?.ingredients?.length', 'recipe?.steps?.length', 'setCheckedIngredients', and 'setCheckedSteps'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+217:8  Warning: React Hook useCallback has missing dependencies: 'handleNextStep', 'handlePrevStep', 'recipe.steps', and 'speak'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+229:8  Warning: React Hook useEffect has missing dependencies: 'recipe.steps' and 'speak'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/components/BottomNav/BottomNav.tsx
+122:8  Warning: React Hook useEffect has a missing dependency: 'navItems'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+133:8  Warning: React Hook useEffect has a missing dependency: 'springX'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+249:45  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/RecipeDetail/RecipeDetail.tsx
+151:8  Warning: React Hook useCallback has missing dependencies: 'handleNextStep', 'handlePrevStep', 'recipe.steps', and 'speak'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+175:8  Warning: React Hook useEffect has missing dependencies: 'recipe.steps', 'speak', and 'startRecognition'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+265:69  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/RecipeDetails/RecipeDetails.tsx
+100:8  Warning: React Hook useEffect has missing dependencies: 'recipe?.ingredients?.length', 'recipe?.steps?.length', 'setCheckedIngredients', and 'setCheckedSteps'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+166:8  Warning: React Hook useEffect has missing dependencies: 'recipe.ingredients.length' and 'setCheckedIngredients'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+376:11  Warning: The 'handleNextStep' function makes the dependencies of useEffect Hook (at line 414) change on every render. To fix this, wrap the definition of 'handleNextStep' in its own useCallback() Hook.  react-hooks/exhaustive-deps
+400:11  Warning: The 'handlePrevStep' function makes the dependencies of useEffect Hook (at line 414) change on every render. To fix this, wrap the definition of 'handlePrevStep' in its own useCallback() Hook.  react-hooks/exhaustive-deps
+406:11  Warning: The 'handleRepeatStep' function makes the dependencies of useEffect Hook (at line 414) change on every render. To fix this, wrap the definition of 'handleRepeatStep' in its own useCallback() Hook.  react-hooks/exhaustive-deps
+507:8  Warning: React Hook useEffect has missing dependencies: 'focusMode', 'recipe.steps', and 'speak'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+826:77  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+826:94  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+914:64  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/SplashScreen/SplashScreen.tsx
+183:8  Warning: React Hook useEffect has a missing dependency: 'startTimer'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/components/SpotlightSearch/SpotlightSearch.tsx
+77:33  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+npm notice
+npm notice New minor version of npm available! 11.9.0 -> 11.12.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.1
+npm notice To update run: npm install -g npm@11.12.1
+npm notice

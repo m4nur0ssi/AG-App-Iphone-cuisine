@@ -14,6 +14,7 @@ import { scaleQuantity } from '@/lib/utils';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
 import { useTimer } from '@/components/Timer/TimerContext';
 import { parseDuration, stripHtml } from '@/lib/timer-utils';
+import { decodeHtml } from '@/lib/utils';
 import SmartText from '@/components/SmartText/SmartText';
 import MagicConverter from '@/components/MagicConverter/MagicConverter';
 import SplitTitle from '@/components/SplitTitle/SplitTitle';
@@ -98,6 +99,20 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
             };
         }
     }, [recipe.id]);
+
+    // Listener pour le reset du chrono (X cliqué ou fin du temps)
+    useEffect(() => {
+        const handleReset = (e: any) => {
+            if (String(e.detail?.recipeId) === String(recipe.id)) {
+                setCheckedSteps(new Array(recipe?.steps?.length || 0).fill(false));
+                setCheckedIngredients(new Array(recipe?.ingredients?.length || 0).fill(false));
+                if (typeof window !== 'undefined' && 'vibrate' in navigator) navigator.vibrate([10, 30, 10]);
+            }
+        };
+        window.addEventListener('timerReset', handleReset);
+        return () => window.removeEventListener('timerReset', handleReset);
+    }, [recipe.id, recipe.steps?.length, recipe.ingredients?.length, setCheckedSteps, setCheckedIngredients]);
+
 
     const ratio = useMemo(() => servings / (recipe.servings || 4), [servings, recipe.servings]);
 
@@ -247,7 +262,7 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
                 const shortLabel = cleanLabel.length > 50
                     ? cleanLabel.substring(0, 47) + '...'
                     : cleanLabel;
-                startTimer(minutes, shortLabel);
+                startTimer(minutes, shortLabel, recipe.id);
             }
         }
     };
@@ -387,7 +402,7 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
                 const shortLabel = cleanLabel.length > 50
                     ? cleanLabel.substring(0, 47) + '...'
                     : cleanLabel;
-                startTimer(minutes, shortLabel);
+                startTimer(minutes, shortLabel, recipe.id);
             }
         } else {
             setFocusMode(false);
@@ -529,7 +544,7 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
             {!focusMode && !isModal && (
                 <div className={styles.stickyHeaderMenu}>
                     <Header 
-                        title={recipe.title} 
+                        title={decodeHtml(recipe.title)} 
                         showBack={false} 
                         backUrl={`/category/${recipe.category}`}
                         large={true}
@@ -607,13 +622,13 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
 
                         <div className={styles.heroMainContent}>
                             <h1 className={styles.heroTitleElegant}>
-                                <SplitTitle text={recipe.title} noAnimation={true} />
+                                <SplitTitle text={decodeHtml(recipe.title)} noAnimation={true} />
                             </h1>
                             
                             {recipe.description && (
                                 <div 
                                     className={styles.heroDescription}
-                                    dangerouslySetInnerHTML={{ __html: recipe.description }}
+                                    dangerouslySetInnerHTML={{ __html: decodeHtml(recipe.description) }}
                                 />
                             )}
                         </div>

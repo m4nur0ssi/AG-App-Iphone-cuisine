@@ -46,6 +46,19 @@ export default function RecipeDetail({ recipe, onClose }: RecipeDetailProps) {
         };
     }, []);
 
+    // Listener pour le reset du chrono (X cliqué ou fin du temps)
+    useEffect(() => {
+        const handleReset = (e: any) => {
+            if (String(e.detail?.recipeId) === String(recipe.id)) {
+                setCheckedSteps(new Array(recipe.steps.length).fill(false));
+                setCheckedIngredients(new Array(recipe.ingredients.length).fill(false));
+                if (typeof window !== 'undefined' && 'vibrate' in navigator) navigator.vibrate([10, 30, 10]);
+            }
+        };
+        window.addEventListener('timerReset', handleReset);
+        return () => window.removeEventListener('timerReset', handleReset);
+    }, [recipe.id, recipe.steps.length, recipe.ingredients.length, setCheckedSteps, setCheckedIngredients]);
+
     const ratio = useMemo(() => servings / (recipe.servings || 4), [servings, recipe.servings]);
 
     const triggerHaptic = () => {
@@ -66,7 +79,7 @@ export default function RecipeDetail({ recipe, onClose }: RecipeDetailProps) {
             if (minutes) {
                 const cleanLabel = stripHtml(stepText);
                 const shortLabel = cleanLabel.length > 50 ? cleanLabel.substring(0, 47) + '...' : cleanLabel;
-                startTimer(minutes, shortLabel);
+                startTimer(minutes, shortLabel, recipe.id);
             }
         }
     };

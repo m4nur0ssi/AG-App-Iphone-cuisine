@@ -323,8 +323,8 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    line-height: 1;
+    gap: 0; /* Remove gap to allow negative margins to work effectively */
+    line-height: 0.8;
 }
 
 .boldWord {
@@ -341,16 +341,21 @@
 
 .scriptWord {
     font-family: var(--font-pinyon), cursive;
-    font-size: 2.8rem; /* Slightly smaller for flow */
+    font-size: 3.5rem; /* More impactful */
     font-weight: 400;
     color: #fff;
-    line-height: 1;
-    margin: 0;
-    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+    line-height: 0;
+    margin: 0 -12px; /* Overlap effect */
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+    position: relative;
+    z-index: 10;
+    transform: rotate(-8deg) translateY(12px);
+    display: inline-block;
+    pointer-events: none;
 }
 
 .small .boldWord { font-size: 2.8rem; }
-.small .scriptWord { font-size: 2.4rem; }
+.small .scriptWord { font-size: 3rem; }
 
 .titleCardGlass {
     position: absolute;

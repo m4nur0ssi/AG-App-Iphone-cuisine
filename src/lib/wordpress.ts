@@ -1,5 +1,6 @@
 import { Recipe } from '@/types';
 import { mockRecipes } from '@/data/mockData';
+import { decodeHtml } from './utils';
 
 const WORDPRESS_API_URL = 'http://lesrec3ttesm4giques.fr/wp-json/wp/v2';
 
@@ -166,27 +167,8 @@ function determineCategoryFromPost(post: WordPressPost): 'entrees' | 'plats' | '
  */
 function stripHtml(html: string): string {
     if (!html) return '';
-
-    const entities: Record<string, string> = {
-        '&#038;': '&', '&amp;': '&', '&#8217;': "'", '&rsquo;': "'", 
-        '&#8211;': '-', '&ndash;': '-', '&nbsp;': ' ', '&Agrave;': 'À', 
-        '&agrave;': 'à', '&Eacute;': 'É', '&eacute;': 'é', '&Egrave;': 'È', 
-        '&egrave;': 'è', '&circ;': '^', '&icirc;': 'î', '&ocirc;': 'ô', 
-        '&ucirc;': 'û', '&lt;': '<', '&gt;': '>', '&quot;': '"', 
-        '&apos;': "'", '&deg;': '°', '&euro;': '€'
-    };
-
-    let decoded = html.replace(/&[a-z0-9#]+;/gi, (match) => entities[match] || match);
-    
-    decoded = decoded.replace(/&#(\d+);/g, (match, dec) => {
-        return String.fromCharCode(parseInt(dec, 10));
-    });
-    
-    decoded = decoded.replace(/&#x([a-f0-9]+);/gi, (match, hex) => {
-        return String.fromCharCode(parseInt(hex, 16));
-    });
-
-    return decoded.replace(/<[^>]*>/g, '').trim();
+    const clean = html.replace(/<[^>]*>/g, '');
+    return decodeHtml(clean);
 }
 
 /**

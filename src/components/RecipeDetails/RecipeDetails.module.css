@@ -133,21 +133,22 @@
 }
 
 .categoryCommandCenter {
-    display: flex;
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
     align-items: center;
-    justify-content: space-between;
+    gap: 15px;
     width: 100%;
-    max-width: clamp(340px, 90vw, 650px);
-    margin: -10px auto 35px auto; /* Ajusté pour recentrer l'ensemble */
-    padding: 0 10px;
+    max-width: 600px;
+    margin: -10px auto 35px auto;
+    padding: 0;
     z-index: 50;
 }
 
 /* Boutons Favori & Partage : Version XXL pour Impact Tactile */
 .categoryCommandCenter :global(.favorite-btn-action),
 .categoryCommandCenter :global(.share-btn-action) {
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
@@ -163,12 +164,9 @@
 
 [data-theme='light'] .categoryCommandCenter :global(.favorite-btn-action),
 [data-theme='light'] .categoryCommandCenter :global(.share-btn-action) {
-    background: transparent;
-    border: 1.5px solid #000000;
+    background: rgba(0, 0, 0, 0.03);
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
     color: #000000;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    box-shadow: none;
 }
 
 .categoryCommandCenter :global(.favorite-btn-action) svg,
@@ -183,8 +181,8 @@
     justify-content: center;
     gap: 8px;
     padding: 0 24px;
-    height: 50px;
-    border-radius: 25px;
+    height: 44px;
+    border-radius: 22px;
     font-size: 13px;
     font-weight: 900;
     letter-spacing: 2.5px;
@@ -193,8 +191,7 @@
     -webkit-backdrop-filter: blur(20px);
     border: 1.5px solid rgba(255, 255, 255, 0.2);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    margin: 0;
-    transform: translateY(2px); /* Correctif pour aligner sur les boutons */
+    margin: 18px 0 0 0;
 }
 
 [data-theme='light'] .categoryTag {
@@ -1556,6 +1553,7 @@
     }
 
     .categoryTag {
+        height: 44px;
         margin: 0 auto 24px; /* Centré horizontalement */
     }
 

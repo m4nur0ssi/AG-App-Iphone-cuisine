@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import styles from './FavoriteButton.module.css';
 
 interface FavoriteButtonProps {
     recipeId: string;
@@ -56,7 +57,7 @@ export default function FavoriteButton({ recipeId, initialFavorite = false, imag
 
     return (
         <motion.div
-            className={`${className || ''} ${isFavorite ? 'active-favorite' : ''}`}
+            className={`${styles.favoriteBtn} ${className || ''} ${isFavorite ? styles.isFavorite : ''}`}
             onClick={toggleFavorite}
             whileTap={{ scale: 0.8 }}
             whileHover={{ scale: 1.1 }}

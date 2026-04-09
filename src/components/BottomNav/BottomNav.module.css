@@ -317,3 +317,63 @@
 .pulse {
     animation: pulse 2s infinite ease-in-out;
 }
+/* Expanded Timer Bubble */
+.expandedTimerBubble {
+    position: absolute;
+    bottom: 85px; /* Above the dock */
+    right: 0;
+    width: 160px;
+    height: 54px;
+    border-radius: 20px;
+    background: rgba(40, 40, 40, 0.4);
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    pointer-events: auto;
+}
+
+.expandedTimerText {
+    display: flex;
+    flex-direction: column;
+}
+
+.expandedLabel {
+    font-size: 10px;
+    font-weight: 700;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.expandedTime {
+    font-size: 24px;
+    font-weight: 900;
+    font-variant-numeric: tabular-nums;
+}
+
+.closeTimerBtn {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.closeTimerBtn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.closeTimerBtn:active {
+    transform: scale(0.9);
+}

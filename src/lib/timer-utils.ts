@@ -1,9 +1,11 @@
+import { decodeHtml } from './utils';
+
 /**
  * Parses a string to find the first duration in minutes.
  */
 export function parseDuration(text: string): number | null {
     // Remove HTML tags first to avoid parsing inside tags
-    const cleanText = text.replace(/<[^>]*>/g, '');
+    const cleanText = stripHtml(text);
 
     // Pattern for "45 min", "1h", "1 h 30 min", "2 heures", etc.
     const match = cleanText.match(/(\d+)\s?(h|heures?|min|minutes?)/i);
@@ -26,5 +28,6 @@ export function parseDuration(text: string): number | null {
 }
 
 export function stripHtml(html: string): string {
-    return html.replace(/<[^>]*>/g, '').trim();
+    if (!html) return '';
+    return decodeHtml(html.replace(/<[^>]*>/g, '')).trim();
 }
