@@ -2,10 +2,10 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/04/2026 10:08:19
- * Total: 193 recettes
+ * Dernière mise à jour: 10/04/2026 15:41:39
+ * Total: 191 recettes
  */
-export const exportSyncId = "1775815699090";
+export const exportSyncId = "1775835699089";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5007",
@@ -3182,119 +3182,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "3943",
-        "title": "Tenders de poulet avec Mac &#038; Cheese",
-        "description": "Une recette populaire de tenders de poulet croustillants au miel piquant, accompagnés d&rsquo;un Mac &#038; Cheese crémeux et gratiné. Idéal pour un repas convivial, ce plat est une version revisitée d&rsquo;une recette virale.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522936966.jpg&v=1774526550000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7522516359050317069\" data-video-id=\"7522516359050317069\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7522516359050317069\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             chicken tenderloins"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Onion powder"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Garlic powder"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Cayenne"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Salt"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Ranch seasoning"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Buttermilk"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Eggs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             flour"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Cornstarch"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             elbow noodles"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Butter"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Heavy cream"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Evaporated milk"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Colby &#038; Monterey Jack cheese"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             sharp cheddar cheese"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Mozzarella cheese"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Hot sauce"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Franks redhot Hot honey"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Honey"
-            }
-        ],
-        "steps": [
-            "Pour le Mac &#038; Cheese : Cuire au four à 350 F (environ 175°C) pendant 15-20 minutes, puis gratiner au grill pendant 1 minute.",
-            "Les étapes détaillées pour la préparation des tenders de poulet (enrobage humide et sec, friture) et de la sauce au miel piquant ne sont pas fournies dans la description."
-        ],
-        "tags": [
-            "dîner",
-            "facile",
-            "Famille",
-            "fromage",
-            "poulet",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "3946",
         "title": "Cookies sans beurre",
         "description": "Découvrez une recette de cookies moelleux et gourmands, préparés sans beurre mais avec de la margarine, pour une texture parfaite et un goût délicieux. Faciles à réaliser, ils sont idéaux pour une pause sucrée.",
@@ -4461,85 +4348,6 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Orient",
             "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "3994",
-        "title": "Kibbeh au Bulgur",
-        "description": "Une délicieuse et savoureuse recette de kibbeh au boulgour du Moyen-Orient.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522049419.jpg&v=1774525653000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7260502267403488538\" data-video-id=\"7260502267403488538\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7260502267403488538\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             2 tasses de boulgour fin ou extra fin"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 tasse de semoule de blé dur (grosse, ou jareesh)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel (pour la pâte)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1/2 cuillère à café de poivre noir (pour la pâte)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1/2 cuillère à café de poudre de curry (pour la pâte)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1/2 cuillère à café de cumin (pour la pâte)"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             2 1/2 tasses d&rsquo;eau tiède"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1/2 kg de viande hachée"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1-2 oignons, finement hachés"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1/3 bouquet de persil, finement haché"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel (pour la farce)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Épices (poivre noir et 7 épices ou épice de votre choix) (pour la farce)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Huile pour la friture"
-            }
-        ],
-        "steps": [
-            "Mélangez le boulgour et la semoule avec l&rsquo;eau tiède.",
-            "Couvrez et laissez reposer pendant 1 heure.",
-            "Pétrissez très bien le mélange à la main ou au robot culinaire.",
-            "Façonnez le kibbeh (en le remplissant avec la farce préparée).",
-            "Faites-le frire dans l&rsquo;huile."
-        ],
-        "tags": [
-            "Liban"
         ],
         "isFeatured": false,
         "isFavorite": false,
