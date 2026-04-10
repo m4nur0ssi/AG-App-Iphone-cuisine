@@ -2,10 +2,10 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/04/2026 17:03:49
- * Total: 189 recettes
+ * Dernière mise à jour: 10/04/2026 17:06:41
+ * Total: 187 recettes
  */
-export const exportSyncId = "1775840629060";
+export const exportSyncId = "1775840801688";
 export const mockRecipes: Recipe[] = [
     {
         "id": "4040",
@@ -6188,56 +6188,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "4055",
-        "title": "Chicken Souvlaki",
-        "description": "Cette recette de Souvlaki au poulet apporte les saveurs de la Grèce à votre cuisine ! Simple mais délicieuse, elle vous fera manger comme un Grec.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7359295757796543786\" data-video-id=\"7359295757796543786\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7359295757796543786\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             environ 1 livre (400g) de poitrines de poulet désossées et sans peau, coupées en cubes"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             5 brochettes"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             5 cuillères à soupe d&rsquo;huile d&rsquo;olive extra vierge"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à café d&rsquo;origan séché"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             sel &#038; poivre"
-            }
-        ],
-        "steps": [
-            "Coupez les poitrines de poulet en cubes.",
-            "Mélangez le poulet avec l&rsquo;huile d&rsquo;olive extra vierge, l&rsquo;origan séché, le sel et le poivre.",
-            "Enfilez le poulet sur les 5 brochettes.",
-            "Faites cuire sur du papier sulfurisé pendant 35 minutes à 350 Fahrenheit (180 Celsius).",
-            "Versez du jus de citron sur votre poulet cuit.",
-            "Servez avec du tzatziki, des tomates tranchées, des oignons tranchés, du pain pita grec et du persil frais haché."
-        ],
-        "tags": [
-            "Famille",
-            "Grèce",
-            "Healthy"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "4061",
         "title": "Beef Koftas with Yogurt Dill Sauce",
         "description": "Une recette grecque de koftas de bœuf, parfaites pour un barbecue d&rsquo;été en famille, servies avec une sauce au yaourt et à l&rsquo;aneth et du pain pita.",
@@ -7837,145 +7787,57 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "4082",
-        "title": "Hachis Parmentier maison",
-        "description": "Faire son hachis Parmentier maison !",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FHachis-parmentier-cantal-TIPIAK.jpg&v=1774521832000",
+        "id": "4085",
+        "title": "Saint-Jacques sur purée de butternut et chorizo",
+        "description": "Une recette de saint Jacques parfaite pour Noël.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fsaint-jacques-beurre-sauge-4.jpg&v=1774521937000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7604762745589746977\" data-video-id=\"7604762745589746977\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7604762745589746977\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7618498566549540118\" data-video-id=\"7618498566549540118\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7618498566549540118\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🍎\n             1kg de pommes de terre"
+                "name": "🥣\n             butternut"
             },
             {
                 "quantity": "",
-                "name": "🧈\n             200g de beurre"
+                "name": "🍾\n             huile d'olive"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             100g de lait"
+                "name": "🥛\n             120 g de crème fraîche"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             100g de crème épaisse 30%"
+                "name": "🥣\n             saint Jacques"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             500g de viande hachée"
+                "name": "🧈\n             beurre demi sel"
             },
             {
                 "quantity": "",
-                "name": "🧅\n             1 oignon"
+                "name": "🥓\n             chorizo"
             },
             {
                 "quantity": "",
-                "name": "🧄\n             1 gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             1 filet d'huile d'olive ou de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             50g de fromage râpé"
-            },
-            {
-                "quantity": "",
-                "name": "🥕\n             2 carottes"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Thym"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Muscade"
+                "name": "🌿\n             persil"
             }
         ],
         "steps": [
-            "Suivre les instructions dans la vidéo"
+            "Préparer le butternut avec de l&rsquo;huile d&rsquo;olive et le cuire 40 à 50 minutes à 190°C.",
+            "Mixer le butternut cuit avec 120 g de crème fraîche pour obtenir une purée.",
+            "Faire cuire les saint Jacques dans du beurre demi sel, 1 à 2 minutes de chaque côté.",
+            "Faire cuire le chorizo.",
+            "Servir les saint Jacques sur la purée de butternut, garni de chorizo et de persil."
         ],
         "tags": [
-            "Famille",
-            "France"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "4079",
-        "title": "Kolokithokeftedes Grecs (Beignets de Courgettes)",
-        "description": "Greek Kolokithokeftedes or else zucchini fritters! A delicious mezze (side dish) that you will love!",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774135220657.jpg&v=1774521748000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7346331939353201966\" data-video-id=\"7346331939353201966\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7346331939353201966\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             2 pounds (1 kg) of small zucchini grated and strained"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 chopped onion"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 fresh onion in slices"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1/2 bunch of chopped parsley"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1/2 bunch of chopped dyosmos or mint"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 eggs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1/2 pound (300 g) of feta cheese"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cup (120 g) of self rising flour (you might need more, until you reach the desired consistency of the mixture (as in the video)."
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             salt &#038; pepper"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Extra Virgin Olive Oil (for frying)"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Famille",
-            "Grèce",
-            "Végé"
+            "France",
+            "Noël",
+            "Saison"
         ],
         "isFeatured": false,
         "isFavorite": false,
