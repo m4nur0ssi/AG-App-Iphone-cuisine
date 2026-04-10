@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/04/2026 09:15:56
+ * Dernière mise à jour: 10/04/2026 09:18:35
  * Total: 195 recettes
  */
-export const exportSyncId = "1775812556080";
+export const exportSyncId = "1775812715035";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5025",
         "title": "Top 3 meilleures recettes de knacki",
         "description": "Trois façons délicieuses et simples de préparer les knackis, des saucisses populaires et faciles à cuisiner.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Fknacki.jpeg&v=1775819504000",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Fknacki.jpeg&v=1775819675000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
