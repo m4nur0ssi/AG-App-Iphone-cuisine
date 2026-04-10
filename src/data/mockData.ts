@@ -2,11 +2,88 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/04/2026 15:59:16
+ * Dernière mise à jour: 10/04/2026 16:30:37
  * Total: 191 recettes
  */
-export const exportSyncId = "1775836756968";
+export const exportSyncId = "1775838637674";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "4002",
+        "title": "Lahsa Yéménite",
+        "description": "Un plat yéménite traditionnel à base d&rsquo;oignons, de tomates et d&rsquo;œufs, mijoté avec des épices et du fromage liquide, puis servi avec du pain. Idéal pour le petit-déjeuner.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Flahsa_yemenite_magazine_1775837034057.jpg&v=1775845558000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7379597152055561473\" data-video-id=\"7379597152055561473\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7379597152055561473\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧅\n 1 grand oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n 2 grandes tomates mûres"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n 4 à 5 piments forts (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Fromage liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel et poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 cuillère à café de poudre de cumin"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n 1 cuillère à café de poudre de coriandre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 cuillère à café de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n 1 cuillère à soupe de purée de tomates"
+            }
+        ],
+        "steps": [
+            "Hacher les légumes.",
+            "Faire revenir l&rsquo;oignon dans un filet d&rsquo;huile d&rsquo;olive.",
+            "Une fois l&rsquo;oignon doré, ajouter les tomates. Assaisonner avec du sel, du poivre, du cumin, de la coriandre, du paprika et de la purée de tomates (et toute autre épice préférée).",
+            "Laisser cuire les tomates à feu moyen-doux jusqu&rsquo;à ce qu&rsquo;elles soient dissoutes.",
+            "Éteindre le feu, puis casser les œufs dans le mélange. Mélanger soigneusement et ajouter un peu d&rsquo;eau.",
+            "Rallumer le feu à doux et étaler le fromage sur le dessus.",
+            "Couvrir et laisser cuire pendant 3 à 5 minutes.",
+            "Garnir, servir avec du pain et déguster."
+        ],
+        "tags": [
+            "Famille",
+            "Orient",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "3997",
         "title": "Kesra farcie à la viande hachée",
@@ -4537,87 +4614,10 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "4002",
-        "title": "Lahsa Yéménite",
-        "description": "Un plat yéménite traditionnel à base d&rsquo;oignons, de tomates et d&rsquo;œufs, mijoté avec des épices et du fromage liquide, puis servi avec du pain. Idéal pour le petit-déjeuner.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fmaxresdefault.jpeg&v=1774525532000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7379597152055561473\" data-video-id=\"7379597152055561473\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7379597152055561473\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧅\n             1 grand oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             2 grandes tomates mûres"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             4 à 5 piments forts (facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             3 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fromage liquide"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel et poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de poudre de cumin"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 cuillère à café de poudre de coriandre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 cuillère à soupe de purée de tomates"
-            }
-        ],
-        "steps": [
-            "Hacher les légumes.",
-            "Faire revenir l&rsquo;oignon dans un filet d&rsquo;huile d&rsquo;olive.",
-            "Une fois l&rsquo;oignon doré, ajouter les tomates. Assaisonner avec du sel, du poivre, du cumin, de la coriandre, du paprika et de la purée de tomates (et toute autre épice préférée).",
-            "Laisser cuire les tomates à feu moyen-doux jusqu&rsquo;à ce qu&rsquo;elles soient dissoutes.",
-            "Éteindre le feu, puis casser les œufs dans le mélange. Mélanger soigneusement et ajouter un peu d&rsquo;eau.",
-            "Rallumer le feu à doux et étaler le fromage sur le dessus.",
-            "Couvrir et laisser cuire pendant 3 à 5 minutes.",
-            "Garnir, servir avec du pain et déguster."
-        ],
-        "tags": [
-            "Famille",
-            "Orient",
-            "Pas cher",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "4005",
         "title": "Kefta au tahini au four",
         "description": "Un plat parfumé, fondant et ultra savoureux.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774521905652.jpg&v=1774525513000",
+        "image": "/images/recipe-placeholder.jpg",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
