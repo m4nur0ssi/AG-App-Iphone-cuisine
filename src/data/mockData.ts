@@ -2,11 +2,203 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/04/2026 16:57:26
- * Total: 190 recettes
+ * Dernière mise à jour: 10/04/2026 17:03:49
+ * Total: 189 recettes
  */
-export const exportSyncId = "1775840246807";
+export const exportSyncId = "1775840629060";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "4040",
+        "title": "Bifteki avec Tzatziki et Riz aux Tomates",
+        "description": "Un plat grec complet composé de boulettes de viande (Bifteki) farcies à la feta, accompagnées d&rsquo;une sauce Tzatziki rafraîchissante et d&rsquo;un riz aux tomates savoureux.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fbifteki_tzatziki_rice_homemade_1775840116718.jpg&v=1775847635000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7541829683864702230\" data-video-id=\"7541829683864702230\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7541829683864702230\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n 400g Hackfleisch"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1/2 Brötchen"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n evtl. etwas Paniermehl, wenn der Teig noch zu weich ist!"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 Zwiebel (pour Bifteki)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 3 Knoblauchzehen (pour Bifteki)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Bund frische Petersilie (pour Bifteki)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 Ei, Größe S"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Salz (pour Bifteki)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Pfeffer (pour Bifteki)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Oregano"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Kreuzkümmel"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Paprika Edelsüß"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Vegeta, optional"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n ca. 100g Feta"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 300g Griechischer Joghurt"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 Salatgurke"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n mind. 3 Knoblauchzehen (pour Tzatziki)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Frischer Dill"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Olivenöl"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Salz (pour Tzatziki)"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n 1 Zwiebel (pour Tomatenreis)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 125g Langkornreis"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n 1 EL Tomatenmark"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n ca. 100ml Passierte Tomaten"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n ca. 250ml Gemüsebrühe"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Griechische Gewürzmischung, optional"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n Salz (pour Tomatenreis)"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n Petersilie (pour Tomatenreis)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n rote Zwiebel, optional"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Famille",
+            "Grèce"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "4058",
+        "title": "Spanakopita",
+        "description": "Une spécialité grecque traditionnelle, la Spanakopita est un feuilleté savoureux à base de feuilles de bricks croustillantes, garni d&rsquo;un mélange d&rsquo;épinards, de fromage, d&rsquo;œufs et de yaourt, puis cuit au four.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fspanakopita_homemade_mom_1775839779733.jpg&v=1775847469000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7356319561278393632\" data-video-id=\"7356319561278393632\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7356319561278393632\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n Feuilles de bricks"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Fromage de vache"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n Epinards"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 5 oeufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 2 yaourts nature"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Pincée de levure boulangère"
+            }
+        ],
+        "steps": [
+            "Dans un bol, cassez 2 œufs, ajoutez les 2 yaourts nature et une pincée de levure boulangère, puis mélangez bien pour obtenir une sauce.",
+            "Dans un autre bol, mélangez le fromage de vache, les épinards et les 3 œufs restants pour former la garniture.",
+            "Prenez 3 feuilles de bricks, appliquez la sauce (mélange œuf/yaourt) sur les feuilles, puis disposez la garniture aux épinards et fromage. Pliez les feuilles pour former des feuilletés.",
+            "Faites cuire au four à 200°C pendant 30 minutes."
+        ],
+        "tags": [
+            "Famille",
+            "Grèce",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "4013",
         "title": "Mahmoos Gutaifi",
@@ -5633,146 +5825,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "4040",
-        "title": "Bifteki avec Tzatziki et Riz aux Tomates",
-        "description": "Un plat grec complet composé de boulettes de viande (Bifteki) farcies à la feta, accompagnées d&rsquo;une sauce Tzatziki rafraîchissante et d&rsquo;un riz aux tomates savoureux.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774521104109.jpg&v=1774524757000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7541829683864702230\" data-video-id=\"7541829683864702230\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7541829683864702230\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             400g Hackfleisch"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1/2 Brötchen"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             evtl. etwas Paniermehl, wenn der Teig noch zu weich ist!"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 Zwiebel (pour Bifteki)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             3 Knoblauchzehen (pour Bifteki)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Bund frische Petersilie (pour Bifteki)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 Ei, Größe S"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Salz (pour Bifteki)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pfeffer (pour Bifteki)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Oregano"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Kreuzkümmel"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika Edelsüß"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Vegeta, optional"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             ca. 100g Feta"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             300g Griechischer Joghurt"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 Salatgurke"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             mind. 3 Knoblauchzehen (pour Tzatziki)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Frischer Dill"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Olivenöl"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Salz (pour Tzatziki)"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 Zwiebel (pour Tomatenreis)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             125g Langkornreis"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 EL Tomatenmark"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             ca. 100ml Passierte Tomaten"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             ca. 250ml Gemüsebrühe"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Griechische Gewürzmischung, optional"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Salz (pour Tomatenreis)"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Petersilie (pour Tomatenreis)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             rote Zwiebel, optional"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Famille",
-            "Grèce"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "4043",
         "title": "Courgettes à la Feta Fouettée",
         "description": "Un plat d&rsquo;accompagnement estival frais, léger et savoureux. Les courgettes poêlées apportent une touche de chaleur dorée, tandis que la feta fouettée à la menthe et au citron offre un contraste frais et crémeux. Facile à préparer, parfait pour ",
@@ -6139,7 +6191,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4055",
         "title": "Chicken Souvlaki",
         "description": "Cette recette de Souvlaki au poulet apporte les saveurs de la Grèce à votre cuisine ! Simple mais délicieuse, elle vous fera manger comme un Grec.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774520735951.jpg&v=1774524361000",
+        "image": "/images/recipe-placeholder.jpg",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -6180,58 +6232,6 @@ export const mockRecipes: Recipe[] = [
             "Famille",
             "Grèce",
             "Healthy"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "4058",
-        "title": "Spanakopita",
-        "description": "Une spécialité grecque traditionnelle, la Spanakopita est un feuilleté savoureux à base de feuilles de bricks croustillantes, garni d&rsquo;un mélange d&rsquo;épinards, de fromage, d&rsquo;œufs et de yaourt, puis cuit au four.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7356319561278393632\" data-video-id=\"7356319561278393632\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7356319561278393632\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Feuilles de bricks"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fromage de vache"
-            },
-            {
-                "quantity": "",
-                "name": "🥗\n             Epinards"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             5 oeufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 yaourts nature"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pincée de levure boulangère"
-            }
-        ],
-        "steps": [
-            "Dans un bol, cassez 2 œufs, ajoutez les 2 yaourts nature et une pincée de levure boulangère, puis mélangez bien pour obtenir une sauce.",
-            "Dans un autre bol, mélangez le fromage de vache, les épinards et les 3 œufs restants pour former la garniture.",
-            "Prenez 3 feuilles de bricks, appliquez la sauce (mélange œuf/yaourt) sur les feuilles, puis disposez la garniture aux épinards et fromage. Pliez les feuilles pour former des feuilletés.",
-            "Faites cuire au four à 200°C pendant 30 minutes."
-        ],
-        "tags": [
-            "Famille",
-            "Grèce",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -7831,63 +7831,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Healthy",
             "Italie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "4085",
-        "title": "Saint-Jacques sur purée de butternut et chorizo",
-        "description": "Une recette de saint Jacques parfaite pour Noël.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fsaint-jacques-beurre-sauge-4.jpg&v=1774521937000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7618498566549540118\" data-video-id=\"7618498566549540118\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7618498566549540118\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             butternut"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             120 g de crème fraîche"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             saint Jacques"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             beurre demi sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥓\n             chorizo"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             persil"
-            }
-        ],
-        "steps": [
-            "Préparer le butternut avec de l&rsquo;huile d&rsquo;olive et le cuire 40 à 50 minutes à 190°C.",
-            "Mixer le butternut cuit avec 120 g de crème fraîche pour obtenir une purée.",
-            "Faire cuire les saint Jacques dans du beurre demi sel, 1 à 2 minutes de chaque côté.",
-            "Faire cuire le chorizo.",
-            "Servir les saint Jacques sur la purée de butternut, garni de chorizo et de persil."
-        ],
-        "tags": [
-            "France",
-            "Noël",
-            "Saison"
         ],
         "isFeatured": false,
         "isFavorite": false,
