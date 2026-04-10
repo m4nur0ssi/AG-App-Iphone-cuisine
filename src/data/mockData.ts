@@ -2,11 +2,86 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/04/2026 17:06:41
+ * Dernière mise à jour: 10/04/2026 17:11:05
  * Total: 187 recettes
  */
-export const exportSyncId = "1775840801688";
+export const exportSyncId = "1775841065632";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "3957",
+        "title": "Cookies",
+        "description": "Une recette pour des cookies géants et ultra gourmands, inspirés de New York, fourrés à la pâte à tartiner Bueno et agrémentés de morceaux de Kinder Bueno.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fcookies_sans_beurre_homemade_1775840598269.jpg&v=1775848114000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7538140427933781270\" data-video-id=\"7538140427933781270\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7538140427933781270\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n 200 g beurre froid (salé ou non)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 100 g vergeoise brune"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 50 g sucre en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n 1 càs extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n 440 g farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 sachet levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 grosse pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n 200 g chocolat haché"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 4 barres Kinder Bueno en morceaux"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Pâte à tartiner Bueno"
+            }
+        ],
+        "steps": [
+            "Déposez au congélateur 11 cuillères à café de pâte à tartiner.",
+            "À la main ou dans votre robot, fouettez le beurre et les sucres jusqu'à ce qu'ils soient homogènes. Ajoutez l'œuf et la vanille, puis fouettez de nouveau.",
+            "Incorporez la farine, la levure et le sel, puis mélangez juste assez pour que la pâte soit homogène.",
+            "Ajoutez les chocolats et mélangez à nouveau.",
+            "Formez des boules de 100 g chacune, aplatissez-les légèrement avec la paume de la main, déposez au centre la pâte à tartiner congelée, puis refermez.",
+            "Placez les boules au congélateur pendant au moins 1 h.",
+            "Après ce temps, enfournez pendant 12 à 15 minutes dans un four préchauffé à 180 °C (chaleur tournante). Si vous réalisez des cookies de 50gr, enfournez 10/11mn.",
+            "Laissez refroidir avant de les déplacer."
+        ],
+        "tags": [
+            "Famille",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "4040",
         "title": "Bifteki avec Tzatziki et Riz aux Tomates",
@@ -1843,59 +1918,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Grèce",
             "Orient"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "4818",
-        "title": "Cookie Nutella Pie",
-        "description": "Un délicieux Cookie Nutella Pie, super rapide et facile à réaliser, parfait pour un moment gourmand sans compter les calories.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Fnutella-cookie-pie-slice-683x1024-1.jpeg&v=1775560973000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7623772126775921953\" data-video-id=\"7623772126775921953\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7623772126775921953\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧈\n 200 g de beurre mou"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n 150 g de sucre (brun ou blanc)"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n 1 œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n 320 g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n 100 g de pépites de chocolat"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 3-4 cuillères à soupe de Nutella"
-            }
-        ],
-        "steps": [
-            "Mélanger le beurre et le sucre jusqu&rsquo;à obtenir une consistance crémeuse, puis incorporer l&rsquo;œuf.",
-            "Ajouter la farine et pétrir pour former une pâte. Incorporer les pépites de chocolat.",
-            "Diviser la pâte en deux. Presser la première moitié dans un moule à charnière d&rsquo;environ 18 cm pour former le fond, en remontant légèrement les bords.",
-            "Étaler le Nutella sur la pâte, en veillant à ne pas aller jusqu&rsquo;au bord pour éviter les débordements.",
-            "Déposer le reste de la pâte sur le dessus, en l&rsquo;aplatissant ou en la \" recouvrant \" légèrement.",
-            "Facultatif : Ajouter quelques pépites de chocolat supplémentaires sur le dessus.",
-            "Faire cuire au four préchauffé à 180 °C (chaleur statique) pendant environ 25 à 30 minutes."
-        ],
-        "tags": [
-            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -3992,75 +4014,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "3946",
-        "title": "Cookies sans beurre",
-        "description": "Découvrez une recette de cookies moelleux et gourmands, préparés sans beurre mais avec de la margarine, pour une texture parfaite et un goût délicieux. Faciles à réaliser, ils sont idéaux pour une pause sucrée.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522912556.jpg&v=1774526521000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7613824644801416470\" data-video-id=\"7613824644801416470\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7613824644801416470\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             200g de margarine à pâtisserie froide"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             120g de cassonade ou vergeoise"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             100g de sucre en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             2 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             165g de farine à gâteau"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             230g de farine normale"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 demi sachet de levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Fleur de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             Pépites de chocolat"
-            }
-        ],
-        "steps": [
-            "Pétrir la margarine et les sucres ensemble pendant environ trois minutes.",
-            "Ajouter les deux œufs et pétrir deux minutes.",
-            "Incorporer les deux farines, le demi sachet de levure chimique et la fleur de sel.",
-            "Pétrir trois minutes jusqu&rsquo;à obtenir une pâte bien homogène.",
-            "Ajouter les pépites de chocolat et pétrir encore deux minutes.",
-            "Former des boules de cookies d&rsquo;environ 100g chacune et les placer au congélateur 20 à 30 minutes.",
-            "Préchauffer le four à 200°C.",
-            "Enfourner les cookies 10 minutes à 200°C.",
-            "Sortir les cookies du four et les laisser refroidir au moins 30 minutes avant de déguster."
-        ],
-        "tags": [
-            "Famille",
-            "Pas cher",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "3949",
         "title": "Les meilleurs cinnamon rolls",
         "description": "Découvrez la recette des meilleurs cinnamon rolls, avec une pâte moelleuse, une garniture généreuse à la cannelle et un glaçage crémeux au Saint Môret. Parfaits pour un goûter réconfortant ou un brunch gourmand.",
@@ -4187,81 +4140,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "steps": [
             "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Famille",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "3957",
-        "title": "BUENO NYC COOKIES",
-        "description": "Une recette pour des cookies géants et ultra gourmands, inspirés de New York, fourrés à la pâte à tartiner Bueno et agrémentés de morceaux de Kinder Bueno.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774522759254.jpg&v=1774526369000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7538140427933781270\" data-video-id=\"7538140427933781270\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7538140427933781270\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧈\n             200 g beurre froid (salé ou non)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             100 g vergeoise brune"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             50 g sucre en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             1 càs extrait de vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             440 g farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 sachet levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 grosse pincée de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             200 g chocolat haché"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             4 barres Kinder Bueno en morceaux"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pâte à tartiner Bueno"
-            }
-        ],
-        "steps": [
-            "Déposez au congélateur 11 cuillères à café de pâte à tartiner.",
-            "À la main ou dans votre robot, fouettez le beurre et les sucres jusqu'à ce qu'ils soient homogènes. Ajoutez l'œuf et la vanille, puis fouettez de nouveau.",
-            "Incorporez la farine, la levure et le sel, puis mélangez juste assez pour que la pâte soit homogène.",
-            "Ajoutez les chocolats et mélangez à nouveau.",
-            "Formez des boules de 100 g chacune, aplatissez-les légèrement avec la paume de la main, déposez au centre la pâte à tartiner congelée, puis refermez.",
-            "Placez les boules au congélateur pendant au moins 1 h.",
-            "Après ce temps, enfournez pendant 12 à 15 minutes dans un four préchauffé à 180 °C (chaleur tournante). Si vous réalisez des cookies de 50gr, enfournez 10/11mn.",
-            "Laissez refroidir avant de les déplacer."
         ],
         "tags": [
             "Famille",
@@ -7838,6 +7716,151 @@ export const mockRecipes: Recipe[] = [
             "France",
             "Noël",
             "Saison"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "4082",
+        "title": "Hachis Parmentier maison",
+        "description": "Faire son hachis Parmentier maison !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FHachis-parmentier-cantal-TIPIAK.jpg&v=1774521832000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7604762745589746977\" data-video-id=\"7604762745589746977\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7604762745589746977\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             1kg de pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             200g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             100g de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             100g de crème épaisse 30%"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             500g de viande hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             1 filet d'huile d'olive ou de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             50g de fromage râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             2 carottes"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Thym"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Muscade"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Famille",
+            "France"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "4079",
+        "title": "Kolokithokeftedes Grecs (Beignets de Courgettes)",
+        "description": "Greek Kolokithokeftedes or else zucchini fritters! A delicious mezze (side dish) that you will love!",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1774135220657.jpg&v=1774521748000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7346331939353201966\" data-video-id=\"7346331939353201966\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7346331939353201966\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             2 pounds (1 kg) of small zucchini grated and strained"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 chopped onion"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 fresh onion in slices"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/2 bunch of chopped parsley"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/2 bunch of chopped dyosmos or mint"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 eggs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/2 pound (300 g) of feta cheese"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cup (120 g) of self rising flour (you might need more, until you reach the desired consistency of the mixture (as in the video)."
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             salt &#038; pepper"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Extra Virgin Olive Oil (for frying)"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Famille",
+            "Grèce",
+            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
