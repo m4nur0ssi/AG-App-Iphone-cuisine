@@ -2,11 +2,89 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/04/2026 09:36:20
+ * Dernière mise à jour: 10/04/2026 09:54:37
  * Total: 193 recettes
  */
-export const exportSyncId = "1775813780833";
+export const exportSyncId = "1775814877052";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5002",
+        "title": "Salade de Tortellini Croustillants",
+        "description": "Une salade estivale et gourmande, composée de tortellini cuits à l&rsquo;airfryer pour un croustillant irrésistible, mélangés à des légumes frais (concombre, tomates cerise, échalotes, mozza) et une sauce onctueuse au fromage blanc, huile d&rsquo;oli",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Fsalade-de-tortellinis-b-23-1024x683-1.jpeg&v=1775821882000",
+        "category": "entrees",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7614838971708755222\" data-video-id=\"7614838971708755222\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7614838971708755222\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n 4 cas de fromage blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n Huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n Vinaigre"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n Fromage râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n Concombre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Echalotes"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n Tomates cerise"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Mozza"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Tortellini"
+            }
+        ],
+        "steps": [
+            "Dans un bol, préparer la sauce en mélangeant 4 cuillères à soupe de fromage blanc, de l&rsquo;huile d&rsquo;olive, du sel, du poivre, du vinaigre, du fromage râpé et du parmesan.",
+            "Laver et couper le concombre, les échalotes, les tomates cerise et la mozza en morceaux.",
+            "Faire cuire les tortellini dans de l&rsquo;eau bouillante pendant 1 à 2 minutes.",
+            "Égoutter les tortellini et les transférer dans l&rsquo;airfryer. Ajouter les fromages (râpé et parmesan) et un filet d&rsquo;huile d&rsquo;olive.",
+            "Faire dorer les tortellini à 180°C dans l&rsquo;airfryer pendant 10 minutes, jusqu&rsquo;à ce qu&rsquo;ils soient bien croustillants.",
+            "Dans un grand saladier, mélanger les légumes coupés, les tortellini croustillants et la sauce préparée. Servir frais."
+        ],
+        "tags": [
+            "Entrées",
+            "Italie",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5007",
         "title": "Gnocchis crémeux au poulet, champignons et parmesan",
@@ -539,84 +617,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "citron",
             "Desserts"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5002",
-        "title": "Salade de Tortellini Croustillants à l&rsquo;Airfryer",
-        "description": "Une salade estivale et gourmande, composée de tortellini cuits à l&rsquo;airfryer pour un croustillant irrésistible, mélangés à des légumes frais (concombre, tomates cerise, échalotes, mozza) et une sauce onctueuse au fromage blanc, huile d&rsquo;oli",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1775668322042.jpg&v=1775675549000",
-        "category": "entrees",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7614838971708755222\" data-video-id=\"7614838971708755222\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7614838971708755222\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             4 cas de fromage blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Vinaigre"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Fromage râpé"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🥒\n             Concombre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Echalotes"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Tomates cerise"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Mozza"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Tortellini"
-            }
-        ],
-        "steps": [
-            "Dans un bol, préparer la sauce en mélangeant 4 cuillères à soupe de fromage blanc, de l&rsquo;huile d&rsquo;olive, du sel, du poivre, du vinaigre, du fromage râpé et du parmesan.",
-            "Laver et couper le concombre, les échalotes, les tomates cerise et la mozza en morceaux.",
-            "Faire cuire les tortellini dans de l&rsquo;eau bouillante pendant 1 à 2 minutes.",
-            "Égoutter les tortellini et les transférer dans l&rsquo;airfryer. Ajouter les fromages (râpé et parmesan) et un filet d&rsquo;huile d&rsquo;olive.",
-            "Faire dorer les tortellini à 180°C dans l&rsquo;airfryer pendant 10 minutes, jusqu&rsquo;à ce qu&rsquo;ils soient bien croustillants.",
-            "Dans un grand saladier, mélanger les légumes coupés, les tortellini croustillants et la sauce préparée. Servir frais."
-        ],
-        "tags": [
-            "Entrées",
-            "Italie",
-            "Voilà l'été"
         ],
         "isFeatured": false,
         "isFavorite": false,
