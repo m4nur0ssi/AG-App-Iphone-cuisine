@@ -2,11 +2,90 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/04/2026 15:41:39
+ * Dernière mise à jour: 10/04/2026 15:47:26
  * Total: 191 recettes
  */
-export const exportSyncId = "1775835699089";
+export const exportSyncId = "1775836046984";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "3975",
+        "title": "Bambas de Nata",
+        "description": "Une pâtisserie espagnole classique : de moelleux petits pains à la levure garnis de crème fouettée légèrement sucrée. C&rsquo;est une gourmandise simple et très appréciée, que l&rsquo;on trouve couramment dans les boulangeries en Espagne.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fbombas.jpg&v=1775842988000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7592729849161125142\" data-video-id=\"7592729849161125142\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7592729849161125142\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n 250 g de farine tout usage (environ 2 tasses)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 7 g de levure sèche (2¼ c. à café / 1 sachet)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 40 g de sucre (3 c. à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 1 œuf (taille M)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 110 ml de lait tiède (½ tasse)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 40 g de beurre mou (3 c. à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n 1 c. à café d&rsquo;extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 400 ml de crème épaisse froide (1⅔ tasses)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 1-2 c. à soupe de sucre glace (au goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n 1 c. à café d&rsquo;extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n Sucre glace (pour la finition)"
+            }
+        ],
+        "steps": [
+            "Tamiser la farine dans un bol et former un puits au centre. Ajouter la levure, 1 cuillère à café de sucre et un peu de lait tiède. Laisser reposer 8 à 10 minutes jusqu&rsquo;à ce que la levure devienne mousseuse.",
+            "Ajouter le reste du sucre, le sel, l&rsquo;œuf, l&rsquo;extrait de vanille et le reste du lait. Pétrir avec un crochet à pâte jusqu&rsquo;à obtenir une pâte lisse.",
+            "Ajouter le beurre mou en dernier et continuer à pétrir pendant 8 à 10 minutes jusqu&rsquo;à ce que la pâte soit molle, élastique et se décolle des parois du bol. Couvrir et laisser lever environ 60 minutes.",
+            "Diviser la pâte en 9 portions égales (environ 50 g par pièce), former des boules lisses et les placer sur une plaque de cuisson recouverte de papier sulfurisé. Couvrir et laisser lever encore 20 à 30 minutes. Badigeonner légèrement le dessus avec un peu de crème.",
+            "Cuire au four préchauffé à 180 °C / 350 °F (chaleur haut/bas) pendant 15 à 18 minutes jusqu&rsquo;à ce qu&rsquo;ils soient légèrement dorés. Laisser refroidir complètement.",
+            "Fouetter la crème froide avec le sucre glace et la vanille jusqu&rsquo;à ce qu&rsquo;elle soit ferme.",
+            "Couper les Bambas horizontalement, garnir généreusement ou pocher la crème, replacer les dessus et saupoudrer généreusement de sucre glace. Moelleux, aériens et merveilleusement simples - une pâtisserie classique fourrée à la crème qui ne manque jamais de ravir."
+        ],
+        "tags": [
+            "Espagne",
+            "Famille",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5007",
         "title": "Gnocchis crémeux au poulet, champignons",
@@ -3869,85 +3948,6 @@ export const mockRecipes: Recipe[] = [
             "Espagne",
             "Famille",
             "Pas cher"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "3975",
-        "title": "Bambas de Nata",
-        "description": "Une pâtisserie espagnole classique : de moelleux petits pains à la levure garnis de crème fouettée légèrement sucrée. C&rsquo;est une gourmandise simple et très appréciée, que l&rsquo;on trouve couramment dans les boulangeries en Espagne.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773829876550.jpg&v=1774526019000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7592729849161125142\" data-video-id=\"7592729849161125142\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7592729849161125142\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             250 g de farine tout usage (environ 2 tasses)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             7 g de levure sèche (2¼ c. à café / 1 sachet)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             40 g de sucre (3 c. à soupe)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 pincée de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 œuf (taille M)"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             110 ml de lait tiède (½ tasse)"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             40 g de beurre mou (3 c. à soupe)"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             1 c. à café d&rsquo;extrait de vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             400 ml de crème épaisse froide (1⅔ tasses)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1-2 c. à soupe de sucre glace (au goût)"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             1 c. à café d&rsquo;extrait de vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Sucre glace (pour la finition)"
-            }
-        ],
-        "steps": [
-            "Tamiser la farine dans un bol et former un puits au centre. Ajouter la levure, 1 cuillère à café de sucre et un peu de lait tiède. Laisser reposer 8 à 10 minutes jusqu&rsquo;à ce que la levure devienne mousseuse.",
-            "Ajouter le reste du sucre, le sel, l&rsquo;œuf, l&rsquo;extrait de vanille et le reste du lait. Pétrir avec un crochet à pâte jusqu&rsquo;à obtenir une pâte lisse.",
-            "Ajouter le beurre mou en dernier et continuer à pétrir pendant 8 à 10 minutes jusqu&rsquo;à ce que la pâte soit molle, élastique et se décolle des parois du bol. Couvrir et laisser lever environ 60 minutes.",
-            "Diviser la pâte en 9 portions égales (environ 50 g par pièce), former des boules lisses et les placer sur une plaque de cuisson recouverte de papier sulfurisé. Couvrir et laisser lever encore 20 à 30 minutes. Badigeonner légèrement le dessus avec un peu de crème.",
-            "Cuire au four préchauffé à 180 °C / 350 °F (chaleur haut/bas) pendant 15 à 18 minutes jusqu&rsquo;à ce qu&rsquo;ils soient légèrement dorés. Laisser refroidir complètement.",
-            "Fouetter la crème froide avec le sucre glace et la vanille jusqu&rsquo;à ce qu&rsquo;elle soit ferme.",
-            "Couper les Bambas horizontalement, garnir généreusement ou pocher la crème, replacer les dessus et saupoudrer généreusement de sucre glace. Moelleux, aériens et merveilleusement simples - une pâtisserie classique fourrée à la crème qui ne manque jamais de ravir."
-        ],
-        "tags": [
-            "Espagne",
-            "Famille",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
