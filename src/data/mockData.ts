@@ -2,10 +2,10 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/04/2026 16:41:34
+ * Dernière mise à jour: 10/04/2026 16:42:59
  * Total: 191 recettes
  */
-export const exportSyncId = "1775839294478";
+export const exportSyncId = "1775839379111";
 export const mockRecipes: Recipe[] = [
     {
         "id": "4019",
@@ -5005,7 +5005,7 @@ export const mockRecipes: Recipe[] = [
         "id": "4013",
         "title": "Mahmoos Gutaifi",
         "description": "Un plat de poulet et riz originaire d&rsquo;Arabie Saoudite, parfumé aux épices et servi avec une sauce au yaourt.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fimage-recette-de-Mahmoos-Gutaifi.jpeg&v=1774525359000",
+        "image": "/images/recipe-placeholder.jpg",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
