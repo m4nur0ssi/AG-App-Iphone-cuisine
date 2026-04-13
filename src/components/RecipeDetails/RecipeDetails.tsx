@@ -1043,6 +1043,13 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
                                 </div>
                             </div>
                         )}
+
+                        {/* TAB: Vidéo */}
+                        {activeTab === 'video' && (
+                            <div className={styles.tabPanel}>
+                                <VideoSection videoHtml={recipe.videoHtml || ''} />
+                            </div>
+                        )}
                     </div>
                 </div>
             )}
