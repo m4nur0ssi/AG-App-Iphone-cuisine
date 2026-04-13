@@ -38,6 +38,8 @@ export default function RecipeCarousel({ recipes, title = "Nouvelles Recettes �
             case 'plat de chef': return 'linear-gradient(135deg, #3B82F6, #4F46E5)';
             case 'desserts':
             case 'pâtisserie':
+            case 'patisserie':
+            case 'atelier de patisserie':
             case 'douceurs sucrées':
             case 'douceur sucrée': return 'linear-gradient(135deg, #EC4899, #9333EA)';
             case 'thématiques du moment': return 'linear-gradient(135deg, #10b981, #3b82f6)';

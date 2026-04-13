@@ -65,7 +65,9 @@ export default function Home() {
             'entrées fraîches': 'entrees',
             'plats de chef': 'plats',
             'douceurs sucrées': 'desserts',
+            'atelier de pâtisserie': 'patisserie',
             'atelier pâtisserie': 'patisserie',
+            'pâtisserie': 'patisserie',
             'comme au resto': 'restaurant',
             'green healthy': 'vegetarien',
             'la dolce vita': 'italie',
@@ -240,12 +242,20 @@ export default function Home() {
                               title.includes('alcool') || title.includes('vin') || title.includes('bière') ||
                               tags.includes('boisson') || tags.includes('cocktail') || tags.includes('jus')) && !isSavory;
 
-            const isDessert = isDessertRaw && !isIceCream;
+            const isPatisserie = (title.includes('gâteau') || title.includes('cake') || title.includes('cookies') || 
+                                title.includes('macaron') || title.includes('tarte') || title.includes('brioche') || 
+                                title.includes('pâte') || title.includes('choux') || title.includes('éclair') || 
+                                title.includes('millefeuille') || title.includes('viennoiserie') || title.includes('bambas') || 
+                                title.includes('brookie') || title.includes('financier') || title.includes('muffin') || 
+                                title.includes('brownie') || cat === 'patisserie') && !isSavory && !isIceCream && !isBeverage;
+
+            const isDessert = isDessertRaw && !isIceCream && !isPatisserie;
 
             let finalCat = recipe.category || 'Autres';
 
             if (isIceCream) finalCat = 'glaces';
             else if (isBeverage) finalCat = 'boissons';
+            else if (isPatisserie) finalCat = 'patisserie';
             else if (isDessert) finalCat = 'desserts';
             else if (isPlat) finalCat = 'plats';
             else if (isApero) finalCat = 'aperitifs';
@@ -253,7 +263,6 @@ export default function Home() {
             else if (cat === 'simplissime') finalCat = 'simplissime';
             else if (cat === 'italie') finalCat = 'restaurant';
             else if (cat === 'restaurant') finalCat = 'restaurant';
-            else if (cat === 'patisserie') finalCat = 'patisserie';
             else if (cat === 'vegetarien') finalCat = 'vegetarien';
 
             if (!groups[finalCat]) groups[finalCat] = [];
@@ -277,7 +286,7 @@ export default function Home() {
         'glaces': 'Les Glaces',
         'boissons': 'Rafraîchissements',
         'simplissime': 'Simplissime',
-        'patisserie': 'Atelier Pâtisserie',
+        'patisserie': 'Atelier de Pâtisserie',
         'restaurant': 'Comme au Resto',
         'vegetarien': 'Green & Healthy',
         'Autres': 'Le Reste du Monde'
