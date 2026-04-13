@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { Ingredient } from '@/types';
+import { parseIngredient } from '@/lib/ingredient-parser';
 import styles from './IngredientList.module.css';
 
 
@@ -47,19 +48,26 @@ export default function IngredientList({ recipeTitle, recipeUrl, ingredients }: 
             </div>
 
             <div className={styles.list}>
-                {ingredients.map((ingredient, index) => (
-                    <label key={index} className={`${styles.ingredient} ${checkedItems[index] ? styles.checked : ''}`}>
-                        <input
-                            type="checkbox"
-                            className={styles.checkbox}
-                            checked={checkedItems[index]}
-                            onChange={() => toggleIngredient(index)}
-                        />
-                        <span className={styles.ingredientText}>
-                            {ingredient.quantity && <strong>{ingredient.quantity}</strong>} {ingredient.name}
-                        </span>
-                    </label>
-                ))}
+                {ingredients.map((ingredient, index) => {
+                    const parsed = parseIngredient(ingredient.name);
+                    const displayQty = parsed.quantity ? `${parsed.quantity} ` : (ingredient.quantity ? `${ingredient.quantity} ` : '');
+                    const displayUnit = parsed.unit ? `${parsed.unit} ` : '';
+                    return (
+                        <label key={index} className={`${styles.ingredient} ${checkedItems[index] ? styles.checked : ''}`}>
+                            <input
+                                type="checkbox"
+                                className={styles.checkbox}
+                                checked={checkedItems[index]}
+                                onChange={() => toggleIngredient(index)}
+                            />
+                            <span className={styles.ingredientText}>
+                                {displayQty && <strong>{displayQty}</strong>} 
+                                <strong>{displayUnit}</strong>
+                                {parsed.name}
+                            </span>
+                        </label>
+                    );
+                })}
             </div>
         </div>
     );

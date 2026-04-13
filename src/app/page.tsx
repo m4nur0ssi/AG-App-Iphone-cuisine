@@ -14,7 +14,8 @@ import styles from './page.module.css';
 
 export default function Home() {
     const [scrolled, setScrolled] = useState(false);
-    const [activeTags, setActiveTags] = useState<string[]>([]);
+    const [activeFilters, setActiveFilters] = useState<{tag: string, group: string}[]>([]);
+    const activeTags = useMemo(() => activeFilters.map(f => f.tag), [activeFilters]);
     const [touchStart, setTouchStart] = useState<number>(0);
     const [touchEnd, setTouchEnd] = useState<number>(0);
 
@@ -26,13 +27,24 @@ export default function Home() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const handleTagSelect = (tag: string) => {
-        setActiveTags(prev => {
-            if (prev.includes(tag)) {
-                return []; // Unselect
-            } else {
-                return [tag]; // Mutual exclusivity as requested
+    const handleTagSelect = (tag: string, groupId?: string) => {
+        if (!groupId) {
+            const lowerTag = tag.toLowerCase();
+            const categoriesIds = ['aperitifs', 'entrees', 'plats', 'vegetarien', 'desserts', 'patisserie', 'restaurant', 'apéro', 'entrée'];
+            const countriesIds = ['france', 'italie', 'espagne', 'grece', 'liban', 'usa', 'mexique', 'orient', 'asie', 'afrique'];
+            
+            if (categoriesIds.some(c => lowerTag.includes(c))) groupId = 'categories';
+            else if (countriesIds.some(c => lowerTag.includes(c))) groupId = 'countries';
+            else groupId = 'trends'; 
+        }
+
+        setActiveFilters(prev => {
+            const existing = prev.find(f => f.tag === tag);
+            if (existing) {
+                return prev.filter(f => f.tag !== tag);
             }
+            const filtered = prev.filter(f => f.group !== groupId);
+            return [...filtered, { tag, group: groupId }];
         });
     };
 
@@ -58,6 +70,10 @@ export default function Home() {
             'green healthy': 'vegetarien',
             'la dolce vita': 'italie',
             'c\'est noël': 'Noël',
+            'noël': 'Noël',
+            'voilà l\'été': 'voila-lete',
+            'c\'est l\'hiver': 'cest-lhiver',
+            'astuces': 'Astuces',
             'les glaces': 'glaces',
             'rafraîchissements': 'boissons'
         };
@@ -68,7 +84,7 @@ export default function Home() {
     };
 
     const clearAllFilters = () => {
-        setActiveTags([]);
+        setActiveFilters([]);
     };
 
     const handleTouchStart = (e: React.TouchEvent) => {
@@ -95,7 +111,7 @@ export default function Home() {
             const recipeTags = (recipe.tags || []).map(t => t.toLowerCase());
             const recipeCat = (recipe.category || '').toLowerCase();
 
-            return activeTags.some(currentTag => {
+            return activeTags.every(currentTag => {
                 const tagLower = currentTag.toLowerCase();
 
                 if (tagLower === 'vegetarien') {
@@ -272,73 +288,136 @@ export default function Home() {
             id: 'easter-2024',
             title: 'Pâques est là',
             description: 'Un délicieux plat d\'agneau Pascal.',
-            image: '/images/themes/paques.jpg',
+            image: 'images/themes/paques.jpg',
             category: 'plats',
             tags: ['Pâques'],
-            isFavorite: false
+            isFavorite: false,
+            difficulty: 'moyen',
+            prepTime: 15,
+            cookTime: 45,
+            servings: 4,
+            ingredients: [],
+            steps: []
         },
         {
             id: 'xmas-2024',
             title: 'C\'est Noël',
             description: 'La magie des fêtes dans votre assiette.',
-            image: '/images/themes/noel.jpg',
+            image: 'images/themes/noel.jpg',
             category: 'plats',
             tags: ['Noël'],
-            isFavorite: false
+            isFavorite: false,
+            difficulty: 'moyen',
+            prepTime: 30,
+            cookTime: 60,
+            servings: 6,
+            ingredients: [],
+            steps: []
         },
         {
             id: 'theme-glaces',
             title: 'Les Glaces',
             description: 'Une sélection de sorbets et glaces artisanales.',
-            image: '/images/themes/glaces.jpg',
+            image: 'images/themes/glaces.jpg',
             category: 'desserts',
             tags: ['glaces'],
-            isFavorite: false
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 10,
+            cookTime: 0,
+            servings: 4,
+            ingredients: [],
+            steps: []
         },
         {
             id: 'theme-refresh',
             title: 'Rafraîchissements',
             description: 'Des boissons fraîches pour tous les goûts.',
-            image: '/images/themes/rafraichissements.jpg',
+            image: 'images/themes/rafraichissements.jpg',
             category: 'boissons',
             tags: ['boissons'],
-            isFavorite: false
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 5,
+            cookTime: 0,
+            servings: 2,
+            ingredients: [],
+            steps: []
         },
         {
             id: 'theme-simplissime',
             title: 'Simplissime',
             description: 'Mini poivrons farcis à la grecque.',
-            image: '/images/themes/simplissime.jpg',
+            image: 'images/themes/simplissime.jpg',
             category: 'aperitifs',
             tags: ['simplissime'],
-            isFavorite: false
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 10,
+            cookTime: 15,
+            servings: 4,
+            ingredients: [],
+            steps: []
         },
         {
             id: 'theme-dolce-vita',
             title: 'La Dolce Vita',
             description: 'Boulettes de viandes ultra gourmandes.',
-            image: '/images/themes/dolce-vita.jpg',
+            image: 'images/themes/dolce-vita.jpg',
             category: 'plats',
             tags: ['italie'],
-            isFavorite: false
+            isFavorite: false,
+            difficulty: 'moyen',
+            prepTime: 20,
+            cookTime: 20,
+            servings: 4,
+            ingredients: [],
+            steps: []
         },
         {
             id: 'voila-lete',
             title: "Voilà l'Été ☀️",
             description: 'Les meilleures recettes estivales.',
-            image: '/images/themes/voila-lete.jpg',
+            image: 'images/themes/voila-lete.jpg',
             category: 'plats',
             tags: ['voila-lete'],
-            isFavorite: false
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 15,
+            cookTime: 0,
+            servings: 6,
+            ingredients: [],
+            steps: []
         },
         {
             id: 'cest-lhiver',
             title: "C'est l'Hiver ❄️",
             description: 'Recettes chaleureuses pour les jours froids.',
-            image: '/images/themes/cest-lhiver.jpg',
+            image: 'images/themes/cest-lhiver.jpg',
             category: 'plats',
             tags: ['cest-lhiver'],
-            isFavorite: false
+            isFavorite: false,
+            difficulty: 'moyen',
+            prepTime: 20,
+            cookTime: 40,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-astuces',
+            title: "Astuces 💡",
+            description: 'Les petits secrets qui changent tout.',
+            image: 'images/themes/astuces.jpg',
+            category: 'autres',
+            tags: ['Astuces'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 5,
+            cookTime: 0,
+            servings: 1,
+            ingredients: [],
+            steps: []
         }
     ];
 

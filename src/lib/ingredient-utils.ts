@@ -40,8 +40,38 @@ export function getIngredientVisual(name: string): string | null {
         ...(marmitonIngredients as Record<string, string>)
     };
 
-    const normalize = (str: string) => str.toLowerCase().replace(/œ/g, 'oe').normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    const normCleanName = normalize(cleanName);
+    // Aliases globaux pour forcer une image spécifique et éviter les mauvaises interprétations de sous-mots
+    const INGREDIENT_ALIASES: Record<string, string> = {
+        'sauce salade': 'vinaigrette',
+        'chips de pomme de terre': 'pomme de terre',
+        'fleur de sel': 'sel',
+        'gros sel': 'sel',
+        'parmesan râpé': 'parmesan',
+        'gruyère râpé': 'gruyère',
+        'emmental râpé': 'emmental'
+    };
+
+    // Appliquer l'alias si la chaîne nettoyée contient la clé
+    let searchName = cleanName;
+    for (const [key, alias] of Object.entries(INGREDIENT_ALIASES)) {
+        if (cleanName.includes(key)) {
+            searchName = alias;
+            break;
+        }
+    }
+
+    // Normalize enlève les accents, les apostrophes, les tirets et met tout en minuscule pour la comparaison stricte
+    const normalize = (str: string) => str
+        .toLowerCase()
+        .replace(/œ/g, 'oe')
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/['’]/g, ' ')
+        .replace(/-/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+        
+    const normCleanName = normalize(searchName);
 
     // 1. Recherche par terme exact (normalisé)
     const allKeys = Object.keys(marmitonDict);

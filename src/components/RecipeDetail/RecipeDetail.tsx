@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Recipe } from '@/types';
 import { scaleQuantity } from '@/lib/utils';
 import { getIngredientVisual } from '@/lib/ingredient-utils';
+import { parseIngredient } from '@/lib/ingredient-parser';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
 import { useTimer } from '@/components/Timer/TimerContext';
 import { parseDuration, stripHtml } from '@/lib/timer-utils';
@@ -96,9 +97,11 @@ export default function RecipeDetail({ recipe, onClose }: RecipeDetailProps) {
             const selectedIngredients = recipe.ingredients
                 .filter((_, idx) => checkedIngredients[idx])
                 .map(ing => {
-                    const qty = ing.quantity ? scaleQuantity(ing.quantity, ratio) : '';
-                    const name = ing.name.replace(/^[\uD83C-\uDBFF\uDC00-\uDFFF]+\s*/, '');
-                    return `- ${qty} ${name}`.trim();
+                    const parsed = parseIngredient(ing.name);
+                    const qty = parsed.quantity ? scaleQuantity(parsed.quantity, ratio) : '';
+                    const unit = parsed.unit ? `${parsed.unit} ` : '';
+                    const name = parsed.name;
+                    return `- ${qty} ${unit}${name}`.trim();
                 });
 
             if (selectedIngredients.length === 0) {
@@ -270,21 +273,22 @@ export default function RecipeDetail({ recipe, onClose }: RecipeDetailProps) {
                                     <button className={styles.panierBtn} onClick={copyIngredients}>🛒 Mettre au panier</button>
                                 </div>
                                 <div className={styles.ingredientsGrid}>
-                                    {recipe.ingredients.map((ing, idx) => (
+                                    {recipe.ingredients.map((ing, idx) => {
+                                        const parsed = parseIngredient(ing.name);
+                                        const visual = ing.image || getIngredientVisual(parsed.name);
+                                        
+                                        return (
                                         <div key={idx} className={`${styles.ingredientCard} ${checkedIngredients[idx] ? styles.ingredientChecked : ''}`} onClick={() => toggleIngredient(idx)}>
                                             <div className={styles.ingIcon}>
-                                                {(() => {
-                                                    const visual = ing.image || getIngredientVisual(ing.name);
-                                                    return visual ? <img src={visual} alt={ing.name} className={styles.ingImg} /> : <span className={styles.ingEmoji}>🥗</span>;
-                                                })()}
+                                                {visual ? <img src={visual} alt={parsed.name} className={styles.ingImg} /> : <span className={styles.ingEmoji}>{parsed.emoji || '🥗'}</span>}
                                                 {checkedIngredients[idx] && <div className={styles.checkBadge}>✓</div>}
                                             </div>
                                             <div className={styles.ingText}>
-                                                <span className={styles.ingQty}>{scaleQuantity(ing.quantity || '1', ratio)}</span>
-                                                <span className={styles.ingName}>{ing.name}</span>
+                                                <span className={styles.ingQty}>{parsed.quantity ? scaleQuantity(parsed.quantity, ratio) : ''} {parsed.unit || ''}</span>
+                                                <span className={styles.ingName}>{parsed.name}</span>
                                             </div>
                                         </div>
-                                    ))}
+                                    )})}
                                 </div>
                             </div>
                         )}

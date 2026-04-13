@@ -21,7 +21,7 @@ const AFRICA_SILHOUETTE = (
 
 interface MagicFilterBarProps {
     activeTags: string[];
-    onSelect: (tag: string) => void;
+    onSelect: (tag: string, groupId?: string) => void;
     showBack?: boolean;
     backUrl?: string;
     backLabel?: string;
@@ -53,11 +53,13 @@ const countries: FilterItem[] = [
 ];
 
 const trends: FilterItem[] = [
-    { id: 'trn-paques', name: 'Pâques', icon: '', color: '#ffcc33' },
-    { id: 'trn-noel', name: 'Noël', icon: '', color: '#ff3b30' },
-    { id: 'trn-glaces', name: 'Les Glaces', icon: '', color: '#F472B6' },
-    { id: 'trn-boissons', name: 'Rafraîchissements', icon: '', color: '#3B82F6' },
-    { id: 'trn-simplissime', name: 'Simplissime', icon: '', color: '#FFD700' },
+    { id: 'trn-paques', name: 'Pâques', icon: '', tag: 'pâques', color: '#ffcc33' },
+    { id: 'trn-noel', name: 'Noël', icon: '', tag: 'Noël', color: '#ff3b30' },
+    { id: 'trn-summer', name: "Voilà l'été", icon: '☀️', tag: 'voila-lete', color: '#FF7E5F' },
+    { id: 'trn-winter', name: "C'est l'hiver", icon: '❄️', tag: 'cest-lhiver', color: '#3B82F6' },
+    { id: 'trn-glaces', name: 'Les Glaces', icon: '', tag: 'glaces', color: '#F472B6' },
+    { id: 'trn-boissons', name: 'Rafraîchissements', icon: '', tag: 'boissons', color: '#3B82F6' },
+    { id: 'trn-simplissime', name: 'Simplissime', icon: '', tag: 'simplissime', color: '#FFD700' },
     { id: 'trn-dolce-vita', name: 'Dolce Vita', icon: '', tag: 'italie', color: '#008C45' },
     { id: 'trn-healthy', name: 'Healthy', icon: '', tag: 'Healthy', color: '#A8E063' },
     { id: 'trn-astuces', name: 'Astuces', icon: '', tag: 'Astuces', color: '#FFD700' },
@@ -106,7 +108,9 @@ export default function MagicFilterBar({
             {/* MAIN DOCK */}
             <div className={styles.wellDock}>
                 {groups.map((group) => {
-                    const isActive = activeGroup === group.id;
+                    const isMenuOpen = activeGroup === group.id;
+                    const hasSelection = group.items.some(i => activeTags.includes(i.tag || i.id));
+                    const isActive = isMenuOpen || hasSelection;
                     return (
                         <button
                             key={group.id}
@@ -116,7 +120,7 @@ export default function MagicFilterBar({
                             {group.label}
                             {isActive && (
                                 <motion.div 
-                                    layoutId="mainIndicator" 
+                                    layoutId={`mainIndicator-${group.id}`} 
                                     className={styles.activeIndicator}
                                     transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                                 />
@@ -148,7 +152,7 @@ export default function MagicFilterBar({
                                                 key={item.id}
                                                 className={`${styles.subItem} ${isSelected ? styles.selected : ''}`}
                                                 onClick={() => {
-                                                    onSelect(itemTag);
+                                                    onSelect(itemTag, activeGroup || undefined);
                                                     if (typeof navigator !== 'undefined' && navigator.vibrate) {
                                                         navigator.vibrate(isSelected ? [10] : [15, 30, 15]);
                                                     }
@@ -161,7 +165,7 @@ export default function MagicFilterBar({
                                             >
                                                 {isSelected && (
                                                     <motion.div 
-                                                        layoutId="aura-glow"
+                                                        layoutId={`aura-glow-${activeGroup}`}
                                                         className={styles.auraGlow}
                                                         initial={{ opacity: 0 }}
                                                         animate={{ opacity: 1 }}
