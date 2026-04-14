@@ -173,6 +173,26 @@ export default function Home() {
                            recipeTags.some(t => t.toLowerCase().includes('dessert') || t.toLowerCase().includes('pâtis') || t.toLowerCase().includes('patis'));
                 }
 
+                if (tagLower === 'plats') {
+                    const titleLower = recipe.title.toLowerCase();
+                    const platKeywords = ['poulet', 'agneau', 'gratin', 'burger', 'viande', 'pâtes', 'riz', 'rôti', 'confit'];
+                    return recipeCat === 'plats' || recipeTags.includes('plat') || recipeTags.includes('plats') ||
+                           platKeywords.some(k => titleLower.includes(k));
+                }
+
+                if (tagLower === 'aperitifs') {
+                    const titleLower = recipe.title.toLowerCase();
+                    return recipeCat === 'aperitifs' || recipeCat === 'apéro' || recipeCat === 'aperitif' ||
+                           recipeTags.some(t => t.includes('aperitif') || t.includes('apéro')) ||
+                           ['croquetas', 'apéro', 'tapas', 'houmous'].some(k => titleLower.includes(k));
+                }
+
+                if (tagLower === 'entrees') {
+                    const titleLower = recipe.title.toLowerCase();
+                    return recipeCat === 'entrees' || recipeCat === 'entrée' || recipeTags.includes('entrée') ||
+                           ['salade', 'soupe', 'velouté', 'carpaccio', 'entrée'].some(k => titleLower.includes(k));
+                }
+
                 if (tagLower === 'nouveautés' || tagLower === 'nouveauté') {
                     const sorted = [...mockRecipes].sort((a, b) => parseInt(b.id) - parseInt(a.id));
                     const latestIds = sorted.slice(0, 20).map(r => r.id);
@@ -180,9 +200,7 @@ export default function Home() {
                 }
 
                 return recipeCat === tagLower || 
-                       recipeTags.some(t => t.includes(tagLower)) ||
-                       (tagLower === 'aperitifs' && (recipeCat === 'apéro' || recipeCat === 'aperitif' || recipeCat === 'aperitifs')) ||
-                       (tagLower === 'entrees' && (recipeCat === 'entrée' || recipeCat === 'entrees'));
+                       recipeTags.some(t => t.includes(tagLower));
             });
         });
     }, [activeTags]);
@@ -251,19 +269,29 @@ export default function Home() {
 
             const isDessert = isDessertRaw && !isIceCream && !isPatisserie;
 
-            let finalCat = recipe.category || 'Autres';
+            const thematicTags = ['noël', 'noel', 'pâques', 'paques', 'halloween', 'saint-valentin', 'ramadan'];
+            const foundTheme = tags.find(t => thematicTags.includes(t));
+            
+            let finalCat = (recipe.category || 'Autres').toLowerCase();
+            const isGenericWPCat = ['astuces', 'autres', '', 'unsorted', 'favoris'].includes(finalCat);
 
-            if (isIceCream) finalCat = 'glaces';
-            else if (isBeverage) finalCat = 'boissons';
-            else if (isPatisserie) finalCat = 'patisserie';
-            else if (isDessert) finalCat = 'desserts';
-            else if (isPlat) finalCat = 'plats';
-            else if (isApero) finalCat = 'aperitifs';
-            else if (isEntree) finalCat = 'entrees';
-            else if (cat === 'simplissime') finalCat = 'simplissime';
-            else if (cat === 'italie') finalCat = 'restaurant';
-            else if (cat === 'restaurant') finalCat = 'restaurant';
-            else if (cat === 'vegetarien') finalCat = 'vegetarien';
+            // LOGIQUE : Priorité aux thématiques si pas de catégorie spécifique dans WP
+            if (isGenericWPCat && foundTheme) {
+                finalCat = foundTheme;
+            } else {
+                // Sinon, détection automatique classique
+                if (isIceCream) finalCat = 'glaces';
+                else if (isBeverage) finalCat = 'boissons';
+                else if (isPatisserie) finalCat = 'patisserie';
+                else if (isDessert) finalCat = 'desserts';
+                else if (isPlat) finalCat = 'plats';
+                else if (isApero) finalCat = 'aperitifs';
+                else if (isEntree) finalCat = 'entrees';
+                else if (cat === 'simplissime') finalCat = 'simplissime';
+                else if (cat === 'italie') finalCat = 'restaurant';
+                else if (cat === 'restaurant') finalCat = 'restaurant';
+                else if (cat === 'vegetarien') finalCat = 'vegetarien';
+            }
 
             if (!groups[finalCat]) groups[finalCat] = [];
             groups[finalCat].push(recipe);
@@ -289,6 +317,11 @@ export default function Home() {
         'patisserie': 'Atelier de Pâtisserie',
         'restaurant': 'Comme au Resto',
         'vegetarien': 'Green & Healthy',
+        'noël': 'Spécial Noël 🎄',
+        'noel': 'Spécial Noël 🎄',
+        'pâques': 'Spécial Pâques 🐣',
+        'paques': 'Spécial Pâques 🐣',
+        'halloween': 'Frissons d\'Halloween 🎃',
         'Autres': 'Le Reste du Monde'
     };
 
@@ -492,7 +525,10 @@ export default function Home() {
                                 />
 
                                 <div className={styles.sectionsContainer}>
-                                    {categories.map(catKey => {
+                                    {Object.keys(categorizedRecipes).map(catKey => {
+                                        // On ignore 'Autres' ici pour le mettre à la fin, et on ignore les catégories vides
+                                        if (catKey === 'Autres' || catKey === 'autres') return null;
+                                        
                                         const recipes = categorizedRecipes[catKey];
                                         if (!recipes || recipes.length === 0) return null;
 
@@ -500,7 +536,7 @@ export default function Home() {
                                             <RecipeCarousel
                                                 key={catKey}
                                                 recipes={recipes}
-                                                title={categoryLabels[catKey] || catKey}
+                                                title={categoryLabels[catKey] || catKey.charAt(0).toUpperCase() + catKey.slice(1)}
                                                 size="small"
                                                 onTitleClick={handleCarouselTitleClick}
                                             />
