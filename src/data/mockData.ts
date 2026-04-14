@@ -2,11 +2,107 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/04/2026 09:11:38
- * Total: 192 recettes
+ * Dernière mise à jour: 14/04/2026 10:00:51
+ * Total: 193 recettes
  */
-export const exportSyncId = "1776157898078";
+export const exportSyncId = "1776160851832";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5117",
+        "title": "CRISPY RICE SALAD WITH CREAMY SWEET CHILLI DRESSING",
+        "description": "Une salade fraîche et croustillante avec du riz croustillant au four, du poulet, des légumes frais et une vinaigrette crémeuse au piment doux. Décrite comme l&rsquo;une des meilleures salades jamais réalisées, elle est également riche en protéines.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1776160537573.jpg&v=1776167771000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7583612197801250068\" data-video-id=\"7583612197801250068\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7583612197801250068\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍚\n             450 g de riz jasmin cuit (refroidi)"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             3 c. à café de sauce soja (1 foncée, 2 régulières)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 c. à soupe d&rsquo;huile de piment croustillant"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 c. à soupe d&rsquo;huile de sésame"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n             1 à 2 grands concombres (finement tranchés)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 tasse d&rsquo;edamame"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 botte d&rsquo;oignons verts (finement tranchés)"
+            },
+            {
+                "quantity": "",
+                "name": "🥑\n             1 avocat (haché)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Filets de poulet croustillants (cuits selon les instructions)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cacahuètes hachées (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/4 tasse de yaourt grec"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1/4 tasse de mayonnaise (légère)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50 ml de sauce chili douce"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1/2 c. à café de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Eau (pour diluer la vinaigrette)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Graines de sésame (pour la garniture, facultatif)"
+            }
+        ],
+        "steps": [
+            "Préchauffer le four à 200 C et tapisser une plaque de papier cuisson.",
+            "Mélanger le riz refroidi avec la sauce soja, l&rsquo;huile de piment croustillant et l&rsquo;huile de sésame jusqu&rsquo;à ce qu&rsquo;il soit enrobé, puis étaler uniformément et cuire au four pendant 30 à 40 minutes, en remuant à mi-cuisson, jusqu&rsquo;à ce qu&rsquo;il soit doré et croustillant. Réserver.",
+            "Cuire le poulet selon les instructions.",
+            "Pour assembler, ajouter le concombre, l&rsquo;edamame, les oignons verts, l&rsquo;avocat, le poulet cuit et le riz croustillant dans un grand bol.",
+            "Préparer la vinaigrette en fouettant tous les ingrédients jusqu&rsquo;à obtenir une consistance lisse, en utilisant de l&rsquo;eau pour diluer si nécessaire. Goûter et ajuster.",
+            "Verser la vinaigrette sur la salade et mélanger délicatement.",
+            "Garnir de graines de sésame ou de cacahuètes. Servir et déguster."
+        ],
+        "tags": [
+            "asiatique",
+            "France",
+            "Healthy",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5083",
         "title": "Coktail fraise menthe",
