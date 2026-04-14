@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/04/2026 09:04:50
+ * Dernière mise à jour: 14/04/2026 09:07:27
  * Total: 192 recettes
  */
-export const exportSyncId = "1776157490951";
+export const exportSyncId = "1776157647110";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5089",
         "title": "Millefeuilles de pomme de terre",
         "description": "Une recette simple et savoureuse de millefeuilles de pommes de terre, assaisonnées d&rsquo;une marinade à l&rsquo;huile d&rsquo;olive, à l&rsquo;ail et au sel Herbamare, puis cuites au four jusqu&rsquo;à être dorées et fondantes.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2FMillefeuilles-pdt.jpg&v=1776164550000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -291,7 +291,7 @@ export const mockRecipes: Recipe[] = [
         "id": "5083",
         "title": "Coktail fraise menthe",
         "description": "Une boisson rafraîchissante et fruitée, parfaite pour l&rsquo;été, à base d&rsquo;eau, de citrons, de fraises et de menthe.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1775896043622.jpg&v=1776161988000",
+        "image": "/images/recipe-placeholder.jpg",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
