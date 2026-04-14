@@ -3,6 +3,7 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Recipe } from '@/types';
+import { decodeHtml } from '@/lib/utils';
 import dynamic from 'next/dynamic';
 import Portal from '@/components/Portal';
 import styles from './RecipeCardiOS26.module.css';
@@ -159,7 +160,7 @@ export default function RecipeCardiOS26({
                             WebkitTextFillColor: 'transparent'
                         }}
                     >
-                        {truncateTitle(recipe.title)}
+                        {truncateTitle(decodeHtml(recipe.title))}
                     </h3>
                 </motion.div>
             )}
