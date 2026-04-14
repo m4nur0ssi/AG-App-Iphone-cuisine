@@ -2,11 +2,82 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/04/2026 08:23:10
+ * Dernière mise à jour: 14/04/2026 08:39:53
  * Total: 192 recettes
  */
-export const exportSyncId = "1776154990315";
+export const exportSyncId = "1776155993217";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "3892",
+        "title": "Gazpacho maison",
+        "description": "Une recette de gazpacho que l&rsquo;auteur prépare chaque semaine, découverte à Barcelone. L&rsquo;importance est mise sur les ingrédients de saison, notamment les tomates. Idéal pour ceux qui aiment les salades et cherchent une soupe froide rafraîch",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773825538731.jpg&v=1776162856000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7516215618408811798\" data-video-id=\"7516215618408811798\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7516215618408811798\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍅\n 4 tomates bien mûres"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n 2 petits concombres"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n 1/4 de poivron rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n 1/4 d'oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 1/2 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n 1/2 piment (optionnel)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 morceau de pain imbibé dans l'eau"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n huile d'olive extra vierge"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n 2 cas de vinaigre de vin rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n sel et poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n feuilles de basilic frais"
+            }
+        ],
+        "steps": [
+            "Dans un blender, rassembler tous les ingrédients et mixez finement le tout.",
+            "Gardez au frais pendant quelques heures et servez froid."
+        ],
+        "tags": [
+            "Espagne",
+            "Healthy",
+            "raffraichissements",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5083",
         "title": "Coktail fraise menthe",
@@ -117,7 +188,7 @@ export const mockRecipes: Recipe[] = [
         "id": "5098",
         "title": "Pomme duchesse ail &#038; beurre truffé",
         "description": "Des pommes duchesse classiques revisitées avec de l&rsquo;ail et du beurre truffé, parfaites pour accompagner vos repas de fêtes de fin d&rsquo;année.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1776153142979.jpg&v=1776160358000",
+        "image": "/images/recipe-placeholder.jpg",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -11807,76 +11878,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Healthy"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "3892",
-        "title": "Gazpacho maison",
-        "description": "Une recette de gazpacho que l&rsquo;auteur prépare chaque semaine, découverte à Barcelone. L&rsquo;importance est mise sur les ingrédients de saison, notamment les tomates. Idéal pour ceux qui aiment les salades et cherchent une soupe froide rafraîch",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Frecipe_1773825538731.jpg&v=1773829242000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7516215618408811798\" data-video-id=\"7516215618408811798\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7516215618408811798\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍅\n             4 tomates bien mûres"
-            },
-            {
-                "quantity": "",
-                "name": "🥒\n             2 petits concombres"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1/4 de poivron rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1/4 d'oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1/2 gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1/2 piment (optionnel)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 morceau de pain imbibé dans l'eau"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             huile d'olive extra vierge"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             2 cas de vinaigre de vin rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             sel et poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             feuilles de basilic frais"
-            }
-        ],
-        "steps": [
-            "Dans un blender, rassembler tous les ingrédients et mixez finement le tout.",
-            "Gardez au frais pendant quelques heures et servez froid."
-        ],
-        "tags": [
-            "Espagne",
-            "Healthy",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
