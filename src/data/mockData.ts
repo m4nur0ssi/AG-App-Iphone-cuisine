@@ -2,50 +2,50 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 16/04/2026 18:26:11
+ * Dernière mise à jour: 16/04/2026 18:29:29
  * Total: 208 recettes
  */
-export const exportSyncId = "1776363971140";
+export const exportSyncId = "1776364169883";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5214",
         "title": "Patates au parmesan et romarin",
         "description": "Une recette simple et savoureuse de pommes de terre rôties avec du parmesan, de l&rsquo;huile d&rsquo;olive, de l&rsquo;ail et du romarin.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2FPommes_de_terre_roties_parmesan_recete.jpeg&v=1776371213000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7629407429046029590\" data-video-id=\"7629407429046029590\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7629407429046029590\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7629407429046029590\" data-video-id=\"7629407429046029590\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7629407429046029590\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🥣\n             Patates (Agata)"
+                "name": "🥣\n Patates (Agata)"
             },
             {
                 "quantity": "",
-                "name": "🍾\n             Huile d'olive"
+                "name": "🍾\n Huile d'olive"
             },
             {
                 "quantity": "",
-                "name": "🧀\n             Parmesan"
+                "name": "🧀\n Parmesan"
             },
             {
                 "quantity": "",
-                "name": "🧄\n             2 gousses d'ail"
+                "name": "🧄\n 2 gousses d'ail"
             },
             {
                 "quantity": "",
-                "name": "🌿\n             1 branche de romarin"
+                "name": "🌿\n 1 branche de romarin"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             Sel"
+                "name": "🧂\n Sel"
             },
             {
                 "quantity": "",
-                "name": "🌶️\n             Poivre"
+                "name": "🌶️\n Poivre"
             }
         ],
         "steps": [
@@ -57,6 +57,57 @@ export const mockRecipes: Recipe[] = [
             "Italie",
             "Pas cher",
             "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5205",
+        "title": "Parmigiana di melanzane",
+        "description": "Une version revisitée de la Parmigiana di melanzane italienne, promettant de faire tomber amoureux.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2FSM2021_DIVE_20_Parmigiana-scaled-1-scaled-1.jpg&v=1776371070000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7629381323613818134\" data-video-id=\"7629381323613818134\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7629381323613818134\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍆\n 3 aubergines"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n 3 mozzarellas (125g chacune)"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n 1 bouteille de sauce tomate rustique (600g)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Basilic"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Huile d'olive, sel et poivre"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Italie"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -116,57 +167,6 @@ export const mockRecipes: Recipe[] = [
             "Italie",
             "Pas cher",
             "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5205",
-        "title": "Parmigiana di melanzane 2.0",
-        "description": "Une version revisitée de la Parmigiana di melanzane italienne, promettant de faire tomber amoureux.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7629381323613818134\" data-video-id=\"7629381323613818134\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7629381323613818134\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍆\n             3 aubergines"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             3 mozzarellas (125g chacune)"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 bouteille de sauce tomate rustique (600g)"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Basilic"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Huile d'olive, sel et poivre"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Italie"
         ],
         "isFeatured": false,
         "isFavorite": false,
