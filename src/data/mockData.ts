@@ -2,11 +2,112 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 16/04/2026 17:45:10
- * Total: 204 recettes
+ * Dernière mise à jour: 16/04/2026 17:49:53
+ * Total: 205 recettes
  */
-export const exportSyncId = "1776361510427";
+export const exportSyncId = "1776361793184";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5199",
+        "title": "Pastitsio Grec Maison",
+        "description": "Un Pastitsio grec maison, composé de couches de bucatini parfaitement cuites, d&rsquo;une riche sauce à la viande hachée et d&rsquo;une béchamel crémeuse et onctueuse. Un plat réconfortant qui nourrit le corps et réchauffe l&rsquo;âme.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1776361512491.jpg&v=1776368725000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7413839141865147691\" data-video-id=\"7413839141865147691\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7413839141865147691\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍝\n             1 livre (600g) de pâtes bucatini"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             7 cuillères à soupe d&rsquo;huile d&rsquo;olive extra vierge"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 livre (500g) de viande hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 oignons, mixés"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             3 gousses d&rsquo;ail, mixées"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             3 tomates, mixées"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1/3 tasse (80ml) de jus de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             1/3 tasse (80ml) de vin blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 feuille de laurier"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 bâton de cannelle"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel et poivre au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             50 oz (1,5 litre) de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             6 cuillères à soupe de fécule de maïs (Maïzena)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             2 cuillères à soupe de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             ½ cuillère à café de noix de muscade moulue"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             1,5 tasse (300g) de fromage râpé (ex: Kefalotyri, Parmesan)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 jaunes d&rsquo;œufs"
+            }
+        ],
+        "steps": [
+            "Faire bouillir les pâtes bucatini dans de l&rsquo;eau salée jusqu&rsquo;à ce qu&rsquo;elles soient al dente. Bien égoutter. Arroser de quelques gouttes d&rsquo;huile d&rsquo;olive extra vierge, mélanger délicatement pour éviter qu&rsquo;elles ne collent, et réserver.",
+            "Faire chauffer 7 cuillères à soupe d&rsquo;huile d&rsquo;olive extra vierge dans une grande poêle à feu moyen-élevé. Ajouter la viande hachée et cuire jusqu&rsquo;à ce qu&rsquo;elle soit dorée. Verser le vin blanc et laisser évaporer.",
+            "Incorporer les oignons et l&rsquo;ail mixés, cuire pendant 2 minutes. Ajouter les tomates mixées, le jus de tomate, la feuille de laurier, le bâton de cannelle, et assaisonner de sel et de poivre.",
+            "Réduire le feu à moyen, couvrir et laisser mijoter la sauce pendant environ 25 minutes. Retirer la feuille de laurier et le bâton de cannelle avant d&rsquo;assembler le plat.",
+            "Dans une casserole séparée, faire chauffer le lait à feu moyen. Incorporer progressivement 6 cuillères à soupe de fécule de maïs, puis ajouter le beurre. Continuer de remuer jusqu&rsquo;à ce que la sauce commence à épaissir, en veillant à remuer le fond pour éviter qu&rsquo;elle ne colle.",
+            "Ajouter la noix de muscade, le sel et le poivre au goût, et continuer de remuer. Incorporer la moitié du fromage râpé jusqu&rsquo;à ce qu&rsquo;il soit fondu. Retirer du feu et laisser la sauce refroidir légèrement avant d&rsquo;y incorporer les jaunes d&rsquo;œufs en fouettant.",
+            "Préchauffer votre four à 350°F (175°C).",
+            "Graisser un plat de cuisson de 33 pouces (environ 33&#215;22 cm). Étaler la moitié des pâtes cuites uniformément au fond du plat.",
+            "Verser la sauce à la viande hachée sur les pâtes, en l&rsquo;étalant uniformément. Ajouter le reste des pâtes sur la sauce.",
+            "Verser la sauce béchamel sur les pâtes, en l&rsquo;étalant uniformément pour couvrir le dessus. Saupoudrer le reste du fromage râpé sur la sauce béchamel.",
+            "Faire cuire le Pastitsio dans le four préchauffé pendant environ 1 heure, ou jusqu&rsquo;à ce que le dessus soit doré et que la béchamel soit prise. Laisser le plat refroidir légèrement avant de servir. Dégustez votre pastitsio maison!"
+        ],
+        "tags": [
+            "Grèce"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5193",
         "title": "Scarpaccia courgettes et oignons",
