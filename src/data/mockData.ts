@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 16/04/2026 13:04:16
- * Total: 204 recettes
+ * Dernière mise à jour: 16/04/2026 13:08:00
+ * Total: 203 recettes
  */
-export const exportSyncId = "1776344656026";
+export const exportSyncId = "1776344881001";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5123",
         "title": "Cannelés Bordelais",
         "description": "Une recette authentique pour préparer les célèbres cannelés de Bordeaux, avec leur cœur moelleux et leur croûte caramélisée.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2FCanneles-bordelais-recette-Lilie-Bakery.jpg&v=1776351516000",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2FCanneles-bordelais-recette-Lilie-Bakery.jpg&v=1776351827000",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -15389,38 +15389,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "creperie"
         ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "237",
-        "title": "Le club des cinq",
-        "description": "    Cinq amis recréent le mythique Club des Cinq grâce à un restaurant à la décoration très revival 80&rsquo;s. Vous pourrez admirer la photo de Mac Gyver ou celle de Goldorak qui ornent les murs de l&rsquo;endroit, et vous dînerez adossé à une bibli",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2018%2F03%2Fclub.jpg&v=1526258087000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Cinq amis recréent le mythique Club des Cinq grâce à un restaurant à la décoration très revival 80&rsquo;s. Vous pourrez admirer la photo de Mac Gyver ou celle de Goldorak qui ornent les murs de l&rsquo;endroit, et vous dînerez adossé à une bibliothèque remplie de BD de Tintin, de Rubik&rsquo;s cube et autres objets qui vous rappelleront les souvenirs de votre adolescence.",
-            "Côté nourriture, on retrouve un mélange de la cuisine traditionnelle et de celle de notre enfance. Envie d&rsquo;une salade de Babybels rôtis ? D&rsquo;un foie gras avec sa confiture d&rsquo;oignon à la grenadine ? Ou d&rsquo;un Tiramisu au Kinder ? Au Club des Cinq, c&rsquo;est ambiance régressive assurée !",
-            "Une bonne adresse pour un resto à faire en bande d&rsquo;amis.",
-            "Mon plat préféré : le burger au poulet croustillant et avocat.",
-            "  Le service, l&rsquo;ambiance, la musique des année 80.",
-            "  Les desserts pas très savoureux.",
-            " Au fond, sur la banquette, en face de la salle de classe.",
-            " 7 rue des Batignolles, 75017, Paris  "
-        ],
-        "tags": [],
         "isFeatured": false,
         "isFavorite": false,
         "address": ""
