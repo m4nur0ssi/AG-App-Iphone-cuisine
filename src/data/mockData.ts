@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 16/04/2026 17:49:53
+ * Dernière mise à jour: 16/04/2026 17:52:18
  * Total: 205 recettes
  */
-export const exportSyncId = "1776361793184";
+export const exportSyncId = "1776361938936";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5199",
         "title": "Pastitsio Grec Maison",
         "description": "Un Pastitsio grec maison, composé de couches de bucatini parfaitement cuites, d&rsquo;une riche sauce à la viande hachée et d&rsquo;une béchamel crémeuse et onctueuse. Un plat réconfortant qui nourrit le corps et réchauffe l&rsquo;âme.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1776361512491.jpg&v=1776368725000",
+        "image": "/images/recipe-placeholder.jpg",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
