@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 16/04/2026 18:03:59
+ * Dernière mise à jour: 16/04/2026 18:06:07
  * Total: 206 recettes
  */
-export const exportSyncId = "1776362639030";
+export const exportSyncId = "1776362767641";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5205",
         "title": "Parmigiana di melanzane 2.0",
         "description": "Une version revisitée de la Parmigiana di melanzane italienne, promettant de faire tomber amoureux.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Frecipe_1776362395102.jpg&v=1776369607000",
+        "image": "/images/recipe-placeholder.jpg",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
