@@ -2,10 +2,10 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 17/04/2026 05:22:29
- * Total: 208 recettes
+ * Dernière mise à jour: 17/04/2026 07:50:20
+ * Total: 207 recettes
  */
-export const exportSyncId = "1776403349389";
+export const exportSyncId = "1776412220323";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5214",
@@ -108,65 +108,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Italie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5213",
-        "title": "Patates rôties au parmesan et romarin",
-        "description": "Des pommes de terre Agata rôties au four avec de l&rsquo;huile d&rsquo;olive, de l&rsquo;ail, du romarin, du sel, du poivre et généreusement saupoudrées de parmesan.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7629407429046029590\" data-video-id=\"7629407429046029590\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7629407429046029590\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Patates (type Agata)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 gousses d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 branche de romarin"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            }
-        ],
-        "steps": [
-            "Laver et couper les pommes de terre en morceaux de taille égale.",
-            "Dans un grand bol, mélanger les pommes de terre avec l&rsquo;huile d&rsquo;olive, l&rsquo;ail haché, les feuilles de romarin, le sel et le poivre.",
-            "Étaler les pommes de terre en une seule couche sur une plaque de cuisson recouverte de papier sulfurisé.",
-            "Faire rôtir au four préchauffé à environ 200°C (400°F) pendant 30 à 40 minutes, ou jusqu&rsquo;à ce qu&rsquo;elles soient dorées et tendres, en les retournant à mi-cuisson.",
-            "Saupoudrer généreusement de parmesan râpé juste avant de servir."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "France",
-            "Italie",
-            "Pas cher",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
