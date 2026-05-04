@@ -2,112 +2,46 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 04/05/2026 10:18:18
- * Total: 213 recettes
+ * Dernière mise à jour: 04/05/2026 13:19:10
+ * Total: 212 recettes
  */
-export const exportSyncId = "1777889898861";
+export const exportSyncId = "1777900750145";
 export const mockRecipes: Recipe[] = [
-    {
-        "id": "5237",
-        "title": "Apéro de Noël : Fromage frais salé, saumon fumé, pistache et grenade",
-        "description": "Une recette facile et rapide pour un apéritif de Noël frais et gourmand, à base de fromage frais maison au yaourt grec, agrémenté de saumon fumé, grenade, pistaches et miel.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1777889349005.jpg&v=1777896596000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7313145684650118432\" data-video-id=\"7313145684650118432\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7313145684650118432\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             500g de yaourt grec"
-            },
-            {
-                "quantity": "",
-                "name": "🐟\n             150g de saumon fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Un bouquet de ciboulette"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Un peu de grenades"
-            },
-            {
-                "quantity": "",
-                "name": "🥜\n             Quelques pistaches"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             2 cas de miel"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 cas d'huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             4 / 5 olives"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            }
-        ],
-        "steps": [
-            "Dans un bol, ajoutez le yaourt, les dés de saumon, la ciboulette, la grenade, le sel et le poivre. Mélangez puis versez cette préparation dans un torchon propre déposé sur une passoire. Refermez le torchon et laissez au frais pendant 2 heures.",
-            "Récupérez le fromage frais, disposez-le sur un film alimentaire pour lui donner la forme souhaitée avant de le placer dans l&rsquo;assiette de service.",
-            "Ajoutez sur le dessus de la grenade, des pistaches concassées, de la ciboulette, des olives et un filet de miel."
-        ],
-        "tags": [
-            "Healthy",
-            "Noël"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
     {
         "id": "5234",
         "title": "Sorbet coco créole maison",
         "description": "Un sorbet coco créole maison, réalisé pour la première fois avec succès grâce au Ninja Creami. Une texture ultra onctueuse et un goût intense de coco pour un véritable voyage dans les Caraïbes.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1777877766863.jpg&v=1777884996000",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fmaracook-sorbet-coco-antille_197529455.jpg&v=1777907562000",
         "category": "glaces",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7633855612375272726\" data-video-id=\"7633855612375272726\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7633855612375272726\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7633855612375272726\" data-video-id=\"7633855612375272726\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7633855612375272726\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🥛\n             400 ml de lait de coco"
+                "name": "🥛\n 400 ml de lait de coco"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             150 g de lait concentré sucré"
+                "name": "🥛\n 150 g de lait concentré sucré"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             Cannelle &#038; muscade (selon vos goûts)"
+                "name": "🧂\n Cannelle & muscade (selon vos goûts)"
             },
             {
                 "quantity": "",
-                "name": "🍦\n             1 c. à café d'arôme vanille"
+                "name": "🍦\n 1 c. à café d'arôme vanille"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             1 c. à café d'amande amère"
+                "name": "🥣\n 1 c. à café d'amande amère"
             },
             {
                 "quantity": "",
-                "name": "🍋\n             Zeste de citron vert (à votre convenance)"
+                "name": "🍋\n Zeste de citron vert (à votre convenance)"
             }
         ],
         "steps": [
