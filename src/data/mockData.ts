@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 04/05/2026 13:36:17
+ * Dernière mise à jour: 04/05/2026 14:13:11
  * Total: 212 recettes
  */
-export const exportSyncId = "1777901777431";
+export const exportSyncId = "1777903991929";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5222",
         "title": "Cookie Ferrero Rocher",
         "description": "Des cookies inspirés des Ferrero Rocher, avec un cœur fondant au Nutella et à la pâte de noisette, enrobés de chocolat et de noisettes croquantes.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2FIMG_8387-er-720x1049-1.jpg&v=1777910806000",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 15,
