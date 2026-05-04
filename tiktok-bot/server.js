@@ -56,13 +56,29 @@ app.post('/tiktok-recipe', async (req, res) => {
 
     // RÉPONSE ULTRA-RAPIDE POUR LE RACCOURCI (Liste des pays)
     if (payload.checkOnly) {
-        console.log("   ✅ CheckOnly reçu : Envoi de la liste des pays.");
+        console.log("   ✅ CheckOnly reçu : Envoi des listes.");
+        
         const countriesList = ["🇫🇷 France", "🇮🇹 Italie", "🇪🇸 Espagne", "🇬🇷 Grèce", "🇱🇧 Liban", "🇺🇸 USA", "🇲🇽 Mexique", "🕌 Orient", "🗺️ Autre"];
+        countriesList.sort((a, b) => {
+            const nameA = a.split(' ').slice(1).join(' ').toLowerCase();
+            const nameB = b.split(' ').slice(1).join(' ').toLowerCase();
+            return nameA.localeCompare(nameB);
+        });
+
+        const themesList = ["🥗 Healthy", "🍟 Airfryer", "🍖 Barbecue", "💰 Pas Cher", "⚡ Express", "👨‍👩‍👧‍👦 Famille", "🥦 Végé"];
+        themesList.sort((a, b) => {
+            const nameA = a.split(' ').slice(1).join(' ').toLowerCase();
+            const nameB = b.split(' ').slice(1).join(' ').toLowerCase();
+            return nameA.localeCompare(nameB);
+        });
+
         return res.json({ 
             status: 'ok', 
-            message: 'Quelle est l\'origine de cette recette ?',
+            message: 'Quelle est l\'origine et la thématique de cette recette ?',
             countries: countriesList,
-            pays: countriesList
+            pays: countriesList,
+            themes: themesList,
+            thematiques: themesList
         });
     }
 
@@ -122,7 +138,8 @@ app.post('/tiktok-recipe', async (req, res) => {
             videoUrl: payload.videoUrl, 
             description: payload.description || 'Recette iPhone', 
             author: payload.author || 'mobile',
-            country: payload.country 
+            country: payload.country,
+            theme: payload.theme || payload.thematique
         });
     } catch (err) {
         console.error('❌ Erreur :', err.message);

@@ -208,7 +208,7 @@ async function checkWordPressDuplicate(videoUrl) {
     return false;
 }
 
-async function processRecipe({ videoUrl, description, author, title, country }) {
+async function processRecipe({ videoUrl, description, author, title, country, theme }) {
     if (!videoUrl || videoUrl === '...') {
         return false;
     }
@@ -279,6 +279,7 @@ async function processRecipe({ videoUrl, description, author, title, country }) 
         tiktokAuthor: author, 
         photoUrl, 
         manualCountry: country,
+        manualTheme: theme,
         status: isStub ? 'draft' : 'publish'
     });
 

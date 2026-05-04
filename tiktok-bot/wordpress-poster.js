@@ -182,22 +182,30 @@ async function postToWordPressXMLRPC(recipe) {
         featuredImageId = await uploadImageToWP(recipe.photoUrl, user, pass, wpUrl, encoding);
     }
 
-    // Valeurs consid\u00e9r\u00e9es comme des TH\u00c8MES (pas des pays) → seront ajout\u00e9es en TAG WP
-    const THEMATIC_VALUES = ['no\u00ebl', 'noel', 'p\u00e2ques', 'paques', 'glaces', 'simplissime', 'astuces', 'halloween'];
+    // Valeurs considérées comme des THÈMES (pas des pays) → seront ajoutées en TAG WP
+    const THEMATIC_VALUES = ['noël', 'noel', 'pâques', 'paques', 'glaces', 'simplissime', 'astuces', 'halloween', 'healthy', 'airfryer', 'barbecue', 'pas cher', 'express', 'famille', 'végé', 'vegetarien'];
 
     let extraCategories = [];
     let extraTags = [];
     if (recipe.manualCountry) {
-        const cleanCountry = recipe.manualCountry.split(' ').pop(); // retire l'\u00e9moji pr\u00e9fixe
+        const cleanCountry = recipe.manualCountry.split(' ').pop(); // retire l'émoji préfixe
         if (cleanCountry && cleanCountry !== 'Autre') {
             if (THEMATIC_VALUES.includes(cleanCountry.toLowerCase())) {
-                // C'est un th\u00e8me : on l'ajoute comme TAG (sera lu par sync-recipes.js)
+                // C'est un thème : on l'ajoute comme TAG (sera lu par sync-recipes.js)
                 extraTags.push(cleanCountry);
-                console.log(`   \ud83c\udff7\ufe0f Th\u00e8me d\u00e9tect\u00e9 : "${cleanCountry}" → ajout\u00e9 en tag WP`);
+                console.log(`   🏷️ Thème détecté dans pays : "${cleanCountry}" → ajouté en tag WP`);
             } else {
-                // C'est un pays : on l'ajoute comme cat\u00e9gorie WP suppl\u00e9mentaire
+                // C'est un pays : on l'ajoute comme catégorie WP supplémentaire
                 extraCategories.push(cleanCountry);
             }
+        }
+    }
+    
+    if (recipe.manualTheme) {
+        const cleanTheme = recipe.manualTheme.split(' ').pop(); // retire l'émoji préfixe
+        if (cleanTheme) {
+            extraTags.push(cleanTheme);
+            console.log(`   🏷️ Thématique manuelle : "${cleanTheme}" → ajoutée en tag WP`);
         }
     }
     const allTags = [...(recipe.tags || []), ...extraTags];
