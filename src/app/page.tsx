@@ -60,6 +60,7 @@ export default function Home() {
             'paques': 'pâques',
             'pâques': 'pâques',
             'pâques est là': 'pâques',
+            'paques est la': 'pâques',
             'simplissime': 'simplissime',
             'apéro gourmand': 'aperitifs',
             'entrées fraîches': 'entrees',
@@ -71,13 +72,40 @@ export default function Home() {
             'comme au resto': 'restaurant',
             'green healthy': 'vegetarien',
             'la dolce vita': 'italie',
+            // Avec apostrophe (version brute)
             'c\'est noël': 'Noël',
             'noël': 'Noël',
+            'noel': 'Noël',
+            // Sans apostrophe (après nettoyage regex)
+            'cest noël': 'Noël',
+            'cest noel': 'Noël',
+            'spécial noël': 'Noël',
+            'special noel': 'Noël',
+            // Été / Hiver
             'voilà l\'été': 'voila-lete',
+            'voila lete': 'voila-lete',
+            'voilà lete': 'voila-lete',
             'c\'est l\'hiver': 'cest-lhiver',
+            'cest lhiver': 'cest-lhiver',
+            'cest lhiver ': 'cest-lhiver',
+            // Autres
             'astuces': 'Astuces',
             'les glaces': 'glaces',
-            'rafraîchissements': 'boissons'
+            'glaces': 'glaces',
+            'rafraîchissements': 'boissons',
+            'rafraichissements': 'boissons',
+            'sauces': 'sauces',
+            'sauce': 'sauces',
+            'healthy': 'healthy',
+            'airfryer': 'airfryer',
+            'barbecue': 'barbecue',
+            'bbq': 'barbecue',
+            'pas cher': 'pas cher',
+            'express': 'express',
+            'famille': 'famille',
+            'familial': 'famille',
+            'végé': 'vegetarien',
+            'vege': 'vegetarien'
         };
 
         const tag = mapping[cleanTitle] || cleanTitle;
@@ -118,6 +146,45 @@ export default function Home() {
 
                 if (tagLower === 'vegetarien') {
                     return recipeTags.some(t => t.includes('végé') || t.includes('vege') || t.includes('vegetarien')) || recipeCat === 'vegetarien';
+                }
+
+                if (tagLower === 'noël' || tagLower === 'noel') {
+                    return recipeTags.some(t => t.toLowerCase() === 'noël' || t.toLowerCase() === 'noel') ||
+                           recipe.title.toLowerCase().includes('noël') || recipe.title.toLowerCase().includes('noel');
+                }
+
+                if (tagLower === 'sauces' || tagLower === 'sauce') {
+                    return recipeTags.some(t => t.toLowerCase() === 'sauces' || t.toLowerCase() === 'sauce') ||
+                           recipe.title.toLowerCase().includes('sauce') || recipeCat === 'sauces';
+                }
+
+                if (tagLower === 'healthy') {
+                    return recipeTags.some(t => t.toLowerCase() === 'healthy' || t.toLowerCase() === 'diététique') ||
+                           recipe.title.toLowerCase().includes('healthy') || recipeCat === 'vegetarien';
+                }
+
+                if (tagLower === 'airfryer') {
+                    return recipeTags.some(t => t.toLowerCase() === 'airfryer') || recipe.title.toLowerCase().includes('airfryer');
+                }
+
+                if (tagLower === 'barbecue') {
+                    return recipeTags.some(t => t.toLowerCase() === 'barbecue' || t.toLowerCase() === 'bbq') || 
+                           recipe.title.toLowerCase().includes('barbecue') || recipe.title.toLowerCase().includes('bbq');
+                }
+
+                if (tagLower === 'pas cher' || tagLower === 'pas-cher') {
+                    return recipeTags.some(t => t.toLowerCase() === 'pas cher' || t.toLowerCase() === 'pas-cher') || 
+                           recipe.title.toLowerCase().includes('pas cher');
+                }
+
+                if (tagLower === 'express') {
+                    return recipeTags.some(t => t.toLowerCase() === 'express' || t.toLowerCase() === 'rapide') || 
+                           recipe.title.toLowerCase().includes('express');
+                }
+
+                if (tagLower === 'famille' || tagLower === 'familial') {
+                    return recipeTags.some(t => t.toLowerCase() === 'famille' || t.toLowerCase() === 'familial') || 
+                           recipe.title.toLowerCase().includes('familial') || recipe.title.toLowerCase().includes('famille');
                 }
 
                 if (tagLower === 'pâques' || tagLower === 'paques') {
@@ -269,32 +336,38 @@ export default function Home() {
 
             const isDessert = isDessertRaw && !isIceCream && !isPatisserie;
 
-            const thematicTags = ['noël', 'noel', 'pâques', 'paques', 'halloween', 'saint-valentin', 'ramadan'];
-            const foundTheme = tags.find(t => thematicTags.includes(t));
-            
+            // Thèmes reconnus (normalisés en minuscules)
+            const thematicTagsList = ['noël', 'noel', 'pâques', 'paques', 'halloween', 'saint-valentin', 'ramadan'];
+            const foundThemeRaw = tags.find(t => thematicTagsList.includes(t));
+            // Normalisation : 'noel' → 'noël', 'paques' → 'pâques'
+            const foundTheme = foundThemeRaw === 'noel' ? 'noël'
+                             : foundThemeRaw === 'paques' ? 'pâques'
+                             : foundThemeRaw;
+
             let finalCat = (recipe.category || 'Autres').toLowerCase();
-            const isGenericWPCat = ['astuces', 'autres', '', 'unsorted', 'favoris'].includes(finalCat);
 
-            // LOGIQUE : Priorité aux thématiques si pas de catégorie spécifique dans WP
-            if (isGenericWPCat && foundTheme) {
-                finalCat = foundTheme;
-            } else {
-                // Sinon, détection automatique classique
-                if (isIceCream) finalCat = 'glaces';
-                else if (isBeverage) finalCat = 'boissons';
-                else if (isPatisserie) finalCat = 'patisserie';
-                else if (isDessert) finalCat = 'desserts';
-                else if (isPlat) finalCat = 'plats';
-                else if (isApero) finalCat = 'aperitifs';
-                else if (isEntree) finalCat = 'entrees';
-                else if (cat === 'simplissime') finalCat = 'simplissime';
-                else if (cat === 'italie') finalCat = 'restaurant';
-                else if (cat === 'restaurant') finalCat = 'restaurant';
-                else if (cat === 'vegetarien') finalCat = 'vegetarien';
-            }
+            // Détection automatique classique (catégorie principale)
+            if (isIceCream) finalCat = 'glaces';
+            else if (isBeverage) finalCat = 'boissons';
+            else if (isPatisserie) finalCat = 'patisserie';
+            else if (isDessert) finalCat = 'desserts';
+            else if (isPlat) finalCat = 'plats';
+            else if (isApero) finalCat = 'aperitifs';
+            else if (isEntree) finalCat = 'entrees';
+            else if (cat === 'simplissime') finalCat = 'simplissime';
+            else if (cat === 'italie') finalCat = 'restaurant';
+            else if (cat === 'restaurant') finalCat = 'restaurant';
+            else if (cat === 'vegetarien') finalCat = 'vegetarien';
 
+            // Push dans la catégorie principale
             if (!groups[finalCat]) groups[finalCat] = [];
             groups[finalCat].push(recipe);
+
+            // Push AUSSI dans la section thématique si un tag thématique est trouvé
+            if (foundTheme && foundTheme !== finalCat) {
+                if (!groups[foundTheme]) groups[foundTheme] = [];
+                groups[foundTheme].push(recipe);
+            }
         });
         return groups;
     }, [filteredRecipes]);
@@ -458,6 +531,126 @@ export default function Home() {
             prepTime: 5,
             cookTime: 0,
             servings: 1,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-sauces',
+            title: "Sauces",
+            description: '',
+            image: 'images/themes/sauces.jpg',
+            category: 'sauces',
+            tags: ['sauces'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 5,
+            cookTime: 5,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-healthy',
+            title: "Healthy",
+            description: '',
+            image: 'images/themes/healthy.jpg',
+            category: 'vegetarien',
+            tags: ['healthy'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 10,
+            cookTime: 10,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-airfryer',
+            title: "Airfryer",
+            description: '',
+            image: 'images/themes/airfryer.jpg',
+            category: 'plats',
+            tags: ['airfryer'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 5,
+            cookTime: 15,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-barbecue',
+            title: "Barbecue",
+            description: '',
+            image: 'images/themes/barbecue.jpg',
+            category: 'plats',
+            tags: ['barbecue'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 10,
+            cookTime: 20,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-pas-cher',
+            title: "Pas Cher",
+            description: '',
+            image: 'images/themes/pas-cher.jpg',
+            category: 'plats',
+            tags: ['pas cher'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 10,
+            cookTime: 15,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-express',
+            title: "Express",
+            description: '',
+            image: 'images/themes/express.jpg',
+            category: 'plats',
+            tags: ['express'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 5,
+            cookTime: 5,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-famille',
+            title: "Famille",
+            description: '',
+            image: 'images/themes/famille.jpg',
+            category: 'plats',
+            tags: ['famille'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 15,
+            cookTime: 30,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-vege',
+            title: "Végé",
+            description: '',
+            image: 'images/themes/vegetarien.jpg',
+            category: 'vegetarien',
+            tags: ['vegetarien'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 15,
+            cookTime: 20,
+            servings: 4,
             ingredients: [],
             steps: []
         }

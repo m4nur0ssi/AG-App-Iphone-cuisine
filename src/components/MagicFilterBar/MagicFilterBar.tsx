@@ -67,6 +67,9 @@ const trends: FilterItem[] = [
     { id: 'trn-barbecue', name: 'Barbecue', icon: '', tag: 'Barbecue', color: '#FF416C' },
     { id: 'trn-pas-cher', name: 'Pas Cher', icon: '', tag: 'Pas cher', color: '#0BA360' },
     { id: 'trn-express', name: 'Express', icon: '', tag: 'Express', color: '#FDFC47' },
+    { id: 'trn-sauces', name: 'Sauces', icon: '', tag: 'sauces', color: '#FF8C00' },
+    { id: 'trn-famille', name: 'Famille', icon: '', tag: 'famille', color: '#FF416C' },
+    { id: 'trn-vege', name: 'Végé', icon: '', tag: 'vegetarien', color: '#00C853' }
 ];
 
 export default function MagicFilterBar({ 

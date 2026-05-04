@@ -78,12 +78,14 @@ async function handleRequest(request: Request) {
     // --- DETECTION DU PAYS (ULTRA ROBUSTE) ---
     let selectedCountry = searchParams.get('country') || body.country || searchParams.get('pays') || body.pays || '';
     
-    // Si on n'a toujours pas trouvé le pays, on fouille TOUT le body (au cas où l'iPhone l'envoie bizarrement)
+    // Si on n'a toujours pas trouvé le pays/thème, on fouille TOUT le body (au cas où l'iPhone l'envoie bizarrement)
     if (!selectedCountry && body && typeof body === 'object') {
-        const countriesList = ["France", "Italie", "Espagne", "Grèce", "Liban", "USA", "Mexique", "Orient", "Autre"];
+        // Liste étendue : pays + thèmes saisonniers
+        const allValues = ["France", "Italie", "Espagne", "Grèce", "Liban", "USA", "Mexique", "Orient", "Autre",
+                           "Noël", "Pâques", "Glaces", "Simplissime", "Astuces", "Halloween"];
         for (const val of Object.values(body)) {
             if (typeof val === 'string') {
-                for (const pc of countriesList) {
+                for (const pc of allValues) {
                     if (val.includes(pc)) {
                         selectedCountry = val;
                         break;
@@ -96,18 +98,22 @@ async function handleRequest(request: Request) {
 
     // --- LOGIQUE DE RÉPONSE ---
     
-    // Étape 1 : Si on n'a pas de pays et qu'on ne demande pas juste un check, on envoie la liste
+    // Étape 1 : Si on n'a pas de pays/thème et qu'on ne demande pas juste un check, on envoie la liste
     if (!selectedCountry && !checkOnly && body.checkOnly !== 'true' && body.checkOnly !== true) {
-        const countriesArr = ["🇫🇷 France", "🇮🇹 Italie", "🇪🇸 Espagne", "🇬🇷 Grèce", "🇱🇧 Liban", "🇺🇸 USA", "🇲🇽 Mexique", "🕌 Orient", "🗺️ Autre"];
-        const countryDict: any = {};
-        countriesArr.forEach(c => countryDict[c] = c);
+        const allChoices = [
+            "🇫🇷 France", "🇮🇹 Italie", "🇪🇸 Espagne", "🇬🇷 Grèce", "🇱🇧 Liban",
+            "🇺🇸 USA", "🇲🇽 Mexique", "🕌 Orient", "🗺️ Autre",
+            "🎄 Noël", "🐣 Pâques", "🍦 Glaces", "✨ Simplissime", "💡 Astuces"
+        ];
+        const choiceDict: any = {};
+        allChoices.forEach(c => choiceDict[c] = c);
 
         const response = NextResponse.json({ 
-            status: countryDict,
-            countries: countryDict, 
-            pays: countryDict,
-            v: "00:12-ULTRA-BOOST",
-            message: 'Quel pays ?'
+            status: choiceDict,
+            countries: choiceDict, 
+            pays: choiceDict,
+            v: "00:13-THEMES",
+            message: 'Quel pays ou thème ?'
         });
         response.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
         return response;

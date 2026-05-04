@@ -182,16 +182,30 @@ async function postToWordPressXMLRPC(recipe) {
         featuredImageId = await uploadImageToWP(recipe.photoUrl, user, pass, wpUrl, encoding);
     }
 
+    // Valeurs consid\u00e9r\u00e9es comme des TH\u00c8MES (pas des pays) → seront ajout\u00e9es en TAG WP
+    const THEMATIC_VALUES = ['no\u00ebl', 'noel', 'p\u00e2ques', 'paques', 'glaces', 'simplissime', 'astuces', 'halloween'];
+
     let extraCategories = [];
+    let extraTags = [];
     if (recipe.manualCountry) {
-        const cleanCountry = recipe.manualCountry.split(' ').pop();
-        if (cleanCountry && cleanCountry !== 'Autre') extraCategories.push(cleanCountry);
+        const cleanCountry = recipe.manualCountry.split(' ').pop(); // retire l'\u00e9moji pr\u00e9fixe
+        if (cleanCountry && cleanCountry !== 'Autre') {
+            if (THEMATIC_VALUES.includes(cleanCountry.toLowerCase())) {
+                // C'est un th\u00e8me : on l'ajoute comme TAG (sera lu par sync-recipes.js)
+                extraTags.push(cleanCountry);
+                console.log(`   \ud83c\udff7\ufe0f Th\u00e8me d\u00e9tect\u00e9 : "${cleanCountry}" → ajout\u00e9 en tag WP`);
+            } else {
+                // C'est un pays : on l'ajoute comme cat\u00e9gorie WP suppl\u00e9mentaire
+                extraCategories.push(cleanCountry);
+            }
+        }
     }
+    const allTags = [...(recipe.tags || []), ...extraTags];
 
     const postStruct = `<struct>
         <member><name>title</name><value><string><![CDATA[${recipe.title}]]></string></value></member>
         <member><name>description</name><value><string><![CDATA[${finalHtml}]]></string></value></member>
-        <member><name>mt_keywords</name><value><string><![CDATA[${(recipe.tags || []).join(', ')}]]></string></value></member>
+        <member><name>mt_keywords</name><value><string><![CDATA[${allTags.join(', ')}]]></string></value></member>
         <member><name>categories</name><value><array><data>
             <value><string>${categoryName}</string></value>
             ${extraCategories.map(c => `<value><string>${c}</string></value>`).join('')}
