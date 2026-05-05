@@ -88,7 +88,7 @@ export default function ShoppingListPage() {
                         <div className={styles.emptyIcon}>🛒</div>
                         <h2 className={styles.emptyTitle}>Panier vide</h2>
                         <p className={styles.emptySubtitle}>
-                            Ajoutez des ingrédients depuis une recette en cliquant sur le bouton d'ajout au panier.
+                            Ajoutez des ingrédients depuis une recette en cliquant sur le bouton d&apos;ajout au panier.
                         </p>
                     </div>
                 ) : (
