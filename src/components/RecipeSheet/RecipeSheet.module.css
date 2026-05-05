@@ -70,6 +70,7 @@
     -webkit-overflow-scrolling: touch;
     position: relative;
     padding-top: 10px;
+    padding-bottom: 120px;
     z-index: 10;
     scrollbar-width: none;
 }

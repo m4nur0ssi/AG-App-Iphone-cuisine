@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useDragControls } from 'framer-motion';
 import { Recipe } from '@/types';
 import Portal from '@/components/Portal';
 import styles from './RecipeSheet.module.css';
@@ -15,6 +15,12 @@ interface RecipeSheetProps {
 export default function RecipeSheet({ recipe, isOpen, onClose }: RecipeSheetProps) {
     const [shouldRender, setShouldRender] = useState(isOpen);
     const scrollYRef = useRef(0);
+    const controls = useDragControls();
+    
+    // Variables for manual swipe detection on scroll area
+    const touchStartY = useRef(0);
+    const touchStartTime = useRef(0);
+    const scrollRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         if (isOpen && recipe) {
@@ -30,7 +36,6 @@ export default function RecipeSheet({ recipe, isOpen, onClose }: RecipeSheetProp
     useEffect(() => {
         if (isOpen) {
             setShouldRender(true);
-            // Stocker le scroll avant le lock
             scrollYRef.current = window.scrollY;
             document.body.style.top = `-${scrollYRef.current}px`;
             document.body.style.position = 'fixed';
@@ -38,14 +43,12 @@ export default function RecipeSheet({ recipe, isOpen, onClose }: RecipeSheetProp
             document.body.style.overflow = 'hidden';
         }
 
-        // Cleanup function to restore scroll on unmount
         return () => {
             document.body.style.position = '';
             document.body.style.top = '';
             document.body.style.width = '';
             document.body.style.overflow = '';
             
-            // Re-scroller au bon endroit uniquement si on vient d'un état ouvert
             if (isOpen) {
                 window.scrollTo(0, scrollYRef.current);
             }
@@ -55,6 +58,27 @@ export default function RecipeSheet({ recipe, isOpen, onClose }: RecipeSheetProp
     const handleAnimationComplete = () => {
         if (!isOpen) {
             setShouldRender(false);
+        }
+    };
+
+    const handleTouchStart = (e: React.TouchEvent) => {
+        touchStartY.current = e.touches[0].clientY;
+        touchStartTime.current = Date.now();
+    };
+
+    const handleTouchEnd = (e: React.TouchEvent) => {
+        const touchEndY = e.changedTouches[0].clientY;
+        const timeDiff = Date.now() - touchStartTime.current;
+        const distanceY = touchEndY - touchStartY.current;
+        const velocity = distanceY / timeDiff;
+
+        // Si le geste est rapide vers le bas (swipe fort)
+        // ou si on tire fortement vers le bas alors qu'on est déjà en haut
+        const isStrongSwipeDown = velocity > 1.2 && distanceY > 50;
+        const isPullingDownAtTop = (scrollRef.current?.scrollTop === 0) && distanceY > 80 && velocity > 0.5;
+
+        if (isStrongSwipeDown || isPullingDownAtTop) {
+            onClose();
         }
     };
 
@@ -79,28 +103,41 @@ export default function RecipeSheet({ recipe, isOpen, onClose }: RecipeSheetProp
                             className={styles.sheet}
                             initial={{ y: '100%' }}
                             animate={{ y: 0 }}
-                            exit={{ y: '105%' }} // Légèrement plus pour cacher l'ombre lors de la sortie
+                            exit={{ y: '105%' }}
                             drag="y"
-                            dragConstraints={{ top: 0 }}
-                            dragElastic={0.06}
+                            dragControls={controls}
+                            dragListener={false} // Désactive le drag global pour laisser le scroll natif fonctionner parfaitement
+                            dragConstraints={{ top: 0, bottom: 0 }} // Empêche le drag de dépasser vers le haut
+                            dragElastic={0.1}
                             onDragEnd={(_, info) => {
-                                // Seuil de vitesse plus bas pour que ce soit instantané
-                                if (info.offset.y > 100 || info.velocity.y > 350) {
+                                if (info.offset.y > 50 || info.velocity.y > 200) {
                                     onClose();
                                 }
                             }}
                             transition={{ 
                                 type: 'spring', 
-                                damping: 38, 
-                                stiffness: 450,
+                                damping: 35, 
+                                stiffness: 400,
                                 mass: 0.6
                             }}
                         >
-                            {/* Handle visuel de swipe */}
-                            <div className={styles.dragHandle} />
+                            {/* Handle visuel de swipe - Uniquement ça permet de dragger physiquement la feuille */}
+                            <div 
+                                className={styles.dragHandleContainer}
+                                onPointerDown={(e) => controls.start(e)}
+                                style={{ width: '100%', height: '40px', position: 'absolute', top: 0, zIndex: 100, display: 'flex', justifyContent: 'center', paddingTop: '12px' }}
+                            >
+                                <div className={styles.dragHandle} style={{ position: 'relative', top: 0 }} />
+                            </div>
 
-                            <div className={styles.scrollArea}>
-                                <button className={styles.closeBtn} onClick={onClose}>✕</button>
+                            <div 
+                                className={styles.scrollArea}
+                                ref={scrollRef}
+                                onTouchStart={handleTouchStart}
+                                onTouchEnd={handleTouchEnd}
+                                style={{ paddingTop: '30px' }} // Laisse la place pour le drag handle
+                            >
+                                <button className={styles.closeBtn} onClick={onClose} style={{ top: '10px' }}>✕</button>
                                 <RecipeDetails recipe={recipe} isModal={true} />
                             </div>
                         </motion.div>

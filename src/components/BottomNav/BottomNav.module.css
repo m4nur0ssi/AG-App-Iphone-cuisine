@@ -7,7 +7,7 @@
     bottom: 30px; /* Floating look */
     left: 20px;
     right: 20px;
-    z-index: 1000;
+    z-index: 25000;
     display: flex;
     justify-content: center;
     pointer-events: none; /* Let clicks pass through outside the dock */

@@ -142,10 +142,12 @@ export default function RecipeCardiOS26({
         return title.substring(0, lastSpace) + '...';
     };
 
+    const isThematicCard = recipe.id?.startsWith('theme-');
+
     return (
         <div className={`${styles.recipeContainer} ${isGrid ? styles.isGrid : ''}`}>
             {/* 1. Floating Title Pill ABOVE the card */}
-            {!hideTitle && (
+            {!hideTitle && !isThematicCard && (
                 <motion.div 
                     className={styles.titlePill}
                     whileHover={{ scale: 1.05 }}
@@ -202,7 +204,7 @@ export default function RecipeCardiOS26({
                 {/* Overlays */}
                 
                 {/* Top Right: Heart Accent (Minimalist) */}
-                {!isIntroMode && (
+                {!isIntroMode && !isThematicCard && (
                     <div className={styles.topRightHeart} onClick={(e) => e.stopPropagation()}>
                         <FavoriteButton
                             recipeId={recipe.id}

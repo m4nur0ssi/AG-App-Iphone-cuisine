@@ -23,32 +23,19 @@ export default function RecipeCarousel({ recipes, title = "Nouvelles Recettes �
     const category = limitedRecipes[0]?.category || 'all';
 
     const getCategoryGradient = (cat: string) => {
-        // Nettoyer le titre pour le mapping (ex: "Douceur sucrée ✨" -> "douceur sucrée")
-        const clean = cat.replace(/[^\w\s]/gi, '').trim().toLowerCase();
+        // Normaliser proprement sans casser les accents
+        const clean = cat.trim().toLowerCase();
         
-        switch (clean) {
-            case 'aperitifs': 
-            case 'apéritifs':
-            case 'apéro gourmand': return 'linear-gradient(135deg, #F59E0B, #EA580C)';
-            case 'entrees': 
-            case 'entrées':
-            case 'entrées fraîches': return 'linear-gradient(135deg, #10B981, #059669)';
-            case 'plats': 
-            case 'plats de chef': 
-            case 'plat de chef': return 'linear-gradient(135deg, #3B82F6, #4F46E5)';
-            case 'desserts':
-            case 'pâtisserie':
-            case 'patisserie':
-            case 'atelier de patisserie':
-            case 'douceurs sucrées':
-            case 'douceur sucrée': return 'linear-gradient(135deg, #EC4899, #9333EA)';
-            case 'thématiques du moment': return 'linear-gradient(135deg, #10b981, #3b82f6)';
-            case 'nouveautés spéciales pâques':
-            case 'spécial pâques': return 'linear-gradient(135deg, #F59E0B, #FFCC33)';
-            case 'coups de cœur simplissimes': return 'linear-gradient(135deg, #4facfe, #00f2fe)';
-            case 'les nouveautés': return 'linear-gradient(135deg, #10b981, #3b82f6)';
-            default: return 'linear-gradient(135deg, #10B981, #3B82F6)';
-        }
+        if (clean.includes('apéritif') || clean.includes('aperitif') || clean.includes('apéro')) return 'linear-gradient(135deg, #FF7E5F, #feb47b)';
+        if (clean.includes('entrée') || clean.includes('entree')) return 'linear-gradient(135deg, #76B852, #8DC26F)';
+        if (clean.includes('plat')) return 'linear-gradient(135deg, #8E2DE2, #4A00E0)';
+        if (clean.includes('accompagnement')) return 'linear-gradient(135deg, #00C853, #69F0AE)';
+        if (clean.includes('dessert')) return 'linear-gradient(135deg, #F80759, #BC4E9C)';
+        if (clean.includes('pâtisserie') || clean.includes('patisserie')) return 'linear-gradient(135deg, #FFB347, #FF7B00)';
+        if (clean.includes('thématique') || clean.includes('nouveauté')) return 'linear-gradient(135deg, #4facfe, #00f2fe)';
+        if (clean.includes('pâques')) return 'linear-gradient(135deg, #F59E0B, #FFCC33)';
+        
+        return 'linear-gradient(135deg, #111111, #333333)';
     };
 
     const cardGradient = getCategoryGradient(title);
@@ -95,25 +82,8 @@ export default function RecipeCarousel({ recipes, title = "Nouvelles Recettes �
 }
 
 function CategoryTitleCard({ title, gradient, size, onClick }: { title: string, gradient: string, size: 'large' | 'small', onClick?: () => void }) {
-    const cleanTitle = title.trim();
-    const words = cleanTitle.split(' ');
-
-    const renderArtisticTitle = () => {
-        return words.map((word, i) => {
-            const isConnectionWord = ['du', 'de', 'la', 'le', 'pour', 'les', 'au', 'aux', 'en', 'et'].includes(word.toLowerCase());
-            // Seuls les mots de liaison sont en cursive pour garantir que le mot principal reste en gras
-            const isScript = isConnectionWord;
-            
-            return (
-                <span 
-                    key={i} 
-                    className={isScript ? styles.scriptWord : styles.boldWord}
-                >
-                    {word}{i < words.length - 1 ? ' ' : ''}
-                </span>
-            );
-        });
-    };
+    const cleanTitle = title.trim().toUpperCase();
+    const isLongTitle = cleanTitle.length > 12;
 
     return (
         <div className={`${styles.itemWrapper} ${size === 'small' ? styles.itemSmall : styles.itemLarge}`}>
@@ -123,9 +93,11 @@ function CategoryTitleCard({ title, gradient, size, onClick }: { title: string, 
                 onClick={onClick}
             >
                 <div className={styles.titleCardContent}>
-                    <h2 className={styles.categoryMainTitle}>
-                        {renderArtisticTitle()}
+                    <div className={styles.decorativeLine} />
+                    <h2 className={`${styles.categoryMainTitle} ${isLongTitle ? styles.longTitle : ''}`}>
+                        {cleanTitle}
                     </h2>
+                    <div className={styles.decorativeLine} />
                     <div className={styles.titleCardGlass} />
                 </div>
             </div>

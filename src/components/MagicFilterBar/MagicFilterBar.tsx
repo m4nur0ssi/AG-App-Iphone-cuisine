@@ -30,13 +30,12 @@ interface MagicFilterBarProps {
 }
 
 const categories: FilterItem[] = [
-    { id: 'cat-aperitifs', name: 'Apéritifs', icon: '', color: '#FF7E5F' },
-    { id: 'cat-entrees', name: 'Entrées', icon: '', color: '#76B852' },
-    { id: 'cat-plats', name: 'Plats', icon: '', color: '#8E2DE2' },
-    { id: 'cat-vegetarien', name: 'Végé', icon: '', color: '#00C853' },
-    { id: 'cat-desserts', name: 'Desserts', icon: '', color: '#F80759' },
-    { id: 'cat-patisserie', name: 'Pâtisserie', icon: '', color: '#FFB347' },
-    { id: 'cat-restaurant', name: 'Restaurant', icon: '', color: '#4facfe' },
+    { id: 'cat-aperitifs', name: 'Apéritifs', icon: '', tag: 'aperitifs', color: '#FF7E5F' },
+    { id: 'cat-entrees', name: 'Entrées', icon: '', tag: 'entrees', color: '#76B852' },
+    { id: 'cat-plats', name: 'Plats', icon: '', tag: 'plats', color: '#8E2DE2' },
+    { id: 'cat-accompagnements', name: 'Accompagnements', icon: '', tag: 'accompagnements', color: '#00C853' },
+    { id: 'cat-desserts', name: 'Desserts', icon: '', tag: 'desserts', color: '#F80759' },
+    { id: 'cat-patisserie', name: 'Pâtisserie', icon: '', tag: 'patisserie', color: '#FFB347' },
 ];
 
 const countries: FilterItem[] = [
@@ -89,7 +88,11 @@ export default function MagicFilterBar({
             'afrique': '#eab308',
             'vegetarien': '#4ade80',
             'desserts': '#f472b6',
-            'patisserie': '#d97706'
+            'patisserie': '#d97706',
+            'accompagnements': '#00C853',
+            'aperitifs': '#FF7E5F',
+            'entrees': '#76B852',
+            'plats': '#8E2DE2'
         };
         const lastTag = activeTags[activeTags.length - 1];
         if (lastTag && colors[lastTag.toLowerCase()]) setDynamicAccent(colors[lastTag.toLowerCase()]);

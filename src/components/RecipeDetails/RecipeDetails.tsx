@@ -325,6 +325,7 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
 
                 existingData[recipe.id] = {
                     title: recipe.title,
+                    image: recipe.image,
                     ingredients: ingredientObjects
                 };
                 window.localStorage.setItem('magic-shopping-list', JSON.stringify(existingData));

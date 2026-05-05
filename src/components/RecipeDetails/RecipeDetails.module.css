@@ -145,34 +145,34 @@
 }
 
 /* Boutons Favori & Partage : Version XXL pour Impact Tactile */
-.categoryCommandCenter :global(.favorite-btn-action),
-.categoryCommandCenter :global(.share-btn-action) {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1.5px solid rgba(255, 255, 255, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    color: white;
+.favorite-btn-action,
+.share-btn-action {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.2) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    color: white !important;
 }
 
-[data-theme='light'] .categoryCommandCenter :global(.favorite-btn-action),
-[data-theme='light'] .categoryCommandCenter :global(.share-btn-action) {
-    background: rgba(0, 0, 0, 0.03);
-    border: 1.5px solid rgba(0, 0, 0, 0.1);
-    color: #000000;
+[data-theme='light'] .favorite-btn-action,
+[data-theme='light'] .share-btn-action {
+    background: rgba(0, 0, 0, 0.03) !important;
+    border: 1.5px solid rgba(0, 0, 0, 0.1) !important;
+    color: #000000 !important;
 }
 
-.categoryCommandCenter :global(.favorite-btn-action) svg,
-.categoryCommandCenter :global(.share-btn-action) svg {
-    width: 24px;
-    height: 24px;
+.favorite-btn-action svg,
+.share-btn-action svg {
+    width: 24px !important;
+    height: 24px !important;
 }
 
 .categoryTag {

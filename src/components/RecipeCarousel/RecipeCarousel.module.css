@@ -141,7 +141,7 @@
 .itemWrapper {
     flex: 0 0 240px;
     width: 240px;
-    height: 440px;
+    height: 380px;
     transform-style: preserve-3d;
     transition: transform 0.1s ease-out;
     margin: 0;
@@ -154,13 +154,13 @@
 .itemLarge {
     flex: 0 0 240px;
     width: 240px;
-    height: 440px;
+    height: 380px;
 }
 
 .itemSmall {
     flex: 0 0 240px;
     width: 240px;
-    height: 440px;
+    height: 380px;
 }
 
 [data-theme='light'] .glassFloor {
@@ -205,7 +205,7 @@
     .itemWrapper {
         flex: 0 0 240px;
         width: 240px;
-        height: 440px;
+        height: 380px;
     }
 
     .track {
@@ -319,43 +319,34 @@
 }
 
 .categoryMainTitle {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 0; /* Remove gap to allow negative margins to work effectively */
-    line-height: 0.8;
-}
-
-.boldWord {
-    font-family: var(--font-bebas);
-    font-size: 3.4rem; /* Slightly smaller to fit side-by-side */
-    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
     color: white;
     text-transform: uppercase;
-    letter-spacing: -1px;
-    line-height: 1;
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    margin: 0;
+    letter-spacing: 0.15em;
+    line-height: 1.2;
+    margin: 16px 0;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-.scriptWord {
-    font-family: var(--font-pinyon), cursive;
-    font-size: 3.5rem; /* More impactful */
-    font-weight: 400;
-    color: #fff;
-    line-height: 0;
-    margin: 0 -12px; /* Overlap effect */
-    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
-    position: relative;
-    z-index: 10;
-    transform: rotate(-8deg) translateY(12px);
-    display: inline-block;
-    pointer-events: none;
+.decorativeLine {
+    width: 40px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0 auto;
+    border-radius: 2px;
 }
 
-.small .boldWord { font-size: 2.8rem; }
-.small .scriptWord { font-size: 3rem; }
+.longTitle {
+    font-size: 1rem !important; /* Smaller size to fit words like ACCOMPAGNEMENTS */
+    letter-spacing: 0.02em;
+    word-break: normal;
+}
+
+.small .categoryMainTitle { font-size: 1.8rem; }
+.small .longTitle { font-size: 0.9rem !important; }
 
 .titleCardGlass {
     position: absolute;

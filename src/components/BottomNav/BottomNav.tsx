@@ -158,7 +158,11 @@ export default function BottomNav() {
         const updateStats = () => {
             // Shopping list
             const shopData = JSON.parse(localStorage.getItem('magic-shopping-list') || '{}');
-            const totalItems = Object.values(shopData).reduce((acc: number, val: any) => acc + (val.ingredients?.length || 0), 0);
+            const totalItems = Object.values(shopData).reduce((acc: number, val: any) => {
+                if (!val.ingredients) return acc;
+                const unCheckedCount = val.ingredients.filter((ing: any) => typeof ing === 'object' ? !ing.checked : true).length;
+                return acc + unCheckedCount;
+            }, 0);
             
             // Favorites
             const favoriteData = JSON.parse(localStorage.getItem('favorites') || '[]');
