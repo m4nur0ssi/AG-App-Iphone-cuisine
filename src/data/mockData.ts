@@ -2,11 +2,101 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 05/05/2026 17:38:01
- * Total: 213 recettes
+ * Dernière mise à jour: 05/05/2026 18:15:24
+ * Total: 214 recettes
  */
-export const exportSyncId = "1778002681025";
+export const exportSyncId = "1778004924521";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5257",
+        "title": "Crispy Veggie Balls",
+        "description": "Des boules de légumes croustillantes à base de pommes de terre, carottes et brocoli, assaisonnées et cuites à l&rsquo;air-fryer ou au four, servies avec une sauce crémeuse au citron et à l&rsquo;ail.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778004359403.jpg&v=1778011611000",
+        "category": "entrees",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7569330769391308035\" data-video-id=\"7569330769391308035\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7569330769391308035\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             Pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             Carottes"
+            },
+            {
+                "quantity": "",
+                "name": "🥦\n             Brocoli"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fécule de maïs"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Poudre d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Herbes (aromatiques)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan végétalien"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Mayonnaise/yaourt végétalien (pour la sauce)"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Citron (pour la sauce)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail (pour la sauce)"
+            }
+        ],
+        "steps": [
+            "Faire bouillir les légumes (pommes de terre, carottes, brocoli) jusqu&rsquo;à ce qu&rsquo;ils soient tendres.",
+            "Écraser les légumes avec les épices (huile d&rsquo;olive, fécule de maïs, poudre d&rsquo;ail, paprika, herbes, sel, poivre) et la fécule de maïs.",
+            "Rouler la préparation en boules.",
+            "Faire frire à l&rsquo;air-fryer ou cuire au four jusqu&rsquo;à ce qu&rsquo;elles soient dorées et croustillantes.",
+            "Mélanger les boules cuites avec du persil et du parmesan végétalien.",
+            "Servir avec une sauce crémeuse à base de mayonnaise/yaourt végétalien, citron et ail."
+        ],
+        "tags": [
+            "Entrées",
+            "Healthy",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5254",
         "title": "Sorbet aux raisins et Sprite",
