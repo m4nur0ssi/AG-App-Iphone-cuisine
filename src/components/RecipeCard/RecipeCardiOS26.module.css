@@ -292,8 +292,8 @@
 
 .topRightHeart {
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 14px;
+    right: 14px;
     z-index: 50;
     pointer-events: auto;
 }

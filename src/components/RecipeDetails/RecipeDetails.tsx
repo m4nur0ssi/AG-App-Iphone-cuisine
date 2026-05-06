@@ -168,6 +168,15 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
         if (typeof window !== 'undefined') {
             window.localStorage.setItem('active-recipe-id', recipe.id);
             
+            const lastViewedData = {
+                id: recipe.id,
+                title: recipe.title,
+                image: recipe.image,
+                category: recipe.category
+            };
+            window.localStorage.setItem('magic-last-viewed', JSON.stringify(lastViewedData));
+            window.dispatchEvent(new CustomEvent('recipeViewed', { detail: lastViewedData }));
+            
             // Sync initial state with shopping list
             const syncWithShoppingList = () => {
                 const listData = JSON.parse(window.localStorage.getItem('magic-shopping-list') || '{}');

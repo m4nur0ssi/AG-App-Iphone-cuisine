@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Converter.module.css';
 
 
@@ -43,56 +44,79 @@ export default function MagicConverter() {
                 Convertisseur
             </button>
 
-            {isOpen && (
-                <div className={styles.modal}>
-                    <div className={styles.modalHeader}>
-                        <h4 className={styles.modalTitle}>Magic Converter</h4>
-                        <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>✕</button>
-                    </div>
-                    <div className={styles.section}>
-                        <div className={styles.converterGrid}>
-                            <div className={styles.converterRow}>
-                                <div className={styles.inputGroup}>
-                                    <div className={styles.unitLabel}>De</div>
-                                    <input
-                                        type="number"
-                                        value={inputValue}
-                                        onChange={(e) => setInputValue(e.target.value)}
-                                        placeholder="Qté"
-                                        className={styles.mainInput}
-                                    />
-                                    <select 
-                                        value={fromUnit} 
-                                        onChange={(e) => setFromUnit(e.target.value)}
-                                        className={styles.unitSelect}
-                                    >
-                                        {UNITS.map(u => <option key={u.id} value={u.id}>{u.label}</option>)}
-                                    </select>
-                                </div>
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div 
+                        className={styles.modal}
+                        initial={{ y: "100%", opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        exit={{ y: "100%", opacity: 0 }}
+                        transition={{ 
+                            type: "spring", 
+                            damping: 25, 
+                            stiffness: 500,
+                            mass: 0.8
+                        }}
+                        drag="y"
+                        dragConstraints={{ top: 0, bottom: 800 }}
+                        dragElastic={0.05}
+                        onDragEnd={(_, info) => {
+                            if (info.offset.y > 50 || info.velocity.y > 400) {
+                                setIsOpen(false);
+                            }
+                        }}
+                    >
+                        <div className={styles.dragIndicator} />
+                        
+                        <div className={styles.modalHeader} style={{ cursor: 'grab' }}>
+                            <h4 className={styles.modalTitle}>Magic Converter</h4>
+                            <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>✕</button>
+                        </div>
+                        <div className={styles.section}>
+                            <div className={styles.converterGrid}>
+                                <div className={styles.converterRow}>
+                                    <div className={styles.inputGroup}>
+                                        <div className={styles.unitLabel}>De</div>
+                                        <input
+                                            type="number"
+                                            value={inputValue}
+                                            onChange={(e) => setInputValue(e.target.value)}
+                                            placeholder="Qté"
+                                            className={styles.mainInput}
+                                        />
+                                        <select 
+                                            value={fromUnit} 
+                                            onChange={(e) => setFromUnit(e.target.value)}
+                                            className={styles.unitSelect}
+                                        >
+                                            {UNITS.map(u => <option key={u.id} value={u.id}>{u.label}</option>)}
+                                        </select>
+                                    </div>
 
-                                <div className={styles.arrowSeparator}>
-                                    <span>➞</span>
-                                </div>
+                                    <div className={styles.arrowSeparator}>
+                                        <span>➞</span>
+                                    </div>
 
-                                <div className={styles.inputGroup}>
-                                    <div className={styles.unitLabel}>Vers</div>
-                                    <select 
-                                        value={toUnit} 
-                                        onChange={(e) => setToUnit(e.target.value)}
-                                        className={styles.unitSelect}
-                                    >
-                                        {UNITS.map(u => <option key={u.id} value={u.id}>{u.label}</option>)}
-                                    </select>
-                                    <div className={styles.finalResult}>
-                                        {result || '?'} <span>{UNITS.find(u => u.id === toUnit)?.label.split(' ')[0] || toUnit}</span>
+                                    <div className={styles.inputGroup}>
+                                        <div className={styles.unitLabel}>Vers</div>
+                                        <select 
+                                            value={toUnit} 
+                                            onChange={(e) => setToUnit(e.target.value)}
+                                            className={styles.unitSelect}
+                                        >
+                                            {UNITS.map(u => <option key={u.id} value={u.id}>{u.label}</option>)}
+                                        </select>
+                                        <div className={styles.finalResult}>
+                                            {result || '?'} <span>{UNITS.find(u => u.id === toUnit)?.label.split(' ')[0] || toUnit}</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                </div>
-            )}
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 }
