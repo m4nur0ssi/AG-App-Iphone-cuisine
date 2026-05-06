@@ -80,14 +80,20 @@ async function handleRequest(request: Request) {
     
     // Si on n'a toujours pas trouvé le pays/thème, on fouille TOUT le body (au cas où l'iPhone l'envoie bizarrement)
     if (!selectedCountry && body && typeof body === 'object') {
-        // Liste étendue : pays + thèmes saisonniers
-        const allValues = ["France", "Italie", "Espagne", "Grèce", "Liban", "USA", "Mexique", "Orient", "Autre",
-                           "Noël", "Pâques", "Glaces", "Simplissime", "Astuces", "Halloween"];
+        // Liste étendue : catégories + pays + thèmes (ordre alphabétique)
+        const allValues = [
+            "Accompagnements", "Afrique", "Airfryer", "Apéritifs", "Asie", "Astuces", 
+            "Barbecue", "C'est l'hiver", "Desserts", "Dolce Vita", "Entrées", "Espagne", 
+            "Express", "Famille", "France", "Glaces", "Grèce", "Healthy", "Italie", 
+            "Liban", "Mexique", "Noël", "Orient", "Pas cher", "Pâques", "Pâtisserie", 
+            "Plats", "Rafraîchissements", "Sauces", "Simplissime", "USA", "Végétarien", 
+            "Voilà l'été", "Autre"
+        ];
         for (const val of Object.values(body)) {
             if (typeof val === 'string') {
                 for (const pc of allValues) {
                     if (val.includes(pc)) {
-                        selectedCountry = val;
+                        selectedCountry = pc;
                         break;
                     }
                 }
@@ -100,19 +106,53 @@ async function handleRequest(request: Request) {
     
     // Étape 1 : Si on n'a pas de pays/thème et qu'on ne demande pas juste un check, on envoie la liste
     if (!selectedCountry && !checkOnly && body.checkOnly !== 'true' && body.checkOnly !== true) {
-        const allChoices = [
-            "🇫🇷 France", "🇮🇹 Italie", "🇪🇸 Espagne", "🇬🇷 Grèce", "🇱🇧 Liban",
-            "🇺🇸 USA", "🇲🇽 Mexique", "🕌 Orient", "🗺️ Autre",
-            "🎄 Noël", "🐣 Pâques", "🍦 Glaces", "✨ Simplissime", "💡 Astuces"
+        const rawChoices = [
+            { name: "Accompagnements", icon: "🥗" },
+            { name: "Afrique", icon: "🌍" },
+            { name: "Airfryer", icon: "💨" },
+            { name: "Apéritifs", icon: "🍸" },
+            { name: "Asie", icon: "🥢" },
+            { name: "Astuces", icon: "💡" },
+            { name: "Barbecue", icon: "🔥" },
+            { name: "C'est l'hiver", icon: "❄️" },
+            { name: "Desserts", icon: "🍰" },
+            { name: "Dolce Vita", icon: "🍕" },
+            { name: "Entrées", icon: "🥙" },
+            { name: "Espagne", icon: "🇪🇸" },
+            { name: "Express", icon: "⏱️" },
+            { name: "Famille", icon: "👨‍👩‍👧‍👦" },
+            { name: "France", icon: "🇫🇷" },
+            { name: "Glaces", icon: "🍦" },
+            { name: "Grèce", icon: "🇬🇷" },
+            { name: "Healthy", icon: "🥑" },
+            { name: "Italie", icon: "🇮🇹" },
+            { name: "Liban", icon: "🇱🇧" },
+            { name: "Mexique", icon: "🇲🇽" },
+            { name: "Noël", icon: "🎄" },
+            { name: "Orient", icon: "🕌" },
+            { name: "Pas cher", icon: "💰" },
+            { name: "Pâques", icon: "🐣" },
+            { name: "Pâtisserie", icon: "🥐" },
+            { name: "Plats", icon: "🍝" },
+            { name: "Rafraîchissements", icon: "🍹" },
+            { name: "Sauces", icon: "🥣" },
+            { name: "Simplissime", icon: "✨" },
+            { name: "USA", icon: "🇺🇸" },
+            { name: "Végétarien", icon: "🥬" },
+            { name: "Voilà l'été", icon: "☀️" },
+            { name: "Autre", icon: "🗺️" }
         ];
-        const choiceDict: any = {};
-        allChoices.forEach(c => choiceDict[c] = c);
+
+        const choiceDict: Record<string, string> = {};
+        rawChoices.forEach(c => {
+            choiceDict[`${c.icon} ${c.name}`] = c.name;
+        });
 
         const response = NextResponse.json({ 
             status: choiceDict,
             countries: choiceDict, 
             pays: choiceDict,
-            v: "00:13-THEMES",
+            v: "00:14-ALL-IN-ONE",
             message: 'Quel pays ou thème ?'
         });
         response.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
