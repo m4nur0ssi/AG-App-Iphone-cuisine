@@ -75,6 +75,9 @@ export default function RootLayout({
                                 visibility: hidden !important; 
                                 transition: none !important;
                             }
+                            html.is-splashing #bottom-nav {
+                                display: none !important;
+                            }
                         `,
                     }}
                 />

@@ -23,6 +23,8 @@ export default function RecipeGrid({ recipes, onRecipeClick }: RecipeGridProps) 
                         recipe={recipe} 
                         isGrid={true} 
                         customOnClick={onRecipeClick ? () => onRecipeClick(recipe) : undefined}
+                        allRecipes={recipes}
+                        recipeIndex={index}
                     />
                 </motion.div>
             ))}

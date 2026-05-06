@@ -158,6 +158,13 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
 
         requestWakeLock();
 
+        const handleVisibilityChange = () => {
+            if (document.visibilityState === 'visible') {
+                requestWakeLock();
+            }
+        };
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+
         if (typeof window !== 'undefined') {
             window.localStorage.setItem('active-recipe-id', recipe.id);
             
@@ -172,10 +179,15 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
             
             syncWithShoppingList();
             window.addEventListener('shoppingListUpdated', syncWithShoppingList);
-            return () => window.removeEventListener('shoppingListUpdated', syncWithShoppingList);
+            return () => {
+                window.removeEventListener('shoppingListUpdated', syncWithShoppingList);
+                document.removeEventListener('visibilitychange', handleVisibilityChange);
+                if (wakeLock !== null) wakeLock.release();
+            };
         }
 
         return () => {
+            document.removeEventListener('visibilitychange', handleVisibilityChange);
             if (wakeLock !== null) wakeLock.release();
         };
     }, [recipe.id]);

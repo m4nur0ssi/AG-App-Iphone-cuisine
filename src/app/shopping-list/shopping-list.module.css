@@ -98,6 +98,43 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 30px;
+    overflow-x: hidden;
+}
+
+.swipeContainer {
+    position: relative;
+    border-radius: 24px;
+    background: #ff3b30;
+    overflow: hidden;
+}
+
+.deleteBackground {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ff3b30;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 30px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 24px;
+}
+
+.deleteBackground svg {
+    margin-bottom: 8px;
+    margin-right: 18px;
+}
+
+.deleteBackground span {
+    margin-right: 10px;
 }
 
 .recipeGroup {

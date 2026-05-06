@@ -273,7 +273,7 @@ export default function BottomNav() {
                 )}
             </AnimatePresence>
 
-            <nav className={styles.navWrapper}>
+            <nav id="bottom-nav" className={styles.navWrapper}>
                 <div className={`${styles.multiPillContainer} ${isMiniMode ? styles.isMini : ''}`}>
                    
                    {/* 1. MINI MODE: SPLIT LAYOUT */}

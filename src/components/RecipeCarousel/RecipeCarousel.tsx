@@ -61,6 +61,7 @@ export default function RecipeCarousel({ recipes, title = "Nouvelles Recettes �
                             size={size}
                             parentTitle={title}
                             onCardClick={onCardClick}
+                            allRecipes={limitedRecipes}
                         />
                     ))}
 
@@ -85,27 +86,64 @@ function CategoryTitleCard({ title, gradient, size, onClick }: { title: string, 
     const cleanTitle = title.trim().toUpperCase();
     const isLongTitle = cleanTitle.length > 12;
 
+    // Mapping for images and colors
+    const getCategoryData = (t: string) => {
+        const c = t.toLowerCase();
+        
+        // Catégories de base
+        if (c.includes('apéritif') || c.includes('aperitif') || c.includes('apéro')) return { image: '/images/categories/aperitif.jpg', color: '#10b981' };
+        if (c.includes('entrée') || c.includes('entree')) return { image: '/images/categories/entree.jpg', color: '#3b82f6' };
+        if (c.includes('plat')) return { image: '/images/categories/plats.jpg', color: '#f43f5e' };
+        if (c.includes('dessert') || c.includes('douceur')) return { image: '/images/categories/desserts.jpg', color: '#d946ef' };
+        if (c.includes('pâtisserie') || c.includes('patisserie')) return { image: '/images/categories/patisserie.jpg', color: '#f59e0b' };
+        if (c.includes('restaurant') || c.includes('resto')) return { image: '/images/categories/patisserie.jpg', color: '#8b5cf6' };
+        
+        // Thématiques spécifiques
+        if (c.includes('thématiques') || t.includes('Thématiques')) return { image: '/images/themes/simplissime.jpg', color: '#4f46e5' };
+        if (c.includes('nouveautés') || c.includes('nouveauté')) return { image: '/images/themes/astuces.jpg', color: '#3b82f6' };
+        if (c.includes('accompagnement')) return { image: '/images/themes/vegetarien.png', color: '#10b981' };
+        
+        if (c.includes('healthy') || c.includes('sain')) return { image: '/images/categories/entree.jpg', color: '#22c55e' };
+        if (c.includes('airfryer')) return { image: '/images/categories/plats.jpg', color: '#f97316' };
+        if (c.includes('barbecue') || c.includes('bbq')) return { image: '/images/categories/plats.jpg', color: '#b91c1c' };
+        if (c.includes('pas cher')) return { image: '/images/categories/aperitif.jpg', color: '#eab308' };
+        if (c.includes('express') || c.includes('rapide')) return { image: '/images/categories/entree.jpg', color: '#3b82f6' };
+        if (c.includes('famille')) return { image: '/images/categories/plats.jpg', color: '#ec4899' };
+        if (c.includes('pâques')) return { image: '/images/categories/desserts.jpg', color: '#F59E0B' };
+        if (c.includes('noël')) return { image: '/images/categories/plats.jpg', color: '#10b981' };
+
+        return { image: '/images/categories/patisserie.jpg', color: '#f59e0b' }; // fallback
+    };
+
+    const { image, color } = getCategoryData(title);
+
     return (
         <div className={`${styles.itemWrapper} ${size === 'small' ? styles.itemSmall : styles.itemLarge}`}>
-            <div 
-                className={`${styles.titleCard} ${size === 'small' ? styles.titleCardSmall : ''} ${onClick ? styles.clickable : ''}`}
-                style={{ background: gradient }}
-                onClick={onClick}
-            >
-                <div className={styles.titleCardContent}>
-                    <div className={styles.decorativeLine} />
+                <div 
+                    className={`${styles.titleCard} ${size === 'small' ? styles.titleCardSmall : ''} ${onClick ? styles.clickable : ''} ${!title.toLowerCase().includes('thématiques') ? styles.withOffset : ''}`}
+                    onClick={onClick}
+                    style={{ '--category-color': color } as React.CSSProperties}
+                >
+                <div className={styles.fullBleedIcon}>
+                    {image ? (
+                        <img src={image} alt={title} className={styles.mainTitleIcon} />
+                    ) : (
+                        <div className={styles.categoryIconFallback}>🍳</div>
+                    )}
+                </div>
+
+                <div className={styles.floatingBanner}>
                     <h2 className={`${styles.categoryMainTitle} ${isLongTitle ? styles.longTitle : ''}`}>
                         {cleanTitle}
                     </h2>
-                    <div className={styles.decorativeLine} />
-                    <div className={styles.titleCardGlass} />
+                    <div className={styles.titleSeparator} />
                 </div>
             </div>
         </div>
     );
 }
 
-function CarouselItem({ recipe, containerRef, size, parentTitle, onCardClick }: { recipe: Recipe, index: number, containerRef: React.RefObject<HTMLDivElement>, size: 'large' | 'small', parentTitle?: string, onCardClick?: (recipe: Recipe) => void }) {
+function CarouselItem({ recipe, index, containerRef, size, parentTitle, onCardClick, allRecipes }: { recipe: Recipe, index: number, containerRef: React.RefObject<HTMLDivElement>, size: 'large' | 'small', parentTitle?: string, onCardClick?: (recipe: Recipe) => void, allRecipes: Recipe[] }) {
     const itemRef = useRef<HTMLDivElement>(null);
     const { scrollXProgress } = useScroll({ target: itemRef, container: containerRef, offset: ["start end", "end start"] });
     const opacity = 1;
@@ -141,6 +179,8 @@ function CarouselItem({ recipe, containerRef, size, parentTitle, onCardClick }: 
                 size={size} 
                 customGradient={customGradient} 
                 customOnClick={onCardClick ? () => onCardClick(recipe) : undefined}
+                allRecipes={allRecipes}
+                recipeIndex={index}
             />
         </motion.div>
     );

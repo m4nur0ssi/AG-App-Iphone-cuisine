@@ -69,6 +69,8 @@ export default function Home() {
             'atelier de pâtisserie': 'patisserie',
             'atelier pâtisserie': 'patisserie',
             'pâtisserie': 'patisserie',
+            'pâtisseries': 'patisserie',
+            'patisseries': 'patisserie',
             'comme au resto': 'restaurant',
             'green healthy': 'vegetarien',
             'la dolce vita': 'italie',
@@ -264,9 +266,25 @@ export default function Home() {
                            themedKeywords.some(kw => titleLower.includes(kw));
                 }
 
-                if (tagLower === 'desserts' || tagLower === 'patisserie') {
-                    return recipeCat === 'desserts' || recipeCat === 'patisserie' || 
-                           recipeTags.some(t => t.toLowerCase().includes('dessert') || t.toLowerCase().includes('pâtis') || t.toLowerCase().includes('patis'));
+                if (tagLower === 'patisserie') {
+                    if (recipeCat === 'patisserie') return true;
+                    if (recipeTags.some(t => t.toLowerCase().includes('pâtiss') || t.toLowerCase().includes('patis'))) return true;
+                    const pastryKw = ['gâteau', 'gateau', 'cake', 'cookie', 'macaron', 'tarte', 'brioche', 'choux', 'éclair', 'millefeuille',
+                                      'brookie', 'financier', 'muffin', 'brownie', 'fondant', 'moelleux', 'madeleine', 'beignet',
+                                      'chouquette', 'cupcake', 'galette', 'bûche', 'babka', 'croissant', 'crumble', 'clafoutis', 'charlotte'];
+                    const savoryKw = ['poulet', 'viande', 'agneau', 'bœuf', 'poisson', 'saumon', 'crevette', 'jambon', 'gratin', 'pizza', 'quiche'];
+                    return !savoryKw.some(k => titleLower.includes(k)) && pastryKw.some(k => titleLower.includes(k));
+                }
+
+                if (tagLower === 'desserts') {
+                    if (recipeCat === 'desserts') return true;
+                    if (recipeTags.some(t => t.toLowerCase().includes('dessert'))) return true;
+                    const dessertKw = ['tiramisu', 'mousse', 'compote', 'yaourt', 'panna cotta', 'verrine', 'flan', 'crêpe', 'gaufre',
+                                       'pancake', 'soufflé', 'profiterole', 'churros', 'riz au lait', 'pavlova', 'nougat'];
+                    const pastryKw = ['gâteau', 'gateau', 'cake', 'cookie', 'macaron', 'tarte', 'brioche', 'brownie', 'muffin', 'cupcake',
+                                      'fondant', 'moelleux', 'financier', 'beignet'];
+                    const isBaking = recipeCat === 'patisserie' || pastryKw.some(k => titleLower.includes(k));
+                    return !isBaking && dessertKw.some(k => titleLower.includes(k));
                 }
 
                 if (tagLower === 'plats') {
@@ -406,11 +424,14 @@ export default function Home() {
 
             let finalCat = (recipe.category || 'Autres').toLowerCase();
 
-            // Détection automatique classique (catégorie principale)
+            // Détection automatique — priorité au champ category pour éviter les mauvais classements
             if (isIceCream) finalCat = 'glaces';
             else if (isBeverage) finalCat = 'boissons';
             else if (isPatisserie) finalCat = 'patisseries';
             else if (isDessert) finalCat = 'desserts';
+            // Priorité category pour entrees/aperitifs AVANT mots-clés plats
+            else if (cat === 'entrees' || cat === 'entrée') finalCat = 'entrees';
+            else if (cat === 'aperitifs' || cat === 'apéro') finalCat = 'aperitifs';
             else if (isAccompagnement) finalCat = 'accompagnements';
             else if (isPlat) finalCat = 'plats';
             else if (isApero) finalCat = 'aperitifs';

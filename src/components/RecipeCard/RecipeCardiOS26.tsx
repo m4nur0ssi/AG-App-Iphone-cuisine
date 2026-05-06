@@ -27,6 +27,8 @@ interface RecipeCardiOS26Props {
     onSheetClose?: () => void;
     customGradient?: string;
     customOnClick?: () => void;
+    allRecipes?: Recipe[];
+    recipeIndex?: number;
 }
 
 export default function RecipeCardiOS26({ 
@@ -42,7 +44,9 @@ export default function RecipeCardiOS26({
     onSheetOpen,
     onSheetClose,
     customGradient,
-    customOnClick
+    customOnClick,
+    allRecipes,
+    recipeIndex
 }: RecipeCardiOS26Props) {
     const [isPlaying, setIsPlaying] = useState(false);
     const [isSheetOpen, setIsSheetOpen] = useState(false);
@@ -264,6 +268,8 @@ export default function RecipeCardiOS26({
                     setIsSheetOpen(false);
                     onSheetClose?.();
                 }} 
+                allRecipes={allRecipes}
+                recipeIndex={recipeIndex}
             />
         </div>
     );
