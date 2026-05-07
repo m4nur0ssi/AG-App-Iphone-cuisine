@@ -1,8 +1,9 @@
 .section {
-    padding: 10px 0; /* Espacement vertical réduit */
-    overflow: hidden;
     position: relative;
-    background: transparent !important;
+    padding: 0;
+    margin-bottom: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 :root[data-theme='light'] .section,
@@ -130,13 +131,10 @@
 
 .track {
     display: flex;
-    gap: 20px;
+    gap: 1px;
     width: max-content;
-    perspective: 2000px;
-    padding-bottom: 5px;
-    will-change: transform; /* Force GPU */
-    transform: translateZ(0); /* High perf bridge */
-    align-items: flex-start; /* Ensure all items align at the very top */
+    padding: 0;
+    align-items: center;
 }
 
 .itemWrapper {
@@ -164,6 +162,105 @@
     height: 440px;
 }
 
+.compactSection {
+    padding: 0;
+    margin-top: -20px; /* Rapproche de la barre de menu */
+    margin-bottom: 20px; /* Espace normal après les petites tuiles */
+}
+
+.compactSection .scrollContainer {
+    padding: 0 20px 1px;
+    overflow-x: auto;
+    overflow-y: visible; /* Autorise les ombres */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.compactItem {
+    flex: 0 0 220px;
+    width: 220px;
+    height: 130px;
+    margin-right: 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    background: rgba(44, 44, 46, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compactCard {
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+    background: #1c1c1e;
+}
+
+.compactCard:active {
+    transform: scale(0.94);
+}
+
+.compactImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    display: block;
+}
+
+.compactBanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 10px;
+    z-index: 2;
+}
+
+.compactTitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+    margin: 0;
+    text-align: center;
+    line-height: 1.1;
+}
+
+/* Anciennes classes (à conserver pour compatibilité) */
+.itemThematic {
+    flex: 0 0 270px;
+    width: 270px;
+    height: 170px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
 [data-theme='light'] .glassFloor {
     display: none;
 }
@@ -180,7 +277,7 @@
 
 @media (max-width: 768px) {
     .section {
-        padding: 15px 0; /* Plus compact sur mobile */
+        padding: 0; /* Plus compact sur mobile */
     }
     
     .header {
@@ -299,6 +396,64 @@
 .titleCard.withOffset {
     margin-top: 52px; /* Align with recipe video cards (44px pill + 8px gap) */
 }
+
+/* Tuile thématique : card compacte horizontale */
+.titleCardThematic {
+    width: 260px;
+    height: 155px;
+    border-radius: 22px;
+    margin-top: 0;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+.titleCardThematic:active {
+    transform: scale(0.94);
+}
+
+.titleCardThematic .fullBleedIcon {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.titleCardThematic .mainTitleIcon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titleCardThematic .floatingBanner {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 100%);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 12px 14px;
+    border: none;
+}
+
+.titleCardThematic .categoryMainTitle {
+    font-size: 0.8rem;
+    letter-spacing: 1.8px;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 800;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+.titleCardThematic .titleSeparator {
+    display: none;
+}
+
 
 .fullBleedIcon {
     position: absolute;
@@ -426,4 +581,12 @@
     font-size: 100px;
     opacity: 0.2;
     transform: translateY(40px);
+}
+.viewAllCompactContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
 }
