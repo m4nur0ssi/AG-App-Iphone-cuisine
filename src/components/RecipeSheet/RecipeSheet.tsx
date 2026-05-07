@@ -45,7 +45,7 @@ export default function RecipeSheet({ recipe, isOpen, onClose, allRecipes, recip
         setCurrentIdx(recipeIndex);
     }, [recipeIndex, recipe]);
 
-    // Scroll lock
+    // Scroll lock and History State
     useEffect(() => {
         if (isOpen) {
             setShouldRender(true);
@@ -56,15 +56,25 @@ export default function RecipeSheet({ recipe, isOpen, onClose, allRecipes, recip
             document.body.style.position = 'fixed';
             document.body.style.width = '100vw';
             document.body.style.overflow = 'hidden';
+
+            // Push a temporary state to handle "Back" button/swipe
+            window.history.pushState({ modal: 'recipe' }, '');
+
+            const handlePopState = () => {
+                onClose();
+            };
+
+            window.addEventListener('popstate', handlePopState);
+            return () => {
+                window.removeEventListener('popstate', handlePopState);
+                document.body.style.position = '';
+                document.body.style.top = '';
+                document.body.style.width = '';
+                document.body.style.overflow = '';
+                if (isOpen) window.scrollTo(0, scrollYRef.current);
+            };
         }
-        return () => {
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.body.style.width = '';
-            document.body.style.overflow = '';
-            if (isOpen) window.scrollTo(0, scrollYRef.current);
-        };
-    }, [isOpen, x, y]);
+    }, [isOpen, x, y, onClose]);
 
     const handleAnimationComplete = () => { if (!isOpen) setShouldRender(false); };
 
@@ -139,14 +149,17 @@ export default function RecipeSheet({ recipe, isOpen, onClose, allRecipes, recip
             }
         }
 
-        if (gestureType.current === 'horizontal' && recipes.length > 1) {
+        if (gestureType.current === 'horizontal') {
             e.preventDefault();
             isDraggingX.current = true;
             
-            // Résistance aux bords
+            // Résistance aux bords (plus faible à gauche pour le geste de retour)
             let dragX = dx;
-            if ((currentIdx === 0 && dx > 0) || (currentIdx === recipes.length - 1 && dx < 0)) {
+            if (currentIdx === recipes.length - 1 && dx < 0) {
                 dragX = dx * 0.2;
+            } else if (currentIdx === 0 && dx > 0) {
+                // On laisse plus de liberté au début pour le swipe de retour
+                dragX = dx * 0.8; 
             }
             x.set(dragX);
         }
@@ -168,8 +181,12 @@ export default function RecipeSheet({ recipe, isOpen, onClose, allRecipes, recip
                 if (currentIdx < recipes.length - 1) goToIndex(currentIdx + 1);
                 else snapBack();
             } else if (dx > width * SWIPE_THRESHOLD || vx > 2) {
-                if (currentIdx > 0) goToIndex(currentIdx - 1);
-                else snapBack();
+                if (currentIdx > 0) {
+                    goToIndex(currentIdx - 1);
+                } else {
+                    // Geste de retour : on ferme la fiche
+                    dismiss();
+                }
             } else {
                 snapBack();
             }

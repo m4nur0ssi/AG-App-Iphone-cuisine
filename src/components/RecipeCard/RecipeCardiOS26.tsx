@@ -151,7 +151,8 @@ export default function RecipeCardiOS26({
     return (
         <div className={`${styles.recipeContainer} ${isGrid ? styles.isGrid : ''}`}>
             {/* 1. Floating Title Pill ABOVE the card */}
-            {!hideTitle && !isThematicCard && (
+            {/* 1. Floating Title Pill ABOVE the card */}
+            {!hideTitle && (
                 <motion.div 
                     className={styles.titlePill}
                     whileHover={{ scale: 1.05 }}

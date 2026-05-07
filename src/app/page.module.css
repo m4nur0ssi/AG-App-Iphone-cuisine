@@ -2,7 +2,8 @@
     min-height: 100vh;
     background: var(--bg-primary);
     color: var(--text-primary);
-    padding-bottom: 120px; /* Espace pour la bottom nav */
+    padding-top: 108px; /* Collé à la barre de filtres */
+    padding-bottom: 120px;
 }
 
 /* Conteneur Header + Filtres fixe */
@@ -14,8 +15,7 @@
 }
 
 .headerSpacer {
-    height: 100px;
-    width: 100%;
+    display: none; /* Remplacé par padding-top sur .main */
 }
 
 /* Feed vertical (TikTok) */
@@ -117,7 +117,11 @@
     color: var(--text-tertiary);
     margin: 30px 0 10px 20px;
 }
-.sectionsContainer { display: flex; flex-direction: column; gap: 0; }
+.sectionsContainer { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 1px; 
+}
 
 /* Filter Results Header */
 .resultsWrapper {

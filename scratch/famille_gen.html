@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: #FF4E50; }
+  svg { width: 800px; height: 800px; }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF4E50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F9D423;stop-opacity:1" />
+    </linearGradient>
+    <dropShadow id="shadow" dx="10" dy="10" stdDeviation="5" flood-opacity="0.2"/>
+  </defs>
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="40" />
+  <path d="M200 200 L400 400 L200 400 Z" fill="rgba(0,0,0,0.15)" />
+
+  <!-- Big Casserole -->
+  <rect x="120" y="180" width="160" height="100" rx="10" fill="#333" filter="url(#shadow)" />
+  <rect x="110" y="180" width="180" height="15" rx="5" fill="#444" />
+  <rect x="140" y="160" width="120" height="20" rx="10" fill="#222" /> <!-- Lid handle -->
+  
+  <!-- Multiple Plates -->
+  <circle cx="100" cy="300" r="40" fill="#FFF" filter="url(#shadow)" />
+  <circle cx="300" cy="300" r="40" fill="#FFF" filter="url(#shadow)" />
+  <circle cx="200" cy="340" r="40" fill="#FFF" filter="url(#shadow)" />
+
+  <!-- Cutlery -->
+  <rect x="85" y="280" width="5" height="40" fill="#999" />
+  <rect x="110" y="280" width="5" height="40" fill="#999" />
+</svg>
+</body>
+</html>

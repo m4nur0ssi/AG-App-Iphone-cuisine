@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aperçu des Thématiques - Les Recettes Magiques</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f7;
+            margin: 0;
+            padding: 40px;
+            color: #1d1d1f;
+        }
+        h1 {
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            position: relative;
+            cursor: pointer;
+        }
+        .image-container {
+            width: 100%;
+            aspect-ratio: 1/1;
+            position: relative;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .card:hover .image-container img {
+            transform: scale(1.05);
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+        }
+        .card:hover .overlay {
+            opacity: 1;
+        }
+        .overlay h3 {
+            color: white;
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin: 0;
+            transform: translateY(20px);
+            transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+            text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        .card:hover .overlay h3 {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Aperçu des Nouvelles Thématiques ✨</h1>
+    <div class="grid">
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/sauces.png" alt="Sauces">
+                <div class="overlay"><h3>Sauces</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/healthy.png" alt="Healthy">
+                <div class="overlay"><h3>Healthy</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/airfryer.png" alt="Airfryer">
+                <div class="overlay"><h3>Airfryer</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/barbecue.png" alt="Barbecue">
+                <div class="overlay"><h3>Barbecue</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/pas-cher.png" alt="Pas Cher">
+                <div class="overlay"><h3>Pas Cher</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/express.png" alt="Express">
+                <div class="overlay"><h3>Express</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/famille.png" alt="Famille">
+                <div class="overlay"><h3>Famille</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/vegetarien.png" alt="Végé">
+                <div class="overlay"><h3>Végé</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/noel.jpg" alt="Noel">
+                <div class="overlay"><h3>Noel</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/paques.jpg" alt="Pâques">
+                <div class="overlay"><h3>Pâques</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/glaces.jpg" alt="Glaces">
+                <div class="overlay"><h3>Glaces</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/voila-lete.jpg" alt="Voilà l'été">
+                <div class="overlay"><h3>Voilà l'été</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/cest-lhiver.jpg" alt="C'est l'hiver">
+                <div class="overlay"><h3>C'est l'hiver</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/astuces.jpg" alt="Astuces">
+                <div class="overlay"><h3>Astuces</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/simplissime.jpg" alt="Simplissime">
+                <div class="overlay"><h3>Simplissime</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/rafraichissements.jpg" alt="Rafraîchissements">
+                <div class="overlay"><h3>C'est frais</h3></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="public/images/themes/dolce-vita.jpg" alt="Dolce Vita">
+                <div class="overlay"><h3>Dolce Vita</h3></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

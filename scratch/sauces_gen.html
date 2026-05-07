@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: #FF9A8B; }
+  svg { width: 800px; height: 800px; }
+  .shadow { fill: rgba(0,0,0,0.1); }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8C00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF4500;stop-opacity:1" />
+    </linearGradient>
+    <dropShadow id="shadow" dx="10" dy="10" stdDeviation="5" flood-opacity="0.2"/>
+  </defs>
+  
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="40" />
+
+  <!-- Main Shadow -->
+  <path d="M200 200 L400 400 L200 400 Z" fill="rgba(0,0,0,0.15)" />
+
+  <!-- Sauce Bowl 1 (Tomato/Ketchup) -->
+  <g transform="translate(130, 150)">
+    <circle cx="0" cy="0" r="60" fill="#f1f1f1" filter="url(#shadow)" />
+    <circle cx="0" cy="0" r="50" fill="#FF3B30" />
+    <path d="M0 -50 A50 50 0 0 1 50 0 L0 0 Z" fill="rgba(255,255,255,0.1)" />
+    <circle cx="-15" cy="-15" r="5" fill="rgba(255,255,255,0.3)" />
+  </g>
+  
+  <!-- Sauce Bowl 2 (Pesto/Green) -->
+  <g transform="translate(250, 220)">
+    <circle cx="0" cy="0" r="50" fill="#f1f1f1" filter="url(#shadow)" />
+    <circle cx="0" cy="0" r="40" fill="#4CD964" />
+    <path d="M0 -40 A40 40 0 0 1 40 0 L0 0 Z" fill="rgba(255,255,255,0.1)" />
+    <circle cx="10" cy="-10" r="8" fill="#2E8B57" opacity="0.3" />
+    <circle cx="-10" cy="10" r="6" fill="#2E8B57" opacity="0.2" />
+  </g>
+
+  <!-- Sauce Bowl 3 (Mustard/Yellow) -->
+  <g transform="translate(260, 100)">
+    <circle cx="0" cy="0" r="45" fill="#f1f1f1" filter="url(#shadow)" />
+    <circle cx="0" cy="0" r="35" fill="#FFCC00" />
+    <path d="M0 -35 A35 35 0 0 1 35 0 L0 0 Z" fill="rgba(255,255,255,0.1)" />
+  </g>
+
+  <!-- Herbs / Decoration -->
+  <circle cx="100" cy="100" r="5" fill="#32B34A" opacity="0.6" />
+  <circle cx="120" cy="80" r="3" fill="#32B34A" opacity="0.4" />
+  <circle cx="80" cy="120" r="4" fill="#32B34A" opacity="0.5" />
+</svg>
+</body>
+</html>

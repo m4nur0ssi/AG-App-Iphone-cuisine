@@ -49,65 +49,46 @@ export default function Home() {
     };
 
     const handleCarouselTitleClick = (title: string) => {
-        // Strip emojis but KEEP accents (very important for French labels mapping)
         const cleanTitle = title.replace(/[^\w\sàâäéèêëîïôöùûüçÀÂÄÉÈÊËÎÏÔÖÙÛÜÇ]/g, '').toLowerCase().trim();
         
         const mapping: Record<string, string> = {
             'thématiques du moment': 'thématiques',
             'thématiques': 'thématiques',
+            'nouveautés': 'nouveautés',
             'les nouveautés': 'nouveautés',
             'spécial pâques': 'pâques',
-            'paques': 'pâques',
             'pâques': 'pâques',
-            'pâques est là': 'pâques',
-            'paques est la': 'pâques',
-            'simplissime': 'simplissime',
             'apéro gourmand': 'aperitifs',
+            'apéritifs': 'aperitifs',
             'entrées fraîches': 'entrees',
+            'entrées': 'entrees',
             'plats de chef': 'plats',
+            'plats': 'plats',
             'douceurs sucrées': 'desserts',
+            'desserts': 'desserts',
             'atelier de pâtisserie': 'patisserie',
-            'atelier pâtisserie': 'patisserie',
             'pâtisserie': 'patisserie',
             'pâtisseries': 'patisserie',
-            'patisseries': 'patisserie',
             'comme au resto': 'restaurant',
+            'restaurant': 'restaurant',
             'green healthy': 'vegetarien',
+            'végé': 'vegetarien',
+            'vege': 'vegetarien',
             'la dolce vita': 'italie',
-            // Avec apostrophe (version brute)
-            'c\'est noël': 'Noël',
             'noël': 'Noël',
-            'noel': 'Noël',
-            // Sans apostrophe (après nettoyage regex)
-            'cest noël': 'Noël',
-            'cest noel': 'Noël',
-            'spécial noël': 'Noël',
-            'special noel': 'Noël',
-            // Été / Hiver
-            'voilà l\'été': 'voila-lete',
-            'voila lete': 'voila-lete',
-            'voilà lete': 'voila-lete',
-            'c\'est l\'hiver': 'cest-lhiver',
-            'cest lhiver': 'cest-lhiver',
-            'cest lhiver ': 'cest-lhiver',
-            // Autres
             'astuces': 'Astuces',
             'les glaces': 'glaces',
             'glaces': 'glaces',
             'rafraîchissements': 'boissons',
-            'rafraichissements': 'boissons',
+            'boissons': 'boissons',
             'sauces': 'sauces',
-            'sauce': 'sauces',
             'healthy': 'healthy',
             'airfryer': 'airfryer',
             'barbecue': 'barbecue',
-            'bbq': 'barbecue',
             'pas cher': 'pas cher',
             'express': 'express',
             'famille': 'famille',
-            'familial': 'famille',
-            'végé': 'vegetarien',
-            'vege': 'vegetarien'
+            'accompagnements': 'accompagnements'
         };
 
         const tag = mapping[cleanTitle] || cleanTitle;
@@ -146,49 +127,40 @@ export default function Home() {
             return activeTags.every(currentTag => {
                 const tagLower = currentTag.toLowerCase();
                 const titleLower = recipe.title.toLowerCase();
-                const fullText = `${titleLower} ${(recipe.steps || []).join(' ')} ${(recipe.ingredients || []).map(i => i.name).join(' ')}`.toLowerCase();
+                const descriptionLower = (recipe.description || '').toLowerCase();
+                const fullText = `${titleLower} ${descriptionLower} ${(recipe.steps || []).join(' ')} ${(recipe.ingredients || []).map(i => i.name).join(' ')}`.toLowerCase();
 
-                // 1. BOISSONS (Rafraîchissements)
                 if (tagLower === 'boissons') {
                     return recipeCat === 'boissons' || recipeTags.some(t => t.includes('boisson') || t.includes('cocktail') || t.includes('jus') || t.includes('rafra')) ||
                            ['boisson', 'cocktail', 'jus', 'smoothie', 'mojito', 'limonade', 'café', 'thé'].some(k => titleLower.includes(k));
                 }
 
-                // 2. SANS VIANDE (Végétarien) -> "que des légumes"
                 if (tagLower === 'vegetarien') {
                     if (recipeTags.some(t => t.includes('végé') || t.includes('vege') || t.includes('vegetarien')) || recipeCat === 'vegetarien') return true;
-                    // Détection "sans viande" : on vérifie qu'il n'y a PAS de viande/poisson dans le texte complet
                     const meatKeywords = ['poulet', 'bœuf', 'boeuf', 'porc', 'veau', 'agneau', 'canard', 'dinde', 'saucisse', 'chorizo', 'lardon', 'jambon', 'poisson', 'saumon', 'thon', 'crevette', 'cabillaud', 'fruits de mer'];
                     const hasMeat = meatKeywords.some(meat => fullText.includes(meat));
-                    // Et c'est un plat ou une entrée, pas un dessert
                     const isSweet = ['gâteau', 'cake', 'tarte', 'chocolat', 'sucre', 'dessert', 'patisserie', 'glace'].some(s => titleLower.includes(s)) || ['desserts', 'patisserie', 'glaces'].includes(recipeCat);
                     return !hasMeat && !isSweet;
                 }
 
-                // 3. GLACES
                 if (tagLower === 'glaces') {
                     return recipeCat === 'glaces' || recipeTags.some(t => t.includes('glace') || t.includes('sorbet')) ||
                            ['glace', 'sorbet', 'crème glacée', 'bûche glacée'].some(k => titleLower.includes(k));
                 }
 
-                // 4. FAMILLE (Plats familiaux au four la plupart du temps)
                 if (tagLower === 'famille' || tagLower === 'familial') {
                     if (recipeTags.some(t => t.toLowerCase() === 'famille' || t.toLowerCase() === 'familial') || titleLower.includes('familial') || titleLower.includes('famille')) return true;
-                    // Détection au four, familial
                     return fullText.includes('four') && (recipe.servings || 0) >= 4 && !['desserts', 'patisserie', 'glaces', 'boissons', 'aperitifs', 'sauces'].includes(recipeCat);
                 }
 
-                // 5. EXPRESS (Plats très rapides - de 30 minutes)
                 if (tagLower === 'express') {
                     if (recipeTags.some(t => t.toLowerCase() === 'express' || t.toLowerCase() === 'rapide') || titleLower.includes('express') || titleLower.includes('rapide')) return true;
                     const totalTime = (recipe.prepTime || 0) + (recipe.cookTime || 0);
                     return totalTime > 0 && totalTime <= 30 && !['desserts', 'patisserie', 'glaces', 'boissons', 'sauces'].includes(recipeCat);
                 }
 
-                // 6. PAS CHER
                 if (tagLower === 'pas cher' || tagLower === 'pas-cher') {
                     if (recipeTags.some(t => t.toLowerCase() === 'pas cher' || t.toLowerCase() === 'pas-cher') || titleLower.includes('pas cher')) return true;
-                    // Ingrédients basiques (pâtes, riz, pommes de terre, oeufs) sans viandes chères (bœuf, saumon, agneau)
                     const cheapKeywords = ['pâtes', 'pasta', 'riz', 'pommes de terre', 'patate', 'oeuf', 'œuf', 'lentilles', 'haricots'];
                     const expensiveKeywords = ['bœuf', 'boeuf', 'agneau', 'saumon', 'truffe', 'caviar', 'foie gras', 'veau'];
                     const hasCheap = cheapKeywords.some(k => titleLower.includes(k) || fullText.includes(k));
@@ -196,259 +168,56 @@ export default function Home() {
                     return hasCheap && !hasExpensive && !['desserts', 'patisserie', 'glaces', 'boissons', 'sauces'].includes(recipeCat);
                 }
 
-                // 7. SAUCES (Que des sauces)
-                if (tagLower === 'sauces' || tagLower === 'sauce') {
-                    return recipeCat === 'sauces' || recipeTags.some(t => t.toLowerCase() === 'sauces' || t.toLowerCase() === 'sauce') ||
-                           ['sauce', 'pesto', 'mayo', 'ketchup', 'vinaigrette', 'béarnaise', 'tzatziki', 'guacamole', 'kebab'].some(k => titleLower.includes(k));
+                if (tagLower === 'thématiques') {
+                    return recipeTags.some(t => t.toLowerCase() === 'thématiques' || t.toLowerCase() === 'thematique');
                 }
 
-                // 8. HEALTHY (Différent de végétarien)
-                if (tagLower === 'healthy') {
-                    if (recipeTags.some(t => t.toLowerCase() === 'healthy' || t.toLowerCase() === 'diététique' || t.toLowerCase() === 'sain') || titleLower.includes('healthy')) return true;
-                    // Léger, salades, légumes sans trop de gras
-                    const healthyKeywords = ['salade', 'légumes', 'vapeur', 'healthy', 'sain', 'léger', 'bowl'];
-                    const fatKeywords = ['frit', 'beurre', 'crème fraîche', 'friture', 'burger', 'pizza', 'fromage fondu', 'raclette', 'tartiflette'];
-                    return healthyKeywords.some(k => fullText.includes(k)) && !fatKeywords.some(k => fullText.includes(k)) && !['desserts', 'patisserie', 'glaces', 'boissons', 'sauces'].includes(recipeCat);
+                if (tagLower === 'nouveautés') {
+                    return recipeTags.some(t => t.toLowerCase() === 'nouveautés' || t.toLowerCase() === 'nouveauté');
                 }
 
-                // 9. DOLCE VITA (Toutes les recettes italiennes)
-                if (tagLower === 'italie' || tagLower === 'dolce vita') {
-                    if (recipeTags.some(t => ['italie', 'italy', 'dolce vita', 'italien', 'italienne'].includes(t.toLowerCase())) || recipeCat === 'italie') return true;
-                    const italianKeywords = ['pâtes', 'pasta', 'pizza', 'risotto', 'tiramisu', 'pesto', 'gnocchi', 'mozzarella', 'burrata', 'parmesan', 'focaccia', 'carbonara', 'bolognaise'];
-                    return italianKeywords.some(k => fullText.includes(k));
-                }
-
-                // 10. AIRFRYER
-                if (tagLower === 'airfryer') {
-                    if (recipeTags.some(t => t.toLowerCase() === 'airfryer') || titleLower.includes('airfryer')) return true;
-                    return fullText.includes('airfryer') || fullText.includes('air fryer');
-                }
-
-                // 11. BARBECUE
-                if (tagLower === 'barbecue' || tagLower === 'bbq') {
-                    if (recipeTags.some(t => t.toLowerCase() === 'barbecue' || t.toLowerCase() === 'bbq') || titleLower.includes('barbecue') || titleLower.includes('bbq')) return true;
-                    return fullText.includes('barbecue') || fullText.includes('bbq') || fullText.includes('grill') || fullText.includes('plancha');
-                }
-
-                if (tagLower === 'noël' || tagLower === 'noel') {
-                    return recipeTags.some(t => t.toLowerCase() === 'noël' || t.toLowerCase() === 'noel') ||
-                           titleLower.includes('noël') || titleLower.includes('noel');
-                }
-
-                if (tagLower === 'pâques' || tagLower === 'paques') {
-                    return recipeTags.some(t => t.toLowerCase() === 'pâques' || t.toLowerCase() === 'paques' || t.toLowerCase() === 'agneau') || 
-                           titleLower.includes('agneau') || titleLower.includes('pâques');
-                }
-
-                // Thématiques saisonnières
-                if (tagLower === 'voila-lete') {
-                    const summerKeywords = ['été', 'ete', 'voilà', 'voila-lete', 'salade', 'bbq', 'barbecue', 'grillade', 'plancha'];
-                    return (recipe.category as string) === 'voila-lete' || 
-                           recipeTags.some(t => summerKeywords.some(k => t.toLowerCase().includes(k))) ||
-                           summerKeywords.some(k => titleLower.includes(k));
-                }
-                if (tagLower === 'cest-lhiver') {
-                    const winterKeywords = ['hiver', "c'est l'hiver", 'cest-lhiver', 'soupe', 'velouté', 'gratin', 'four', 'réconfortant', 'familial', 'pot-au-feu', 'tartiflette', 'raclette'];
-                    return (recipe.category as string) === 'cest-lhiver' || 
-                           recipeTags.some(t => winterKeywords.some(k => t.toLowerCase().includes(k))) ||
-                           winterKeywords.some(k => titleLower.includes(k));
-                }
-
-                if (tagLower === 'simplissime') {
-                    return recipeTags.includes('simplissime') || recipeCat === 'simplissime';
-                }
-
-                if (tagLower === 'thématiques' || tagLower === 'thématique') {
-                    const themedKeywords = ['glace', 'sorbet', 'boisson', 'cocktail', 'pâques', 'paques', 'noël', 'noel', 'agneau', 'chocolat'];
-                    const themedCats = ['glaces', 'boissons', 'pâques', 'noël', 'simplissime', 'italie'];
-                    return recipeTags.some(t => themedKeywords.includes(t.toLowerCase())) || 
-                           themedCats.includes(recipeCat) ||
-                           themedKeywords.some(kw => titleLower.includes(kw));
-                }
-
-                if (tagLower === 'patisserie') {
-                    if (recipeCat === 'patisserie') return true;
-                    if (recipeTags.some(t => t.toLowerCase().includes('pâtiss') || t.toLowerCase().includes('patis'))) return true;
-                    const pastryKw = ['gâteau', 'gateau', 'cake', 'cookie', 'macaron', 'tarte', 'brioche', 'choux', 'éclair', 'millefeuille',
-                                      'brookie', 'financier', 'muffin', 'brownie', 'fondant', 'moelleux', 'madeleine', 'beignet',
-                                      'chouquette', 'cupcake', 'galette', 'bûche', 'babka', 'croissant', 'crumble', 'clafoutis', 'charlotte'];
-                    const savoryKw = ['poulet', 'viande', 'agneau', 'bœuf', 'poisson', 'saumon', 'crevette', 'jambon', 'gratin', 'pizza', 'quiche'];
-                    return !savoryKw.some(k => titleLower.includes(k)) && pastryKw.some(k => titleLower.includes(k));
-                }
-
-                if (tagLower === 'desserts') {
-                    if (recipeCat === 'desserts') return true;
-                    if (recipeTags.some(t => t.toLowerCase().includes('dessert'))) return true;
-                    const dessertKw = ['tiramisu', 'mousse', 'compote', 'yaourt', 'panna cotta', 'verrine', 'flan', 'crêpe', 'gaufre',
-                                       'pancake', 'soufflé', 'profiterole', 'churros', 'riz au lait', 'pavlova', 'nougat'];
-                    const pastryKw = ['gâteau', 'gateau', 'cake', 'cookie', 'macaron', 'tarte', 'brioche', 'brownie', 'muffin', 'cupcake',
-                                      'fondant', 'moelleux', 'financier', 'beignet'];
-                    const isBaking = recipeCat === 'patisserie' || pastryKw.some(k => titleLower.includes(k));
-                    return !isBaking && dessertKw.some(k => titleLower.includes(k));
-                }
-
-                if (tagLower === 'plats') {
-                    const platKeywords = ['poulet', 'agneau', 'gratin', 'burger', 'viande', 'pâtes', 'riz', 'rôti', 'confit'];
-                    return recipeCat === 'plats' || recipeTags.includes('plat') || recipeTags.includes('plats') ||
-                           platKeywords.some(k => titleLower.includes(k));
-                }
-
-                if (tagLower === 'aperitifs') {
-                    return recipeCat === 'aperitifs' || recipeCat === 'apéro' || recipeCat === 'aperitif' ||
-                           recipeTags.some(t => t.includes('aperitif') || t.includes('apéro')) ||
-                           ['croquetas', 'apéro', 'tapas', 'houmous'].some(k => titleLower.includes(k));
-                }
-
-                if (tagLower === 'entrees') {
-                    return recipeCat === 'entrees' || recipeCat === 'entrée' || recipeTags.includes('entrée') ||
-                           ['salade', 'soupe', 'velouté', 'carpaccio', 'entrée'].some(k => titleLower.includes(k));
-                }
-
-                if (tagLower === 'nouveautés' || tagLower === 'nouveauté') {
-                    const sorted = [...mockRecipes].sort((a, b) => parseInt(b.id) - parseInt(a.id));
-                    const latestIds = sorted.slice(0, 20).map(r => r.id);
-                    return latestIds.includes(recipe.id);
-                }
-
-                return recipeCat === tagLower || 
-                       recipeTags.some(t => t.includes(tagLower));
+                return fullText.includes(tagLower) || recipeCat === tagLower || recipeTags.includes(tagLower);
             });
         });
     }, [activeTags]);
 
     const activeFiltersLabel = useMemo(() => {
-        if (activeTags.length === 0) return "Les Recettes Magiques";
-        return activeTags.map(t => {
-            const low = t.toLowerCase();
-            if (low === 'thématiques' || low === 'thématique') return 'THÉMATIQUES';
-            if (low === 'nouveautés' || low === 'nouveauté') return 'NOUVEAUTÉS';
-            if (low === 'simplissime') return 'SIMPLISSIME';
-            return t.charAt(0).toUpperCase() + t.slice(1).replace('pâques', 'Pâques').replace('paques', 'Paques');
-        }).join(" + ");
+        if (activeTags.length === 0) return 'Tous nos secrets';
+        return activeTags.map(t => t.charAt(0).toUpperCase() + t.slice(1)).join(' + ');
     }, [activeTags]);
 
     const categorizedRecipes = useMemo(() => {
-        const groups: Record<string, typeof mockRecipes> = {};
-        
-        mockRecipes.forEach(recipe => {
-            const title = (recipe.title || '').toLowerCase();
+        const groups: Record<string, any[]> = {};
+        filteredRecipes.forEach(recipe => {
+            const cat = recipe.category?.toLowerCase();
             const tags = (recipe.tags || []).map(t => t.toLowerCase());
-            const cat = (recipe.category || '').toLowerCase();
-            
-            const isSavory = title.includes('poulet') || title.includes('viande') || title.includes('gratin') || 
-                           title.includes('pâtes') || title.includes('pizza') || title.includes('salade') ||
-                           title.includes('agneau') || title.includes('poisson') || title.includes('riz') ||
-                           title.includes('burger') || title.includes('soupe') || title.includes('quiche') ||
-                           title.includes('croquetas') || title.includes('apéro') || title.includes('tapas') ||
-                           title.includes('légume') || title.includes('fromage') || title.includes('patate') ||
-                           title.includes('pomme de terre') || title.includes('oeuf') || title.includes('œuf') ||
-                           title.includes('crevette') || title.includes('saumon') || title.includes('thon') ||
-                           title.includes('pesto') || title.includes('tomate') || title.includes('bagel') ||
-                           title.includes('bruschetta') || title.includes('casatiello') || title.includes('focaccia') ||
-                           title.includes('bread') || title.includes('pain') || title.includes('olive');
+            const title = recipe.title.toLowerCase();
 
-            const isPlat = (title.includes('poulet') || title.includes('agneau') || title.includes('gratin') || 
-                          title.includes('burger') || title.includes('viande') || title.includes('pâtes') ||
-                          title.includes('riz') || title.includes('rôti') || title.includes('confit') ||
-                          tags.includes('plat') || cat.includes('plat') || cat.includes('plats')) && !title.includes('apéro');
-            
-            const isApero = title.includes('croquetas') || title.includes('apéro') || title.includes('tapas') || 
-                          title.includes('cocktail') || tags.includes('aperitif') || tags.includes('apéro') ||
-                          cat.includes('aperitifs') || cat.includes('apéro') || title.includes('houmous');
+            const themes = ['glaces', 'boissons', 'Astuces', 'Noël', 'pâques', 'italie', 'orient', 'asie', 'mexique', 'usa', 'healthy', 'airfryer', 'barbecue', 'express', 'famille', 'pas cher', 'sauces'];
+            const foundTheme = themes.find(t => tags.includes(t.toLowerCase()) || title.includes(t.toLowerCase()));
 
-            const isEntree = (title.includes('salade') || title.includes('soupe') || title.includes('velouté') ||
-                           (title.includes('œuf') && !title.includes('bœuf')) || title.includes('entrée') || tags.includes('entrée') ||
-                           cat.includes('entrees') || cat.includes('entrée') || title.includes('carpaccio')) && !title.includes('apéro');
-
-            const hasMeat = title.includes('poulet') || title.includes('viande') || title.includes('agneau') || 
-                            title.includes('bœuf') || title.includes('poisson') || title.includes('saumon') || 
-                            title.includes('thon') || title.includes('crevette') || title.includes('porc') || 
-                            title.includes('lardon') || title.includes('saucisse') || title.includes('chorizo') || 
-                            title.includes('canard');
-
-            const isAccompagnement = (title.includes('accompagnement') || tags.includes('accompagnement') || 
-                                     cat.includes('accompagnements') || cat.includes('accompagnement') || 
-                                     title.includes('purée') || title.includes('frites') || title.includes('potatoes') ||
-                                     title.includes('légume') || title.includes('pâtes') || title.includes('riz')) && !hasMeat;
-
-            const isIceCream = (title.includes('glace') || title.includes('sorbet') || tags.includes('glace') || tags.includes('sorbet')) && 
-                               !isSavory && !title.includes('glaçage') && !title.includes('gâteau');
-            
-            const isBeverage = (title.includes('boisson') || title.includes('cocktail') || title.includes('jus') || 
-                              title.includes('alcool') || title.includes('vin') || title.includes('bière') ||
-                              tags.includes('boisson') || tags.includes('cocktail') || tags.includes('jus')) && !isSavory;
-
-            const isPatisserieKeyword = title.includes('gâteau') || title.includes('cake') || title.includes('cookie') || 
-                                        title.includes('macaron') || title.includes('tarte') || title.includes('brioche') || 
-                                        title.includes('pâte') || title.includes('choux') || title.includes('éclair') || 
-                                        title.includes('millefeuille') || title.includes('viennoiserie') || title.includes('bambas') || 
-                                        title.includes('brookie') || title.includes('financier') || title.includes('muffin') || 
-                                        title.includes('brownie') || title.includes('fondant') || title.includes('moelleux') || 
-                                        title.includes('madeleine') || title.includes('beignet') || title.includes('chouquette') || 
-                                        title.includes('cupcake') || title.includes('galette') || title.includes('bûche') || 
-                                        title.includes('babka') || title.includes('croissant') || title.includes('crumble') || 
-                                        title.includes('clafoutis') || title.includes('pain d\'épices') || title.includes('charlotte');
-
-            const isDessertKeyword = title.includes('tiramisu') || title.includes('mousse') || title.includes('crème') || 
-                                     title.includes('compote') || title.includes('yaourt') || title.includes('panna cotta') || 
-                                     title.includes('salade de fruit') || title.includes('verrine') || title.includes('flan') || 
-                                     title.includes('crêpe') || title.includes('gaufre') || title.includes('pancake') || 
-                                     title.includes('entremets') || title.includes('soufflé') || title.includes('profiterole') || 
-                                     title.includes('churros') || title.includes('riz au lait') || title.includes('fondue') || 
-                                     title.includes('chocolat') || title.includes('caramel') || title.includes('praliné') || 
-                                     title.includes('fruit') || title.includes('pain perdu') || title.includes('pavlova') || 
-                                     title.includes('nougat');
-
-            let isPatisserie = false;
-            let isDessert = false;
-            
-            if (!isSavory && !isIceCream && !isBeverage) {
-                if (isPatisserieKeyword) {
-                    isPatisserie = true;
-                } else if (isDessertKeyword) {
-                    isDessert = true;
-                } else if (cat.includes('patisserie') || tags.includes('patisserie') || tags.includes('pâtisserie')) {
-                    isPatisserie = true;
-                } else if (cat.includes('dessert') || tags.includes('dessert') || title.includes('sucre')) {
-                    isDessert = true;
-                }
-            }
-
-            // Thèmes reconnus (normalisés en minuscules)
-            const thematicTagsList = ['noël', 'noel', 'pâques', 'paques', 'halloween', 'saint-valentin', 'ramadan'];
-            const foundThemeRaw = tags.find(t => thematicTagsList.includes(t));
-            // Normalisation : 'noel' → 'noël', 'paques' → 'pâques'
-            const foundTheme = foundThemeRaw === 'noel' ? 'noël'
-                             : foundThemeRaw === 'paques' ? 'pâques'
-                             : foundThemeRaw;
-
-            let finalCat = (recipe.category || 'Autres').toLowerCase();
-
-            // Détection automatique — priorité au champ category pour éviter les mauvais classements
-            if (isIceCream) finalCat = 'glaces';
-            else if (isBeverage) finalCat = 'boissons';
-            else if (isPatisserie) finalCat = 'patisseries';
-            else if (isDessert) finalCat = 'desserts';
-            // Priorité category pour entrees/aperitifs AVANT mots-clés plats
-            else if (cat === 'entrees' || cat === 'entrée') finalCat = 'entrees';
-            else if (cat === 'aperitifs' || cat === 'apéro') finalCat = 'aperitifs';
-            else if (isAccompagnement) finalCat = 'accompagnements';
-            else if (isPlat) finalCat = 'plats';
-            else if (isApero) finalCat = 'aperitifs';
-            else if (isEntree) finalCat = 'entrees';
-            else if (cat === 'simplissime') finalCat = 'simplissime';
-            else if (cat === 'italie') finalCat = 'restaurant';
-            else if (cat === 'restaurant') finalCat = 'restaurant';
+            let finalCat = cat;
+            if (cat === 'aperitifs' || cat === 'apéro' || tags.includes('apéro')) finalCat = 'aperitifs';
+            else if (cat === 'entrees' || cat === 'entrée' || tags.includes('entrée')) finalCat = 'entrees';
+            else if (cat === 'plats' || cat === 'plat' || tags.includes('plat')) finalCat = 'plats';
+            else if (cat === 'desserts' || cat === 'dessert' || tags.includes('dessert')) finalCat = 'desserts';
+            else if (cat === 'patisserie' || cat === 'pâtisserie' || tags.includes('patisserie')) finalCat = 'patisserie';
+            else if (cat === 'accompagnements' || cat === 'accompagnement' || tags.includes('accompagnement')) finalCat = 'accompagnements';
+            else if (cat === 'restaurant' || cat === 'italie' || title.includes('chef') || title.includes('resto') || tags.includes('restaurant')) finalCat = 'restaurant';
             else if (cat === 'vegetarien') finalCat = 'vegetarien';
 
-            // Push dans la catégorie principale
             if (!groups[finalCat]) groups[finalCat] = [];
             groups[finalCat].push(recipe);
 
-            // Push AUSSI dans la section thématique si un tag thématique est trouvé
             if (foundTheme && foundTheme !== finalCat) {
                 if (!groups[foundTheme]) groups[foundTheme] = [];
                 groups[foundTheme].push(recipe);
+            }
+            
+            // Groupe spécial pour toutes les thématiques
+            if (tags.some(t => themes.map(th => th.toLowerCase()).includes(t)) || tags.includes('thématiques')) {
+                if (!groups['thématiques']) groups['thématiques'] = [];
+                groups['thématiques'].push(recipe);
             }
         });
         return groups;
@@ -460,32 +229,117 @@ export default function Home() {
             .slice(0, 12);
     }, []);
 
-    const categories = ['aperitifs', 'entrees', 'plats', 'desserts', 'patisserie', 'restaurant', 'vegetarien'];
-    const categoryLabels: Record<string, string> = {
-        'aperitifs': 'Apéro Gourmand',
-        'entrees': 'Entrées Fraîches',
-        'plats': 'Plats de Chef',
-        'desserts': 'Douceurs Sucrées',
-        'glaces': 'Les Glaces',
-        'boissons': 'Rafraîchissements',
-        'simplissime': 'Simplissime',
-        'patisserie': 'Atelier de Pâtisserie',
-        'restaurant': 'Comme au Resto',
-        'vegetarien': 'Green & Healthy',
-        'noël': 'Spécial Noël 🎄',
-        'noel': 'Spécial Noël 🎄',
-        'pâques': 'Spécial Pâques 🐣',
-        'paques': 'Spécial Pâques 🐣',
-        'halloween': 'Frissons d\'Halloween 🎃',
-        'Autres': 'Le Reste du Monde'
-    };
-
     const thematicThemes = [
+        {
+            id: 'theme-airfryer',
+            title: "Airfryer",
+            description: 'La cuisine croustillante et saine.',
+            image: '/images/themes/airfryer.png',
+            category: 'plats',
+            tags: ['airfryer'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 5,
+            cookTime: 15,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-barbecue',
+            title: "Barbecue",
+            description: 'Le goût authentique de la braise.',
+            image: '/images/themes/barbecue.png',
+            category: 'plats',
+            tags: ['barbecue'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 10,
+            cookTime: 20,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-healthy',
+            title: "Healthy",
+            description: 'Manger bien, se sentir bien.',
+            image: '/images/themes/healthy.png',
+            category: 'vegetarien',
+            tags: ['healthy'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 10,
+            cookTime: 10,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-pas-cher',
+            title: "Pas Cher",
+            description: 'Cuisiner malin à petit prix.',
+            image: '/images/themes/pas-cher.png',
+            category: 'plats',
+            tags: ['pas cher'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 10,
+            cookTime: 15,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-express',
+            title: "Express",
+            description: 'Prêt en un clin d\'œil.',
+            image: '/images/themes/express.png',
+            category: 'plats',
+            tags: ['express'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 5,
+            cookTime: 5,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-famille',
+            title: "Famille",
+            description: 'Pour les grandes tablées.',
+            image: '/images/themes/famille.png',
+            category: 'plats',
+            tags: ['famille'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 15,
+            cookTime: 30,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-vege',
+            title: "Végé",
+            description: 'Le végétal à l\'honneur.',
+            image: '/images/themes/vegetarien.png',
+            category: 'vegetarien',
+            tags: ['vegetarien'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 15,
+            cookTime: 20,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
         {
             id: 'theme-easter-2024',
             title: 'Pâques est là',
             description: 'Un délicieux plat d\'agneau Pascal.',
-            image: 'images/themes/paques.jpg',
+            image: '/images/themes/paques.jpg',
             category: 'plats',
             tags: ['Pâques'],
             isFavorite: false,
@@ -500,7 +354,7 @@ export default function Home() {
             id: 'theme-xmas-2024',
             title: 'C\'est Noël',
             description: 'La magie des fêtes dans votre assiette.',
-            image: 'images/themes/noel.jpg',
+            image: '/images/themes/noel.jpg',
             category: 'plats',
             tags: ['Noël'],
             isFavorite: false,
@@ -515,7 +369,7 @@ export default function Home() {
             id: 'theme-glaces',
             title: 'Les Glaces',
             description: 'Une sélection de sorbets et glaces artisanales.',
-            image: 'images/themes/glaces.jpg',
+            image: '/images/themes/glaces.jpg',
             category: 'desserts',
             tags: ['glaces'],
             isFavorite: false,
@@ -530,7 +384,7 @@ export default function Home() {
             id: 'theme-refresh',
             title: 'Rafraîchissements',
             description: 'Des boissons fraîches pour tous les goûts.',
-            image: 'images/themes/rafraichissements.jpg',
+            image: '/images/themes/rafraichissements.jpg',
             category: 'boissons',
             tags: ['boissons'],
             isFavorite: false,
@@ -545,7 +399,7 @@ export default function Home() {
             id: 'theme-simplissime',
             title: 'Simplissime',
             description: 'Mini poivrons farcis à la grecque.',
-            image: 'images/themes/simplissime.jpg',
+            image: '/images/themes/simplissime.jpg',
             category: 'aperitifs',
             tags: ['simplissime'],
             isFavorite: false,
@@ -560,7 +414,7 @@ export default function Home() {
             id: 'theme-dolce-vita',
             title: 'La Dolce Vita',
             description: 'Boulettes de viandes ultra gourmandes.',
-            image: 'images/themes/dolce-vita.jpg',
+            image: '/images/themes/dolce-vita.jpg',
             category: 'plats',
             tags: ['italie'],
             isFavorite: false,
@@ -575,7 +429,7 @@ export default function Home() {
             id: 'theme-voila-lete',
             title: "Voilà l'Été ☀️",
             description: 'Les meilleures recettes estivales.',
-            image: 'images/themes/voila-lete.jpg',
+            image: '/images/themes/voila-lete.jpg',
             category: 'plats',
             tags: ['voila-lete'],
             isFavorite: false,
@@ -590,7 +444,7 @@ export default function Home() {
             id: 'theme-cest-lhiver',
             title: "C'est l'Hiver ❄️",
             description: 'Recettes chaleureuses pour les jours froids.',
-            image: 'images/themes/cest-lhiver.jpg',
+            image: '/images/themes/cest-lhiver.jpg',
             category: 'plats',
             tags: ['cest-lhiver'],
             isFavorite: false,
@@ -605,7 +459,7 @@ export default function Home() {
             id: 'theme-astuces',
             title: "Astuces 💡",
             description: 'Les petits secrets qui changent tout.',
-            image: 'images/themes/astuces.jpg',
+            image: '/images/themes/astuces.jpg',
             category: 'autres',
             tags: ['Astuces'],
             isFavorite: false,
@@ -620,7 +474,7 @@ export default function Home() {
             id: 'theme-sauces',
             title: "Sauces",
             description: '',
-            image: 'images/themes/sauces.png',
+            image: '/images/themes/sauces.png',
             category: 'sauces',
             tags: ['sauces'],
             isFavorite: false,
@@ -631,111 +485,6 @@ export default function Home() {
             ingredients: [],
             steps: []
         },
-        {
-            id: 'theme-healthy',
-            title: "Healthy",
-            description: '',
-            image: 'images/themes/healthy.png',
-            category: 'vegetarien',
-            tags: ['healthy'],
-            isFavorite: false,
-            difficulty: 'facile',
-            prepTime: 10,
-            cookTime: 10,
-            servings: 4,
-            ingredients: [],
-            steps: []
-        },
-        {
-            id: 'theme-airfryer',
-            title: "Airfryer",
-            description: '',
-            image: 'images/themes/airfryer.png',
-            category: 'plats',
-            tags: ['airfryer'],
-            isFavorite: false,
-            difficulty: 'facile',
-            prepTime: 5,
-            cookTime: 15,
-            servings: 4,
-            ingredients: [],
-            steps: []
-        },
-        {
-            id: 'theme-barbecue',
-            title: "Barbecue",
-            description: '',
-            image: 'images/themes/barbecue.png',
-            category: 'plats',
-            tags: ['barbecue'],
-            isFavorite: false,
-            difficulty: 'facile',
-            prepTime: 10,
-            cookTime: 20,
-            servings: 4,
-            ingredients: [],
-            steps: []
-        },
-        {
-            id: 'theme-pas-cher',
-            title: "Pas Cher",
-            description: '',
-            image: 'images/themes/pas-cher.png',
-            category: 'plats',
-            tags: ['pas cher'],
-            isFavorite: false,
-            difficulty: 'facile',
-            prepTime: 10,
-            cookTime: 15,
-            servings: 4,
-            ingredients: [],
-            steps: []
-        },
-        {
-            id: 'theme-express',
-            title: "Express",
-            description: '',
-            image: 'images/themes/express.png',
-            category: 'plats',
-            tags: ['express'],
-            isFavorite: false,
-            difficulty: 'facile',
-            prepTime: 5,
-            cookTime: 5,
-            servings: 4,
-            ingredients: [],
-            steps: []
-        },
-        {
-            id: 'theme-famille',
-            title: "Famille",
-            description: '',
-            image: 'images/themes/famille.png',
-            category: 'plats',
-            tags: ['famille'],
-            isFavorite: false,
-            difficulty: 'facile',
-            prepTime: 15,
-            cookTime: 30,
-            servings: 4,
-            ingredients: [],
-            steps: []
-        },
-        {
-            id: 'theme-vege',
-            title: "Végé",
-            description: '',
-            image: 'images/themes/vegetarien.png',
-            category: 'vegetarien',
-            tags: ['vegetarien'],
-            isFavorite: false,
-            difficulty: 'facile',
-            prepTime: 15,
-            cookTime: 20,
-            servings: 4,
-            ingredients: [],
-            steps: []
-        }
     ];
 
     return (
@@ -783,23 +532,27 @@ export default function Home() {
                             </div>
                         )}
                         {activeTags.length === 0 && (
-                            <>
-                                <RecipeCarousel
-                                    recipes={thematicThemes as any}
-                                    title="Thématiques du Moment"
-                                    size="large"
-                                    onTitleClick={handleCarouselTitleClick}
-                                    onCardClick={(recipe) => handleCarouselTitleClick(recipe.title)}
-                                />
-
-                                <RecipeCarousel
-                                    recipes={newRecipes}
-                                    title="Les Nouveautés"
-                                    size="small"
-                                    onTitleClick={handleCarouselTitleClick}
-                                />
-
-                                <div className={styles.sectionsContainer}>
+                            <div className={styles.sectionsContainer}>
+                                {categorizedRecipes['thématiques']?.length > 0 && (
+                                    <RecipeCarousel
+                                        recipes={[
+                                            { id: 't-main', title: 'Thématiques', image: '/images/categories/thematiques.jpg?v=5', tags: ['thématiques'] } as any,
+                                            ...thematicThemes
+                                        ]}
+                                        title="Thématiques du Moment"
+                                        compact={true}
+                                        onTitleClick={handleCarouselTitleClick}
+                                        onCardClick={(recipe) => handleCarouselTitleClick(recipe.title)}
+                                    />
+                                )}
+                                    {newRecipes.length > 0 && (
+                                        <RecipeCarousel
+                                            recipes={newRecipes}
+                                            title="Nouveautés"
+                                            size="small"
+                                            onTitleClick={handleCarouselTitleClick}
+                                        />
+                                    )}
                                     {categorizedRecipes['aperitifs']?.length > 0 && (
                                         <RecipeCarousel
                                             recipes={categorizedRecipes['aperitifs']}
@@ -824,14 +577,6 @@ export default function Home() {
                                             onTitleClick={handleCarouselTitleClick}
                                         />
                                     )}
-                                    {categorizedRecipes['accompagnements']?.length > 0 && (
-                                        <RecipeCarousel
-                                            recipes={categorizedRecipes['accompagnements']}
-                                            title="Accompagnements"
-                                            size="small"
-                                            onTitleClick={handleCarouselTitleClick}
-                                        />
-                                    )}
                                     {categorizedRecipes['desserts']?.length > 0 && (
                                         <RecipeCarousel
                                             recipes={categorizedRecipes['desserts']}
@@ -840,19 +585,26 @@ export default function Home() {
                                             onTitleClick={handleCarouselTitleClick}
                                         />
                                     )}
-                                    {categorizedRecipes['patisseries']?.length > 0 && (
+                                    {categorizedRecipes['patisserie']?.length > 0 && (
                                         <RecipeCarousel
-                                            recipes={categorizedRecipes['patisseries']}
+                                            recipes={categorizedRecipes['patisserie']}
                                             title="Pâtisseries"
                                             size="small"
                                             onTitleClick={handleCarouselTitleClick}
                                         />
                                     )}
+                                    {categorizedRecipes['restaurant']?.length > 0 && (
+                                        <RecipeCarousel
+                                            recipes={categorizedRecipes['restaurant']}
+                                            title="Comme au Resto"
+                                            size="small"
+                                            onTitleClick={handleCarouselTitleClick}
+                                        />
+                                    )}
                                 </div>
-                            </>
                         )}
 
-                        {filteredRecipes.length === 0 && (
+                        {filteredRecipes.length === 0 && ( activeTags.length > 0 ) && (
                             <div className={styles.noRecipes}>Aucune recette correspondante 🥣</div>
                         )}
                     </motion.div>

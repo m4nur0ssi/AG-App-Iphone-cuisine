@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: #A8E063; }
+  svg { width: 800px; height: 800px; }
+  .shadow { fill: rgba(0,0,0,0.1); }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A8E063;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#56AB2F;stop-opacity:1" />
+    </linearGradient>
+    <dropShadow id="shadow" dx="10" dy="10" stdDeviation="5" flood-opacity="0.2"/>
+  </defs>
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="40" />
+  <path d="M200 200 L400 400 L200 400 Z" fill="rgba(0,0,0,0.15)" />
+  
+  <!-- Avocado -->
+  <g transform="translate(150, 180) rotate(-15)">
+    <ellipse cx="0" cy="0" rx="45" ry="60" fill="#2E7D32" filter="url(#shadow)" />
+    <ellipse cx="0" cy="5" rx="35" ry="50" fill="#C5E1A5" />
+    <circle cx="0" cy="15" r="15" fill="#5D4037" />
+  </g>
+
+  <!-- Tomato -->
+  <g transform="translate(250, 220)">
+    <circle cx="0" cy="0" r="40" fill="#FF5252" filter="url(#shadow)" />
+    <path d="M-5 -45 L0 -35 L5 -45 Z" fill="#388E3C" />
+    <circle cx="-10" cy="-10" r="4" fill="rgba(255,255,255,0.3)" />
+  </g>
+
+  <!-- Leaf -->
+  <g transform="translate(260, 120) rotate(30)">
+    <path d="M0 0 Q20 -20 40 0 Q20 20 0 0" fill="#8BC34A" filter="url(#shadow)" />
+  </g>
+</svg>
+</body>
+</html>

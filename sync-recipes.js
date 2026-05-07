@@ -101,21 +101,24 @@ function extractRecipeData(post) {
         rawDescription.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim()
     ).substring(0, 250);
 
-    // Tags et pays
+    // Catégories WordPress (index 0) et Tags (index 1)
+    const wpCategories = post._embedded?.['wp:term']?.[0]?.map(c => c.name) || [];
     const tags = post._embedded?.['wp:term']?.[1]?.map(t => t.name) || [];
 
     // Catégorie
     const titleLower = decodeHtmlEntities(post.title.rendered).toLowerCase();
     const tagsLower  = tags.map(t => t.toLowerCase());
+    const wpCatsLower = wpCategories.map(c => c.toLowerCase());
 
     let category = 'plats';
-    if (tagsLower.some(t => ['glaces', 'sorbet'].includes(t))) category = 'glaces';
-    else if (tagsLower.some(t => ['boissons', 'cocktail'].includes(t))) category = 'boissons';
-    else if (tagsLower.some(t => ['apéro', 'apéritifs', 'aperitifs'].includes(t))) category = 'aperitifs';
-    else if (tagsLower.includes('entrées')) category = 'entrees';
-    else if (tagsLower.includes('plats')) category = 'plats';
-    else if (tagsLower.includes('desserts')) category = 'desserts';
-    else if (tagsLower.includes('pâtisserie')) category = 'patisserie';
+    if (tagsLower.some(t => ['glaces', 'sorbet'].includes(t)) || wpCatsLower.includes('glaces')) category = 'glaces';
+    else if (tagsLower.some(t => ['boissons', 'cocktail'].includes(t)) || wpCatsLower.includes('boissons')) category = 'boissons';
+    else if (tagsLower.some(t => ['apéro', 'apéritifs', 'aperitifs'].includes(t)) || wpCatsLower.some(c => c.includes('apéro') || c.includes('aperitif'))) category = 'aperitifs';
+    else if (tagsLower.includes('entrées') || wpCatsLower.includes('entrées') || wpCatsLower.includes('entrée')) category = 'entrees';
+    else if (tagsLower.includes('restaurant') || tagsLower.includes('resto') || wpCatsLower.some(c => c.includes('restaurant') || c.includes('resto'))) category = 'restaurant';
+    else if (tagsLower.includes('plats') || wpCatsLower.includes('plats') || wpCatsLower.includes('plat')) category = 'plats';
+    else if (tagsLower.includes('desserts') || wpCatsLower.includes('desserts')) category = 'desserts';
+    else if (tagsLower.includes('pâtisserie') || wpCatsLower.includes('pâtisserie')) category = 'patisserie';
     else if (titleLower.includes('glace') || titleLower.includes('sorbet')) category = 'glaces';
     else if (titleLower.includes('cocktail') || titleLower.includes('boisson')) category = 'boissons';
     else if (['gâteau', 'cake', 'tarte', 'cookie', 'tiramisu', 'mousse', 'chocolat'].some(k => titleLower.includes(k))) category = 'desserts';

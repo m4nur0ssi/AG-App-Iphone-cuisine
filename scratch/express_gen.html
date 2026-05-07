@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: #FDFC47; }
+  svg { width: 800px; height: 800px; }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDFC47;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#24FE41;stop-opacity:1" />
+    </linearGradient>
+    <dropShadow id="shadow" dx="10" dy="10" stdDeviation="5" flood-opacity="0.2"/>
+  </defs>
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="40" />
+  <path d="M200 200 L400 400 L200 400 Z" fill="rgba(0,0,0,0.15)" />
+
+  <!-- Clock -->
+  <circle cx="200" cy="150" r="80" fill="#FFF" filter="url(#shadow)" />
+  <circle cx="200" cy="150" r="70" fill="none" stroke="#333" stroke-width="5" />
+  <line x1="200" y1="150" x2="200" y2="100" stroke="#FF3B30" stroke-width="6" stroke-linecap="round" /> <!-- Minute hand -->
+  <line x1="200" y1="150" x2="240" y2="150" stroke="#333" stroke-width="8" stroke-linecap="round" /> <!-- Hour hand -->
+  
+  <!-- Speed Lines -->
+  <line x1="50" y1="100" x2="100" y2="100" stroke="#333" stroke-width="4" opacity="0.3" />
+  <line x1="40" y1="130" x2="90" y2="130" stroke="#333" stroke-width="4" opacity="0.3" />
+  <line x1="60" y1="160" x2="110" y2="160" stroke="#333" stroke-width="4" opacity="0.3" />
+  
+  <!-- Steaming Plate -->
+  <rect x="120" y="280" width="160" height="15" rx="7" fill="#E5E5EA" filter="url(#shadow)" />
+  <path d="M180 270 Q190 250 200 270 T220 270" fill="none" stroke="#FFF" stroke-width="3" opacity="0.6" />
+</svg>
+</body>
+</html>
