@@ -1,17 +1,8 @@
 {
-<<<<<<< Updated upstream
   "lastSync": "2026-05-07T11:47:14.579Z",
   "totalRecipes": 217,
   "trigger": "repository_dispatch",
   "mode": "recent",
   "status": "success",
   "ts": 1778154434
-=======
-  "lastSync": "2026-05-07T09:49:26.479Z",
-  "totalRecipes": 215,
-  "trigger": "local",
-  "mode": "recent",
-  "status": "success",
-  "ts": 1778147366
->>>>>>> Stashed changes
 }
