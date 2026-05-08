@@ -453,13 +453,11 @@
    ===================================================== */
 .tabContent {
     flex: 1;
-    overflow-y: auto;
-    overflow-x: hidden;
+    /* On retire l'overflow-y auto pour laisser la page scroller naturellement sur mobile */
+    overflow: visible;
     -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: var(--glass-border) transparent;
     animation: tabFadeIn 0.2s ease-out;
+    will-change: transform, opacity;
 }
 
 .tabContent::-webkit-scrollbar {
@@ -638,6 +636,7 @@
     animation: ingredientSlideIn 0.5s ease-out both;
     min-height: 180px;
     justify-content: flex-start;
+    will-change: transform;
 }
 
 .ingredientCard:hover {
@@ -812,6 +811,7 @@
     cursor: pointer;
     transition: border-color 0.2s ease, background 0.2s ease, opacity 0.3s ease;
     animation: stepSlideIn 0.3s ease-out both;
+    will-change: transform;
 }
 
 .modal {

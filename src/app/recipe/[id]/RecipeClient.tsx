@@ -163,7 +163,10 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
     const switchTab = (tab: TabId) => {
         setPrevTab(activeTab);
         setActiveTab(tab);
-        if (tabContentRef.current) tabContentRef.current.scrollTop = 0;
+        // On remonte un peu pour voir le début du contenu si on est déjà descendu
+        if (typeof window !== 'undefined') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     };
 
     const toggleStep = (index: number) => {
