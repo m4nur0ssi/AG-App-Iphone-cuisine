@@ -1,8 +1,8 @@
 {
-  "lastSync": "2026-05-08T21:04:38.120Z",
-  "totalRecipes": 220,
+  "lastSync": "2026-05-09T08:23:36.898Z",
+  "totalRecipes": 221,
   "trigger": "workflow_dispatch",
   "mode": "recent",
   "status": "success",
-  "ts": 1778274278
+  "ts": 1778315016
 }
