@@ -2,11 +2,77 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/05/2026 14:32:26
+ * Dernière mise à jour: 11/05/2026 14:39:27
  * Total: 241 recettes
  */
-export const exportSyncId = "1778509946327";
+export const exportSyncId = "1778510367056";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5293",
+        "title": "Rösti au saumon",
+        "description": "Le rösti au saumon pour un brunch ou juste avec une salade c'est toujours un régal !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frosti.jpg&v=1778517128000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7324641790273867041\" data-video-id=\"7324641790273867041\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7324641790273867041\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n 4 pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🐟\n 4 tranches de saumon fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 2 gros œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Ciboulette"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Fromage frais type Philadelphia ou Saint Moret"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n 1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n 1 citron bio non traité"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel, poivre"
+            }
+        ],
+        "steps": [
+            "Éplucher et raper les pommes de terre. Dans un torchon propre déposer les pommes de terre et presser pour retirer l'excédent d'eau. Émincer l'oignon et écraser l'ail.",
+            "Mélanger les pommes de terre râpées, l'oignon, l'ail, le sel, le poivre, le paprika et les œufs. Dans une poêle bien chaude et huilée, former une galette. Cuire 7 à 10 minutes par face. Retourner à l'aide d'une assiette.",
+            "Fouetter le fromage frais avec le jus d'un demi citron. Étaler ce mélange sur le rösti, déposer des tranches de saumon, de la ciboulette ciselée, du jus de citron et quelques zestes de citron 🍋 C'est prêt !"
+        ],
+        "tags": [
+            "Healthy",
+            "Simplissime"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5299",
         "title": "Spaghettis aux crevettes et tomates cerises",
@@ -1237,75 +1303,10 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "5293",
-        "title": "Rösti au saumon",
-        "description": "Le rösti au saumon pour un brunch ou juste avec une salade c'est toujours un régal !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7324641790273867041\" data-video-id=\"7324641790273867041\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7324641790273867041\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍎\n             4 pommes de terre"
-            },
-            {
-                "quantity": "",
-                "name": "🐟\n             4 tranches de saumon fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             2 gros œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Ciboulette"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fromage frais type Philadelphia ou Saint Moret"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1 citron bio non traité"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel, poivre"
-            }
-        ],
-        "steps": [
-            "Éplucher et raper les pommes de terre. Dans un torchon propre déposer les pommes de terre et presser pour retirer l'excédent d'eau. Émincer l'oignon et écraser l'ail.",
-            "Mélanger les pommes de terre râpées, l'oignon, l'ail, le sel, le poivre, le paprika et les œufs. Dans une poêle bien chaude et huilée, former une galette. Cuire 7 à 10 minutes par face. Retourner à l'aide d'une assiette.",
-            "Fouetter le fromage frais avec le jus d'un demi citron. Étaler ce mélange sur le rösti, déposer des tranches de saumon, de la ciboulette ciselée, du jus de citron et quelques zestes de citron 🍋 C'est prêt !"
-        ],
-        "tags": [
-            "Simplissime"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "5290",
         "title": "Melanzane ripiene",
         "description": "Tradition, famille et saveurs d'Italie. Des aubergines farcies à la viande hachée et au fromage, accompagnées d&rsquo;une sauce tomate.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778327684248.jpg&v=1778334914000",
+        "image": "/images/recipe-placeholder.jpg",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
