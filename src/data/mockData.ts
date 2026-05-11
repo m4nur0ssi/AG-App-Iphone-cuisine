@@ -2,11 +2,71 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/05/2026 14:39:27
- * Total: 241 recettes
+ * Dernière mise à jour: 11/05/2026 16:15:39
+ * Total: 242 recettes
  */
-export const exportSyncId = "1778510367056";
+export const exportSyncId = "1778516139402";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5414",
+        "title": "Tiramisu croustillant façon Magnum",
+        "description": "Découvrez une recette ultra simple de tiramisu croustillant façon Magnum, inspirée de la pâtisserie. Ce dessert chic combine l&rsquo;intensité du chocolat avec la douceur fondante du tiramisu, offrant une texture croquante à l&rsquo;extérieur et fond",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778515910198.jpg&v=1778523126000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7549959886512164118\" data-video-id=\"7549959886512164118\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7549959886512164118\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             3 jaunes d&rsquo;œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             60 g de sucre en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             250 g de mascarpone (ramolli à température ambiante)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             100 g de chocolat noir fondu"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             150 ml de crème liquide entière (35 % MG, non sucrée)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Biscuits à la cuillère (env. 12)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             150 ml de café fort refroidi"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             200 g de chocolat noir (pour le glaçage croustillant)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             40 g d&rsquo;huile de coco (pour le glaçage croustillant)"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Italie",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5293",
         "title": "Rösti au saumon",
