@@ -2,10 +2,10 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/05/2026 13:35:50
+ * Dernière mise à jour: 11/05/2026 13:42:32
  * Total: 245 recettes
  */
-export const exportSyncId = "1778506550825";
+export const exportSyncId = "1778506952302";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5332",
@@ -86,7 +86,7 @@ export const mockRecipes: Recipe[] = [
         "id": "5335",
         "title": "Pates butternut et lardons grillés",
         "description": "Une recette réconfortante de pâtes aux perles, nappées d&rsquo;une onctueuse crème de butternut, agrémentées de lardons grillés et d&rsquo;oignons caramélisés. Parfait pour l&rsquo;automne ou l&rsquo;hiver.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778345868638.jpg&v=1778513342000",
+        "image": "/images/recipe-placeholder.jpg",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
