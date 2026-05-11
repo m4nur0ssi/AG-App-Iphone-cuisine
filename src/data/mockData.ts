@@ -2,11 +2,125 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/05/2026 14:05:00
- * Total: 244 recettes
+ * Dernière mise à jour: 11/05/2026 14:11:01
+ * Total: 242 recettes
  */
-export const exportSyncId = "1778508300674";
+export const exportSyncId = "1778508661571";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5314",
+        "title": "Boulettes de poulet à la crème forestière, purée maison",
+        "description": "Découvrez une recette réconfortante de boulettes de poulet moelleuses, mijotées dans une onctueuse sauce forestière aux champignons, accompagnées d&rsquo;une purée de pommes de terre maison. Un plat idéal pour les repas en famille.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fboulettes.jpg&v=1778515585000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7598974664089832706\" data-video-id=\"7598974664089832706\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7598974664089832706\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n 600 g d'escalopes de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n ½ oignon (pour les boulettes)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 2 gousses d'ail (pour les boulettes)"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n Chapelure"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Piment (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Persil séché"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n 1 oignon (pour la sauce)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 2 gousses d'ail (pour la sauce)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 200 g de champignons frais"
+            },
+            {
+                "quantity": "",
+                "name": "🍗\n 1 verre de bouillon de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 1 briquette de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Persil frais"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n 1,2 kg de pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 100 g de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 40 g de beurre"
+            }
+        ],
+        "steps": [
+            "Mixer finement le poulet.",
+            "Ajouter le ½ oignon et l'ail hachés au poulet mixé.",
+            "Incorporer sel, poivre, paprika, piment (facultatif) et persil séché.",
+            "Ajouter un peu de chapelure jusqu'à obtenir une farce qui se tient.",
+            "Former des boulettes.",
+            "Faire dorer les boulettes dans une poêle avec un filet d'huile jusqu'à belle coloration, puis réserver.",
+            "Dans la même poêle, faire revenir l'oignon émincé.",
+            "Ajouter l'ail, puis les champignons coupés.",
+            "Laisser cuire jusqu'à évaporation de l'eau des champignons.",
+            "Verser le bouillon de poulet et laisser réduire légèrement.",
+            "Ajouter la crème, saler et poivrer.",
+            "Remettre les boulettes dans la sauce et laisser mijoter 10 minutes à feu doux.",
+            "Parsemer de persil frais en fin de cuisson.",
+            "Éplucher et couper les pommes de terre.",
+            "Faire cuire les pommes de terre à la vapeur ou dans de l'eau salée.",
+            "Égoutter les pommes de terre, puis les écraser ou les passer au presse-purée.",
+            "Incorporer le beurre puis le lait chaud aux pommes de terre écrasées.",
+            "Rectifier le sel et mélanger jusqu'à obtenir une purée bien lisse.",
+            "Disposer la purée dans l'assiette, ajouter les boulettes nappées de sauce forestière et déguster."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "France"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5317",
         "title": "Pommes de terre rôties aux herbes",
@@ -994,304 +1108,6 @@ export const mockRecipes: Recipe[] = [
             "Pas cher",
             "pâtisserie",
             "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5314",
-        "title": "Boulettes de poulet à la crème forestière, purée maison",
-        "description": "Découvrez une recette réconfortante de boulettes de poulet moelleuses, mijotées dans une onctueuse sauce forestière aux champignons, accompagnées d&rsquo;une purée de pommes de terre maison. Un plat idéal pour les repas en famille.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7598974664089832706\" data-video-id=\"7598974664089832706\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7598974664089832706\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             600 g d'escalopes de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             ½ oignon (pour les boulettes)"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 gousses d'ail (pour les boulettes)"
-            },
-            {
-                "quantity": "",
-                "name": "🥖\n             Chapelure"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Piment (facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil séché"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon (pour la sauce)"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 gousses d'ail (pour la sauce)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             200 g de champignons frais"
-            },
-            {
-                "quantity": "",
-                "name": "🍗\n             1 verre de bouillon de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             1 briquette de crème liquide"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil frais"
-            },
-            {
-                "quantity": "",
-                "name": "🍎\n             1,2 kg de pommes de terre"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             100 g de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             40 g de beurre"
-            }
-        ],
-        "steps": [
-            "Mixer finement le poulet.",
-            "Ajouter le ½ oignon et l'ail hachés au poulet mixé.",
-            "Incorporer sel, poivre, paprika, piment (facultatif) et persil séché.",
-            "Ajouter un peu de chapelure jusqu'à obtenir une farce qui se tient.",
-            "Former des boulettes.",
-            "Faire dorer les boulettes dans une poêle avec un filet d'huile jusqu'à belle coloration, puis réserver.",
-            "Dans la même poêle, faire revenir l'oignon émincé.",
-            "Ajouter l'ail, puis les champignons coupés.",
-            "Laisser cuire jusqu'à évaporation de l'eau des champignons.",
-            "Verser le bouillon de poulet et laisser réduire légèrement.",
-            "Ajouter la crème, saler et poivrer.",
-            "Remettre les boulettes dans la sauce et laisser mijoter 10 minutes à feu doux.",
-            "Parsemer de persil frais en fin de cuisson.",
-            "Éplucher et couper les pommes de terre.",
-            "Faire cuire les pommes de terre à la vapeur ou dans de l'eau salée.",
-            "Égoutter les pommes de terre, puis les écraser ou les passer au presse-purée.",
-            "Incorporer le beurre puis le lait chaud aux pommes de terre écrasées.",
-            "Rectifier le sel et mélanger jusqu'à obtenir une purée bien lisse.",
-            "Disposer la purée dans l'assiette, ajouter les boulettes nappées de sauce forestière et déguster."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "France"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5311",
-        "title": "Flatbread au poulet au beurre",
-        "description": "Découvrez comment préparer de délicieux pains plats garnis d&rsquo;une garniture crémeuse au poulet au beurre et au fromage. Parfaits pour un repas savoureux, ces pains peuvent être cuits à la poêle ou au four.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7597834018301791510\" data-video-id=\"7597834018301791510\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7597834018301791510\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧈\n             25 g de beurre non salé"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             20 ml d&rsquo;huile de tournesol"
-            },
-            {
-                "quantity": "",
-                "name": "🍗\n             600 g de cuisses de poulet, coupées en dés"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             5 g de garam masala (1⅔ c. à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             2 g de coriandre moulue (⅔ c. à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             2 g de cumin moulu (⅔ c. à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             3 g de poudre d&rsquo;ail (1 c. à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             4 g de poudre d&rsquo;oignon (1⅓ c. à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             2 g de piment de Cayenne (⅔ c. à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             30 g de pâte de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             50 ml d&rsquo;eau"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             100 ml de crème épaisse"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             15 g de miel"
-            },
-            {
-                "quantity": "",
-                "name": "🍗\n             1 cube de bouillon de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             100 g de fromage râpé (Gouda)"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             350 g de farine tout usage"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             50 g de fromage frais aux herbes"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             4 g de sel (⅔ c. à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             6 g de levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             170 ml d&rsquo;eau"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Tranches de fromage supplémentaires"
-            }
-        ],
-        "steps": [
-            "Faites chauffer le beurre et l&rsquo;huile de tournesol dans une poêle à fond épais à feu moyen-vif.",
-            "Ajoutez les cuisses de poulet, le garam masala, la coriandre moulue, le cumin moulu, la poudre d&rsquo;ail, la poudre d&rsquo;oignon et le piment de Cayenne. Faites frire pendant 5 à 6 minutes.",
-            "Ajoutez la pâte de tomate, l&rsquo;eau, la crème et le miel. Mélangez bien et laissez mijoter pendant 5 à 7 minutes jusqu&rsquo;à ce que la sauce épaississe légèrement.",
-            "Émiettez le cube de bouillon de poulet dans la poêle.",
-            "Ajoutez le fromage râpé et remuez jusqu&rsquo;à obtenir une consistance crémeuse. Retirez du feu et laissez le mélange de poulet refroidir complètement.",
-            "Dans un grand bol, placez la farine, la levure chimique, le fromage frais aux herbes, le sel et l&rsquo;eau. Pétrissez pendant 10 à 12 minutes jusqu&rsquo;à obtenir une pâte lisse.",
-            "Couvrez et laissez la pâte reposer pendant 10 minutes.",
-            "Divisez la pâte en 8 morceaux égaux d&rsquo;environ 70 g chacun et formez des boules.",
-            "Abaissez une boule de pâte en un cercle. Placez une tranche de fromage sur une moitié et étalez environ 90 g du mélange de poulet par-dessus.",
-            "Humidifiez légèrement les bords, pliez la pâte pour la fermer et pressez fermement les bords pour sceller.",
-            "Placez la pâte farcie sur une feuille de papier sulfurisé.",
-            "Faites chauffer une poêle à fond épais avec un peu d&rsquo;huile. Faites cuire les pains à feu moyen-vif jusqu&rsquo;à ce qu&rsquo;ils soient dorés et cuits des deux côtés.",
-            "Conseil : Vous pouvez également cuire ces pains au four. Préchauffez le four à 200°C (390°F) et faites cuire pendant 15 à 20 minutes (badigeonnez d&rsquo;huile ou de beurre)."
-        ],
-        "tags": [
-            "Asie",
-            "Orient"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5308",
-        "title": "Tortilla de viande hachée",
-        "description": "Une recette en moins de 10min simple et hyper gourmande.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778334587433.jpg&v=1778341812000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7218519033975524614\" data-video-id=\"7218519033975524614\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7218519033975524614\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             environ 500gr de viande hachée"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon coupé en cubes"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             cumin"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             de l'ail en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             un mélange de persil et de coriandre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             3 galette de tortilla"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             mozzarella râpé"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "express",
-            "Mexique"
         ],
         "isFeatured": false,
         "isFavorite": false,
