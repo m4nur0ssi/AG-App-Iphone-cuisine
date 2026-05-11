@@ -2,11 +2,95 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/05/2026 14:28:49
+ * Dernière mise à jour: 11/05/2026 14:32:26
  * Total: 241 recettes
  */
-export const exportSyncId = "1778509729610";
+export const exportSyncId = "1778509946327";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5299",
+        "title": "Spaghettis aux crevettes et tomates cerises",
+        "description": "Une recette facile de pâtes aux crevettes, sans crème, avec des tomates cerises, de l&rsquo;ail et une touche de citron pour un plat savoureux et léger.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fcrevette.jpeg&v=1778516941000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7326930682444270881\" data-video-id=\"7326930682444270881\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7326930682444270881\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n 4 tbsp olive oil"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 350g shrimp"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 2 cloves of garlic"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1/2 pepper (red)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 100g cherry tomatoes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 15g butter"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Parsley"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Juice 1/2 lemon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 250g pasta"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 2 ladles of pasta water"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Salt"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Pepper"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sweet paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Chili"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Gouda"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Healthy",
+            "Italie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5305",
         "title": "Frites d'avocat",
@@ -1147,90 +1231,6 @@ export const mockRecipes: Recipe[] = [
             "Pas cher",
             "pâtisserie",
             "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5299",
-        "title": "EASY Shrimp Pasta without Cream",
-        "description": "Une recette facile de pâtes aux crevettes, sans crème, avec des tomates cerises, de l&rsquo;ail et une touche de citron pour un plat savoureux et léger.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7326930682444270881\" data-video-id=\"7326930682444270881\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7326930682444270881\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             4 tbsp olive oil"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             350g shrimp"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 cloves of garlic"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1/2 pepper (red)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             100g cherry tomatoes"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             15g butter"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Parsley"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Juice 1/2 lemon"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             250g pasta"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 ladles of pasta water"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Salt"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pepper"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sweet paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Chili"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Gouda"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Healthy",
-            "Italie"
         ],
         "isFeatured": false,
         "isFavorite": false,
