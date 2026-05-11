@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/05/2026 13:11:39
+ * Dernière mise à jour: 11/05/2026 13:16:07
  * Total: 245 recettes
  */
-export const exportSyncId = "1778505099695";
+export const exportSyncId = "1778505367269";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5350",
-        "title": "Délice de viande au mangal",
+        "title": "Steack haché garni au fromage",
         "description": "Une recette simple et rapide de viande grillée, parfaite pour le mangal. C&rsquo;est un plat savoureux et sans complications.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fune-assiette-reconfortante-illustrant-lalliance-gourmande-entre-viande-et-fromage-fondant.jpg&v=1778512106000",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fune-assiette-reconfortante-illustrant-lalliance-gourmande-entre-viande-et-fromage-fondant.jpg&v=1778512237000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -309,7 +309,7 @@ export const mockRecipes: Recipe[] = [
         "id": "5344",
         "title": "Apple Crumble Cake",
         "description": "Un délicieux gâteau moelleux garni de pommes fondantes à la cannelle et surmonté d&rsquo;un crumble croustillant. Parfait pour un dessert gourmand.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778413122130.jpg&v=1778420347000",
+        "image": "/images/recipe-placeholder.jpg",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 15,
