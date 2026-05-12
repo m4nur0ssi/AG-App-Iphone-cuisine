@@ -2,46 +2,46 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/05/2026 15:02:31
+ * Dernière mise à jour: 12/05/2026 15:48:24
  * Total: 258 recettes
  */
-export const exportSyncId = "1778598151424";
+export const exportSyncId = "1778600904733";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5463",
         "title": "Crème brûlée à la pistache",
         "description": "Pour tous les fans de pistache, cette crème brûlée est un incontournable ! N&rsquo;hésitez plus, essayez cette recette simple et rapide, vous ne le regretterez pas. Un grand pâtissier l&rsquo;a dit : l&rsquo;essayer, c&rsquo;est l&rsquo;adopter !",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778597756825.jpg&v=1778604998000",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fcreme-brulee-pistache-A1.jpg&v=1778607886000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7424555202889469217\" data-video-id=\"7424555202889469217\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7424555202889469217\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7424555202889469217\" data-video-id=\"7424555202889469217\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7424555202889469217\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🥚\n             3 jaunes d'œufs"
+                "name": "🥚\n 3 jaunes d'œufs"
             },
             {
                 "quantity": "",
-                "name": "🍯\n             50 g de sucre"
+                "name": "🍯\n 50 g de sucre"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             20 g de pâte de pistache"
+                "name": "🥣\n 20 g de pâte de pistache"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             45 cl de crème liquide"
+                "name": "🥛\n 45 cl de crème liquide"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             Cassonade (pour la finition)"
+                "name": "🥣\n Cassonade (pour la finition)"
             },
             {
                 "quantity": "",
-                "name": "🥜\n             Pistaches concassées (pour la finition)"
+                "name": "🥜\n Pistaches concassées (pour la finition)"
             }
         ],
         "steps": [
