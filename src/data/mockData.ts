@@ -2,11 +2,163 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/05/2026 08:52:13
- * Total: 247 recettes
+ * Dernière mise à jour: 12/05/2026 08:59:42
+ * Total: 249 recettes
  */
-export const exportSyncId = "1778575933225";
+export const exportSyncId = "1778576382830";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5436",
+        "title": "Flan vanille grillée",
+        "description": "Recette de flan vanille grillée pour un cercle de 20cm, avec une pâte sucrée vanille maison.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778576084095.jpg&v=1778583334000",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7549604756398935318\" data-video-id=\"7549604756398935318\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7549604756398935318\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             770 gr de lait entier"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             5 gousses de vanille (ou vanille épuisée)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             155 gr de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             175 gr de jaunes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             65 gr de maïzena"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             220 gr de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             110 gr de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             250 gr de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             150 gr de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             85 gr de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             40 gr de poudre d'amandes"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 gousse de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de fleur de sel"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "France",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5433",
+        "title": "Upside Down Berry Cake",
+        "description": "Une recette facile de gâteau aux baies mélangées, parfait pour une séance de pâtisserie réconfortante ou pour les fêtes de Noël.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778575861692.jpg&v=1778583110000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7570400527855504662\" data-video-id=\"7570400527855504662\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7570400527855504662\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             4 eggs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cup sugar"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cup milk"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cup oil"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 1/2 cups flour (500ml)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             5g vanilla powder or a dash of vanilla extract"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             10g baking powder"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             frozen mixed berries"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             lemon zest"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             half a lemon juiced"
+            }
+        ],
+        "steps": [
+            "Préchauffer le four à 180C.",
+            "Battre les œufs et le sucre jusqu&rsquo;à obtenir une consistance mousseuse.",
+            "Ajouter tous les ingrédients liquides.",
+            "Ajouter ensuite tous les ingrédients secs.",
+            "Ajouter les baies choisies (j&rsquo;ai utilisé des baies mélangées surgelées) dans un moule à pâtisserie rond + ajouter du sucre.",
+            "Ajouter ensuite la pâte en s&rsquo;assurant qu&rsquo;elle couvre toutes les baies.",
+            "Cuire au four pendant 50-55 minutes.",
+            "Une fois refroidi, saupoudrer de sucre glace (facultatif)."
+        ],
+        "tags": [
+            "Noël",
+            "Pas cher",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5430",
         "title": "Le Paris-Brest",
