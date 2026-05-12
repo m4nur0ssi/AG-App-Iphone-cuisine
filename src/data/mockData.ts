@@ -2,11 +2,63 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/05/2026 15:55:01
+ * Dernière mise à jour: 12/05/2026 16:02:04
  * Total: 258 recettes
  */
-export const exportSyncId = "1778601301544";
+export const exportSyncId = "1778601724454";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5454",
+        "title": "Crème de Fraises",
+        "description": "Une recette simple et rapide pour préparer une délicieuse crème de fraises, parfaite pour un dessert ou une pâtisserie.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2FCrC3A8me-C3A0-la-vanille-et-aux-fraises.jpeg&v=1778608412000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7362477728659967265\" data-video-id=\"7362477728659967265\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7362477728659967265\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍓\n 220g de Fraises"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n 1/2 citron"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 120g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 100g de Beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 2 feuilles de gélatine (ou agar agar)"
+            },
+            {
+                "quantity": "",
+                "name": "🍓\n Quelques fraises (pour la décoration ou le service)"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Desserts",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5460",
         "title": "Crème chocolat",
@@ -177,62 +229,10 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "5454",
-        "title": "Crème de Fraises",
-        "description": "Une recette simple et rapide pour préparer une délicieuse crème de fraises, parfaite pour un dessert ou une pâtisserie.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7362477728659967265\" data-video-id=\"7362477728659967265\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7362477728659967265\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍓\n             220g de Fraises"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1/2 citron"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             120g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             100g de Beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             3 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 feuilles de gélatine (ou agar agar)"
-            },
-            {
-                "quantity": "",
-                "name": "🍓\n             Quelques fraises (pour la décoration ou le service)"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Desserts",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "5451",
         "title": "Mousse au chocolat 1 seul ingrédient",
         "description": "Une recette de mousse au chocolat étonnamment simple, ne nécessitant que du chocolat et de l&rsquo;eau pour un dessert rapide et facile, idéal pour les étudiants ou les envies de dernière minute.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778587905331.jpg&v=1778595125000",
+        "image": "/images/recipe-placeholder.jpg",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
