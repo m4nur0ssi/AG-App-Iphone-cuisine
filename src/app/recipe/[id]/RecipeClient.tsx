@@ -17,7 +17,7 @@ import { parseDuration, stripHtml } from '@/lib/timer-utils';
 import SmartText from '@/components/SmartText/SmartText';
 import MagicConverter from '@/components/MagicConverter/MagicConverter';
 import SplitTitle from '@/components/SplitTitle/SplitTitle';
-import { getIngredientVisual } from '@/lib/ingredient-utils';
+import { getIngredientVisual, translateIngredientName } from '@/lib/ingredient-utils';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './page.module.css';
 
@@ -136,6 +136,7 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
 
     const minSwipeDistance = 50;
     const maxVerticalDiff = 50;
+    const minVerticalDistance = 100; // Distance minimum pour un swipe vertical
 
     const onTouchStart = (e: React.TouchEvent) => {
         touchEnd.current = null;
@@ -149,8 +150,19 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
     const onTouchEnd = () => {
         if (!touchStart.current || !touchEnd.current) return;
         const distanceX = touchStart.current.x - touchEnd.current.x;
-        const distanceY = Math.abs(touchStart.current.y - touchEnd.current.y);
-        if (distanceY > maxVerticalDiff || Math.abs(distanceX) < minSwipeDistance) return;
+        const distanceY = touchStart.current.y - touchEnd.current.y; // Positif si on scroll vers le bas
+        const absMoveY = Math.abs(distanceY);
+        const absMoveX = Math.abs(distanceX);
+
+        // Détecte un swipe vers le bas (ferme la page)
+        if (distanceY > minVerticalDistance && absMoveX < 30) {
+            triggerHaptic();
+            router.back();
+            return;
+        }
+
+        // Swipe horizontal traditionnel (pour naviguer entre recettes)
+        if (absMoveY > maxVerticalDiff || absMoveX < minSwipeDistance) return;
         if (distanceX > minSwipeDistance && nextId) {
             triggerHaptic(); setSlideDirection('left'); setIsNavigating(true);
             setTimeout(() => router.push(`/recipe/${nextId}`), 250);
@@ -348,15 +360,22 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                         <div className={styles.tabContent} ref={tabContentRef}>
                             {activeTab === 'ingredients' && (
                                 <div className={styles.ingredientsList}>
-                                    {recipe.ingredients.map((ing, i) => (
-                                        <div key={i} className={`${styles.ingredientCard} ${checkedIngredients[i] ? styles.ingredientDone : ''}`} onClick={() => toggleIngredient(i)}>
-                                            <div className={styles.ingIconWrap}>{getIngredientVisual(ing.name) || '🥗'}</div>
-                                            <div className={styles.ingInfo}>
-                                                <span className={styles.ingQty}>{scaleQuantity(ing.quantity || '', ratio)}</span>
-                                                <span className={styles.ingName}>{ing.name}</span>
+                                    {recipe.ingredients.map((ing, i) => {
+                                        const visual = ing.image || getIngredientVisual(ing.name);
+                                        const displayName = translateIngredientName(ing.name);
+                                        const displayQty = translateIngredientName(scaleQuantity(ing.quantity || '', ratio));
+                                        return (
+                                            <div key={i} className={`${styles.ingredientCard} ${checkedIngredients[i] ? styles.ingredientDone : ''}`} onClick={() => toggleIngredient(i)}>
+                                                <div className={styles.ingIconWrap}>
+                                                    <IngredientImg src={visual} name={ing.name} />
+                                                </div>
+                                                <div className={styles.ingInfo}>
+                                                    <span className={styles.ingQty}>{displayQty}</span>
+                                                    <span className={styles.ingName}>{displayName}</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    ))}
+                                        );
+                                    })}
                                     <button className={styles.copyBtn} onClick={copyIngredients}>Ajouter au panier 🛒</button>
                                 </div>
                             )}
@@ -398,5 +417,65 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                 )}
             </AnimatePresence>
         </>
+    );
+}
+
+/**
+ * Affiche une image d'ingrédient avec fallback emoji si erreur
+ */
+function IngredientImg({ src, name }: { src: string | null; name: string }) {
+    const [errored, setErrored] = useState(false);
+
+    // Pick a smart fallback emoji based on the name
+    const fallbackEmoji = (() => {
+        const n = (name || '').toLowerCase();
+        if (n.includes('miel') || n.includes('honey')) return '🍯';
+        if (n.includes('poivron') || n.includes('pepper bell')) return '🫑';
+        if (n.includes('herbe') || n.includes('aneth') || n.includes('basilic') || n.includes('basil') || n.includes('persil') || n.includes('parsley')) return '🌿';
+        if (n.includes('fromage') || n.includes('cheese') || n.includes('mascarpone') || n.includes('feta') || n.includes('comté')) return '🧀';
+        if (n.includes('viande') || n.includes('boeuf') || n.includes('beef') || n.includes('steak') || n.includes('rumsteck') || n.includes('bavette')) return '🥩';
+        if (n.includes('poulet') || n.includes('chicken')) return '🍗';
+        if (n.includes('poisson') || n.includes('saumon') || n.includes('salmon') || n.includes('thon') || n.includes('tuna')) return '🐟';
+        if (n.includes('fruit') || n.includes('pomme') || n.includes('apple')) return '🍎';
+        if (n.includes('fraise') || n.includes('strawberry')) return '🍓';
+        if (n.includes('citron') || n.includes('lemon')) return '🍋';
+        if (n.includes('orange')) return '🍊';
+        if (n.includes('chocolat') || n.includes('chocolate')) return '🍫';
+        if (n.includes('cake') || n.includes('gâteau') || n.includes('pâtisserie')) return '🍰';
+        if (n.includes('oeuf') || n.includes('œuf') || n.includes('egg')) return '🥚';
+        if (n.includes('lait') || n.includes('milk')) return '🥛';
+        if (n.includes('sucre') || n.includes('sugar') || n.includes('cassonade')) return '🍬';
+        if (n.includes('sel') || n.includes('salt') || n.includes('poivre')) return '🧂';
+        if (n.includes('beurre') || n.includes('butter')) return '🧈';
+        if (n.includes('huile') || n.includes('oil')) return '🫒';
+        if (n.includes('vanille') || n.includes('vanilla')) return '🌼';
+        if (n.includes('farine') || n.includes('flour')) return '🌾';
+        if (n.includes('crème') || n.includes('cream')) return '🍦';
+        if (n.includes('vin') || n.includes('wine')) return '🍷';
+        if (n.includes('colorant') || n.includes('coloring') || n.includes('couleur')) return '🎨';
+        if (n.includes('pistache') || n.includes('pistachio') || n.includes('noix') || n.includes('amande') || n.includes('nut')) return '🥜';
+        if (n.includes('riz') || n.includes('rice')) return '🍚';
+        if (n.includes('pâte') || n.includes('pasta')) return '🍝';
+        if (n.includes('pain') || n.includes('bread')) return '🍞';
+        if (n.includes('ail') || n.includes('garlic')) return '🧄';
+        if (n.includes('oignon') || n.includes('onion')) return '🧅';
+        if (n.includes('tomate') || n.includes('tomato')) return '🍅';
+        if (n.includes('carotte') || n.includes('carrot')) return '🥕';
+        if (n.includes('salade') || n.includes('lettuce') || n.includes('épinard') || n.includes('spinach')) return '🥬';
+        if (n.includes('vinaigre') || n.includes('vinegar') || n.includes('sauce')) return '🥫';
+        return '🥗';
+    })();
+
+    if (!src || errored) {
+        return <span style={{ fontSize: '2.2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>{fallbackEmoji}</span>;
+    }
+
+    return (
+        <img
+            src={src}
+            alt=""
+            className={styles.ingImg}
+            onError={() => setErrored(true)}
+        />
     );
 }

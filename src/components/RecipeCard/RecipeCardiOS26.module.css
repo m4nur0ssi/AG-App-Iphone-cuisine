@@ -298,6 +298,18 @@
     pointer-events: auto;
 }
 
+.topLeftFlag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 50;
+    font-size: 1.45rem;
+    line-height: 1;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.45));
+    pointer-events: none;
+    user-select: none;
+}
+
 .minimalistHeart {
     color: rgba(255, 255, 255, 0.95) !important;
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));

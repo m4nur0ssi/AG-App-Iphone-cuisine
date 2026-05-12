@@ -264,10 +264,7 @@ async function processRecipe({ videoUrl, description, author, title, country, th
     if (['boisson', 'rafraîchissement', 'jus', 'cocktail'].some(c => lowCat.includes(c))) analysis.category = 'boissons';
     if (['entrée', 'aperitif', 'apéro'].some(c => lowCat.includes(c))) analysis.category = 'aperitifs';
 
-    console.log(`   🖼️ Recherche d'une photo pour: ${analysis.photoSearchKeyword}...`);
     let photoUrl = '';
-    const { findPhoto } = require('./photo-search');
-    try { photoUrl = await findPhoto(analysis.photoSearchKeyword || analysis.recipeName); } catch(e){}
 
     console.log(`   📝 Publication sur WordPress...`);
     const { postToWordPress } = require('./wordpress-poster');

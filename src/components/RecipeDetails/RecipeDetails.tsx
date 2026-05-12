@@ -18,7 +18,7 @@ import { decodeHtml } from '@/lib/utils';
 import SmartText from '@/components/SmartText/SmartText';
 import MagicConverter from '@/components/MagicConverter/MagicConverter';
 import SplitTitle from '@/components/SplitTitle/SplitTitle';
-import { getIngredientVisual } from '@/lib/ingredient-utils';
+import { getIngredientVisual, translateIngredientName } from '@/lib/ingredient-utils';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './RecipeDetails.module.css';
 
@@ -945,30 +945,7 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
 
                                             {/* Icône ingrédient */}
                                             <div className={styles.ingIconWrap}>
-                                                {(() => {
-                                                    const visual = ing.image || getIngredientVisual(ing.name);
-                                                    if (visual) {
-                                                        return <img src={visual} alt="" className={styles.ingImg} />;
-                                                    }
-                                                    
-                                                    // Nettoyage de l'émoji d'origine (on vire les 🥣 et 🥚)
-                                                    const cleanMatch = ing.name.match(/^[\uD83C-\uDBFF\uDC00-\uDFFF\u2600-\u27BF\s]*([\s\S]*)/);
-                                                    const nameWithoutEmoji = cleanMatch ? cleanMatch[1].trim() : ing.name;
-
-                                                    // Fallback sur un émoji intelligent si pas de photo
-                                                    const smartEmoji = (() => {
-                                                        const n = nameWithoutEmoji.toLowerCase();
-                                                        if (n.includes('miel')) return '🍯';
-                                                        if (n.includes('poivron')) return '🫑';
-                                                        if (n.includes('herbe') || n.includes('aneth') || n.includes('ciselé')) return '🌿';
-                                                        if (n.includes('fromage') || n.includes('feta')) return '🧀';
-                                                        if (n.includes('viande') || n.includes('poulet')) return '🥩';
-                                                        if (n.includes('fruit')) return '🍎';
-                                                        return '🥗'; // Fallback générique premium au lieu du bol bleu
-                                                    })();
-
-                                                    return <span className={styles.ingEmoji}>{smartEmoji}</span>;
-                                                })()}
+                                                <IngredientImage name={ing.name} imageSrc={ing.image || getIngredientVisual(ing.name)} imgClassName={styles.ingImg} emojiClassName={styles.ingEmoji} />
 
                                                 {/* Checkmark overlay */}
                                                 <div className={`${styles.ingCheckOverlay} ${checkedIngredients[idx] ? styles.ingCheckVisible : ''}`}>
@@ -1010,10 +987,11 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
 
                                                     // Protection finale : si le nom commence encore par "De ", "D'"
                                                     displayName = displayName.replace(/^(?:de\s+|d'|du\s+|des\s+)/i, '').trim();
+                                                    displayName = translateIngredientName(displayName);
 
                                                     return (
                                                         <>
-                                                            <span className={styles.ingQty} style={{ color: 'var(--country-color, var(--dynamic-accent))' }}>{scaleQuantity(displayQty, ratio)}</span>
+                                                            <span className={styles.ingQty} style={{ color: 'var(--country-color, var(--dynamic-accent))' }}>{translateIngredientName(scaleQuantity(displayQty, ratio))}</span>
                                                             <span className={styles.ingName}>
                                                                 {displayName.charAt(0).toUpperCase() + displayName.slice(1)}
                                                             </span>
@@ -1196,4 +1174,48 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
         </div>
         </>
     );
+}
+
+function IngredientImage({ name, imageSrc, imgClassName, emojiClassName }: {
+    name: string; imageSrc: string | null; imgClassName: string; emojiClassName: string;
+}) {
+    const [errored, setErrored] = useState(false);
+    const n = (name || '').toLowerCase();
+    const emoji = n.includes('miel') || n.includes('honey') ? '🍯'
+        : n.includes('poivron') ? '🫑'
+        : n.includes('herbe') || n.includes('aneth') || n.includes('basilic') || n.includes('persil') ? '🌿'
+        : n.includes('fromage') || n.includes('cheese') || n.includes('mascarpone') || n.includes('feta') || n.includes('comté') ? '🧀'
+        : n.includes('viande') || n.includes('boeuf') || n.includes('beef') || n.includes('bavette') || n.includes('rumsteck') ? '🥩'
+        : n.includes('poulet') || n.includes('chicken') ? '🍗'
+        : n.includes('poisson') || n.includes('saumon') || n.includes('thon') ? '🐟'
+        : n.includes('fraise') || n.includes('strawberry') ? '🍓'
+        : n.includes('myrtille') || n.includes('blueberry') ? '🫐'
+        : n.includes('citron') || n.includes('lemon') ? '🍋'
+        : n.includes('chocolat') || n.includes('chocolate') ? '🍫'
+        : n.includes('cake') || n.includes('gâteau') ? '🍰'
+        : n.includes('oeuf') || n.includes('œuf') || n.includes('egg') || n.includes('jaune') ? '🥚'
+        : n.includes('lait') || n.includes('milk') ? '🥛'
+        : n.includes('sucre') || n.includes('sugar') || n.includes('cassonade') ? '🍬'
+        : n.includes('beurre') || n.includes('butter') ? '🧈'
+        : n.includes('huile') || n.includes('oil') ? '🫒'
+        : n.includes('vanille') || n.includes('vanilla') ? '🌼'
+        : n.includes('farine') || n.includes('flour') ? '🌾'
+        : n.includes('crème') || n.includes('cream') ? '🍦'
+        : n.includes('colorant') || n.includes('coloring') ? '🎨'
+        : n.includes('pistache') || n.includes('pistachio') || n.includes('noix') || n.includes('amande') ? '🥜'
+        : n.includes('tomate') || n.includes('tomato') ? '🍅'
+        : n.includes('carotte') || n.includes('carrot') ? '🥕'
+        : n.includes('ail') || n.includes('garlic') ? '🧄'
+        : n.includes('oignon') || n.includes('onion') ? '🧅'
+        : n.includes('piment') || n.includes('chili') ? '🌶️'
+        : n.includes('riz') || n.includes('rice') ? '🍚'
+        : n.includes('pâte') || n.includes('pasta') ? '🍝'
+        : n.includes('pain') || n.includes('bread') ? '🍞'
+        : n.includes('fruit') || n.includes('pomme') || n.includes('apple') ? '🍎'
+        : '🥗';
+
+    if (!imageSrc || errored) {
+        return <span className={emojiClassName} style={{ fontSize: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>{emoji}</span>;
+    }
+    return <img src={imageSrc} alt="" className={imgClassName} onError={() => setErrored(true)} />;
 }

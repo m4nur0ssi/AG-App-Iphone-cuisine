@@ -74,7 +74,7 @@ export default function Home() {
             'green healthy': 'vegetarien',
             'végé': 'vegetarien',
             'vege': 'vegetarien',
-            'la dolce vita': 'italie',
+            'la dolce vita': 'dolce-vita',
             'noël': 'Noël',
             'astuces': 'Astuces',
             'les glaces': 'glaces',
@@ -88,7 +88,10 @@ export default function Home() {
             'pas cher': 'pas cher',
             'express': 'express',
             'famille': 'famille',
-            'accompagnements': 'accompagnements'
+            'accompagnements': 'accompagnements',
+            'pâtes': 'pates',
+            'pates': 'pates',
+            'pasta': 'pates'
         };
 
         const tag = mapping[cleanTitle] || cleanTitle;
@@ -176,6 +179,30 @@ export default function Home() {
                     return recipeTags.some(t => t.toLowerCase() === 'nouveautés' || t.toLowerCase() === 'nouveauté');
                 }
 
+                if (tagLower === 'accompagnements') {
+                    return recipeCat === 'accompagnements' || recipeCat === 'accompagnement' ||
+                           recipeTags.some(t => t === 'accompagnement' || t === 'accompagnements');
+                }
+
+                if (tagLower === 'pates') {
+                    const pastaKeywords = ['pâtes', 'pasta', 'spaghetti', 'tagliatelle', 'linguine', 'penne', 'rigatoni', 'lasagne', 'gnocchi', 'fettuccine', 'carbonara', 'bolognese', 'bolognaise', 'tortellini', 'ravioli', 'macaroni'];
+                    return recipeTags.some(t => t === 'pates' || t === 'pâtes') ||
+                           recipeCat === 'pates' ||
+                           pastaKeywords.some(k => recipe.title.toLowerCase().includes(k));
+                }
+
+                // Dolce Vita = recettes italiennes
+                if (tagLower === 'dolce-vita') {
+                    return recipeTags.some(t => t.toLowerCase() === 'italie' || t.toLowerCase() === 'italy') ||
+                           recipeCat === 'italie';
+                }
+
+                // Pour les thèmes (sauces, airfryer, barbecue, etc.) : uniquement par tag explicite ou catégorie
+                const strictThemes = ['sauces', 'airfryer', 'barbecue', 'healthy', 'simplissime', 'voila-lete', 'cest-lhiver', 'astuces'];
+                if (strictThemes.includes(tagLower)) {
+                    return recipeCat === tagLower || recipeTags.some(t => t.toLowerCase() === tagLower);
+                }
+
                 return fullText.includes(tagLower) || recipeCat === tagLower || recipeTags.includes(tagLower);
             });
         });
@@ -197,12 +224,16 @@ export default function Home() {
             const foundTheme = themes.find(t => tags.includes(t.toLowerCase()) || title.includes(t.toLowerCase()));
 
             let finalCat = cat;
-            if (cat === 'aperitifs' || cat === 'apéro' || tags.includes('apéro')) finalCat = 'aperitifs';
+            // pâtes en priorité (souvent catégorisées "plats" dans WP)
+            const pastaKw = ['pâtes', 'pasta', 'spaghetti', 'tagliatelle', 'linguine', 'penne', 'rigatoni', 'lasagne', 'gnocchi', 'fettuccine', 'carbonara', 'bolognaise', 'tortellini', 'ravioli', 'macaroni'];
+            if (cat === 'pates' || tags.includes('pates') || tags.includes('pâtes') || pastaKw.some(k => title.includes(k))) finalCat = 'pates';
+            // accompagnement en priorité car les recettes sont souvent catégorisées "plats" dans WP
+            else if (cat === 'accompagnements' || cat === 'accompagnement' || tags.includes('accompagnement') || tags.includes('accompagnements')) finalCat = 'accompagnements';
+            else if (cat === 'aperitifs' || cat === 'apéro' || tags.includes('apéro')) finalCat = 'aperitifs';
             else if (cat === 'entrees' || cat === 'entrée' || tags.includes('entrée')) finalCat = 'entrees';
             else if (cat === 'plats' || cat === 'plat' || tags.includes('plat')) finalCat = 'plats';
             else if (cat === 'desserts' || cat === 'dessert' || tags.includes('dessert')) finalCat = 'desserts';
             else if (cat === 'patisserie' || cat === 'pâtisserie' || tags.includes('patisserie')) finalCat = 'patisserie';
-            else if (cat === 'accompagnements' || cat === 'accompagnement' || tags.includes('accompagnement')) finalCat = 'accompagnements';
             else if (cat === 'restaurant' || cat === 'italie' || title.includes('chef') || title.includes('resto') || tags.includes('restaurant')) finalCat = 'restaurant';
             else if (cat === 'vegetarien') finalCat = 'vegetarien';
 
@@ -234,7 +265,7 @@ export default function Home() {
             id: 'theme-airfryer',
             title: "Airfryer",
             description: 'La cuisine croustillante et saine.',
-            image: '/images/themes/airfryer.png',
+            image: '/images/themes/airfryer.png?v=2',
             category: 'plats',
             tags: ['airfryer'],
             isFavorite: false,
@@ -249,7 +280,7 @@ export default function Home() {
             id: 'theme-barbecue',
             title: "Barbecue",
             description: 'Le goût authentique de la braise.',
-            image: '/images/themes/barbecue.png',
+            image: '/images/themes/barbecue.png?v=2',
             category: 'plats',
             tags: ['barbecue'],
             isFavorite: false,
@@ -264,7 +295,7 @@ export default function Home() {
             id: 'theme-healthy',
             title: "Healthy",
             description: 'Manger bien, se sentir bien.',
-            image: '/images/themes/healthy.png',
+            image: '/images/themes/healthy.png?v=2',
             category: 'vegetarien',
             tags: ['healthy'],
             isFavorite: false,
@@ -279,7 +310,7 @@ export default function Home() {
             id: 'theme-pas-cher',
             title: "Pas Cher",
             description: 'Cuisiner malin à petit prix.',
-            image: '/images/themes/pas-cher.png',
+            image: '/images/themes/pas-cher.png?v=2',
             category: 'plats',
             tags: ['pas cher'],
             isFavorite: false,
@@ -294,7 +325,7 @@ export default function Home() {
             id: 'theme-express',
             title: "Express",
             description: 'Prêt en un clin d\'œil.',
-            image: '/images/themes/express.png',
+            image: '/images/themes/express.png?v=2',
             category: 'plats',
             tags: ['express'],
             isFavorite: false,
@@ -309,7 +340,7 @@ export default function Home() {
             id: 'theme-famille',
             title: "Famille",
             description: 'Pour les grandes tablées.',
-            image: '/images/themes/famille.png',
+            image: '/images/themes/famille.png?v=2',
             category: 'plats',
             tags: ['famille'],
             isFavorite: false,
@@ -324,7 +355,7 @@ export default function Home() {
             id: 'theme-vege',
             title: "Végé",
             description: 'Le végétal à l\'honneur.',
-            image: '/images/themes/vegetarien.png',
+            image: '/images/themes/vegetarien.png?v=2',
             category: 'vegetarien',
             tags: ['vegetarien'],
             isFavorite: false,
@@ -339,7 +370,7 @@ export default function Home() {
             id: 'theme-easter-2024',
             title: 'Pâques est là',
             description: 'Un délicieux plat d\'agneau Pascal.',
-            image: '/images/themes/paques.jpg',
+            image: '/images/themes/paques.jpg?v=2',
             category: 'plats',
             tags: ['Pâques'],
             isFavorite: false,
@@ -354,7 +385,7 @@ export default function Home() {
             id: 'theme-xmas-2024',
             title: 'C\'est Noël',
             description: 'La magie des fêtes dans votre assiette.',
-            image: '/images/themes/noel.jpg',
+            image: '/images/themes/noel.jpg?v=2',
             category: 'plats',
             tags: ['Noël'],
             isFavorite: false,
@@ -369,7 +400,7 @@ export default function Home() {
             id: 'theme-glaces',
             title: 'Les Glaces',
             description: 'Une sélection de sorbets et glaces artisanales.',
-            image: '/images/themes/glaces.jpg',
+            image: '/images/themes/glaces.jpg?v=2',
             category: 'desserts',
             tags: ['glaces'],
             isFavorite: false,
@@ -384,7 +415,7 @@ export default function Home() {
             id: 'theme-refresh',
             title: 'Rafraîchissements',
             description: 'Des boissons fraîches pour tous les goûts.',
-            image: '/images/themes/rafraichissements.jpg',
+            image: '/images/themes/rafraichissements.jpg?v=2',
             category: 'boissons',
             tags: ['boissons'],
             isFavorite: false,
@@ -399,7 +430,7 @@ export default function Home() {
             id: 'theme-simplissime',
             title: 'Simplissime',
             description: 'Mini poivrons farcis à la grecque.',
-            image: '/images/themes/simplissime.jpg',
+            image: '/images/themes/simplissime.jpg?v=2',
             category: 'aperitifs',
             tags: ['simplissime'],
             isFavorite: false,
@@ -414,9 +445,9 @@ export default function Home() {
             id: 'theme-dolce-vita',
             title: 'La Dolce Vita',
             description: 'Boulettes de viandes ultra gourmandes.',
-            image: '/images/themes/dolce-vita.jpg',
+            image: '/images/themes/dolce-vita.jpg?v=2',
             category: 'plats',
-            tags: ['italie'],
+            tags: ['dolce-vita'],
             isFavorite: false,
             difficulty: 'moyen',
             prepTime: 20,
@@ -429,7 +460,7 @@ export default function Home() {
             id: 'theme-voila-lete',
             title: "Voilà l'Été ☀️",
             description: 'Les meilleures recettes estivales.',
-            image: '/images/themes/voila-lete.jpg',
+            image: '/images/themes/voila-lete.jpg?v=2',
             category: 'plats',
             tags: ['voila-lete'],
             isFavorite: false,
@@ -444,7 +475,7 @@ export default function Home() {
             id: 'theme-cest-lhiver',
             title: "C'est l'Hiver ❄️",
             description: 'Recettes chaleureuses pour les jours froids.',
-            image: '/images/themes/cest-lhiver.jpg',
+            image: '/images/themes/cest-lhiver.jpg?v=2',
             category: 'plats',
             tags: ['cest-lhiver'],
             isFavorite: false,
@@ -459,7 +490,7 @@ export default function Home() {
             id: 'theme-astuces',
             title: "Astuces 💡",
             description: 'Les petits secrets qui changent tout.',
-            image: '/images/themes/astuces.jpg',
+            image: '/images/themes/astuces.jpg?v=2',
             category: 'autres',
             tags: ['Astuces'],
             isFavorite: false,
@@ -474,13 +505,28 @@ export default function Home() {
             id: 'theme-sauces',
             title: "Sauces",
             description: '',
-            image: '/images/themes/sauces.png',
+            image: '/images/themes/sauces.png?v=2',
             category: 'sauces',
             tags: ['sauces'],
             isFavorite: false,
             difficulty: 'facile',
             prepTime: 5,
             cookTime: 5,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-pates',
+            title: "Pâtes",
+            description: 'Spaghettis, gnocchis, lasagnes et toutes les pâtes.',
+            image: '/images/themes/pates.jpg?v=1',
+            category: 'plats',
+            tags: ['pates'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 10,
+            cookTime: 15,
             servings: 4,
             ingredients: [],
             steps: []
@@ -536,7 +582,7 @@ export default function Home() {
                                 {categorizedRecipes['thématiques']?.length > 0 && (
                                     <RecipeCarousel
                                         recipes={[
-                                            { id: 't-main', title: 'Thématiques', image: '/images/categories/thematiques.jpg?v=5', tags: ['thématiques'] } as any,
+                                            { id: 't-main', title: 'Thématiques', image: '/images/categories/thematiques.jpg?v=7', tags: ['thématiques'] } as any,
                                             ...thematicThemes
                                         ]}
                                         title="Thématiques du Moment"
@@ -573,6 +619,22 @@ export default function Home() {
                                         <RecipeCarousel
                                             recipes={categorizedRecipes['plats']}
                                             title="Plats"
+                                            size="small"
+                                            onTitleClick={handleCarouselTitleClick}
+                                        />
+                                    )}
+                                    {categorizedRecipes['accompagnements']?.length > 0 && (
+                                        <RecipeCarousel
+                                            recipes={categorizedRecipes['accompagnements']}
+                                            title="Accompagnements"
+                                            size="small"
+                                            onTitleClick={handleCarouselTitleClick}
+                                        />
+                                    )}
+                                    {categorizedRecipes['pates']?.length > 0 && (
+                                        <RecipeCarousel
+                                            recipes={categorizedRecipes['pates']}
+                                            title="Pâtes"
                                             size="small"
                                             onTitleClick={handleCarouselTitleClick}
                                         />

@@ -208,6 +208,11 @@ export default function RecipeCardiOS26({
 
                 {/* Overlays */}
                 
+                {/* Top Left: Country Flag */}
+                {!isIntroMode && !isThematicCard && flag && (
+                    <div className={styles.topLeftFlag}>{flag}</div>
+                )}
+
                 {/* Top Right: Heart Accent (Minimalist) */}
                 {!isIntroMode && !isThematicCard && (
                     <div className={styles.topRightHeart} onClick={(e) => e.stopPropagation()}>

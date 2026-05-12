@@ -93,10 +93,11 @@ const getCategoryData = (t: string) => {
     if (c.includes('plat')) return { image: '/images/categories/plats.jpg', color: '#f43f5e' };
     if (c.includes('dessert') || c.includes('douceur')) return { image: '/images/categories/desserts.jpg', color: '#d946ef' };
     if (c.includes('pâtisserie') || c.includes('patisserie')) return { image: '/images/categories/patisserie.jpg', color: '#f59e0b' };
-    if (c.includes('restaurant') || c.includes('resto')) return { image: '/images/categories/restaurants.jpg', color: '#8b5cf6' };
-    if (c.includes('thématiq') || t.includes('Thématiq')) return { image: '/images/categories/thematiques.jpg', color: '#4f46e5' };
-    if (c.includes('nouveauté') || c.includes('nouv')) return { image: '/images/categories/nouveautes.jpg', color: '#3b82f6' };
+    if (c.includes('restaurant') || c.includes('resto')) return { image: '/images/categories/restaurants.jpg?v=2', color: '#8b5cf6' };
+    if (c.includes('thématiq') || t.includes('Thématiq')) return { image: '/images/categories/thematiques.jpg?v=7', color: '#4f46e5' };
+    if (c.includes('nouveauté') || c.includes('nouv')) return { image: '/images/categories/nouveautes.jpg?v=2', color: '#FF6B35' };
     if (c.includes('accompagnement')) return { image: '/images/categories/accompagnements.jpg', color: '#10b981' };
+    if (c.includes('pâtes') || c.includes('pates') || c.includes('pasta')) return { image: '/images/themes/pates.jpg', color: '#FF8C00' };
     if (c.includes('healthy') || c.includes('sain')) return { image: '/images/categories/entree.jpg', color: '#22c55e' };
     if (c.includes('airfryer')) return { image: '/images/categories/plats.jpg', color: '#f97316' };
     if (c.includes('barbecue') || c.includes('bbq')) return { image: '/images/categories/plats.jpg', color: '#b91c1c' };
@@ -124,9 +125,6 @@ function CategoryTitleCard({ title, gradient, size, compact, onClick }: { title:
             <div className={styles.compactItem}>
                 <div className={styles.compactCard} onClick={onClick}>
                     <img src={`${displayImage}?v=2`} alt={title} className={styles.compactImage} />
-                    <div className={styles.compactBanner}>
-                        <h2 className={styles.compactTitle}>{cleanTitle}</h2>
-                    </div>
                 </div>
             </div>
         );
@@ -169,13 +167,10 @@ function CarouselItem({ recipe, index, containerRef, size, compact, parentTitle,
             <div ref={itemRef} className={styles.compactItem}>
                 <div className={styles.compactCard} onClick={() => onCardClick?.(recipe)}>
                     <img
-                        src={`${displayImage}${displayImage.includes('?') ? '&' : '?'}v=5`}
+                        src={`${displayImage}${displayImage.includes('?') ? '&' : '?'}v=6`}
                         alt={recipe.title}
                         className={styles.compactImage}
                     />
-                    <div className={styles.compactBanner}>
-                        <h2 className={styles.compactTitle}>{recipe.title.toUpperCase()}</h2>
-                    </div>
                 </div>
             </div>
         );

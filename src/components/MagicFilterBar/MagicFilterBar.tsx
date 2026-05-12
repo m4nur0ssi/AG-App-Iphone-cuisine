@@ -30,46 +30,47 @@ interface MagicFilterBarProps {
 }
 
 const categories: FilterItem[] = [
-    { id: 'cat-aperitifs', name: 'Apéritifs', icon: '', tag: 'aperitifs', color: '#FF7E5F' },
-    { id: 'cat-entrees', name: 'Entrées', icon: '', tag: 'entrees', color: '#76B852' },
-    { id: 'cat-plats', name: 'Plats', icon: '', tag: 'plats', color: '#8E2DE2' },
     { id: 'cat-accompagnements', name: 'Accompagnements', icon: '', tag: 'accompagnements', color: '#00C853' },
+    { id: 'cat-aperitifs', name: 'Apéritifs', icon: '', tag: 'aperitifs', color: '#FF7E5F' },
     { id: 'cat-desserts', name: 'Desserts', icon: '', tag: 'desserts', color: '#F80759' },
+    { id: 'cat-entrees', name: 'Entrées', icon: '', tag: 'entrees', color: '#76B852' },
+    { id: 'cat-pates', name: 'Pâtes', icon: '', tag: 'pates', color: '#FF8C00' },
     { id: 'cat-patisserie', name: 'Pâtisserie', icon: '', tag: 'patisserie', color: '#FFB347' },
-];
+    { id: 'cat-plats', name: 'Plats', icon: '', tag: 'plats', color: '#8E2DE2' },
+].sort((a, b) => a.name.localeCompare(b.name, 'fr'));
 
 const countries: FilterItem[] = [
-    { id: 'cnt-france', name: 'France', icon: '🇫🇷', tag: 'France', color: '#0055A4' },
-    { id: 'cnt-italie', name: 'Italie', icon: '🇮🇹', tag: 'Italie', color: '#008C45' },
+    { id: 'cnt-afrique', name: 'Afrique', icon: AFRICA_SILHOUETTE, tag: 'Afrique', color: '#FFD700' },
+    { id: 'cnt-asie', name: 'Asie', icon: '🥢', tag: 'Asie', color: '#E41E26' },
     { id: 'cnt-espagne', name: 'Espagne', icon: '🇪🇸', tag: 'Espagne', color: '#F1BF00' },
+    { id: 'cnt-france', name: 'France', icon: '🇫🇷', tag: 'France', color: '#0055A4' },
     { id: 'cnt-grece', name: 'Grèce', icon: '🇬🇷', tag: 'Grece', color: '#0D5EAF' },
+    { id: 'cnt-italie', name: 'Italie', icon: '🇮🇹', tag: 'Italie', color: '#008C45' },
     { id: 'cnt-liban', name: 'Liban', icon: '🇱🇧', tag: 'Liban', color: '#EE161F' },
-    { id: 'cnt-usa', name: 'USA', icon: '🇺🇸', tag: 'USA', color: '#B22234' },
     { id: 'cnt-mexique', name: 'Mexique', icon: '🇲🇽', tag: 'Mexique', color: '#006847' },
     { id: 'cnt-orient', name: 'Orient', icon: '🕌', tag: 'Orient', color: '#8B4513' },
-    { id: 'cnt-asie', name: 'Asie', icon: '🥢', tag: 'Asie', color: '#E41E26' },
-    { id: 'cnt-afrique', name: 'Afrique', icon: AFRICA_SILHOUETTE, tag: 'Afrique', color: '#FFD700' },
-];
+    { id: 'cnt-usa', name: 'USA', icon: '🇺🇸', tag: 'USA', color: '#B22234' },
+].sort((a, b) => a.name.localeCompare(b.name, 'fr'));
 
 const trends: FilterItem[] = [
-    { id: 'trn-paques', name: 'Pâques', icon: '', tag: 'pâques', color: '#ffcc33' },
-    { id: 'trn-noel', name: 'Noël', icon: '', tag: 'Noël', color: '#ff3b30' },
-    { id: 'trn-summer', name: "Voilà l'été", icon: '☀️', tag: 'voila-lete', color: '#FF7E5F' },
-    { id: 'trn-winter', name: "C'est l'hiver", icon: '❄️', tag: 'cest-lhiver', color: '#3B82F6' },
-    { id: 'trn-glaces', name: 'Les Glaces', icon: '', tag: 'glaces', color: '#F472B6' },
-    { id: 'trn-boissons', name: 'Rafraîchissements', icon: '', tag: 'boissons', color: '#3B82F6' },
-    { id: 'trn-simplissime', name: 'Simplissime', icon: '', tag: 'simplissime', color: '#FFD700' },
-    { id: 'trn-dolce-vita', name: 'Dolce Vita', icon: '', tag: 'italie', color: '#008C45' },
-    { id: 'trn-healthy', name: 'Healthy', icon: '', tag: 'Healthy', color: '#A8E063' },
-    { id: 'trn-astuces', name: 'Astuces', icon: '', tag: 'Astuces', color: '#FFD700' },
     { id: 'trn-airfryer', name: 'Airfryer', icon: '', tag: 'Airfryer', color: '#43C6AC' },
+    { id: 'trn-astuces', name: 'Astuces', icon: '', tag: 'Astuces', color: '#FFD700' },
     { id: 'trn-barbecue', name: 'Barbecue', icon: '', tag: 'Barbecue', color: '#FF416C' },
-    { id: 'trn-pas-cher', name: 'Pas Cher', icon: '', tag: 'Pas cher', color: '#0BA360' },
+    { id: 'trn-boissons', name: 'Rafraîchissements', icon: '', tag: 'boissons', color: '#3B82F6' },
+    { id: 'trn-dolce-vita', name: 'Dolce Vita', icon: '', tag: 'dolce-vita', color: '#008C45' },
     { id: 'trn-express', name: 'Express', icon: '', tag: 'Express', color: '#FDFC47' },
-    { id: 'trn-sauces', name: 'Sauces', icon: '', tag: 'sauces', color: '#FF8C00' },
     { id: 'trn-famille', name: 'Famille', icon: '', tag: 'famille', color: '#FF416C' },
-    { id: 'trn-vege', name: 'Végé', icon: '', tag: 'vegetarien', color: '#00C853' }
-];
+    { id: 'trn-glaces', name: 'Les Glaces', icon: '', tag: 'glaces', color: '#F472B6' },
+    { id: 'trn-healthy', name: 'Healthy', icon: '', tag: 'Healthy', color: '#A8E063' },
+    { id: 'trn-noel', name: 'Noël', icon: '', tag: 'Noël', color: '#ff3b30' },
+    { id: 'trn-paques', name: 'Pâques', icon: '', tag: 'pâques', color: '#ffcc33' },
+    { id: 'trn-pas-cher', name: 'Pas Cher', icon: '', tag: 'Pas cher', color: '#0BA360' },
+    { id: 'trn-sauces', name: 'Sauces', icon: '', tag: 'sauces', color: '#FF8C00' },
+    { id: 'trn-simplissime', name: 'Simplissime', icon: '', tag: 'simplissime', color: '#FFD700' },
+    { id: 'trn-summer', name: "Voilà l'été", icon: '☀️', tag: 'voila-lete', color: '#FF7E5F' },
+    { id: 'trn-vege', name: 'Végé', icon: '', tag: 'vegetarien', color: '#00C853' },
+    { id: 'trn-winter', name: "C'est l'hiver", icon: '❄️', tag: 'cest-lhiver', color: '#3B82F6' },
+].sort((a, b) => a.name.localeCompare(b.name, 'fr'));
 
 export default function MagicFilterBar({ 
     activeTags, 
@@ -105,6 +106,11 @@ export default function MagicFilterBar({
         { id: 'trends', label: 'Tendance', items: trends },
     ];
 
+    // Index des tags par groupe pour éviter les faux positifs inter-groupes
+    const tagsByGroup = Object.fromEntries(
+        groups.map(g => [g.id, new Set(g.items.map(i => (i.tag || i.id).toLowerCase()))])
+    );
+
     const toggleGroup = (id: string) => {
         setActiveGroup(prev => prev === id ? null : id);
     };
@@ -115,7 +121,8 @@ export default function MagicFilterBar({
             <div className={styles.wellDock}>
                 {groups.map((group) => {
                     const isMenuOpen = activeGroup === group.id;
-                    const hasSelection = group.items.some(i => activeTags.includes(i.tag || i.id));
+                    // Vérifie que le tag actif APPARTIENT à ce groupe (comparaison insensible à la casse)
+                    const hasSelection = activeTags.some(t => tagsByGroup[group.id]?.has(t.toLowerCase()));
                     const isActive = isMenuOpen || hasSelection;
                     return (
                         <button
