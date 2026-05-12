@@ -2,11 +2,73 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/05/2026 17:34:23
+ * Dernière mise à jour: 12/05/2026 17:39:09
  * Total: 262 recettes
  */
-export const exportSyncId = "1778607263417";
+export const exportSyncId = "1778607549857";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5505",
+        "title": "Vanilla Cream Rolls",
+        "description": "This recipe combines the delicacy of puff pastry with the richness of Diplomat cream. A dreamy dessert that strikes the perfect balance between crispy, creamy, and sweet.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778607131994.jpg&v=1778614376000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7322915820089199905\" data-video-id=\"7322915820089199905\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7322915820089199905\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 roll puff pastry (240 g)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             250 ml milk"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 egg yolks"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 teaspoon vanilla extract"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50 g sugar"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             20 g cornstarch"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             120 ml whipped cream"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 egg yolk + 1 tablespoon cream, beaten (for brushing)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Powdered sugar (for dusting)"
+            }
+        ],
+        "steps": [
+            "In a saucepan, mix milk, egg yolks, vanilla extract, sugar, and cornstarch. Heat the mixture, stirring until it thickens into a custard. Let the custard cool completely. Fold whipped cream into the cooled custard and refrigerate for an hour.",
+            "Roll out puff pastry and cut it into 20 evenly sized strips. Grease cannoli forms and wrap them with puff pastry strips, connecting two strips for each form.",
+            "Brush the prepared rolls with a mixture of beaten egg yolk and cream. Bake in a preheated oven at 180°C (fan) for 15-17 minutes until golden brown. Once baked, remove from the oven, release from the forms, and let them cool completely.",
+            "Retrieve the chilled cream from the refrigerator, fill a pastry bag, and pipe the cream into the cooled pastry pieces. Sprinkle with powdered sugar and serve chilled."
+        ],
+        "tags": [
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5502",
         "title": "Pain grillé, ganache au chocolat, huile d'olive et fleur de sel",
@@ -15224,79 +15286,6 @@ export const mockRecipes: Recipe[] = [
             "recette facile",
             "tex-mex"
         ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "3836",
-        "title": "Tartine fraîcheur avocat saumon",
-        "description": "Une tartine gourmande et croquante alliant la douceur de l&rsquo;avocat écrasé au saumon fumé, relevée par des oignons frits et une touche de crème balsamique.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Ftartine.jpg&v=1774450800000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7539860290234633494\" data-video-id=\"7539860290234633494\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7539860290234633494\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n 4 tartines de pain"
-            },
-            {
-                "quantity": "",
-                "name": "🥑\n 4 avocats bien mûrs"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n 1/2 citron vert"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n épices"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🐟\n Saumon fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n Tomates cerises"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n oignons frits"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n crème balsamique"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n herbes de Provence"
-            }
-        ],
-        "steps": [
-            "Dans une poêle, faire revenir les tartines avec de l'huile d'olive et des herbes de Provence.",
-            "Écraser les avocats dans un récipient.",
-            "Étaler l&rsquo;avocat écrasé sur les tartines grillées.",
-            "Disposer le saumon fumé, les tomates cerises et les oignons frits par-dessus.",
-            "Terminer en étalant un filet d'huile d'olive et de la crème balsamique."
-        ],
-        "tags": [],
         "isFeatured": false,
         "isFavorite": false,
         "address": ""
