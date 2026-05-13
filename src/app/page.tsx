@@ -203,6 +203,23 @@ export default function Home() {
                     return recipeCat === tagLower || recipeTags.some(t => t.toLowerCase() === tagLower);
                 }
 
+                // Thèmes "type de plat" : matching tag explicite OU mot-clé (singulier/pluriel) dans titre/desc/tags
+                const lowerTags = recipeTags.map(t => t.toLowerCase());
+                if (tagLower === 'salades') {
+                    return lowerTags.some(t => t.startsWith('salade')) || /\bsalade(s)?\b/.test(fullText);
+                }
+                if (tagLower === 'soupes') {
+                    return lowerTags.some(t => t.startsWith('soupe')) ||
+                        /\b(soupe(s)?|velout[ée](s)?|gaspacho|potage|bouillon|minestrone|ramen)\b/.test(fullText);
+                }
+                if (tagLower === 'gratins') {
+                    return lowerTags.some(t => t.startsWith('gratin')) || /\bgratin(s|[ée]e?)?\b/.test(fullText);
+                }
+                if (tagLower === 'epice' || tagLower === 'épicé') {
+                    return lowerTags.some(t => /^[ée]pic/.test(t)) ||
+                        /\b([ée]pic[ée]?|piquant|piment|harissa|sambal|sriracha|jalape[ñn]o|habanero|chili)\b/.test(fullText);
+                }
+
                 return fullText.includes(tagLower) || recipeCat === tagLower || recipeTags.includes(tagLower);
             });
         });
@@ -527,6 +544,66 @@ export default function Home() {
             difficulty: 'facile',
             prepTime: 10,
             cookTime: 15,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-epice',
+            title: "Épicé",
+            description: 'Recettes relevées pour les amateurs de piquant.',
+            image: '/images/themes/epice.png?v=1',
+            category: 'plats',
+            tags: ['epice'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 10,
+            cookTime: 20,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-salades',
+            title: "Salades",
+            description: 'Fraîcheur, croquant et couleurs dans l’assiette.',
+            image: '/images/themes/salades.png?v=1',
+            category: 'entrees',
+            tags: ['salades'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 15,
+            cookTime: 0,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-soupes',
+            title: "Soupes",
+            description: 'Réconfortantes, veloutées, mijotées avec amour.',
+            image: '/images/themes/soupes.png?v=1',
+            category: 'plats',
+            tags: ['soupes'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 10,
+            cookTime: 30,
+            servings: 4,
+            ingredients: [],
+            steps: []
+        },
+        {
+            id: 'theme-gratins',
+            title: "Gratins",
+            description: 'Le fondant gratiné qui fait l’unanimité.',
+            image: '/images/themes/gratins.png?v=1',
+            category: 'plats',
+            tags: ['gratins'],
+            isFavorite: false,
+            difficulty: 'facile',
+            prepTime: 15,
+            cookTime: 35,
             servings: 4,
             ingredients: [],
             steps: []
