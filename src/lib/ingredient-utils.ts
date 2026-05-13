@@ -288,13 +288,50 @@ export function getIngredientVisual(name: string): string | null {
         'gros sel': 'sel',
         'parmesan rape': 'parmesan',
         'gruyere rape': 'gruyere',
-        'emmental rape': 'emmental'
+        'emmental rape': 'emmental',
+        'comté rape': 'comté',
+        'fromage rape': 'parmesan',
+        'chocolat en poudre': 'cacao',
+        'poudre de cacao': 'cacao',
     };
+
+    // Strips prefixes like "zeste de", "jus de", "extrait de" → keep base ingredient
+    const PREFIX_STRIPS = [
+        /^zestes?\s+de\s+/i,
+        /^jus\s+de\s+/i,
+        /^extrait\s+de?\s+/i,
+        /^purée\s+de\s+/i,
+        /^compote\s+de\s+/i,
+        /^crème\s+de\s+/i,
+        /^poudre\s+de\s+/i,
+        /^huile\s+de\s+/i,
+        /^vinaigre\s+de\s+/i,
+        /^sirop\s+de\s+/i,
+        /^confiture\s+de\s+/i,
+        /^coulis\s+de\s+/i,
+        /^concentré\s+de\s+/i,
+        /^feuilles?\s+de\s+/i,
+        /^graines?\s+de\s+/i,
+        /^flocons?\s+de\s+/i,
+        /^copeaux?\s+de\s+/i,
+        /^éclats?\s+de\s+/i,
+        /^quartiers?\s+de\s+/i,
+        /^tranches?\s+de\s+/i,
+    ];
 
     let searchName = cleanName;
     for (const [key, alias] of Object.entries(INGREDIENT_ALIASES)) {
         if (cleanName.includes(key)) {
             searchName = alias;
+            break;
+        }
+    }
+
+    // Try stripping a prefix to get the base ingredient
+    let strippedName: string | null = null;
+    for (const prefixRe of PREFIX_STRIPS) {
+        if (prefixRe.test(searchName)) {
+            strippedName = searchName.replace(prefixRe, '').trim();
             break;
         }
     }
@@ -310,6 +347,7 @@ export function getIngredientVisual(name: string): string | null {
         .trim();
 
     const normCleanName = normalize(searchName);
+    const normStripped = strippedName ? normalize(strippedName) : null;
 
     // N'accepte que les URLs locales (fiables)
     const acceptLocal = (url: string | undefined): string | null => {
@@ -318,46 +356,65 @@ export function getIngredientVisual(name: string): string | null {
         return null;
     };
 
-    // 1. Match exact dans base locale
-    const allKeys = Object.keys(allDict);
-    for (const key of allKeys) {
-        if (normalize(key) === normCleanName) {
-            const local = acceptLocal(allDict[key]);
-            if (local) return local;
-        }
-    }
-
-    const quoteHandler = (str: string) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-
-    // 2. Match par mot entier dans base locale
-    const sortedKeys = allKeys.sort((a, b) => b.length - a.length);
-    for (const key of sortedKeys) {
-        const normKey = normalize(key);
-        if (normKey.length < 4) continue;
-
-        try {
-            const escapedKey = quoteHandler(normKey);
-            const regex = new RegExp(`\\b${escapedKey}s?\\b`, 'i');
-            if (regex.test(normCleanName)) {
+    // Helper: cherche un nom dans le dict (exact + mot entier)
+    const findInDict = (normName: string, keys: string[]): string | null => {
+        // Exact match
+        for (const key of keys) {
+            if (normalize(key) === normName) {
                 const local = acceptLocal(allDict[key]);
                 if (local) return local;
             }
-        } catch (e) {
-            continue;
         }
+        // Word match
+        const quoteHandler = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const sorted = [...keys].sort((a, b) => b.length - a.length);
+        for (const key of sorted) {
+            const normKey = normalize(key);
+            if (normKey.length < 4) continue;
+            try {
+                const regex = new RegExp(`\\b${quoteHandler(normKey)}s?\\b`, 'i');
+                if (regex.test(normName)) {
+                    const local = acceptLocal(allDict[key]);
+                    if (local) return local;
+                }
+            } catch { continue; }
+        }
+        return null;
+    };
+
+    const allKeys = Object.keys(allDict);
+
+    // 1. Cherche le nom complet
+    const found1 = findInDict(normCleanName, allKeys);
+    if (found1) return found1;
+
+    // 2. Cherche le nom sans préfixe ("zeste de clémentine" → "clémentine")
+    if (normStripped) {
+        const found2 = findInDict(normStripped, allKeys);
+        if (found2) return found2;
     }
 
-    // 3. Spoonacular — UNIQUEMENT si traduction explicite connue
-    if (FR_TO_EN[normCleanName]) {
-        return `https://img.spoonacular.com/ingredients_500x500/${FR_TO_EN[normCleanName]}.png`;
-    }
-
-    const words = normCleanName.split(/\s+/).filter(w => w.length >= 4);
-    const sortedWords = [...words].sort((a, b) => b.length - a.length);
-    for (const word of sortedWords) {
-        if (FR_TO_EN[word]) {
-            return `https://img.spoonacular.com/ingredients_500x500/${FR_TO_EN[word]}.png`;
+    // 3. Essaie aussi avec le nom strippé dans Spoonacular
+    const searchForSpoonacular = (normName: string): string | null => {
+        if (FR_TO_EN[normName]) {
+            return `https://img.spoonacular.com/ingredients_500x500/${FR_TO_EN[normName]}.png`;
         }
+        const words = normName.split(/\s+/).filter(w => w.length >= 4);
+        const sorted = [...words].sort((a, b) => b.length - a.length);
+        for (const word of sorted) {
+            if (FR_TO_EN[word]) {
+                return `https://img.spoonacular.com/ingredients_500x500/${FR_TO_EN[word]}.png`;
+            }
+        }
+        return null;
+    };
+
+    const sp1 = searchForSpoonacular(normCleanName);
+    if (sp1) return sp1;
+
+    if (normStripped) {
+        const sp2 = searchForSpoonacular(normStripped);
+        if (sp2) return sp2;
     }
 
     // Pas de match fiable → l'UI affichera l'emoji
@@ -370,39 +427,248 @@ export function getIngredientVisual(name: string): string | null {
  * Si rien à traduire, on retourne la chaîne d'origine.
  */
 const EN_TO_FR_WORDS: Array<[RegExp, string]> = [
-    // Phrases complètes d'abord (plus longues → plus prioritaires)
-    [/\bred\s+food\s+coloring\b/gi, 'colorant alimentaire rouge'],
-    [/\bfood\s+coloring\b/gi, 'colorant alimentaire'],
+    // ── Adjectifs de préparation (en premier car modifient le nom) ──────────
+    [/\bunsalted\b/gi, 'non salé'],
+    [/\bsalted\b/gi, 'salé'],
+    [/\bmelted\b/gi, 'fondu'],
+    [/\bsoftened\b/gi, 'ramolli'],
+    [/\bsifted\b/gi, 'tamisé'],
+    [/\bsifting\b/gi, 'tamisé'],
+    [/\bchopped\b/gi, 'haché'],
+    [/\bdiced\b/gi, 'coupé en dés'],
+    [/\bsliced\b/gi, 'émincé'],
+    [/\bminced\b/gi, 'haché'],
+    [/\bgrated\b/gi, 'râpé'],
+    [/\bshredded\b/gi, 'râpé'],
+    [/\bcrushed\b/gi, 'écrasé'],
+    [/\bpeeled\b/gi, 'épluché'],
+    [/\bwhole\b/gi, 'entier'],
+    [/\bdried\b/gi, 'séché'],
+    [/\bfresh\b/gi, 'frais'],
+    [/\bfrozen\b/gi, 'surgelé'],
+    [/\bcanned\b/gi, 'en conserve'],
+    [/\bcooked\b/gi, 'cuit'],
+    [/\braw\b/gi, 'cru'],
+    [/\bground\b/gi, 'en poudre'],
+    [/\bpowdered\b/gi, 'en poudre'],
+    [/\bpure\b/gi, 'pur'],
+    [/\bnature\b/gi, 'nature'],
+    [/\bplain\b/gi, 'nature'],
+    [/\bGreek\b/gi, 'grec'],
+    [/\bItalian\b/gi, 'italien'],
+    [/\bFrench\b/gi, 'français'],
+    [/\bDijon\b/gi, 'Dijon'],
+
+    // ── Indications de destination (for the X) ─────────────────────────────
+    [/\bfor\s+the\s+swirl\b/gi, 'pour le tourbillon'],
+    [/\bfor\s+the\s+filling\b/gi, 'pour la garniture'],
+    [/\bfor\s+the\s+topping\b/gi, 'pour le dessus'],
+    [/\bfor\s+the\s+glaze\b/gi, 'pour le glaçage'],
+    [/\bfor\s+the\s+sauce\b/gi, 'pour la sauce'],
+    [/\bfor\s+the\s+dough\b/gi, 'pour la pâte'],
+    [/\bfor\s+the\s+batter\b/gi, 'pour la pâte'],
+    [/\bfor\s+the\s+frosting\b/gi, 'pour le glaçage'],
+    [/\bfor\s+the\s+ganache\b/gi, 'pour la ganache'],
+    [/\bfor\s+the\s+crust\b/gi, 'pour la croûte'],
+    [/\bfor\s+swirl\b/gi, 'pour le tourbillon'],
+    [/\bfor\s+filling\b/gi, 'pour la garniture'],
+    [/\bfor\s+topping\b/gi, 'pour le dessus'],
+    [/\bfor\s+glaze\b/gi, 'pour le glaçage'],
+    [/\bfor\s+garnish\b/gi, 'pour la garniture'],
+    [/\bfor\s+serving\b/gi, 'pour servir'],
+
+    // ── Quantités et mesures ───────────────────────────────────────────────
+    [/\bteaspoons?\b/gi, 'cuillère à café'],
+    [/\btsp\b/gi, 'cuillère à café'],
+    [/\btablespoons?\b/gi, 'cuillères à soupe'],
+    [/\btbsp\b/gi, 'cuillères à soupe'],
+    [/\bcups?\b/gi, 'tasse'],
+    [/\bounces?\b/gi, 'oz'],
+    [/\bpounds?\b/gi, 'livre'],
+    [/\bpinch(?:es)?\b/gi, 'pincée'],
+    [/\bhandful\b/gi, 'poignée'],
+    [/\bslices?\b/gi, 'tranche'],
+    [/\bcloves?\b/gi, 'gousse'],
+    [/\bsprigs?\b/gi, 'brin'],
+    [/\bstalks?\b/gi, 'tige'],
+    [/\bheads?\b/gi, 'tête'],
+    [/\bsticks?\b/gi, 'bâton'],
+    [/\babout\b/gi, 'environ'],
+    [/\bapproximately\b/gi, 'environ'],
+
+    // ── Phrases complexes (longues → prioritaires) ─────────────────────────
+    [/\bred\s+food\s+colou?ring\b/gi, 'colorant alimentaire rouge'],
+    [/\bfood\s+colou?ring\b/gi, 'colorant alimentaire'],
     [/\bcake\s+flour\b/gi, 'farine à gâteau'],
+    [/\bself[\s-]raising\s+flour\b/gi, 'farine avec levure'],
+    [/\ball[\s-]purpose\s+flour\b/gi, 'farine'],
+    [/\bwhole[\s-]wheat\s+flour\b/gi, 'farine complète'],
     [/\bvegetable\s+oil\b/gi, 'huile végétale'],
+    [/\bsunflower\s+oil\b/gi, 'huile de tournesol'],
     [/\bolive\s+oil\b/gi, "huile d'olive"],
     [/\bvanilla\s+extract\b/gi, 'extrait de vanille'],
+    [/\bvanilla\s+bean(?:s)?\b/gi, 'gousse de vanille'],
+    [/\bvanilla\s+pod(?:s)?\b/gi, 'gousse de vanille'],
     [/\bwhipped\s+cream\b/gi, 'crème fouettée'],
     [/\bwhipping\s+cream\b/gi, 'crème liquide'],
     [/\bheavy\s+cream\b/gi, 'crème épaisse'],
+    [/\bdouble\s+cream\b/gi, 'crème entière'],
     [/\bsour\s+cream\b/gi, 'crème aigre'],
     [/\bcoconut\s+milk\b/gi, 'lait de coco'],
+    [/\bcoconut\s+cream\b/gi, 'crème de coco'],
+    [/\bcoconut\s+oil\b/gi, 'huile de coco'],
+    [/\balmond\s+milk\b/gi, "lait d'amande"],
+    [/\boat\s+milk\b/gi, "lait d'avoine"],
+    [/\bsoy\s+(?:milk|drink)\b/gi, 'lait de soja'],
     [/\bsoy\s+sauce\b/gi, 'sauce soja'],
     [/\btomato\s+sauce\b/gi, 'sauce tomate'],
+    [/\btomato\s+paste\b/gi, 'concentré de tomate'],
+    [/\btomato\s+puree\b/gi, 'concentré de tomate'],
     [/\brice\s+vinegar\b/gi, 'vinaigre de riz'],
-    [/\begg\s+yolks?\b/gi, "jaunes d'œufs"],
-    [/\begg\s+whites?\b/gi, "blancs d'œufs"],
+    [/\bwhite\s+wine\s+vinegar\b/gi, 'vinaigre de vin blanc'],
+    [/\bapple\s+cider\s+vinegar\b/gi, 'vinaigre de cidre'],
+    [/\bbalsamic\s+vinegar\b/gi, 'vinaigre balsamique'],
+    [/\begg\s+yolks?\b/gi, "jaune d'œuf"],
+    [/\begg\s+whites?\b/gi, "blanc d'œuf"],
     [/\bbrown\s+sugar\b/gi, 'cassonade'],
     [/\bpowdered\s+sugar\b/gi, 'sucre glace'],
+    [/\bicing\s+sugar\b/gi, 'sucre glace'],
+    [/\bcaster\s+sugar\b/gi, 'sucre en poudre'],
     [/\bgranulated\s+sugar\b/gi, 'sucre'],
+    [/\bconfectioners['\s]+sugar\b/gi, 'sucre glace'],
+    [/\blight\s+brown\s+sugar\b/gi, 'cassonade claire'],
+    [/\bdark\s+brown\s+sugar\b/gi, 'cassonade brune'],
     [/\bcherry\s+tomatoes?\b/gi, 'tomates cerises'],
-    [/\bbell\s+peppers?\b/gi, 'poivron'],
+    [/\bsun[\s-]dried\s+tomatoes?\b/gi, 'tomates séchées'],
+    [/\bred\s+bell?\s+pepper(?:s)?\b/gi, 'poivron rouge'],
+    [/\bgreen\s+bell?\s+pepper(?:s)?\b/gi, 'poivron vert'],
+    [/\byellow\s+bell?\s+pepper(?:s)?\b/gi, 'poivron jaune'],
+    [/\bbell\s+pepper(?:s)?\b/gi, 'poivron'],
     [/\bchicken\s+breasts?\b/gi, 'blanc de poulet'],
+    [/\bchicken\s+thighs?\b/gi, 'cuisse de poulet'],
+    [/\bchicken\s+legs?\b/gi, 'pilon de poulet'],
+    [/\bchicken\s+stock\b/gi, 'bouillon de poulet'],
+    [/\bvegetable\s+stock\b/gi, 'bouillon de légumes'],
+    [/\bbeef\s+stock\b/gi, 'bouillon de bœuf'],
     [/\bground\s+beef\b/gi, 'bœuf haché'],
+    [/\bminced\s+beef\b/gi, 'bœuf haché'],
+    [/\bminced\s+lamb\b/gi, 'agneau haché'],
+    [/\bpork\s+belly\b/gi, 'poitrine de porc'],
+    [/\bpork\s+loin\b/gi, 'longe de porc'],
+    [/\bpork\s+mince\b/gi, 'porc haché'],
+    [/\bcream\s+cheese\b/gi, 'fromage frais'],
+    [/\bcheddar\s+cheese\b/gi, 'cheddar'],
+    [/\bblue\s+cheese\b/gi, 'fromage bleu'],
+    [/\bgoat\s+cheese\b/gi, 'fromage de chèvre'],
+    [/\bcottage\s+cheese\b/gi, 'fromage blanc'],
+    [/\bGreek\s+yogu?rt\b/gi, 'yaourt grec'],
+    [/\bplain\s+yogu?rt\b/gi, 'yaourt nature'],
+    [/\bnatural\s+yogu?rt\b/gi, 'yaourt nature'],
     [/\bcake\s+pieces?\b/gi, 'morceaux de gâteau'],
     [/\bstrawberry\s+cubes?\b/gi, 'cubes de fraise'],
-    [/\bteaspoon\b/gi, 'cuillère à café'],
-    [/\btablespoons?\b/gi, 'cuillères à soupe'],
-    [/\babout\b/gi, 'environ'],
-    [/\bcups?\b/gi, 'tasses'],
+    [/\bbaking\s+powder\b/gi, 'levure chimique'],
+    [/\bbaking\s+soda\b/gi, 'bicarbonate de soude'],
+    [/\bactive\s+dry\s+yeast\b/gi, 'levure boulangère sèche'],
+    [/\binstant\s+yeast\b/gi, 'levure boulangère instantanée'],
+    [/\bcorn\s+starch\b/gi, 'fécule de maïs'],
+    [/\bcorn\s+flour\b/gi, 'fécule de maïs'],
+    [/\blemon\s+juice\b/gi, 'jus de citron'],
+    [/\blemon\s+zest\b/gi, 'zeste de citron'],
+    [/\borange\s+juice\b/gi, "jus d'orange"],
+    [/\borange\s+zest\b/gi, "zeste d'orange"],
+    [/\bkidney\s+beans?\b/gi, 'haricots rouges'],
+    [/\bcannellini\s+beans?\b/gi, 'haricots blancs'],
+    [/\bblack\s+beans?\b/gi, 'haricots noirs'],
+    [/\bgreen\s+beans?\b/gi, 'haricots verts'],
+    [/\bread\s+lentils?\b/gi, 'lentilles rouges'],
+    [/\bgreen\s+lentils?\b/gi, 'lentilles vertes'],
+    [/\bmaple\s+syrup\b/gi, "sirop d'érable"],
+    [/\bfish\s+sauce\b/gi, 'sauce nuoc-mâm'],
+    [/\bworcestershire\s+sauce\b/gi, 'sauce Worcestershire'],
+    [/\bhot\s+sauce\b/gi, 'sauce piquante'],
+    [/\bblack\s+pepper\b/gi, 'poivre noir'],
+    [/\bwhite\s+pepper\b/gi, 'poivre blanc'],
+    [/\bcayenne\s+pepper\b/gi, 'poivre de Cayenne'],
+    [/\bsmoked\s+paprika\b/gi, 'paprika fumé'],
+    [/\bcurry\s+powder\b/gi, 'curry en poudre'],
+    [/\bGaram\s+masala\b/gi, 'garam masala'],
+    [/\bmixed\s+herbs?\b/gi, 'herbes de Provence'],
+    [/\bmixed\s+spice(?:s)?\b/gi, "mélange d'épices"],
+    [/\bcinnamon\s+stick(?:s)?\b/gi, 'bâton de cannelle'],
+    [/\bstar\s+anise?\b/gi, 'anis étoilé'],
+    [/\bcloves?\s+garlic\b/gi, "gousses d'ail"],
+    [/\bclove(?:s)?\s+of\s+garlic\b/gi, "gousses d'ail"],
+    [/\bbay\s+lea(?:f|ves)\b/gi, 'feuille de laurier'],
+    [/\bchili\s+flakes?\b/gi, 'flocons de piment'],
+    [/\bred\s+chili\b/gi, 'piment rouge'],
+    [/\bgreen\s+chili\b/gi, 'piment vert'],
+    [/\bpasta\s+sheets?\b/gi, 'feuilles de lasagne'],
+    [/\blasagn[ae]\s+sheets?\b/gi, 'feuilles de lasagne'],
+    [/\bpuff\s+pastry\b/gi, 'pâte feuilletée'],
+    [/\bshort(?:crust)?\s+pastry\b/gi, 'pâte brisée'],
+    [/\bfilo\s+pastry\b/gi, 'pâte filo'],
+    [/\bpie\s+crust\b/gi, 'pâte brisée'],
+    [/\bbasmati\s+rice\b/gi, 'riz basmati'],
+    [/\bjasmine\s+rice\b/gi, 'riz jasmin'],
+    [/\bwild\s+rice\b/gi, 'riz sauvage'],
+    [/\bbrown\s+rice\b/gi, 'riz complet'],
+    [/\brisotto\s+rice\b/gi, 'riz à risotto'],
+    [/\barb[ou]rio\s+rice\b/gi, 'riz arborio'],
+    [/\bsolid\s+butter\b/gi, 'beurre dur'],
+    [/\broom\s+temperature\b/gi, 'température ambiante'],
+    [/\bat\s+room\s+temp\b/gi, 'à température ambiante'],
+    [/\bdark\s+chocolate\b/gi, 'chocolat noir'],
+    [/\bwhite\s+chocolate\b/gi, 'chocolat blanc'],
+    [/\bmilk\s+chocolate\b/gi, 'chocolat au lait'],
+    [/\bcocoa\s+powder\b/gi, 'poudre de cacao'],
+    [/\bcocoa\s+nibs?\b/gi, 'éclats de cacao'],
+    [/\bgolden\s+syrup\b/gi, 'sirop de maïs'],
+    [/\blight\s+corn\s+syrup\b/gi, 'sirop de maïs léger'],
+    [/\bcashew\s+nuts?\b/gi, 'noix de cajou'],
+    [/\bpecan\s+nuts?\b/gi, 'noix de pécan'],
+    [/\bmacadamia\s+nuts?\b/gi, 'noix de macadamia'],
+    [/\bpine\s+nuts?\b/gi, 'pignons de pin'],
+    [/\bdesiccated\s+coconut\b/gi, 'noix de coco râpée'],
+    [/\bcoconut\s+flakes?\b/gi, 'copeaux de noix de coco'],
+    [/\bdried\s+fruits?\b/gi, 'fruits secs'],
+    [/\bsultanas?\b/gi, 'raisins secs'],
+    [/\bcurrents?\b/gi, 'groseilles'],
+    [/\bprunes?\b/gi, 'pruneaux'],
+    [/\bdates?\b/gi, 'dattes'],
+    [/\bfigs?\b/gi, 'figues'],
+    [/\bapricots?\b/gi, 'abricots'],
+    [/\bcherries\b/gi, 'cerises'],
+    [/\bcherry\b/gi, 'cerise'],
+    [/\bpeaches?\b/gi, 'pêches'],
+    [/\bplums?\b/gi, 'prunes'],
+    [/\bkiwi(?:s)?\b/gi, 'kiwi'],
+    [/\bmelon\b/gi, 'melon'],
+    [/\bwatermelon\b/gi, 'pastèque'],
+    [/\bgrapefruits?\b/gi, 'pamplemousse'],
+    [/\bpomegranate\b/gi, 'grenade'],
+    [/\bpomegranate\s+seeds?\b/gi, 'graines de grenade'],
+    [/\bspring\s+onions?\b/gi, 'ciboule'],
+    [/\bgreen\s+onions?\b/gi, 'ciboule'],
+    [/\bscallions?\b/gi, 'ciboule'],
+    [/\bsweet\s+potato(?:es)?\b/gi, 'patate douce'],
+    [/\byam(?:s)?\b/gi, 'igname'],
+    [/\bparsnips?\b/gi, 'panais'],
+    [/\bturnips?\b/gi, 'navet'],
+    [/\bradishes?\b/gi, 'radis'],
+    [/\bbok\s+choy\b/gi, 'pak-choï'],
+    [/\bkale\b/gi, 'chou frisé'],
+    [/\barugula\b/gi, 'roquette'],
+    [/\brocket\b/gi, 'roquette'],
+    [/\bwatercress\b/gi, 'cresson'],
+    [/\bendive\b/gi, 'endive'],
+    [/\bchicory\b/gi, 'chicorée'],
+    [/\bcourgette(?:s)?\b/gi, 'courgette'],
+    [/\baubergine(?:s)?\b/gi, 'aubergine'],
 
-    // Mots simples ensuite
-    [/\beggs?\b/gi, 'œufs'],
+    // ── Mots simples (après toutes les phrases) ────────────────────────────
+    [/\beggs?\b/gi, 'œuf'],
+    [/\byolk(?:s)?\b/gi, "jaune d'œuf"],
+    [/\bwhites?\b(?=\s|$)/gi, "blanc d'œuf"],
     [/\bmilk\b/gi, 'lait'],
     [/\bsugar\b/gi, 'sucre'],
     [/\bflour\b/gi, 'farine'],
@@ -428,13 +694,18 @@ const EN_TO_FR_WORDS: Array<[RegExp, string]> = [
     [/\bpeas\b/gi, 'pois'],
     [/\bchicken\b/gi, 'poulet'],
     [/\bbeef\b/gi, 'bœuf'],
+    [/\blamb\b/gi, 'agneau'],
     [/\bpork\b/gi, 'porc'],
     [/\bham\b/gi, 'jambon'],
     [/\bsalmon\b/gi, 'saumon'],
     [/\btuna\b/gi, 'thon'],
     [/\bbacon\b/gi, 'lardons'],
+    [/\bprawns?\b/gi, 'crevettes'],
+    [/\bshrimps?\b/gi, 'crevettes'],
+    [/\bsquid\b/gi, 'calamar'],
     [/\brice\b/gi, 'riz'],
     [/\bpasta\b/gi, 'pâtes'],
+    [/\bnoodles?\b/gi, 'nouilles'],
     [/\bbread\b/gi, 'pain'],
     [/\byeast\b/gi, 'levure'],
     [/\bvinegar\b/gi, 'vinaigre'],
@@ -445,6 +716,12 @@ const EN_TO_FR_WORDS: Array<[RegExp, string]> = [
     [/\bvanilla\b/gi, 'vanille'],
     [/\bcinnamon\b/gi, 'cannelle'],
     [/\bginger\b/gi, 'gingembre'],
+    [/\bturmeric\b/gi, 'curcuma'],
+    [/\bpaprika\b/gi, 'paprika'],
+    [/\bcumin\b/gi, 'cumin'],
+    [/\bcoriander\b/gi, 'coriandre'],
+    [/\bnutmeg\b/gi, 'muscade'],
+    [/\bsaffron\b/gi, 'safran'],
     [/\bparsley\b/gi, 'persil'],
     [/\bbasil\b/gi, 'basilic'],
     [/\bchives\b/gi, 'ciboulette'],
@@ -453,6 +730,10 @@ const EN_TO_FR_WORDS: Array<[RegExp, string]> = [
     [/\bthyme\b/gi, 'thym'],
     [/\brosemary\b/gi, 'romarin'],
     [/\bdill\b/gi, 'aneth'],
+    [/\bsage\b/gi, 'sauge'],
+    [/\btarragon\b/gi, 'estragon'],
+    [/\bcilantro\b/gi, 'coriandre fraîche'],
+    [/\bchervil\b/gi, 'cerfeuil'],
     [/\bstrawberries\b/gi, 'fraises'],
     [/\bstrawberry\b/gi, 'fraise'],
     [/\bblueberries\b/gi, 'myrtilles'],
@@ -460,10 +741,13 @@ const EN_TO_FR_WORDS: Array<[RegExp, string]> = [
     [/\braspberries\b/gi, 'framboises'],
     [/\braspberry\b/gi, 'framboise'],
     [/\blemon\b/gi, 'citron'],
+    [/\blime\b/gi, 'citron vert'],
     [/\borange\b/gi, 'orange'],
     [/\bapples?\b/gi, 'pomme'],
     [/\bbananas?\b/gi, 'banane'],
     [/\bmango\b/gi, 'mangue'],
+    [/\bavocado\b/gi, 'avocat'],
+    [/\bpineapple\b/gi, 'ananas'],
     [/\bwalnuts?\b/gi, 'noix'],
     [/\balmonds?\b/gi, 'amandes'],
     [/\bhazelnuts?\b/gi, 'noisettes'],
@@ -479,10 +763,32 @@ const EN_TO_FR_WORDS: Array<[RegExp, string]> = [
     [/\bgruyere\b/gi, 'gruyère'],
     [/\bcamembert\b/gi, 'camembert'],
     [/\bbrie\b/gi, 'brie'],
-    [/\bcake\b/gi, 'gâteau'],
+    [/\bricotta\b/gi, 'ricotta'],
     [/\bcoconut\b/gi, 'noix de coco'],
     [/\bchili\b/gi, 'piment'],
-    [/\byogurt\b/gi, 'yaourt']
+    [/\byogurt\b/gi, 'yaourt'],
+    [/\btofu\b/gi, 'tofu'],
+    [/\btempeh\b/gi, 'tempeh'],
+    [/\bseitan\b/gi, 'seitan'],
+    [/\bmayonnaise\b/gi, 'mayonnaise'],
+    [/\bketchup\b/gi, 'ketchup'],
+    [/\bsriracha\b/gi, 'sriracha'],
+    [/\bhummus\b/gi, 'houmous'],
+    [/\bpesto\b/gi, 'pesto'],
+    [/\bwater\b/gi, 'eau'],
+    [/\bstock\b/gi, 'bouillon'],
+    [/\bbroth\b/gi, 'bouillon'],
+    [/\bwine\b/gi, 'vin'],
+    [/\bwhite\s+wine\b/gi, 'vin blanc'],
+    [/\bred\s+wine\b/gi, 'vin rouge'],
+    [/\bbeer\b/gi, 'bière'],
+    [/\brum\b/gi, 'rhum'],
+    [/\bwhisky\b/gi, 'whisky'],
+    [/\bbrandy\b/gi, 'cognac'],
+    [/\bgelatine?\b/gi, 'gélatine'],
+    [/\bagar[\s-]agar\b/gi, 'agar-agar'],
+    [/\bpectin\b/gi, 'pectine'],
+    [/\bxanthan\s+gum\b/gi, 'gomme xanthane'],
 ];
 
 export function translateIngredientName(name: string): string {
