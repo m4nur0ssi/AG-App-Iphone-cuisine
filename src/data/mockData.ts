@@ -2,11 +2,80 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/05/2026 17:21:14
- * Total: 267 recettes
+ * Dernière mise à jour: 14/05/2026 17:25:22
+ * Total: 269 recettes
  */
-export const exportSyncId = "1778779274870";
+export const exportSyncId = "1778779522256";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5525",
+        "title": "Salade de poivrons à l&rsquo;orientale",
+        "description": "Elle ce consomme tiède ou froide, c&rsquo;est vraiment un délice! Parfait pour accompagner vos repas. A partager sans modération !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778779212532.jpg&v=1778786453000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7346293135573552417\" data-video-id=\"7346293135573552417\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7346293135573552417\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍅\n             2 tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             3 poivrons"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             3 cas d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cas de mélasse de grenade"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel/poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Coriandre"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignons rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cas de sumac"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             4 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 cas de tomate concentré"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Accompagnements",
+            "Healthy",
+            "Orient",
+            "Pas cher",
+            "Salades",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5522",
         "title": "Salade de courgettes grillées",
@@ -15012,6 +15081,96 @@ export const mockRecipes: Recipe[] = [
             "passion",
             "pâtisserie",
             "tartelette",
+            "vanille"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "3555",
+        "title": "Cupcakes crème brûlée",
+        "description": "Découvrez une recette gourmande de cupcakes inspirés de la célèbre crème brûlée. Ces petits gâteaux moelleux sont garnis d&rsquo;une onctueuse crème pâtissière à la vanille, puis recouverts d&rsquo;une fine couche de sucre caramélisé au chalumeau, of",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fcupcake.jpeg&v=1774453096000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@sofeskitchen/video/7614920819331910934?_r=1&amp;_t=ZN-94bI94O9d26\" data-video-id=\"7614920819331910934\" style=\"max-width: 605px; min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/@sofeskitchen/video/7614920819331910934?_r=1&amp;_t=ZN-94bI94O9d26\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈 80 g de beurre fondu"
+            },
+            {
+                "quantity": "",
+                "name": "🍯 80 g de sucre en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚 2 oeufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍦 60 g de yaourt vanille ou nature"
+            },
+            {
+                "quantity": "",
+                "name": "🍦 Arôme de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🌾 90 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣 1/2 sachet de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🥛 500 g de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🍦 1 gousse de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥚 4 jaunes d'œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯 100 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣 65 g de maïzena"
+            }
+        ],
+        "steps": [
+            "Pour la crème pâtissière, mélanger le sucre, les jaunes d'œufs et la maïzena dans un bol.",
+            "Faire bouillir le lait avec la gousse de vanille fendue et grattée dans une casserole.",
+            "Verser la moitié du lait bouillant sur le mélange précédent (sucre, jaunes, maïzena) tout en fouettant.",
+            "Remettre le tout dans la casserole avec le reste du lait.",
+            "Cuire sur feu moyen en mélangeant constamment jusqu'à ébullition et épaississement de la crème.",
+            "Laisser refroidir la crème pâtissière au réfrigérateur pendant environ 3 heures.",
+            "Pour les cupcakes, mélanger tous les ingrédients (beurre fondu, sucre en poudre, œufs, yaourt, arôme de vanille, farine, levure chimique) dans un grand bol jusqu&rsquo;à obtenir une pâte homogène.",
+            "Répartir la pâte dans des moules à cupcakes.",
+            "Cuire les cupcakes dans un four préchauffé à 175 °C pendant environ 15 minutes.",
+            "Laisser refroidir complètement les cupcakes après la cuisson.",
+            "Une fois les cupcakes et la crème pâtissière refroidis, garnir les cupcakes de crème pâtissière.",
+            "Saupoudrer généreusement de sucre sur la crème pâtissière.",
+            "Caraméliser le sucre à l&rsquo;aide d&rsquo;un chalumeau de cuisine jusqu&rsquo;à obtenir une croûte dorée et craquante."
+        ],
+        "tags": [
+            "chalumeau",
+            "crème brûlée",
+            "cupcakes",
+            "dessert",
+            "facile",
+            "gourmand",
+            "pâtisserie",
             "vanille"
         ],
         "isFeatured": false,
