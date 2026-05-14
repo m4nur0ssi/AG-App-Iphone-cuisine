@@ -2,11 +2,84 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/05/2026 17:17:07
- * Total: 266 recettes
+ * Dernière mise à jour: 14/05/2026 17:21:14
+ * Total: 267 recettes
  */
-export const exportSyncId = "1778779027343";
+export const exportSyncId = "1778779274870";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5522",
+        "title": "Salade de courgettes grillées",
+        "description": "Une salade de courgettes grillées servie avec de la stracciatella et une vinaigrette au piment, ail et échalote, parfaite pour la saison des courgettes.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778778992693.jpg&v=1778786235000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7394864384209718561\" data-video-id=\"7394864384209718561\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7394864384209718561\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             2 courgettes"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1/2 piment rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 échalote"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1 citron (jus + zeste)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Une poignée de menthe fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Une poignée de basilic frais"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             4 cuillères à soupe de stracciatella"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive extra vierge"
+            }
+        ],
+        "steps": [
+            "Pour faire la vinaigrette, hachez l&rsquo;ail, puis combinez-le avec le piment et l&rsquo;échalote finement coupés en dés. Ajoutez la menthe hachée, le zeste et le jus d&rsquo;un citron, le sel, le poivre, puis incorporez lentement l&rsquo;huile d&rsquo;olive en fouettant jusqu&rsquo;à obtenir une vinaigrette crémeuse (environ 50ml).",
+            "Coupez les courgettes en rondelles, assaisonnez avec du sel, du poivre et de l&rsquo;huile d&rsquo;olive. Faites chauffer une poêle à griller jusqu&rsquo;à ce qu&rsquo;elle fume, puis saisissez les courgettes de chaque côté jusqu&rsquo;à ce qu&rsquo;elles soient grillées (2-3 minutes).",
+            "Pour servir, placez les courgettes sur une assiette, puis garnissez de feuilles de basilic, de cuillerées de stracciatella, puis de généreuses quantités de vinaigrette - bon appétit !"
+        ],
+        "tags": [
+            "épicé",
+            "Healthy",
+            "Italie",
+            "Salades",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5517",
         "title": "Riz à l'ail",
