@@ -2,11 +2,85 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 15/05/2026 00:13:01
- * Total: 280 recettes
+ * Dernière mise à jour: 15/05/2026 00:16:56
+ * Total: 281 recettes
  */
-export const exportSyncId = "1778803981860";
+export const exportSyncId = "1778804216452";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5573",
+        "title": "Creamy Paprika Beef Pasta",
+        "description": "Une recette de pâtes crémeuses au bœuf et paprika fumé, qui a généré des millions de vues sur toutes les plateformes.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778803932591.jpg&v=1778811175000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7611621335608954134\" data-video-id=\"7611621335608954134\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7611621335608954134\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍝\n             400g pasta (rigatoni)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 onion, diced"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             500g minced beef"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             4 garlic cloves, minced"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 tbsp smoked paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 tbsp tomato paste"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 x 400g tin of chopped tomatoes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             150ml beef stock"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             150g mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             40g Parmesan, grated, plus extra for serving"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             10g parsley, chopped"
+            }
+        ],
+        "steps": [
+            "Heat oil in a large pan over medium high heat. Add the minced beef, spread it out and leave it to caramelise. Once deeply browned underneath, break it up and cook until browned all over.",
+            "Add the onion and cook 4 to 5 minutes until softened. Stir in the garlic and smoked paprika, cook 1 minute.",
+            "Add the tomato paste and cook 1 minute to deepen the flavour.",
+            "Pour in the chopped tomatoes and beef stock. Simmer 10 minutes until thick and rich.",
+            "Cook the pasta in well salted water until al dente. Drain, saving a splash of pasta water.",
+            "Add the pasta to the sauce with mascarpone, parmesan and parsley. Toss with a splash of pasta water until glossy and silky.",
+            "Taste, adjust seasoning, finish with extra parmesan and serve."
+        ],
+        "tags": [
+            "Italie",
+            "pates"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5570",
         "title": "Pasta alla Montecarlo",
