@@ -2,11 +2,85 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/05/2026 22:37:51
- * Total: 279 recettes
+ * Dernière mise à jour: 15/05/2026 00:13:01
+ * Total: 280 recettes
  */
-export const exportSyncId = "1778798271820";
+export const exportSyncId = "1778803981860";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5570",
+        "title": "Pasta alla Montecarlo",
+        "description": "Une recette de pâtes crémeuses à la Montecarlo avec du bœuf haché, du pesto et une touche de peperoncini, pour un goût de vacances 5 étoiles.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778803721386.jpg&v=1778810936000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7531348013638225174\" data-video-id=\"7531348013638225174\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7531348013638225174\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍝\n             300g Penne"
+            },
+            {
+                "quantity": "",
+                "name": "🥩\n             250g bœuf haché frais"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 Zwiebeln (oignons)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 Peperoncini"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             30g Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 EL Tomatenmark (1 cuillère à soupe de concentré de tomate)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             2 EL selbst gemachtes Pesto (2 cuillères à soupe de pesto maison)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             200ml Sahne (crème)"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             100ml Weißwein (vin blanc)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Olivenöl (huile d&rsquo;olive)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Salz &#038; Pfeffer (sel et poivre)"
+            }
+        ],
+        "steps": [
+            "Préparation : Couper l&rsquo;oignon en dés et hacher finement le peperoncini.",
+            "Préparer la sauce : Mettre les oignons et le peperoncini dans une poêle et faire revenir brièvement pendant 1-2 minutes. Ajouter ensuite le bœuf haché et le faire dorer.",
+            "Cuire les pâtes : Mettre les pâtes dans une casserole d&rsquo;eau salée et les cuire al dente.",
+            "Cuire la sauce : Ajouter 1 cuillère à soupe de concentré de tomate dans la poêle et bien mélanger. Déglacer ensuite le tout avec un bon filet de vin blanc. Ajouter maintenant la crème dans la poêle. Incorporer 2 cuillères à soupe de pesto frais maison dans la sauce et bien mélanger. Assaisonner avec du sel et du poivre pour donner du goût à la sauce. Pour ceux qui aiment plus crémeux, ajouter une louche d&rsquo;eau de cuisson des pâtes dans la poêle.",
+            "Ajouter les pâtes à la sauce : Mettre les pâtes directement dans la poêle. Retirer ensuite la poêle du feu, ajouter le Parmesan et bien mélanger le tout.",
+            "Dressage : Répartir les pâtes dans l&rsquo;assiette et garnir de Parmesan."
+        ],
+        "tags": [
+            "épicé",
+            "Italie",
+            "pates"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5567",
         "title": "Harira marocaine",
