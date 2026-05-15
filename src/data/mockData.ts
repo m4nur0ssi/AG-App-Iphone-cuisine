@@ -2,11 +2,87 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 15/05/2026 04:26:39
- * Total: 284 recettes
+ * Dernière mise à jour: 15/05/2026 04:35:53
+ * Total: 285 recettes
  */
-export const exportSyncId = "1778819199788";
+export const exportSyncId = "1778819753320";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5585",
+        "title": "Gratin de poulet effiloché, patates et sauce façon Boursin",
+        "description": "Une recette facile de gratin avec du poulet effiloché, des patates coupées en petits cubes et une sauce crémeuse façon Boursin. Comptez environ 1h de préparation et cuisson.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778819227384.jpg&v=1778826461000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7560417585964109078\" data-video-id=\"7560417585964109078\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7560417585964109078\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             3 blancs de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             4 à 5 patates"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             200 g de fromage ail et fines herbes (type Boursin ou Tartare)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème semi liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Cheddar râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Mozzarella râpée"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre demi-sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil (pour la finition)"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Gratins"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5582",
         "title": "Mushroom Soup",
