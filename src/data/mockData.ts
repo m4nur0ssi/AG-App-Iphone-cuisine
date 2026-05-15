@@ -2,11 +2,80 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 15/05/2026 00:16:56
- * Total: 281 recettes
+ * Dernière mise à jour: 15/05/2026 00:20:53
+ * Total: 282 recettes
  */
-export const exportSyncId = "1778804216452";
+export const exportSyncId = "1778804453245";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5576",
+        "title": "Pasta al forno bianca",
+        "description": "Découvrez le plaisir simple et irrésistible d'un plat qui parle au cœur.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frecipe_1778804225652.jpg&v=1778811439000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7554066251908222230\" data-video-id=\"7554066251908222230\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7554066251908222230\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍝\n             400 g de rigatoni"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             3 mozzarella fior di latte (environ 125 g chacune)"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             4 tranches de jambon cuit"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 piment"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             500 g de champignons de Paris"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Basilic frais selon le goût"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             1 litre de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             85 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             85 g de farine"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Gratins",
+            "Italie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5573",
         "title": "Creamy Paprika Beef Pasta",
