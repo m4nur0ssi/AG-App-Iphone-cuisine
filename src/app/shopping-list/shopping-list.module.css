@@ -164,6 +164,33 @@
     height: 180px;
     position: relative;
     overflow: hidden;
+    display: block;          /* Link se comporte comme un bloc */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.recipeImageWrapper::after {
+    content: '→ Voir la recette';
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    padding: 5px 12px;
+    border-radius: 100px;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    pointer-events: none;
+}
+
+.recipeImageWrapper:hover::after {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .recipeImage {
@@ -173,7 +200,7 @@
     transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
 }
 
-.recipeGroup:hover .recipeImage {
+.recipeImageWrapper:hover .recipeImage {
     transform: scale(1.05);
 }
 

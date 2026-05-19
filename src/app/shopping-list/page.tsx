@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, useAnimation, PanInfo } from 'framer-motion';
+import Link from 'next/link';
 import Header from '@/components/Header/Header';
 import styles from './shopping-list.module.css';
 
@@ -152,9 +153,9 @@ function SwipeableRecipe({ id, data, removeRecipe, toggleCheck }: { id: string, 
                 style={{ position: 'relative', zIndex: 2, background: 'var(--color-bg-tertiary)' }}
             >
                 {data.image && (
-                    <div className={styles.recipeImageWrapper}>
+                    <Link href={`/recipe/${id}`} className={styles.recipeImageWrapper}>
                         <img src={data.image} alt={data.title} className={styles.recipeImage} />
-                    </div>
+                    </Link>
                 )}
                 <div className={styles.recipeHeader}>
                     <h3 className={styles.recipeTitle}>{data.title}</h3>
