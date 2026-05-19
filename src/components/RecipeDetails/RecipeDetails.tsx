@@ -45,6 +45,16 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
     const touchEnd = useRef<{ x: number, y: number } | null>(null);
     const [isNavigating, setIsNavigating] = useState(false);
     const [slideDirection, setSlideDirection] = useState<'left'|'right'|null>(null);
+    const pageRef = useRef<HTMLDivElement>(null);
+
+    // Toast notification pour le panier
+    const [toast, setToast] = useState<string | null>(null);
+    const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+    const showToast = (msg: string) => {
+        if (toastTimer.current) clearTimeout(toastTimer.current);
+        setToast(msg);
+        toastTimer.current = setTimeout(() => setToast(null), 2200);
+    };
 
     // Tabs
     const availableTabs: { id: TabId; label: string; count?: number }[] = [
@@ -207,8 +217,8 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
         }
     };
 
-    const minSwipeDistance = 50;
-    const maxVerticalDiff = 50;
+    const minSwipeDistance = 60;
+    const maxVerticalDiff = 35;
 
     const onTouchStart = (e: React.TouchEvent) => {
         touchEnd.current = null;
@@ -218,19 +228,15 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
         };
     };
 
-    const onTouchMove = (e: React.TouchEvent) => {
-        touchEnd.current = {
-            x: e.targetTouches[0].clientX,
-            y: e.targetTouches[0].clientY
-        };
-    };
+    // onTouchMove est géré via un listener natif passif (useEffect ci-dessous)
+    // pour ne jamais bloquer le scroll natif du navigateur
 
     const onTouchEnd = () => {
         if (!touchStart.current || !touchEnd.current) return;
-        
+
         const distanceX = touchStart.current.x - touchEnd.current.x;
         const distanceY = Math.abs(touchStart.current.y - touchEnd.current.y);
-        
+
         if (distanceY > maxVerticalDiff || Math.abs(distanceX) < minSwipeDistance) return;
 
         const isLeftSwipe = distanceX > minSwipeDistance;
@@ -248,6 +254,20 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
             setTimeout(() => router.push(`/recipe/${prevId}`), 250);
         }
     };
+
+    // Listener passif pour onTouchMove — ne bloque jamais le scroll natif
+    useEffect(() => {
+        const el = pageRef.current;
+        if (!el) return;
+        const handleMove = (e: TouchEvent) => {
+            touchEnd.current = {
+                x: e.targetTouches[0].clientX,
+                y: e.targetTouches[0].clientY
+            };
+        };
+        el.addEventListener('touchmove', handleMove, { passive: true });
+        return () => el.removeEventListener('touchmove', handleMove);
+    }, []);
 
     const switchTab = (tab: TabId) => {
         setPrevTab(activeTab);
@@ -289,17 +309,48 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
     };
 
     const toggleIngredient = (index: number) => {
-        // Sécurité mobile : si on a bougé de plus de 10px, on considère que c'est un scroll, pas un clic
+        // Sécurité mobile : si on a bougé de plus de 10px → scroll, pas un clic
         if (touchStart.current && touchEnd.current) {
             const dx = Math.abs(touchStart.current.x - touchEnd.current.x);
             const dy = Math.abs(touchStart.current.y - touchEnd.current.y);
             if (dx > 10 || dy > 10) return;
         }
 
+        const ing = recipe.ingredients[index];
         const newChecked = [...checkedIngredients];
-        newChecked[index] = !newChecked[index];
+        const isNowChecked = !newChecked[index];
+        newChecked[index] = isNowChecked;
         setCheckedIngredients(newChecked);
         triggerHaptic();
+
+        // Ajout / retrait direct du panier localStorage
+        const cleanName = ing.name
+            .replace(/^[\uD83C-􏰀-\uDFFF☀-➿\s]+/, '')
+            .trim();
+        const displayQty = ing.quantity ? scaleQuantity(ing.quantity, ratio) : '';
+        const entry = `- ${displayQty ? displayQty + ' ' : ''}${cleanName}`.trim();
+
+        if (typeof window !== 'undefined') {
+            const cart = JSON.parse(window.localStorage.getItem('magic-shopping-list') || '{}');
+            const recipeCart = cart[recipe.id] || { title: recipe.title, image: recipe.image, ingredients: [] };
+
+            if (isNowChecked) {
+                const alreadyIn = recipeCart.ingredients.some((i: any) => i.name === entry);
+                if (!alreadyIn) recipeCart.ingredients.push({ name: entry, checked: false });
+                showToast(`${cleanName} ajouté !`);
+            } else {
+                recipeCart.ingredients = recipeCart.ingredients.filter((i: any) => i.name !== entry);
+            }
+
+            if (recipeCart.ingredients.length > 0) {
+                cart[recipe.id] = recipeCart;
+            } else {
+                delete cart[recipe.id];
+            }
+
+            window.localStorage.setItem('magic-shopping-list', JSON.stringify(cart));
+            window.dispatchEvent(new Event('shoppingListUpdated'));
+        }
     };
 
     const copyIngredients = async () => {
@@ -581,7 +632,23 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
                     />
                 </div>
             )}
+            {/* Toast panier */}
+            <AnimatePresence>
+                {toast && (
+                    <motion.div
+                        className={styles.toastCart}
+                        initial={{ opacity: 0, y: 60, scale: 0.9 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: 40, scale: 0.9 }}
+                        transition={{ type: 'spring', stiffness: 400, damping: 28 }}
+                    >
+                        🛒 {toast}
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
             <div
+                ref={pageRef}
                 className={`${styles.page} ${mounted ? styles.pageVisible : ''} ${isNavigating ? (slideDirection === 'left' ? styles.slideOutLeft : styles.slideOutRight) : ''} ${isModal ? styles.modalMode : ''}`}
                 style={{
                     // @ts-ignore
@@ -592,7 +659,6 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
                     '--country-color': countryColor || theme.accent
                 } as React.CSSProperties}
                 onTouchStart={onTouchStart}
-                onTouchMove={onTouchMove}
                 onTouchEnd={onTouchEnd}
             >
 

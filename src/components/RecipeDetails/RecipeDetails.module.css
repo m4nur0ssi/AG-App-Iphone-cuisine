@@ -767,11 +767,10 @@
     align-items: center;
     justify-content: flex-start;
     gap: 12px;
-    padding: 0 24px 30px 24px;
+    padding: 0 24px 20px 24px;
     background: transparent !important;
-    position: sticky;
-    top: 5px;
-    z-index: 20;
+    /* position: sticky retiré — les boutons scrollent avec le contenu */
+    position: relative;
 }
 
 .ingredientsActionBlock {
@@ -2333,4 +2332,27 @@
     font-weight: 700;
     color: var(--color-text-primary);
     line-height: 1.4;
+}
+
+/* =====================================================
+   TOAST PANIER — notification ajout ingrédient
+   ===================================================== */
+.toastCart {
+    position: fixed;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    padding: 12px 22px;
+    background: rgba(20, 20, 25, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
 }
