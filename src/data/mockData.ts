@@ -2,11 +2,106 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 19/05/2026 14:41:54
+ * Dernière mise à jour: 19/05/2026 14:54:47
  * Total: 299 recettes
  */
-export const exportSyncId = "1779201714806";
+export const exportSyncId = "1779202487906";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5567",
+        "title": "Harira marocaine",
+        "description": "La Harira est une soupe marocaine traditionnelle, riche et savoureuse, souvent préparée et consommée pendant le mois de Ramadan pour rompre le jeûne. Elle est composée d&rsquo;agneau, de légumes, de légumineuses et d&rsquo;épices.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2F9007-scaled.jpg&v=1779209218000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7481720602986876182\" data-video-id=\"7481720602986876182\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7481720602986876182\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n 250g d'agneau"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n 1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n 3 tomates mixées avec 1 C.à.S de tomate concentrée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 branche de céleri"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 C.à.S de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 C.à.S de curcuma"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 C.à.S de gingembre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n 1 C.à.C de poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 C.à.C de cannelle (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 1 C.à.C de smen (beurre fermenté) (En option)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n 1 bouquet de coriandre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n 1 bouquet de persil"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 200g de pois chiche (trempés la veille)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 100g de lentille"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n 3 C.à.S de farine (+eau) (Pour le liant)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 grosse poignée de vermicelle"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n 2L d'eau"
+            }
+        ],
+        "steps": [
+            "Les étapes de préparation ne sont pas détaillées dans la description fournie."
+        ],
+        "tags": [
+            "Afrique",
+            "C'est l'hiver",
+            "Healthy",
+            "Pâques",
+            "Soupes"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5570",
         "title": "Pasta alla Montecarlo",
@@ -1600,101 +1695,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Italie",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5567",
-        "title": "Harira marocaine",
-        "description": "La Harira est une soupe marocaine traditionnelle, riche et savoureuse, souvent préparée et consommée pendant le mois de Ramadan pour rompre le jeûne. Elle est composée d&rsquo;agneau, de légumes, de légumineuses et d&rsquo;épices.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7481720602986876182\" data-video-id=\"7481720602986876182\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7481720602986876182\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             250g d'agneau"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             3 tomates mixées avec 1 C.à.S de tomate concentrée"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 branche de céleri"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 C.à.S de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 C.à.S de curcuma"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 C.à.S de gingembre"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1 C.à.C de poivre noir"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 C.à.C de cannelle (facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             1 C.à.C de smen (beurre fermenté) (En option)"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 bouquet de coriandre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 bouquet de persil"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             200g de pois chiche (trempés la veille)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             100g de lentille"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             3 C.à.S de farine (+eau) (Pour le liant)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 grosse poignée de vermicelle"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             2L d'eau"
-            }
-        ],
-        "steps": [
-            "Les étapes de préparation ne sont pas détaillées dans la description fournie."
-        ],
-        "tags": [
-            "Afrique",
-            "C'est l'hiver",
-            "Healthy",
-            "Pâques",
-            "Soupes"
         ],
         "isFeatured": false,
         "isFavorite": false,
