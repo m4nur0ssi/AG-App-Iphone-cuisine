@@ -44,6 +44,10 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
     const [isNavigating, setIsNavigating] = useState(false);
     const [slideDirection, setSlideDirection] = useState<'left'|'right'|null>(null);
 
+    // Pull-to-close iOS-style
+    const [dragY, setDragY] = useState(0);
+    const isDraggingSheet = useRef(false);
+
     // Tabs
     const availableTabs: { id: TabId; label: string; count?: number }[] = [
         { id: 'ingredients', label: 'Ingrédients', count: recipe?.ingredients?.length || 0 },
@@ -134,34 +138,61 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
         if (typeof window !== 'undefined' && 'vibrate' in navigator) navigator.vibrate(10);
     };
 
-    const minSwipeDistance = 50;
-    const maxVerticalDiff = 50;
-    const minVerticalDistance = 100; // Distance minimum pour un swipe vertical
+    const minSwipeDistance = 60;
+    const maxVerticalDiff = 35;
+    const DISMISS_THRESHOLD = 110; // px (après amortissement) pour fermer la fiche
 
     const onTouchStart = (e: React.TouchEvent) => {
         touchEnd.current = null;
         touchStart.current = { x: e.targetTouches[0].clientX, y: e.targetTouches[0].clientY };
+        isDraggingSheet.current = false;
     };
 
     const onTouchMove = (e: React.TouchEvent) => {
-        touchEnd.current = { x: e.targetTouches[0].clientX, y: e.targetTouches[0].clientY };
+        if (!touchStart.current) return;
+        const currentX = e.targetTouches[0].clientX;
+        const currentY = e.targetTouches[0].clientY;
+        touchEnd.current = { x: currentX, y: currentY };
+
+        const deltaY = currentY - touchStart.current.y;
+        const deltaX = Math.abs(currentX - touchStart.current.x);
+
+        // Pull-to-close : seulement quand on est tout en haut + geste vers le bas + pas de composante X
+        if (typeof window !== 'undefined' && window.scrollY === 0 && deltaY > 0 && deltaX < 40) {
+            isDraggingSheet.current = true;
+            // Amortissement iOS : résistance progressive (courbe racine carrée)
+            const damped = Math.pow(deltaY, 0.75) * 2.8;
+            setDragY(damped);
+        } else if (!isDraggingSheet.current) {
+            // Scroll natif : on ne touche à rien
+            setDragY(0);
+        }
     };
 
     const onTouchEnd = () => {
-        if (!touchStart.current || !touchEnd.current) return;
-        const distanceX = touchStart.current.x - touchEnd.current.x;
-        const distanceY = touchStart.current.y - touchEnd.current.y; // Positif si on scroll vers le bas
-        const absMoveY = Math.abs(distanceY);
-        const absMoveX = Math.abs(distanceX);
+        const wasDragging = isDraggingSheet.current;
+        isDraggingSheet.current = false;
 
-        // Détecte un swipe vers le bas (ferme la page)
-        if (distanceY > minVerticalDistance && absMoveX < 30) {
-            triggerHaptic();
-            router.back();
+        if (wasDragging) {
+            if (dragY >= DISMISS_THRESHOLD) {
+                // Seuil atteint → fermeture avec animation
+                triggerHaptic();
+                router.back();
+                return;
+            }
+            // Seuil non atteint → retour en place (spring)
+            setDragY(0);
             return;
         }
 
-        // Swipe horizontal traditionnel (pour naviguer entre recettes)
+        setDragY(0);
+        if (!touchStart.current || !touchEnd.current) return;
+        const distanceX = touchStart.current.x - touchEnd.current.x;
+        const distanceY = touchStart.current.y - touchEnd.current.y;
+        const absMoveY = Math.abs(distanceY);
+        const absMoveX = Math.abs(distanceX);
+
+        // Swipe horizontal uniquement (navigation entre recettes)
         if (absMoveY > maxVerticalDiff || absMoveX < minSwipeDistance) return;
         if (distanceX > minSwipeDistance && nextId) {
             triggerHaptic(); setSlideDirection('left'); setIsNavigating(true);
@@ -272,7 +303,20 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
             )}
             <div
                 className={`${styles.page} ${mounted ? styles.pageVisible : ''} ${isNavigating ? (slideDirection === 'left' ? styles.slideOutLeft : styles.slideOutRight) : ''}`}
-                style={{ '--dynamic-accent': theme.accent, '--dynamic-accent-glow': theme.glow, '--dynamic-accent-bg': theme.bg, '--dynamic-accent-rgb': theme.rgb } as any}
+                style={{
+                    '--dynamic-accent': theme.accent,
+                    '--dynamic-accent-glow': theme.glow,
+                    '--dynamic-accent-bg': theme.bg,
+                    '--dynamic-accent-rgb': theme.rgb,
+                    transform: dragY > 0
+                        ? `translateY(${dragY}px) scale(${Math.max(0.96, 1 - dragY * 0.0006)})`
+                        : undefined,
+                    transition: dragY > 0
+                        ? 'none'
+                        : 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease',
+                    borderRadius: dragY > 10 ? `${Math.min(dragY * 0.25, 28)}px` : undefined,
+                    opacity: dragY > 0 ? Math.max(0.72, 1 - dragY * 0.0025) : 1,
+                } as any}
                 onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}
             >
                 <div className={styles.heroNewLayout}>

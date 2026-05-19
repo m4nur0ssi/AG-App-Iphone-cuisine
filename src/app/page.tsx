@@ -210,7 +210,7 @@ export default function Home() {
                 }
                 if (tagLower === 'soupes') {
                     return lowerTags.some(t => t.startsWith('soupe')) ||
-                        /\b(soupe(s)?|velout[ée](s)?|gaspacho|potage|bouillon|minestrone|ramen)\b/.test(fullText);
+                        /\b(soupe(s)?|velout[ée](s)?|gaspacho|potage|minestrone|ramen)\b/.test(titleLower);
                 }
                 if (tagLower === 'gratins') {
                     return lowerTags.some(t => t.startsWith('gratin')) || /\bgratin(s|[ée]e?)?\b/.test(fullText);
