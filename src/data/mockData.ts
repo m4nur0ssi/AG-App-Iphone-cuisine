@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 19/05/2026 15:17:12
+ * Dernière mise à jour: 19/05/2026 16:04:49
  * Total: 299 recettes
  */
-export const exportSyncId = "1779203832260";
+export const exportSyncId = "1779206689486";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5564",
         "title": "Poulet coco épicé à la brésilienne",
         "description": "Un poulet aux cuisses tendres, mijoté dans une sauce crémeuse à la noix de coco, relevé d&rsquo;une touche de citron vert et de coriandre, inspiré de la cuisine brésilienne. Un plat réconfortant avec une touche tropicale.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fil_1080xN.6804413311_d69b.jpg&v=1779210316000",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fil_1080xN.6804413311_d69b.jpg&v=1779213489000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
