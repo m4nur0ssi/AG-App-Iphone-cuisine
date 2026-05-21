@@ -2,11 +2,136 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 21/05/2026 14:25:02
+ * Dernière mise à jour: 21/05/2026 14:35:40
  * Total: 297 recettes
  */
-export const exportSyncId = "1779373502689";
+export const exportSyncId = "1779374140568";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5508",
+        "title": "Cinnamon Roll Muffins",
+        "description": "Super fluffy, filled with that delicious Philadelphia cream cheese, and topped with a buttery, cinnamon-sugar swirl that gives the perfect crunchy touch.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fmuffin-3-scaled-1.jpg&v=1779380796000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7574486276993322270\" data-video-id=\"7574486276993322270\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7574486276993322270\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n 240 g (2 cups) all-purpose flour, sifted"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 tbsp baking powder"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n ½ tsp salt"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 2 tbsp ground cinnamon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 tsp cornstarch"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 110 g (about ½ cup) granulated sugar"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 80 g (about ½ cup packed) brown sugar"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n ½ cup (115 g) unsalted butter, melted or at room temperature"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n ⅓ cup (80 ml) vegetable oil"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 2 eggs + 1 egg white"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1½ tbsp vanilla extract"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n ⅓ cup (80 ml) milk"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n ¼ cup (60 g) plain Greek yogurt"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 60 g unsalted butter, melted (for swirl)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 60 g brown sugar (for swirl)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1½ tsp ground cinnamon (for swirl)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 6 oz (170 g) Philadelphia cream cheese, softened"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 7 tbsp (100 g) unsalted butter, softened (for filling)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 cup (120 g) powdered sugar, sifted"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 tsp vanilla extract (for filling)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 2 tbsp heavy cream"
+            }
+        ],
+        "steps": [
+            "Pour la garniture tourbillon \" Cinnamon Roll \" : Mélangez le beurre fondu, le sucre roux et la cannelle jusqu&rsquo;à obtenir une pâte épaisse. Transférez dans une poche à douille ou un petit sac en plastique dont vous aurez coupé un coin.",
+            "Pour la préparation des muffins : Préchauffez le four à 180 °C (350 °F) et préparez un moule à muffins avec de grandes caissettes ou graissez-le.",
+            "Dans un bol, mélangez les ingrédients secs (farine, levure chimique, sel, cannelle, fécule de maïs) et mettez de côté.",
+            "Dans un autre bol, battez le beurre avec les sucres (si vous utilisez du beurre fondu, mélangez simplement jusqu&rsquo;à incorporation).",
+            "Ajoutez l&rsquo;huile, les œufs, la vanille, le yaourt et le lait. Mélangez jusqu&rsquo;à incorporation.",
+            "Incorporez délicatement les ingrédients secs avec une spatule ; ne mélangez pas trop.",
+            "Remplissez chaque caissette à muffins aux 2/3 avec la pâte.",
+            "Ajoutez un peu du mélange tourbillon à la cannelle sur le dessus en spirale, puis utilisez un cure-dent pour faire un léger mouvement circulaire afin de créer l&rsquo;effet de tourbillon.",
+            "Faites cuire pendant 22 à 25 minutes, jusqu&rsquo;à ce qu&rsquo;un cure-dent inséré en ressorte propre (un peu d&rsquo;humidité est acceptable, mais pas de pâte crue).",
+            "Laissez refroidir dans le moule pendant 5 minutes, puis transférez sur une grille.",
+            "Pour la garniture crémeuse (après cuisson) : Battez le beurre et le cream cheese jusqu&rsquo;à obtenir une consistance crémeuse (2-3 min).",
+            "Ajoutez la vanille.",
+            "Incorporez progressivement le sucre glace jusqu&rsquo;à ce que le mélange soit léger et mousseux.",
+            "Réfrigérez 15 à 20 minutes avant utilisation.",
+            "Pour garnir les muffins : Une fois refroidis, faites un petit trou au centre de chaque muffin (avec une douille ou un petit couteau).",
+            "Placez la garniture au cream cheese dans une poche à douille munie d&rsquo;une douille ronde.",
+            "Remplissez le centre jusqu&rsquo;à ce qu&rsquo;un peu de garniture dépasse du muffin.",
+            "Vous pouvez laisser la surface lisse ou créer une petite \" montagne \" visible sur le dessus, comme un glaçage."
+        ],
+        "tags": [
+            "pâtisserie",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5511",
         "title": "Riz Jollof",
@@ -2651,131 +2776,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Italie",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5508",
-        "title": "Cinnamon Roll Muffins",
-        "description": "Super fluffy, filled with that delicious Philadelphia cream cheese, and topped with a buttery, cinnamon-sugar swirl that gives the perfect crunchy touch.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7574486276993322270\" data-video-id=\"7574486276993322270\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7574486276993322270\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             240 g (2 cups) all-purpose flour, sifted"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 tbsp baking powder"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             ½ tsp salt"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 tbsp ground cinnamon"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 tsp cornstarch"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             110 g (about ½ cup) granulated sugar"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             80 g (about ½ cup packed) brown sugar"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             ½ cup (115 g) unsalted butter, melted or at room temperature"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             ⅓ cup (80 ml) vegetable oil"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 eggs + 1 egg white"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1½ tbsp vanilla extract"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             ⅓ cup (80 ml) milk"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             ¼ cup (60 g) plain Greek yogurt"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             60 g unsalted butter, melted (for swirl)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             60 g brown sugar (for swirl)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1½ tsp ground cinnamon (for swirl)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             6 oz (170 g) Philadelphia cream cheese, softened"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             7 tbsp (100 g) unsalted butter, softened (for filling)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cup (120 g) powdered sugar, sifted"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 tsp vanilla extract (for filling)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 tbsp heavy cream"
-            }
-        ],
-        "steps": [
-            "Pour la garniture tourbillon \" Cinnamon Roll \" : Mélangez le beurre fondu, le sucre roux et la cannelle jusqu&rsquo;à obtenir une pâte épaisse. Transférez dans une poche à douille ou un petit sac en plastique dont vous aurez coupé un coin.",
-            "Pour la préparation des muffins : Préchauffez le four à 180 °C (350 °F) et préparez un moule à muffins avec de grandes caissettes ou graissez-le.",
-            "Dans un bol, mélangez les ingrédients secs (farine, levure chimique, sel, cannelle, fécule de maïs) et mettez de côté.",
-            "Dans un autre bol, battez le beurre avec les sucres (si vous utilisez du beurre fondu, mélangez simplement jusqu&rsquo;à incorporation).",
-            "Ajoutez l&rsquo;huile, les œufs, la vanille, le yaourt et le lait. Mélangez jusqu&rsquo;à incorporation.",
-            "Incorporez délicatement les ingrédients secs avec une spatule ; ne mélangez pas trop.",
-            "Remplissez chaque caissette à muffins aux 2/3 avec la pâte.",
-            "Ajoutez un peu du mélange tourbillon à la cannelle sur le dessus en spirale, puis utilisez un cure-dent pour faire un léger mouvement circulaire afin de créer l&rsquo;effet de tourbillon.",
-            "Faites cuire pendant 22 à 25 minutes, jusqu&rsquo;à ce qu&rsquo;un cure-dent inséré en ressorte propre (un peu d&rsquo;humidité est acceptable, mais pas de pâte crue).",
-            "Laissez refroidir dans le moule pendant 5 minutes, puis transférez sur une grille.",
-            "Pour la garniture crémeuse (après cuisson) : Battez le beurre et le cream cheese jusqu&rsquo;à obtenir une consistance crémeuse (2-3 min).",
-            "Ajoutez la vanille.",
-            "Incorporez progressivement le sucre glace jusqu&rsquo;à ce que le mélange soit léger et mousseux.",
-            "Réfrigérez 15 à 20 minutes avant utilisation.",
-            "Pour garnir les muffins : Une fois refroidis, faites un petit trou au centre de chaque muffin (avec une douille ou un petit couteau).",
-            "Placez la garniture au cream cheese dans une poche à douille munie d&rsquo;une douille ronde.",
-            "Remplissez le centre jusqu&rsquo;à ce qu&rsquo;un peu de garniture dépasse du muffin.",
-            "Vous pouvez laisser la surface lisse ou créer une petite \" montagne \" visible sur le dessus, comme un glaçage."
-        ],
-        "tags": [
-            "pâtisserie",
-            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
