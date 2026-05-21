@@ -2,11 +2,84 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 21/05/2026 14:12:37
+ * Dernière mise à jour: 21/05/2026 14:25:02
  * Total: 297 recettes
  */
-export const exportSyncId = "1779372757554";
+export const exportSyncId = "1779373502689";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5511",
+        "title": "Riz Jollof",
+        "description": "Découvrez la recette du Riz Jollof, un plat africain savoureux et parfumé, mijoté lentement pour une texture parfaite.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2FRiz-Jollof.jpg&v=1779379827000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7639031335524273440\" data-video-id=\"7639031335524273440\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7639031335524273440\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍚\n 1 kg de riz"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n 3 poivrons"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n 2 Tomates fraîches (tomates en fruits)"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n 3 cuillères à soupe de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n 2 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n Ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Persil"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Fond de veau"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Cube d'assaisonnement"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Huile"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n 40-50 cl d'eau"
+            }
+        ],
+        "steps": [
+            "Laisser mijoter à feu doux.",
+            "Couvrir avec du papier film.",
+            "Fermer la marmite pour une cuisson bien lente et un riz bien parfumé."
+        ],
+        "tags": [
+            "Afrique"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5514",
         "title": "Tiramisu",
@@ -2578,79 +2651,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Italie",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5511",
-        "title": "Riz Jollof",
-        "description": "Découvrez la recette du Riz Jollof, un plat africain savoureux et parfumé, mijoté lentement pour une texture parfaite.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7639031335524273440\" data-video-id=\"7639031335524273440\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7639031335524273440\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍚\n             1 kg de riz"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             3 poivrons"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             2 Tomates fraîches (tomates en fruits)"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             3 cuillères à soupe de concentré de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             2 oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Ail"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fond de veau"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Cube d'assaisonnement"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Huile"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             40-50 cl d'eau"
-            }
-        ],
-        "steps": [
-            "Laisser mijoter à feu doux.",
-            "Couvrir avec du papier film.",
-            "Fermer la marmite pour une cuisson bien lente et un riz bien parfumé."
-        ],
-        "tags": [
-            "Afrique"
         ],
         "isFeatured": false,
         "isFavorite": false,
