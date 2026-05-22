@@ -404,7 +404,7 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                         </div>
                         <div className={styles.tabContent} ref={tabContentRef}>
                             {activeTab === 'ingredients' && (
-                                <div className={styles.ingredientsList}>
+                                <div className={styles.ingredientsGrid}>
                                     {recipe.ingredients.map((ing, i) => {
                                         const visual = ing.image || getIngredientVisual(ing.name);
                                         const displayName = translateIngredientName(ing.name);
