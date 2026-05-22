@@ -160,12 +160,11 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
         // Pull-to-close : seulement quand on est tout en haut + geste vers le bas + pas de composante X
         if (typeof window !== 'undefined' && window.scrollY === 0 && deltaY > 0 && deltaX < 40) {
             isDraggingSheet.current = true;
-            // Amortissement iOS : résistance progressive (courbe racine carrée)
             const damped = Math.pow(deltaY, 0.75) * 2.8;
-            setDragY(damped);
+            setDragY(prev => Math.abs(prev - damped) > 1 ? damped : prev); // évite re-render si valeur stable
         } else if (!isDraggingSheet.current) {
-            // Scroll natif : on ne touche à rien
-            setDragY(0);
+            // scroll natif — pas de setDragY si déjà à 0 pour éviter re-renders
+            if (dragY !== 0) setDragY(0);
         }
     };
 
@@ -322,9 +321,13 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                 <div className={styles.heroNewLayout}>
                     <div className={styles.heroGrid}>
                         <div className={styles.heroTextColumn}>
-                            <div className={styles.categoryTag} style={{ background: theme.bg, color: theme.accent } as any}>
-                                <span>{recipe.category.toUpperCase()}</span>
-                                {flag && <span className={styles.categoryFlag}>{flag}</span>}
+                            <div className={styles.categoryCommandCenter}>
+                                <FavoriteButton recipeId={recipe.id} initialFavorite={recipe.isFavorite} imageUrl={recipe.image} className={styles['favorite-btn-action']} />
+                                <div className={styles.categoryTag} style={{ background: theme.bg, color: theme.accent } as any}>
+                                    <span>{recipe.category.toUpperCase()}</span>
+                                    {flag && <span className={styles.categoryFlag}>{flag}</span>}
+                                </div>
+                                <ShareButton title={recipe.title} url={typeof window !== 'undefined' ? window.location.href : ''} className={styles['share-btn-action']} />
                             </div>
                             <div className={styles.heroMainContent}>
                                 <h1 className={styles.heroTitleElegant}><SplitTitle text={recipe.title} noAnimation={true} /></h1>
@@ -337,14 +340,12 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                             )}
                         </div>
                         <div className={styles.heroImageColumn}>
-                            <div className={styles.actions}>
-                                <VoteButton recipeId={recipe.id} initialVotes={recipe.votes || 0} />
-                                <ShareButton title={recipe.title} url={typeof window !== 'undefined' ? window.location.href : ''} />
-                                <FavoriteButton recipeId={recipe.id} initialFavorite={recipe.isFavorite} imageUrl={recipe.image} />
-                            </div>
                             <div className={styles.imageCardContainer}>
                                 {recipe.image ? <Image src={recipe.image} alt={recipe.title} fill className={styles.imageMain} priority /> : <div className={styles.imagePlaceholderLarge}>🍽️</div>}
                                 <div className={styles.imageGlassOverlay} />
+                                <div className={styles.flameOverlay}>
+                                    <VoteButton recipeId={recipe.id} initialVotes={recipe.votes || 0} />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -420,7 +421,7 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                                             </div>
                                         );
                                     })}
-                                    <button className={styles.copyBtn} onClick={copyIngredients}>Ajouter au panier 🛒</button>
+                                    <div className={styles.converterCentered}><MagicConverter /></div>
                                 </div>
                             )}
                             {activeTab === 'steps' && (

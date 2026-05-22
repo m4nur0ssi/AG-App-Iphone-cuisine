@@ -74,8 +74,17 @@ export default function Home() {
             'green healthy': 'vegetarien',
             'végé': 'vegetarien',
             'vege': 'vegetarien',
+            'noël': 'noël',
+            'cest noël': 'noël',
+            'cest noel': 'noël',
+            'pâques est là': 'pâques',
+            'paques est la': 'pâques',
             'la dolce vita': 'dolce-vita',
-            'noël': 'Noël',
+            'dolce vita': 'dolce-vita',
+            'voilà lété': 'voila-lete',
+            'voila lete': 'voila-lete',
+            'cest lhiver': 'cest-lhiver',
+            'cest lhiver ': 'cest-lhiver',
             'astuces': 'Astuces',
             'les glaces': 'glaces',
             'glaces': 'glaces',
@@ -197,9 +206,28 @@ export default function Home() {
                            recipeCat === 'italie';
                 }
 
+                // Pâques & Noël — tag exact OU mention dans le texte
+                if (tagLower === 'pâques' || tagLower === 'paques') {
+                    return recipeTags.some(t => /p[âa]ques/i.test(t)) || /p[âa]ques/i.test(fullText);
+                }
+                if (tagLower === 'noël' || tagLower === 'noel') {
+                    return recipeTags.some(t => /no[eë]l/i.test(t)) || /no[eë]l/i.test(fullText);
+                }
+
                 // Pour les thèmes (sauces, airfryer, barbecue, etc.) : uniquement par tag explicite ou catégorie
                 const strictThemes = ['sauces', 'airfryer', 'barbecue', 'healthy', 'simplissime', 'voila-lete', 'cest-lhiver', 'astuces'];
                 if (strictThemes.includes(tagLower)) {
+                    // Barbecue : exclure les sauces (elles ont leur propre section)
+                    if (tagLower === 'barbecue' && recipeTags.some(t => t.toLowerCase() === 'sauces')) return false;
+                    // voila-lete / cest-lhiver : tag explicite OU mots-clés dans le texte
+                    if (tagLower === 'voila-lete') {
+                        return recipeTags.some(t => /voila.?l.?[eé]t[eé]/i.test(t) || t.toLowerCase() === 'voila-lete' || /[eé]t[eé]|estival|barbecue|soleil|frais/i.test(t))
+                            || /[eé]t[eé]|estival|barbecue|soleil|grillad/i.test(titleLower);
+                    }
+                    if (tagLower === 'cest-lhiver') {
+                        return recipeTags.some(t => /hiver|hivernal|chaud|r[eé]confort/i.test(t) || t.toLowerCase() === 'cest-lhiver')
+                            || /hiver|hivernal|chaud|r[eé]confort|mijoté|fondue/i.test(titleLower);
+                    }
                     return recipeCat === tagLower || recipeTags.some(t => t.toLowerCase() === tagLower);
                 }
 
@@ -645,7 +673,11 @@ export default function Home() {
                                 {activeTags.includes('thématiques') ? (
                                     <RecipeGrid
                                         recipes={thematicThemes as any}
-                                        onRecipeClick={(recipe) => handleCarouselTitleClick(recipe.title)}
+                                        onRecipeClick={(recipe) => {
+                                            const tag = (recipe as any).tags?.[0];
+                                            if (tag) { handleTagSelect(tag); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+                                            else handleCarouselTitleClick(recipe.title);
+                                        }}
                                     />
                                 ) : (
                                     <RecipeGrid
@@ -665,7 +697,11 @@ export default function Home() {
                                         title="Thématiques du Moment"
                                         compact={true}
                                         onTitleClick={handleCarouselTitleClick}
-                                        onCardClick={(recipe) => handleCarouselTitleClick(recipe.title)}
+                                        onCardClick={(recipe) => {
+                                            const tag = (recipe as any).tags?.[0];
+                                            if (tag && tag !== 'thématiques') { handleTagSelect(tag); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+                                            else handleCarouselTitleClick(recipe.title);
+                                        }}
                                     />
                                 )}
                                     {newRecipes.length > 0 && (

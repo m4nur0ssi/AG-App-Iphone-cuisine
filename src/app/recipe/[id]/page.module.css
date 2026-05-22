@@ -53,7 +53,7 @@
     background: var(--color-bg-secondary);
     background: radial-gradient(circle at top right, rgba(var(--dynamic-accent-rgb), 0.12) 0%, transparent 60%);
     padding: 340px 40px 40px; /* Espace pour le fixed header PC (340px au lieu de 200px) */
-    overflow: hidden;
+    overflow: clip; /* clip ne crée pas de scroll container, contrairement à hidden */
 }
 
 @media (max-width: 768px) {
@@ -189,6 +189,50 @@
     justify-content: center;
     font-size: 10rem;
     background: var(--color-bg-tertiary);
+}
+
+/* ---- Category Command Center (Favori | Catégorie | Partage) ---- */
+.categoryCommandCenter {
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: -10px auto 35px auto;
+    padding: 0;
+    z-index: 50;
+}
+
+.favorite-btn-action,
+.share-btn-action {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.2) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    color: white !important;
+}
+
+[data-theme='light'] .favorite-btn-action,
+[data-theme='light'] .share-btn-action {
+    background: rgba(0, 0, 0, 0.03) !important;
+    border: 1.5px solid rgba(0, 0, 0, 0.1) !important;
+    color: #000000 !important;
+}
+
+.flameOverlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 30;
 }
 
 /* ---- Actions (partage / favoris) ---- */
@@ -573,6 +617,13 @@
 }
 
 /* ---- Bouton copier ---- */
+.converterCentered {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 0 20px;
+}
+
 .copyBtn {
     display: flex;
     align-items: center;

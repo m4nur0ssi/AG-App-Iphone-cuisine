@@ -103,7 +103,7 @@
     background: var(--color-bg-secondary);
     background: radial-gradient(circle at top right, rgba(var(--dynamic-accent-rgb), 0.12) 0%, transparent 60%);
     padding: 340px 40px 40px; /* Espace pour le fixed header PC (340px au lieu de 200px) */
-    overflow: hidden;
+    overflow: clip; /* clip ne crée pas de scroll container, contrairement à hidden */
 }
 
 @media (max-width: 768px) {
@@ -729,12 +729,7 @@
    ===================================================== */
 .tabContent {
     flex: 1;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: var(--glass-border) transparent;
+    overflow: visible;
     animation: tabFadeIn 0.2s ease-out;
 }
 
@@ -765,12 +760,16 @@
 .stickyPanelHeader {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
+    justify-content: center;
     padding: 0 24px 20px 24px;
     background: transparent !important;
-    /* position: sticky retiré — les boutons scrollent avec le contenu */
     position: relative;
+}
+
+.converterCentered {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .ingredientsActionBlock {

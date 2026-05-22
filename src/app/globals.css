@@ -173,6 +173,7 @@ html, body {
   background-color: var(--color-bg-secondary);
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: none;
+  scroll-behavior: smooth;
 }
 
 html.is-splashing {

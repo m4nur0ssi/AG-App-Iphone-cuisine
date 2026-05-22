@@ -4,6 +4,7 @@
     color: var(--text-primary);
     padding-top: 108px; /* Collé à la barre de filtres */
     padding-bottom: 120px;
+    will-change: scroll-position; /* GPU acceleration pour le scroll */
 }
 
 /* Conteneur Header + Filtres fixe */

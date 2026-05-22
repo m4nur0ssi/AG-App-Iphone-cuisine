@@ -270,7 +270,6 @@ export default function RecipeDetail({ recipe, onClose }: RecipeDetailProps) {
                             <div className={styles.ingredientsSection}>
                                 <div className={styles.sectionHeader}>
                                     <MagicConverter />
-                                    <button className={styles.panierBtn} onClick={copyIngredients}>🛒 Mettre au panier</button>
                                 </div>
                                 <div className={styles.ingredientsGrid}>
                                     {recipe.ingredients.map((ing, idx) => {

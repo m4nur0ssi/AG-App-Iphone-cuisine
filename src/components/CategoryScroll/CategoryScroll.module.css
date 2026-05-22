@@ -9,6 +9,8 @@
     padding: 10px 20px;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    touch-action: pan-x;
+    -webkit-overflow-scrolling: touch;
 }
 
 .scroll::-webkit-scrollbar {
