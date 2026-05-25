@@ -54,6 +54,9 @@ export default function BottomNav() {
     const pointerStartX = useRef<number | null>(null);
     const DRAG_THRESHOLD = 8;
     const [isMiniMode, setIsMiniMode] = useState(false);
+    const [forceMiniMode, setForceMiniMode] = useState(false);
+    const prevPathnameRef = useRef(pathname);
+    const forceMiniTimerRef = useRef<NodeJS.Timeout | null>(null);
     const [lastViewed, setLastViewed] = useState<any>(null);
     const [isSheetOpen, setIsSheetOpen] = useState(false);
     const [showTimerMode, setShowTimerMode] = useState(false);
@@ -134,10 +137,28 @@ export default function BottomNav() {
         return <SearchIcon />;
     };
 
-    // Close search on route change (BottomNav persists across pages in layout)
+    // Close search on route change + show mini mode briefly when returning from a recipe
     useEffect(() => {
         setIsSearchOpen(false);
         setIsTimerExpanded(false);
+
+        const wasOnRecipe = prevPathnameRef.current.startsWith('/recipe/');
+        const isOnRecipe = pathname.startsWith('/recipe/');
+
+        if (wasOnRecipe && !isOnRecipe) {
+            // Just left a recipe page — show the last viewed card in mini mode for 4s
+            setForceMiniMode(true);
+            if (forceMiniTimerRef.current) clearTimeout(forceMiniTimerRef.current);
+            forceMiniTimerRef.current = setTimeout(() => {
+                setForceMiniMode(false);
+            }, 4000);
+        }
+
+        prevPathnameRef.current = pathname;
+
+        return () => {
+            if (forceMiniTimerRef.current) clearTimeout(forceMiniTimerRef.current);
+        };
     }, [pathname]);
 
     useEffect(() => {
@@ -290,11 +311,11 @@ export default function BottomNav() {
             )}
 
             <nav id="bottom-nav" className={styles.navWrapper}>
-                <div className={`${styles.multiPillContainer} ${isMiniMode ? styles.isMini : ''}`}>
-                   
+                <div className={`${styles.multiPillContainer} ${(isMiniMode || forceMiniMode) ? styles.isMini : ''}`}>
+
                    {/* 1. MINI MODE: SPLIT LAYOUT */}
                    <AnimatePresence>
-                        {isMiniMode && (
+                        {(isMiniMode || forceMiniMode) && (
                             <motion.div 
                                 className={styles.miniDockContainer}
                                 initial={{ opacity: 0, y: 30 }}
@@ -335,7 +356,7 @@ export default function BottomNav() {
                         )}
 
                         {/* 2. FULL MODE: STITCH DOCK */}
-                        {!isMiniMode && (
+                        {!(isMiniMode || forceMiniMode) && (
                             <motion.div 
                                 className={styles.fullDockContainer}
                                 initial={{ opacity: 0, y: 20 }}

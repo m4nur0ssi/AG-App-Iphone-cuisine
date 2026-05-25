@@ -273,37 +273,29 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
 
                 if (deltaX < -threshold && nextId) {
                     // Complete swipe → next recipe
+                    // Slide current page off — new page appears instantly at x:0 via swipe-no-entry
+                    // (no preview-card-to-center animation, avoids layout mismatch visual jump)
                     triggerHaptic();
-                    el.style.transition = 'transform 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
+                    el.style.transition = 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
                     el.style.transform = `translateX(${-vw}px)`;
-                    if (nextPreviewRef.current) {
-                        nextPreviewRef.current.style.transition = 'transform 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
-                        nextPreviewRef.current.style.transform = 'translateX(0px)';
-                    }
                     setTimeout(() => {
                         try {
                             sessionStorage.setItem('swipe-no-entry', '1');
-                            sessionStorage.setItem('swipe-direction', 'left');
                         } catch {}
                         router.push(`/recipe/${nextId}`);
-                    }, 240);
+                    }, 180);
 
                 } else if (deltaX > threshold && prevId) {
                     // Complete swipe → prev recipe
                     triggerHaptic();
-                    el.style.transition = 'transform 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
+                    el.style.transition = 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1)';
                     el.style.transform = `translateX(${vw}px)`;
-                    if (prevPreviewRef.current) {
-                        prevPreviewRef.current.style.transition = 'transform 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
-                        prevPreviewRef.current.style.transform = 'translateX(0px)';
-                    }
                     setTimeout(() => {
                         try {
                             sessionStorage.setItem('swipe-no-entry', '1');
-                            sessionStorage.setItem('swipe-direction', 'right');
                         } catch {}
                         router.push(`/recipe/${prevId}`);
-                    }, 240);
+                    }, 180);
 
                 } else {
                     // Spring back
