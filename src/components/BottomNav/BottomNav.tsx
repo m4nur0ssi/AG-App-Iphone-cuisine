@@ -134,9 +134,15 @@ export default function BottomNav() {
         return <SearchIcon />;
     };
 
+    // Close search on route change (BottomNav persists across pages in layout)
+    useEffect(() => {
+        setIsSearchOpen(false);
+        setIsTimerExpanded(false);
+    }, [pathname]);
+
     useEffect(() => {
         setMounted(true);
-        
+
         // Handle scroll for Mini Mode
         const handleScroll = () => {
             const threshold = 80;
