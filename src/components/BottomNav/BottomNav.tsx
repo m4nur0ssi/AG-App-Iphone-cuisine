@@ -51,6 +51,8 @@ export default function BottomNav() {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
     const [isDragging, setIsDragging] = useState(false);
+    const pointerStartX = useRef<number | null>(null);
+    const DRAG_THRESHOLD = 8;
     const [isMiniMode, setIsMiniMode] = useState(false);
     const [lastViewed, setLastViewed] = useState<any>(null);
     const [isSheetOpen, setIsSheetOpen] = useState(false);
@@ -137,7 +139,7 @@ export default function BottomNav() {
         
         // Handle scroll for Mini Mode
         const handleScroll = () => {
-            const threshold = 150;
+            const threshold = 80;
             setIsMiniMode(window.scrollY > threshold);
         };
         window.addEventListener('scroll', handleScroll);
@@ -205,6 +207,12 @@ export default function BottomNav() {
     }, [activeIndex, isDragging]);
 
     const handlePointerMove = (e: React.PointerEvent) => {
+        // N'active le drag qu'après un déplacement minimum
+        if (!isDragging && pointerStartX.current !== null) {
+            if (Math.abs(e.clientX - pointerStartX.current) > DRAG_THRESHOLD) {
+                setIsDragging(true);
+            }
+        }
         if (!isDragging || !dockRef.current) return;
         
         const rect = dockRef.current.getBoundingClientRect();
@@ -231,16 +239,20 @@ export default function BottomNav() {
     };
 
     const handlePointerUp = (e: React.PointerEvent) => {
+        const wasDragging = isDragging;
         setIsDragging(false);
-        if (!dockRef.current) return;
-        
-        const rect = dockRef.current.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const itemWidth = rect.width / navItems.length;
-        let newIdx = Math.floor(x / itemWidth);
-        newIdx = Math.max(0, Math.min(newIdx, navItems.length - 1));
-        
-        handleItemClick(newIdx);
+        pointerStartX.current = null;
+
+        // Si c'était un vrai drag (pas un simple tap), on navigue selon la position finale
+        if (wasDragging && dockRef.current) {
+            const rect = dockRef.current.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const itemWidth = rect.width / navItems.length;
+            let newIdx = Math.floor(x / itemWidth);
+            newIdx = Math.max(0, Math.min(newIdx, navItems.length - 1));
+            handleItemClick(newIdx);
+        }
+        // Si c'était un tap simple, le onClick sur le navItem s'en charge
     };
 
     const handleItemClick = (index: number) => {
@@ -329,10 +341,10 @@ export default function BottomNav() {
                                 <div 
                                     className={styles.stitchDock}
                                     ref={dockRef}
-                                    onPointerDown={() => setIsDragging(true)}
+                                    onPointerDown={(e) => { pointerStartX.current = e.clientX; }}
                                     onPointerMove={handlePointerMove}
                                     onPointerUp={handlePointerUp}
-                                    onPointerCancel={() => setIsDragging(false)}
+                                    onPointerCancel={() => { setIsDragging(false); pointerStartX.current = null; }}
                                 >
                                     <div className={styles.indicatorTrack}>
                                         <motion.div 

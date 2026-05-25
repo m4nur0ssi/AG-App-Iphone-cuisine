@@ -48,7 +48,7 @@
         0 20px 50px rgba(0, 0, 0, 0.4),
         0 0 1px rgba(255, 255, 255, 0.2) inset;
     user-select: none;
-    touch-action: none;
+    touch-action: manipulation; /* pan-none sur les boutons, mais sans bloquer les events */
 }
 
 .isolatedSearchBtn {

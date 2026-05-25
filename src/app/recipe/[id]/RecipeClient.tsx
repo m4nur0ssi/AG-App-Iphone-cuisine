@@ -44,8 +44,9 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
     const [isNavigating, setIsNavigating] = useState(false);
     const [slideDirection, setSlideDirection] = useState<'left'|'right'|null>(null);
 
-    // Pull-to-close iOS-style
-    const [dragY, setDragY] = useState(0);
+    // Pull-to-close iOS-style — manipulation directe du DOM pour zéro re-render
+    const pageRef = useRef<HTMLDivElement>(null);
+    const dragYRef = useRef(0);
     const isDraggingSheet = useRef(false);
 
     // Tabs
@@ -124,6 +125,20 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
         }
     }, [recipe.category]);
 
+    // Track last-viewed recipe for BottomNav mini mode
+    useEffect(() => {
+        if (typeof window !== 'undefined' && recipe.id) {
+            try {
+                localStorage.setItem('magic-last-viewed', JSON.stringify({
+                    id: recipe.id,
+                    title: recipe.title,
+                    image: recipe.image || '',
+                }));
+                window.dispatchEvent(new Event('recipeViewed'));
+            } catch {}
+        }
+    }, [recipe.id, recipe.title, recipe.image]);
+
     useEffect(() => {
         let wakeLock: any = null;
         const requestWakeLock = async () => {
@@ -148,6 +163,27 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
         isDraggingSheet.current = false;
     };
 
+    const applyDragDOM = (damped: number) => {
+        if (!pageRef.current) return;
+        const el = pageRef.current;
+        const scale = Math.max(0.96, 1 - damped * 0.0006);
+        const opacity = Math.max(0.72, 1 - damped * 0.0025);
+        const radius = damped > 10 ? `${Math.min(damped * 0.25, 28)}px` : '';
+        el.style.transform = `translateY(${damped}px) scale(${scale})`;
+        el.style.opacity = String(opacity);
+        el.style.borderRadius = radius;
+        el.style.transition = 'none';
+    };
+
+    const resetDragDOM = () => {
+        if (!pageRef.current) return;
+        const el = pageRef.current;
+        el.style.transform = '';
+        el.style.opacity = '';
+        el.style.borderRadius = '';
+        el.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease';
+    };
+
     const onTouchMove = (e: React.TouchEvent) => {
         if (!touchStart.current) return;
         const currentX = e.targetTouches[0].clientX;
@@ -161,10 +197,10 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
         if (typeof window !== 'undefined' && window.scrollY === 0 && deltaY > 0 && deltaX < 40) {
             isDraggingSheet.current = true;
             const damped = Math.pow(deltaY, 0.75) * 2.8;
-            setDragY(prev => Math.abs(prev - damped) > 1 ? damped : prev); // évite re-render si valeur stable
+            dragYRef.current = damped;
+            applyDragDOM(damped);
         } else if (!isDraggingSheet.current) {
-            // scroll natif — pas de setDragY si déjà à 0 pour éviter re-renders
-            if (dragY !== 0) setDragY(0);
+            dragYRef.current = 0;
         }
     };
 
@@ -173,18 +209,20 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
         isDraggingSheet.current = false;
 
         if (wasDragging) {
-            if (dragY >= DISMISS_THRESHOLD) {
+            if (dragYRef.current >= DISMISS_THRESHOLD) {
                 // Seuil atteint → fermeture avec animation
                 triggerHaptic();
                 router.back();
                 return;
             }
             // Seuil non atteint → retour en place (spring)
-            setDragY(0);
+            dragYRef.current = 0;
+            resetDragDOM();
             return;
         }
 
-        setDragY(0);
+        dragYRef.current = 0;
+        resetDragDOM();
         if (!touchStart.current || !touchEnd.current) return;
         const distanceX = touchStart.current.x - touchEnd.current.x;
         const distanceY = touchStart.current.y - touchEnd.current.y;
@@ -307,20 +345,13 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                 </div>
             )}
             <div
+                ref={pageRef}
                 className={`${styles.page} ${mounted ? styles.pageVisible : ''} ${isNavigating ? (slideDirection === 'left' ? styles.slideOutLeft : styles.slideOutRight) : ''}`}
                 style={{
                     '--dynamic-accent': theme.accent,
                     '--dynamic-accent-glow': theme.glow,
                     '--dynamic-accent-bg': theme.bg,
                     '--dynamic-accent-rgb': theme.rgb,
-                    transform: dragY > 0
-                        ? `translateY(${dragY}px) scale(${Math.max(0.96, 1 - dragY * 0.0006)})`
-                        : undefined,
-                    transition: dragY > 0
-                        ? 'none'
-                        : 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease',
-                    borderRadius: dragY > 10 ? `${Math.min(dragY * 0.25, 28)}px` : undefined,
-                    opacity: dragY > 0 ? Math.max(0.72, 1 - dragY * 0.0025) : 1,
                 } as any}
                 onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}
             >
@@ -373,6 +404,30 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                             <div className={styles.metaValue}>{recipe.category === 'restaurant' ? 'Restaurant' : recipe.difficulty}</div>
                         </div>
                     </div>
+                    {recipe.category !== 'restaurant' && recipe.prepTime > 0 && (
+                        <>
+                            <div className={styles.metaDivider} />
+                            <div className={styles.metaItem}>
+                                <span>🔪</span>
+                                <div>
+                                    <div className={styles.metaLabel}>Préparation</div>
+                                    <div className={styles.metaValue}>{recipe.prepTime} min</div>
+                                </div>
+                            </div>
+                        </>
+                    )}
+                    {recipe.category !== 'restaurant' && recipe.cookTime > 0 && (
+                        <>
+                            <div className={styles.metaDivider} />
+                            <div className={styles.metaItem}>
+                                <span>🍳</span>
+                                <div>
+                                    <div className={styles.metaLabel}>Cuisson</div>
+                                    <div className={styles.metaValue}>{recipe.cookTime} min</div>
+                                </div>
+                            </div>
+                        </>
+                    )}
                 </div>
 
                 {recipe.category === 'restaurant' && (

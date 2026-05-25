@@ -300,15 +300,11 @@ export default function Home() {
     }, [filteredRecipes]);
 
     const newRecipes = useMemo(() => {
-        // Recettes taguées "nouveautés" en premier, puis les plus récentes (ordre mockData = orderby=modified WP)
-        // On exclut les entrées non-recettes (restaurant, ciné, resto...)
-        const validRecipes = mockRecipes.filter(r => r.category !== 'restaurant');
-        const taggedNew = validRecipes.filter(r =>
-            (r.tags || []).some(t => t.toLowerCase() === 'nouveautés' || t.toLowerCase() === 'nouveauté')
-        );
-        const taggedIds = new Set(taggedNew.map(r => r.id));
-        const recent = validRecipes.filter(r => !taggedIds.has(r.id)).slice(0, 12 - taggedNew.length);
-        return [...taggedNew, ...recent].slice(0, 12);
+        // Les 12 premières recettes de mockData = les plus récemment modifiées dans WP (orderby=modified)
+        // C'est là qu'apparaissent les dernières recettes lancées depuis TikTok
+        return mockRecipes
+            .filter(r => r.category !== 'restaurant')
+            .slice(0, 12);
     }, []);
 
     const thematicThemes = [
@@ -746,14 +742,6 @@ export default function Home() {
                                         <RecipeCarousel
                                             recipes={categorizedRecipes['accompagnements']}
                                             title="Accompagnements"
-                                            size="small"
-                                            onTitleClick={handleCarouselTitleClick}
-                                        />
-                                    )}
-                                    {categorizedRecipes['pates']?.length > 0 && (
-                                        <RecipeCarousel
-                                            recipes={categorizedRecipes['pates']}
-                                            title="Pâtes"
                                             size="small"
                                             onTitleClick={handleCarouselTitleClick}
                                         />
