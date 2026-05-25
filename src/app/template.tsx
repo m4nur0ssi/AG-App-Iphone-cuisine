@@ -32,7 +32,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 damping: 30,
                 mass: 0.7,
             }}
-            style={{ minHeight: '100vh' }}
+            style={{ minHeight: '100vh', overflow: 'visible' }}
         >
             {children}
         </motion.div>
