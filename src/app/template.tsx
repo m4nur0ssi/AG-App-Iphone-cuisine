@@ -17,22 +17,23 @@ export default function Template({ children }: { children: React.ReactNode }) {
     }, []);
 
     // Swipe horizontal entre recettes : slide depuis la bonne direction
+    // IMPORTANT : pas de scale — le scale crée un compositing layer sur iOS
+    // qui bloque la propagation native du scroll vers le document.
     const xInitial = swipeDir === 'left' ? '60vw' : swipeDir === 'right' ? '-60vw' : 0;
-    const yInitial = swipeDir ? 0 : 15;
-    const scaleInitial = swipeDir ? 1 : 0.98;
+    const yInitial = swipeDir ? 0 : 12;
 
     return (
         <motion.div
-            initial={{ opacity: 0, x: xInitial, y: yInitial, scale: scaleInitial }}
-            animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
-            exit={{ opacity: 0, x: 0, y: -15, scale: 0.98 }}
+            initial={{ opacity: 0, x: xInitial, y: yInitial }}
+            animate={{ opacity: 1, x: 0, y: 0 }}
+            exit={{ opacity: 0 }}
             transition={{
                 type: 'spring',
                 stiffness: 380,
                 damping: 30,
                 mass: 0.7,
             }}
-            style={{ minHeight: '100vh' }}
+            style={{ minHeight: '100vh', overflow: 'visible' }}
         >
             {children}
         </motion.div>

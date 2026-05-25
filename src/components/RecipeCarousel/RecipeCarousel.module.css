@@ -126,7 +126,7 @@
     overscroll-behavior-x: contain;
     display: flex;
     align-items: center;
-    touch-action: pan-x; /* pan-y appartient à la page parente */
+    touch-action: pan-x pan-y; /* pan-x pour le carousel, pan-y pour scroller la page */
 }
 
 .track {
