@@ -15,28 +15,34 @@ export default function Template({ children }: { children: React.ReactNode }) {
     if (configRef.current === undefined) {
         let skip = false;
         let xInitial: string | number = 0;
-        let yInitial = 12;
 
         if (typeof window !== 'undefined') {
             try {
-                const noEntry = sessionStorage.getItem('swipe-no-entry');
-                if (noEntry) {
-                    // Swipe was driven by finger — old page already animated off, new page appears instantly
+                // Primary: window global — set synchronously in RecipeClient before router.push,
+                // survives React 18 concurrent rendering where sessionStorage can be read too late.
+                if ((window as any).__swipeNoEntry) {
+                    delete (window as any).__swipeNoEntry;
                     skip = true;
                     sessionStorage.removeItem('swipe-no-entry');
-                    sessionStorage.removeItem('swipe-direction');
                 } else {
-                    const dir = sessionStorage.getItem('swipe-direction') as 'left' | 'right' | null;
-                    if (dir) {
-                        xInitial = dir === 'left' ? '60vw' : '-60vw';
-                        yInitial = 0;
-                        sessionStorage.removeItem('swipe-direction');
+                    // Fallback: sessionStorage
+                    const noEntry = sessionStorage.getItem('swipe-no-entry');
+                    if (noEntry) {
+                        skip = true;
+                        sessionStorage.removeItem('swipe-no-entry');
+                    } else {
+                        const dir = sessionStorage.getItem('swipe-direction') as 'left' | 'right' | null;
+                        if (dir) {
+                            xInitial = dir === 'left' ? '60vw' : '-60vw';
+                            sessionStorage.removeItem('swipe-direction');
+                        }
                     }
                 }
             } catch {}
         }
 
-        configRef.current = { skip, xInitial, yInitial };
+        // yInitial removed — vertical displacement was causing the perceived bounce
+        configRef.current = { skip, xInitial, yInitial: 0 };
     }
 
     const { skip, xInitial, yInitial } = configRef.current;
@@ -56,10 +62,11 @@ export default function Template({ children }: { children: React.ReactNode }) {
             animate={{ opacity: 1, x: 0, y: 0 }}
             exit={{ opacity: 0 }}
             transition={{
+                // Overdamped spring (ratio ≈ 1.3) — no overshoot, no bounce at all
                 type: 'spring',
-                stiffness: 380,
-                damping: 30,
-                mass: 0.7,
+                stiffness: 300,
+                damping: 40,
+                mass: 0.8,
             }}
             style={{ minHeight: '100vh', overflow: 'visible' }}
         >

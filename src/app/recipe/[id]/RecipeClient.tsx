@@ -280,6 +280,8 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                     el.style.transform = `translateX(${-vw}px)`;
                     setTimeout(() => {
                         try {
+                            // Window global first (synchronous, survives concurrent rendering)
+                            (window as any).__swipeNoEntry = true;
                             sessionStorage.setItem('swipe-no-entry', '1');
                         } catch {}
                         router.push(`/recipe/${nextId}`);
@@ -292,6 +294,7 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                     el.style.transform = `translateX(${vw}px)`;
                     setTimeout(() => {
                         try {
+                            (window as any).__swipeNoEntry = true;
                             sessionStorage.setItem('swipe-no-entry', '1');
                         } catch {}
                         router.push(`/recipe/${prevId}`);
