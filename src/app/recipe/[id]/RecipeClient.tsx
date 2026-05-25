@@ -19,6 +19,7 @@ import MagicConverter from '@/components/MagicConverter/MagicConverter';
 import SplitTitle from '@/components/SplitTitle/SplitTitle';
 import { getIngredientVisual, translateIngredientName } from '@/lib/ingredient-utils';
 import { motion, AnimatePresence } from 'framer-motion';
+import { mockRecipes } from '@/data/mockData';
 import styles from './page.module.css';
 
 interface RecipeClientProps {
@@ -37,17 +38,24 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
     const [mounted, setMounted] = useState(false);
     const [isListening, setIsListening] = useState(false);
 
-    // Swipe navigation state
     const router = useRouter();
-    const touchStart = useRef<{ x: number, y: number } | null>(null);
-    const touchEnd = useRef<{ x: number, y: number } | null>(null);
-    const [isNavigating, setIsNavigating] = useState(false);
-    const [slideDirection, setSlideDirection] = useState<'left'|'right'|null>(null);
 
-    // Pull-to-close iOS-style — manipulation directe du DOM pour zéro re-render
+    // Pull-to-close + swipe horizontal — tout en manipulation directe DOM (zéro re-render)
     const pageRef = useRef<HTMLDivElement>(null);
     const dragYRef = useRef(0);
     const isDraggingSheet = useRef(false);
+
+    // Preview cards pour le swipe entre recettes
+    const nextPreviewRef = useRef<HTMLDivElement>(null);
+    const prevPreviewRef = useRef<HTMLDivElement>(null);
+
+    // Recettes prev/next (pour les cartes preview)
+    const nextRecipeData = useMemo(() =>
+        nextId ? mockRecipes.find(r => String(r.id) === String(nextId)) || null : null
+    , [nextId]);
+    const prevRecipeData = useMemo(() =>
+        prevId ? mockRecipes.find(r => String(r.id) === String(prevId)) || null : null
+    , [prevId]);
 
     // Tabs
     const availableTabs: { id: TabId; label: string; count?: number }[] = [
@@ -153,25 +161,15 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
         if (typeof window !== 'undefined' && 'vibrate' in navigator) navigator.vibrate(10);
     };
 
-    const minSwipeDistance = 60;
-    const maxVerticalDiff = 35;
-    const DISMISS_THRESHOLD = 110; // px (après amortissement) pour fermer la fiche
+    const DISMISS_THRESHOLD = 110;
 
-    const onTouchStart = (e: React.TouchEvent) => {
-        touchEnd.current = null;
-        touchStart.current = { x: e.targetTouches[0].clientX, y: e.targetTouches[0].clientY };
-        isDraggingSheet.current = false;
-    };
-
+    // ── DOM helpers pour pull-to-close (vertical)
     const applyDragDOM = (damped: number) => {
         if (!pageRef.current) return;
         const el = pageRef.current;
-        const scale = Math.max(0.96, 1 - damped * 0.0006);
-        const opacity = Math.max(0.72, 1 - damped * 0.0025);
-        const radius = damped > 10 ? `${Math.min(damped * 0.25, 28)}px` : '';
-        el.style.transform = `translateY(${damped}px) scale(${scale})`;
-        el.style.opacity = String(opacity);
-        el.style.borderRadius = radius;
+        el.style.transform = `translateY(${damped}px) scale(${Math.max(0.96, 1 - damped * 0.0006)})`;
+        el.style.opacity = String(Math.max(0.72, 1 - damped * 0.0025));
+        el.style.borderRadius = damped > 10 ? `${Math.min(damped * 0.25, 28)}px` : '';
         el.style.transition = 'none';
     };
 
@@ -184,67 +182,158 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
         el.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease';
     };
 
-    const onTouchMove = (e: React.TouchEvent) => {
-        if (!touchStart.current) return;
-        const currentX = e.targetTouches[0].clientX;
-        const currentY = e.targetTouches[0].clientY;
-        touchEnd.current = { x: currentX, y: currentY };
+    // ── Native touch listeners — iOS-style finger-driven swipe entre recettes
+    useEffect(() => {
+        const el = pageRef.current;
+        if (!el) return;
 
-        const deltaY = currentY - touchStart.current.y;
-        const deltaX = Math.abs(currentX - touchStart.current.x);
+        type GestureType = 'none' | 'horizontal' | 'vertical-close' | 'scroll';
+        let startX = 0, startY = 0;
+        let gestureType: GestureType = 'none';
+        let deltaX = 0;
+        let vw = 0;
 
-        // Pull-to-close : seulement quand on est tout en haut + geste vers le bas + pas de composante X
-        if (typeof window !== 'undefined' && window.scrollY === 0 && deltaY > 0 && deltaX < 40) {
-            isDraggingSheet.current = true;
-            const damped = Math.pow(deltaY, 0.75) * 2.8;
-            dragYRef.current = damped;
-            applyDragDOM(damped);
-        } else if (!isDraggingSheet.current) {
-            dragYRef.current = 0;
-        }
-    };
-
-    const onTouchEnd = () => {
-        const wasDragging = isDraggingSheet.current;
-        isDraggingSheet.current = false;
-
-        if (wasDragging) {
-            if (dragYRef.current >= DISMISS_THRESHOLD) {
-                // Seuil atteint → fermeture avec animation
-                triggerHaptic();
-                router.back();
-                return;
+        const resetPreviews = (instant = false) => {
+            const t = instant ? 'none' : 'transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)';
+            if (nextPreviewRef.current) {
+                nextPreviewRef.current.style.transition = t;
+                nextPreviewRef.current.style.transform = `translateX(${window.innerWidth}px)`;
             }
-            // Seuil non atteint → retour en place (spring)
-            dragYRef.current = 0;
-            resetDragDOM();
-            return;
-        }
+            if (prevPreviewRef.current) {
+                prevPreviewRef.current.style.transition = t;
+                prevPreviewRef.current.style.transform = `translateX(${-window.innerWidth}px)`;
+            }
+        };
 
-        dragYRef.current = 0;
-        resetDragDOM();
-        if (!touchStart.current || !touchEnd.current) return;
-        const distanceX = touchStart.current.x - touchEnd.current.x;
-        const distanceY = touchStart.current.y - touchEnd.current.y;
-        const absMoveY = Math.abs(distanceY);
-        const absMoveX = Math.abs(distanceX);
+        const onStart = (e: TouchEvent) => {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+            deltaX = 0;
+            gestureType = 'none';
+            vw = window.innerWidth;
+            // Position previews off-screen instantly
+            resetPreviews(true);
+        };
 
-        // Swipe horizontal uniquement (navigation entre recettes)
-        if (absMoveY > maxVerticalDiff || absMoveX < minSwipeDistance) return;
-        if (distanceX > minSwipeDistance && nextId) {
-            triggerHaptic();
-            setSlideDirection('left');
-            setIsNavigating(true);
-            try { sessionStorage.setItem('swipe-direction', 'left'); } catch {}
-            setTimeout(() => router.push(`/recipe/${nextId}`), 200);
-        } else if (distanceX < -minSwipeDistance && prevId) {
-            triggerHaptic();
-            setSlideDirection('right');
-            setIsNavigating(true);
-            try { sessionStorage.setItem('swipe-direction', 'right'); } catch {}
-            setTimeout(() => router.push(`/recipe/${prevId}`), 200);
-        }
-    };
+        const onMove = (e: TouchEvent) => {
+            const cx = e.touches[0].clientX;
+            const cy = e.touches[0].clientY;
+            const dx = cx - startX;
+            const dy = cy - startY;
+
+            // Determine gesture type after minimum movement
+            if (gestureType === 'none') {
+                if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+                if (Math.abs(dx) > Math.abs(dy) * 1.4) {
+                    const canLeft = dx < 0 && !!nextId;
+                    const canRight = dx > 0 && !!prevId;
+                    gestureType = (canLeft || canRight) ? 'horizontal' : 'scroll';
+                } else if (dy > 0 && Math.abs(dy) > Math.abs(dx) * 1.4 && window.scrollY === 0) {
+                    gestureType = 'vertical-close';
+                } else {
+                    gestureType = 'scroll';
+                }
+            }
+
+            if (gestureType === 'horizontal') {
+                e.preventDefault();
+                // Resistance when no recipe in that direction
+                let eff = dx;
+                if (dx < 0 && !nextId) eff = dx * 0.15;
+                if (dx > 0 && !prevId) eff = dx * 0.15;
+                deltaX = eff;
+
+                el.style.transition = 'none';
+                el.style.transform = `translateX(${eff}px)`;
+
+                // Move the relevant preview card into view
+                if (eff < 0 && nextPreviewRef.current) {
+                    nextPreviewRef.current.style.transition = 'none';
+                    nextPreviewRef.current.style.transform = `translateX(${vw + eff}px)`;
+                } else if (eff > 0 && prevPreviewRef.current) {
+                    prevPreviewRef.current.style.transition = 'none';
+                    prevPreviewRef.current.style.transform = `translateX(${-vw + eff}px)`;
+                }
+            } else if (gestureType === 'vertical-close') {
+                if (dy > 0) {
+                    isDraggingSheet.current = true;
+                    const damped = Math.pow(dy, 0.75) * 2.8;
+                    dragYRef.current = damped;
+                    applyDragDOM(damped);
+                }
+            }
+        };
+
+        const onEnd = () => {
+            const type = gestureType;
+            gestureType = 'none';
+
+            if (type === 'horizontal') {
+                const threshold = vw * 0.32;
+
+                if (deltaX < -threshold && nextId) {
+                    // Complete swipe → next recipe
+                    triggerHaptic();
+                    el.style.transition = 'transform 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
+                    el.style.transform = `translateX(${-vw}px)`;
+                    if (nextPreviewRef.current) {
+                        nextPreviewRef.current.style.transition = 'transform 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
+                        nextPreviewRef.current.style.transform = 'translateX(0px)';
+                    }
+                    setTimeout(() => {
+                        try {
+                            sessionStorage.setItem('swipe-no-entry', '1');
+                            sessionStorage.setItem('swipe-direction', 'left');
+                        } catch {}
+                        router.push(`/recipe/${nextId}`);
+                    }, 240);
+
+                } else if (deltaX > threshold && prevId) {
+                    // Complete swipe → prev recipe
+                    triggerHaptic();
+                    el.style.transition = 'transform 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
+                    el.style.transform = `translateX(${vw}px)`;
+                    if (prevPreviewRef.current) {
+                        prevPreviewRef.current.style.transition = 'transform 0.25s cubic-bezier(0.4, 0, 0.2, 1)';
+                        prevPreviewRef.current.style.transform = 'translateX(0px)';
+                    }
+                    setTimeout(() => {
+                        try {
+                            sessionStorage.setItem('swipe-no-entry', '1');
+                            sessionStorage.setItem('swipe-direction', 'right');
+                        } catch {}
+                        router.push(`/recipe/${prevId}`);
+                    }, 240);
+
+                } else {
+                    // Spring back
+                    el.style.transition = 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
+                    el.style.transform = '';
+                    resetPreviews();
+                }
+
+            } else if (type === 'vertical-close') {
+                isDraggingSheet.current = false;
+                if (dragYRef.current >= DISMISS_THRESHOLD) {
+                    triggerHaptic();
+                    router.back();
+                } else {
+                    dragYRef.current = 0;
+                    resetDragDOM();
+                }
+            }
+        };
+
+        el.addEventListener('touchstart', onStart, { passive: true });
+        el.addEventListener('touchmove', onMove, { passive: false }); // non-passive pour preventDefault
+        el.addEventListener('touchend', onEnd, { passive: true });
+
+        return () => {
+            el.removeEventListener('touchstart', onStart);
+            el.removeEventListener('touchmove', onMove);
+            el.removeEventListener('touchend', onEnd);
+        };
+    }, [nextId, prevId, recipe.id, router]);
 
     const switchTab = (tab: TabId) => {
         setPrevTab(activeTab);
@@ -338,6 +427,52 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
 
     return (
         <>
+            {/* Preview cards pour le swipe — toujours présentes mais hors écran */}
+            <div
+                ref={nextPreviewRef}
+                style={{
+                    position: 'fixed',
+                    inset: 0,
+                    zIndex: 0,
+                    pointerEvents: 'none',
+                    transform: `translateX(${typeof window !== 'undefined' ? window.innerWidth : 9999}px)`,
+                    willChange: 'transform',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundImage: nextRecipeData?.image ? `url(${nextRecipeData.image})` : 'none',
+                    background: nextRecipeData?.image ? undefined : '#1c1c1e',
+                }}
+            >
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%)' }} />
+                {nextRecipeData && (
+                    <div style={{ position: 'absolute', bottom: 120, left: 24, right: 24, color: '#fff', fontSize: 22, fontWeight: 900, lineHeight: 1.2, textShadow: '0 2px 12px rgba(0,0,0,0.6)' }}>
+                        {nextRecipeData.title}
+                    </div>
+                )}
+            </div>
+            <div
+                ref={prevPreviewRef}
+                style={{
+                    position: 'fixed',
+                    inset: 0,
+                    zIndex: 0,
+                    pointerEvents: 'none',
+                    transform: `translateX(${typeof window !== 'undefined' ? -window.innerWidth : -9999}px)`,
+                    willChange: 'transform',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundImage: prevRecipeData?.image ? `url(${prevRecipeData.image})` : 'none',
+                    background: prevRecipeData?.image ? undefined : '#1c1c1e',
+                }}
+            >
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%)' }} />
+                {prevRecipeData && (
+                    <div style={{ position: 'absolute', bottom: 120, left: 24, right: 24, color: '#fff', fontSize: 22, fontWeight: 900, lineHeight: 1.2, textShadow: '0 2px 12px rgba(0,0,0,0.6)' }}>
+                        {prevRecipeData.title}
+                    </div>
+                )}
+            </div>
+
             {!focusMode && (
                 <div className={styles.stickyHeaderMenu}>
                     <Header title={recipe.title} showBack={false} backUrl={`/category/${recipe.category}`} large={true} recipeId={recipe.id} />
@@ -346,14 +481,15 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
             )}
             <div
                 ref={pageRef}
-                className={`${styles.page} ${mounted ? styles.pageVisible : ''} ${isNavigating ? (slideDirection === 'left' ? styles.slideOutLeft : styles.slideOutRight) : ''}`}
+                className={`${styles.page} ${mounted ? styles.pageVisible : ''}`}
                 style={{
                     '--dynamic-accent': theme.accent,
                     '--dynamic-accent-glow': theme.glow,
                     '--dynamic-accent-bg': theme.bg,
                     '--dynamic-accent-rgb': theme.rgb,
+                    position: 'relative',
+                    zIndex: 1,
                 } as any}
-                onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}
             >
                 <div className={styles.heroNewLayout}>
                     <div className={styles.heroGrid}>
