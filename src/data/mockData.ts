@@ -19396,7 +19396,8 @@ export const mockRecipes: Recipe[] = [
             "France",
             "Healthy",
             "rapide",
-            "Tartinade"
+            "Tartinade",
+            "nouveautés"
         ],
         "isFeatured": false,
         "isFavorite": false,

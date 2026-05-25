@@ -45,7 +45,17 @@ export default function RecipeSheet({ recipe, isOpen, onClose, allRecipes, recip
         setCurrentIdx(recipeIndex);
     }, [recipeIndex, recipe]);
 
-    // Scroll lock and History State
+    // Safety cleanup on unmount — ensures body is never left locked
+    useEffect(() => {
+        return () => {
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.width = '';
+            document.body.style.overflow = '';
+        };
+    }, []);
+
+    // Scroll lock and History State — only depends on isOpen
     useEffect(() => {
         if (isOpen) {
             setShouldRender(true);
@@ -71,10 +81,11 @@ export default function RecipeSheet({ recipe, isOpen, onClose, allRecipes, recip
                 document.body.style.top = '';
                 document.body.style.width = '';
                 document.body.style.overflow = '';
-                if (isOpen) window.scrollTo(0, scrollYRef.current);
+                window.scrollTo(0, scrollYRef.current);
             };
         }
-    }, [isOpen, x, y, onClose]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [isOpen]);
 
     const handleAnimationComplete = () => { if (!isOpen) setShouldRender(false); };
 

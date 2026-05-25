@@ -194,11 +194,17 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
         // Swipe horizontal uniquement (navigation entre recettes)
         if (absMoveY > maxVerticalDiff || absMoveX < minSwipeDistance) return;
         if (distanceX > minSwipeDistance && nextId) {
-            triggerHaptic(); setSlideDirection('left'); setIsNavigating(true);
-            setTimeout(() => router.push(`/recipe/${nextId}`), 250);
+            triggerHaptic();
+            setSlideDirection('left');
+            setIsNavigating(true);
+            try { sessionStorage.setItem('swipe-direction', 'left'); } catch {}
+            setTimeout(() => router.push(`/recipe/${nextId}`), 200);
         } else if (distanceX < -minSwipeDistance && prevId) {
-            triggerHaptic(); setSlideDirection('right'); setIsNavigating(true);
-            setTimeout(() => router.push(`/recipe/${prevId}`), 250);
+            triggerHaptic();
+            setSlideDirection('right');
+            setIsNavigating(true);
+            try { sessionStorage.setItem('swipe-direction', 'right'); } catch {}
+            setTimeout(() => router.push(`/recipe/${prevId}`), 200);
         }
     };
 

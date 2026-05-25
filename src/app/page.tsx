@@ -300,9 +300,15 @@ export default function Home() {
     }, [filteredRecipes]);
 
     const newRecipes = useMemo(() => {
-        return [...mockRecipes]
-            .sort((a, b) => parseInt(b.id) - parseInt(a.id))
-            .slice(0, 12);
+        // Recettes taguées "nouveautés" en premier, puis les plus récentes (ordre mockData = orderby=modified WP)
+        // On exclut les entrées non-recettes (restaurant, ciné, resto...)
+        const validRecipes = mockRecipes.filter(r => r.category !== 'restaurant');
+        const taggedNew = validRecipes.filter(r =>
+            (r.tags || []).some(t => t.toLowerCase() === 'nouveautés' || t.toLowerCase() === 'nouveauté')
+        );
+        const taggedIds = new Set(taggedNew.map(r => r.id));
+        const recent = validRecipes.filter(r => !taggedIds.has(r.id)).slice(0, 12 - taggedNew.length);
+        return [...taggedNew, ...recent].slice(0, 12);
     }, []);
 
     const thematicThemes = [
