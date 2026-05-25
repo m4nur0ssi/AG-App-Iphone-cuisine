@@ -281,15 +281,13 @@ export default function BottomNav() {
 
     return (
         <>
-            <AnimatePresence>
-                {isSearchOpen && (
-                    <SpotlightSearch 
-                        isOpen={isSearchOpen} 
-                        onClose={() => setIsSearchOpen(false)} 
-                        onRecipeSelect={handleRecipeSelect}
-                    />
-                )}
-            </AnimatePresence>
+            {isSearchOpen && (
+                <SpotlightSearch
+                    isOpen={isSearchOpen}
+                    onClose={() => setIsSearchOpen(false)}
+                    onRecipeSelect={handleRecipeSelect}
+                />
+            )}
 
             <nav id="bottom-nav" className={styles.navWrapper}>
                 <div className={`${styles.multiPillContainer} ${isMiniMode ? styles.isMini : ''}`}>
