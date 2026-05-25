@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo, useRef } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Header from '../components/Header/Header';
 import RecipeCarousel from '../components/RecipeCarousel/RecipeCarousel';
 import RecipeGrid from '../components/RecipeGrid/RecipeGrid';
@@ -16,8 +16,8 @@ export default function Home() {
     const [scrolled, setScrolled] = useState(false);
     const [activeFilters, setActiveFilters] = useState<{tag: string, group: string}[]>([]);
     const activeTags = useMemo(() => activeFilters.map(f => f.tag), [activeFilters]);
-    const touchStartRef = useRef<number>(0);
-    const touchEndRef = useRef<number>(0);
+    const [touchStart, setTouchStart] = useState<number>(0);
+    const [touchEnd, setTouchEnd] = useState<number>(0);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -113,15 +113,15 @@ export default function Home() {
     };
 
     const handleTouchStart = (e: React.TouchEvent) => {
-        touchStartRef.current = e.targetTouches[0].clientX;
+        setTouchStart(e.targetTouches[0].clientX);
     };
 
     const handleTouchMove = (e: React.TouchEvent) => {
-        touchEndRef.current = e.targetTouches[0].clientX;
+        setTouchEnd(e.targetTouches[0].clientX);
     };
 
     const handleTouchEnd = () => {
-        if (touchStartRef.current < 100 && (touchEndRef.current - touchStartRef.current) > 100) {
+        if (touchStart < 100 && (touchEnd - touchStart) > 100) {
             if (activeTags.length > 0) {
                 clearAllFilters();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
