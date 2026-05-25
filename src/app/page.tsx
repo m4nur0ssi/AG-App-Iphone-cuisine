@@ -185,7 +185,11 @@ export default function Home() {
                 }
 
                 if (tagLower === 'nouveautés') {
-                    return recipeTags.some(t => t.toLowerCase() === 'nouveautés' || t.toLowerCase() === 'nouveauté');
+                    // Les nouveautés = les 12 premières recettes non-restaurant (= plus récemment modifiées dans WP)
+                    const newIds = new Set(
+                        mockRecipes.filter(r => r.category !== 'restaurant').slice(0, 12).map(r => String(r.id))
+                    );
+                    return newIds.has(String(recipe.id));
                 }
 
                 if (tagLower === 'accompagnements') {

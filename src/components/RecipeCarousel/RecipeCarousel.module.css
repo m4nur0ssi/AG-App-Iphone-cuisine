@@ -120,13 +120,13 @@
     overflow-x: auto;
     overflow-y: hidden;
     padding: 10px 40px 10px;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity; /* proximity = laisse le momentum dépasser plusieurs cartes */
     scrollbar-width: none;
-    -webkit-overflow-scrolling: touch; /* Momentum scroll iOS native */
+    -webkit-overflow-scrolling: touch; /* Momentum scroll iOS natif */
     overscroll-behavior-x: contain;
     display: flex;
     align-items: center;
-    touch-action: pan-x pan-y; /* pan-x pour le carousel, pan-y pour scroller la page */
+    touch-action: pan-x pan-y;
 }
 
 .track {
@@ -145,7 +145,7 @@
     transition: transform 0.1s ease-out;
     margin: 0;
     scroll-snap-align: start;
-    scroll-snap-stop: always;
+    scroll-snap-stop: normal; /* normal = le momentum peut sauter plusieurs cartes */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -182,7 +182,7 @@
     height: 130px;
     margin-right: 0;
     scroll-snap-align: start;
-    scroll-snap-stop: always;
+    scroll-snap-stop: normal; /* normal = le momentum peut sauter plusieurs cartes */
     position: relative;
     border-radius: 28px;
     overflow: hidden;
@@ -259,7 +259,7 @@
     width: 270px;
     height: 170px;
     scroll-snap-align: start;
-    scroll-snap-stop: always;
+    scroll-snap-stop: normal; /* normal = le momentum peut sauter plusieurs cartes */
 }
 
 [data-theme='light'] .glassFloor {
