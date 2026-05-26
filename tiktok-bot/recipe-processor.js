@@ -4,7 +4,6 @@ const path = require('path');
 const fs = require('fs');
 const { postToWordPress } = require('./wordpress-poster.js');
 const { sendNotificationEmail } = require('./email-notifier');
-const { searchPhoto } = require('./photo-search');
 
 async function isRecipeWithGemini(description, title) {
     const desc = (description || '').toLowerCase();
@@ -31,8 +30,7 @@ async function isRecipeWithGemini(description, title) {
         "ingredients": ["ing1", "ing2"], 
         "steps": ["étape 1", "étape 2"], 
         "category": "aperitifs|entrees|plats|desserts|patisserie|vegetarien|glaces|boissons", 
-        "tags": ["tag1"], 
-        "photoSearchKeyword": "mot clé pour photo" 
+        "tags": ["tag1"]
     }
     
     GUIDE CATÉGORIES :
@@ -300,15 +298,7 @@ async function processRecipe({ videoUrl, description, author, title, country, th
         });
         */
 
-        // Sync local et deploiement Vercel
-        console.log(`   📦 Synchro local et déploiement Vercel...`);
-        const { execSync } = require('child_process');
-        try { execSync(`node sync-recipes.js --recent`, { cwd: path.join(__dirname, '..') }); } catch(e){}
-        
-        if (!process.env.GITHUB_ACTIONS) {
-            const deployCmd = 'git add . && git commit -m "🍳 Nouvelle recette: ' + analysis.recipeName + '" && git push origin main';
-            require('child_process').exec(deployCmd, { cwd: path.join(__dirname, '..') });
-        }
+        // Sync géré par le webhook WordPress → GitHub Actions (pas besoin de sync local)
         return analysis.recipeName;
     } else {
         console.log(`   ❌ Échec de la publication WordPress.`);
