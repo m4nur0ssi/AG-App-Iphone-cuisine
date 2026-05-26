@@ -145,7 +145,7 @@ async function handleRequest(request: Request) {
 
         const choiceDict: Record<string, string> = {};
         rawChoices.forEach(c => {
-            choiceDict[`${c.icon} ${c.name}`] = c.name;
+            choiceDict[c.name] = c.name; // clé = nom sans emoji → iOS trie alphabétiquement
         });
 
         const response = NextResponse.json({ 
