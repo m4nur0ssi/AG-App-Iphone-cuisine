@@ -2,11 +2,195 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 26/05/2026 22:09:34
+ * Dernière mise à jour: 26/05/2026 22:18:18
  * Total: 316 recettes
  */
-export const exportSyncId = "1779833374406";
+export const exportSyncId = "1779833898418";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5795",
+        "title": "Paleron de boeuf confit 7h",
+        "description": "Une cuisson lente et douce à 120 degrés, pendant 7h, pour que la viande s&rsquo;effiloche. Avant ça, il faut juste la masser avec des tomates et des poivrons compotés. C&rsquo;est dingue.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7581069041519856919\" data-video-id=\"7581069041519856919\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7581069041519856919\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             1 paleron de bœuf (1,2 à 1,5 kg)"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             2 tomates bien mûres"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 poivron"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 piment"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 tête d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 c. à café de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Gros sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             2 branches de romarin"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 feuilles de laurier"
+            }
+        ],
+        "steps": [
+            "Salez le paleron et faites-le dorer rapidement sur toutes ses faces.",
+            "Rôtissez au four (200°C, 40 min) les tomates, le poivron, le piment et la tête d&rsquo;ail coupée en deux.",
+            "Une fois rôtie, pressez la tête d&rsquo;ail pour en extraire la pulpe.",
+            "Mixez-la avec les légumes rôtis et ajoutez le paprika pour obtenir une marinade.",
+            "Badigeonnez le paleron de cette préparation, ajoutez romarin, laurier et un peu d&rsquo;eau.",
+            "Faites cuire à 120°C pendant 7 h, en arrosant de temps en temps, jusqu&rsquo;à ce que la viande s&rsquo;effiloche."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Plats"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5793",
+        "title": "Creamy Tuscan Chicken Pasta",
+        "description": "Une recette de pâtes crémeuses au poulet, tomates séchées, épinards et parmesan, inspirée de la cuisine toscane.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7557778645465566478\" data-video-id=\"7557778645465566478\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7557778645465566478\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 chicken breast (cut in half)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             ½ tbsp paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ½ tbsp garlic powder"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ½ tbsp onion powder"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 tsp salt"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 tsp black pepper"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Dash of olive oil"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             3 cups cooked pasta"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 tbsp olive oil"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 tbsp butter"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 small onion, diced"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             3 garlic cloves, minced"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1½ cups cherry tomatoes, halved"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 tbsp tomato paste"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ⅓ cup sun-dried tomatoes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 tbsp Italian seasoning"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 tbsp paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Salt and pepper to taste"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ¾ cup heavy cream"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ½ cup pasta water"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cups spinach (or less if preferred)"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             1 cup grated Parmesan cheese"
+            }
+        ],
+        "steps": [
+            "Season chicken with paprika, garlic powder, onion powder, salt, and black pepper.",
+            "Heat 2 tbsp olive oil in a pan over medium heat. Add the chicken and cook on both sides until golden brown and the internal temperature reaches 165°F. Remove from the pan and set aside.",
+            "In the same pan, add butter and diced onion. Cook until onions are translucent, then add minced garlic and cook for about 1 minute.",
+            "Stir in cherry tomatoes and cook for 2-3 minutes until softened. Add tomato paste and sun-dried tomatoes, stirring for another minute.",
+            "Add Italian seasoning, paprika, salt, and pepper. Cook for 1 minute, then pour in the heavy cream and pasta water. Stir well and let it simmer for 2 minutes.",
+            "Add spinach and Parmesan cheese. Stir until the cheese is melted and the sauce is creamy.",
+            "Slice the cooked chicken and return it to the pan. Let it simmer briefly to absorb the flavors, then add the cooked pasta. Toss until everything is evenly coated.",
+            "Garnish with extra Parmesan and serve warm and enjoy!"
+        ],
+        "tags": [
+            "Italie",
+            "pates"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5791",
         "title": "Brioche",
@@ -7066,42 +7250,6 @@ export const mockRecipes: Recipe[] = [
             "France",
             "Healthy",
             "Italie",
-            "Végé",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5254",
-        "title": "Sorbet aux raisins et Sprite",
-        "description": "Un sorbet rafraîchissant et facile à réaliser avec seulement deux ingrédients : des raisins et du Sprite, à congeler pendant 24 heures et à passer au Ninja Creami.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2F627d3957ee14a.jpg&v=1778084190000",
-        "category": "glaces",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7480866076818033942\" data-video-id=\"7480866076818033942\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7480866076818033942\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n Raisins"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n Sprite"
-            }
-        ],
-        "steps": [
-            "Mettre les raisins et le Sprite dans un récipient compatible Ninja Creami.",
-            "Congeler le mélange pendant 24 heures.",
-            "Passer le mélange congelé au Ninja Creami pour obtenir un sorbet."
-        ],
-        "tags": [
-            "Les Glaces",
-            "Pas cher",
             "Végé",
             "Voilà l'été"
         ],
@@ -14695,81 +14843,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Grèce",
             "Healthy"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "4043",
-        "title": "Courgettes à la Feta Fouettée",
-        "description": "Un plat d&rsquo;accompagnement estival frais, léger et savoureux. Les courgettes poêlées apportent une touche de chaleur dorée, tandis que la feta fouettée à la menthe et au citron offre un contraste frais et crémeux. Facile à préparer, parfait pour ",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fcourgette.jpeg&v=1774524669000",
-        "category": "entrees",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7526609218791558414\" data-video-id=\"7526609218791558414\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7526609218791558414\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             3-4 courgettes moyennes, coupées en tranches de 6mm (¼ pouce) dans le sens de la longueur"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive extra vierge, pour graisser et arroser"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel et poivre noir fraîchement moulu"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Jus d&rsquo;½ citron (pour servir)"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil frais, haché (pour garnir)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             200g de feta"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             140g de yaourt grec"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             4 feuilles de menthe fraîche (dyosmos)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             4 cuillères à soupe d&rsquo;huile d&rsquo;olive extra vierge"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Jus d&rsquo;½ citron"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 petite gousse d&rsquo;ail (facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre noir fraîchement moulu, au goût"
-            }
-        ],
-        "steps": [
-            "1. Préparer les courgettes : Graisser légèrement une poêle avec de l&rsquo;huile d&rsquo;olive. Badigeonner les deux côtés des tranches de courgettes avec de l&rsquo;huile d&rsquo;olive, et assaisonner de sel et de poivre. Faire revenir à feu moyen jusqu&rsquo;à ce qu&rsquo;elles soient dorées des deux côtés.",
-            "2. Préparer la feta fouettée : Dans un mixeur ou un robot culinaire, combiner la feta, le yaourt grec, les feuilles de menthe, l&rsquo;huile d&rsquo;olive, le jus de citron, l&rsquo;ail (si utilisé) et le poivre noir. Mixer jusqu&rsquo;à obtenir une consistance lisse et crémeuse. Mettre de côté.",
-            "3. Assembler le plat : Étaler la feta fouettée sur un plat de service. Disposer les tranches de courgettes chaudes par-dessus. Arroser d&rsquo;un peu plus d&rsquo;huile d&rsquo;olive, presser le reste du ½ citron sur le tout, et finir avec du persil frais haché."
-        ],
-        "tags": [
-            "Grèce",
-            "Healthy",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
