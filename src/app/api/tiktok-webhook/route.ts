@@ -113,6 +113,7 @@ async function handleRequest(request: Request) {
             { name: "Apéritifs", icon: "🍸" },
             { name: "Asie", icon: "🥢" },
             { name: "Astuces", icon: "💡" },
+            { name: "Autre", icon: "🗺️" },
             { name: "Barbecue", icon: "🔥" },
             { name: "C'est l'hiver", icon: "❄️" },
             { name: "Desserts", icon: "🍰" },
@@ -130,8 +131,8 @@ async function handleRequest(request: Request) {
             { name: "Mexique", icon: "🇲🇽" },
             { name: "Noël", icon: "🎄" },
             { name: "Orient", icon: "🕌" },
-            { name: "Pas cher", icon: "💰" },
             { name: "Pâques", icon: "🐣" },
+            { name: "Pas cher", icon: "💰" },
             { name: "Pâtisserie", icon: "🥐" },
             { name: "Plats", icon: "🍝" },
             { name: "Rafraîchissements", icon: "🍹" },
@@ -139,8 +140,7 @@ async function handleRequest(request: Request) {
             { name: "Simplissime", icon: "✨" },
             { name: "USA", icon: "🇺🇸" },
             { name: "Végétarien", icon: "🥬" },
-            { name: "Voilà l'été", icon: "☀️" },
-            { name: "Autre", icon: "🗺️" }
+            { name: "Voilà l'été", icon: "☀️" }
         ];
 
         const choiceDict: Record<string, string> = {};
