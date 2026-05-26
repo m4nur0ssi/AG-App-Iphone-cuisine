@@ -143,15 +143,12 @@ async function handleRequest(request: Request) {
             { name: "Voilà l'été", icon: "☀️" }
         ];
 
-        const choiceDict: Record<string, string> = {};
-        rawChoices.forEach(c => {
-            choiceDict[c.name] = c.name; // clé = nom sans emoji → iOS trie alphabétiquement
-        });
+        const sortedList = rawChoices.map(c => c.name);
 
-        const response = NextResponse.json({ 
-            status: choiceDict,
-            countries: choiceDict, 
-            pays: choiceDict,
+        const response = NextResponse.json({
+            status: sortedList,
+            countries: sortedList,
+            pays: sortedList,
             v: "00:14-ALL-IN-ONE",
             message: 'Quel pays ou thème ?'
         });
