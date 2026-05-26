@@ -2,11 +2,204 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 26/05/2026 21:55:43
- * Total: 311 recettes
+ * Dernière mise à jour: 26/05/2026 22:09:34
+ * Total: 316 recettes
  */
-export const exportSyncId = "1779832543023";
+export const exportSyncId = "1779833374406";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5791",
+        "title": "Brioche",
+        "description": "Découvrez comment préparer une brioche maison ultra moelleuse. Cette recette détaillée vous guide à travers les étapes de pétrissage, de repos, de façonnage en tresse et en boules (avec option pépites de chocolat), et de cuisson pour obtenir une brio",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7600138933766229271\" data-video-id=\"7600138933766229271\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7600138933766229271\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             130 g de lait (+ un peu pour la dorure)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             20 g de levure boulangère fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             500 g de farine de blé (type 45) (+ un peu pour fariner)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             4 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             10 g de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             50 g de sucre en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             200 g de beurre doux froid, coupé en morceaux"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 jaune d'œuf (pour la dorure)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Pépites de chocolat (facultatif)"
+            }
+        ],
+        "steps": [
+            "Dans le bol, verser le lait, la levure boulangère, la farine, les œufs, le sel et le sucre.",
+            "Pétrir pendant 5 minutes.",
+            "Ajouter le beurre froid coupé en morceaux, puis pétrir à nouveau pendant 15 minutes, jusqu'à obtenir une pâte bien filante.",
+            "Transvaser la pâte dans un récipient fariné sans trop la toucher (elle est bien collante).",
+            "Couvrir d'un torchon et laisser reposer 1 heure ou plus au réfrigérateur pour qu'elle se stabilise et soit plus facile à travailler, ou à température ambiante.",
+            "Sortir la pâte du réfrigérateur et la déposer sur un plan de travail légèrement fariné.",
+            "La rabattre et la diviser en 2 parties égales.",
+            "Former une tresse avec l'une des parties.",
+            "Diviser l'autre partie en 8 boules de taille identique et ajouter des pépites de chocolat.",
+            "Déposer les 8 boules en marguerite dans un moule à manqué (Ø 20-22 cm) et placer la tresse dans un moule rectangulaire à cake.",
+            "Laisser pousser 2 heures à température ambiante, à l'abri des courants d'air.",
+            "Préchauffer le four à 170°C.",
+            "Battre le jaune d'œuf avec un peu de lait et badigeonner délicatement les brioches à l'aide d'un pinceau.",
+            "Enfourner et cuire environ 40 minutes, jusqu'à ce qu'elles soient bien dorées et moelleuses.",
+            "Laisser tiédir avant de déguster pour profiter pleinement de leur texture ultra moelleuse."
+        ],
+        "tags": [
+            "France",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5789",
+        "title": "Pommes de terre farcies protéinées",
+        "description": "Une recette simple et gourmande de pommes de terre farcies, riche en protéines, idéale pour une diète.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7614945311630396694\" data-video-id=\"7614945311630396694\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7614945311630396694\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             600 g de pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥩\n             200 g de steak haché 5 %"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             150 g de champignons de Paris"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             150 g de crème fraîche allégée"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             50 g de mozzarella râpée"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 c. à café d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             paprika fumé"
+            }
+        ],
+        "steps": [
+            "Pique les pommes de terre avec une fourchette puis enfourne-les 40 minutes à 200°C.",
+            "Pendant ce temps, ciselez l'oignon rouge et émincez les champignons.",
+            "Dans une poêle avec 1 c. à café d'huile d'olive, fais revenir l'oignon jusqu'à ce qu'il devienne légèrement translucide.",
+            "Ajoute ensuite les champignons, puis quelques minutes plus tard le steak haché 5 %.",
+            "Assaisonne avec sel, poivre et paprika fumé, puis laisse cuire.",
+            "Une fois la viande cuite, baisse le feu et ajoute la crème fraîche allégée. Mélange bien.",
+            "Les pommes de terre sont cuites : coupe-les au premier tiers et récupère la pulpe avec une cuillère. Si certaines parties sont un peu dures, utilise la pointe d'un couteau pour décoller la pulpe sans abîmer la peau de la pomme de terre.",
+            "Ajoute cette pulpe dans la poêle avec la préparation viande et un peu de mozzarella, puis mélange bien.",
+            "Garnis les pommes de terre avec ce mélange, ajoute encore un peu de mozzarella par-dessus.",
+            "Remets 5 minutes au four en mode grill à environ 220°C pour bien gratiner. Et voilà 🔥 Tu peux servir ça avec une petite salade si tu veux te donner bonne conscience."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Gratins",
+            "Healthy"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5787",
+        "title": "McFlurry maison au Daim",
+        "description": "Une recette facile et rapide pour préparer un McFlurry maison au Daim en seulement 5 minutes grâce au Ninja Creami.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "entrees",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7475297955587706134\" data-video-id=\"7475297955587706134\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7475297955587706134\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             250 ml de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             150 ml de crème"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             30g de lait concentré"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 c-à-soupe de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50g de Daim"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Entrées",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5785",
         "title": "Roast Potato Greek Salad",
@@ -6873,6 +7066,42 @@ export const mockRecipes: Recipe[] = [
             "France",
             "Healthy",
             "Italie",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5254",
+        "title": "Sorbet aux raisins et Sprite",
+        "description": "Un sorbet rafraîchissant et facile à réaliser avec seulement deux ingrédients : des raisins et du Sprite, à congeler pendant 24 heures et à passer au Ninja Creami.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2F627d3957ee14a.jpg&v=1778084190000",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7480866076818033942\" data-video-id=\"7480866076818033942\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7480866076818033942\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n Raisins"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Sprite"
+            }
+        ],
+        "steps": [
+            "Mettre les raisins et le Sprite dans un récipient compatible Ninja Creami.",
+            "Congeler le mélange pendant 24 heures.",
+            "Passer le mélange congelé au Ninja Creami pour obtenir un sorbet."
+        ],
+        "tags": [
+            "Les Glaces",
+            "Pas cher",
             "Végé",
             "Voilà l'été"
         ],
@@ -14466,6 +14695,81 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Grèce",
             "Healthy"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "4043",
+        "title": "Courgettes à la Feta Fouettée",
+        "description": "Un plat d&rsquo;accompagnement estival frais, léger et savoureux. Les courgettes poêlées apportent une touche de chaleur dorée, tandis que la feta fouettée à la menthe et au citron offre un contraste frais et crémeux. Facile à préparer, parfait pour ",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fcourgette.jpeg&v=1774524669000",
+        "category": "entrees",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7526609218791558414\" data-video-id=\"7526609218791558414\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7526609218791558414\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             3-4 courgettes moyennes, coupées en tranches de 6mm (¼ pouce) dans le sens de la longueur"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive extra vierge, pour graisser et arroser"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel et poivre noir fraîchement moulu"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus d&rsquo;½ citron (pour servir)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil frais, haché (pour garnir)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200g de feta"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             140g de yaourt grec"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             4 feuilles de menthe fraîche (dyosmos)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             4 cuillères à soupe d&rsquo;huile d&rsquo;olive extra vierge"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus d&rsquo;½ citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 petite gousse d&rsquo;ail (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre noir fraîchement moulu, au goût"
+            }
+        ],
+        "steps": [
+            "1. Préparer les courgettes : Graisser légèrement une poêle avec de l&rsquo;huile d&rsquo;olive. Badigeonner les deux côtés des tranches de courgettes avec de l&rsquo;huile d&rsquo;olive, et assaisonner de sel et de poivre. Faire revenir à feu moyen jusqu&rsquo;à ce qu&rsquo;elles soient dorées des deux côtés.",
+            "2. Préparer la feta fouettée : Dans un mixeur ou un robot culinaire, combiner la feta, le yaourt grec, les feuilles de menthe, l&rsquo;huile d&rsquo;olive, le jus de citron, l&rsquo;ail (si utilisé) et le poivre noir. Mixer jusqu&rsquo;à obtenir une consistance lisse et crémeuse. Mettre de côté.",
+            "3. Assembler le plat : Étaler la feta fouettée sur un plat de service. Disposer les tranches de courgettes chaudes par-dessus. Arroser d&rsquo;un peu plus d&rsquo;huile d&rsquo;olive, presser le reste du ½ citron sur le tout, et finir avec du persil frais haché."
+        ],
+        "tags": [
+            "Grèce",
+            "Healthy",
+            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
