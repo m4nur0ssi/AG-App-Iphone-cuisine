@@ -1,4 +1,4 @@
-const CACHE_NAME = 'recettes-magiques-v3-offline'; 
+const CACHE_NAME = 'recettes-magiques-v4-offline';
 const STATIC_ASSETS = [
     '/',
     '/shopping-list',
