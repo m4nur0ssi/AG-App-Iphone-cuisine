@@ -301,10 +301,10 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                     }, 180);
 
                 } else {
-                    // Spring back
-                    el.style.transition = 'transform 0.28s cubic-bezier(0.4, 0, 0.2, 1)';
-                    el.style.transform = '';
-                    resetPreviews();
+                    // Snap back instantly — no animation = no bounce
+                    el.style.transition = 'none';
+                    el.style.transform = 'translateX(0px)';
+                    resetPreviews(true);
                 }
 
             } else if (type === 'vertical-close') {
