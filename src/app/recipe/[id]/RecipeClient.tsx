@@ -301,9 +301,9 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                     }, 180);
 
                 } else {
-                    // Snap back instantly — no animation = no bounce
+                    // Snap back — retire le style inline pour restaurer le scroll iOS
                     el.style.transition = 'none';
-                    el.style.transform = 'translateX(0px)';
+                    el.style.transform = '';
                     resetPreviews(true);
                 }
 
