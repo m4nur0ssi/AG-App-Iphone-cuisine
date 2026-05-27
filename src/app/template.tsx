@@ -14,35 +14,26 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
     if (configRef.current === undefined) {
         let skip = false;
-        let xInitial: string | number = 0;
 
         if (typeof window !== 'undefined') {
             try {
-                // Primary: window global — set synchronously in RecipeClient before router.push,
-                // survives React 18 concurrent rendering where sessionStorage can be read too late.
+                // Nettoie toujours swipe-direction pour éviter xInitial parasite
+                sessionStorage.removeItem('swipe-direction');
                 if ((window as any).__swipeNoEntry) {
                     delete (window as any).__swipeNoEntry;
                     skip = true;
                     sessionStorage.removeItem('swipe-no-entry');
                 } else {
-                    // Fallback: sessionStorage
                     const noEntry = sessionStorage.getItem('swipe-no-entry');
                     if (noEntry) {
                         skip = true;
                         sessionStorage.removeItem('swipe-no-entry');
-                    } else {
-                        const dir = sessionStorage.getItem('swipe-direction') as 'left' | 'right' | null;
-                        if (dir) {
-                            xInitial = dir === 'left' ? '60vw' : '-60vw';
-                            sessionStorage.removeItem('swipe-direction');
-                        }
                     }
                 }
             } catch {}
         }
 
-        // yInitial removed — vertical displacement was causing the perceived bounce
-        configRef.current = { skip, xInitial, yInitial: 0 };
+        configRef.current = { skip, xInitial: 0, yInitial: 0 };
     }
 
     const { skip, xInitial, yInitial } = configRef.current;
