@@ -62,11 +62,9 @@ export default function Template({ children }: { children: React.ReactNode }) {
             animate={{ opacity: 1, x: 0, y: 0 }}
             exit={{ opacity: 0 }}
             transition={{
-                // Overdamped spring (ratio ≈ 1.3) — no overshoot, no bounce at all
-                type: 'spring',
-                stiffness: 300,
-                damping: 40,
-                mass: 0.8,
+                type: 'tween',
+                ease: [0.4, 0, 0.2, 1],
+                duration: 0.22,
             }}
             style={{ minHeight: '100vh', overflow: 'visible' }}
         >
