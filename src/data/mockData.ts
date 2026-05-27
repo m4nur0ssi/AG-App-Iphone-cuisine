@@ -2,11 +2,85 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 27/05/2026 13:43:30
+ * Dernière mise à jour: 27/05/2026 13:51:23
  * Total: 317 recettes
  */
-export const exportSyncId = "1779889410695";
+export const exportSyncId = "1779889883443";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5789",
+        "title": "Pommes de terre farcies protéinées",
+        "description": "Une recette simple et gourmande de pommes de terre farcies, riche en protéines, idéale pour une diète.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fpommes-de-terre-farcies-au-poulet-recette-gourmande-et-facile-7622.jpeg&v=1779896426000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7614945311630396694\" data-video-id=\"7614945311630396694\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7614945311630396694\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n 600 g de pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥩\n 200 g de steak haché 5 %"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n 1 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 150 g de champignons de Paris"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 150 g de crème fraîche allégée"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n 50 g de mozzarella râpée"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n 1 c. à café d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n paprika fumé"
+            }
+        ],
+        "steps": [
+            "Pique les pommes de terre avec une fourchette puis enfourne-les 40 minutes à 200°C.",
+            "Pendant ce temps, ciselez l'oignon rouge et émincez les champignons.",
+            "Dans une poêle avec 1 c. à café d'huile d'olive, fais revenir l'oignon jusqu'à ce qu'il devienne légèrement translucide.",
+            "Ajoute ensuite les champignons, puis quelques minutes plus tard le steak haché 5 %.",
+            "Assaisonne avec sel, poivre et paprika fumé, puis laisse cuire.",
+            "Une fois la viande cuite, baisse le feu et ajoute la crème fraîche allégée. Mélange bien.",
+            "Les pommes de terre sont cuites : coupe-les au premier tiers et récupère la pulpe avec une cuillère. Si certaines parties sont un peu dures, utilise la pointe d'un couteau pour décoller la pulpe sans abîmer la peau de la pomme de terre.",
+            "Ajoute cette pulpe dans la poêle avec la préparation viande et un peu de mozzarella, puis mélange bien.",
+            "Garnis les pommes de terre avec ce mélange, ajoute encore un peu de mozzarella par-dessus.",
+            "Remets 5 minutes au four en mode grill à environ 220°C pour bien gratiner. Et voilà 🔥 Tu peux servir ça avec une petite salade si tu veux te donner bonne conscience."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Gratins",
+            "Healthy"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5795",
         "title": "Paleron de boeuf confit 7h",
@@ -308,80 +382,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "France",
             "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5789",
-        "title": "Pommes de terre farcies protéinées",
-        "description": "Une recette simple et gourmande de pommes de terre farcies, riche en protéines, idéale pour une diète.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7614945311630396694\" data-video-id=\"7614945311630396694\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7614945311630396694\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍎\n             600 g de pommes de terre"
-            },
-            {
-                "quantity": "",
-                "name": "🥩\n             200 g de steak haché 5 %"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             150 g de champignons de Paris"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             150 g de crème fraîche allégée"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             50 g de mozzarella râpée"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 c. à café d'huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             paprika fumé"
-            }
-        ],
-        "steps": [
-            "Pique les pommes de terre avec une fourchette puis enfourne-les 40 minutes à 200°C.",
-            "Pendant ce temps, ciselez l'oignon rouge et émincez les champignons.",
-            "Dans une poêle avec 1 c. à café d'huile d'olive, fais revenir l'oignon jusqu'à ce qu'il devienne légèrement translucide.",
-            "Ajoute ensuite les champignons, puis quelques minutes plus tard le steak haché 5 %.",
-            "Assaisonne avec sel, poivre et paprika fumé, puis laisse cuire.",
-            "Une fois la viande cuite, baisse le feu et ajoute la crème fraîche allégée. Mélange bien.",
-            "Les pommes de terre sont cuites : coupe-les au premier tiers et récupère la pulpe avec une cuillère. Si certaines parties sont un peu dures, utilise la pointe d'un couteau pour décoller la pulpe sans abîmer la peau de la pomme de terre.",
-            "Ajoute cette pulpe dans la poêle avec la préparation viande et un peu de mozzarella, puis mélange bien.",
-            "Garnis les pommes de terre avec ce mélange, ajoute encore un peu de mozzarella par-dessus.",
-            "Remets 5 minutes au four en mode grill à environ 220°C pour bien gratiner. Et voilà 🔥 Tu peux servir ça avec une petite salade si tu veux te donner bonne conscience."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Gratins",
-            "Healthy"
         ],
         "isFeatured": false,
         "isFavorite": false,
