@@ -194,7 +194,7 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
         let vw = 0;
 
         const resetPreviews = (instant = false) => {
-            const t = instant ? 'none' : 'transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)';
+            const t = instant ? 'none' : 'transform 0.28s cubic-bezier(0.4, 0, 0.2, 1)';
             if (nextPreviewRef.current) {
                 nextPreviewRef.current.style.transition = t;
                 nextPreviewRef.current.style.transform = `translateX(${window.innerWidth}px)`;
@@ -302,7 +302,7 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
 
                 } else {
                     // Spring back
-                    el.style.transition = 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
+                    el.style.transition = 'transform 0.28s cubic-bezier(0.4, 0, 0.2, 1)';
                     el.style.transform = '';
                     resetPreviews();
                 }
