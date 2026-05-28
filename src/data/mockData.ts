@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 28/05/2026 06:47:19
+ * Dernière mise à jour: 28/05/2026 13:48:48
  * Total: 314 recettes
  */
-export const exportSyncId = "1779950839943";
+export const exportSyncId = "1779976128751";
 export const mockRecipes: Recipe[] = [
     {
         "id": "5765",
         "title": "Bomboloni",
         "description": "Des beignets italiens moelleux fourrés au chocolat et enrobés de sucre.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2FBomboloni_thumbnail392x3922.jpg&v=1779906484000",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2FBomboloni_thumbnail392x3922.jpg&v=1779982930000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
