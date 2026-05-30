@@ -2,11 +2,128 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 30/05/2026 09:28:18
+ * Dernière mise à jour: 30/05/2026 09:34:59
  * Total: 328 recettes
  */
-export const exportSyncId = "1780133298411";
+export const exportSyncId = "1780133699454";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5876",
+        "title": "Sauce california love",
+        "description": "Une sauce crémeuse, douce, fumée et légèrement épicée, inspirée de la Californie. Parfaite pour accompagner bowls, wraps ou tenders, elle est saine et à base de carottes (que l&rsquo;on ne sent pas !). Idéale pour ajouter du soleil à vos assiettes sa",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fsauce.jpg&v=1780140533000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7521748446446062850\" data-video-id=\"7521748446446062850\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7521748446446062850\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥕\n 150 g de carottes bien cuites (ou en boîte)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 100 g de yaourt grec 0%"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 50 g de sauce barbecue sans sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n 1 càs de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n 2-3 piments chipotle (ou plus si t'es chaud)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 1 petite gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 càc de gingembre frais râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n Le jus + zeste d'½ citron vert"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 càc de sirop d'agave ou érable (optionnel)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n ½ càc de paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 pincée de 5 épices chinoises"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel, poivre au goût"
+            }
+        ],
+        "steps": [
+            "Mettre tous les ingrédients dans un mixeur.",
+            "Mixer jusqu&rsquo;à obtenir une consistance homogène et crémeuse.",
+            "Conserver au frais pendant 4 à 5 jours."
+        ],
+        "tags": [
+            "épicé",
+            "Healthy",
+            "Sauces",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5866",
+        "title": "Pâte brisée",
+        "description": "Une recette simple pour préparer une pâte brisée maison, idéale pour les tartes salées ou sucrées.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fpate.jpg&v=1780140273000",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7610131753440791830\" data-video-id=\"7610131753440791830\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7610131753440791830\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n 250g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 125g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n 70g d'eau"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 2 pincées de sel ou 20g de sucre (si utilisation sucrée)"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "France",
+            "Pas cher",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5868",
         "title": "Pesto alla Genovese",
@@ -111,82 +228,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5876",
-        "title": "Sauce california love",
-        "description": "Une sauce crémeuse, douce, fumée et légèrement épicée, inspirée de la Californie. Parfaite pour accompagner bowls, wraps ou tenders, elle est saine et à base de carottes (que l&rsquo;on ne sent pas !). Idéale pour ajouter du soleil à vos assiettes sa",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7521748446446062850\" data-video-id=\"7521748446446062850\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7521748446446062850\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥕\n 150 g de carottes bien cuites (ou en boîte)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 100 g de yaourt grec 0%"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n 50 g de sauce barbecue sans sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n 1 càs de concentré de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n 2-3 piments chipotle (ou plus si t'es chaud)"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n 1 petite gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n 1 càc de gingembre frais râpé"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n Le jus + zeste d'½ citron vert"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 1 càc de sirop d'agave ou érable (optionnel)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n ½ càc de paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 1 pincée de 5 épices chinoises"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n Sel, poivre au goût"
-            }
-        ],
-        "steps": [
-            "Mettre tous les ingrédients dans un mixeur.",
-            "Mixer jusqu&rsquo;à obtenir une consistance homogène et crémeuse.",
-            "Conserver au frais pendant 4 à 5 jours."
-        ],
-        "tags": [
-            "épicé",
-            "Healthy",
-            "Sauces",
-            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -314,47 +355,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Astuces",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5866",
-        "title": "Pâte brisée",
-        "description": "Une recette simple pour préparer une pâte brisée maison, idéale pour les tartes salées ou sucrées.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7610131753440791830\" data-video-id=\"7610131753440791830\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7610131753440791830\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             250g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             125g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             70g d'eau"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             2 pincées de sel ou 20g de sucre (si utilisation sucrée)"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "France",
-            "Pas cher",
-            "pâtisserie"
         ],
         "isFeatured": false,
         "isFavorite": false,
