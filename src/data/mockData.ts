@@ -2,11 +2,63 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 30/05/2026 10:26:46
- * Total: 330 recettes
+ * Dernière mise à jour: 30/05/2026 13:33:35
+ * Total: 332 recettes
  */
-export const exportSyncId = "1780136806885";
+export const exportSyncId = "1780148015824";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5907",
+        "title": "Sauce Poivre Parfaite",
+        "description": "Une recette de sauce au poivre parfaite, riche et crémeuse, avec du brandy et du fond de veau, idéale pour accompagner vos viandes.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7429792449842646304\" data-video-id=\"7429792449842646304\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7429792449842646304\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌶️\n             2 cas de poivre noir concassé"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             30g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 petites échalotes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             10cl de brandy"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             20cl de crème fraîche épaisse"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             10cl de fond de veau"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "France",
+            "Sauces"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5905",
         "title": "Salade protéinée au poulet et chimichurri",
@@ -14180,6 +14232,69 @@ export const mockRecipes: Recipe[] = [
             "Espagne",
             "Famille",
             "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "3967",
+        "title": "San Sebastian Cheesecake",
+        "description": "Une recette détaillée pour un cheesecake basque brûlé, crémeux à l&rsquo;intérieur et caramélisé à l&rsquo;extérieur, parfait pour un dessert gourmand.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2F20250203203320-San-Sebastian-Cheesecake-Recipe-Cvjeya-ttuS_9339a0de-e42b-4182-94cd-11cb0b296bc2.jpeg&v=1774526183000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7505622622432988458\" data-video-id=\"7505622622432988458\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7505622622432988458\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1kg Cream Cheese"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             320 grams Sugar"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             6 large Eggs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 grams Fresh Lemon Juice"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             15 grams Vanilla Extract"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             5 grams Sea Salt"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             600 grams Heavy whipping cream"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 grams All Purpose Flour"
+            }
+        ],
+        "steps": [
+            "Mélanger le cream cheese à température ambiante avec le sucre.",
+            "Après avoir bien mélangé, incorporer les œufs un par un.",
+            "Ajouter le jus de citron, le sel, l&rsquo;extrait de vanille, la farine et bien mélanger.",
+            "Ajouter ensuite la crème et incorporer délicatement à la cuillère ou à la spatule (ne pas utiliser de mixeur).",
+            "Verser le mélange bien homogène dans un moule à gâteau de 9&#215;4 pouces après avoir placé du papier sulfurisé.",
+            "Préchauffer le four à 450F (environ 230°C).",
+            "Cuire au four jusqu&rsquo;à ce que le dessus soit brûlé.",
+            "Laisser refroidir à température ambiante pendant 2 heures.",
+            "Placer ensuite au réfrigérateur toute une nuit."
+        ],
+        "tags": [
+            "Espagne"
         ],
         "isFeatured": false,
         "isFavorite": false,
