@@ -5,6 +5,7 @@ import { motion, AnimatePresence, PanInfo } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import { mockRecipes } from '@/data/mockData';
+import { decodeHtml } from '@/lib/utils';
 import styles from './HeroCarousel.module.css';
 
 import { Recipe } from '@/types';
@@ -86,7 +87,7 @@ export default function HeroCarousel({ recipes, badgeText = "Dernière pépite �
                             <div className={styles.overlay} />
                             <div className={styles.recipeInfo}>
                                 <span className={styles.tag}>{badgeText}</span>
-                                <h3 className={styles.recipeTitle}>{carouselRecipes[currentIndex].title}</h3>
+                                <h3 className={styles.recipeTitle}>{decodeHtml(carouselRecipes[currentIndex].title)}</h3>
                                 <div className={styles.recipeMeta}>
                                     <span>⏱️ {(carouselRecipes[currentIndex].prepTime || 0) + (carouselRecipes[currentIndex].cookTime || 0)} min</span>
                                     <span>•</span>
