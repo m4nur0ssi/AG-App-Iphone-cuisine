@@ -429,9 +429,9 @@
    ===================================================== */
 .metaStrip {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
     padding: 0 40px;
     background: transparent;
     max-width: 1200px;
@@ -464,6 +464,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 100%;
 }
 
 .metaValue {
@@ -1662,9 +1663,9 @@
     .metaStrip {
         padding: 0 15px;
         gap: 8px;
-        justify-content: center;
         margin-bottom: 25px;
-        flex-wrap: wrap; /* Fallback for very small screens */
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .metaItem {

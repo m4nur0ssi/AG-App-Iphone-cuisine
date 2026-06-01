@@ -19,6 +19,9 @@ import SmartText from '@/components/SmartText/SmartText';
 import MagicConverter from '@/components/MagicConverter/MagicConverter';
 import SplitTitle from '@/components/SplitTitle/SplitTitle';
 import { getIngredientVisual, translateIngredientName } from '@/lib/ingredient-utils';
+import StarRating from '@/components/StarRating/StarRating';
+import { estimateRecipeCalories } from '@/lib/calories';
+import { mockRecipes } from '@/data/mockData';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './RecipeDetails.module.css';
 
@@ -125,6 +128,44 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
 
 
     const ratio = useMemo(() => servings / (recipe.servings || 4), [servings, recipe.servings]);
+
+    const [personalNote, setPersonalNote] = useLocalStorage<string>(`recipe-note-${recipe.id}`, '');
+    const [noteExpanded, setNoteExpanded] = useState(false);
+    const calorieEstimate = useMemo(() =>
+        recipe.category !== 'restaurant' && recipe.ingredients?.length > 0
+            ? estimateRecipeCalories(recipe.ingredients, servings)
+            : null,
+    [recipe, servings]);
+
+    const similarRecipes = useMemo(() => {
+        return mockRecipes
+            .filter(r => String(r.id) !== String(recipe.id) && r.category !== 'restaurant')
+            .map(r => {
+                let score = 0;
+                if (r.category === recipe.category) score += 3;
+                const rTags = (r.tags || []).map(t => t.toLowerCase());
+                const myTags = (recipe.tags || []).map(t => t.toLowerCase());
+                score += rTags.filter(t => myTags.includes(t)).length * 2;
+                const myIngNames = (recipe.ingredients || []).map(i => i.name.toLowerCase());
+                const rIngNames = (r.ingredients || []).map(i => i.name.toLowerCase());
+                score += myIngNames.filter(n => rIngNames.some(rn => rn.includes(n) || n.includes(rn))).length;
+                return { recipe: r, score };
+            })
+            .filter(({ score }) => score > 0)
+            .sort((a, b) => b.score - a.score)
+            .slice(0, 6)
+            .map(({ recipe: r }) => r);
+    }, [recipe]);
+
+    // Sauvegarder dans l'historique
+    useEffect(() => {
+        try {
+            const prev: string[] = JSON.parse(localStorage.getItem('recently-viewed') || '[]').map((r: any) => r.id || r);
+            const updated = [String(recipe.id), ...prev.filter(id => id !== String(recipe.id))].slice(0, 20);
+            localStorage.setItem('recently-viewed', JSON.stringify(updated));
+            window.dispatchEvent(new CustomEvent('recentlyViewedUpdated'));
+        } catch {}
+    }, [recipe.id]);
 
     // Mount animation & Reset check
     useEffect(() => {
@@ -792,20 +833,49 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
             {/* Meta Strip - Hidden for restaurants as they are not recipes */}
             {recipe.category !== 'restaurant' && (
                 <div className={styles.metaStrip}>
-                    <div className={styles.metaContent}>
-                        <div className={styles.metaItem}>
-                            <div className={styles.metaLabel}>PRÉPARATION</div>
-                            <div className={styles.metaValue}>{recipe.prepTime || 15} min</div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 8, width: '100%' }}>
+                        {/* Ligne 1 */}
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 8, width: '100%' }}>
+                            <div className={styles.metaItem} style={{ flex: 1 }}>
+                                <div className={styles.metaLabel}>PRÉPARATION</div>
+                                <div className={styles.metaValue}>{recipe.prepTime || 15} min</div>
+                            </div>
+                            <div className={styles.metaSeparator} />
+                            <div className={styles.metaItem} style={{ flex: 1 }}>
+                                <div className={styles.metaLabel}>CUISSON</div>
+                                <div className={styles.metaValue}>{recipe.cookTime || 20} min</div>
+                            </div>
+                            <div className={styles.metaSeparator} />
+                            <div className={styles.metaItem} style={{ flex: 1 }}>
+                                <div className={styles.metaLabel}>DIFFICULTÉ</div>
+                                <div className={styles.metaValue}>
+                                    {(() => {
+                                        const steps = recipe.steps?.length || 0;
+                                        const diff = recipe.difficulty?.toLowerCase() || '';
+                                        const isHard = diff.includes('difficile') || steps > 10;
+                                        const isMed = diff.includes('moy') || (steps > 5 && !isHard);
+                                        if (isHard) return <span style={{color:'#ef4444'}}>🌶🌶🌶</span>;
+                                        if (isMed) return <span style={{color:'#f97316'}}>🌶🌶</span>;
+                                        return <span style={{color:'#22c55e'}}>🌶</span>;
+                                    })()}
+                                </div>
+                            </div>
                         </div>
-                        <div className={styles.metaSeparator} />
-                        <div className={styles.metaItem}>
-                            <div className={styles.metaLabel}>CUISSON</div>
-                            <div className={styles.metaValue}>{recipe.cookTime || 20} min</div>
-                        </div>
-                        <div className={styles.metaSeparator} />
-                        <div className={styles.metaItem}>
-                            <div className={styles.metaLabel}>DIFFICULTÉ</div>
-                            <div className={styles.metaValue}>{recipe.difficulty?.toUpperCase() || 'FACILE'}</div>
+                        {/* Ligne 2 */}
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 8, width: '100%' }}>
+                            <div className={styles.metaItem} style={{ flex: 1 }}>
+                                <div className={styles.metaLabel}>MA NOTE</div>
+                                <StarRating recipeId={recipe.id} size="small" />
+                            </div>
+                            {calorieEstimate && calorieEstimate.confidence !== 'low' && (
+                                <>
+                                    <div className={styles.metaSeparator} />
+                                    <div className={styles.metaItem} style={{ flex: 1 }}>
+                                        <div className={styles.metaLabel}>~CALORIES</div>
+                                        <div className={styles.metaValue}>{calorieEstimate.perServing} kcal<span style={{fontSize:'0.7rem',opacity:0.5}}>/pers.</span></div>
+                                    </div>
+                                </>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -1104,6 +1174,72 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
                     </div>
                 </div>
             )}
+            {/* Recettes similaires */}
+            {!focusMode && similarRecipes.length > 0 && (
+                <div style={{ padding: '0 0 8px' }}>
+                    <div style={{ padding: '0 20px 10px', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em', opacity: 0.5, textTransform: 'uppercase' }}>
+                        Recettes similaires
+                    </div>
+                    <div style={{ display: 'flex', gap: 10, overflowX: 'auto', padding: '0 20px 4px', scrollbarWidth: 'none' }}>
+                        {similarRecipes.map(r => (
+                            <button
+                                key={r.id}
+                                onClick={() => {
+                                    // Dispatch pour ouvrir via RecipeSheet si disponible
+                                    window.dispatchEvent(new CustomEvent('openRecipe', { detail: r }));
+                                }}
+                                style={{
+                                    flexShrink: 0, width: 120, background: 'rgba(255,255,255,0.06)',
+                                    border: '1px solid rgba(255,255,255,0.1)', borderRadius: 14,
+                                    overflow: 'hidden', cursor: 'pointer', padding: 0, textAlign: 'left'
+                                }}
+                            >
+                                <img src={r.image} alt={r.title} style={{ width: '100%', height: 80, objectFit: 'cover', display: 'block' }} />
+                                <div style={{ padding: '6px 8px', fontSize: '0.72rem', color: 'white', fontWeight: 600, lineHeight: 1.3,
+                                    display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                                    {r.title}
+                                </div>
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            )}
+
+            {/* Note personnelle */}
+            {!focusMode && (
+                <div style={{ padding: '4px 20px 20px' }}>
+                    <button
+                        onClick={() => setNoteExpanded(v => !v)}
+                        style={{
+                            display: 'flex', alignItems: 'center', gap: 8,
+                            background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)',
+                            borderRadius: 12, padding: '10px 16px', width: '100%',
+                            color: 'white', cursor: 'pointer', fontSize: '0.85rem'
+                        }}
+                    >
+
+                        <span style={{ flex: 1, textAlign: 'left', opacity: personalNote ? 1 : 0.5 }}>
+                            {personalNote ? 'Ma note personnelle' : 'Ajouter une note...'}
+                        </span>
+                        <span style={{ opacity: 0.5 }}>{noteExpanded ? '▲' : '▼'}</span>
+                    </button>
+                    {noteExpanded && (
+                        <textarea
+                            value={personalNote}
+                            onChange={e => setPersonalNote(e.target.value)}
+                            placeholder="Mes impressions, variantes, astuces..."
+                            rows={4}
+                            style={{
+                                marginTop: 8, width: '100%', boxSizing: 'border-box',
+                                background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.12)',
+                                borderRadius: 10, padding: '10px 14px', color: 'white',
+                                fontSize: '0.9rem', resize: 'vertical', fontFamily: 'inherit'
+                            }}
+                        />
+                    )}
+                </div>
+            )}
+
             {focusMode && (
                 <div
                     className={styles.focusOverlay}

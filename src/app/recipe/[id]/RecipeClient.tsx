@@ -18,6 +18,8 @@ import SmartText from '@/components/SmartText/SmartText';
 import MagicConverter from '@/components/MagicConverter/MagicConverter';
 import SplitTitle from '@/components/SplitTitle/SplitTitle';
 import { getIngredientVisual, translateIngredientName } from '@/lib/ingredient-utils';
+import StarRating from '@/components/StarRating/StarRating';
+import { estimateRecipeCalories } from '@/lib/calories';
 import { motion, AnimatePresence } from 'framer-motion';
 import { mockRecipes } from '@/data/mockData';
 import styles from './page.module.css';
@@ -119,6 +121,17 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
     }, [recipe.id, recipe.steps?.length, recipe.ingredients?.length, setCheckedSteps, setCheckedIngredients]);
 
     const ratio = useMemo(() => servings / (recipe.servings || 4), [servings, recipe.servings]);
+
+    // Note personnelle
+    const [personalNote, setPersonalNote] = useLocalStorage<string>(`recipe-note-${recipe.id}`, '');
+    const [noteExpanded, setNoteExpanded] = useState(false);
+
+    // Estimation calorique
+    const calorieEstimate = useMemo(() =>
+        recipe.category !== 'restaurant' && recipe.ingredients?.length > 0
+            ? estimateRecipeCalories(recipe.ingredients, servings)
+            : null,
+    [recipe, servings]);
 
     useEffect(() => {
         const t = setTimeout(() => setMounted(true), 50);
@@ -559,6 +572,30 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                             </div>
                         </>
                     )}
+                    {recipe.category !== 'restaurant' && (
+                        <>
+                            <div className={styles.metaDivider} />
+                            <div className={styles.metaItem}>
+                                <span>⭐</span>
+                                <div>
+                                    <div className={styles.metaLabel}>Ma note</div>
+                                    <StarRating recipeId={recipe.id} size="small" />
+                                </div>
+                            </div>
+                        </>
+                    )}
+                    {calorieEstimate && calorieEstimate.confidence !== 'low' && (
+                        <>
+                            <div className={styles.metaDivider} />
+                            <div className={styles.metaItem}>
+                                <span>🔥</span>
+                                <div>
+                                    <div className={styles.metaLabel}>~Calories</div>
+                                    <div className={styles.metaValue}>{calorieEstimate.perServing} kcal<span style={{ fontSize: '0.7rem', opacity: 0.5 }}>/pers.</span></div>
+                                </div>
+                            </div>
+                        </>
+                    )}
                 </div>
 
                 {recipe.category === 'restaurant' && (
@@ -631,6 +668,30 @@ export default function RecipeClient({ recipe, prevId, nextId }: RecipeClientPro
                     </div>
                 )}
             </div>
+
+            {/* Note personnelle */}
+            {!focusMode && (
+                <div style={{ padding: '12px 20px 20px' }}>
+                    <button
+                        onClick={() => setNoteExpanded(v => !v)}
+                        style={{ display: 'flex', alignItems: 'center', gap: 10, background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 16, padding: '14px 18px', color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', fontWeight: 600, cursor: 'pointer', width: '100%', textAlign: 'left' }}
+                    >
+                        <span>{personalNote ? 'Ma note' : 'Ajouter une note'}</span>
+                        {personalNote && <span style={{ flex: 1, fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', fontWeight: 400, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{personalNote.slice(0, 35)}{personalNote.length > 35 ? '…' : ''}</span>}
+                        <span style={{ fontSize: '0.7rem', opacity: 0.5, marginLeft: 'auto' }}>{noteExpanded ? '▲' : '▼'}</span>
+                    </button>
+                    {noteExpanded && (
+                        <textarea
+                            style={{ width: '100%', marginTop: 10, padding: 16, borderRadius: 14, border: '1px solid rgba(255,255,255,0.12)', background: 'rgba(255,255,255,0.05)', color: 'white', fontSize: '0.92rem', lineHeight: 1.6, resize: 'vertical', minHeight: 100, boxSizing: 'border-box' }}
+                            placeholder="Ex: j'ai ajouté du citron, c'était meilleur !"
+                            value={personalNote}
+                            onChange={e => setPersonalNote(e.target.value)}
+                            rows={4}
+                            autoFocus
+                        />
+                    )}
+                </div>
+            )}
 
             <AnimatePresence>
                 {focusMode && (

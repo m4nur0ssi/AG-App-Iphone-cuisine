@@ -175,3 +175,11 @@
 [data-theme='light'] .placeholderText {
     color: rgba(0, 0, 0, 0.35);
 }
+
+/* Mode toggle */
+.modeToggle { display: flex; gap: 8px; padding: 0 16px 12px; }
+.modeBtn { flex: 1; padding: 9px 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.5); font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease; }
+.modeBtnActive { background: rgba(124,58,237,0.3); border-color: rgba(124,58,237,0.5); color: #c4b5fd; }
+.ingTags { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 16px 12px; }
+.ingTag { display: flex; align-items: center; gap: 5px; padding: 5px 10px; border-radius: 100px; background: rgba(124,58,237,0.2); border: 1px solid rgba(124,58,237,0.4); color: #c4b5fd; font-size: 0.8rem; font-weight: 600; }
+.ingTagRemove { background: none; border: none; color: rgba(196,181,253,0.6); cursor: pointer; font-size: 0.7rem; padding: 0; line-height: 1; }

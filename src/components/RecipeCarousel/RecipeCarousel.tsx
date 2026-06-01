@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useMemo } from 'react';
+import { useRef, useMemo, useEffect, useLayoutEffect } from 'react';
 import { motion, useScroll } from 'framer-motion';
 import Link from 'next/link';
 import { Recipe } from '@/types';
@@ -19,7 +19,37 @@ interface RecipeCarouselProps {
 
 export default function RecipeCarousel({ recipes, title = "Nouvelles Recettes ✨", size = 'large', compact = false, hideTitleCard = false, onTitleClick, onCardClick }: RecipeCarouselProps) {
     const containerRef = useRef<HTMLDivElement>(null);
-    
+
+    // Reset scroll à 0 au montage
+    useLayoutEffect(() => {
+        if (containerRef.current) containerRef.current.scrollLeft = 0;
+    }, []);
+    useEffect(() => {
+        const t = setTimeout(() => { if (containerRef.current) containerRef.current.scrollLeft = 0; }, 80);
+        return () => clearTimeout(t);
+    }, []);
+
+    // Broadcast quand CE carousel est scrollé → les autres se remettent à 0
+    useEffect(() => {
+        const el = containerRef.current;
+        if (!el) return;
+        const onHScroll = () => {
+            if (el.scrollLeft > 10) window.dispatchEvent(new CustomEvent('carousel-active', { detail: title }));
+        };
+        el.addEventListener('scroll', onHScroll, { passive: true });
+        return () => el.removeEventListener('scroll', onHScroll);
+    }, [title]);
+
+    // Quand UN AUTRE carousel est actif → reset celui-ci
+    useEffect(() => {
+        const onOtherActive = (e: Event) => {
+            const activeTitle = (e as CustomEvent).detail;
+            if (activeTitle !== title && containerRef.current) containerRef.current.scrollLeft = 0;
+        };
+        window.addEventListener('carousel-active', onOtherActive);
+        return () => window.removeEventListener('carousel-active', onOtherActive);
+    }, [title]);
+
     // En mode compact, on affiche TOUT (pas de limite, sinon "Resto" au position 21 est coupé)
     // En mode normal, on limite à 15 recettes + une carte "Voir Tout"
     const limitedRecipes = useMemo(() => compact ? recipes : recipes.slice(0, 15), [recipes, compact]);

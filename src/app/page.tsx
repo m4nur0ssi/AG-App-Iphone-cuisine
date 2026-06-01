@@ -18,6 +18,20 @@ export default function Home() {
     const activeTags = useMemo(() => activeFilters.map(f => f.tag), [activeFilters]);
     const touchStartRef = useRef<number>(0);
     const touchEndRef = useRef<number>(0);
+    const [recentlyViewed, setRecentlyViewed] = useState<typeof mockRecipes>([]);
+
+    useEffect(() => {
+        const load = () => {
+            try {
+                const ids: string[] = JSON.parse(localStorage.getItem('recently-viewed') || '[]').map((r: any) => r.id || r);
+                const recipes = ids.map(id => mockRecipes.find(r => String(r.id) === String(id))).filter(Boolean) as typeof mockRecipes;
+                setRecentlyViewed(recipes);
+            } catch {}
+        };
+        load();
+        window.addEventListener('recentlyViewedUpdated', load);
+        return () => window.removeEventListener('recentlyViewedUpdated', load);
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -252,7 +266,11 @@ export default function Home() {
                         /\b([ée]pic[ée]?|piquant|piment|harissa|sambal|sriracha|jalape[ñn]o|habanero|chili)\b/.test(fullText);
                 }
 
-                return fullText.includes(tagLower) || recipeCat === tagLower || recipeTags.includes(tagLower);
+                const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+                const normTag = norm(tagLower);
+                return fullText.includes(tagLower) || norm(fullText).includes(normTag) ||
+                    recipeCat === tagLower || norm(recipeCat) === normTag ||
+                    recipeTags.some(t => t.toLowerCase() === tagLower || norm(t.toLowerCase()) === normTag);
             });
         });
     }, [activeTags]);
@@ -710,6 +728,15 @@ export default function Home() {
                                         }}
                                     />
                                 )}
+                                    {recentlyViewed.length > 0 && (
+                                        <RecipeCarousel
+                                            recipes={recentlyViewed}
+                                            title="Récemment Vus 👁"
+                                            size="small"
+                                            hideTitleCard={true}
+                                            onTitleClick={handleCarouselTitleClick}
+                                        />
+                                    )}
                                     {newRecipes.length > 0 && (
                                         <RecipeCarousel
                                             recipes={newRecipes}
