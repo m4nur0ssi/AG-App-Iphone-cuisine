@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { supabase } from '@/lib/supabase';
 import styles from './VoteButtonSheet.module.css';
 
 interface VoteButtonSheetProps {
@@ -62,37 +63,64 @@ const PremiumFlame = ({ active }: { active: boolean }) => (
 export default function VoteButtonSheet({ recipeId, initialVotes = 0, className }: VoteButtonSheetProps) {
     const [votes, setVotes] = useState(initialVotes);
     const [hasVoted, setHasVoted] = useState(false);
+    const [authUser, setAuthUser] = useState<{ id: string } | null>(null);
 
     useEffect(() => {
-        const votedRecipes = JSON.parse(localStorage.getItem('voted_recipes') || '[]');
-        setHasVoted(votedRecipes.includes(recipeId));
-        
-        const savedVotes = localStorage.getItem(`votes_${recipeId}`);
-        if (savedVotes) setVotes(parseInt(savedVotes));
+        supabase.auth.getSession().then(({ data: { session } }) => setAuthUser(session?.user ?? null));
+        const { data: { subscription } } = supabase.auth.onAuthStateChange((_e, session) => setAuthUser(session?.user ?? null));
+        return () => subscription.unsubscribe();
+    }, []);
+
+    useEffect(() => {
+        const load = async () => {
+            // Total likes (public)
+            const { count } = await supabase
+                .from('recipe_likes')
+                .select('*', { count: 'exact', head: true })
+                .eq('recipe_id', recipeId);
+            setVotes(count ?? 0);
+
+            // Check if current user voted
+            const { data: { session } } = await supabase.auth.getSession();
+            if (session) {
+                const { data } = await supabase
+                    .from('recipe_likes')
+                    .select('user_id')
+                    .eq('recipe_id', recipeId)
+                    .eq('user_id', session.user.id)
+                    .maybeSingle();
+                setHasVoted(!!data);
+            } else {
+                setHasVoted(false);
+            }
+        };
+        load();
     }, [recipeId]);
 
-    const handleVoteToggle = (e: React.MouseEvent) => {
+    const handleVoteToggle = async (e: React.MouseEvent) => {
         e.preventDefault();
         e.stopPropagation();
 
+        if (!authUser) return; // connexion requise pour voter
+
         const newState = !hasVoted;
         setHasVoted(newState);
-        
+        setVotes(prev => newState ? prev + 1 : Math.max(0, prev - 1));
+
         if (typeof window !== 'undefined' && 'vibrate' in navigator) {
-            navigator.vibrate(newState ? [20, 40, 20] : [12]); 
+            navigator.vibrate(newState ? [20, 40, 20] : [12]);
         }
 
-        const newVotes = newState ? votes + 1 : Math.max(0, votes - 1);
-        setVotes(newVotes);
-        
-        let votedRecipes = JSON.parse(localStorage.getItem('voted_recipes') || '[]');
         if (newState) {
-            if (!votedRecipes.includes(recipeId)) votedRecipes.push(recipeId);
+            await supabase.from('recipe_likes').upsert({
+                user_id: authUser.id,
+                recipe_id: recipeId,
+            });
         } else {
-            votedRecipes = votedRecipes.filter((id: string) => id !== recipeId);
+            await supabase.from('recipe_likes').delete()
+                .eq('user_id', authUser.id)
+                .eq('recipe_id', recipeId);
         }
-        localStorage.setItem('voted_recipes', JSON.stringify(votedRecipes));
-        localStorage.setItem(`votes_${recipeId}`, newVotes.toString());
     };
 
     return (
@@ -115,7 +143,7 @@ export default function VoteButtonSheet({ recipeId, initialVotes = 0, className 
 
                 {/* Bulle Compteur Transparente */}
                 <AnimatePresence>
-                    {hasVoted && (
+                    {votes > 0 && (
                         <motion.div 
                             layout
                             className={styles.countBubble}

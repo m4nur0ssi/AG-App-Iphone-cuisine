@@ -20,6 +20,7 @@ import MagicConverter from '@/components/MagicConverter/MagicConverter';
 import SplitTitle from '@/components/SplitTitle/SplitTitle';
 import { getIngredientVisual, translateIngredientName } from '@/lib/ingredient-utils';
 import StarRating from '@/components/StarRating/StarRating';
+import CommentSection from '@/components/CommentSection/CommentSection';
 import { estimateRecipeCalories } from '@/lib/calories';
 import { mockRecipes } from '@/data/mockData';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -1358,6 +1359,8 @@ export default function RecipeDetails({ recipe, prevId, nextId, isModal = false 
                     </div>
                 </div>
             )}
+
+            {!focusMode && <CommentSection recipeId={String(recipe.id)} />}
         </div>
         </>
     );
