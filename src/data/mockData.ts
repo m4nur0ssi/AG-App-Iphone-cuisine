@@ -2,11 +2,175 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 04/06/2026 12:47:08
+ * Dernière mise à jour: 04/06/2026 12:59:08
  * Total: 338 recettes
  */
-export const exportSyncId = "1780577228974";
+export const exportSyncId = "1780577948553";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5280",
+        "title": "Rochers Tiramisu",
+        "description": "Une recette gourmande de rochers Tiramisu, composés de boudoirs imbibés de café, d&rsquo;une crème onctueuse au mascarpone et d&rsquo;un glaçage croquant au chocolat et aux amandes ou noisettes.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frocher-x6.jpg&v=1780584698000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7630533247310581014\" data-video-id=\"7630533247310581014\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7630533247310581014\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n Boudoirs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 100 ml de café"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n 500 g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 60 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 250 g de crème liquide entière (30 % MG, bien froide)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n 200 g de chocolat"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n 50 g d'huile neutre"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n 60 g d'amandes ou noisettes"
+            }
+        ],
+        "steps": [
+            "Dans un saladier, fouettez le mascarpone avec le sucre.",
+            "Dans un autre bol, montez la crème liquide froide en chantilly ferme.",
+            "Incorporez délicatement la chantilly à la préparation au mascarpone à l'aide d'une spatule.",
+            "Montez les tiramisu (en alternant boudoirs imbibés de café et crème au mascarpone), puis congelez-les.",
+            "Faites fondre le chocolat avec l'huile neutre.",
+            "Ajoutez les amandes ou noisettes concassées au chocolat fondu.",
+            "Glacez les tiramisu congelés avec le glaçage, puis laissez-les décongeler au frais avant de servir."
+        ],
+        "tags": [
+            "Italie",
+            "Les Glaces"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5283",
+        "title": "Chakchouka végétarienne",
+        "description": "Une chakchouka végétarienne et protéinée, préparée avec des œufs, tomates, haricots rouges et petits pois, assaisonnée à l&rsquo;ail et aux épices.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fchav.jpg&v=1780584516000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7611505151139908887\" data-video-id=\"7611505151139908887\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7611505151139908887\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧅\n 1 Oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n Huile d'olive 15ml"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n 3 Tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🫘\n Haricots rouges 200g"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Petits pois 75g"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n Sauce tomate 150g"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 4 Œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Ail, sel, poivre, paprika fumé, ciboulette"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Healthy",
+            "Orient",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5787",
+        "title": "McFlurry maison au Daim",
+        "description": "Une recette facile et rapide pour préparer un McFlurry maison au Daim en seulement 5 minutes grâce au Ninja Creami.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fflurry.jpeg&v=1780584167000",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7475297955587706134\" data-video-id=\"7475297955587706134\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7475297955587706134\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n 250 ml de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 150 ml de crème"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 30g de lait concentré"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n 1 c-à-soupe de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 50g de Daim"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Glaces",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5858",
         "title": "Gâteau moelleux noisette &#038; chocolat",
@@ -2351,50 +2515,6 @@ export const mockRecipes: Recipe[] = [
             "Gratins",
             "Healthy",
             "Plats"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5787",
-        "title": "McFlurry maison au Daim",
-        "description": "Une recette facile et rapide pour préparer un McFlurry maison au Daim en seulement 5 minutes grâce au Ninja Creami.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fflurry.jpeg&v=1779900297000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7475297955587706134\" data-video-id=\"7475297955587706134\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7475297955587706134\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥛\n 250 ml de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 150 ml de crème"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 30g de lait concentré"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n 1 c-à-soupe de vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 50g de Daim"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Végé",
-            "Voilà l'été"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -8138,154 +8258,6 @@ export const mockRecipes: Recipe[] = [
             "Pas cher",
             "pâtisserie",
             "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5287",
-        "title": "High-Protein Chicken Bacon Ranch Pasta",
-        "description": "Une pâte crémeuse et savoureuse, riche en protéines, avec du poulet, du bacon croustillant et une sauce généreuse. Une recette addictive et l&rsquo;une des meilleures de l&rsquo;auteur.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7526612302334823713\" data-video-id=\"7526612302334823713\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7526612302334823713\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Healthy",
-            "Simplissime",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5283",
-        "title": "Chakchouka végétarienne",
-        "description": "Une chakchouka végétarienne et protéinée, préparée avec des œufs, tomates, haricots rouges et petits pois, assaisonnée à l&rsquo;ail et aux épices.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7611505151139908887\" data-video-id=\"7611505151139908887\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7611505151139908887\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧅\n 1 Oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n Huile d'olive 15ml"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n 3 Tomates"
-            },
-            {
-                "quantity": "",
-                "name": "🫘\n Haricots rouges 200g"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n Petits pois 75g"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n Sauce tomate 150g"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n 4 Œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n Ail, sel, poivre, paprika fumé, ciboulette"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Healthy",
-            "Orient",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5280",
-        "title": "Rochers Tiramisu",
-        "description": "Une recette gourmande de rochers Tiramisu, composés de boudoirs imbibés de café, d&rsquo;une crème onctueuse au mascarpone et d&rsquo;un glaçage croquant au chocolat et aux amandes ou noisettes.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7630533247310581014\" data-video-id=\"7630533247310581014\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7630533247310581014\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Boudoirs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             100 ml de café"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             500 g de mascarpone"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             60 g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             250 g de crème liquide entière (30 % MG, bien froide)"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             200 g de chocolat"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             50 g d'huile neutre"
-            },
-            {
-                "quantity": "",
-                "name": "🥜\n             60 g d'amandes ou noisettes"
-            }
-        ],
-        "steps": [
-            "Dans un saladier, fouettez le mascarpone avec le sucre.",
-            "Dans un autre bol, montez la crème liquide froide en chantilly ferme.",
-            "Incorporez délicatement la chantilly à la préparation au mascarpone à l'aide d'une spatule.",
-            "Montez les tiramisu (en alternant boudoirs imbibés de café et crème au mascarpone), puis congelez-les.",
-            "Faites fondre le chocolat avec l'huile neutre.",
-            "Ajoutez les amandes ou noisettes concassées au chocolat fondu.",
-            "Glacez les tiramisu congelés avec le glaçage, puis laissez-les décongeler au frais avant de servir."
-        ],
-        "tags": [
-            "Italie",
-            "Les Glaces"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -14347,6 +14319,100 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Italie",
             "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "3932",
+        "title": "Grilled Lamb Chops With Vegetables",
+        "description": "Grilled Lamb Chops With Vegetables - Perfect Choice For Christmas Dinner 😋",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Ftravers.jpg&v=1774526641000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7174427413785627950\" data-video-id=\"7174427413785627950\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7174427413785627950\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Rack of Lamb (Lamb Chops)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             White Onion"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Garlic Cloves"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Rosemary"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Thyme"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fresh Mint"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Lemon Zest"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Lemon Juice"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Olive Oil"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Salt"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pepper"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Oregano"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Sugar"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Peppers"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Zucchini"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Mushrooms"
+            }
+        ],
+        "steps": [
+            "Marinate the lamb chops for 15 minutes.",
+            "Grill vegetables (peppers, zucchini, mushrooms, white onions) for a side dish, starting 15 minutes before the lamb chops.",
+            "Grill lamb chops on both sides for 3.5 minutes in a 350-400 F preheated grill for medium-well (adjust for desired doneness).",
+            "Serve on a plate and drizzle with sauce."
+        ],
+        "tags": [
+            "barbecue",
+            "facile",
+            "Famille",
+            "Healthy",
+            "Noël"
         ],
         "isFeatured": false,
         "isFavorite": false,
