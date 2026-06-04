@@ -2,11 +2,441 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 04/06/2026 12:31:44
- * Total: 339 recettes
+ * Dernière mise à jour: 04/06/2026 12:47:08
+ * Total: 338 recettes
  */
-export const exportSyncId = "1780576304803";
+export const exportSyncId = "1780577228974";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5858",
+        "title": "Gâteau moelleux noisette &#038; chocolat",
+        "description": "Un gâteau sans gluten, moelleux, sans matière grasse ajoutée et sucré naturellement au sirop de Yacon. Léger et délicieux.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fcake.jpg&v=1780583991000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7549975345097608470\" data-video-id=\"7549975345097608470\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7549975345097608470\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n 3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 150ml lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 100g poudre noisette"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n 100g farine (avoine ou flocons mixés)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 60g de sucrant au choix (sirop de yacon)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 CC sachet levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n 80g pépites de chocolat (60g pour la pâte, 20g pour le dessus)"
+            }
+        ],
+        "steps": [
+            "Mélanger les 3 œufs, 150ml de lait, 100g de poudre de noisette, 100g de farine (avoine ou flocons mixés), 60g de sucrant (sirop de yacon) et 1 CC de levure chimique.",
+            "Incorporer 60g de pépites de chocolat à la préparation.",
+            "Verser la pâte dans un moule de 20cm de diamètre.",
+            "Ajouter les 20g restants de pépites de chocolat sur le dessus.",
+            "Cuire au four préchauffé à 180 degrés pendant 30 minutes.",
+            "Laisser tiédir environ 30 minutes avant de démouler et déguster."
+        ],
+        "tags": [
+            "Healthy",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5852",
+        "title": "Tartine méditerranéenne d&rsquo;olives",
+        "description": "Un dip méditerranéen savoureux et facile à préparer, parfait pour accompagner du pain. Il est composé d&rsquo;huile d&rsquo;olive, de vinaigre balsamique, d&rsquo;olives vertes, de tomates séchées, de parmesan, de persil, d&rsquo;ail et de flocons de",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fmediterr.jpg&v=1780583854000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7628705178992020758\" data-video-id=\"7628705178992020758\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7628705178992020758\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍾\n Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n Vinaigre balsamique"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Olives vertes"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n Tomates séchées"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Persil"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n Ail (1 gousse)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Flocons de piment"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Apéritifs",
+            "épicé",
+            "Grèce",
+            "Healthy",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5854",
+        "title": "Le radis beurre comme une fleur",
+        "description": "Une recette de radis au beurre présentés en forme de fleur, inspirée par le chef Jean-François Piège, idéale pour l&rsquo;apéritif.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fradis.jpg&v=1780583751000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7256818242142899483\" data-video-id=\"7256818242142899483\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7256818242142899483\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n Radis"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n Beurre"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Apéritifs",
+            "France",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5856",
+        "title": "Astuce coque au chocolat",
+        "description": "Une recette facile de dessert au chocolat, adaptée aux régimes végétarien et végétalien.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fcoque.jpg&v=1780583653000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7621853365835746581\" data-video-id=\"7621853365835746581\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7621853365835746581\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Desserts",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5937",
+        "title": "Courgettes rôties et crème de mozza",
+        "description": "Des courgettes rôties et marinées au miel, soja, origan et paprika fumé, servies avec une crème onctueuse à base de mozzarella, yaourt, herbes fraîches, ail et citron, le tout garni de grenade, mozzarella fraîche et pignons de pin grillés.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Fcourgettes-mozza.jpeg&v=1780583479000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7361079703404301601\" data-video-id=\"7361079703404301601\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7361079703404301601\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n 2-3 courgettes"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n Sauce soja salée"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n Miel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Origan"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n Beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n 1 boule de mozzarella"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 3 cas de yaourt"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Une poignée d'herbes fraîches (menthe, basilic...)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 1/2 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n Zeste d'un citron"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Grenade"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Pignons de pin grillés"
+            }
+        ],
+        "steps": [
+            "Préparer la marinade en mélangeant 2 cas d'huile d'olive, 1 cas de soja salé, 1 cas de miel, 1 cac d'origan et du paprika fumé.",
+            "Couper les courgettes et les saisir à la poêle avec un peu de beurre pendant 10 minutes.",
+            "Transférer les courgettes dans un plat allant au four, les napper de marinade et cuire au four pendant 20 minutes à 200 degrés.",
+            "Pendant ce temps, préparer la sauce : mixer 1 boule de mozzarella, 3 cas de yaourt, une poignée d'herbes (menthe, basilic...), 1/2 gousse d'ail, 2 cas d'huile d'olive, 1 cas de miel, du sel et le zest d'un citron.",
+            "Servir les courgettes rôties avec la crème de mozza et garnir de grenade, de morceaux de mozzarella fraîche et de pignons de pin grillés."
+        ],
+        "tags": [
+            "Healthy",
+            "Italie",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5939",
+        "title": "Curry d&rsquo;aubergine, pois chiches et raïta",
+        "description": "Un curry végétarien parfumé aux aubergines fondantes, accompagné de pois chiches rôtis au paprika fumé et d&rsquo;une sauce raïta fraîche au concombre et à la menthe. Idéal avec du pain ou du riz.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Fcurry-aubergine.jpg&v=1780583356000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7245327007372905754\" data-video-id=\"7245327007372905754\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7245327007372905754\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧅\n 1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n Huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 2-3 càs de curry de madras en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n 1 càs de coriandre en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 càc de gingembre en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🍆\n 1 belle aubergine"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n 1 càs de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 300ml de lait de coco"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n 200g de chair de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Piment au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n 1 poignée de coriandre fraîche hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 4 grosses càs de yaourt nature"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n 1/2 concombre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 càc de Garam masala en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n 1 poignée de feuilles de coriandre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n 5-6 feuilles de menthe"
+            },
+            {
+                "quantity": "",
+                "name": "🫘\n 150g de pois chiches"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n Pain de votre choix (pita, naan, pain italien..) ou du riz"
+            }
+        ],
+        "steps": [
+            "1. Faites revenir l'oignon avec huile d'olive, sel, poivre et les épices (curry de madras, coriandre, gingembre) pendant 2min sur feu moyen dans une grande poêle ou cocotte que vous pouvez couvrir. Ajoutez ensuite le concentré de tomate, l'aubergine coupée en cubes, le lait de coco et la chair de tomate. Mélangez bien, salez, et faites cuire à couvert environ 20-25min en vérifiant que le fond n'accroche pas pendant la cuisson.",
+            "2. À la fin de la cuisson du curry, écrasez les aubergines à la fourchette, ajoutez la coriandre hachée, mélangez et laissez finir de réduire à découvert 1-3min. La consistance doit être fondante, pas liquide. Goûtez et ajustez si besoin (plus de curry, d'herbes, sel ?).",
+            "3. Pour les pois chiches, égouttez et rincez-les, puis faites-les simplement revenir avec de l'huile d'olive et beaucoup de paprika fumé (1 à 2 càs) sur feu moyen.",
+            "4. Pour la sauce raïta : mélangez le concombre épluché et coupé en petits morceaux avec les herbes hachées (coriandre, menthe), du sel, le Garam masala et le yaourt.",
+            "5. Servez le tout avec le pain de votre choix (cheese naan, pain pita, pain italien) ou du riz."
+        ],
+        "tags": [
+            "épicé",
+            "Healthy",
+            "Orient",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5941",
+        "title": "Gratin de Courgettes Protéiné",
+        "description": "Une super recette pour faire manger des courgettes aux petits comme aux grands récalcitrants. En plus de ça c'est ultra protéiné, tu vas te régaler !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Fgratin-de-courgette-scaled-1.jpeg&v=1780583135000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7518358291571903766\" data-video-id=\"7518358291571903766\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7518358291571903766\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n 2 courgettes"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 4 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1/2 fêta"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Persil"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n Mozzarella Rapée"
+            }
+        ],
+        "steps": [
+            "Bien égoutter les courgettes dans un torchon avant cuisson."
+        ],
+        "tags": [
+            "Gratins",
+            "Healthy"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5943",
         "title": "Brownie au brocolis",
@@ -69,254 +499,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Healthy"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5941",
-        "title": "Gratin de Courgettes Protéiné",
-        "description": "Une super recette pour faire manger des courgettes aux petits comme aux grands récalcitrants. En plus de ça c'est ultra protéiné, tu vas te régaler !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7518358291571903766\" data-video-id=\"7518358291571903766\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7518358291571903766\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             2 courgettes"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             4 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1/2 fêta"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Mozzarella Rapée"
-            }
-        ],
-        "steps": [
-            "Bien égoutter les courgettes dans un torchon avant cuisson."
-        ],
-        "tags": [
-            "Gratins",
-            "Healthy"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5939",
-        "title": "Curry d&rsquo;aubergine, pois chiches et raïta",
-        "description": "Un curry végétarien parfumé aux aubergines fondantes, accompagné de pois chiches rôtis au paprika fumé et d&rsquo;une sauce raïta fraîche au concombre et à la menthe. Idéal avec du pain ou du riz.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7245327007372905754\" data-video-id=\"7245327007372905754\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7245327007372905754\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             2-3 càs de curry de madras en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 càs de coriandre en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 càc de gingembre en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🍆\n             1 belle aubergine"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 càs de concentré de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             300ml de lait de coco"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             200g de chair de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Piment au goût"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 poignée de coriandre fraîche hachée"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             4 grosses càs de yaourt nature"
-            },
-            {
-                "quantity": "",
-                "name": "🥒\n             1/2 concombre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 càc de Garam masala en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 poignée de feuilles de coriandre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             5-6 feuilles de menthe"
-            },
-            {
-                "quantity": "",
-                "name": "🫘\n             150g de pois chiches"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🍚\n             Pain de votre choix (pita, naan, pain italien..) ou du riz"
-            }
-        ],
-        "steps": [
-            "1. Faites revenir l'oignon avec huile d'olive, sel, poivre et les épices (curry de madras, coriandre, gingembre) pendant 2min sur feu moyen dans une grande poêle ou cocotte que vous pouvez couvrir. Ajoutez ensuite le concentré de tomate, l'aubergine coupée en cubes, le lait de coco et la chair de tomate. Mélangez bien, salez, et faites cuire à couvert environ 20-25min en vérifiant que le fond n'accroche pas pendant la cuisson.",
-            "2. À la fin de la cuisson du curry, écrasez les aubergines à la fourchette, ajoutez la coriandre hachée, mélangez et laissez finir de réduire à découvert 1-3min. La consistance doit être fondante, pas liquide. Goûtez et ajustez si besoin (plus de curry, d'herbes, sel ?).",
-            "3. Pour les pois chiches, égouttez et rincez-les, puis faites-les simplement revenir avec de l'huile d'olive et beaucoup de paprika fumé (1 à 2 càs) sur feu moyen.",
-            "4. Pour la sauce raïta : mélangez le concombre épluché et coupé en petits morceaux avec les herbes hachées (coriandre, menthe), du sel, le Garam masala et le yaourt.",
-            "5. Servez le tout avec le pain de votre choix (cheese naan, pain pita, pain italien) ou du riz."
-        ],
-        "tags": [
-            "épicé",
-            "Healthy",
-            "Orient",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5937",
-        "title": "Courgettes rôties et crème de mozza",
-        "description": "Des courgettes rôties et marinées au miel, soja, origan et paprika fumé, servies avec une crème onctueuse à base de mozzarella, yaourt, herbes fraîches, ail et citron, le tout garni de grenade, mozzarella fraîche et pignons de pin grillés.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7361079703404301601\" data-video-id=\"7361079703404301601\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7361079703404301601\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             2-3 courgettes"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             Sauce soja salée"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Miel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Origan"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             Beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             1 boule de mozzarella"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             3 cas de yaourt"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Une poignée d'herbes fraîches (menthe, basilic...)"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1/2 gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Zeste d'un citron"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Grenade"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pignons de pin grillés"
-            }
-        ],
-        "steps": [
-            "Préparer la marinade en mélangeant 2 cas d'huile d'olive, 1 cas de soja salé, 1 cas de miel, 1 cac d'origan et du paprika fumé.",
-            "Couper les courgettes et les saisir à la poêle avec un peu de beurre pendant 10 minutes.",
-            "Transférer les courgettes dans un plat allant au four, les napper de marinade et cuire au four pendant 20 minutes à 200 degrés.",
-            "Pendant ce temps, préparer la sauce : mixer 1 boule de mozzarella, 3 cas de yaourt, une poignée d'herbes (menthe, basilic...), 1/2 gousse d'ail, 2 cas d'huile d'olive, 1 cas de miel, du sel et le zest d'un citron.",
-            "Servir les courgettes rôties avec la crème de mozza et garnir de grenade, de morceaux de mozzarella fraîche et de pignons de pin grillés."
-        ],
-        "tags": [
-            "Healthy",
-            "Italie",
-            "Végé",
-            "Voilà l'été"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -1352,188 +1534,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "5858",
-        "title": "Gâteau moelleux noisette &#038; chocolat",
-        "description": "Un gâteau sans gluten, moelleux, sans matière grasse ajoutée et sucré naturellement au sirop de Yacon. Léger et délicieux.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7549975345097608470\" data-video-id=\"7549975345097608470\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7549975345097608470\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             3 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             150ml lait"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             100g poudre noisette"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             100g farine (avoine ou flocons mixés)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             60g de sucrant au choix (sirop de yacon)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 CC sachet levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             80g pépites de chocolat (60g pour la pâte, 20g pour le dessus)"
-            }
-        ],
-        "steps": [
-            "Mélanger les 3 œufs, 150ml de lait, 100g de poudre de noisette, 100g de farine (avoine ou flocons mixés), 60g de sucrant (sirop de yacon) et 1 CC de levure chimique.",
-            "Incorporer 60g de pépites de chocolat à la préparation.",
-            "Verser la pâte dans un moule de 20cm de diamètre.",
-            "Ajouter les 20g restants de pépites de chocolat sur le dessus.",
-            "Cuire au four préchauffé à 180 degrés pendant 30 minutes.",
-            "Laisser tiédir environ 30 minutes avant de démouler et déguster."
-        ],
-        "tags": [
-            "Healthy",
-            "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5856",
-        "title": "Dessert au chocolat",
-        "description": "Une recette facile de dessert au chocolat, adaptée aux régimes végétarien et végétalien.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7621853365835746581\" data-video-id=\"7621853365835746581\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7621853365835746581\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Desserts",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5854",
-        "title": "LE RADIS BEURRE COMME UNE FLEUR FAÇON JEAN-FRANÇOIS PIÈGE",
-        "description": "Une recette de radis au beurre présentés en forme de fleur, inspirée par le chef Jean-François Piège, idéale pour l&rsquo;apéritif.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7256818242142899483\" data-video-id=\"7256818242142899483\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7256818242142899483\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Radis"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             Beurre"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Apéritifs",
-            "France",
-            "Pas cher",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5852",
-        "title": "Mediterranean Olive Oil Bread Dip",
-        "description": "Un dip méditerranéen savoureux et facile à préparer, parfait pour accompagner du pain. Il est composé d&rsquo;huile d&rsquo;olive, de vinaigre balsamique, d&rsquo;olives vertes, de tomates séchées, de parmesan, de persil, d&rsquo;ail et de flocons de",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7628705178992020758\" data-video-id=\"7628705178992020758\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7628705178992020758\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Vinaigre balsamique"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Olives vertes"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Tomates séchées"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Ail (1 gousse)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Flocons de piment"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Apéritifs",
-            "épicé",
-            "Grèce",
-            "Healthy",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "5736",
         "title": "Fraisier",
         "description": "Une recette détaillée pour réussir un fraisier classique, avec une génoise moelleuse et une crème mousseline onctueuse, parfait pour les amateurs de fraises. Le guide inclut la préparation de la génoise, de la crème pâtissière et de la crème au beurr",
@@ -2361,7 +2361,7 @@ export const mockRecipes: Recipe[] = [
         "title": "McFlurry maison au Daim",
         "description": "Une recette facile et rapide pour préparer un McFlurry maison au Daim en seulement 5 minutes grâce au Ninja Creami.",
         "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fflurry.jpeg&v=1779900297000",
-        "category": "entrees",
+        "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
@@ -2393,7 +2393,6 @@ export const mockRecipes: Recipe[] = [
             "Suivre les instructions dans la vidéo"
         ],
         "tags": [
-            "Entrées",
             "Végé",
             "Voilà l'été"
         ],
@@ -14348,100 +14347,6 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Italie",
             "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "3932",
-        "title": "Grilled Lamb Chops With Vegetables",
-        "description": "Grilled Lamb Chops With Vegetables - Perfect Choice For Christmas Dinner 😋",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Ftravers.jpg&v=1774526641000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7174427413785627950\" data-video-id=\"7174427413785627950\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7174427413785627950\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Rack of Lamb (Lamb Chops)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             White Onion"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Garlic Cloves"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Rosemary"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Thyme"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fresh Mint"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Lemon Zest"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Lemon Juice"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Olive Oil"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Salt"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pepper"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Oregano"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Sugar"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Peppers"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Zucchini"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Mushrooms"
-            }
-        ],
-        "steps": [
-            "Marinate the lamb chops for 15 minutes.",
-            "Grill vegetables (peppers, zucchini, mushrooms, white onions) for a side dish, starting 15 minutes before the lamb chops.",
-            "Grill lamb chops on both sides for 3.5 minutes in a 350-400 F preheated grill for medium-well (adjust for desired doneness).",
-            "Serve on a plate and drizzle with sauce."
-        ],
-        "tags": [
-            "barbecue",
-            "facile",
-            "Famille",
-            "Healthy",
-            "Noël"
         ],
         "isFeatured": false,
         "isFavorite": false,
