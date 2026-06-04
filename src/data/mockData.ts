@@ -2,11 +2,119 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 04/06/2026 13:45:57
+ * Dernière mise à jour: 04/06/2026 13:53:46
  * Total: 334 recettes
  */
-export const exportSyncId = "1780580757509";
+export const exportSyncId = "1780581226362";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "1214",
+        "title": "Ble coeur - Le Raincy",
+        "description": "      Vous cherchez une adresse gourmande au Raincy, à quelques encablures de la capitale ? Poussez la porte de ce restaurant ! Le Blé Cœur vous accueille dans son intérieur contemporain et met les petits plats dans les grands pour satisfaire tous le",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2022%2F09%2F249d51d6-756e-4834-bd95-e7e15531e425.jpg&v=1780587711000",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Vous cherchez une adresse gourmande au Raincy, à quelques encablures de la capitale ? Poussez la porte de ce restaurant ! Le Blé Cœur vous accueille dans son intérieur contemporain et met les petits plats dans les grands pour satisfaire tous les appétits !",
+            "AU PROGRAMME - Une carte le midi, une le soir, et suggestions qui changent tous les jours. En cuisine, on mise sur le frais et les produits du marché.",
+            "GOURMET - Les plats flirtent avec la gastronomie tout en restant simples et bien exécutés : foie gras poêlé sur pain d&rsquo;épice maison, risotto aux girolles, souris d&rsquo;agneau confite ou encore canard à l&rsquo;orange..",
+            "Mon plat préféré : j&rsquo;ai bien aimé le carpaccio de tomates avec sa belle burrata",
+            " l'accueil, la simplicité de la décoration soignée, le service, les plats",
+            "  le prix même si c&rsquo;est logique",
+            "au fond avec vue sur la cuisine😉",
+            "82, allee de Montfermeil, 93340, Le Raincy",
+            "Parking Montfermeil (110m)",
+            "RER E Le Raincy - Villemomble - Montfermeil",
+            "TheFork, a Trip advisor company"
+        ],
+        "tags": [
+            "blé",
+            "coeur"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "3848",
+        "title": "Boulettes de pommes de terre épinards et mozzarella",
+        "description": "De délicieuses boulettes végétariennes et croustillantes à base de pommes de terre, d&rsquo;épinards et de tofu, avec un cœur fondant à la mozzarella.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fboulettes-epinards.jpg&v=1780587624000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7197117564131151110\" data-video-id=\"7197117564131151110\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7197117564131151110\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n 4 pommes de terre moyennes"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n 200g de pousses d'épinards"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n 1 échalote"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n 1 boule de mozzarella"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 125g de tofu (aux herbes)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel, poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n Huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n Farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n Chapelure"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 1 œuf"
+            }
+        ],
+        "steps": [
+            "Cuire les pommes de terre à l&rsquo;eau ou à la vapeur, puis les écraser en purée.",
+            "Hacher l&rsquo;échalote et l&rsquo;ail, puis les faire revenir à la poêle avec les épinards dans un peu d&rsquo;huile d&rsquo;olive.",
+            "Dans un saladier, mélanger la purée de pommes de terre, les épinards cuits et le tofu émietté. Assaisonner avec le sel et le poivre.",
+            "Former des boulettes avec la préparation en insérant un morceau de mozzarella au centre de chacune.",
+            "Préparer la panure : passer successivement chaque boulette dans la farine, puis dans l&rsquo;œuf battu, et enfin dans la chapelure.",
+            "Faire dorer les boulettes à la poêle avec de l&rsquo;huile d&rsquo;olive jusqu&rsquo;à ce qu&rsquo;elles soient bien croustillantes."
+        ],
+        "tags": [],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "4898",
         "title": "Sundae Maison Caramel Beurre Salé",
@@ -6794,154 +6902,6 @@ export const mockRecipes: Recipe[] = [
             "Glaces",
             "pâtisserie",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5442",
-        "title": "Panna Cotta aux fraises",
-        "description": "Une recette classique de Panna Cotta italienne, crémeuse et onctueuse, surmontée d&rsquo;un coulis frais aux fraises. Un dessert léger et rafraîchissant, parfait pour l&rsquo;été.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fpanna-cotta-vanille-et-coulis-de-fraise-v2.jpeg&v=1778609795000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7356626054846418209\" data-video-id=\"7356626054846418209\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7356626054846418209\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n Cream: 2 cups"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n Sugar: 1/3 cup"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n Gelatin: 2 sheets (or 8g)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n Vanilla: 1 tablespoon"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n Strawberries: 1 cup, chopped"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n Water: 1/2 cup"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n Gelatin: 1 sheet"
-            }
-        ],
-        "steps": [
-            "Soften 2 sheets of gelatin in cold water.",
-            "Heat cream, sugar, and vanilla until hot but not boiling.",
-            "Remove from heat, add the softened gelatin, and stir until melted.",
-            "Pour the mixture into glasses and let it cool.",
-            "Refrigerate until firm.",
-            "Soften 1 sheet of gelatin in cold water.",
-            "Heat chopped strawberries and water without boiling.",
-            "Add the softened gelatin and stir until melted.",
-            "Let the strawberry topping cool.",
-            "Pour the cooled strawberry topping over the firm panna cotta.",
-            "Refrigerate until set."
-        ],
-        "tags": [
-            "Desserts",
-            "Italie",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5445",
-        "title": "Gâteau mousse au chocolat",
-        "description": "Un délicieux gâteau composé d&rsquo;un biscuit moelleux au cacao et d&rsquo;une onctueuse mousse au chocolat noir, parfait pour un dessert gourmand.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fgateau-choco-scaled.jpg&v=1778609600000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7551440769798851843\" data-video-id=\"7551440769798851843\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7551440769798851843\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n 125g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n 20g de cacao"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n 70g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 1càc de levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n 1 pincée de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 60ml d&rsquo;huile"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n 1 œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 120g de lait (pour le biscuit)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 120g de café chaud"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 130g de lait (pour la mousse)"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n 2 jaunes d&rsquo;œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n 160g de chocolat noir"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 250g de crème entière froide"
-            }
-        ],
-        "steps": [
-            "Pour le biscuit : Mélanger les ingrédients secs (farine, cacao, sucre, levure chimique, sel).",
-            "Ajouter l&rsquo;œuf, l&rsquo;huile et le lait aux ingrédients secs, puis incorporer le café chaud.",
-            "Cuire le biscuit environ 15 minutes à 170°C.",
-            "Laisser le biscuit complètement refroidir.",
-            "Pour la mousse : Dans une casserole, mélanger les jaunes d&rsquo;œufs avec le lait.",
-            "Transférer sur feu doux et cuire jusqu'à ce que la crème anglaise nappe la cuillère.",
-            "Verser la crème anglaise chaude sur le chocolat noir et mélanger jusqu&rsquo;à obtenir une ganache lisse.",
-            "Faire monter la crème entière froide en chantilly.",
-            "Incorporer délicatement la crème montée à la ganache au chocolat.",
-            "Verser la mousse sur le gâteau refroidi.",
-            "Réserver au réfrigérateur pendant au minimum 1 nuit."
-        ],
-        "tags": [
-            "Desserts"
         ],
         "isFeatured": false,
         "isFavorite": false,
