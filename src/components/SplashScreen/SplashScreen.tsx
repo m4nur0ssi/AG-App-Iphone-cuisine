@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styles from './SplashScreen.module.css';
 import { mockRecipes } from '@/data/mockData';
 import RecipeCardiOS26 from '@/components/RecipeCard/RecipeCardiOS26';
+import AuthButton from '@/components/AuthButton/AuthButton';
 
 export default function SplashScreen() {
     const [isVisible, setIsVisible] = useState(false);
@@ -133,13 +134,18 @@ export default function SplashScreen() {
                             }}
                             transition={{ delay: isSheetOpen ? 0 : 1.2, duration: 0.4 }}
                         >
-                            <button 
-                                className={styles.explorerBtn}
-                                onClick={closeSplash}
-                                aria-label="Explorer les recettes"
-                            >
-                                Explorer
-                            </button>
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
+                                <button
+                                    className={styles.explorerBtn}
+                                    onClick={closeSplash}
+                                    aria-label="Explorer les recettes"
+                                >
+                                    Explorer
+                                </button>
+                                <div onClick={e => e.stopPropagation()}>
+                                    <AuthButton />
+                                </div>
+                            </div>
                         </motion.div>
                     </motion.div>
                 </motion.div>
