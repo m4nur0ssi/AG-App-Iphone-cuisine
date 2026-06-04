@@ -22,10 +22,10 @@ export default function AuthButton() {
     // Ouvrir le panneau de connexion sur demande (ex: clic sur un cœur déconnecté)
     useEffect(() => {
         const openAuth = () => {
-            if (btnRef.current) {
-                const rect = btnRef.current.getBoundingClientRect();
-                setPos({ top: rect.bottom + 8, right: window.innerWidth - rect.right });
-            }
+            // Ignore si cette instance est masquée (ex: header en mobile) → évite double panneau
+            if (!btnRef.current || btnRef.current.offsetParent === null) return;
+            const rect = btnRef.current.getBoundingClientRect();
+            setPos({ top: rect.bottom + 8, right: window.innerWidth - rect.right });
             setOpen(true);
         };
         window.addEventListener('magic-open-auth', openAuth);

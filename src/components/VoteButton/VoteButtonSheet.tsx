@@ -101,7 +101,7 @@ export default function VoteButtonSheet({ recipeId, initialVotes = 0, className 
         e.preventDefault();
         e.stopPropagation();
 
-        if (!authUser) return; // connexion requise pour voter
+        if (!authUser) { window.dispatchEvent(new Event('magic-open-auth')); return; } // connexion requise pour voter
 
         const newState = !hasVoted;
         setHasVoted(newState);

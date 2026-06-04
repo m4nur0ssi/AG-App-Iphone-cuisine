@@ -3,6 +3,7 @@
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import HeroCarousel from './HeroCarousel';
+import AuthButton from '@/components/AuthButton/AuthButton';
 import { mockRecipes } from '@/data/mockData';
 import styles from './HeroHome.module.css';
 
@@ -40,6 +41,7 @@ export default function HeroHome({ onSelect }: HeroHomeProps) {
                         <a href="#categories" className={styles.ctaButton}>
                             <span>Explorer</span>
                         </a>
+                        <AuthButton />
                     </div>
                 </motion.div>
 

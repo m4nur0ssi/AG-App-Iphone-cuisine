@@ -140,7 +140,11 @@ export default function CommentSection({ recipeId }: CommentSectionProps) {
                         </form>
                     </motion.div>
                 ) : comments.length === 0 ? (
-                    <div className={styles.empty}>
+                    <div
+                        className={styles.empty}
+                        onClick={() => { if (!user) window.dispatchEvent(new Event('magic-open-auth')); }}
+                        style={!user ? { cursor: 'pointer' } : undefined}
+                    >
                         {user ? 'Sois le premier à commenter !' : 'Connecte-toi pour commenter.'}
                     </div>
                 ) : (
