@@ -156,7 +156,6 @@ export default function Header({
                                 Retour
                             </button>
                         )}
-                        <ThemeToggle className={styles.themeBtn} />
                         <AuthButton />
                     </div>
 
@@ -192,6 +191,7 @@ export default function Header({
                         {isSyncing && (
                             <div className={styles.syncIndicator}>🪄</div>
                         )}
+                        <ThemeToggle className={styles.themeBtn} />
                     </div>
                 </div>
             </header>
