@@ -475,7 +475,22 @@ export default function BottomNav() {
                     onClose={() => setIsSheetOpen(false)} 
                 />
             )}
-            <Portal><WeekPlanner isOpen={showPlanner} onClose={() => setShowPlanner(false)} /></Portal>
+            {showPlanner && (
+                <Portal>
+                    <div
+                        onClick={(e) => { if (e.target === e.currentTarget) setShowPlanner(false); }}
+                        style={{
+                            position: 'fixed', inset: 0, zIndex: 9000,
+                            background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(4px)',
+                            overflowY: 'auto', WebkitOverflowScrolling: 'touch',
+                            paddingTop: 'env(safe-area-inset-top)', paddingBottom: 120,
+                            display: 'flex', flexDirection: 'column',
+                        }}
+                    >
+                        <WeekPlanner isOpen={showPlanner} onClose={() => setShowPlanner(false)} />
+                    </div>
+                </Portal>
+            )}
         </>
     );
 }
