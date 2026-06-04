@@ -6,7 +6,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import styles from './BottomNav.module.css';
 import dynamic from 'next/dynamic';
-import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import WeekPlanner from '../WeekPlanner/WeekPlanner';
 import SpotlightSearch from '../SpotlightSearch/SpotlightSearch';
 import { mockRecipes } from '@/data/mockData';
 import { useTimer } from '@/components/Timer/TimerContext';
@@ -43,9 +43,19 @@ const BasketIcon = () => (
     </svg>
 );
 
+const CalendarIcon = () => (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+        <line x1="16" y1="2" x2="16" y2="6" />
+        <line x1="8" y1="2" x2="8" y2="6" />
+        <line x1="3" y1="10" x2="21" y2="10" />
+    </svg>
+);
+
 export default function BottomNav() {
     const pathname = usePathname();
     const router = useRouter();
+    const [showPlanner, setShowPlanner] = useState(false);
     const [stats, setStats] = useState({ shopping: 0, favorites: 0 });
     const [mounted, setMounted] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -69,7 +79,7 @@ export default function BottomNav() {
         { id: 'favoris', label: 'Favoris', Icon: HeartIcon, path: '/favorites', badge: stats.favorites },
         { id: 'panier', label: 'Liste', Icon: BasketIcon, path: '/shopping-list', badge: stats.shopping },
         { id: 'decouvrir', label: 'Accueil', Icon: StorefrontIcon, path: '/' },
-        { id: 'mode', label: 'Mode', isComponent: true, component: <ThemeToggle /> },
+        { id: 'planner', label: 'Menu', Icon: CalendarIcon },
     ];
 
     // Toggle between Search and Timer every 3 seconds if timer is active
@@ -285,6 +295,11 @@ export default function BottomNav() {
     const handleItemClick = (index: number) => {
         setActiveIndex(index);
         const item = navItems[index];
+        if (item.id === 'planner') {
+            setShowPlanner(true);
+            handleVibrate(10);
+            return;
+        }
         // Now using union types safely or checking for path
         if ('path' in item && item.path) {
             router.push(item.path);
@@ -391,17 +406,13 @@ export default function BottomNav() {
                                                 onClick={() => handleItemClick(index)}
                                             >
                                                 <div className={styles.iconContainer}>
-                                                    {item.isComponent ? (
-                                                        item.component
-                                                    ) : (
-                                                        <div className={`${styles.icon} ${isActive ? styles.iconActive : ''}`}>
-                                                            {item.id === 'favoris' ? (
-                                                                <HeartIcon filled={stats.favorites > 0} isActive={isActive} />
-                                                            ) : (
-                                                                item.Icon && <item.Icon />
-                                                            )}
-                                                        </div>
-                                                    )}
+                                                    <div className={`${styles.icon} ${isActive ? styles.iconActive : ''}`}>
+                                                        {item.id === 'favoris' ? (
+                                                            <HeartIcon filled={stats.favorites > 0} isActive={isActive} />
+                                                        ) : (
+                                                            item.Icon && <item.Icon />
+                                                        )}
+                                                    </div>
                                                     
                                                     {(item.badge ?? 0) > 0 && (
                                                         <span className={styles.badge}>
@@ -463,6 +474,7 @@ export default function BottomNav() {
                     onClose={() => setIsSheetOpen(false)} 
                 />
             )}
+            <WeekPlanner isOpen={showPlanner} onClose={() => setShowPlanner(false)} />
         </>
     );
 }
