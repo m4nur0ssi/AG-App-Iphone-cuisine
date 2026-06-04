@@ -2,11 +2,87 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 04/06/2026 12:59:08
+ * Dernière mise à jour: 04/06/2026 13:17:34
  * Total: 338 recettes
  */
-export const exportSyncId = "1780577948553";
+export const exportSyncId = "1780579054015";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "5274",
+        "title": "La tarte aux pommes",
+        "description": "Simple, rapide et ça fait toujours plaisir !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Ftarte.jpeg&v=1780585895000",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7597140608603442454\" data-video-id=\"7597140608603442454\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7597140608603442454\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n Pâte brisée"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n Farine 250g"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n Beurre 125g"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n Sucre 15g"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Fève de tonka"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n Eau 70g"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n 3 pommes"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 40g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 50g de sucre roux"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n Farine 30g"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Poudre d'amande 40g"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n Compote de pommes"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n Vanille épuisée"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "France",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5280",
         "title": "Rochers Tiramisu",
@@ -6838,6 +6914,39 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
+        "id": "5460",
+        "title": "Crème chocolat",
+        "description": "Le mélange coco chocolat est vraiment très bon ! Ça donne une crème tout en légèreté 🥰 il faut que vous testiez.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2F1-creme-chocolat-recette-patisserie-empreinte-sucree.jpg&v=1778608099000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7500977126292720898\" data-video-id=\"7500977126292720898\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7500977126292720898\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n 1 conserve de lait de coco bio (400ml)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n 160g de chocolat noir pâtissier"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Desserts",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
         "id": "5463",
         "title": "Crème brûlée à la pistache",
         "description": "Pour tous les fans de pistache, cette crème brûlée est un incontournable ! N&rsquo;hésitez plus, essayez cette recette simple et rapide, vous ne le regretterez pas. Un grand pâtissier l&rsquo;a dit : l&rsquo;essayer, c&rsquo;est l&rsquo;adopter !",
@@ -8345,82 +8454,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "5274",
-        "title": "La tarte aux pommes de Mamie Nono",
-        "description": "Simple, rapide et ça fait toujours plaisir !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7597140608603442454\" data-video-id=\"7597140608603442454\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7597140608603442454\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             Pâte brisée"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             Farine 250g"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             Beurre 125g"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Sucre 15g"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fève de tonka"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             Eau 70g"
-            },
-            {
-                "quantity": "",
-                "name": "🍎\n             3 pommes"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             40g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             50g de sucre roux"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             Farine 30g"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Poudre d'amande 40g"
-            },
-            {
-                "quantity": "",
-                "name": "🍎\n             Compote de pommes"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             Vanille épuisée"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "France",
-            "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "5271",
         "title": "Crinkles au chocolat",
         "description": "Découvrez la recette des crinkles au chocolat, des biscuits moelleux et craquelés, généreusement enrobés de sucre glace. Parfaits pour une pause gourmande ou à partager.",
@@ -9111,61 +9144,6 @@ export const mockRecipes: Recipe[] = [
             "Afrique",
             "Les Glaces",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5225",
-        "title": "Croque-cake",
-        "description": "Un croque-monsieur revisité en format cake, idéal pour toute la famille.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7623462598859623703\" data-video-id=\"7623462598859623703\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7623462598859623703\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥖\n             Pain de mie 9 tranches"
-            },
-            {
-                "quantity": "",
-                "name": "🥓\n             Jambon blanc 6 tranches"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Fromage râpé 125gr"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Lait 40cl"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             Beurre 40gr"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             Farine 40gr"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Piment doux fumé 2gr"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Tranche de leerdammer 6 tranches"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "France"
         ],
         "isFeatured": false,
         "isFavorite": false,
