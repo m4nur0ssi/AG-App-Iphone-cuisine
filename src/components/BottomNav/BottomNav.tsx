@@ -7,6 +7,7 @@ import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from
 import styles from './BottomNav.module.css';
 import dynamic from 'next/dynamic';
 import WeekPlanner from '../WeekPlanner/WeekPlanner';
+import Portal from '../Portal';
 import SpotlightSearch from '../SpotlightSearch/SpotlightSearch';
 import { mockRecipes } from '@/data/mockData';
 import { useTimer } from '@/components/Timer/TimerContext';
@@ -474,7 +475,7 @@ export default function BottomNav() {
                     onClose={() => setIsSheetOpen(false)} 
                 />
             )}
-            <WeekPlanner isOpen={showPlanner} onClose={() => setShowPlanner(false)} />
+            <Portal><WeekPlanner isOpen={showPlanner} onClose={() => setShowPlanner(false)} /></Portal>
         </>
     );
 }
