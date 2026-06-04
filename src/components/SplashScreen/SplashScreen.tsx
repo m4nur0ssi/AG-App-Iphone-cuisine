@@ -4,9 +4,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styles from './SplashScreen.module.css';
 import { mockRecipes } from '@/data/mockData';
 import RecipeCardiOS26 from '@/components/RecipeCard/RecipeCardiOS26';
-import AuthButton from '@/components/AuthButton/AuthButton';
+import { useAuth } from '@/hooks/useAuth';
 
 export default function SplashScreen() {
+    const { user, signInWithGoogle } = useAuth();
     const [isVisible, setIsVisible] = useState(false);
     const [shouldRender, setShouldRender] = useState(false);
     const [isSheetOpen, setIsSheetOpen] = useState(false);
@@ -134,7 +135,7 @@ export default function SplashScreen() {
                             }}
                             transition={{ delay: isSheetOpen ? 0 : 1.2, duration: 0.4 }}
                         >
-                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
                                 <button
                                     className={styles.explorerBtn}
                                     onClick={closeSplash}
@@ -142,9 +143,15 @@ export default function SplashScreen() {
                                 >
                                     Explorer
                                 </button>
-                                <div onClick={e => e.stopPropagation()}>
-                                    <AuthButton />
-                                </div>
+                                {!user && (
+                                    <button
+                                        className={styles.explorerBtn}
+                                        onClick={(e) => { e.stopPropagation(); signInWithGoogle(); }}
+                                        aria-label="Se connecter avec Google"
+                                    >
+                                        Se connecter
+                                    </button>
+                                )}
                             </div>
                         </motion.div>
                     </motion.div>
