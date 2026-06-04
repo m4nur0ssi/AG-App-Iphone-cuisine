@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import AuthButton from '../AuthButton/AuthButton';
 import SpotlightSearch from '../SpotlightSearch/SpotlightSearch';
 import FavoriteButton from '../FavoriteButton/FavoriteButton';
 import styles from './Header.module.css';
@@ -156,8 +157,9 @@ export default function Header({
                             </button>
                         )}
                         <ThemeToggle className={styles.themeBtn} />
+                        <AuthButton />
                     </div>
-                    
+
                     <div className={styles.headerCenter}>
                         <h1 className={`${styles.title} ${isSyncing ? styles.syncing : ''}`}>
                             <Link href="/" onClick={handleTitleClick} className={styles.titleLink}>

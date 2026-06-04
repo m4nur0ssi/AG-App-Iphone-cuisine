@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { supabase } from '@/lib/supabase';
 import styles from './FavoriteButton.module.css';
 
 interface FavoriteButtonProps {
@@ -21,36 +22,68 @@ export default function FavoriteButton({ recipeId, initialFavorite = false, imag
     const [isFavorite, setIsFavorite] = useState(initialFavorite);
 
     useEffect(() => {
-        const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
-        setIsFavorite(favorites.includes(recipeId));
+        // Source de vérité = Supabase (suit le compte). Fallback cache localStorage.
+        const load = async () => {
+            const { data: { session } } = await supabase.auth.getSession();
+            if (session) {
+                const { data } = await supabase
+                    .from('favorites')
+                    .select('recipe_id')
+                    .eq('user_id', session.user.id)
+                    .eq('recipe_id', recipeId)
+                    .maybeSingle();
+                setIsFavorite(!!data);
+                return;
+            }
+            const favs = JSON.parse(localStorage.getItem('favorites') || '[]');
+            setIsFavorite(favs.includes(recipeId));
+        };
+        load();
+        const onChange = () => load();
+        window.addEventListener('storage', onChange);
+        window.addEventListener('magic-favorite-change', onChange);
+        return () => {
+            window.removeEventListener('storage', onChange);
+            window.removeEventListener('magic-favorite-change', onChange);
+        };
     }, [recipeId]);
 
-    const toggleFavorite = (e: React.MouseEvent) => {
+    const toggleFavorite = async (e: React.MouseEvent) => {
         e.preventDefault();
         e.stopPropagation();
+
+        // Favoris réservés aux connectés.
+        const { data: { session } } = await supabase.auth.getSession();
+        if (!session) {
+            window.dispatchEvent(new CustomEvent('magic-toast-notify', { detail: 'Connecte-toi pour enregistrer tes favoris ❤️' }));
+            window.dispatchEvent(new CustomEvent('magic-open-auth'));
+            return;
+        }
 
         const newState = !isFavorite;
         setIsFavorite(newState);
 
-        const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+        const favs = JSON.parse(localStorage.getItem('favorites') || '[]');
         if (newState) {
-            if (!favorites.includes(recipeId)) favorites.push(recipeId);
+            if (!favs.includes(recipeId)) favs.push(recipeId);
         } else {
-            const index = favorites.indexOf(recipeId);
-            if (index > -1) favorites.splice(index, 1);
+            const idx = favs.indexOf(recipeId);
+            if (idx > -1) favs.splice(idx, 1);
         }
-        localStorage.setItem('favorites', JSON.stringify(favorites));
+        localStorage.setItem('favorites', JSON.stringify(favs));
 
-        if (newState && imageUrl) {
-            fetch(imageUrl, { mode: 'no-cors' }).catch(() => { });
+        if (newState) {
+            await supabase.from('favorites').upsert({ user_id: session.user.id, recipe_id: recipeId });
+        } else {
+            await supabase.from('favorites').delete().eq('user_id', session.user.id).eq('recipe_id', recipeId);
         }
 
-        // Vibrate for feedback
+        if (newState && imageUrl) fetch(imageUrl, { mode: 'no-cors' }).catch(() => {});
+
         if (typeof navigator !== 'undefined' && navigator.vibrate) {
             navigator.vibrate(newState ? [15, 30, 15] : [10]);
         }
 
-        // Emit events for global updates
         window.dispatchEvent(new Event('storage'));
         window.dispatchEvent(new Event('magic-favorite-change'));
     };
@@ -64,13 +97,7 @@ export default function FavoriteButton({ recipeId, initialFavorite = false, imag
             role="button"
             tabIndex={0}
             aria-label={isFavorite ? 'Retirer des favoris' : 'Ajouter aux favoris'}
-            style={{ 
-                display: 'flex', 
-                alignItems: 'center', 
-                justifyContent: 'center', 
-                cursor: 'pointer',
-                transition: 'all 0.3s ease'
-            }}
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'all 0.3s ease' }}
         >
             <HeartIcon filled={isFavorite} />
         </motion.div>

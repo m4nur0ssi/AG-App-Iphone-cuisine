@@ -8,6 +8,7 @@ import RecipeCard from '@/components/RecipeCard/RecipeCardiOS26';
 import BottomNav from '@/components/BottomNav/BottomNav';
 import { mockRecipes } from '@/data/mockData';
 import { Recipe } from '@/types';
+import { pullFavorites } from '@/lib/favorites';
 import styles from './favorites.module.css';
 
 export default function FavoritesPage() {
@@ -16,19 +17,22 @@ export default function FavoritesPage() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Charger les favoris au montage (client-side uniquement)
-        const loadFavorites = () => {
+        // Rendu depuis le cache local (rapide, et pour les events)
+        const renderFromCache = () => {
             const storedIds = JSON.parse(localStorage.getItem('favorites') || '[]');
-            const filtered = mockRecipes.filter(r => storedIds.includes(r.id));
-            setFavoriteRecipes(filtered);
+            setFavoriteRecipes(mockRecipes.filter(r => storedIds.includes(r.id)));
             setLoading(false);
         };
+        // Au montage : tire la vérité depuis Supabase (suit le compte), puis rend.
+        const init = async () => { await pullFavorites(); renderFromCache(); };
 
-        loadFavorites();
-
-        // Écouter les changements dans localStorage (au cas où)
-        window.addEventListener('storage', loadFavorites);
-        return () => window.removeEventListener('storage', loadFavorites);
+        init();
+        window.addEventListener('storage', renderFromCache);
+        window.addEventListener('magic-favorite-change', renderFromCache);
+        return () => {
+            window.removeEventListener('storage', renderFromCache);
+            window.removeEventListener('magic-favorite-change', renderFromCache);
+        };
     }, []);
 
     return (
