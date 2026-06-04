@@ -9,3 +9,5 @@ wp-extract
 wp.zip
 .vercel
 .env*.local
+
+.claude/

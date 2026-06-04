@@ -6,6 +6,7 @@ import './globals.css'
 
 const SplashScreen = dynamic(() => import('@/components/SplashScreen/SplashScreen'), { ssr: false })
 const BottomNav = dynamic(() => import('@/components/BottomNav/BottomNav'), { ssr: false })
+const AccountSync = dynamic(() => import('@/components/AccountSync/AccountSync'), { ssr: false })
 
 const outfit = Outfit({ 
     subsets: ['latin', 'latin-ext'],
@@ -105,6 +106,7 @@ export default function RootLayout({
                         {children}
                     </div>
                     <BottomNav />
+                    <AccountSync />
                 </TimerProvider>
                 <script
                     dangerouslySetInnerHTML={{
