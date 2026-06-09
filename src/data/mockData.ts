@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/06/2026 19:36:35
+ * Dernière mise à jour: 09/06/2026 19:45:31
  * Total: 355 recettes
  */
-export const exportSyncId = "1781033795460";
+export const exportSyncId = "1781034332002";
 export const mockRecipes: Recipe[] = [
     {
         "id": "6082",
         "title": "SALMOREJO",
         "description": "Une soupe froide espagnole rafraîchissante à base de tomates et de pain, traditionnellement garnie d&rsquo;œufs durs et de jambon ibérique, parfaite pour l&rsquo;été.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6082_1781033557925.jpg&v=1781040833000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
