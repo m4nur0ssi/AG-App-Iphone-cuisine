@@ -2,11 +2,176 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/06/2026 11:33:40
+ * Dernière mise à jour: 09/06/2026 11:45:54
  * Total: 357 recettes
  */
-export const exportSyncId = "1781004820372";
+export const exportSyncId = "1781005554988";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6017",
+        "title": "Nachos",
+        "description": "Une recette de nachos avec de la viande hachée, du cheddar, des jalapeños et des haricots rouges, parfaite pour un plat mexicain relevé.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Fnachos.jpg&v=1781011922000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7172597855956290821\" data-video-id=\"7172597855956290821\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7172597855956290821\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n 250g de nachos nature"
+            },
+            {
+                "quantity": "",
+                "name": "🥩\n 200g de viande haché"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n 150g cheddar râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n 1cas sauce Worcestershire"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n 1 demi oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n poivron"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 2/3 petit jalapenos"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n petite conserve de haricot rouge"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "épicé",
+            "Mexique"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6019",
+        "title": "Taco Bowl maison",
+        "description": "Ce Taco Bowl maison est une recette healthy, riche en protéines et pleine de saveurs mexicaines, prête en moins de 15 minutes. Parfait pour un meal prep, un dîner rapide ou un déjeuner stylé pour manger mieux sans se priver.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2FTaco-Bowl-Recipe-1.jpg&v=1781011690000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7504037706775792918\" data-video-id=\"7504037706775792918\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7504037706775792918\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍚\n Riz complet"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Viande hachée 5% MT"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Poivron jaune"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Poivron vert"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Poivron rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Patate douce"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Haricot rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥑\n Avocat"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n Oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n Jus de citron vert"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n Tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n Œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Épices mexicaines"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Coriandre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n Huile d'olive"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Healthy",
+            "Mexique",
+            "Salades"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6021",
         "title": "Riz Mexicain Poulet au Miel",
@@ -605,171 +770,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Pas cher",
             "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6019",
-        "title": "Taco Bowl maison",
-        "description": "Ce Taco Bowl maison est une recette healthy, riche en protéines et pleine de saveurs mexicaines, prête en moins de 15 minutes. Parfait pour un meal prep, un dîner rapide ou un déjeuner stylé pour manger mieux sans se priver.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7504037706775792918\" data-video-id=\"7504037706775792918\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7504037706775792918\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍚\n             Riz complet"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Viande hachée 5% MT"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivron jaune"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivron vert"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivron rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Patate douce"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Haricot rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🥑\n             Avocat"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Jus de citron vert"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Épices mexicaines"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Coriandre"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d'olive"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Healthy",
-            "Mexique",
-            "Salades"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6017",
-        "title": "Nachos",
-        "description": "Une recette de nachos avec de la viande hachée, du cheddar, des jalapeños et des haricots rouges, parfaite pour un plat mexicain relevé.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7172597855956290821\" data-video-id=\"7172597855956290821\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7172597855956290821\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             250g de nachos nature"
-            },
-            {
-                "quantity": "",
-                "name": "🥩\n             200g de viande haché"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             150g cheddar râpé"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1cas sauce Worcestershire"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 demi oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             poivron"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2/3 petit jalapenos"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             petite conserve de haricot rouge"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "épicé",
-            "Mexique"
         ],
         "isFeatured": false,
         "isFavorite": false,
