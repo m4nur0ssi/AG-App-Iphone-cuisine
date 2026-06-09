@@ -2,11 +2,156 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/06/2026 13:41:00
+ * Dernière mise à jour: 09/06/2026 13:49:35
  * Total: 354 recettes
  */
-export const exportSyncId = "1781012460900";
+export const exportSyncId = "1781012975563";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6005",
+        "title": "Enchiladas à la viande hachée",
+        "description": "Des enchiladas mexicaines faciles et rapides à préparer, garnies de viande hachée épicée, d&rsquo;oignons et de fromage, puis gratinées au four.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Fenchiladas-1.jpg&v=1781019638000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7445684885710179606\" data-video-id=\"7445684885710179606\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7445684885710179606\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n viande hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n cumin"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n Oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Sauce faritas"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Feuille de tacos"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Fromage râpés"
+            }
+        ],
+        "steps": [
+            "Faites revenir la viande hachée avec les oignons, puis ajoutez les épices et la sauce.",
+            "Garnissez vos feuilles de tacos, avec la farce et le fromage.",
+            "Dans un moule, versez la sauce puis les tacos garnis.",
+            "Recouvrir de nouveau de sauce et de fromage.",
+            "Laisser gratiner au four 15 minutes à 240°."
+        ],
+        "tags": [
+            "Gratins",
+            "Mexique"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6015",
+        "title": "Nachos avec un déluge de sauce cheddar",
+        "description": "Des nachos croustillants généreusement nappés de sauce cheddar maison onctueuse, garnis de viande au choix, guacamole, crème fraîche, oignon cébette, tomate et piment.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Fstreet-nachos.jpg&v=1781019287000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7555036611679980822\" data-video-id=\"7555036611679980822\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7555036611679980822\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n 1 paquet de tortillas"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n 1 oignon cébette"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n 1 piment rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Viande de ton choix"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Guacamole"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n Crème fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n Tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Piment"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n 30 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 30 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 300 ml de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n 200 g de cheddar"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 c. à café de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 c. à café de curcuma"
+            }
+        ],
+        "steps": [
+            "Préparation de la sauce cheddar : Dans une casserole à feu doux, fais fondre le beurre. Ajoute la farine et mélange au fouet pour former un roux. Verse ensuite le lait d'un coup en fouettant pour éviter les grumeaux : tu obtiens une béchamel. Ajoute les tranches de cheddar et remue jusqu'à ce qu'il soit totalement fondu. Assaisonne avec le paprika et le curcuma. Garde la sauce au chaud en la remuant de temps en temps pour ne pas qu'elle durcisse.",
+            "L'assemblage : Dans un grand plat, dispose un paquet de tortillas. Nappe généreusement de la sauce cheddar. Parsème l'oignon cébette, ajoute la viande de ton choix puis dépose des cuillères de guacamole et de crème fraîche. Termine avec la tomate et le piment."
+        ],
+        "tags": [
+            "épicé",
+            "Mexique"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "5993",
         "title": "Fajitas faciles à l&rsquo;Air Fryer",
@@ -1500,151 +1645,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Salades",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6015",
-        "title": "Nachos avec un déluge de sauce cheddar",
-        "description": "Des nachos croustillants généreusement nappés de sauce cheddar maison onctueuse, garnis de viande au choix, guacamole, crème fraîche, oignon cébette, tomate et piment.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7555036611679980822\" data-video-id=\"7555036611679980822\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7555036611679980822\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             1 paquet de tortillas"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon cébette"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1 piment rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Viande de ton choix"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Guacamole"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Crème fraîche"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Tomates"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Piment"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             30 g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             30 g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             300 ml de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             200 g de cheddar"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 c. à café de paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 c. à café de curcuma"
-            }
-        ],
-        "steps": [
-            "Préparation de la sauce cheddar : Dans une casserole à feu doux, fais fondre le beurre. Ajoute la farine et mélange au fouet pour former un roux. Verse ensuite le lait d'un coup en fouettant pour éviter les grumeaux : tu obtiens une béchamel. Ajoute les tranches de cheddar et remue jusqu'à ce qu'il soit totalement fondu. Assaisonne avec le paprika et le curcuma. Garde la sauce au chaud en la remuant de temps en temps pour ne pas qu'elle durcisse.",
-            "L'assemblage : Dans un grand plat, dispose un paquet de tortillas. Nappe généreusement de la sauce cheddar. Parsème l'oignon cébette, ajoute la viande de ton choix puis dépose des cuillères de guacamole et de crème fraîche. Termine avec la tomate et le piment."
-        ],
-        "tags": [
-            "épicé",
-            "Mexique"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6005",
-        "title": "Enchiladas à la viande hachée",
-        "description": "Des enchiladas mexicaines faciles et rapides à préparer, garnies de viande hachée épicée, d&rsquo;oignons et de fromage, puis gratinées au four.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7445684885710179606\" data-video-id=\"7445684885710179606\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7445684885710179606\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             viande hachée"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             cumin"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Sauce faritas"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Feuille de tacos"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fromage râpés"
-            }
-        ],
-        "steps": [
-            "Faites revenir la viande hachée avec les oignons, puis ajoutez les épices et la sauce.",
-            "Garnissez vos feuilles de tacos, avec la farce et le fromage.",
-            "Dans un moule, versez la sauce puis les tacos garnis.",
-            "Recouvrir de nouveau de sauce et de fromage.",
-            "Laisser gratiner au four 15 minutes à 240°."
-        ],
-        "tags": [
-            "Gratins",
-            "Mexique"
         ],
         "isFeatured": false,
         "isFavorite": false,
