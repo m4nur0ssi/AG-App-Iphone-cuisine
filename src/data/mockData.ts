@@ -2,11 +2,101 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/06/2026 10:48:40
+ * Dernière mise à jour: 09/06/2026 10:58:03
  * Total: 357 recettes
  */
-export const exportSyncId = "1781002120215";
+export const exportSyncId = "1781002684005";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6025",
+        "title": "Bola de Berlim",
+        "description": "La Bola de Berlim, une de mes pâtisseries préférées qui a bercé toute mon enfance. Une recette de beignets portugais fourrés à la crème pâtissière.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Fbola.jpg.jpg&v=1781009209000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7423038042333662496\" data-video-id=\"7423038042333662496\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7423038042333662496\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n 500g farine"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 70g sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 2 cac levure boulangère"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 4 oeufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 100g lait"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 60g beurre mou"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 cac sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 100ml eau (ou 80ml pour la version + sucrée)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 140g sucre (ou 180g pour la version + sucrée)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 20g beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 20ml eau"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 8 jaunes d'œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n 2 cas farine"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 1 sachet de sucre vanillé"
+            }
+        ],
+        "steps": [
+            "Assembler tous les ingrédients des beignets (sauf le beurre), mélanger et pétrir pendant 10 minutes.",
+            "Ajouter le beurre mou et pétrir à nouveau pendant 10 minutes.",
+            "Laisser la pâte des beignets reposer 1h30 minimum.",
+            "Former des pâtons, les placer sur des morceaux de papier cuisson, recouvrir et laisser reposer 1h minimum.",
+            "Dans une casserole, mélanger le sucre et l'eau (pour le sirop de la crème), ajouter le beurre, porter à ébullition et éteindre le feu. Laisser le sirop refroidir 5 minutes.",
+            "Dans un bol, mélanger la farine, les jaunes d'œufs, le sucre vanillé et l'eau (20ml). Ajouter petit à petit le sirop légèrement chaud tout en remuant.",
+            "Verser le mélange dans une casserole, chauffer à feu doux et mélanger avec un fouet jusqu'à ce que ça s'épaississe.",
+            "Verser la crème dans un bol, filmer au contact et placer au frigo pendant 2h minimum.",
+            "Chauffer une casserole avec de l'huile sur feu doux (environ 160 degrés).",
+            "Faire frire les beignets de chaque côté pendant quelques minutes puis les recouvrir de sucre.",
+            "Mettre la crème dans une poche à douille et fourrer les beignets."
+        ],
+        "tags": [
+            "Espagne",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6027",
         "title": "Beignets aux pommes",
@@ -355,96 +445,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Pas cher",
-            "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6025",
-        "title": "Bola de Berlim",
-        "description": "La Bola de Berlim, une de mes pâtisseries préférées qui a bercé toute mon enfance. Une recette de beignets portugais fourrés à la crème pâtissière.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7423038042333662496\" data-video-id=\"7423038042333662496\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7423038042333662496\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             500g farine"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             70g sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 cac levure boulangère"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             4 oeufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             100g lait"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             60g beurre mou"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cac sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             100ml eau (ou 80ml pour la version + sucrée)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             140g sucre (ou 180g pour la version + sucrée)"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             20g beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             20ml eau"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             8 jaunes d'œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             2 cas farine"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 sachet de sucre vanillé"
-            }
-        ],
-        "steps": [
-            "Assembler tous les ingrédients des beignets (sauf le beurre), mélanger et pétrir pendant 10 minutes.",
-            "Ajouter le beurre mou et pétrir à nouveau pendant 10 minutes.",
-            "Laisser la pâte des beignets reposer 1h30 minimum.",
-            "Former des pâtons, les placer sur des morceaux de papier cuisson, recouvrir et laisser reposer 1h minimum.",
-            "Dans une casserole, mélanger le sucre et l'eau (pour le sirop de la crème), ajouter le beurre, porter à ébullition et éteindre le feu. Laisser le sirop refroidir 5 minutes.",
-            "Dans un bol, mélanger la farine, les jaunes d'œufs, le sucre vanillé et l'eau (20ml). Ajouter petit à petit le sirop légèrement chaud tout en remuant.",
-            "Verser le mélange dans une casserole, chauffer à feu doux et mélanger avec un fouet jusqu'à ce que ça s'épaississe.",
-            "Verser la crème dans un bol, filmer au contact et placer au frigo pendant 2h minimum.",
-            "Chauffer une casserole avec de l'huile sur feu doux (environ 160 degrés).",
-            "Faire frire les beignets de chaque côté pendant quelques minutes puis les recouvrir de sucre.",
-            "Mettre la crème dans une poche à douille et fourrer les beignets."
-        ],
-        "tags": [
-            "Espagne",
             "pâtisserie"
         ],
         "isFeatured": false,
