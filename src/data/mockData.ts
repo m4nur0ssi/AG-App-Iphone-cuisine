@@ -2,11 +2,82 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/06/2026 10:58:03
+ * Dernière mise à jour: 09/06/2026 11:11:07
  * Total: 357 recettes
  */
-export const exportSyncId = "1781002684005";
+export const exportSyncId = "1781003467377";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6023",
+        "title": "Loaded Nacho Fries",
+        "description": "Des frites croustillantes garnies de fromage fondu, de bœuf haché assaisonné au taco, de guacamole crémeux, de pico de gallo frais et d&rsquo;une touche de crème aigre.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2FLoaded-Nacho-Fries-6.jpg&v=1781010284000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7613995667966545173\" data-video-id=\"7613995667966545173\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7613995667966545173\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n 400 g de frites surgelées"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Huile pour la friture"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n 5-6 tranches de fromage (cheddar)"
+            },
+            {
+                "quantity": "",
+                "name": "🥩\n 250 g de bœuf haché"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 2 cuillères à soupe d&rsquo;assaisonnement pour tacos"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n 2 cuillères à soupe d&rsquo;eau (facultatif, si le bœuf est sec)"
+            },
+            {
+                "quantity": "",
+                "name": "🥑\n 3 avocats mûrs"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 cuillère à café de sel d&rsquo;ail + poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n 1-2 cuillères à café de jus de citron vert ou de jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n ½ tasse de pico de gallo (acheté ou fait maison)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n Crème aigre, pour arroser"
+            }
+        ],
+        "steps": [
+            "Faire cuire les frites : Chauffer l&rsquo;huile dans une friteuse ou une casserole profonde à environ 175-180°C (350°F). Frire les frites surgelées jusqu&rsquo;à ce qu&rsquo;elles soient dorées et très croustillantes, environ 4-6 minutes. Retirer et égoutter sur du papier absorbant.",
+            "Préparer le bœuf haché façon taco : Chauffer une poêle à feu moyen. Ajouter le bœuf haché et cuire jusqu&rsquo;à ce qu&rsquo;il soit doré, en le brisant pendant la cuisson. Incorporer l&rsquo;assaisonnement pour tacos et l&rsquo;eau. Laisser mijoter 2-3 minutes jusqu&rsquo;à ce que le bœuf soit bien enrobé et savoureux.",
+            "Préparer le guacamole : Dans un bol, écraser les avocats jusqu&rsquo;à obtenir une consistance presque lisse. Incorporer le sel d&rsquo;ail + poivre et le jus de citron vert (ou de citron). Goûter et ajuster l&rsquo;assaisonnement si nécessaire.",
+            "Faire fondre le fromage : Placer les frites chaudes dans un grand bol ou une assiette. Disposer 5-6 tranches de fromage sur les frites. Passer au micro-ondes pendant 30-45 secondes, ou jusqu&rsquo;à ce que le fromage soit fondu et coulant.",
+            "Assembler : Garnir les frites au fromage avec : le bœuf haché assaisonné façon taco, le pico de gallo, le guacamole, la crème aigre."
+        ],
+        "tags": [
+            "Mexique"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6025",
         "title": "Bola de Berlim",
@@ -446,77 +517,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Pas cher",
             "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6023",
-        "title": "Loaded Nacho Fries",
-        "description": "Des frites croustillantes garnies de fromage fondu, de bœuf haché assaisonné au taco, de guacamole crémeux, de pico de gallo frais et d&rsquo;une touche de crème aigre.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7613995667966545173\" data-video-id=\"7613995667966545173\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7613995667966545173\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             400 g de frites surgelées"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Huile pour la friture"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             5-6 tranches de fromage (cheddar)"
-            },
-            {
-                "quantity": "",
-                "name": "🥩\n             250 g de bœuf haché"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 cuillères à soupe d&rsquo;assaisonnement pour tacos"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             2 cuillères à soupe d&rsquo;eau (facultatif, si le bœuf est sec)"
-            },
-            {
-                "quantity": "",
-                "name": "🥑\n             3 avocats mûrs"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de sel d&rsquo;ail + poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1-2 cuillères à café de jus de citron vert ou de jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             ½ tasse de pico de gallo (acheté ou fait maison)"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Crème aigre, pour arroser"
-            }
-        ],
-        "steps": [
-            "Faire cuire les frites : Chauffer l&rsquo;huile dans une friteuse ou une casserole profonde à environ 175-180°C (350°F). Frire les frites surgelées jusqu&rsquo;à ce qu&rsquo;elles soient dorées et très croustillantes, environ 4-6 minutes. Retirer et égoutter sur du papier absorbant.",
-            "Préparer le bœuf haché façon taco : Chauffer une poêle à feu moyen. Ajouter le bœuf haché et cuire jusqu&rsquo;à ce qu&rsquo;il soit doré, en le brisant pendant la cuisson. Incorporer l&rsquo;assaisonnement pour tacos et l&rsquo;eau. Laisser mijoter 2-3 minutes jusqu&rsquo;à ce que le bœuf soit bien enrobé et savoureux.",
-            "Préparer le guacamole : Dans un bol, écraser les avocats jusqu&rsquo;à obtenir une consistance presque lisse. Incorporer le sel d&rsquo;ail + poivre et le jus de citron vert (ou de citron). Goûter et ajuster l&rsquo;assaisonnement si nécessaire.",
-            "Faire fondre le fromage : Placer les frites chaudes dans un grand bol ou une assiette. Disposer 5-6 tranches de fromage sur les frites. Passer au micro-ondes pendant 30-45 secondes, ou jusqu&rsquo;à ce que le fromage soit fondu et coulant.",
-            "Assembler : Garnir les frites au fromage avec : le bœuf haché assaisonné façon taco, le pico de gallo, le guacamole, la crème aigre."
-        ],
-        "tags": [
-            "Mexique"
         ],
         "isFeatured": false,
         "isFavorite": false,
