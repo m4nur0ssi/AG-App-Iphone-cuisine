@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/06/2026 09:18:16
+ * Dernière mise à jour: 11/06/2026 09:28:18
  * Total: 358 recettes
  */
-export const exportSyncId = "1781169496726";
+export const exportSyncId = "1781170098510";
 export const mockRecipes: Recipe[] = [
     {
         "id": "6093",
         "title": "Natillas espagnoles",
         "description": "Les Natillas espagnoles sont une crème douce à la vanille et à la cannelle, évoquant les souvenirs d&rsquo;enfance et les étés en famille. Une recette simple, gourmande et réconfortante, traditionnellement servie avec un biscuit María sur le dessus.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6093_1781169585167.jpg&v=1781176801000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
