@@ -2,11 +2,75 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/06/2026 07:20:02
- * Total: 371 recettes
+ * Dernière mise à jour: 14/06/2026 08:02:02
+ * Total: 373 recettes
  */
-export const exportSyncId = "1781421602177";
+export const exportSyncId = "1781424122941";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6124",
+        "title": "Gâteau au yaourt de Cyril Lignac",
+        "description": "C'est l'incontournable de la pâtisserie !!",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7543267094150778134\" data-video-id=\"7543267094150778134\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7543267094150778134\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 yaourt nature"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 pot de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             3 pots de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 pot d'huile"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 sachet de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 sachet de sucre vanillé"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1 citron"
+            }
+        ],
+        "steps": [
+            "Fouetter le yaourt avec les œufs.",
+            "Ajouter le sucre.",
+            "Incorporer la farine avec la levure et le sucre vanillé.",
+            "Zester le citron jaune.",
+            "Terminer par le pot d'huile.",
+            "Préchauffer le four à 180 degrés.",
+            "Verser la pâte dans un moule chemisé de beurre et farine.",
+            "Enfourner 25 minutes."
+        ],
+        "tags": [
+            "France",
+            "Pas cher",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6122",
         "title": "Nouilles chinoises sautées au poulet",
@@ -13983,6 +14047,96 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Orient"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "4019",
+        "title": "Eggplant Fatteh (Fatteh aux aubergines)",
+        "description": "Le Fatteh aux aubergines est un plat moyen-oriental apprécié, facile à préparer et parfait pour impressionner avec un minimum d&rsquo;effort. Cette version végétalienne utilise du yaourt de soja non sucré.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Feggplant_fatteh_gourmet_1775838652751.jpg&v=1775846259000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" style=\"max-width: 605px; min-width: 325px;\" cite=\"https://www.tiktok.com/v/7463215732323552535\" data-video-id=\"7463215732323552535\">\n<section><a title=\"@tiktok\" href=\"https://www.tiktok.com/v/7463215732323552535\" target=\"_blank\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a></section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n240g chickpeas (1 can, drained and rinsed)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n1 medium eggplant"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n400g unsweetened soy yogurt"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n½ tsp salt (adjust to taste)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n1 garlic clove (minced)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\nJuice of ½ a lemon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n2 tbsp tahini"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n6 tbsp water"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n20g curly parsley (chopped)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n30g pine nuts"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n75g vegan butter"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n2 Arabic pita breads"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\nRapeseed oil (for frying)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\nSumac, to garnish"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\nPomegranate seeds, to garnish"
+            }
+        ],
+        "steps": [
+            "Cut the eggplant into cubes. Sprinkle with salt and let sit for 20MIN to draw out bitterness. Rinse the cubes briefly, pat dry with a clean kitchen towel, and set aside.",
+            "Cook the chickpeas in boiled water for 5-10 minutes until warmed through. Drain and set aside.",
+            "In a bowl, combine the unsweetened soy yogurt, salt, minced garlic, lemon juice, tahini, and water. Mix until smooth and creamy. Adjust seasoning if needed.",
+            "Heat oil in a large pan over medium-high heat. Fry the eggplant cubes until golden brown and tender, about 8-10 minutes. Remove and drain on a paper towel to absorb excess oil.",
+            "Cut the pita bread into bite-sized pieces. Heat a little oil in a pan and fry the pita pieces until crispy and golden. Set aside.",
+            "In a small pan, melt the vegan butter over medium heat. Add the pine nuts and stir frequently until golden brown, about 2-3 minutes.",
+            "Start with a layer of crispy pita bread on a serving plate. Add the fried eggplant and chickpeas on top. Generously drizzle the yogurt-tahini sauce over the entire dish. Finish with pine nuts, melted butter, parsley, a sprinkle of sumac, and pomegranate seeds for color and freshness."
+        ],
+        "tags": [
+            "Orient",
+            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
