@@ -2,11 +2,84 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/06/2026 16:07:07
- * Total: 373 recettes
+ * Dernière mise à jour: 14/06/2026 19:03:19
+ * Total: 374 recettes
  */
-export const exportSyncId = "1781453227150";
+export const exportSyncId = "1781463799540";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6142",
+        "title": "PAVÉS DE SAUMON",
+        "description": "Une recette simple et savoureuse de pavés de saumon accompagnés d&rsquo;une sauce crémeuse à l&rsquo;oignon rouge, ail, citron vert et piment d&rsquo;Espelette.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7635695324870249750\" data-video-id=\"7635695324870249750\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7635695324870249750\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🐟\n             2 pavés de saumon"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1/2 citron vert"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 c. à c. de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             3 c. à s. d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 pincée de piment d'Espelette"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 c. à s. de câpres"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             15 cl de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Coriandre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "France",
+            "Healthy",
+            "Plats"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6118",
         "title": "Porc caramélisé à la sauce soja",
