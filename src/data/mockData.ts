@@ -2,11 +2,88 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/06/2026 08:14:00
+ * Dernière mise à jour: 14/06/2026 15:32:15
  * Total: 373 recettes
  */
-export const exportSyncId = "1781424840962";
+export const exportSyncId = "1781451135430";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6112",
+        "title": "Boeuf Crousti",
+        "description": "Une recette de boeuf croustillant d&rsquo;inspiration chinoise, relevée par le piment d&rsquo;Espelette et une sauce aigre-douce.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6112_1781450504331.jpg&v=1781457796000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7186686955411836166\" data-video-id=\"7186686955411836166\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7186686955411836166\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             800g de boeuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 oeuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             3càc de fécule de maïs"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Fleur de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             4 càs de vinaigre de riz noir (ou blanc)"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             3 càs de sauce soja"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 grosse càs de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 càs de concentré de tomates (ou ketchup)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Piment d&rsquo;Espelette"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 càc d&rsquo;huile de sésame"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile neutre pour la cuisson"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "asiatique",
+            "Asie",
+            "épicé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6126",
         "title": "Oignons farcis",
@@ -445,83 +522,6 @@ export const mockRecipes: Recipe[] = [
             "Astuces",
             "Healthy",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6112",
-        "title": "Boeuf Crousti",
-        "description": "Une recette de boeuf croustillant d&rsquo;inspiration chinoise, relevée par le piment d&rsquo;Espelette et une sauce aigre-douce.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7186686955411836166\" data-video-id=\"7186686955411836166\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7186686955411836166\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             800g de boeuf"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 oeuf"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             3càc de fécule de maïs"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Fleur de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre noir"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🍚\n             4 càs de vinaigre de riz noir (ou blanc)"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             3 càs de sauce soja"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 grosse càs de miel"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 càs de concentré de tomates (ou ketchup)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Piment d&rsquo;Espelette"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 càc d&rsquo;huile de sésame"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile neutre pour la cuisson"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "asiatique",
-            "Asie",
-            "épicé"
         ],
         "isFeatured": false,
         "isFavorite": false,
