@@ -2,11 +2,230 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/06/2026 15:57:50
+ * Dernière mise à jour: 14/06/2026 16:07:07
  * Total: 373 recettes
  */
-export const exportSyncId = "1781452670146";
+export const exportSyncId = "1781453227150";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6118",
+        "title": "Porc caramélisé à la sauce soja",
+        "description": "Un plat savoureux de porc caramélisé avec une sauce soja, parfumé à l&rsquo;ail, au gingembre et aux épices.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6118_1781452459108.jpg&v=1781459692000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7619640981041859862\" data-video-id=\"7619640981041859862\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7619640981041859862\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             400g de porc"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             3 gousses d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             6 tranches de gingembre frais"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             3 oignons jeunes"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             2 cas de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             5 cas de sauce soja"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             anis étoilé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cannelle"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cardamome"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Asia",
+            "Asie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6126",
+        "title": "Oignons farcis",
+        "description": "Une recette réconfortante d&rsquo;oignons farcis à la viande hachée et aux épices, cuits au four dans une sauce tomate.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6126_1781452288718.jpg&v=1781459654000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7564066582020836630\" data-video-id=\"7564066582020836630\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7564066582020836630\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧅\n             2 gros oignons"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             500g de viande hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1/3 botte d&rsquo;herbe (persil ou coriandre)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             2 poivrons"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cac de cumin"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             gingembre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             coriandre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Fromage râpé en option (ici scarmoza)"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             250ml de sauce tomate"
+            }
+        ],
+        "steps": [
+            "Faire bouillir les oignons tranchés juste sur un côté jusqu&rsquo;au milieu. Les déposer dans l&rsquo;eau froide et compter 20min quand ça commence à bouillir.",
+            "Faire revenir la viande avec les poivrons, les épices (cumin, gingembre, coriandre, paprika) et assaisonner (sel, poivre).",
+            "Terminer la cuisson de la viande en ajoutant les herbes (persil ou coriandre) et 125ml de sauce tomate.",
+            "Tremper les oignons dans de l&rsquo;eau glacée et enlever une à une les feuilles d&rsquo;oignon sans les casser.",
+            "Garnir chaque feuille avec une cuillère à soupe de viande et rouler la feuille d&rsquo;oignon sur elle-même.",
+            "Disposer les oignons farcis sur un lit de sauce tomate (les 125ml restants) dans un plat, arroser avec un peu d&rsquo;huile d&rsquo;olive.",
+            "Cuire au four 25min à 190°C.",
+            "Saupoudrer de coriandre (et de fromage râpé si désiré)."
+        ],
+        "tags": [
+            "Gratins",
+            "Orient",
+            "Plats"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6122",
+        "title": "Nouilles chinoises sautées au poulet",
+        "description": "Une recette super simple de nouilles chinoises sautées au poulet.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6122_1781452261225.jpg&v=1781459485000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7617156275821907222\" data-video-id=\"7617156275821907222\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7617156275821907222\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             100 g de nouilles chinoises déshydratées"
+            },
+            {
+                "quantity": "",
+                "name": "🍗\n             250 g de hauts de cuisse de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             40 g de carotte"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon botte ou 1 cébette"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             70 g de germes de haricots mungo"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             4 cas de sauce soja claire"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 càs de sauce soja noire"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             5 càs d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 càs d&rsquo;huile de sésame"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             poivre"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Asie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6120",
         "title": "Les pommes boulangères",
@@ -795,225 +1014,6 @@ export const mockRecipes: Recipe[] = [
             "asiatique",
             "Asie",
             "épicé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6126",
-        "title": "Oignons farcis",
-        "description": "Une recette réconfortante d&rsquo;oignons farcis à la viande hachée et aux épices, cuits au four dans une sauce tomate.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7564066582020836630\" data-video-id=\"7564066582020836630\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7564066582020836630\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧅\n             2 gros oignons"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             500g de viande hachée"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1/3 botte d&rsquo;herbe (persil ou coriandre)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             2 poivrons"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cac de cumin"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             gingembre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             coriandre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Fromage râpé en option (ici scarmoza)"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             250ml de sauce tomate"
-            }
-        ],
-        "steps": [
-            "Faire bouillir les oignons tranchés juste sur un côté jusqu&rsquo;au milieu. Les déposer dans l&rsquo;eau froide et compter 20min quand ça commence à bouillir.",
-            "Faire revenir la viande avec les poivrons, les épices (cumin, gingembre, coriandre, paprika) et assaisonner (sel, poivre).",
-            "Terminer la cuisson de la viande en ajoutant les herbes (persil ou coriandre) et 125ml de sauce tomate.",
-            "Tremper les oignons dans de l&rsquo;eau glacée et enlever une à une les feuilles d&rsquo;oignon sans les casser.",
-            "Garnir chaque feuille avec une cuillère à soupe de viande et rouler la feuille d&rsquo;oignon sur elle-même.",
-            "Disposer les oignons farcis sur un lit de sauce tomate (les 125ml restants) dans un plat, arroser avec un peu d&rsquo;huile d&rsquo;olive.",
-            "Cuire au four 25min à 190°C.",
-            "Saupoudrer de coriandre (et de fromage râpé si désiré)."
-        ],
-        "tags": [
-            "Gratins",
-            "Orient",
-            "Plats"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6122",
-        "title": "Nouilles chinoises sautées au poulet",
-        "description": "Une recette super simple de nouilles chinoises sautées au poulet.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7617156275821907222\" data-video-id=\"7617156275821907222\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7617156275821907222\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             100 g de nouilles chinoises déshydratées"
-            },
-            {
-                "quantity": "",
-                "name": "🍗\n             250 g de hauts de cuisse de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🥕\n             40 g de carotte"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1/2 oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon botte ou 1 cébette"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             70 g de germes de haricots mungo"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             4 cas de sauce soja claire"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 càs de sauce soja noire"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             5 càs d&rsquo;eau"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 càs d&rsquo;huile de sésame"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             poivre"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Asie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6118",
-        "title": "Porc caramélisé à la sauce soja",
-        "description": "Un plat savoureux de porc caramélisé avec une sauce soja, parfumé à l&rsquo;ail, au gingembre et aux épices.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7619640981041859862\" data-video-id=\"7619640981041859862\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7619640981041859862\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             400g de porc"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             3 gousses d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             6 tranches de gingembre frais"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             3 oignons jeunes"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             2 cas de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             5 cas de sauce soja"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             anis étoilé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Cannelle"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Cardamome"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Asia",
-            "Asie"
         ],
         "isFeatured": false,
         "isFavorite": false,
