@@ -2,11 +2,62 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 17/06/2026 10:30:39
+ * Dernière mise à jour: 17/06/2026 10:43:13
  * Total: 380 recettes
  */
-export const exportSyncId = "1781692239474";
+export const exportSyncId = "1781692993995";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6150",
+        "title": "Tuscan Chicken Meatballs",
+        "description": "Une sauce riche et savoureuse de style toscan, combinant tomates séchées, épinards, tomates et épices, servie avec de tendres boulettes de poulet (ou du poulet en dés) sur du riz blanc. La base crémeuse peut être réalisée avec de la crème épaisse ou ",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6150_1781691480241.jpg&v=1781699154000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7648315935304060191\" data-video-id=\"7648315935304060191\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7648315935304060191\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             Boulettes de poulet (ou poulet en dés)"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomates séchées"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Épinards"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Épices"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème épaisse (ou lait de coco)"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             Riz blanc"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Italie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6146",
         "title": "Saumon à la Toscane crémeux",
@@ -465,57 +516,6 @@ export const mockRecipes: Recipe[] = [
             "barbecue",
             "Healthy",
             "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6150",
-        "title": "Tuscan Chicken Meatballs",
-        "description": "Une sauce riche et savoureuse de style toscan, combinant tomates séchées, épinards, tomates et épices, servie avec de tendres boulettes de poulet (ou du poulet en dés) sur du riz blanc. La base crémeuse peut être réalisée avec de la crème épaisse ou ",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7648315935304060191\" data-video-id=\"7648315935304060191\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7648315935304060191\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             Boulettes de poulet (ou poulet en dés)"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Tomates séchées"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Épinards"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Tomates"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Épices"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Crème épaisse (ou lait de coco)"
-            },
-            {
-                "quantity": "",
-                "name": "🍚\n             Riz blanc"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Italie"
         ],
         "isFeatured": false,
         "isFavorite": false,
