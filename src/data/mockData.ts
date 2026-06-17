@@ -2,16 +2,171 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 17/06/2026 08:24:42
+ * Dernière mise à jour: 17/06/2026 10:15:00
  * Total: 380 recettes
  */
-export const exportSyncId = "1781684682166";
+export const exportSyncId = "1781691300504";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6142",
+        "title": "PAVÉS DE SAUMON",
+        "description": "Une recette simple et savoureuse de pavés de saumon accompagnés d&rsquo;une sauce crémeuse à l&rsquo;oignon rouge, ail, citron vert et piment d&rsquo;Espelette.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6142_1781690792585.jpeg&v=1781698004000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7635695324870249750\" data-video-id=\"7635695324870249750\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7635695324870249750\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🐟\n             2 pavés de saumon"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1/2 citron vert"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 c. à c. de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             3 c. à s. d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 pincée de piment d'Espelette"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 c. à s. de câpres"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             15 cl de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Coriandre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "France",
+            "Healthy",
+            "Plats"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6148",
+        "title": "CRÈME POULET MIEL MOUTARDE",
+        "description": "Une recette facile et rapide de poulet en sauce crémeuse au miel et à la moutarde, agrémentée de tomates et d&rsquo;épices, servie avec du riz basmati.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6148_1781690764144.jpg&v=1781697990000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7634585156807871766\" data-video-id=\"7634585156807871766\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7634585156807871766\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             1 filet d&rsquo;escalope de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 tomate ou quelques tomates cerise"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon émincé"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d&rsquo;ail râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cac paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             3 cas de crème fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cas de moutarde à l&rsquo;ancienne"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 bon gros filet de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             persil séché ou coriandre fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             riz basmati"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             un filet d&rsquo;huile"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             un peu de jus de citron (optionnel)"
+            }
+        ],
+        "steps": [
+            "Faire revenir l&rsquo;oignon émincé dans un filet d&rsquo;huile pendant 2 minutes.",
+            "Ajouter par la suite le poulet, la tomate, l&rsquo;ail et les épices, puis mélanger et laisser cuire 5 à 6 minutes.",
+            "Ajouter ensuite la crème fraîche, le miel, la moutarde et le persil, puis mélanger.",
+            "Laisser cuire 2 minutes et c&rsquo;est prêt."
+        ],
+        "tags": [
+            "Plats"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6154",
         "title": "Brochettes de poulet à l&rsquo;ail et au parmesan",
         "description": "Des brochettes de poulet tendres et savoureuses, marinées à l&rsquo;ail et au parmesan, puis cuites à l&rsquo;air fryer. Elles sont ensuite badigeonnées d&rsquo;une sauce crémeuse à l&rsquo;ail, au parmesan et au persil pour un plat principal ou une ",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6154_1781690755381.jpeg&v=1781697960000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -222,88 +377,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "6148",
-        "title": "CRÈME POULET MIEL MOUTARDE",
-        "description": "Une recette facile et rapide de poulet en sauce crémeuse au miel et à la moutarde, agrémentée de tomates et d&rsquo;épices, servie avec du riz basmati.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7634585156807871766\" data-video-id=\"7634585156807871766\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7634585156807871766\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             1 filet d&rsquo;escalope de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 tomate ou quelques tomates cerise"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon émincé"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 gousses d&rsquo;ail râpé"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cac paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             3 cas de crème fraîche"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 cas de moutarde à l&rsquo;ancienne"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 bon gros filet de miel"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             persil séché ou coriandre fraîche"
-            },
-            {
-                "quantity": "",
-                "name": "🍚\n             riz basmati"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             un filet d&rsquo;huile"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             un peu de jus de citron (optionnel)"
-            }
-        ],
-        "steps": [
-            "Faire revenir l&rsquo;oignon émincé dans un filet d&rsquo;huile pendant 2 minutes.",
-            "Ajouter par la suite le poulet, la tomate, l&rsquo;ail et les épices, puis mélanger et laisser cuire 5 à 6 minutes.",
-            "Ajouter ensuite la crème fraîche, le miel, la moutarde et le persil, puis mélanger.",
-            "Laisser cuire 2 minutes et c&rsquo;est prêt."
-        ],
-        "tags": [
-            "Plats"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "6146",
         "title": "Saumon à la Toscane crémeux",
         "description": "Une recette de pavés de saumon saisis puis mijotés dans une sauce crémeuse à la Toscane avec des tomates séchées, des tomates cerises, des épinards et du basilic frais.",
@@ -443,79 +516,6 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Salades",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6142",
-        "title": "PAVÉS DE SAUMON",
-        "description": "Une recette simple et savoureuse de pavés de saumon accompagnés d&rsquo;une sauce crémeuse à l&rsquo;oignon rouge, ail, citron vert et piment d&rsquo;Espelette.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7635695324870249750\" data-video-id=\"7635695324870249750\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7635695324870249750\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🐟\n             2 pavés de saumon"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1/2 citron vert"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 c. à c. de concentré de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             3 c. à s. d'huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1 pincée de piment d'Espelette"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 c. à s. de câpres"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             15 cl de crème liquide"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Coriandre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "France",
-            "Healthy",
-            "Plats"
         ],
         "isFeatured": false,
         "isFavorite": false,
