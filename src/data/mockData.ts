@@ -2,11 +2,152 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 17/06/2026 20:39:58
+ * Dernière mise à jour: 17/06/2026 20:50:34
  * Total: 384 recettes
  */
-export const exportSyncId = "1781728798989";
+export const exportSyncId = "1781729434437";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6169",
+        "title": "Chocolate Strawberry Mini Cakes",
+        "description": "Ces mini gâteaux au chocolat et aux fraises sont composés d&rsquo;un gâteau au chocolat moelleux, d&rsquo;une compote de fraises maison, d&rsquo;une ganache au chocolat riche et d&rsquo;un glaçage crémeux au mascarpone et au cacao. Parfaits pour une ",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7638696854355578144\" data-video-id=\"7638696854355578144\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7638696854355578144\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             300g strawberries, washed and chopped up (2 cups)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100g granulated sugar (1/2 cup)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Juice of one lemon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 teaspoon vanilla extract"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             80g milk chocolate, chopped up (1/2 cup)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             80g heavy cream (1/3 cup)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             4 large eggs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             300g dark brown sugar (1 cup + 1/3 cup + 1 teaspoon)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50g granulated sugar (1/4 cup)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200g neutral oil, like avocado, sunflower or canola (3/4 cup + 2 tablespoons)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             150g full fat plain yogurt (2/3 cup)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50g milk (1/4 cup)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 tablespoon vanilla extract"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 teaspoon salt"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             215g all purpose flour (1 cup + 3/4 cup)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             70g unsweetened cocoa powder (3/4 cup + 2 tablespoons)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 teaspoons baking powder + 1/2 teaspoon baking soda"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100g boiling hot coffee (1/3 cup + 1 tablespoon)"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             300g Mascarpone (1 cup + 1/4 cup)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             120g granulated sugar (1/2 cup + 1 tablespoon)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50g unsweetened cocoa powder (2/3 cup)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             300g whipping cream (1 cup + 1/4 cup)"
+            }
+        ],
+        "steps": [
+            "First, prepare the compote.",
+            "To a saucepan, add the diced strawberries, vanilla extract, lemon juice and sugar.",
+            "Mix everything together, place it on the stovetop and let it come to a simmer over high heat.",
+            "As soon as it comes to a simmer, reduce the heat to medium and let it cook for 15-20 minutes, until most of the liquid has evaporated but the compote still remains slightly juicy.",
+            "Once ready, transfer it to a jar and refrigerate until completely cooled and thickened.",
+            "Next, prepare the ganache.",
+            "Pour the heavy cream into a saucepan and let it come to a simmer.",
+            "Once simmering, pour it over the chocolate and let it sit for about 5 minutes before mixing until smooth.",
+            "Once ready, set it aside and let it cool completely until it thickens.",
+            "Next, prepare the mini cakes.",
+            "Preheat the oven to 180°C.",
+            "In a bowl, whisk together the flour, cocoa powder, baking soda, baking powder and salt, then set aside.",
+            "In a large bowl, add the eggs along with the brown sugar and granulated sugar.",
+            "Using an electric hand mixer, mix until the color turns slightly pale and the mixture becomes very fluffy. This should take about 3 minutes.",
+            "Once fluffy, add the oil, yogurt, vanilla extract and milk, mixing until fully incorporated.",
+            "Next, add the dry ingredients and mix until just combined, being careful not to overmix.",
+            "Lastly, fold in the hot coffee.",
+            "Now evenly divide the batter between 12 3-inch mini cake pans.",
+            "Bake in the preheated oven for 20-22 minutes. Check for doneness with a toothpick!",
+            "Once ready, remove them from the oven. Let the cakes cool in the pans for 5 minutes, then transfer them to a wire rack to cool completely before frosting.",
+            "Once the cakes have completely cooled, quickly prepare the frosting.",
+            "Add the mascarpone and sugar to a large bowl, then sift in the cocoa powder and mix until thick and combined.",
+            "Add the heavy whipping cream and using an electric hand mixer or stand mixer, whip until the mixture becomes smooth, fluffy and pipeable.",
+            "Now it's time to assemble.",
+            "Cut each mini cake in half and brush each half with milk.",
+            "Pipe a thin layer of chocolate frosting onto the bottom half of each mini cake.",
+            "Then create a small well in the frosting and pipe in a little of the chocolate ganache.",
+            "Place the top halves back onto the cakes.",
+            "Pipe another layer of chocolate frosting on top of the cakes.",
+            "You can either create a small well in the frosting or leave the center slightly open so you can spoon some of the strawberry compote into the middle.",
+            "Top with a strawberry and enjoy."
+        ],
+        "tags": [
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6167",
         "title": "Tiramisu aux Fraises",
@@ -21850,192 +21991,6 @@ export const mockRecipes: Recipe[] = [
             "Famille",
             "Grèce",
             "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "4076",
-        "title": "Chicken Gyros Maison",
-        "description": "Préparez de délicieux gyros de poulet maison avec cette recette complète. Elle inclut la marinade pour le poulet, la préparation du pain pita, un tzatziki frais et une sauce russe épicée pour un repas convivial et savoureux.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fgyros-au-poulet-bbq.jpg&v=1774521653000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7427923005415673120\" data-video-id=\"7427923005415673120\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7427923005415673120\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             1 kg de cuisses de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 gros oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1/4 dl d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             3 gousses d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 1/2 c. à café de coriandre moulue"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             2 c. à café de cumin moulu"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             2 c. à café de paprika moulu"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 1/2 c. à café de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             ½ c. à café de curcuma"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             ¼ c. à café de cannelle"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1/2 c. à café de poivre noir moulu"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             2 c. à soupe de jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 dl de yaourt"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             1.5 dl d&rsquo;eau tiède"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             1.5 dl de lait tiède"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 c. à soupe de sucre en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 c. à soupe de levure sèche ou 20 g de levure fraîche"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Thym"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 c. à café de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             7.5 dl de farine de blé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             3 c. à soupe d&rsquo;huile"
-            },
-            {
-                "quantity": "",
-                "name": "🥒\n             1 concombre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             5 dl de yaourt grec"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             2 c. à soupe d&rsquo;aneth frais"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 c. à soupe d&rsquo;huile d&rsquo;olive extra vierge"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1 c. à soupe de jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 petite gousse d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre noir"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 dl de mayonnaise"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 c. à soupe de ketchup"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 c. à café de raifort"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 c. à soupe de sauce chili syrienne"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 c. à café de vinaigre de vin blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Légumes de votre choix (pour le service)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Frites (pour le service)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Origan (pour le service)"
-            }
-        ],
-        "steps": [
-            "Dans un bol, mélangez le poulet avec toutes les épices sèches, l&rsquo;oignon, le citron, l&rsquo;ail et le yaourt. Mélangez bien, couvrez de film plastique et réfrigérez. Laissez mariner le poulet au réfrigérateur pendant au moins une heure, idéalement toute une nuit.",
-            "Préchauffez le four à 250 degrés.",
-            "Placez le poulet mariné sur une plaque de cuisson ou une poêle à griller et faites-le griller au four pendant 20 minutes.",
-            "Pour le pain pita : Dans un bol, mélangez l&rsquo;eau, le lait, le sucre en poudre et la levure sèche. Couvrez de film plastique et laissez reposer à température ambiante pendant 10 minutes.",
-            "Ajoutez le sel, la farine de blé et le thym, puis mélangez uniformément (à la main ou avec une cuillère).",
-            "Ajoutez l&rsquo;huile et pétrissez uniformément. Couvrez de film plastique et laissez lever à température ambiante pendant 1 heure.",
-            "Déposez la pâte sur un plan de travail fariné et divisez-la en 6 morceaux. Roulez chaque morceau en boule, puis aplatissez-le en un pain de type tortilla d&rsquo;environ 17-20 cm de diamètre.",
-            "Faites chauffer une poêle sur la cuisinière et faites cuire chaque pain environ 2 minutes et demie à 3 minutes de chaque côté.",
-            "Pour le tzatziki : Dans un bol, versez le yaourt grec (idéalement dans une serviette pour qu&rsquo;il s&rsquo;égoutte pendant 1 à 2 heures).",
-            "Râpez le concombre et pressez-le pour en extraire le liquide.",
-            "Mélangez le concombre râpé avec l&rsquo;aneth, le citron, l&rsquo;huile d&rsquo;olive, l&rsquo;ail, le sel et le poivre.",
-            "Pour la sauce russe : Mélangez la mayonnaise, le ketchup, le raifort, la sauce chili syrienne, le vinaigre de vin blanc, le sel et le poivre.",
-            "Sortez le poulet, coupez-le en morceaux et disposez-le sur le pain pita. Garnissez de légumes de votre choix, de frites, d&rsquo;origan et des sauces (tzatziki et sauce russe).",
-            "Roulez le tout et dégustez votre délicieux gyros !"
-        ],
-        "tags": [
-            "barbecue",
-            "Famille",
-            "Grèce"
         ],
         "isFeatured": false,
         "isFavorite": false,
