@@ -2,11 +2,76 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 17/06/2026 13:41:22
- * Total: 382 recettes
+ * Dernière mise à jour: 17/06/2026 20:30:13
+ * Total: 383 recettes
  */
-export const exportSyncId = "1781703682981";
+export const exportSyncId = "1781728213420";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6167",
+        "title": "Tiramisu aux Fraises",
+        "description": "Un délicieux tiramisu frais et fruité aux fraises, parfait pour environ 8 parts.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7494211956488801558\" data-video-id=\"7494211956488801558\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7494211956488801558\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             4 jaunes d'œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             4 cuillères à soupe de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             400g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             25 cl de crème liquide 30% bien froide"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             15 cl de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🍓\n             10 queues de fraises"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 c a soupe de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Une vingtaine de biscuits boudoirs"
+            },
+            {
+                "quantity": "",
+                "name": "🍓\n             Une vingtaine de fraises"
+            },
+            {
+                "quantity": "",
+                "name": "🍓\n             Coulis fraises pour le dessus"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Italie",
+            "pâtisserie",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6165",
         "title": "Insalata di patate",
