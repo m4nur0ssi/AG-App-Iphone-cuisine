@@ -2,11 +2,71 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 17/06/2026 10:43:13
- * Total: 380 recettes
+ * Dernière mise à jour: 17/06/2026 13:31:58
+ * Total: 382 recettes
  */
-export const exportSyncId = "1781692993995";
+export const exportSyncId = "1781703118198";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6163",
+        "title": "Pâtes à la merguez",
+        "description": "Un vrai bonheur très gourmand !",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7649803384949656864\" data-video-id=\"7649803384949656864\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7649803384949656864\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             6 merguez"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             2 poivrons rouges"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1/2 boîte de tomate concassée"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 cuillère à café de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             50g de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             100g de parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🍝\n             Pâtes"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Orient",
+            "pates"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6150",
         "title": "Tuscan Chicken Meatballs",
@@ -6744,6 +6804,83 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "C'est l'hiver",
             "Plats"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5797",
+        "title": "Gnocchis crémeux au gorgonzola et bacon",
+        "description": "Des gnocchis moelleux enrobés d&rsquo;une sauce onctueuse au gorgonzola, agrémentés de bacon croustillant, d&rsquo;ail et d&rsquo;oignon, parfaits pour un repas réconfortant.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fgnocchis.jpg&v=1779895637000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7610833656415866134\" data-video-id=\"7610833656415866134\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7610833656415866134\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n 700 g de gnocchis à poêler"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 7 tranches de poitrine fumée ou de bacon"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 2 gousses d'ail, hachées"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n 1 demi oignon jaune"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 25 cl de bouillon de volaille"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 150 g de gorgonzola"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 38 cl de crème fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 c. à café de paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 c. à café d'origan"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Basilic (optionnel)"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n Parmesan (optionnel)"
+            }
+        ],
+        "steps": [
+            "Dans une grande poêle à feu moyen, faites cuire le bacon jusqu'à ce qu'il soit doré et croustillant. Retirez-le et réservez.",
+            "Dans la même poêle, faites revenir l'oignon et l'ail jusqu'à ce qu'ils soient tendres et parfumés (3 à 4 minutes).",
+            "Versez le bouillon et la crème, puis laissez mijoter doucement. Ajoutez le gorgonzola et remuez jusqu'à ce qu'il soit complètement fondu et que la sauce soit lisse.",
+            "Ajoutez le paprika et l'origan, puis laissez mijoter 3 à 5 minutes, jusqu'à ce que la sauce épaississe légèrement.",
+            "Ajoutez les gnocchis directement dans la sauce. Couvrez et laissez mijoter 5 minutes en remuant de temps en temps, jusqu'à ce qu'ils soient tendres et bien enrobés.",
+            "Retirez du feu. Ajoutez le bacon croustillant et le parmesan (optionnel). Poivrez selon votre goût, puis ajoutez du basilic si souhaité."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Italie"
         ],
         "isFeatured": false,
         "isFavorite": false,
