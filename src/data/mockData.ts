@@ -2,16 +2,78 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 18/06/2026 15:57:40
+ * Dernière mise à jour: 18/06/2026 16:13:58
  * Total: 385 recettes
  */
-export const exportSyncId = "1781798260702";
+export const exportSyncId = "1781799238236";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6165",
+        "title": "Insalata di patate",
+        "description": "Également connue sous le nom de salade pantesca, cette salade de pommes de terre est un grand classique de la tradition méditerranéenne. Un plat intemporel qui raconte l'histoire, la culture et les saveurs de l'île de Pantelleria.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6165_1781798598599.jpeg&v=1781805957000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7648654771028593953\" data-video-id=\"7648654771028593953\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7648654771028593953\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             1 kg de pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             500 g de tomates cerises"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 oignons rouges"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             80 g d'olives noires"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de câpres"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             2 cuillères à soupe de vinaigre balsamique"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Basilic frais"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Origan"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Huile d'olive et sel"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Healthy",
+            "Italie",
+            "Salades",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6171",
         "title": "Chocolate Chip Banana Bread Muffins",
         "description": "Une recette facile pour préparer de délicieux muffins moelleux au pain de banane et aux pépites de chocolat.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6171_1781797710615.jpg&v=1781805098000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -293,68 +355,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Italie",
             "pâtisserie",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6165",
-        "title": "Insalata di patate",
-        "description": "Également connue sous le nom de salade pantesca, cette salade de pommes de terre est un grand classique de la tradition méditerranéenne. Un plat intemporel qui raconte l'histoire, la culture et les saveurs de l'île de Pantelleria.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7648654771028593953\" data-video-id=\"7648654771028593953\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7648654771028593953\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍎\n             1 kg de pommes de terre"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             500 g de tomates cerises"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             2 oignons rouges"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             80 g d'olives noires"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à soupe de câpres"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             2 cuillères à soupe de vinaigre balsamique"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Basilic frais"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Origan"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Huile d'olive et sel"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Healthy",
-            "Italie",
-            "Salades",
             "Voilà l'été"
         ],
         "isFeatured": false,
