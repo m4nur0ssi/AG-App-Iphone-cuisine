@@ -2,11 +2,38 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 18/06/2026 07:29:15
- * Total: 385 recettes
+ * Dernière mise à jour: 18/06/2026 10:49:45
+ * Total: 386 recettes
  */
-export const exportSyncId = "1781767755446";
+export const exportSyncId = "1781779785291";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6173",
+        "title": "Revisite de Burger",
+        "description": "Une recette rapide et facile pour revisiter le burger.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7568826649144347926\" data-video-id=\"7568826649144347926\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7568826649144347926\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Astuces"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6171",
         "title": "Chocolate Chip Banana Bread Muffins",
