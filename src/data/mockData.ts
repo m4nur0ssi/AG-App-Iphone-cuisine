@@ -2,11 +2,136 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 18/06/2026 16:13:58
+ * Dernière mise à jour: 18/06/2026 16:23:22
  * Total: 385 recettes
  */
-export const exportSyncId = "1781799238236";
+export const exportSyncId = "1781799802053";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6167",
+        "title": "Tiramisu aux Fraises",
+        "description": "Un délicieux tiramisu frais et fruité aux fraises, parfait pour environ 8 parts.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6167_1781798880849.jpg&v=1781806161000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7494211956488801558\" data-video-id=\"7494211956488801558\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7494211956488801558\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             4 jaunes d'œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             4 cuillères à soupe de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             400g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             25 cl de crème liquide 30% bien froide"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             15 cl de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🍓\n             10 queues de fraises"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 c a soupe de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Une vingtaine de biscuits boudoirs"
+            },
+            {
+                "quantity": "",
+                "name": "🍓\n             Une vingtaine de fraises"
+            },
+            {
+                "quantity": "",
+                "name": "🍓\n             Coulis fraises pour le dessus"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Italie",
+            "pâtisserie",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6163",
+        "title": "Pâtes à la merguez",
+        "description": "Un vrai bonheur très gourmand !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6163_1781798763759.jpg&v=1781806077000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7649803384949656864\" data-video-id=\"7649803384949656864\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7649803384949656864\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             6 merguez"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             2 poivrons rouges"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1/2 boîte de tomate concassée"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 cuillère à café de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             50g de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             100g de parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🍝\n             Pâtes"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Orient",
+            "pates"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6165",
         "title": "Insalata di patate",
@@ -291,131 +416,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6167",
-        "title": "Tiramisu aux Fraises",
-        "description": "Un délicieux tiramisu frais et fruité aux fraises, parfait pour environ 8 parts.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7494211956488801558\" data-video-id=\"7494211956488801558\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7494211956488801558\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             4 jaunes d'œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             4 cuillères à soupe de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             400g de mascarpone"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             25 cl de crème liquide 30% bien froide"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             15 cl de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🍓\n             10 queues de fraises"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 c a soupe de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Une vingtaine de biscuits boudoirs"
-            },
-            {
-                "quantity": "",
-                "name": "🍓\n             Une vingtaine de fraises"
-            },
-            {
-                "quantity": "",
-                "name": "🍓\n             Coulis fraises pour le dessus"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Italie",
-            "pâtisserie",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6163",
-        "title": "Pâtes à la merguez",
-        "description": "Un vrai bonheur très gourmand !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7649803384949656864\" data-video-id=\"7649803384949656864\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7649803384949656864\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             6 merguez"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             2 poivrons rouges"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1/2 boîte de tomate concassée"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 cuillère à café de concentré de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1/2 oignon blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             50g de crème liquide"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             100g de parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🍝\n             Pâtes"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Orient",
-            "pates"
         ],
         "isFeatured": false,
         "isFavorite": false,
