@@ -2,11 +2,61 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 20/06/2026 11:27:00
- * Total: 389 recettes
+ * Dernière mise à jour: 20/06/2026 11:33:35
+ * Total: 390 recettes
  */
-export const exportSyncId = "1781954820592";
+export const exportSyncId = "1781955215190";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6196",
+        "title": "Sorbetto al limone",
+        "description": "Le dessert parfait, ultra facile et super rafraîchissant pour cet été. Direction Amalfi et Positano avec ce sorbet citron servi directement dans son citron.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7653124111090076960\" data-video-id=\"7653124111090076960\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7653124111090076960\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍋\n             4 gros citrons (1 kg)"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             260 g d'eau"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             90 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Basilic pour la décoration"
+            }
+        ],
+        "steps": [
+            "Coupez les extrémités des citrons.",
+            "Incisez le citron et videz-le complètement à l'aide d'une cuillère.",
+            "Préparez un sirop avec l'eau et le sucre, portez à ébullition et faites bien dissoudre le sucre.",
+            "Ajoutez le sirop au jus de citron et mélangez.",
+            "Versez dans des bacs à glaçons et mettez aussi les citrons évidés au congélateur.",
+            "Congelez pendant environ 10 heures / toute la nuit.",
+            "Avant de mixer : placez la lame et le bol du mixeur au réfrigérateur pendant au moins 30 minutes.",
+            "Mixez les cubes de glace au citron à pleine puissance jusqu'à obtenir un sorbet crémeux.",
+            "Décorez avec du basilic."
+        ],
+        "tags": [
+            "Italie",
+            "Les Glaces",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6194",
         "title": "Salade Gourmande au Poulet Croustillant",
