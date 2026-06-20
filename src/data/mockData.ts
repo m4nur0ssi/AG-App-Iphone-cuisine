@@ -2,11 +2,154 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 20/06/2026 11:33:35
- * Total: 390 recettes
+ * Dernière mise à jour: 20/06/2026 11:46:05
+ * Total: 393 recettes
  */
-export const exportSyncId = "1781955215190";
+export const exportSyncId = "1781955965743";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6202",
+        "title": "Limonade brésilienne à la cerise",
+        "description": "Une boisson rafraîchissante et fruitée, inspirée de la limonade brésilienne, avec une touche de cerise.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7652380561645866272\" data-video-id=\"7652380561645866272\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7652380561645866272\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Rafraîchissements",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6200",
+        "title": "Salade de melon",
+        "description": "Une salade de melon exceptionnelle et facile à réaliser, parfaite pour l&rsquo;été.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7652756567430925601\" data-video-id=\"7652756567430925601\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7652756567430925601\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 melon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             une poche de mélange quinoa et perles de blé aux épices douces"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             des billes de mozza"
+            },
+            {
+                "quantity": "",
+                "name": "🍇\n             framboises surgelées"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             basilic ou menthe fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             vinaigre balsamique"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Healthy",
+            "Salades",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6198",
+        "title": "Watermelon Mint Lemonade",
+        "description": "Une limonade rafraîchissante à la pastèque et à la menthe, idéale pour les chaudes journées d&rsquo;été.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7643863124499533078\" data-video-id=\"7643863124499533078\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7643863124499533078\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             150g sugar"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             120ml water"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50ml lemon juice"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Lemon peel from 1 medium lemon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1kg watermelon, peeled and cut into cubes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             10-15 fresh mint leaves"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Ice cubes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Lemon slices"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Extra watermelon cubes for topping"
+            }
+        ],
+        "steps": [
+            "Add the sugar, water, lemon peel and lemon juice to a saucepan place over medium heat.",
+            "Heat gently, stirring until the sugar dissolves and the syrup thickens slightly. Remove from the heat and let the lemon peel infuse for 15 minutes. Strain the syrup and allow it to cool completely.",
+            "Add the watermelon cubes and mint leaves to a blender. Blend until completely smooth.",
+            "Add ice cubes lemon slices, mint and lemon syrup, then stir well.",
+            "Add a little cold water if you prefer a lighter consistency.",
+            "Serve chilled and enjoy 🍉✨🍋"
+        ],
+        "tags": [
+            "Rafraîchissements",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6196",
         "title": "Sorbetto al limone",
