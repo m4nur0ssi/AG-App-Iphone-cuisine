@@ -2,11 +2,89 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 20/06/2026 14:01:54
- * Total: 395 recettes
+ * Dernière mise à jour: 20/06/2026 20:08:05
+ * Total: 396 recettes
  */
-export const exportSyncId = "1781964114942";
+export const exportSyncId = "1781986085075";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6306",
+        "title": "Tiramisu maison avec biscuit fait maison",
+        "description": "Le grand classique italien revisité par Norbert Tarayre, avec un biscuit cuillère maison pour un résultat encore plus gourmand et authentique !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_1781985462305.jpg&v=1781992693000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧀\n             500 g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             6 œufs entiers"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             100 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             100 g de cacao en poudre non sucré"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             4 tasses de café fort refroidi"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cuillères à café d&rsquo;Amaretto"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             180 g de blancs d&rsquo;œufs (pour le biscuit)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             150 g de sucre (pour le biscuit)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             120 g de jaunes d&rsquo;œufs (pour le biscuit)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             150 g de farine (pour le biscuit)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             40 g de sucre glace (pour le biscuit)"
+            }
+        ],
+        "steps": [
+            "Préparer le biscuit cuillère maison : préchauffer le four à 180°C. Monter les 180 g de blancs d&rsquo;œufs en neige ferme en ajoutant progressivement les 150 g de sucre pour obtenir une meringue brillante.",
+            "Incorporer délicatement les 120 g de jaunes d&rsquo;œufs à la meringue à l&rsquo;aide d&rsquo;une maryse, en soulevant la masse pour ne pas faire retomber les blancs.",
+            "Ajouter les 150 g de farine tamisée en pluie et mélanger délicatement jusqu&rsquo;à obtenir un appareil homogène.",
+            "Dresser le biscuit sur une plaque recouverte de papier cuisson à l&rsquo;aide d&rsquo;une poche à douille (en boudoirs ou en couche uniforme). Saupoudrer de sucre glace, laisser croûter 5 minutes, puis enfourner 10 à 12 minutes à 180°C. Laisser refroidir.",
+            "Préparer la crème au mascarpone : séparer les 6 œufs. Fouetter les jaunes avec les 100 g de sucre jusqu&rsquo;à ce que le mélange blanchisse et soit bien mousseux.",
+            "Ajouter les 500 g de mascarpone au mélange jaunes-sucre et fouetter pour obtenir une crème lisse et homogène.",
+            "Monter les 6 blancs en neige ferme, puis les incorporer délicatement à la crème mascarpone en plusieurs fois pour garder une texture aérienne.",
+            "Préparer le café : mélanger les 4 tasses de café fort refroidi avec les 2 cuillères à café d&rsquo;Amaretto dans un bol creux.",
+            "Montage du tiramisu : tremper rapidement les biscuits maison dans le mélange café-Amaretto et en tapisser le fond d&rsquo;un plat.",
+            "Étaler une généreuse couche de crème mascarpone sur les biscuits imbibés. Répéter l&rsquo;opération avec une deuxième couche de biscuits imbibés puis terminer par une couche de crème.",
+            "Lisser la surface et réserver au réfrigérateur minimum 4 heures (idéalement une nuit) pour que le tiramisu prenne bien.",
+            "Au moment de servir, saupoudrer généreusement de cacao en poudre à l&rsquo;aide d&rsquo;un tamis pour une belle finition. Déguster bien frais !"
+        ],
+        "tags": [
+            "Italie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6198",
         "title": "Watermelon Mint Lemonade",
