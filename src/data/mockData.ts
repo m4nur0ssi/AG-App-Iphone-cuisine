@@ -2,10 +2,10 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 20/06/2026 13:39:06
- * Total: 396 recettes
+ * Dernière mise à jour: 20/06/2026 13:52:59
+ * Total: 395 recettes
  */
-export const exportSyncId = "1781962746816";
+export const exportSyncId = "1781963579542";
 export const mockRecipes: Recipe[] = [
     {
         "id": "6198",
@@ -8218,89 +8218,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Rafraîchissements",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6204",
-        "title": "Gâteau aux abricots et aux amandes",
-        "description": "Un gâteau aux amandes doux et délicat, garni d&rsquo;abricots juteux et d&rsquo;amandes effilées dorées - élégant, moelleux et magnifiquement équilibré.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "glaces",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7652921583715044641\" data-video-id=\"7652921583715044641\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7652921583715044641\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧈\n             120 g de beurre mou"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             90 g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             un peu de vanille fraîchement moulue"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             2 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             120 g de farine tout usage"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             80 g d&rsquo;amandes blanchies moulues"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             7 g de levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 pincée de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             50 ml de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             environ 4 à 5 petites abricots"
-            },
-            {
-                "quantity": "",
-                "name": "🥜\n             beaucoup d&rsquo;amandes effilées"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             sucre glace pour saupoudrer"
-            }
-        ],
-        "steps": [
-            "Préchauffer le four à 175°C (350°F), chaleur statique. Tapisser le fond du moule à gâteau de papier sulfurisé et graisser légèrement les côtés.",
-            "Battre le beurre, le sucre et la vanille jusqu&rsquo;à obtenir une consistance légère et crémeuse.",
-            "Ajouter les œufs un par un et bien mélanger après chaque ajout.",
-            "Mélanger la farine tout usage, les amandes moulues, la levure chimique et le sel.",
-            "Incorporer brièvement les ingrédients secs à la pâte avec le lait jusqu&rsquo;à obtenir une consistance lisse. Ne pas trop mélanger.",
-            "Étaler la pâte uniformément dans le moule préparé.",
-            "Couper les abricots en deux et les disposer sur le dessus, en les pressant légèrement dans la pâte.",
-            "Saupoudrer généreusement d&rsquo;amandes effilées sur le gâteau.",
-            "Cuire au four à 175°C (350°F), chaleur statique, pendant environ 40 à 50 minutes jusqu&rsquo;à ce qu&rsquo;il soit doré. Le temps de cuisson peut varier légèrement selon le four.",
-            "Laisser le gâteau refroidir complètement avant de le démouler.",
-            "Saupoudrer légèrement de sucre glace avant de servir."
-        ],
-        "tags": [
-            "Glaces",
-            "pâtisserie",
             "Voilà l'été"
         ],
         "isFeatured": false,
