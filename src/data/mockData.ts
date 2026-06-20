@@ -2,11 +2,60 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 20/06/2026 12:08:19
+ * Dernière mise à jour: 20/06/2026 13:09:49
  * Total: 396 recettes
  */
-export const exportSyncId = "1781957299482";
+export const exportSyncId = "1781960989862";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6206",
+        "title": "Brazilian Lemonade",
+        "description": "Creamy, citrusy, and ridiculously refreshing. One sip and you'll see why this drink is always a favorite.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6206_1781960377139.jpeg&v=1781967583000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7637103921273572621\" data-video-id=\"7637103921273572621\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7637103921273572621\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cup diced limes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 glass water"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             3 oz condensed milk"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Ice"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Lime wheel &#038; mint for garnish"
+            }
+        ],
+        "steps": [
+            "Add diced limes and water to a blender",
+            "Blend until combined",
+            "Sieve the mixture into a glass or pitcher",
+            "Stir in condensed milk until creamy",
+            "Pour over ice and garnish with a lime wheel &#038; mint"
+        ],
+        "tags": [
+            "Rafraîchissements",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6208",
         "title": "Peanut Butter Latte",
@@ -51,55 +100,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Rafraîchissements",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6206",
-        "title": "Brazilian Lemonade",
-        "description": "Creamy, citrusy, and ridiculously refreshing. One sip and you'll see why this drink is always a favorite.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7637103921273572621\" data-video-id=\"7637103921273572621\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7637103921273572621\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cup diced limes"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 glass water"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             3 oz condensed milk"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Ice"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Lime wheel &#038; mint for garnish"
-            }
-        ],
-        "steps": [
-            "Add diced limes and water to a blender",
-            "Blend until combined",
-            "Sieve the mixture into a glass or pitcher",
-            "Stir in condensed milk until creamy",
-            "Pour over ice and garnish with a lime wheel &#038; mint"
-        ],
-        "tags": [
-            "Rafraîchissements",
-            "Végé",
             "Voilà l'été"
         ],
         "isFeatured": false,
