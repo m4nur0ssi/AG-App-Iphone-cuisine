@@ -2,87 +2,82 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 20/06/2026 10:33:08
+ * Dernière mise à jour: 20/06/2026 10:41:21
  * Total: 388 recettes
  */
-export const exportSyncId = "1781951588205";
+export const exportSyncId = "1781952081297";
 export const mockRecipes: Recipe[] = [
     {
-        "id": "6148",
-        "title": "Crémeux de poulet miel moutarde",
-        "description": "Une recette facile et rapide de poulet en sauce crémeuse au miel et à la moutarde, agrémentée de tomates et d&rsquo;épices, servie avec du riz basmati.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6148_1781690764144.jpg&v=1781958296000",
+        "id": "6183",
+        "title": "Poulet Piri Piri à la Portugaise",
+        "description": "Un poulet rôti à la portugaise, relevé avec une sauce piri piri maison à base de piments, d&rsquo;ail, de citron et d&rsquo;épices.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6183_1781951605129.jpg&v=1781958809000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7634585156807871766\" data-video-id=\"7634585156807871766\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7634585156807871766\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7592657176901078294\" data-video-id=\"7592657176901078294\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7592657176901078294\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🍗\n 1 filet d&rsquo;escalope de poulet"
+                "name": "🍗\n             1 poulet (1,2kg)"
             },
             {
                 "quantity": "",
-                "name": "🍅\n 1 tomate ou quelques tomates cerise"
+                "name": "🧅\n             2 échalotes"
             },
             {
                 "quantity": "",
-                "name": "🧅\n 1 oignon émincé"
+                "name": "🧅\n             1 oignon"
             },
             {
                 "quantity": "",
-                "name": "🧄\n 2 gousses d&rsquo;ail râpé"
+                "name": "🍋\n             1 citron"
             },
             {
                 "quantity": "",
-                "name": "🧂\n sel"
+                "name": "🧄\n             3 gousses d&rsquo;ail"
             },
             {
                 "quantity": "",
-                "name": "🌶️\n poivre"
+                "name": "🌿\n             1 botte de persil"
             },
             {
                 "quantity": "",
-                "name": "🧂\n 1 cac paprika fumé"
+                "name": "🌶️\n             4 petits piments (en fonction de votre tolérance)"
             },
             {
                 "quantity": "",
-                "name": "🥛\n 3 cas de crème fraîche"
+                "name": "🧂\n             2 Cas de paprika"
             },
             {
                 "quantity": "",
-                "name": "🥫\n 1 cas de moutarde à l&rsquo;ancienne"
+                "name": "🥣\n             1 Cas d&rsquo;origan"
             },
             {
                 "quantity": "",
-                "name": "🍯\n 1 bon gros filet de miel"
+                "name": "🥣\n             2 feuilles de laurier"
             },
             {
                 "quantity": "",
-                "name": "🌿\n persil séché ou coriandre fraîche"
+                "name": "🍾\n             125ml d&rsquo;huile d&rsquo;olive"
             },
             {
                 "quantity": "",
-                "name": "🍚\n riz basmati"
+                "name": "💧\n             150ml de vin blanc (optionnel)"
             },
             {
                 "quantity": "",
-                "name": "🥣\n un filet d&rsquo;huile"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n un peu de jus de citron (optionnel)"
+                "name": "🧄\n             150ml de bouillon de volaille"
             }
         ],
         "steps": [
-            "Faire revenir l&rsquo;oignon émincé dans un filet d&rsquo;huile pendant 2 minutes.",
-            "Ajouter par la suite le poulet, la tomate, l&rsquo;ail et les épices, puis mélanger et laisser cuire 5 à 6 minutes.",
-            "Ajouter ensuite la crème fraîche, le miel, la moutarde et le persil, puis mélanger.",
-            "Laisser cuire 2 minutes et c&rsquo;est prêt."
+            "Suivre les étapes de préparation détaillées dans la vidéo."
         ],
         "tags": [
+            "épicé",
+            "Espagne",
             "Plats"
         ],
         "isFeatured": false,
@@ -93,7 +88,7 @@ export const mockRecipes: Recipe[] = [
         "id": "6187",
         "title": "Porto Bifana",
         "description": "Looks boozy, right? It's really not - all that wine and beer just cook down into the most flavourful, garlicky sauce ever. Rich, a little spicy, and so good you'll want to dip your bread in it. Porto does it best.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6187_1781951423536.jpg&v=1781958802000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -201,7 +196,7 @@ export const mockRecipes: Recipe[] = [
         "id": "6185",
         "title": "Jardineira",
         "description": "Un plat mijoté portugais à base de bœuf, de pommes de terre, de carottes et de petits pois, relevé d&rsquo;une sauce tomate et de vin blanc.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6185_1781951205782.jpg&v=1781958620000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -276,87 +271,10 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "6183",
-        "title": "Poulet Piri Piri à la Portugaise",
-        "description": "Un poulet rôti à la portugaise, relevé avec une sauce piri piri maison à base de piments, d&rsquo;ail, de citron et d&rsquo;épices.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7592657176901078294\" data-video-id=\"7592657176901078294\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7592657176901078294\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             1 poulet (1,2kg)"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             2 échalotes"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1 citron"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             3 gousses d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 botte de persil"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             4 petits piments (en fonction de votre tolérance)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             2 Cas de paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 Cas d&rsquo;origan"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 feuilles de laurier"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             125ml d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             150ml de vin blanc (optionnel)"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             150ml de bouillon de volaille"
-            }
-        ],
-        "steps": [
-            "Suivre les étapes de préparation détaillées dans la vidéo."
-        ],
-        "tags": [
-            "épicé",
-            "Espagne",
-            "Plats"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "6181",
         "title": "Insalata pantesca",
         "description": "Une salade de pommes de terre fraîche et savoureuse, typique de Pantelleria, avec des tomates, des olives et des câpres, parfaite pour l&rsquo;été.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6181_1781951053056.jpg&v=1781958401000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -419,6 +337,88 @@ export const mockRecipes: Recipe[] = [
             "Italie",
             "Salades",
             "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6148",
+        "title": "Crémeux de poulet miel moutarde",
+        "description": "Une recette facile et rapide de poulet en sauce crémeuse au miel et à la moutarde, agrémentée de tomates et d&rsquo;épices, servie avec du riz basmati.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6148_1781690764144.jpg&v=1781958308000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7634585156807871766\" data-video-id=\"7634585156807871766\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7634585156807871766\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n 1 filet d&rsquo;escalope de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n 1 tomate ou quelques tomates cerise"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n 1 oignon émincé"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 2 gousses d&rsquo;ail râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 cac paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 3 cas de crème fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n 1 cas de moutarde à l&rsquo;ancienne"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 1 bon gros filet de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n persil séché ou coriandre fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n riz basmati"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n un filet d&rsquo;huile"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n un peu de jus de citron (optionnel)"
+            }
+        ],
+        "steps": [
+            "Faire revenir l&rsquo;oignon émincé dans un filet d&rsquo;huile pendant 2 minutes.",
+            "Ajouter par la suite le poulet, la tomate, l&rsquo;ail et les épices, puis mélanger et laisser cuire 5 à 6 minutes.",
+            "Ajouter ensuite la crème fraîche, le miel, la moutarde et le persil, puis mélanger.",
+            "Laisser cuire 2 minutes et c&rsquo;est prêt."
+        ],
+        "tags": [
+            "Plats"
         ],
         "isFeatured": false,
         "isFavorite": false,
