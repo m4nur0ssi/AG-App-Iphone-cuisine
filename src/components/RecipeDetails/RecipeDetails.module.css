@@ -674,7 +674,7 @@
     border: none;
     border-radius: 18px;
     color: var(--color-text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.78rem;
     font-weight: 800; /* Plus gras pour meilleure lisibilité */
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -701,7 +701,7 @@
     padding: 0 6px;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 12px;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-weight: 800;
     color: var(--color-text-tertiary);
     transition: all 0.3s ease;
