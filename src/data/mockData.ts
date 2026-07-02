@@ -2,11 +2,69 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 02/07/2026 15:26:54
- * Total: 468 recettes
+ * Dernière mise à jour: 02/07/2026 15:42:55
+ * Total: 469 recettes
  */
-export const exportSyncId = "1783006014045";
+export const exportSyncId = "1783006975271";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6504",
+        "title": "Flan pistache",
+        "description": "Une recette de flan à la pistache, avec une crème pâtissière onctueuse et un fond de tarte 100% pistache. L&rsquo;auteur propose également un ebook de 40 recettes en promotion.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7639790798812253472\" data-video-id=\"7639790798812253472\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7639790798812253472\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍦\n             1 gousse de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             400 g de Lait entier"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             120 g sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             45 g de maïzena"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             120 g d'œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             70 g de pâte de pistache"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             130 g de crème 35 %"
+            }
+        ],
+        "steps": [
+            "Fendre et gratter la gousse de vanille puis faire chauffer le lait avec la vanille.",
+            "Mélanger le sucre la maïzena ajouter les œufs et bien fouetter.",
+            "Verser progressivement le lait chaud sur le mélange tout en fouettant.",
+            "Remettre le tout dans la casserole puis cuire sans cesser de mélanger jusqu'à épaississement.",
+            "Hors du feu, ajouter la pâte de pistaches puis la crème liquide bien mélangé.",
+            "Verser l'appareil dans un fond de tarte 100 % pistache (la recette du fond de tarte sera postée ultérieurement).",
+            "Cuire environ 45 minutes à 190 °C jusqu'à obtenir un flan bien doré encore légèrement tremblotant au centre.",
+            "Laisser refroidir complètement puis réserver plusieurs heures au réfrigérateur avant dégustation."
+        ],
+        "tags": [
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6502",
         "title": "Cookies extra fins au chocolat",
