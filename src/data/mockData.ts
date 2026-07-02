@@ -2,11 +2,56 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 02/07/2026 12:11:31
+ * Dernière mise à jour: 02/07/2026 12:23:09
  * Total: 464 recettes
  */
-export const exportSyncId = "1782994291960";
+export const exportSyncId = "1782994989337";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6494",
+        "title": "Carpaccio de Melon",
+        "description": "Une entrée fraîche et légère à base de rubans de melon, mozzarella di bufala ultra crémeuse, jambon cru, pesto et pignons de pin. Prête en seulement 10 minutes, elle est parfaite pour les journées d&rsquo;été.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7657528299907730720\" data-video-id=\"7657528299907730720\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7657528299907730720\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             melon"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             mozzarella di bufala"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             jambon cru"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             pesto"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             pignons de pin"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Healthy",
+            "Italie",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6492",
         "title": "Cups glacées au spéculoos",
@@ -21678,45 +21723,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Healthy",
             "Simplissime"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5305",
-        "title": "Frites d'avocat",
-        "description": "Une idée parfaite pour un apéro entre amis, tout simple à réaliser, vous allez vous régaler !",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2F1dbd79f0-e1b0-448e-8089-d95d98a55f17_8a8ksWM.jpg&v=1778516464000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7441247702337195296\" data-video-id=\"7441247702337195296\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7441247702337195296\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥑\n 2 avocats"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n 1 œuf entier"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n 50g de parmesan"
-            }
-        ],
-        "steps": [
-            "Couper les avocats en forme de frites.",
-            "Tremper les frites d&rsquo;avocat dans l&rsquo;œuf battu, puis les enrober de parmesan.",
-            "Cuire au four à 180 degrés pendant 15 minutes (fonctionne aussi au airfryer)."
-        ],
-        "tags": [
-            "Pas cher",
-            "Simplissime",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
