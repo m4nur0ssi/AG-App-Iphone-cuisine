@@ -2,11 +2,244 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 03/07/2026 20:59:26
+ * Dernière mise à jour: 03/07/2026 21:11:42
  * Total: 495 recettes
  */
-export const exportSyncId = "1783112366066";
+export const exportSyncId = "1783113102467";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6592",
+        "title": "Crevettes sautées à l&rsquo;ail et au miel",
+        "description": "Une recette rapide et facile de crevettes sautées, relevées à l&rsquo;ail, au miel et à la sauce soja, parfaites pour un plat savoureux.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7222711592104873243\" data-video-id=\"7222711592104873243\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7222711592104873243\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🦐\n             15 crevettes crues"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café de Maïzena"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 cuillère à café de piments concassés"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à café de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             3 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             10 cl de sauce soja sucrée"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             8 cl d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1/2 citron vert"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             30 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Coriandre"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Asie",
+            "épicé",
+            "Poissons et crustacés"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6590",
+        "title": "Boulettes de poisson à la marocaine",
+        "description": "Une recette savoureuse de boulettes de poisson blanc aux épices marocaines, accompagnées d&rsquo;une sauce tomate parfumée aux olives et citron confit.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7584814718779542806\" data-video-id=\"7584814718779542806\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7584814718779542806\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             800 g de filets de poisson blanc (cabillaud, merlan, églefin...)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de cumin"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 cuillère à café de coriandre moulue"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 pincée de harissa"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d'ail râpées"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1 cuillère à soupe de pulpe de citron confit"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil haché"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Coriandre hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             2 cuillères à soupe d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pour la sauce :"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             3 cuillères à soupe d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             400 g de pulpe de tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil haché"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Coriandre hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Olives"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Lamelles de citron confit"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Afrique",
+            "épicé",
+            "Healthy",
+            "Poissons et crustacés"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6588",
+        "title": "Saumon Express à l&rsquo;Air Fryer",
+        "description": "Découvrez une recette de saumon ultra simple et gourmande, prête en seulement 10 minutes à l&rsquo;Air Fryer. Assaisonné d&rsquo;ail, de paprika, de gingembre, de jus de citron et de poivre, c&rsquo;est le plat parfait pour un repas rapide et savoure",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7590806993141550358\" data-video-id=\"7590806993141550358\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7590806993141550358\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🐟\n             saumon"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             gingembre en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             poivre"
+            }
+        ],
+        "steps": [
+            "1. Commencez par assaisonner le saumon avec l&rsquo;ail, le paprika, le gingembre, le citron et le poivre, puis mélangez bien.",
+            "2. Faites cuire pendant 10 minutes à 180 degrés.",
+            "3. Servez avec un peu de riz et une bonne sauce. Bon appétit !"
+        ],
+        "tags": [
+            "Healthy",
+            "Poissons et crustacés"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6586",
         "title": "Poisson façon Marry Me",
@@ -6595,262 +6828,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Salades",
             "USA",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6347",
-        "title": "PÂTES SAUCE TOMATE SPICY",
-        "description": "Des pâtes relevées à la sauce tomate, agrémentées de breasola et de parmesan, parfaites pour une personne.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6347_1782458952580.jpg&v=1782466403000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7606397282812038422\" data-video-id=\"7606397282812038422\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7606397282812038422\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍝\n             80 g de pâtes"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 demi oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             Un peu de vin blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             4 CAS de sauce tomate ou pulpe de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Un filet de crème"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Épices : piment d'Espelette, origan, sel poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Quelques tranches de breasola"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Une tranche de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil plat"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "épicé",
-            "Italie",
-            "pates"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6341",
-        "title": "Jerk Chicken",
-        "description": "Un poulet grillé, fumé, sucré et épicé, inspiré des saveurs de la Jamaïque. Cette version recrée le goût authentique du Jerk Chicken, parfait pour des grillades originales et terriblement addictives.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6341_1782458871151.jpg&v=1782466142000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7654591588189883670\" data-video-id=\"7654591588189883670\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7654591588189883670\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             4 grosses cuisses de poulet (~840 g)"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             8 oignons nouveaux (~80 g)"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1/2 oignon jaune (~80 g)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             20 g de gingembre frais"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             4 gousses d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             2 piments Scotch Bonnet (ou les piments que tu trouves)"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             10 g de thym frais"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             40 g de sucre brun"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             30 ml de sauce soja"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             30 ml de sauce Worcestershire"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             45 ml d&rsquo;huile neutre"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Zeste + jus d&rsquo;1 citron vert"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1 c.à.c de pimento (piment de la Jamaïque) moulu"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1,5 c.à.c de cannelle moulue"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 c.à.c de clou de girofle moulu"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 c.à.c de noix de muscade moulue"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 c.à.c de sel"
-            }
-        ],
-        "steps": [
-            "Réalise plusieurs entailles dans 4 grosses cuisses de poulet (~840 g) à l&rsquo;aide d&rsquo;un couteau. Dépose-les dans un grand saladier.",
-            "Mixe jusqu&rsquo;à obtenir une marinade homogène : les oignons nouveaux, l&rsquo;oignon jaune, le gingembre frais, les gousses d&rsquo;ail, les piments Scotch Bonnet, le thym frais, le sucre brun, la sauce soja, la sauce Worcestershire, l&rsquo;huile neutre, le zeste et le jus d&rsquo;un citron vert, le pimento moulu, la cannelle moulue, le clou de girofle moulu, la noix de muscade moulue et le sel.",
-            "Verse la marinade sur les cuisses de poulet et masse soigneusement pour faire pénétrer les saveurs dans les entailles. Laisse mariner 12 à 24h au réfrigérateur. Plus c&rsquo;est long, meilleur c&rsquo;est.",
-            "Fais griller le poulet au barbecue en le retournant régulièrement et en le badigeonnant de marinade à mi-cuisson. Poursuis jusqu&rsquo;à une température interne de 82-85°C. Si tu n&rsquo;as pas de barbecue, tu peux aussi le cuire au four ou à l&rsquo;AirFryer. Laisse reposer quelques minutes avant de servir."
-        ],
-        "tags": [
-            "Afrique",
-            "barbecue",
-            "épicé",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6308",
-        "title": "Salade de pâtes grecque",
-        "description": "Une salade de pâtes fraîche et savoureuse inspirée de la Grèce, garnie de légumes croquants, d&rsquo;avocat, d&rsquo;olives, de feta et assaisonnée d&rsquo;une sauce au yaourt grec, huile d&rsquo;olive et citron.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6308_1782231129528.jpg&v=1782238369000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7631607360443698454\" data-video-id=\"7631607360443698454\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7631607360443698454\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍝\n             200 g de pâtes de ton choix"
-            },
-            {
-                "quantity": "",
-                "name": "🥒\n             1 concombre"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 boîte de tomates cerises"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             ½ boîte d&rsquo;olives noires"
-            },
-            {
-                "quantity": "",
-                "name": "🥑\n             1 avocat"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Basilic"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 yaourt grec"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 bloc de feta"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Ail en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Aneth"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Citron"
-            }
-        ],
-        "steps": [
-            "Dans un saladier, mélanger les pâtes cuites avec le concombre, les tomates cerises coupées en deux, les olives noires dénoyautées et coupées en deux, l&rsquo;avocat, l&rsquo;oignon rouge ciselé, le persil, le basilic et la feta coupée en dés.",
-            "Ajouter le yaourt grec.",
-            "Assaisonner avec de l&rsquo;huile d&rsquo;olive, du sel, de l&rsquo;ail en poudre et de l&rsquo;aneth ciselé.",
-            "Ajouter un filet de jus de citron et mélanger le tout."
-        ],
-        "tags": [
-            "Grèce",
-            "Healthy",
-            "Salades",
-            "Végé",
             "Voilà l'été"
         ],
         "isFeatured": false,
