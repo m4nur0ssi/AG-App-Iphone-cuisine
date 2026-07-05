@@ -2,11 +2,67 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 05/07/2026 19:33:39
- * Total: 497 recettes
+ * Dernière mise à jour: 05/07/2026 19:53:28
+ * Total: 499 recettes
  */
-export const exportSyncId = "1783280019342";
+export const exportSyncId = "1783281208525";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6598",
+        "title": "Thé glacé vanille et nectarine",
+        "description": "Une boisson rafraîchissante et parfumée, parfaite pour l&rsquo;été, à base de pêches, nectarines, miel, vanille et thé.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7658624308171771168\" data-video-id=\"7658624308171771168\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7658624308171771168\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             2 pêches jaunes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 nectarines"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             2 cuillères à soupe de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             2 gousses de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             2 sachets de thé à la vanille pour 1,5 litre d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Glaçons"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Menthe (pour la garniture)"
+            }
+        ],
+        "steps": [
+            "Mixez les fruits avec le miel, la vanille et un tout petit peu de votre thé infusé.",
+            "Versez la purée de fruits dans la carafe avec des glaçons, de la menthe, et le reste du thé qui a refroidi, mélangez et dégustez."
+        ],
+        "tags": [
+            "Healthy",
+            "Pas cher",
+            "Rafraîchissements",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6596",
         "title": "Brochettes d&rsquo;aubergines au chorizo",
@@ -21657,6 +21713,54 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Afrique"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5517",
+        "title": "Riz à l'ail",
+        "description": "La recette qui me sauve au quotidien ! Simple, rapide, efficace... le riz à l'ail s'accompagne avec tout, et quand on aime l'ail, on ne peut plus s'en passer.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Friz.jpg&v=1779379016000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7607521387946839318\" data-video-id=\"7607521387946839318\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7607521387946839318\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧄\n 6 gousses d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n 1 verre de riz"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 2 verres d'eau (bouillon de volaille facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n 40 g d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n Oignon cébette"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Accompagnements",
+            "Pas cher"
         ],
         "isFeatured": false,
         "isFavorite": false,
