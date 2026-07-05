@@ -2,11 +2,195 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 05/07/2026 19:53:28
- * Total: 499 recettes
+ * Dernière mise à jour: 05/07/2026 20:10:23
+ * Total: 501 recettes
  */
-export const exportSyncId = "1783281208525";
+export const exportSyncId = "1783282223336";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6604",
+        "title": "Vinaigrette légère à l&rsquo;avocat",
+        "description": "Une recette simple et rapide de vinaigrette maison à base d&rsquo;avocat, d&rsquo;ail, de coriandre fraîche et de yaourt grec, parfaite pour alléger vos salades estivales.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7658689515925540128\" data-video-id=\"7658689515925540128\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7658689515925540128\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥑\n             Un demi avocat"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Une gousse d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Une poignée de coriandre fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Une cuillère à soupe de vinaigre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Deux cuillères à soupe de yaourt grec"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Une cuillère à soupe de moutarde à l&rsquo;ancienne"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            }
+        ],
+        "steps": [
+            "Couper l&rsquo;avocat en deux, retirer le noyau et la peau.",
+            "Dans un mixeur ou un bol, placer la chair de l&rsquo;avocat, la gousse d&rsquo;ail pelée, la coriandre, le vinaigre, le yaourt grec et la moutarde à l&rsquo;ancienne.",
+            "Assaisonner avec du sel et du poivre.",
+            "Mixer le tout jusqu&rsquo;à obtenir une consistance lisse et homogène.",
+            "Ajouter un filet d&rsquo;huile d&rsquo;olive et mélanger. Goûter et ajuster l&rsquo;assaisonnement si nécessaire."
+        ],
+        "tags": [
+            "Healthy",
+            "minceur",
+            "Sauces",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6602",
+        "title": "Gaspacho vert et pastèque",
+        "description": "Une recette rafraîchissante de gaspacho vert à base de concombre et avocat, agrémenté de menthe, yaourt et citron, servi avec des billes de pastèque, de la feta émiettée et des pignons de pin grillés.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7658696639430937888\" data-video-id=\"7658696639430937888\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7658696639430937888\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥒\n             ½ concombre"
+            },
+            {
+                "quantity": "",
+                "name": "🥑\n             ½ avocat"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             5 feuilles de menthe fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             3 cuillères à soupe de yaourt"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             2 cuillères à soupe de jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Billes de pastèque"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Feta émiettée"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Menthe ciselée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de pignons de pin"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 filet d'huile d'olive"
+            }
+        ],
+        "steps": [
+            "Pour le gaspacho : Dans un mixeur, combiner le demi-concombre, le demi-avocat, les 5 feuilles de menthe fraîche, les 3 cuillères à soupe de yaourt, les 2 cuillères à soupe de jus de citron et la pincée de sel.",
+            "Mixer le tout jusqu&rsquo;à obtenir une consistance lisse et homogène.",
+            "Pour le dressage : Faire griller les pignons de pin à la poêle jusqu&rsquo;à ce qu&rsquo;ils soient légèrement dorés.",
+            "Servir le gaspacho dans des bols ou des verres.",
+            "Garnir chaque portion avec des billes de pastèque, de la feta émiettée, de la menthe ciselée et les pignons de pin grillés.",
+            "Ajouter un filet d&rsquo;huile d&rsquo;olive avant de déguster."
+        ],
+        "tags": [
+            "Espagne",
+            "Healthy",
+            "Soupes",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6600",
+        "title": "Glace au chocolat protéinée",
+        "description": "Une recette de glace au chocolat riche en protéines (38g) et faible en calories (moins de 270 kcal par pot), idéale pour un régime alimentaire et pour se faire plaisir.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7633015698725326102\" data-video-id=\"7633015698725326102\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7633015698725326102\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Isolat de whey : 30g"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Poudre aromatisante : 5g"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fromage blanc 0% : 100g"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Lait : 200ml"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Healthy",
+            "Les Glaces",
+            "minceur"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6598",
         "title": "Thé glacé vanille et nectarine",
@@ -21713,54 +21897,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Afrique"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5517",
-        "title": "Riz à l'ail",
-        "description": "La recette qui me sauve au quotidien ! Simple, rapide, efficace... le riz à l'ail s'accompagne avec tout, et quand on aime l'ail, on ne peut plus s'en passer.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Friz.jpg&v=1779379016000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7607521387946839318\" data-video-id=\"7607521387946839318\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7607521387946839318\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧄\n 6 gousses d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🍚\n 1 verre de riz"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n 2 verres d'eau (bouillon de volaille facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n 40 g d'huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n Oignon cébette"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Accompagnements",
-            "Pas cher"
         ],
         "isFeatured": false,
         "isFavorite": false,
