@@ -2,11 +2,70 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 05/07/2026 18:22:25
- * Total: 496 recettes
+ * Dernière mise à jour: 05/07/2026 19:20:51
+ * Total: 497 recettes
  */
-export const exportSyncId = "1783275745731";
+export const exportSyncId = "1783279251175";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6596",
+        "title": "Brochettes d&rsquo;aubergines au chorizo",
+        "description": "Une recette simple et savoureuse de brochettes d&rsquo;aubergines et de mini chorizos à griller, assaisonnées d&rsquo;huile d&rsquo;olive, de vinaigre balsamique et d&rsquo;une touche de piment d&rsquo;Espelette, parfaites pour une cuisson au four.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7659087483841318177\" data-video-id=\"7659087483841318177\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7659087483841318177\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍆\n             1 aubergine"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             4 mini chorizos à griller"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             6 cl d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe de vinaigre balsamique"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 pincée de piment d&rsquo;Espelette"
+            }
+        ],
+        "steps": [
+            "Préchauffez votre four à 200°C.",
+            "Coupez l&rsquo;aubergine en dés ou en tranches épaisses, la tomate en quartiers et l&rsquo;oignon rouge en morceaux.",
+            "Montez les brochettes en alternant les morceaux d&rsquo;aubergine, de tomate, d&rsquo;oignon rouge et les mini chorizos.",
+            "Dans un petit bol, mélangez l&rsquo;huile d&rsquo;olive, le vinaigre balsamique et le piment d&rsquo;Espelette.",
+            "Badigeonnez généreusement les brochettes avec cette marinade.",
+            "Enfournez les brochettes et faites-les cuire pendant 25 minutes à 200°C, en les retournant à mi-cuisson si nécessaire."
+        ],
+        "tags": [
+            "barbecue",
+            "épicé",
+            "Espagne",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6594",
         "title": "Pan bagnat",
