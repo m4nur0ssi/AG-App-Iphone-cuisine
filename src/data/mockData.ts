@@ -2,11 +2,49 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/07/2026 20:19:55
+ * Dernière mise à jour: 09/07/2026 21:37:49
  * Total: 510 recettes
  */
-export const exportSyncId = "1783628395216";
+export const exportSyncId = "1783633069794";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "1214",
+        "title": "Ble coeur",
+        "description": "      Vous cherchez une adresse gourmande au Raincy, à quelques encablures de la capitale ? Poussez la porte de ce restaurant ! Le Blé Cœur vous accueille dans son intérieur contemporain et met les petits plats dans les grands pour satisfaire tous le",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2022%2F09%2F249d51d6-756e-4834-bd95-e7e15531e425.jpg&v=1783638691000",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Vous cherchez une adresse gourmande au Raincy, à quelques encablures de la capitale ? Poussez la porte de ce restaurant ! Le Blé Cœur vous accueille dans son intérieur contemporain et met les petits plats dans les grands pour satisfaire tous les appétits !",
+            "AU PROGRAMME - Une carte le midi, une le soir, et suggestions qui changent tous les jours. En cuisine, on mise sur le frais et les produits du marché.",
+            "GOURMET - Les plats flirtent avec la gastronomie tout en restant simples et bien exécutés : foie gras poêlé sur pain d&rsquo;épice maison, risotto aux girolles, souris d&rsquo;agneau confite ou encore canard à l&rsquo;orange..",
+            "Mon plat préféré : j&rsquo;ai bien aimé le carpaccio de tomates avec sa belle burrata",
+            " l'accueil, la simplicité de la décoration soignée, le service, les plats",
+            "  le prix même si c&rsquo;est logique",
+            "au fond avec vue sur la cuisine😉",
+            "82, allee de Montfermeil, 93340, Le Raincy",
+            "Parking Montfermeil (110m)",
+            "RER E Le Raincy - Villemomble - Montfermeil",
+            "TheFork, a Trip advisor company"
+        ],
+        "tags": [
+            "blé",
+            "coeur"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6692",
         "title": "Violetta et Alfredo",
@@ -19525,44 +19563,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "France",
             "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "1214",
-        "title": "Ble coeur - Le Raincy",
-        "description": "      Vous cherchez une adresse gourmande au Raincy, à quelques encablures de la capitale ? Poussez la porte de ce restaurant ! Le Blé Cœur vous accueille dans son intérieur contemporain et met les petits plats dans les grands pour satisfaire tous le",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2022%2F09%2F249d51d6-756e-4834-bd95-e7e15531e425.jpg&v=1780587711000",
-        "category": "restaurant",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Vous cherchez une adresse gourmande au Raincy, à quelques encablures de la capitale ? Poussez la porte de ce restaurant ! Le Blé Cœur vous accueille dans son intérieur contemporain et met les petits plats dans les grands pour satisfaire tous les appétits !",
-            "AU PROGRAMME - Une carte le midi, une le soir, et suggestions qui changent tous les jours. En cuisine, on mise sur le frais et les produits du marché.",
-            "GOURMET - Les plats flirtent avec la gastronomie tout en restant simples et bien exécutés : foie gras poêlé sur pain d&rsquo;épice maison, risotto aux girolles, souris d&rsquo;agneau confite ou encore canard à l&rsquo;orange..",
-            "Mon plat préféré : j&rsquo;ai bien aimé le carpaccio de tomates avec sa belle burrata",
-            " l'accueil, la simplicité de la décoration soignée, le service, les plats",
-            "  le prix même si c&rsquo;est logique",
-            "au fond avec vue sur la cuisine😉",
-            "82, allee de Montfermeil, 93340, Le Raincy",
-            "Parking Montfermeil (110m)",
-            "RER E Le Raincy - Villemomble - Montfermeil",
-            "TheFork, a Trip advisor company"
-        ],
-        "tags": [
-            "blé",
-            "coeur"
         ],
         "isFeatured": false,
         "isFavorite": false,
