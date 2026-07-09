@@ -2,11 +2,38 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/07/2026 06:39:18
- * Total: 509 recettes
+ * Dernière mise à jour: 09/07/2026 14:22:23
+ * Total: 510 recettes
  */
-export const exportSyncId = "1783579158688";
+export const exportSyncId = "1783606943417";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6692",
+        "title": "Un brunch à absolument tester à Paris 🥞😍 📍 Violetta et Alfredo  #brunch #brunchparis #paris #resto #restoparis #violettaetalfredo #salondetheparis #TikTokFood",
+        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7257560381298691355\" data-video-id=\"7257560381298691355\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7257560381298691355\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Un brunch à absolument tester à Paris 🥞😍 📍 Violetta et Alfredo  #brunch #brunchparis #paris #resto #restoparis #violettaetalfredo #salondetheparis #TikTokFood"
+        ],
+        "tags": [
+            "resto-salon-de-the"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6604",
         "title": "Vinaigrette légère à l&rsquo;avocat",
