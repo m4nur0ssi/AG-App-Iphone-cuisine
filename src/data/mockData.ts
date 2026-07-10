@@ -2,11 +2,38 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/07/2026 20:23:42
+ * Dernière mise à jour: 10/07/2026 20:36:44
  * Total: 517 recettes
  */
-export const exportSyncId = "1783715022164";
+export const exportSyncId = "1783715804315";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6745",
+        "title": "Le Balthazar 😍 #pourtoii #fypシ #foryoupage",
+        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7242779213143559451\" data-video-id=\"7242779213143559451\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7242779213143559451\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Le Balthazar 😍 #pourtoii #fypシ #foryoupage"
+        ],
+        "tags": [
+            "resto-brasserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6743",
         "title": "Snickers glacés maison",
@@ -28567,90 +28594,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "France",
             "gratin"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "4728",
-        "title": "Cheesecake Kinder Bueno",
-        "description": "Super crémeux, chocolaté et noisetté, parfait pour tous les amateurs de Kinder Bueno Blanc !",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fcheesecake-au-kinder-bueno.jpeg&v=1774888464000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7617131335026494753\" data-video-id=\"7617131335026494753\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7617131335026494753\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n 200 g de biscuits cacao (ex: Leibniz)"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n 120 g de beurre fondu"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 500 g de fromage blanc 0%"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 250 g de fromage blanc 20%"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 195 g de fromage frais (Philadelphia)"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n 2 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n 190 g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 120 ml de crème liquide"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n 80 ml d&rsquo;huile de tournesol"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n 1 sachet de poudre de pudding vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 200 ml de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n 40 g de chocolat blanc fondu"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 100 g de crème Kinder Bueno"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 200 g de crème Kinder Bueno (légèrement réchauffée pour faciliter l&rsquo;étalement)"
-            }
-        ],
-        "steps": [
-            "**Préparer le fond :** Écraser finement les biscuits. Mélanger avec le beurre fondu. Presser le mélange dans un moule à charnière (Ø 26 cm). Mettre au frais.",
-            "**Préparer la crème (One-Pot) :** Dans un saladier, mélanger le fromage blanc 0%, le fromage blanc 20%, le fromage frais, les œufs, le sucre, la crème liquide, l&rsquo;huile, le lait et la poudre de pudding. Bien mélanger jusqu&rsquo;à obtenir une consistance lisse. Incorporer le chocolat blanc fondu et la crème Kinder Bueno. Verser la crème sur le fond de biscuits. Tapoter légèrement le moule sur la table pour faire sortir les bulles d&rsquo;air.",
-            "**Cuisson :** Faire cuire à 170 °C pendant environ 55 à 60 minutes. Le centre peut encore être légèrement tremblant, cela garantira un cheesecake extra crémeux.",
-            "**Refroidissement et glaçage :** Après la cuisson, laisser reposer 30 minutes dans le four entrouvert. Placer ensuite au réfrigérateur, idéalement toute une nuit. Réchauffer légèrement le glaçage Bueno et l&rsquo;étaler sur le dessus.",
-            "**Servir :** Décorer avec des morceaux de Kinder Bueno Blanc et des miettes de biscuits. Déguster bien frais 😋."
-        ],
-        "tags": [
-            "Famille",
-            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
