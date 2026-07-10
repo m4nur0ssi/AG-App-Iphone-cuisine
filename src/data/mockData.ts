@@ -2,11 +2,69 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/07/2026 14:09:00
- * Total: 513 recettes
+ * Dernière mise à jour: 10/07/2026 19:55:28
+ * Total: 514 recettes
  */
-export const exportSyncId = "1783692540064";
+export const exportSyncId = "1783713328690";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6692",
+        "title": "Violetta et Alfredo",
+        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Fresto_6692_1_1783712373377.jpg&v=1783719730000",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" style=\"max-width: 605px; min-width: 325px;\" cite=\"https://www.tiktok.com/v/7257560381298691355\" data-video-id=\"7257560381298691355\">\n<section><a title=\"@tiktok\" href=\"https://www.tiktok.com/v/7257560381298691355\" target=\"_blank\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a></section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Un brunch à absolument tester à Paris"
+        ],
+        "tags": [
+            "resto-salon-de-the"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "1300",
+        "title": "Joji - Paris 4",
+        "description": "    Joji est un restaurant asiatique et plus particulièrement japonais. Nous ne sommes pas ici dans un restaurant avec buffet autour duquel vous trouverez des frites et des nuggets. Vous ne trouverez pas non plus de sushi, de maki ou de brochettes au",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Fresto_1300_1_1783711966931.jpg&v=1783719330000",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Joji est un restaurant asiatique et plus particulièrement japonais. Nous ne sommes pas ici dans un restaurant avec buffet autour duquel vous trouverez des frites et des nuggets. Vous ne trouverez pas non plus de sushi, de maki ou de brochettes au fromage.",
+            "ici, vous vous trouvez dans un restaurant chaleureusement décoré avec du bois et de la musique. La cuisine y est soignée et typique. L&rsquo;accueil est très sympa et aux petits soins.",
+            "Mon plat préféré : Croquettes d'effiloché de porc au kimchi, sauce Haixian",
+            "l'accueil, l'ambiance, la musique, le visuel des plats",
+            "Un peu cher, pas le meilleur japonais pour moi",
+            "5 Rue de Turenne, 75004 Paris, France",
+            "https://www.instagram.com/joji_bistro/"
+        ],
+        "tags": [],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6708",
         "title": "Maxim's",
@@ -156,33 +214,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "blé",
             "coeur"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6692",
-        "title": "Violetta et Alfredo",
-        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "restaurant",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" style=\"max-width: 605px; min-width: 325px;\" cite=\"https://www.tiktok.com/v/7257560381298691355\" data-video-id=\"7257560381298691355\">\n<section><a title=\"@tiktok\" href=\"https://www.tiktok.com/v/7257560381298691355\" target=\"_blank\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a></section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Un brunch à absolument tester à Paris"
-        ],
-        "tags": [
-            "resto-salon-de-the"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -21742,6 +21773,71 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
+        "id": "5765",
+        "title": "Bomboloni",
+        "description": "Des beignets italiens moelleux fourrés au chocolat et enrobés de sucre.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2FBomboloni_thumbnail392x3922.jpg&v=1779982930000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7583710319734803734\" data-video-id=\"7583710319734803734\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7583710319734803734\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n 360 g de farine blanche"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 40 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 5 g de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 9 g de levure instantanée"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 180 ml de lait tiède"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 50 g de beurre mou"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n 1 cuillère à café de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n 150-200 g de pâte à tartiner au chocolat"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n Sucre pour l&rsquo;enrobage"
+            }
+        ],
+        "steps": [
+            "Mélangez la farine, le sucre, le sel et la levure, puis ajoutez les œufs, la vanille et le lait et pétrissez.",
+            "Ajoutez le beurre et pétrissez jusqu&rsquo;à ce que la pâte soit lisse (environ 10 minutes). Laissez-la lever pendant 1 heure dans un endroit chaud. Façonnez des boules et laissez-les reposer dans un endroit chaud pendant 30 à 40 minutes. Faites-les ensuite frire à feu moyen jusqu&rsquo;à ce qu&rsquo;elles soient dorées, enrobez-les de sucre et garnissez-les de chocolat."
+        ],
+        "tags": [
+            "Italie",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
         "id": "5774",
         "title": "Prépare tes makis rapidement",
         "description": "L&rsquo;utilisateur a testé une recette virale et partage son expérience ou les résultats de son essai.",
@@ -36876,37 +36972,6 @@ export const mockRecipes: Recipe[] = [
             "gourmand",
             "rapide"
         ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "1300",
-        "title": "Joji - Paris 4",
-        "description": "    Joji est un restaurant asiatique et plus particulièrement japonais. Nous ne sommes pas ici dans un restaurant avec buffet autour duquel vous trouverez des frites et des nuggets. Vous ne trouverez pas non plus de sushi, de maki ou de brochettes au",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "restaurant",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Joji est un restaurant asiatique et plus particulièrement japonais. Nous ne sommes pas ici dans un restaurant avec buffet autour duquel vous trouverez des frites et des nuggets. Vous ne trouverez pas non plus de sushi, de maki ou de brochettes au fromage.",
-            "ici, vous vous trouvez dans un restaurant chaleureusement décoré avec du bois et de la musique. La cuisine y est soignée et typique. L&rsquo;accueil est très sympa et aux petits soins.",
-            "Mon plat préféré : Croquettes d'effiloché de porc au kimchi, sauce Haixian",
-            "l'accueil, l'ambiance, la musique, le visuel des plats",
-            "Un peu cher, pas le meilleur japonais pour moi",
-            "5 Rue de Turenne, 75004 Paris, France",
-            "https://www.instagram.com/joji_bistro/"
-        ],
-        "tags": [],
         "isFeatured": false,
         "isFavorite": false,
         "address": ""
