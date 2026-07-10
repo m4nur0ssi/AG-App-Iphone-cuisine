@@ -2,11 +2,149 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/07/2026 20:07:54
- * Total: 515 recettes
+ * Dernière mise à jour: 10/07/2026 20:23:42
+ * Total: 517 recettes
  */
-export const exportSyncId = "1783714074950";
+export const exportSyncId = "1783715022164";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6743",
+        "title": "Snickers glacés maison",
+        "description": "Une recette maison pour préparer des barres Snickers glacées, composées d&rsquo;une coque en chocolat, d&rsquo;une garniture crémeuse au beurre de cacahuète, de cacahuètes et de caramel au beurre salé.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7660493542338465057\" data-video-id=\"7660493542338465057\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7660493542338465057\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             Une tablette de chocolat au lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             210g de crème à fouetter"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             45g de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             1 grosse cuillère à soupe de beurre de cacahuète"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cacahuètes"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Caramel au beurre salé"
+            }
+        ],
+        "steps": [
+            "Faire fondre le chocolat au lait au micro-ondes.",
+            "Recouvrir le fond et les parois du moule avec le chocolat fondu à l'aide d'une cuillère ou d'un pinceau.",
+            "Placer le moule au congélateur le temps de préparer la crème.",
+            "Monter la crème à fouetter avec le sucre glace et le beurre de cacahuète jusqu'à obtenir une chantilly ferme.",
+            "Remplir les coques en chocolat avec le caramel au beurre salé, ajouter les cacahuètes et la crème.",
+            "Refermer chaque barre avec une dernière couche de chocolat fondu.",
+            "Placer au congélateur pendant 30 minutes puis démouler délicatement."
+        ],
+        "tags": [
+            "Les Glaces",
+            "USA",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6741",
+        "title": "Brioche effilochée aux myrtilles",
+        "description": "Une recette de brioche maison moelleuse et parfumée aux myrtilles, avec une compotée fruitée et une technique d&rsquo;effilochage pour un visuel marbré et gourmand.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7651949515078978848\" data-video-id=\"7651949515078978848\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7651949515078978848\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             500g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             80g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             20g de sucre vanillé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 sachets de levure boulangère sèche (2&#215;5,5g)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             200ml de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             80g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             250g de myrtilles"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             8g de maïzena"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             60g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1 cuillère à café de jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             15g d'eau"
+            }
+        ],
+        "steps": [
+            "Dans le bol d&rsquo;un robot, pétrir la farine, les sucres (sucre et sucre vanillé), les deux œufs, la levure boulangère et le lait.",
+            "Ajouter le beurre et pétrir de nouveau jusqu&rsquo;à obtenir une pâte homogène et élastique.",
+            "Laisser reposer la pâte pendant 2 heures à température ambiante.",
+            "Pendant ce temps, préparer la compotée de myrtilles : dans une casserole, mettre les 250g de myrtilles, les 8g de maïzena, les 60g de sucre, la cuillère à café de jus de citron et les 15g d'eau.",
+            "Porter à ébullition en mélangeant constamment jusqu'à ce que la compotée épaississe.",
+            "Une fois la pâte à brioche reposée, l&rsquo;étaler.",
+            "Déposer la compotée de myrtille sur la pâte étalée.",
+            "Couper la pâte en quadrillage et superposer les couches pour créer une jolie marbrure effilochée.",
+            "Laisser reposer la brioche assemblée pendant 15 minutes.",
+            "Préchauffer le four à 160 degrés Celsius.",
+            "Cuire la brioche pendant 30 minutes à 160 degrés Celsius."
+        ],
+        "tags": [
+            "France",
+            "pâtisserie",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6739",
         "title": "Tapenade",
@@ -28519,6 +28657,90 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
+        "id": "4728",
+        "title": "Cheesecake Kinder Bueno",
+        "description": "Super crémeux, chocolaté et noisetté, parfait pour tous les amateurs de Kinder Bueno Blanc !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fcheesecake-au-kinder-bueno.jpeg&v=1774888464000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7617131335026494753\" data-video-id=\"7617131335026494753\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7617131335026494753\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n 200 g de biscuits cacao (ex: Leibniz)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 120 g de beurre fondu"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 500 g de fromage blanc 0%"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 250 g de fromage blanc 20%"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 195 g de fromage frais (Philadelphia)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 190 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 120 ml de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n 80 ml d&rsquo;huile de tournesol"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n 1 sachet de poudre de pudding vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 200 ml de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n 40 g de chocolat blanc fondu"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 100 g de crème Kinder Bueno"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 200 g de crème Kinder Bueno (légèrement réchauffée pour faciliter l&rsquo;étalement)"
+            }
+        ],
+        "steps": [
+            "**Préparer le fond :** Écraser finement les biscuits. Mélanger avec le beurre fondu. Presser le mélange dans un moule à charnière (Ø 26 cm). Mettre au frais.",
+            "**Préparer la crème (One-Pot) :** Dans un saladier, mélanger le fromage blanc 0%, le fromage blanc 20%, le fromage frais, les œufs, le sucre, la crème liquide, l&rsquo;huile, le lait et la poudre de pudding. Bien mélanger jusqu&rsquo;à obtenir une consistance lisse. Incorporer le chocolat blanc fondu et la crème Kinder Bueno. Verser la crème sur le fond de biscuits. Tapoter légèrement le moule sur la table pour faire sortir les bulles d&rsquo;air.",
+            "**Cuisson :** Faire cuire à 170 °C pendant environ 55 à 60 minutes. Le centre peut encore être légèrement tremblant, cela garantira un cheesecake extra crémeux.",
+            "**Refroidissement et glaçage :** Après la cuisson, laisser reposer 30 minutes dans le four entrouvert. Placer ensuite au réfrigérateur, idéalement toute une nuit. Réchauffer légèrement le glaçage Bueno et l&rsquo;étaler sur le dessus.",
+            "**Servir :** Décorer avec des morceaux de Kinder Bueno Blanc et des miettes de biscuits. Déguster bien frais 😋."
+        ],
+        "tags": [
+            "Famille",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
         "id": "4714",
         "title": "Pommes de terre Hasselback, poulet crémeux Cajun et broccolini à l&rsquo;air fryer",
         "description": "Un repas réconfortant, facile et sain, composé de pommes de terre Hasselback croustillantes, de poulet crémeux à la cajun et de broccolini cuit à l&rsquo;air fryer.",
@@ -28623,97 +28845,6 @@ export const mockRecipes: Recipe[] = [
             "pomme de terre",
             "poulet",
             "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "4719",
-        "title": "Choux vanille caramel",
-        "description": "Une recette classique de choux à la crème, garnis d&rsquo;une onctueuse crème pâtissière à la vanille et d&rsquo;une crème montée, le tout dans une pâte à choux légère et dorée.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fchou.jpeg&v=1774887970000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7476140592100150550\" data-video-id=\"7476140592100150550\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7476140592100150550\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥛\n 50 cl de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n 1 gousse de vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n 50 gr de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n 4 jaunes d&rsquo;œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 45 gr de maïzena"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n 50 gr de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 150 gr de crème entière 30% mg bien froide"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n 250 gr d&rsquo;eau"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n 80 gr de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n 1 pincée de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n 1 pincée de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n 150 gr de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n 4 œufs"
-            }
-        ],
-        "steps": [
-            "Bouillir le lait avec la gousse de vanille grattée.",
-            "Mélanger le sucre avec les jaunes d&rsquo;œufs et la maïzena.",
-            "Ajouter le lait bouillant au mélange sucre/jaunes/maïzena, puis remettre le tout sur le feu et porter à ébullition en remuant constamment jusqu&rsquo;à épaississement.",
-            "Retirer du feu, puis ajouter le beurre et mélanger jusqu&rsquo;à incorporation.",
-            "Filmer la crème pâtissière au contact et laisser refroidir complètement.",
-            "Fouetter la crème pâtissière refroidie pour la lisser.",
-            "Monter la crème entière bien froide en chantilly.",
-            "Incorporer délicatement la crème montée à la crème pâtissière fouettée.",
-            "Bouillir l&rsquo;eau avec le beurre, le sel et le sucre.",
-            "Hors du feu, ajouter la farine en une seule fois et mélanger vivement.",
-            "Remettre la casserole sur feu moyen et dessécher la pâte pendant quelques secondes en remuant constamment, jusqu&rsquo;à ce qu&rsquo;elle se décolle des parois.",
-            "Verser la pâte dans un saladier et laisser tiédir.",
-            "Ajouter les œufs un par un, en fouettant bien après chaque ajout, jusqu&rsquo;à l&rsquo;obtention d&rsquo;une pâte lisse et homogène.",
-            "Pocher la pâte à choux sur une plaque recouverte de papier sulfurisé, en formant des petits choux.",
-            "Enfourner à 180°C pendant environ 30 minutes, jusqu&rsquo;à ce qu&rsquo;ils soient bien dorés et gonflés.",
-            "Garnir les choux refroidis avec la crème vanille."
-        ],
-        "tags": [
-            "Famille",
-            "France"
         ],
         "isFeatured": false,
         "isFavorite": false,
