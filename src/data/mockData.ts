@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/07/2026 20:56:32
+ * Dernière mise à jour: 10/07/2026 21:54:49
  * Total: 518 recettes
  */
-export const exportSyncId = "1783716992372";
+export const exportSyncId = "1783720489129";
 export const mockRecipes: Recipe[] = [
     {
         "id": "6747",
         "title": "Technique de cuisson de la côte de bœuf",
         "description": "Ce contenu présente une technique privilégiée pour la cuisson de la côte de bœuf, un plat emblématique de l&rsquo;été. L&rsquo;auteur propose une recette détaillée, mettant l&rsquo;accent sur l&rsquo;importance du temps pour une cuisson réussie, en c",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6747_1783719177654.jpg&v=1783726429000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -41,27 +41,49 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "6745",
-        "title": "Le Balthazar 😍 #pourtoii #fypシ #foryoupage",
-        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "restaurant",
+        "id": "6739",
+        "title": "Tapenade",
+        "description": "Une recette simple et rapide pour préparer une délicieuse tapenade maison, parfaite pour l&rsquo;apéritif.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6739_1783719078771.jpg&v=1783726371000",
+        "category": "aperitifs",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7242779213143559451\" data-video-id=\"7242779213143559451\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7242779213143559451\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7660943380599360801\" data-video-id=\"7660943380599360801\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7660943380599360801\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
+                "name": "🥣\n             250g d&rsquo;olives noires dessalées"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             3 filets d&rsquo;anchois"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 dizaine de câpres"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             5 cuillères à soupe d&rsquo;huile d&rsquo;olive"
             }
         ],
         "steps": [
-            "Le Balthazar 😍 #pourtoii #fypシ #foryoupage"
+            "Si nécessaire, dessaler les olives noires en les rinçant abondamment à l&rsquo;eau froide.",
+            "Dans un mixeur ou un robot culinaire, placer les olives noires dessalées, la gousse d&rsquo;ail pelée, les filets d&rsquo;anchois et les câpres.",
+            "Ajouter les 5 cuillères à soupe d&rsquo;huile d&rsquo;olive.",
+            "Mixer le tout jusqu&rsquo;à obtenir une pâte plus ou moins homogène, selon la consistance désirée (plus ou moins fine).",
+            "Servir frais avec du pain grillé ou des légumes croquants."
         ],
         "tags": [
-            "resto-brasserie"
+            "Apéritifs",
+            "France",
+            "Sauces"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -71,7 +93,7 @@ export const mockRecipes: Recipe[] = [
         "id": "6743",
         "title": "Snickers glacés maison",
         "description": "Une recette maison pour préparer des barres Snickers glacées, composées d&rsquo;une coque en chocolat, d&rsquo;une garniture crémeuse au beurre de cacahuète, de cacahuètes et de caramel au beurre salé.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6743_1783718511692.jpg&v=1783726274000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -123,10 +145,52 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
+        "id": "6710",
+        "title": "Glace à l&rsquo;hibiscus (Bissap)",
+        "description": "Découvrez une recette de glace rafraîchissante et simple, parfaite pour l&rsquo;été, qui évoque les saveurs de l&rsquo;enfance. Réalisée à base de fleurs d&rsquo;hibiscus (bissap), de sucre et de sucre vanillé, elle peut être agrémentée d&rsquo;un ar",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6710_1783718486071.jpeg&v=1783725708000",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7657274204244462880\" data-video-id=\"7657274204244462880\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7657274204244462880\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Fleurs d&rsquo;hibiscus (bissap)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Sucre vanillé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Arôme de fraise (facultatif)"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Afrique",
+            "Les Glaces",
+            "Pas cher",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
         "id": "6741",
         "title": "Brioche effilochée aux myrtilles",
         "description": "Une recette de brioche maison moelleuse et parfumée aux myrtilles, avec une compotée fruitée et une technique d&rsquo;effilochage pour un visuel marbré et gourmand.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6741_1783717963335.jpeg&v=1783725682000",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -206,49 +270,74 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "6739",
-        "title": "Tapenade",
-        "description": "Une recette simple et rapide pour préparer une délicieuse tapenade maison, parfaite pour l&rsquo;apéritif.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "aperitifs",
+        "id": "6712",
+        "title": "Bissap Maison",
+        "description": "Une recette simple et rafraîchissante pour préparer du bissap maison, une boisson traditionnelle à base de fleurs d&rsquo;hibiscus.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6712_1783717942269.jpg&v=1783725159000",
+        "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7660943380599360801\" data-video-id=\"7660943380599360801\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7660943380599360801\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7599704005719117078\" data-video-id=\"7599704005719117078\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7599704005719117078\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🥣\n             250g d&rsquo;olives noires dessalées"
+                "name": "💧\n             1,5 litres d&rsquo;eau"
             },
             {
                 "quantity": "",
-                "name": "🧄\n             1 gousse d&rsquo;ail"
+                "name": "🥣\n             50g de fleurs d&rsquo;hibiscus séchées"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             3 filets d&rsquo;anchois"
+                "name": "🌿\n             5 branches de menthe"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             1 dizaine de câpres"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             5 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+                "name": "🍯\n             100g de sucre"
             }
         ],
         "steps": [
-            "Si nécessaire, dessaler les olives noires en les rinçant abondamment à l&rsquo;eau froide.",
-            "Dans un mixeur ou un robot culinaire, placer les olives noires dessalées, la gousse d&rsquo;ail pelée, les filets d&rsquo;anchois et les câpres.",
-            "Ajouter les 5 cuillères à soupe d&rsquo;huile d&rsquo;olive.",
-            "Mixer le tout jusqu&rsquo;à obtenir une pâte plus ou moins homogène, selon la consistance désirée (plus ou moins fine).",
-            "Servir frais avec du pain grillé ou des légumes croquants."
+            "Dans une casserole, portez l&rsquo;eau à ébullition.",
+            "Ajoutez les fleurs d&rsquo;hibiscus séchées et le sucre. Laissez mijoter à feu doux pendant environ 5 à 10 minutes.",
+            "Retirez du feu, ajoutez les branches de menthe et laissez infuser le mélange jusqu&rsquo;à ce qu&rsquo;il refroidisse complètement.",
+            "Filtrez la boisson pour retirer les fleurs d&rsquo;hibiscus et la menthe.",
+            "Mettez le bissap au frais pendant au moins 2 heures avant de servir."
         ],
         "tags": [
-            "Apéritifs",
-            "France",
-            "Sauces"
+            "Afrique",
+            "Healthy",
+            "Pas cher",
+            "Rafraîchissements",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6745",
+        "title": "Le Balthazar",
+        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" style=\"max-width: 605px; min-width: 325px;\" cite=\"https://www.tiktok.com/v/7242779213143559451\" data-video-id=\"7242779213143559451\">\n<section><a title=\"@tiktok\" href=\"https://www.tiktok.com/v/7242779213143559451\" target=\"_blank\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a></section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Le Balthazar"
+        ],
+        "tags": [
+            "resto-brasserie"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -334,95 +423,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "resto-brasserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6712",
-        "title": "Bissap Maison",
-        "description": "Une recette simple et rafraîchissante pour préparer du bissap maison, une boisson traditionnelle à base de fleurs d&rsquo;hibiscus.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7599704005719117078\" data-video-id=\"7599704005719117078\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7599704005719117078\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "💧\n             1,5 litres d&rsquo;eau"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             50g de fleurs d&rsquo;hibiscus séchées"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             5 branches de menthe"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             100g de sucre"
-            }
-        ],
-        "steps": [
-            "Dans une casserole, portez l&rsquo;eau à ébullition.",
-            "Ajoutez les fleurs d&rsquo;hibiscus séchées et le sucre. Laissez mijoter à feu doux pendant environ 5 à 10 minutes.",
-            "Retirez du feu, ajoutez les branches de menthe et laissez infuser le mélange jusqu&rsquo;à ce qu&rsquo;il refroidisse complètement.",
-            "Filtrez la boisson pour retirer les fleurs d&rsquo;hibiscus et la menthe.",
-            "Mettez le bissap au frais pendant au moins 2 heures avant de servir."
-        ],
-        "tags": [
-            "Afrique",
-            "Healthy",
-            "Pas cher",
-            "Rafraîchissements",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6710",
-        "title": "Glace à l&rsquo;hibiscus (Bissap)",
-        "description": "Découvrez une recette de glace rafraîchissante et simple, parfaite pour l&rsquo;été, qui évoque les saveurs de l&rsquo;enfance. Réalisée à base de fleurs d&rsquo;hibiscus (bissap), de sucre et de sucre vanillé, elle peut être agrémentée d&rsquo;un ar",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "glaces",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7657274204244462880\" data-video-id=\"7657274204244462880\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7657274204244462880\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Fleurs d&rsquo;hibiscus (bissap)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Sucre vanillé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Arôme de fraise (facultatif)"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Afrique",
-            "Les Glaces",
-            "Pas cher",
-            "Voilà l'été"
         ],
         "isFeatured": false,
         "isFavorite": false,
