@@ -2,11 +2,38 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/07/2026 10:26:28
+ * Dernière mise à jour: 10/07/2026 13:34:13
  * Total: 513 recettes
  */
-export const exportSyncId = "1783679188811";
+export const exportSyncId = "1783690453696";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6708",
+        "title": "Maxim's",
+        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7438673795382070560\" data-video-id=\"7438673795382070560\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7438673795382070560\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Un restaurant absolument ICONIQUE à Paris 🤩 📍 Maxim's  #maxims #sortiraparis #Favoriteplace #TikTokFood #bonneadresse #paris"
+        ],
+        "tags": [
+            "resto-brasserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6712",
         "title": "Bissap Maison",
@@ -91,33 +118,6 @@ export const mockRecipes: Recipe[] = [
             "Les Glaces",
             "Pas cher",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6708",
-        "title": "Maxim's",
-        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "restaurant",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7438673795382070560\" data-video-id=\"7438673795382070560\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7438673795382070560\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Un restaurant absolument ICONIQUE à Paris 🤩 📍 Maxim's  #maxims #sortiraparis #Favoriteplace #TikTokFood #bonneadresse #paris"
-        ],
-        "tags": [
-            "resto-brasserie"
         ],
         "isFeatured": false,
         "isFavorite": false,
