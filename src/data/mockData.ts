@@ -2,11 +2,60 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/07/2026 19:55:28
- * Total: 514 recettes
+ * Dernière mise à jour: 10/07/2026 20:07:54
+ * Total: 515 recettes
  */
-export const exportSyncId = "1783713328690";
+export const exportSyncId = "1783714074950";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6739",
+        "title": "Tapenade",
+        "description": "Une recette simple et rapide pour préparer une délicieuse tapenade maison, parfaite pour l&rsquo;apéritif.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7660943380599360801\" data-video-id=\"7660943380599360801\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7660943380599360801\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             250g d&rsquo;olives noires dessalées"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             3 filets d&rsquo;anchois"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 dizaine de câpres"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             5 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+            }
+        ],
+        "steps": [
+            "Si nécessaire, dessaler les olives noires en les rinçant abondamment à l&rsquo;eau froide.",
+            "Dans un mixeur ou un robot culinaire, placer les olives noires dessalées, la gousse d&rsquo;ail pelée, les filets d&rsquo;anchois et les câpres.",
+            "Ajouter les 5 cuillères à soupe d&rsquo;huile d&rsquo;olive.",
+            "Mixer le tout jusqu&rsquo;à obtenir une pâte plus ou moins homogène, selon la consistance désirée (plus ou moins fine).",
+            "Servir frais avec du pain grillé ou des légumes croquants."
+        ],
+        "tags": [
+            "Apéritifs",
+            "France",
+            "Sauces"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6692",
         "title": "Violetta et Alfredo",
@@ -21773,71 +21822,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "5765",
-        "title": "Bomboloni",
-        "description": "Des beignets italiens moelleux fourrés au chocolat et enrobés de sucre.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2FBomboloni_thumbnail392x3922.jpg&v=1779982930000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7583710319734803734\" data-video-id=\"7583710319734803734\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7583710319734803734\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n 360 g de farine blanche"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n 40 g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n 5 g de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 9 g de levure instantanée"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 180 ml de lait tiède"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n 2 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n 50 g de beurre mou"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n 1 cuillère à café de vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n 150-200 g de pâte à tartiner au chocolat"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n Sucre pour l&rsquo;enrobage"
-            }
-        ],
-        "steps": [
-            "Mélangez la farine, le sucre, le sel et la levure, puis ajoutez les œufs, la vanille et le lait et pétrissez.",
-            "Ajoutez le beurre et pétrissez jusqu&rsquo;à ce que la pâte soit lisse (environ 10 minutes). Laissez-la lever pendant 1 heure dans un endroit chaud. Façonnez des boules et laissez-les reposer dans un endroit chaud pendant 30 à 40 minutes. Faites-les ensuite frire à feu moyen jusqu&rsquo;à ce qu&rsquo;elles soient dorées, enrobez-les de sucre et garnissez-les de chocolat."
-        ],
-        "tags": [
-            "Italie",
-            "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "5774",
         "title": "Prépare tes makis rapidement",
         "description": "L&rsquo;utilisateur a testé une recette virale et partage son expérience ou les résultats de son essai.",
@@ -28639,6 +28623,97 @@ export const mockRecipes: Recipe[] = [
             "pomme de terre",
             "poulet",
             "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "4719",
+        "title": "Choux vanille caramel",
+        "description": "Une recette classique de choux à la crème, garnis d&rsquo;une onctueuse crème pâtissière à la vanille et d&rsquo;une crème montée, le tout dans une pâte à choux légère et dorée.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fchou.jpeg&v=1774887970000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7476140592100150550\" data-video-id=\"7476140592100150550\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7476140592100150550\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n 50 cl de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n 1 gousse de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 50 gr de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 4 jaunes d&rsquo;œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 45 gr de maïzena"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 50 gr de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 150 gr de crème entière 30% mg bien froide"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n 250 gr d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n 80 gr de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 1 pincée de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n 150 gr de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 4 œufs"
+            }
+        ],
+        "steps": [
+            "Bouillir le lait avec la gousse de vanille grattée.",
+            "Mélanger le sucre avec les jaunes d&rsquo;œufs et la maïzena.",
+            "Ajouter le lait bouillant au mélange sucre/jaunes/maïzena, puis remettre le tout sur le feu et porter à ébullition en remuant constamment jusqu&rsquo;à épaississement.",
+            "Retirer du feu, puis ajouter le beurre et mélanger jusqu&rsquo;à incorporation.",
+            "Filmer la crème pâtissière au contact et laisser refroidir complètement.",
+            "Fouetter la crème pâtissière refroidie pour la lisser.",
+            "Monter la crème entière bien froide en chantilly.",
+            "Incorporer délicatement la crème montée à la crème pâtissière fouettée.",
+            "Bouillir l&rsquo;eau avec le beurre, le sel et le sucre.",
+            "Hors du feu, ajouter la farine en une seule fois et mélanger vivement.",
+            "Remettre la casserole sur feu moyen et dessécher la pâte pendant quelques secondes en remuant constamment, jusqu&rsquo;à ce qu&rsquo;elle se décolle des parois.",
+            "Verser la pâte dans un saladier et laisser tiédir.",
+            "Ajouter les œufs un par un, en fouettant bien après chaque ajout, jusqu&rsquo;à l&rsquo;obtention d&rsquo;une pâte lisse et homogène.",
+            "Pocher la pâte à choux sur une plaque recouverte de papier sulfurisé, en formant des petits choux.",
+            "Enfourner à 180°C pendant environ 30 minutes, jusqu&rsquo;à ce qu&rsquo;ils soient bien dorés et gonflés.",
+            "Garnir les choux refroidis avec la crème vanille."
+        ],
+        "tags": [
+            "Famille",
+            "France"
         ],
         "isFeatured": false,
         "isFavorite": false,
