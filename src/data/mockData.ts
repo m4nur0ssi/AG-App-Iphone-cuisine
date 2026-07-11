@@ -2,11 +2,38 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/07/2026 05:38:44
+ * Dernière mise à jour: 11/07/2026 09:15:02
  * Total: 518 recettes
  */
-export const exportSyncId = "1783748324449";
+export const exportSyncId = "1783761302299";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6745",
+        "title": "Le Balthazar",
+        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Fresto_6745_1_1783760962280.jpg&v=1783768222000",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" style=\"max-width: 605px; min-width: 325px;\" cite=\"https://www.tiktok.com/v/7242779213143559451\" data-video-id=\"7242779213143559451\">\n<section><a title=\"@tiktok\" href=\"https://www.tiktok.com/v/7242779213143559451\" target=\"_blank\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a></section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Le Balthazar"
+        ],
+        "tags": [
+            "resto-brasserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6747",
         "title": "Technique de cuisson de la côte de bœuf",
@@ -311,33 +338,6 @@ export const mockRecipes: Recipe[] = [
             "Pas cher",
             "Rafraîchissements",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6745",
-        "title": "Le Balthazar",
-        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "restaurant",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" style=\"max-width: 605px; min-width: 325px;\" cite=\"https://www.tiktok.com/v/7242779213143559451\" data-video-id=\"7242779213143559451\">\n<section><a title=\"@tiktok\" href=\"https://www.tiktok.com/v/7242779213143559451\" target=\"_blank\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a></section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Le Balthazar"
-        ],
-        "tags": [
-            "resto-brasserie"
         ],
         "isFeatured": false,
         "isFavorite": false,
