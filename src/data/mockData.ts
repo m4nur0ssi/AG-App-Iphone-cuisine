@@ -2,11 +2,344 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/07/2026 10:27:26
- * Total: 518 recettes
+ * Dernière mise à jour: 11/07/2026 11:18:21
+ * Total: 523 recettes
  */
-export const exportSyncId = "1783765646072";
+export const exportSyncId = "1783768701358";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6793",
+        "title": "Brochettes de poulet marinées à la mexicaine",
+        "description": "Une recette facile et rapide de brochettes de poulet marinées avec des épices mexicaines, parfaites pour l&rsquo;été. Elles peuvent être cuites au barbecue, à la plancha ou à l&rsquo;Air Fryer et sont accompagnées d&rsquo;une sauce crémeuse.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7660914350630210848\" data-video-id=\"7660914350630210848\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7660914350630210848\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             Blancs de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Mélange d&rsquo;épices à la mexicaine"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Purée de tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de ketchup allégé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100 g de skyr ou de yaourt grec"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 grosse cuillère à soupe de concentré de tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de sirop d&rsquo;agave"
+            }
+        ],
+        "steps": [
+            "Commencez par couper les blancs de poulet en gros cubes.",
+            "Dans un saladier, ajoutez le poulet, l&rsquo;huile d&rsquo;olive, le sel, le mélange d&rsquo;épices, la purée de tomates et le ketchup allégé. Mélangez bien afin que la marinade enrobe parfaitement le poulet, puis réservez au réfrigérateur pendant au moins 15 minutes.",
+            "Pendant ce temps, préparez la sauce en mélangeant le skyr ou le yaourt grec, le concentré de tomates, le mélange d&rsquo;épices à la mexicaine, le sirop d&rsquo;agave et le sel. N&rsquo;hésitez pas à ajuster les épices selon vos goûts.",
+            "Sortez le poulet du réfrigérateur et enfilez les cubes sur des piques à brochettes. Faites-les cuire avec le mode de cuisson de votre choix (barbecue, plancha ou Air Fryer).",
+            "Conseil : Vous pouvez aussi les cuire à l&rsquo;Air Fryer pendant 15 minutes à 175 °C, en les retournant à mi-cuisson."
+        ],
+        "tags": [
+            "airfryer",
+            "barbecue",
+            "épicé",
+            "Healthy",
+            "Mexique",
+            "Sauces",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6791",
+        "title": "Mini Citrons Kawaii Trompe-l&rsquo;œil Glacés",
+        "description": "Il fait super chaud alors profitez de ces citrons givrés pour vous rafraîchir ! Ultra crémeux, fondants avec un cœur bien acidulé, c'est le dessert parfait pour bluffer tout le monde. Pensez à enregistrer la publication !",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7661194608705162528\" data-video-id=\"7661194608705162528\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7661194608705162528\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             20 cl de crème liquide entière (30% MG)"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             50 g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             190 g de lait concentré sucré froid"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1 cuillère à café d'arôme citron"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 cuillère à café de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             50 g de lait concentré sucré"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             25 g de jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Zeste d'un demi citron"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1 goutte d'arôme citron"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 goutte de colorant orange (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             130 g de chocolat blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             130 g de beurre de cacao"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Colorant jaune liposoluble (Option : bombe velours jaune)"
+            }
+        ],
+        "steps": [
+            "Pour le cœur : Mélanger tous les ingrédients et réserver.",
+            "Pour la crème : Fouetter tous les ingrédients au batteur jusqu'à obtenir une mousse ferme.",
+            "Pour le montage : Dans un moule citron en silicone, pocher de la crème, creuser le centre, ajouter 1 cuillère à café de cœur acidulé, puis refermer avec de la crème. Lisser et placer au congélateur toute la nuit.",
+            "Pour le glaçage : Fondre le chocolat blanc et le beurre de cacao avec le colorant (utiliser entre 34°C et 38°C). Démouler les citrons congelés et les plonger directement dedans. Astuce chef : Pour l'effet peau de citron, donner un coup de bombe de flocage jaune, puis un passage très rapide de chalumeau pour le relief."
+        ],
+        "tags": [
+            "Les Glaces",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6789",
+        "title": "Liégeois vanille",
+        "description": "La preuve qu'un dessert n'a pas besoin d'en faire trop pour être inoubliable. Ce Liégeois vanille se compose d&rsquo;une crème vanille onctueuse et d&rsquo;une chantilly vanille mascarpone légère, parfait pour une touche de gourmandise.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7660935748312501537\" data-video-id=\"7660935748312501537\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7660935748312501537\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             500 ml de lait demi-écrémé"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             100 ml de crème liquide entière (30 % MG)"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             2 gousses de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             70 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             4 jaunes d'œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             35 g de maïzena"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             200 ml de crème liquide entière bien froide"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             50 g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             35 g de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             Vanille en poudre ou pâte de vanille"
+            }
+        ],
+        "steps": [
+            "Fendez les gousses de vanille en deux et grattez les graines.",
+            "Dans une casserole, faites chauffer le lait, la crème liquide, les graines et les gousses de vanille avec la pincée de sel jusqu'à frémissement.",
+            "Coupez le feu et laissez infuser 10 à 15 minutes.",
+            "Pendant ce temps, fouettez les jaunes d'œufs avec le sucre.",
+            "Ajoutez la maïzena et mélangez jusqu'à obtenir une préparation lisse.",
+            "Retirez les gousses de vanille puis versez progressivement le mélange chaud sur les œufs tout en fouettant.",
+            "Reversez le tout dans la casserole et faites cuire à feu moyen sans cesser de mélanger jusqu'à épaississement.",
+            "Répartissez la crème dans les pots, filmez au contact puis laissez refroidir avant de placer au réfrigérateur pendant au moins 4 heures.",
+            "Une fois bien froide, fouettez légèrement la crème quelques secondes afin de lui redonner une texture encore plus onctueuse.",
+            "Montez la crème liquide bien froide avec le mascarpone, le sucre glace et la vanille jusqu'à obtenir une chantilly ferme et aérienne.",
+            "Pochez généreusement la chantilly sur les liégeois bien froids.",
+            "Terminez avec quelques graines de vanille pour encore plus de gourmandise."
+        ],
+        "tags": [
+            "Desserts",
+            "France"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6787",
+        "title": "Tomates farcies d&rsquo;été",
+        "description": "Une recette rafraîchissante et facile de tomates farcies au thon et fromage frais, idéale pour les chaudes journées d&rsquo;été et la canicule.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7661195255097707809\" data-video-id=\"7661195255097707809\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7661195255097707809\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍅\n             2 grosses tomates côtelées"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 boîte de fromage frais"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 petite échalote"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 petite boîte de thon (93g égoutté)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cuillères à soupe de fromage blanc 0%"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Zestes de citron jaune bio"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus d'1/2 citron"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Velours de balsamique"
+            }
+        ],
+        "steps": [
+            "Lavez les tomates. Coupez un chapeau et videz-les délicatement à l&rsquo;aide d&rsquo;une petite cuillère. Salez l&rsquo;intérieur et retournez-les sur du papier absorbant pour qu&rsquo;elles dégorgent.",
+            "Dans un bol, mélangez le fromage frais, l&rsquo;échalote finement ciselée, le thon égoutté et émietté, le fromage blanc 0%, les zestes et le jus de citron.",
+            "Ajoutez la ciboulette fraîche ciselée, salez et poivrez. Mélangez bien l&rsquo;ensemble.",
+            "Farcissez généreusement les tomates avec la préparation.",
+            "Arrosez d&rsquo;un filet d&rsquo;huile d&rsquo;olive et d&rsquo;un trait de velours de balsamique avant de servir. Dégustez frais."
+        ],
+        "tags": [
+            "Healthy",
+            "minceur",
+            "Poissons et crustacés",
+            "Salades",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6785",
+        "title": "felicità 🇮🇹 c'est vraiment à faire si vous êtes sur par",
+        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7118750545715809542\" data-video-id=\"7118750545715809542\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7118750545715809542\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "📍La felicità 🇮🇹 c'est vraiment à faire si vous êtes sur paris ❤️ #adresseparis #sortiraparis #pourtoi #foodtiktok #paris #restaurantparis #italianfood"
+        ],
+        "tags": [
+            "resto-italien"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "163",
         "title": "Japonais Ippudo",
