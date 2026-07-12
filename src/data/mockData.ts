@@ -2,11 +2,62 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/07/2026 05:54:08
- * Total: 529 recettes
+ * Dernière mise à jour: 12/07/2026 10:37:50
+ * Total: 530 recettes
  */
-export const exportSyncId = "1783835648261";
+export const exportSyncId = "1783852670318";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6807",
+        "title": "Œufs durs croustillants au fromage et chorizo",
+        "description": "Découvrez une nouvelle façon savoureuse de déguster les œufs durs. Cette recette propose des moitiés d&rsquo;œufs cuites sur une base croustillante de fromage doré, garnies de mayonnaise épicée, de dés de chorizo grillés et de basilic frais.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "entrees",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7661541819687210273\" data-video-id=\"7661541819687210273\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7661541819687210273\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Fromage râpé (de votre choix)"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Mayonnaise"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Sriracha"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             Chorizo"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Basilic frais"
+            }
+        ],
+        "steps": [
+            "Cuire les œufs dans l&rsquo;eau bouillante pendant 8 minutes (ils ne doivent pas être complètement durs), puis les plonger dans l&rsquo;eau glacée.",
+            "Déposer des petits tas de fromage râpé dans une poêle chaude et y placer les moitiés d&rsquo;œufs par-dessus. Retirer les œufs dès que le fromage est bien doré et croustillant.",
+            "Garnir les œufs de mayonnaise épicée (mélange de mayonnaise et Sriracha), de dés de chorizo bien grillés et d&rsquo;une feuille de basilic frais."
+        ],
+        "tags": [
+            "Entrées",
+            "épicé",
+            "Espagne"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6805",
         "title": "Poulet avec Riz Épicé",
