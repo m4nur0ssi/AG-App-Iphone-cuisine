@@ -2,11 +2,63 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/07/2026 10:42:48
- * Total: 530 recettes
+ * Dernière mise à jour: 12/07/2026 10:56:07
+ * Total: 532 recettes
  */
-export const exportSyncId = "1783852968878";
+export const exportSyncId = "1783853767548";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6809",
+        "title": "Fondant au chocolat à la mascarpone de Cyril Lignac",
+        "description": "Une recette de fondant au chocolat à la mascarpone, inspirée de Cyril Lignac, parfaite pour un moule de 20 cm.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7660582035660016928\" data-video-id=\"7660582035660016928\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7660582035660016928\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧀\n             250 g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             200 g de chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             4 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             60 g de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             40 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             100 g de tablette de chocolat noir (pour le glaçage)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             50 g de beurre (pour le glaçage)"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "France",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6807",
         "title": "Œufs durs croustillants au fromage et chorizo",
@@ -35875,6 +35927,70 @@ export const mockRecipes: Recipe[] = [
             "facile",
             "poulet",
             "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "3921",
+        "title": "Pommes de terre grenailles au parmesan et gruyère",
+        "description": "Un accompagnement gourmand et facile à réaliser, parfait pour un barbecue, avec des pommes de terre grenailles rôties au four, enrobées d&rsquo;épices et gratinées au parmesan et gruyère.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fpommes-de-terre-parmesan-H.jpeg&v=1774446589000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7390476713433599264\" data-video-id=\"7390476713433599264\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7390476713433599264\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n 500g de pommes de terre grenaille"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n 1 c.à.c de piment d'espelette"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 1 c.à.c de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n 40 ml d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n 50 g de parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 30 g de gruyère"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n persil"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n thym"
+            }
+        ],
+        "steps": [
+            "Lavez et séchez les pommes de terre grenaille (sans les éplucher).",
+            "Dans un saladier, coupez les pommes de terre puis versez l'huile d'olive, le paprika, le piment, le persil ciselé, le thym et le sel.",
+            "Mélangez les pommes de terre jusqu'à ce qu'elles soient bien enrobées du mélange.",
+            "Dans un plat allant au four, parsemez le fond de parmesan puis de gruyère, puis étalez les pommes de terre grenaille.",
+            "Préchauffez votre four à 180 °C et enfournez environ 35 minutes."
+        ],
+        "tags": [
+            "barbecue",
+            "France"
         ],
         "isFeatured": false,
         "isFavorite": false,
