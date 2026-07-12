@@ -2,11 +2,149 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/07/2026 11:25:23
- * Total: 535 recettes
+ * Dernière mise à jour: 12/07/2026 17:03:21
+ * Total: 542 recettes
  */
-export const exportSyncId = "1783855524004";
+export const exportSyncId = "1783875802008";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6821",
+        "title": "Sandwich aux œufs et crudités",
+        "description": "Découvrez comment préparer un délicieux sandwich aux œufs et crudités, agrémenté d&rsquo;une mayonnaise maison onctueuse au yaourt grec. Une recette simple et rapide, parfaite pour un repas équilibré et savoureux, servie dans du pain de mie grillé.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7490625111716826390\" data-video-id=\"7490625111716826390\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7490625111716826390\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             6 œufs durs"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs (crus, pour la mayonnaise)"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             2 cuillères à soupe de moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 yaourt grec"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe de vinaigre blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Céleri finement coupé"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignons verts émincés"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             4 tranches de pain de mie American Sandwich Rustique d'Harrys"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil frais haché"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             Quelques feuilles de salade"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika (optionnel)"
+            }
+        ],
+        "steps": [
+            "Préparez la mayonnaise maison : Mixez 2 œufs crus, 2 cuillères à soupe d'huile d'olive, 1 cuillère à soupe de moutarde, 2 cuillères à soupe de yaourt grec et 2 cuillères à soupe de vinaigre blanc jusqu'à obtenir une mayonnaise onctueuse.",
+            "Dans un bol, mélangez les 6 œufs durs écrasés, la mayonnaise préparée, le reste du yaourt grec, la moutarde restante et le jus de citron.",
+            "Incorporez le céleri finement coupé, les oignons verts émincés et la ciboulette hachée.",
+            "Assaisonnez avec du sel et du poivre.",
+            "Dans un autre bol, mélangez l'huile d'olive avec la gousse d'ail hachée et le persil frais haché. Salez et poivrez.",
+            "Badigeonnez une face des 4 tranches de pain de mie avec ce mélange, puis faites dorer chaque face à la poêle pendant 3 à 4 minutes.",
+            "Hors du feu, déposez le mélange aux œufs sur une tranche de pain de mie grillé Harrys.",
+            "Ajoutez quelques feuilles de salade et refermez avec une autre tranche de pain.",
+            "Optionnel : Ajoutez une pincée de paprika avant de refermer votre sandwich."
+        ],
+        "tags": [
+            "Healthy",
+            "Sandwichs",
+            "USA",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6819",
+        "title": "Glaçons de citron ou de citron vert",
+        "description": "Découvrez une astuce simple pour éviter que vos boissons, comme le cola, ne soient diluées par la glace. Il suffit de congeler des tranches de citron ou de citron vert et de les utiliser comme glaçons pour rafraîchir vos boissons sans en altérer le g",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7661252383795612960\" data-video-id=\"7661252383795612960\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7661252383795612960\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍋\n             Citrons"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Citrons verts"
+            }
+        ],
+        "steps": [
+            "Couper des citrons ou des citrons verts en tranches.",
+            "Placer les tranches d&rsquo;agrumes dans un congélateur jusqu&rsquo;à ce qu&rsquo;elles soient complètement congelées.",
+            "Utiliser les tranches d&rsquo;agrumes congelées comme glaçons dans des boissons (comme le cola) pour les rafraîchir sans les diluer."
+        ],
+        "tags": [
+            "Astuces",
+            "Healthy",
+            "Pas cher",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6817",
         "title": "Salade de lentilles fraîches, mozza et lardons grillés",
@@ -14157,6 +14295,87 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
+        "id": "3991",
+        "title": "Riz jaune du Moyen-Orient",
+        "description": "Un délicieux riz jaune du Moyen-Orient, parfumé au curcuma et au thym, agrémenté de légumes (carotte, céleri, oignon), d&rsquo;amandes grillées et de raisins secs. Une recette végétarienne et saine, parfaite comme plat principal ou accompagnement.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Friz.jpg&v=1781968582000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7339944050939809056\" data-video-id=\"7339944050939809056\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7339944050939809056\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍚\n             300g riz long grain"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cuillères à soupe d&rsquo;amandes rôties hachées"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cuillères à soupe de raisins trempés"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 petite racine de céleri"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             1 carotte"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 cuillère à soupe de persil haché"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1/2 cuillère à café de curcuma"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             2 brins de thym"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             450 ml d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             5 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel (à goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre (à goût)"
+            }
+        ],
+        "steps": [
+            "1. Faites sauter l&rsquo;oignon haché dans l&rsquo;huile d&rsquo;olive jusqu&rsquo;à ce qu&rsquo;il soit translucide. Ensuite, ajoutez le riz et faites cuire jusqu&rsquo;à ce qu&rsquo;il soit également transparent.",
+            "2. Pendant ce temps, portez l&rsquo;eau à ébullition avec le curcuma, la carotte et le céleri coupés en petits cubes, le sel, le poivre et le thym.",
+            "3. Lorsque l&rsquo;eau commence à bouillir, versez le mélange sur le riz, incorporez, couvrez d&rsquo;un linge, mettez le couvercle et relevez les bords du linge sur le couvercle. SOYEZ TRÈS PRUDENT avec le linge pour qu&rsquo;il ne prenne pas feu.",
+            "4. Faites bouillir à feu vif pendant 1 minute, puis faites cuire à feu doux pendant 22 minutes.",
+            "5. Saupoudrez d&rsquo;amandes, de persil et de raisins, mélangez bien et servez. Bon appétit !"
+        ],
+        "tags": [
+            "Healthy",
+            "Orient",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
         "id": "4005",
         "title": "Kefta au tahini au four",
         "description": "Un plat parfumé, fondant et ultra savoureux.",
@@ -21716,6 +21935,126 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
+        "id": "5858",
+        "title": "Gâteau moelleux noisette &#038; chocolat",
+        "description": "Un gâteau sans gluten, moelleux, sans matière grasse ajoutée et sucré naturellement au sirop de Yacon. Léger et délicieux.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fcake.jpg&v=1780583991000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7549975345097608470\" data-video-id=\"7549975345097608470\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7549975345097608470\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n 3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 150ml lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 100g poudre noisette"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n 100g farine (avoine ou flocons mixés)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 60g de sucrant au choix (sirop de yacon)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 CC sachet levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n 80g pépites de chocolat (60g pour la pâte, 20g pour le dessus)"
+            }
+        ],
+        "steps": [
+            "Mélanger les 3 œufs, 150ml de lait, 100g de poudre de noisette, 100g de farine (avoine ou flocons mixés), 60g de sucrant (sirop de yacon) et 1 CC de levure chimique.",
+            "Incorporer 60g de pépites de chocolat à la préparation.",
+            "Verser la pâte dans un moule de 20cm de diamètre.",
+            "Ajouter les 20g restants de pépites de chocolat sur le dessus.",
+            "Cuire au four préchauffé à 180 degrés pendant 30 minutes.",
+            "Laisser tiédir environ 30 minutes avant de démouler et déguster."
+        ],
+        "tags": [
+            "Healthy",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5852",
+        "title": "Tartine méditerranéenne d&rsquo;olives",
+        "description": "Un dip méditerranéen savoureux et facile à préparer, parfait pour accompagner du pain. Il est composé d&rsquo;huile d&rsquo;olive, de vinaigre balsamique, d&rsquo;olives vertes, de tomates séchées, de parmesan, de persil, d&rsquo;ail et de flocons de",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fmediterr.jpg&v=1780583854000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7628705178992020758\" data-video-id=\"7628705178992020758\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7628705178992020758\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍾\n Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n Vinaigre balsamique"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Olives vertes"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n Tomates séchées"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Persil"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n Ail (1 gousse)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Flocons de piment"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Apéritifs",
+            "épicé",
+            "Grèce",
+            "Healthy",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
         "id": "5854",
         "title": "Le radis beurre comme une fleur",
         "description": "Une recette de radis au beurre présentés en forme de fleur, inspirée par le chef Jean-François Piège, idéale pour l&rsquo;apéritif.",
@@ -28030,6 +28369,98 @@ export const mockRecipes: Recipe[] = [
             "France",
             "Pas cher",
             "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5126",
+        "title": "Astuce pour préparer un poivron",
+        "description": "Découvrez une méthode simple et efficace pour couper et nettoyer un poivron rapidement, minimisant le gaspillage et le désordre.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Fr-varietes-poivrons-couleurs-139254272as-662fdd6021b08.jpg&v=1776350302000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/6928474585725734149\" data-video-id=\"6928474585725734149\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/6928474585725734149\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌶️\n 1 poivron"
+            }
+        ],
+        "steps": [
+            "Couper les deux extrémités du poivron.",
+            "Faire une incision verticale sur un côté du poivron.",
+            "Dérouler le poivron à plat et retirer facilement le cœur et les graines.",
+            "Couper le poivron en lanières ou en dés selon l&rsquo;utilisation souhaitée."
+        ],
+        "tags": [
+            "Astuces",
+            "Healthy",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5129",
+        "title": "Bouillis de Tapioca",
+        "description": "Un classique dessert en Afrique de l'Ouest et Centrale.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2FCoconut-Tapioca-Pudding.jpg&v=1776349498000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7603042682176441623\" data-video-id=\"7603042682176441623\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7603042682176441623\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "💧\n 30cl d'eau"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 160g de tapioca"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 20cl lait de coco"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n Sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n arôme vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Menthe"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n cannelle"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n citronnelle"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n gingembre"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Afrique"
         ],
         "isFeatured": false,
         "isFavorite": false,
