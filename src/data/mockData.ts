@@ -2,11 +2,562 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/07/2026 17:03:21
- * Total: 542 recettes
+ * Dernière mise à jour: 12/07/2026 17:21:56
+ * Total: 544 recettes
  */
-export const exportSyncId = "1783875802008";
+export const exportSyncId = "1783876916965";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6835",
+        "title": "Chili Cheese Maison",
+        "description": "Une version maison des célèbres Chili Cheese de Burger King, réputée encore meilleure et plus économique. Ces bouchées croustillantes au cœur fondant et épicé sont parfaites pour l&rsquo;apéritif.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7650545690245893409\" data-video-id=\"7650545690245893409\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7650545690245893409\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧀\n             150 g de cheddar râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             80 g de fromage frais à tartiner"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 petit piment jalapeño"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             Chapelure panko"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de tournesol ou de colza"
+            }
+        ],
+        "steps": [
+            "Coupez le jalapeño en tout petits dés puis mélangez-le avec le cheddar râpé et le fromage frais à tartiner.",
+            "Assaisonnez légèrement puis formez des petites boules avec le mélange.",
+            "Placez les boules au réfrigérateur pendant au moins 30 minutes pour qu'elles se raffermissent.",
+            "Passez chaque boule dans la farine, puis dans l'œuf battu et enfin dans la chapelure panko.",
+            "Faites chauffer l'huile (de tournesol ou de colza) puis plongez les chili cheese quelques minutes jusqu'à ce qu'ils soient bien dorés.",
+            "Égouttez-les sur du papier absorbant et servez-les immédiatement."
+        ],
+        "tags": [
+            "Accompagnements",
+            "épicé",
+            "Pas cher",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6833",
+        "title": "Salade de tomates sauce crémeuse pistou (inspirée de la Panzanella)",
+        "description": "Une salade de tomates fraîches et variées, agrémentée de croûtons croustillants à l&rsquo;ail et au thym, le tout nappé d&rsquo;une sauce crémeuse au basilic, pignons de pin et yaourt grec, inspirée de la Panzanella italienne.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7651611234588052769\" data-video-id=\"7651611234588052769\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7651611234588052769\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomates anciennes (cœur de bœuf, verte, ananas noire de Crimée)"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             3 tranches de pain de campagne"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Thym"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 échalote ciselée"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 bouquet de basilic"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pignons de pin"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Origan"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de yaourt grec"
+            }
+        ],
+        "steps": [
+            "Couper les tomates anciennes en quartiers.",
+            "Dans un saladier, mélanger les tomates avec l'échalote ciselée et l'origan.",
+            "Faire torréfier les pignons de pin dans une poêle sèche pendant 2 minutes. Réserver.",
+            "Couper le pain de campagne en petits croûtons.",
+            "Dans une poêle, faire revenir les croûtons dans de l'huile d'olive avec une gousse d'ail écrasée et du thym jusqu&rsquo;à ce qu&rsquo;ils soient dorés et croustillants.",
+            "Préparer la sauce : dans un mixeur, combiner 1 bouquet de basilic, 4-5 cuillères à soupe d'huile d'olive, du sel, 1 gousse d'ail, une partie des pignons de pin torréfiés et 1 cuillère à soupe de yaourt grec. Mixer jusqu&rsquo;à obtenir une sauce crémeuse.",
+            "Verser la sauce sur la salade de tomates et mélanger délicatement.",
+            "Ajouter les croûtons et le reste des pignons de pin torréfiés juste avant de servir."
+        ],
+        "tags": [
+            "Healthy",
+            "Italie",
+            "Salades",
+            "Sauces",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6831",
+        "title": "Salade d&rsquo;orzo, halloumi et sauce crémeuse à l&rsquo;avocat",
+        "description": "Une salade fraîche et légère, idéale pour les journées chaudes. Elle combine de l&rsquo;orzo, du halloumi grillé, des légumes croquants et une sauce onctueuse à l&rsquo;avocat, parfaite pour une recette anti-canicule.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7655435290026282273\" data-video-id=\"7655435290026282273\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7655435290026282273\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             200 g d&rsquo;orzo"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Halloumi coupé en cubes"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             10 tomates séchées en morceaux"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon rouge émincé finement"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Basilic"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pignons de pin"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 courgette taillée en tagliatelles"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             Roquette"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Origan"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Piment (pointe)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Miel"
+            },
+            {
+                "quantity": "",
+                "name": "🥑\n             1 avocat"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 à 2 cuillères de yaourt"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            }
+        ],
+        "steps": [
+            "Taillez la courgette en tagliatelles et faites-la revenir quelques minutes dans de l&rsquo;huile d&rsquo;olive avec du sel, du poivre, de l&rsquo;origan, du basilic et une pointe de piment.",
+            "Cuisez l&rsquo;orzo. Faites revenir le halloumi avec un peu de miel et une pointe de piment si vous aimez. Mélangez le tout.",
+            "Pour la sauce : mixez un avocat avec 1 à 2 cuillères de yaourt, du sel, du jus de citron et un peu d&rsquo;huile d&rsquo;olive. À défaut de mixeur, écrasez bien à la fourchette."
+        ],
+        "tags": [
+            "épicé",
+            "Grèce",
+            "Healthy",
+            "pates",
+            "Salades",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6829",
+        "title": "Salade de pommes de terre, haricots verts et thon",
+        "description": "Une salade fraîche et savoureuse à base de pommes de terre, haricots verts, thon et œufs durs, relevée par une sauce onctueuse au yaourt grec et cornichons, idéale pour l&rsquo;été.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7656931243350625569\" data-video-id=\"7656931243350625569\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7656931243350625569\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             700 g de pommes de terre à chair ferme"
+            },
+            {
+                "quantity": "",
+                "name": "🫘\n             250 g de haricots verts frais"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 petit oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 boîte de thon au naturel"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 œufs durs"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             8 tiges de ciboulette"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Olives noires à la grecque dénoyautées coupées en rondelles"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cuillères à soupe de yaourt grec"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à café de moutarde fine"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à café de mayonnaise"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cornichons hachés en petits morceaux"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Un filet d&rsquo;huile d&rsquo;olive"
+            }
+        ],
+        "steps": [
+            "Faire cuire les pommes de terre avec leur peau dans de l'eau salée pendant 30 à 35 minutes, jusqu&rsquo;à ce qu&rsquo;elles soient tendres.",
+            "Retirer la peau des pommes de terre et les couper en quartiers.",
+            "Équeuter les haricots verts et les cuire 5 à 7 minutes dans l'eau bouillante.",
+            "Plonger immédiatement les haricots verts dans l'eau glacée pour fixer leur couleur.",
+            "Émincer l'oignon rouge et la ciboulette.",
+            "Préparer la sauce : dans un bol, mélanger 2 cuillères à soupe de yaourt grec, 1 cuillère à café de moutarde fine, 1 cuillère à café de mayonnaise, la ciboulette ciselée, le jus de citron, les 2 cornichons hachés en petits morceaux et 1 œuf dur coupé en petits morceaux.",
+            "Dans un grand saladier, mélanger les pommes de terre coupées, les haricots verts, l&rsquo;oignon rouge émincé, le thon égoutté et les olives noires en rondelles.",
+            "Assaisonner la salade avec la sauce préparée et bien mélanger.",
+            "Ajouter les 2 œufs durs restants coupés en deux à la fin, et arroser d&rsquo;un filet d'huile d'olive."
+        ],
+        "tags": [
+            "Grèce",
+            "Healthy",
+            "Pas cher",
+            "Poissons et crustacés",
+            "Salades",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6827",
+        "title": "Sandwich grillé aux pêches et cheddar blanc",
+        "description": "Un sandwich grillé original et gourmand, associant la douceur des pêches caramélisées au miel, le fondant du cheddar blanc et la fraîcheur de la roquette, le tout entre deux tranches de pain croustillant. Parfait pour un repas léger et savoureux.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7659069255278759200\" data-video-id=\"7659069255278759200\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7659069255278759200\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             2-3 pêches jaunes coupées en quartiers"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             2 bonnes tranches de cheddar blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             4 tranches d&rsquo;un bon pain (idéalement rond et au levain)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre demi-sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Un peu de poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             Roquette"
+            }
+        ],
+        "steps": [
+            "Faire revenir les pêches 2-3 minutes par face avec le miel et une pointe de poivre.",
+            "Beurrer l&rsquo;extérieur des tranches de pain.",
+            "Sur l&rsquo;intérieur d&rsquo;une tranche de pain, déposer un peu de roquette, le cheddar et les pêches, puis refermer avec l&rsquo;autre tranche.",
+            "Bien griller le sandwich sur les deux faces et déguster, par exemple avec une bonne salade."
+        ],
+        "tags": [
+            "Sandwichs",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6825",
+        "title": "Salade croquante d&rsquo;été",
+        "description": "Si simple... si bon. Préparation/Actif : 10 min.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7640320176222670093\" data-video-id=\"7640320176222670093\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7640320176222670093\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             Laitue iceberg"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n             2 concombres"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             10-15 tomates cerises"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 boîte de maïs"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème aigre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan"
+            }
+        ],
+        "steps": [
+            "Laver et couper la laitue iceberg.",
+            "Couper les concombres, les tomates cerises et le demi-oignon rouge.",
+            "Hacher le persil.",
+            "Égoutter la boîte de maïs.",
+            "Dans un grand saladier, mélanger la laitue, les concombres, les tomates, l&rsquo;oignon, le persil et le maïs.",
+            "Assaisonner la salade avec de l&rsquo;huile d&rsquo;olive, du sel et du paprika.",
+            "Pour la vinaigrette, mélanger la crème aigre, le sel, le poivre noir, l&rsquo;ail en poudre, le jus de citron et le parmesan dans un petit bol.",
+            "Verser la vinaigrette sur la salade et bien mélanger avant de servir."
+        ],
+        "tags": [
+            "Healthy",
+            "Salades",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6823",
+        "title": "Potatoes croustillantes au miel et parmesan",
+        "description": "Découvrez une recette facile et rapide de potatoes maison, croustillantes et savoureuses, assaisonnées de paprika, ail, piment, miel et parmesan. Parfaites pour accompagner vos plats ou à déguster en apéritif avec une sauce au fromage blanc et herbes",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7661676127219502369\" data-video-id=\"7661676127219502369\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7661676127219502369\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             800 g de pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             3 cuillères à soupe d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1,5 cuillère à café de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 cuillère à café d'ail en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1/2 cuillère à café de piment"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1,5 cuillère à soupe de maïzena"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             2 cuillères à soupe de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             2 cuillères à soupe de parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fromage blanc (pour le service)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Herbes de Provence (pour le service)"
+            }
+        ],
+        "steps": [
+            "Lavez et coupez les pommes de terre en quartiers ou en frites épaisses.",
+            "Dans un grand saladier, mélangez les pommes de terre avec l&rsquo;huile d&rsquo;olive, le paprika, l&rsquo;ail en poudre, le piment, la maïzena, le miel, le parmesan et le sel. Assurez-vous que toutes les pommes de terre soient bien enrobées.",
+            "Étalez les pommes de terre assaisonnées sur une plaque de cuisson recouverte de papier sulfurisé, en une seule couche.",
+            "Faites cuire au four préchauffé à 200°C pendant 40 minutes, ou jusqu&rsquo;à ce qu&rsquo;elles soient dorées et croustillantes.",
+            "Servez chaud, éventuellement accompagné de fromage blanc et d&rsquo;herbes de Provence."
+        ],
+        "tags": [
+            "Accompagnements",
+            "épicé",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6821",
         "title": "Sandwich aux œufs et crudités",
@@ -14295,87 +14846,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "3991",
-        "title": "Riz jaune du Moyen-Orient",
-        "description": "Un délicieux riz jaune du Moyen-Orient, parfumé au curcuma et au thym, agrémenté de légumes (carotte, céleri, oignon), d&rsquo;amandes grillées et de raisins secs. Une recette végétarienne et saine, parfaite comme plat principal ou accompagnement.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Friz.jpg&v=1781968582000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7339944050939809056\" data-video-id=\"7339944050939809056\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7339944050939809056\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍚\n             300g riz long grain"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 cuillères à soupe d&rsquo;amandes rôties hachées"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 cuillères à soupe de raisins trempés"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 petite racine de céleri"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🥕\n             1 carotte"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 cuillère à soupe de persil haché"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1/2 cuillère à café de curcuma"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             2 brins de thym"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             450 ml d&rsquo;eau"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             5 cuillères à soupe d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel (à goût)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre (à goût)"
-            }
-        ],
-        "steps": [
-            "1. Faites sauter l&rsquo;oignon haché dans l&rsquo;huile d&rsquo;olive jusqu&rsquo;à ce qu&rsquo;il soit translucide. Ensuite, ajoutez le riz et faites cuire jusqu&rsquo;à ce qu&rsquo;il soit également transparent.",
-            "2. Pendant ce temps, portez l&rsquo;eau à ébullition avec le curcuma, la carotte et le céleri coupés en petits cubes, le sel, le poivre et le thym.",
-            "3. Lorsque l&rsquo;eau commence à bouillir, versez le mélange sur le riz, incorporez, couvrez d&rsquo;un linge, mettez le couvercle et relevez les bords du linge sur le couvercle. SOYEZ TRÈS PRUDENT avec le linge pour qu&rsquo;il ne prenne pas feu.",
-            "4. Faites bouillir à feu vif pendant 1 minute, puis faites cuire à feu doux pendant 22 minutes.",
-            "5. Saupoudrez d&rsquo;amandes, de persil et de raisins, mélangez bien et servez. Bon appétit !"
-        ],
-        "tags": [
-            "Healthy",
-            "Orient",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "4005",
         "title": "Kefta au tahini au four",
         "description": "Un plat parfumé, fondant et ultra savoureux.",
@@ -21935,126 +22405,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "5858",
-        "title": "Gâteau moelleux noisette &#038; chocolat",
-        "description": "Un gâteau sans gluten, moelleux, sans matière grasse ajoutée et sucré naturellement au sirop de Yacon. Léger et délicieux.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fcake.jpg&v=1780583991000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7549975345097608470\" data-video-id=\"7549975345097608470\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7549975345097608470\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n 3 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 150ml lait"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 100g poudre noisette"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n 100g farine (avoine ou flocons mixés)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 60g de sucrant au choix (sirop de yacon)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 1 CC sachet levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n 80g pépites de chocolat (60g pour la pâte, 20g pour le dessus)"
-            }
-        ],
-        "steps": [
-            "Mélanger les 3 œufs, 150ml de lait, 100g de poudre de noisette, 100g de farine (avoine ou flocons mixés), 60g de sucrant (sirop de yacon) et 1 CC de levure chimique.",
-            "Incorporer 60g de pépites de chocolat à la préparation.",
-            "Verser la pâte dans un moule de 20cm de diamètre.",
-            "Ajouter les 20g restants de pépites de chocolat sur le dessus.",
-            "Cuire au four préchauffé à 180 degrés pendant 30 minutes.",
-            "Laisser tiédir environ 30 minutes avant de démouler et déguster."
-        ],
-        "tags": [
-            "Healthy",
-            "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5852",
-        "title": "Tartine méditerranéenne d&rsquo;olives",
-        "description": "Un dip méditerranéen savoureux et facile à préparer, parfait pour accompagner du pain. Il est composé d&rsquo;huile d&rsquo;olive, de vinaigre balsamique, d&rsquo;olives vertes, de tomates séchées, de parmesan, de persil, d&rsquo;ail et de flocons de",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Fmediterr.jpg&v=1780583854000",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7628705178992020758\" data-video-id=\"7628705178992020758\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7628705178992020758\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍾\n Huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n Vinaigre balsamique"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n Olives vertes"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n Tomates séchées"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n Parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n Persil"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n Ail (1 gousse)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n Flocons de piment"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Apéritifs",
-            "épicé",
-            "Grèce",
-            "Healthy",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "5854",
         "title": "Le radis beurre comme une fleur",
         "description": "Une recette de radis au beurre présentés en forme de fleur, inspirée par le chef Jean-François Piège, idéale pour l&rsquo;apéritif.",
@@ -28369,98 +28719,6 @@ export const mockRecipes: Recipe[] = [
             "France",
             "Pas cher",
             "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5126",
-        "title": "Astuce pour préparer un poivron",
-        "description": "Découvrez une méthode simple et efficace pour couper et nettoyer un poivron rapidement, minimisant le gaspillage et le désordre.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Fr-varietes-poivrons-couleurs-139254272as-662fdd6021b08.jpg&v=1776350302000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/6928474585725734149\" data-video-id=\"6928474585725734149\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/6928474585725734149\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌶️\n 1 poivron"
-            }
-        ],
-        "steps": [
-            "Couper les deux extrémités du poivron.",
-            "Faire une incision verticale sur un côté du poivron.",
-            "Dérouler le poivron à plat et retirer facilement le cœur et les graines.",
-            "Couper le poivron en lanières ou en dés selon l&rsquo;utilisation souhaitée."
-        ],
-        "tags": [
-            "Astuces",
-            "Healthy",
-            "Pas cher",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5129",
-        "title": "Bouillis de Tapioca",
-        "description": "Un classique dessert en Afrique de l'Ouest et Centrale.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2FCoconut-Tapioca-Pudding.jpg&v=1776349498000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7603042682176441623\" data-video-id=\"7603042682176441623\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7603042682176441623\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "💧\n 30cl d'eau"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 160g de tapioca"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 20cl lait de coco"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n Sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n arôme vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n Menthe"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n cannelle"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n citronnelle"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n gingembre"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Afrique"
         ],
         "isFeatured": false,
         "isFavorite": false,
