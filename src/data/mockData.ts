@@ -2,11 +2,381 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/07/2026 10:56:07
- * Total: 532 recettes
+ * Dernière mise à jour: 12/07/2026 11:16:01
+ * Total: 535 recettes
  */
-export const exportSyncId = "1783853767548";
+export const exportSyncId = "1783854961299";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6817",
+        "title": "Salade de lentilles fraîches, mozza et lardons grillés",
+        "description": "Une salade fraîche, simple et gourmande aux herbes du sud, parfaite pour les déjeuners ensoleillés, avec une vinaigrette au Melfor.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "entrees",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7650931979755523361\" data-video-id=\"7650931979755523361\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7650931979755523361\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             200 g de lentilles vertes"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             200 g de lardons grillés"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             1 grosse mozzarella"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             2 poignées de tomates cerises"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 bouquet de basilic frais"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 échalote émincée"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             60 ml d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             40 ml de vinaigre de Melfor (ou vinaigre de cidre / Xérès avec une touche de miel)"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Le jus d&rsquo;un citron vert"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             3 pincées de fleur de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 c. à c. de romarin"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 c. à c. d&rsquo;herbes de Provence"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ½ c. à c. d&rsquo;origan"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             ½ c. à c. de thym"
+            }
+        ],
+        "steps": [
+            "Dans un récipient, mélangez l&rsquo;huile d&rsquo;olive, le Melfor, le jus de citron vert, le sel, le poivre et le mix d&rsquo;herbes séchées. Ajoutez l&rsquo;échalote finement ciselée.",
+            "Coupez les tomates cerises en deux, la mozzarella en dés et ciselez le basilic frais. Faites griller vos lardons à la poêle jusqu&rsquo;à ce qu&rsquo;ils soient bien croustillants.",
+            "Dans un grand saladier, réunissez les lentilles cuites à l'eau et refroidies, les lardons, le combo tomates/mozzarella et le basilic. Versez la vinaigrette et mélangez généreusement."
+        ],
+        "tags": [
+            "France",
+            "Healthy",
+            "Salades",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6815",
+        "title": "Salade de poulet asiatique croquante avec vinaigrette crémeuse aux cacahuètes",
+        "description": "Fraîche, croquante et pleine de saveurs ! Cette salade de poulet asiatique est garnie de légumes croquants, de mangue juteuse, de poulet tendre et d&rsquo;une vinaigrette crémeuse maison aux cacahuètes. Parfaite pour un déjeuner rapide ou un dîner lé",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7659607052318149919\" data-video-id=\"7659607052318149919\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7659607052318149919\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥫\n             ¼ tasse de sauce soja légère"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             ¼ tasse d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cuillères à soupe de graines de sésame grillées"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à café de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 à 3 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de flocons de piment, ou selon le goût"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus d&rsquo;½ citron"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe d&rsquo;huile de sésame (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             1 cuillère à soupe de vinaigre de riz (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             1 cuillère à soupe de beurre de cacahuètes"
+            },
+            {
+                "quantity": "",
+                "name": "🍗\n             200 g de blanc de poulet bouilli, effiloché"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             1 carotte moyenne, coupée en julienne"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ¼ de petit chou rouge, finement émincé"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             ½ poivron rouge, finement émincé"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n             1 grand concombre ou 1½ mini concombres"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 mangue mûre, finement tranchée"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 oignons verts, émincés"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             ¼ tasse de coriandre fraîche, hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ¼ tasse de cacahuètes grillées, concassées (facultatif)"
+            }
+        ],
+        "steps": [
+            "Préparer les légumes : Couper la carotte et le concombre en julienne. Émincer finement le chou, le poivron, la mangue et les oignons verts. Hacher la coriandre. Effilocher ou trancher le poulet bouilli.",
+            "Saler les légumes : Dans un grand bol, mélanger le chou, la carotte, le poivron et le concombre. Saupoudrer d&rsquo;½ cuillère à café de sel et laisser reposer 5 minutes. Égoutter tout excès de liquide si nécessaire.",
+            "Préparer la vinaigrette : Mélanger au mixeur ou fouetter la sauce soja, l&rsquo;huile d&rsquo;olive, les graines de sésame, le beurre de cacahuètes, le miel, l&rsquo;ail, le jus de citron, l&rsquo;huile de sésame (si utilisée) et le vinaigre de riz (si utilisé) jusqu&rsquo;à obtenir une consistance lisse. Incorporer les flocons de piment selon le goût.",
+            "Assembler la salade : Ajouter la mangue, les oignons verts, la coriandre et le poulet effiloché aux légumes. Verser la vinaigrette sur la salade et mélanger jusqu&rsquo;à ce que tout soit bien enrobé.",
+            "Servir : Saupoudrer les cacahuètes grillées concassées sur le dessus et servir immédiatement pour une saveur optimale. Astuce : Pour encore plus de saveur, laisser la salade reposer 10 minutes avant de servir afin que la vinaigrette puisse imprégner les légumes."
+        ],
+        "tags": [
+            "Asie",
+            "épicé",
+            "Healthy",
+            "Salades",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6813",
+        "title": "Salade parisienne",
+        "description": "Une salade fraîche et complète inspirée de Paris, composée de jambon, emmental, œufs, légumes et pommes de terre, accompagnée d&rsquo;une sauce mayonnaise allégée au yaourt grec.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7657211259170950432\" data-video-id=\"7657211259170950432\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7657211259170950432\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥓\n             2 tranches de jambon blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30g d'emmental"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             5-6 cornichons"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 champignons de Paris"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1-2 tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n             6 petites pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Salade (laitue ou mélange de jeunes pousses)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 jaune d'œuf (pour la sauce)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à café de vinaigre (pour la sauce)"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de moutarde à l'ancienne (pour la sauce)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             2 cuillères à soupe d'huile d'olive (pour la sauce)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             3 cuillères à soupe de yaourt grec (pour la sauce)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            }
+        ],
+        "steps": [
+            "Les étapes de préparation sont à suivre dans la vidéo."
+        ],
+        "tags": [
+            "France",
+            "Healthy",
+            "Salades",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6811",
+        "title": "Salade de pommes de terre garnie",
+        "description": "Une salade de pommes de terre garnie ultra crémeuse, fraîche, riche en protéines et parfaite pour la chaleur. Une recette simple et gourmande pour manger sainement et perdre du gras.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7661358430317235489\" data-video-id=\"7661358430317235489\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7661358430317235489\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             500 g de pommes de terre grenaille"
+            },
+            {
+                "quantity": "",
+                "name": "🍗\n             250 g de filet de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200 g de Carré Frais 0 %"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50 g de skyr nature"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 à 40 g d'allumettes de bacon"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n             80 g de concombre"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             40 g d'oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            }
+        ],
+        "steps": [
+            "1. Faire cuire les pommes de terre, puis les couper en deux.",
+            "2. Les faire dorer à la poêle avec du paprika fumé, de l&rsquo;ail, du sel et du poivre (facultatif).",
+            "3. Faire cuire le poulet puis l&rsquo;effilocher.",
+            "4. Faire griller le bacon jusqu'à ce qu'il soit croustillant.",
+            "5. Mixer le Carré Frais, le skyr, la moutarde, le citron, les épices et la ciboulette.",
+            "6. Mélanger les pommes de terre froides, le poulet, le concombre, l'oignon rouge et la sauce.",
+            "7. Terminer avec le bacon croustillant, un peu de ciboulette et du paprika fumé."
+        ],
+        "tags": [
+            "Healthy",
+            "minceur",
+            "Salades",
+            "USA",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6809",
         "title": "Fondant au chocolat à la mascarpone de Cyril Lignac",
@@ -35927,70 +36297,6 @@ export const mockRecipes: Recipe[] = [
             "facile",
             "poulet",
             "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "3921",
-        "title": "Pommes de terre grenailles au parmesan et gruyère",
-        "description": "Un accompagnement gourmand et facile à réaliser, parfait pour un barbecue, avec des pommes de terre grenailles rôties au four, enrobées d&rsquo;épices et gratinées au parmesan et gruyère.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2Fpommes-de-terre-parmesan-H.jpeg&v=1774446589000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7390476713433599264\" data-video-id=\"7390476713433599264\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7390476713433599264\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍎\n 500g de pommes de terre grenaille"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n 1 c.à.c de piment d'espelette"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n 1 c.à.c de paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n 40 ml d'huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n 50 g de parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 30 g de gruyère"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n persil"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n thym"
-            }
-        ],
-        "steps": [
-            "Lavez et séchez les pommes de terre grenaille (sans les éplucher).",
-            "Dans un saladier, coupez les pommes de terre puis versez l'huile d'olive, le paprika, le piment, le persil ciselé, le thym et le sel.",
-            "Mélangez les pommes de terre jusqu'à ce qu'elles soient bien enrobées du mélange.",
-            "Dans un plat allant au four, parsemez le fond de parmesan puis de gruyère, puis étalez les pommes de terre grenaille.",
-            "Préchauffez votre four à 180 °C et enfournez environ 35 minutes."
-        ],
-        "tags": [
-            "barbecue",
-            "France"
         ],
         "isFeatured": false,
         "isFavorite": false,
