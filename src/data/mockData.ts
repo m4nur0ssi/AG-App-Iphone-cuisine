@@ -2,11 +2,87 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 13/07/2026 17:55:00
- * Total: 550 recettes
+ * Dernière mise à jour: 13/07/2026 19:35:26
+ * Total: 551 recettes
  */
-export const exportSyncId = "1783965300198";
+export const exportSyncId = "1783971326203";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6857",
+        "title": "Liégeois praliné ultra crémeux",
+        "description": "Une recette de Liégeois praliné maison, avec une crème onctueuse au praliné noisette-amande et une chantilly vanille-mascarpone légère, parfaite pour un dessert gourmand.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7645342786807418144\" data-video-id=\"7645342786807418144\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7645342786807418144\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             500 ml de lait demi-écrémé"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             100 ml de crème liquide entière 30%"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             120 g de praliné noisette-amande"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             55 à 65 g de sucre (selon le praliné utilisé)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             4 jaunes d'œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             35 g de maïzena"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             200 ml de crème liquide entière bien froide"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             50 g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             35 g de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             Vanille en poudre"
+            }
+        ],
+        "steps": [
+            "Préparer la crème praliné : Dans un saladier, fouettez les jaunes d'œufs avec le sucre.",
+            "Ajoutez la maïzena et mélangez jusqu'à obtenir une préparation lisse.",
+            "Dans une casserole, faites chauffer le lait, la crème liquide et le praliné jusqu'à ce que le mélange soit bien homogène.",
+            "Versez progressivement le liquide chaud sur le mélange œufs/sucre/maïzena tout en fouettant.",
+            "Remettez le tout dans la casserole puis faites cuire à feu moyen sans cesser de mélanger jusqu'à épaississement.",
+            "Versez dans un plat ou directement dans les pots, filmez au contact puis laissez refroidir avant de placer au frais minimum 4 heures.",
+            "Une fois bien frais, vous pouvez repasser un petit coup de fouet dans la crème pour la rendre encore plus onctueuse.",
+            "Préparer la chantilly : Montez la crème liquide bien froide avec le mascarpone, le sucre glace et la vanille jusqu'à obtenir une chantilly ferme et aérienne.",
+            "Pochez ou déposez généreusement la chantilly sur les liégeois bien froids."
+        ],
+        "tags": [
+            "Desserts",
+            "France"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6785",
         "title": "felicità 🇮🇹 c'est vraiment à faire si vous êtes sur par",
