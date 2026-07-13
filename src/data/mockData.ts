@@ -2,11 +2,38 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 13/07/2026 12:03:38
+ * Dernière mise à jour: 13/07/2026 17:50:00
  * Total: 550 recettes
  */
-export const exportSyncId = "1783944218107";
+export const exportSyncId = "1783965000756";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6785",
+        "title": "felicità 🇮🇹 c'est vraiment à faire si vous êtes sur par",
+        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Fresto_6785_1_1783964201643.jpg&v=1783971611000",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7118750545715809542\" data-video-id=\"7118750545715809542\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7118750545715809542\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "📍La felicità 🇮🇹 c'est vraiment à faire si vous êtes sur paris ❤️ #adresseparis #sortiraparis #pourtoi #foodtiktok #paris #restaurantparis #italianfood"
+        ],
+        "tags": [
+            "resto-italien"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6847",
         "title": "Vinaigrette express en 2 minutes",
@@ -2282,33 +2309,6 @@ export const mockRecipes: Recipe[] = [
             "Poissons et crustacés",
             "Salades",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6785",
-        "title": "felicità 🇮🇹 c'est vraiment à faire si vous êtes sur par",
-        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "restaurant",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7118750545715809542\" data-video-id=\"7118750545715809542\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7118750545715809542\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "📍La felicità 🇮🇹 c'est vraiment à faire si vous êtes sur paris ❤️ #adresseparis #sortiraparis #pourtoi #foodtiktok #paris #restaurantparis #italianfood"
-        ],
-        "tags": [
-            "resto-italien"
         ],
         "isFeatured": false,
         "isFavorite": false,
