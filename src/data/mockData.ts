@@ -2,11 +2,60 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 13/07/2026 06:06:59
- * Total: 547 recettes
+ * Dernière mise à jour: 13/07/2026 11:47:59
+ * Total: 549 recettes
  */
-export const exportSyncId = "1783922819619";
+export const exportSyncId = "1783943279807";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6843",
+        "title": "Cigarettes russes",
+        "description": "Une recette classique de cigarettes russes, idéale pour les révisions du CAP pâtissier. Le secret de leur croustillant réside dans le roulage immédiat après la sortie du four, lorsqu&rsquo;elles sont encore souples.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7661670440917536032\" data-video-id=\"7661670440917536032\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7661670440917536032\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             125 g de beurre mou"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             125 g de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             125 g de blancs d'œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             125 g de poudre d'amandes"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             125 g de farine"
+            }
+        ],
+        "steps": [
+            "Mélange le beurre mou et le sucre glace.",
+            "Incorpore les blancs d'œufs progressivement.",
+            "Ajoute la poudre d'amandes et la farine, puis mélange jusqu'à obtenir une pâte lisse.",
+            "Étaler la pâte dans des chablons.",
+            "Enfourner à 200°C pendant 4 minutes.",
+            "Dès la sortie du four, rouler immédiatement les biscuits autour d'une baguette avant qu'ils ne refroidissent."
+        ],
+        "tags": [
+            "France",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6841",
         "title": "Gâteau Mathilda",
@@ -21971,6 +22020,72 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Salades",
             "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5987",
+        "title": "Pâtes Verte",
+        "description": "Une recette de pâtes végétariennes rapides et saines, à base d&rsquo;épinards, d&rsquo;amandes et de parmesan.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2F36c8feab-63fd-47ea-b7ac-ffc84e4a27a1.jpg&v=1780662021000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7455366486719352086\" data-video-id=\"7455366486719352086\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7455366486719352086\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍝\n 250g pâtes"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n 100g pousse d'épinards"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 20g amandes"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n 10g parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n 10ml huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n Ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Paprika"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n 20ml d'eau"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Healthy",
+            "Italie",
+            "pates",
+            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
