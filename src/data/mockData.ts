@@ -2,22 +2,22 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/07/2026 15:50:22
+ * Dernière mise à jour: 14/07/2026 16:43:20
  * Total: 552 recettes
  */
-export const exportSyncId = "1784044222679";
+export const exportSyncId = "1784047400690";
 export const mockRecipes: Recipe[] = [
     {
-        "id": "6859",
-        "title": "Santa Carne",
-        "description": "",
-        "image": "/images/recipe-placeholder.jpg",
+        "id": "1187",
+        "title": "Il Venezia",
+        "description": "                                               Au Venezia à Paris, pas un plat typique ne manque à la carte. Vous pouvez alors vous composer un véritable repas italien, comme on en mange à Rome, Naples ou encore Florence : en entrée antipasti, puis p",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2022%2F09%2Fvenezia-restaurant-italien-paris-12-1024x684-2.jpeg&v=1784053888000",
         "category": "restaurant",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7288755601222552865\" data-video-id=\"7288755601222552865\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7288755601222552865\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "",
         "ingredients": [
             {
                 "quantity": "",
@@ -25,7 +25,140 @@ export const mockRecipes: Recipe[] = [
             }
         ],
         "steps": [
-            "📍Santa Carne - Paris 🇫🇷 •Martini framboise 🍸- 13€ • Strawberry chili margarita 🍓- 13€ • Empenadas bœuf &#038; provolone, oignons, tomates, origan 🥟 - 10€ • Crevettes à l'ail 🦐 - 12€ • Ceviche de la casa - 18€ • Noix d'entrecôte 🥩 - 36€ • L'assiette du chef 👨🏼‍🍳 - 42€ • Crème brûlée au maté🧉- 9€ • Pampita 🍫 - 11€ • Tiramisu au whisky 🍮 - 9€ #santacarne #paris #france #restaurant #restaurantparis #restaurantargentin #argentinrestaurant #argentine #specialite #viande #viandeargentine #meat #boeuf #beef #empenadas #crevette #ceviche #moelleuxauchocolat #chocolat #tiramisu #whisky #cremebrulee #maté #dessert #birthday #food #foodie #foodtiktok #bonneadresse #bonneadresseparis #discover #explore #fyp #pourtoi #viral #laufood"
+            "                                        ",
+            "Au Venezia à Paris, pas un plat typique ne manque à la carte. Vous pouvez alors vous composer un véritable repas italien, comme on en mange à Rome, Naples ou encore Florence : en entrée antipasti, puis penne calabrese, et enfin en dessert le traditionnel tiramisu. Buon appetito !",
+            "UN REPAS SANS CHICHIS - L'Italie, c'est avant tout de la convivialité et une ambiance familiale. Des valeurs que ce restaurant n'a pas oubliées ! Une décoration et des mets sans prétention, pour vous sentir aussi à l'aise qu'à la maison.",
+            "UN CADRE ACCUEILLANT - Le Venezia se dévoile dans toute sa simplicité et l'on peut alors profiter de tout le charme d'un véritable restaurant italien",
+            "Mon plat préféré : l&rsquo;escalope panée aux spaghettis à la sauce tomate ou Scaloppina di Vitello alla Milanaise",
+            " l&rsquo;accueil, ça parle italien, la déco, les plats, la retransmission des matchs de foot, le prix",
+            "Celle à côté de la tv, au fond 😉",
+            "3 rue Corbineau, 75012 Paris",
+            "Metro Bercy (M6, M14) - Bus Bercy (24, 87)",
+            "TheFork, a Trip advisor company"
+        ],
+        "tags": [
+            "Venezia"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "3108",
+        "title": "Bianca - Brunch à Paris",
+        "description": "Proche de la Place de la Bourse et de la Bibliothèque Nationale de France Richelieu, le restaurant Bianca présente un brunch qui est présenté sous forme de buffet à volonté installé dans la première salle spacieuse à l&rsquo;entrée du restaurant. ...",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧄\n Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Proche de la Place de la Bourse et de la Bibliothèque Nationale de France Richelieu, le restaurant Bianca présente un brunch qui est présenté sous forme de buffet à volonté installé dans la première salle spacieuse à l&rsquo;entrée du restaurant. On y retrouve des classiques de la cuisine italienne ainsi que des grands classiques du brunch.",
+            "Au buffet des entrées, vous trouverez des Arancinis et différentes verrines d&rsquo;Antipasti, d&rsquo;Houmous et de salades de poissons marinés (Poulpe mariné et écrasé de pommes de terre, Saumon mariné). Des fromages (Burrata, Stracciatella) et différentes sortes de charcuteries italiennes découpées sous vos yeux sont également proposés. Nous avons adoré pouvoir goûter cette large sélection d&rsquo;entrées proposée en petites verrines de dégustation.",
+            "À la demande, différentes recettes d&rsquo;œufs brouillés (Truffe, Saumon, Bacon ou Nature) sont également disponibles. Nous avons eu un vrai coup de cœur pour le poêlon d&rsquo;œufs brouillés à la truffe.",
+            "Du côté du buffet chaud, nous sommes tout de suite attirés par la bonne odeur des pizzas à la part (Regina, Margarita, 4 fromages, Truffe) présentées à côté de différents beignets de légumes. Juste à côté, Lasagnes à la bolognaise, Raviolis aux cèpes, Gnocchis à la truffe et différentes recettes de pâtes nous attendent bien sûr.",
+            "Pour le sucré, nous avons le choix entre des verrines de Panna Cotta et de fruits frais, un beau plat de Tiramisu dans lequel vous pourrez directement vous servir, des muffins et macarons, ainsi qu&rsquo;une sélection de viennoiseries, de pains et confitures. Nous avons eu un vrai coup de cœur pour le Muffin aux myrtilles.",
+            "Le vrai plus : le stand de pancakes minute. Pancakes salés garnis de bacon, sirop d&rsquo;érable et œuf au plat ou Pancakes sucrés avec Nutella et fruits frais, c&rsquo;est vous qui choisissez !",
+            "Pour les boissons, direction le bar où une sélection de boissons chaudes est à votre disposition en libre-service (café, thé noir, chaï latte et chocolat chaud). À la demande, de très bons jus de fruits frais sont au choix. Nous avons adoré les mix de fruits, surtout le pomme-gingembre-ananas.",
+            "Mon plat préféré : tout est bon !",
+            "l&rsquo;accueil, l&rsquo;ambiance, la musique",
+            "pas de soda compris dans le brunch à 39€",
+            "peu importe, la déco est très sympa 😉",
+            "2 rue du 4 septembre, 75002 Paris"
+        ],
+        "tags": [
+            "bianca",
+            "italien"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "1300",
+        "title": "Joji",
+        "description": "    Joji est un restaurant asiatique et plus particulièrement japonais. Nous ne sommes pas ici dans un restaurant avec buffet autour duquel vous trouverez des frites et des nuggets. Vous ne trouverez pas non plus de sushi, de maki ou de brochettes au",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Fresto_1300_1_1783711966931.jpg&v=1784053811000",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Joji est un restaurant asiatique et plus particulièrement japonais. Nous ne sommes pas ici dans un restaurant avec buffet autour duquel vous trouverez des frites et des nuggets. Vous ne trouverez pas non plus de sushi, de maki ou de brochettes au fromage.",
+            "ici, vous vous trouvez dans un restaurant chaleureusement décoré avec du bois et de la musique. La cuisine y est soignée et typique. L&rsquo;accueil est très sympa et aux petits soins.",
+            "Mon plat préféré : Croquettes d'effiloché de porc au kimchi, sauce Haixian",
+            " l'accueil, l'ambiance, la musique, le visuel des plats",
+            "  Un peu cher, pas le meilleur japonais pour moi",
+            "5 Rue de Turenne, 75004 Paris, France",
+            "https://www.instagram.com/joji_bistro/"
+        ],
+        "tags": [],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6785",
+        "title": "Felicità",
+        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Fresto_6785_1_1783964201643.jpg&v=1784053745000",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7118750545715809542\" data-video-id=\"7118750545715809542\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7118750545715809542\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "📍La felicità 🇮🇹 c'est vraiment à faire si vous êtes sur paris ❤️ #adresseparis #sortiraparis #pourtoi #foodtiktok #paris #restaurantparis #italianfood"
+        ],
+        "tags": [
+            "resto-italien"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6859",
+        "title": "Santa Carne",
+        "description": "",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Fresto_6859_1_1784045595472.jpeg&v=1784053584000",
+        "category": "restaurant",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" style=\"max-width: 605px; min-width: 325px;\" cite=\"https://www.tiktok.com/v/7288755601222552865\" data-video-id=\"7288755601222552865\">\n<section><a title=\"@tiktok\" href=\"https://www.tiktok.com/v/7288755601222552865\" target=\"_blank\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a></section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "📍Santa Carne - Paris 🇫🇷 •Martini framboise 🍸- 13€ • Strawberry chili margarita 🍓- 13€ • Empenadas bœuf & provolone, oignons, tomates, origan 🥟 - 10€ • Crevettes à l'ail 🦐 - 12€ • Ceviche de la casa - 18€ • Noix d'entrecôte 🥩 - 36€ • L'assiette du chef 👨🏼‍🍳 - 42€ • Crème brûlée au maté🧉- 9€ • Pampita 🍫 - 11€ • Tiramisu au whisky 🍮 - 9€ #santacarne #paris #france #restaurant #restaurantparis #restaurantargentin #argentinrestaurant #argentine #specialite #viande #viandeargentine #meat #boeuf #beef #empenadas #crevette #ceviche #moelleuxauchocolat #chocolat #tiramisu #whisky #cremebrulee #maté #dessert #birthday #food #foodie #foodtiktok #bonneadresse #bonneadresseparis #discover #explore #fyp #pourtoi #viral #laufood"
         ],
         "tags": [
             "resto-brasserie"
@@ -105,33 +238,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Desserts",
             "France"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6785",
-        "title": "felicità 🇮🇹 c'est vraiment à faire si vous êtes sur par",
-        "description": "Découvrez cette pépite culinaire venue tout droit de TikTok !",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Fresto_6785_1_1783964201643.jpg&v=1783971611000",
-        "category": "restaurant",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7118750545715809542\" data-video-id=\"7118750545715809542\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7118750545715809542\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "📍La felicità 🇮🇹 c'est vraiment à faire si vous êtes sur paris ❤️ #adresseparis #sortiraparis #pourtoi #foodtiktok #paris #restaurantparis #italianfood"
-        ],
-        "tags": [
-            "resto-italien"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -2814,37 +2920,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "resto-salon-de-the"
         ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "1300",
-        "title": "Joji - Paris 4",
-        "description": "    Joji est un restaurant asiatique et plus particulièrement japonais. Nous ne sommes pas ici dans un restaurant avec buffet autour duquel vous trouverez des frites et des nuggets. Vous ne trouverez pas non plus de sushi, de maki ou de brochettes au",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Fresto_1300_1_1783711966931.jpg&v=1783719330000",
-        "category": "restaurant",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Joji est un restaurant asiatique et plus particulièrement japonais. Nous ne sommes pas ici dans un restaurant avec buffet autour duquel vous trouverez des frites et des nuggets. Vous ne trouverez pas non plus de sushi, de maki ou de brochettes au fromage.",
-            "ici, vous vous trouvez dans un restaurant chaleureusement décoré avec du bois et de la musique. La cuisine y est soignée et typique. L&rsquo;accueil est très sympa et aux petits soins.",
-            "Mon plat préféré : Croquettes d'effiloché de porc au kimchi, sauce Haixian",
-            "l'accueil, l'ambiance, la musique, le visuel des plats",
-            "Un peu cher, pas le meilleur japonais pour moi",
-            "5 Rue de Turenne, 75004 Paris, France",
-            "https://www.instagram.com/joji_bistro/"
-        ],
-        "tags": [],
         "isFeatured": false,
         "isFavorite": false,
         "address": ""
@@ -11784,45 +11859,6 @@ export const mockRecipes: Recipe[] = [
             "France",
             "Healthy",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "3108",
-        "title": "Bianca - Brunch à Paris (Bourse)",
-        "description": "Proche de la Place de la Bourse et de la Bibliothèque Nationale de France Richelieu, le restaurant Bianca présente un brunch qui est présenté sous forme de buffet à volonté installé dans la première salle spacieuse à l&rsquo;entrée du restaurant. ...",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "restaurant",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧄\n             Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Proche de la Place de la Bourse et de la Bibliothèque Nationale de France Richelieu, le restaurant Bianca présente un brunch qui est présenté sous forme de buffet à volonté installé dans la première salle spacieuse à l&rsquo;entrée du restaurant. On y retrouve des classiques de la cuisine italienne ainsi que des grands classiques du brunch.",
-            "Au buffet des entrées, vous trouverez des Arancinis et différentes verrines d&rsquo;Antipasti, d&rsquo;Houmous et de salades de poissons marinés (Poulpe mariné et écrasé de pommes de terre, Saumon mariné). Des fromages (Burrata, Stracciatella) et différentes sortes de charcuteries italiennes découpées sous vos yeux sont également proposés. Nous avons adoré pouvoir goûter cette large sélection d&rsquo;entrées proposée en petites verrines de dégustation.",
-            "À la demande, différentes recettes d&rsquo;œufs brouillés (Truffe, Saumon, Bacon ou Nature) sont également disponibles. Nous avons eu un vrai coup de cœur pour le poêlon d&rsquo;œufs brouillés à la truffe.",
-            "Du côté du buffet chaud, nous sommes tout de suite attirés par la bonne odeur des pizzas à la part (Regina, Margarita, 4 fromages, Truffe) présentées à côté de différents beignets de légumes. Juste à côté, Lasagnes à la bolognaise, Raviolis aux cèpes, Gnocchis à la truffe et différentes recettes de pâtes nous attendent bien sûr.",
-            "Pour le sucré, nous avons le choix entre des verrines de Panna Cotta et de fruits frais, un beau plat de Tiramisu dans lequel vous pourrez directement vous servir, des muffins et macarons, ainsi qu&rsquo;une sélection de viennoiseries, de pains et confitures. Nous avons eu un vrai coup de cœur pour le Muffin aux myrtilles.",
-            "Le vrai plus : le stand de pancakes minute. Pancakes salés garnis de bacon, sirop d&rsquo;érable et œuf au plat ou Pancakes sucrés avec Nutella et fruits frais, c&rsquo;est vous qui choisissez !",
-            "Pour les boissons, direction le bar où une sélection de boissons chaudes est à votre disposition en libre-service (café, thé noir, chaï latte et chocolat chaud). À la demande, de très bons jus de fruits frais sont au choix. Nous avons adoré les mix de fruits, surtout le pomme-gingembre-ananas.",
-            "Mon plat préféré : tout est bon !",
-            "l&rsquo;accueil, l&rsquo;ambiance, la musique",
-            "pas de soda compris dans le brunch à 39€",
-            "peu importe, la déco est très sympa 😉",
-            "2 rue du 4 septembre, 75002 Paris"
-        ],
-        "tags": [
-            "bianca",
-            "italien"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -39601,41 +39637,6 @@ export const mockRecipes: Recipe[] = [
             "facile",
             "gourmand",
             "rapide"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "1187",
-        "title": "Il Venezia - Paris 12",
-        "description": "    Au Venezia à Paris, pas un plat typique ne manque à la carte. Vous pouvez alors vous composer un véritable repas italien, comme on en mange à Rome, Naples ou encore Florence : en entrée antipasti, puis penne calabrese, et enfin en dessert le trad",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2022%2F09%2Fvenezia-restaurant-italien-paris-12-1024x684-2.jpeg&v=1664225429000",
-        "category": "restaurant",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Au Venezia à Paris, pas un plat typique ne manque à la carte. Vous pouvez alors vous composer un véritable repas italien, comme on en mange à Rome, Naples ou encore Florence : en entrée antipasti, puis penne calabrese, et enfin en dessert le traditionnel tiramisu. Buon appetito !",
-            "UN REPAS SANS CHICHIS - L'Italie, c'est avant tout de la convivialité et une ambiance familiale. Des valeurs que ce restaurant n'a pas oubliées ! Une décoration et des mets sans prétention, pour vous sentir aussi à l'aise qu'à la maison.",
-            "UN CADRE ACCUEILLANT - Le Venezia se dévoile dans toute sa simplicité et l'on peut alors profiter de tout le charme d'un véritable restaurant italien",
-            "Mon plat préféré : l&rsquo;escalope panée aux spaghettis à la sauce tomate ou Scaloppina di Vitello alla Milanaise",
-            "l&rsquo;accueil, ça parle italien, la déco, les plats, la retransmission des matchs de foot, le prix",
-            "Celle à côté de la tv, au fond 😉",
-            "3 rue Corbineau, 75012 Paris",
-            "Metro Bercy (M6, M14) - Bus Bercy (24, 87)",
-            "TheFork, a Trip advisor company"
-        ],
-        "tags": [
-            "Venezia"
         ],
         "isFeatured": false,
         "isFavorite": false,
