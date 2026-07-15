@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 15/07/2026 14:02:38
+ * Dernière mise à jour: 15/07/2026 14:37:39
  * Total: 558 recettes
  */
-export const exportSyncId = "1784124158814";
+export const exportSyncId = "1784126259050";
 export const mockRecipes: Recipe[] = [
     {
         "id": "6922",
         "title": "Smash Burger",
         "description": "Découvrez comment préparer de délicieux smash burgers maison avec des oignons caramélisés et une sauce spéciale. Une recette simple et rapide pour un repas gourmand.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6922_1784125023453.jpg&v=1784132261000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
