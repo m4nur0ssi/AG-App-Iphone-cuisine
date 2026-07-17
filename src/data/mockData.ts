@@ -2,119 +2,70 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 17/07/2026 05:40:34
- * Total: 579 recettes
+ * Dernière mise à jour: 17/07/2026 16:38:48
+ * Total: 578 recettes
  */
-export const exportSyncId = "1784266834154";
+export const exportSyncId = "1784306328632";
 export const mockRecipes: Recipe[] = [
     {
-        "id": "6969",
-        "title": "Plat de riz et viande hachée aux poivrons à la mexicaine",
-        "description": "Une recette facile et rapide pour un plat équilibré à base de riz, viande hachée, poivrons et saveurs mexicaines, idéale pour 3 repas.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
+        "id": "6963",
+        "title": "Tartelettes tatin courgettes, champignons, chèvre et miel",
+        "description": "Ces tartelettes tatin salées combinent la douceur des courgettes et du miel avec le caractère du chèvre et des champignons, le tout sur une pâte feuilletée croustillante. Parfaites pour un apéritif ou une entrée légère.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6963_1784304795264.jpg&v=1784312115000",
+        "category": "entrees",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7648235839662689568\" data-video-id=\"7648235839662689568\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7648235839662689568\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7663154006331624736\" data-video-id=\"7663154006331624736\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7663154006331624736\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🍚\n             150 g de riz long grain"
+                "name": "🌾\n             1 pâte feuilletée ou 4 petits carrés"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             350 g de viande hachée à 5% de matière grasse"
+                "name": "🥣\n             2 courgettes"
             },
             {
                 "quantity": "",
-                "name": "🌶️\n             4 poivrons"
+                "name": "🥣\n             Quelques champignons de Paris"
             },
             {
                 "quantity": "",
-                "name": "🧅\n             1 oignon rouge"
+                "name": "🧀\n             1 bûche de chèvre"
             },
             {
                 "quantity": "",
-                "name": "🍅\n             1 pot de concentré de tomates (70 g)"
+                "name": "🍯\n             Du miel"
             },
             {
                 "quantity": "",
-                "name": "🧄\n             1 cube de bouillon de volaille"
+                "name": "🥣\n             Des pignons de pin"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             Épices mexicaines"
+                "name": "🌿\n             Thym"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             Eau"
+                "name": "🍾\n             Huile d'olive"
             },
             {
                 "quantity": "",
-                "name": "🧀\n             Cheddar râpé"
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
             }
         ],
         "steps": [
             "Suivre les instructions dans la vidéo"
         ],
         "tags": [
-            "Healthy",
-            "Mexique"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6967",
-        "title": "Riz Pilaf",
-        "description": "Une recette simple et rapide de riz pilaf, un accompagnement savoureux et polyvalent, parfait pour compléter divers plats.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7643902063755218208\" data-video-id=\"7643902063755218208\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7643902063755218208\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍚\n             200g de riz basmati"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1/2 oignon jaune"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             40g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             350ml de bouillon (volaille, légume ou bœuf)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 bouquet garni"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 feuille de laurier"
-            }
-        ],
-        "steps": [
-            "Faire revenir le demi-oignon jaune haché dans le beurre fondu jusqu&rsquo;à ce qu&rsquo;il soit translucide.",
-            "Ajouter le riz basmati et le faire nacrer pendant 1 à 2 minutes, en remuant constamment.",
-            "Verser le bouillon (volaille, légume ou bœuf) et ajouter le bouquet garni et la feuille de laurier.",
-            "Porter à ébullition, puis réduire le feu, couvrir et laisser mijoter jusqu&rsquo;à ce que tout le liquide soit absorbé et que le riz soit cuit et moelleux (environ 15-20 minutes).",
-            "Retirer le bouquet garni et la feuille de laurier avant de servir."
-        ],
-        "tags": [
-            "Accompagnements",
-            "Orient",
-            "Pas cher",
+            "France",
+            "tarte",
             "Végé"
         ],
         "isFeatured": false,
@@ -125,7 +76,7 @@ export const mockRecipes: Recipe[] = [
         "id": "6965",
         "title": "Tarte aux poivrons, chèvre et miel",
         "description": "Une délicieuse tarte salée et végétarienne, parfaite pour l&rsquo;été, combinant la douceur des poivrons confits, le crémeux du fromage de chèvre et une touche sucrée de miel.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6965_1784304732404.jpg&v=1784311991000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -188,141 +139,10 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "6963",
-        "title": "Tartelettes tatin courgettes, champignons, chèvre et miel",
-        "description": "Ces tartelettes tatin salées combinent la douceur des courgettes et du miel avec le caractère du chèvre et des champignons, le tout sur une pâte feuilletée croustillante. Parfaites pour un apéritif ou une entrée légère.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "entrees",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7663154006331624736\" data-video-id=\"7663154006331624736\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7663154006331624736\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             1 pâte feuilletée ou 4 petits carrés"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 courgettes"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Quelques champignons de Paris"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             1 bûche de chèvre"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Du miel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Des pignons de pin"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Thym"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "France",
-            "tarte",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6961",
-        "title": "Bagel au saumon",
-        "description": "Une recette simple et fraîche de bagel au saumon, parfaite pour l&rsquo;été.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7646110679325216022\" data-video-id=\"7646110679325216022\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7646110679325216022\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🐟\n             Saumon fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fromage frais"
-            },
-            {
-                "quantity": "",
-                "name": "🥒\n             Concombre"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Ciboulette"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Aneth"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Citron"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            }
-        ],
-        "steps": [
-            "1. Déposez le fromage frais sur une planche à découper, puis ajoutez les tranches de saumon, les rondelles de concombre et d&rsquo;oignon rouge, la ciboulette, l&rsquo;aneth, un filet d&rsquo;huile d&rsquo;olive et du poivre. Il est inutile de saler, car le saumon et le fromage frais le sont déjà.",
-            "2. Hachez le tout et mélangez bien la préparation afin d&rsquo;obtenir un résultat homogène.",
-            "3. Coupez votre bagel en deux et tartinez la préparation sur une moitié.",
-            "4. Refermez avec l&rsquo;autre moitié. C&rsquo;est prêt, vous pouvez déguster."
-        ],
-        "tags": [
-            "Healthy",
-            "Poissons et crustacés",
-            "Sandwichs",
-            "USA",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "6959",
         "title": "Spaghetti au ragoût de poulpe",
         "description": "Un grand classique des côtes italiennes. La recette complète, avec toutes les astuces et les bonnes proportions, est disponible dans le livre Abbondante.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6959_1784304499407.jpg&v=1784311928000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -348,471 +168,10 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "6957",
-        "title": "Latte de Rêve au Nutella",
-        "description": "Un latte gourmand au Nutella, si délicieux qu&rsquo;il est impossible de revenir à un latte classique. Une boisson parfaite pour se faire plaisir !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7662116728083647774\" data-video-id=\"7662116728083647774\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7662116728083647774\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             1 à 2 cuillères à soupe de Nutella, ramolli (pour la garniture du verre)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Glaçons"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             240 ml (1 tasse) de lait froid"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 shots d&rsquo;espresso"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             120 ml (½ tasse) de crème épaisse"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             2 cuillères à soupe de Nutella (pour la crème nuage)"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             1 à 2 cuillères à soupe de lait (pour ajuster la consistance de la crème nuage)"
-            },
-            {
-                "quantity": "",
-                "name": "🥜\n             Noisettes concassées (pour le topping)"
-            }
-        ],
-        "steps": [
-            "1. Étaler le Nutella à l&rsquo;intérieur du verre.",
-            "2. Remplir le verre de glaçons.",
-            "3. Verser le lait froid sur les glaçons.",
-            "4. Préparer 2 shots d&rsquo;espresso et les verser par-dessus.",
-            "5. Fouetter la crème épaisse, le Nutella et un filet de lait jusqu&rsquo;à obtenir une consistance épaisse et mousseuse.",
-            "6. Garnir le latte de noisettes concassées.",
-            "7. Essayer de ne pas le boire d&rsquo;une seule traite."
-        ],
-        "tags": [
-            "Rafraîchissements",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6955",
-        "title": "Sandwich à la truite fumée et au fromage frais au zaatar",
-        "description": "Une recette coup de cœur pour un sandwich délicieux à la truite fumée et au fromage frais parfumé au zaatar, simple et rapide à préparer.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7656094914027080992\" data-video-id=\"7656094914027080992\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7656094914027080992\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Pain croustillant"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Truite fumée (tranches)"
-            },
-            {
-                "quantity": "",
-                "name": "🥒\n             1/2 concombre"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Quelques tomates séchées"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Pickles d&rsquo;oignons rouges"
-            },
-            {
-                "quantity": "",
-                "name": "🥗\n             Quelques feuilles de salade"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fromage frais"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 échalote émincée"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 c. à c. de Zaatar"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre du moulin"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Orient",
-            "Poissons et crustacés",
-            "Sandwichs"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6953",
-        "title": "Gâteau invisible jambon courgette",
-        "description": "Découvrez cette recette fraîche et légère de gâteau invisible aux courgettes, jambon blanc et chèvre frais, idéale pour les repas d&rsquo;été. Facile à préparer, elle demande un temps de repos au frais pour révéler toutes ses saveurs.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7662760543517691169\" data-video-id=\"7662760543517691169\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7662760543517691169\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             1 kg de courgettes"
-            },
-            {
-                "quantity": "",
-                "name": "🥓\n             4 tranches de jambon blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             3 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             20 cl de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             10 cl de crème liquide"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             80 g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             50 g de parmesan râpé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             150 g de chèvre frais"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Une pincée de muscade (facultatif)"
-            }
-        ],
-        "steps": [
-            "Préchauffez le four à 180°C.",
-            "Coupez les courgettes en très fines lamelles à l'aide d'une mandoline. Salez-les légèrement, laissez-les dégorger 15 à 20 minutes puis séchez-les.",
-            "Coupez le jambon blanc en petits morceaux.",
-            "Fouettez les œufs avec le lait et la crème. Ajoutez la farine, le parmesan, l'ail râpé, le poivre et la muscade.",
-            "Incorporez les courgettes, le jambon blanc et le chèvre émietté, puis mélangez délicatement pour bien enrober tous les ingrédients.",
-            "Versez la préparation dans un moule à cake.",
-            "Enfournez 45/50 minutes.",
-            "Laissez refroidir complètement puis placez au réfrigérateur au moins 4 heures, idéalement une nuit avant de déguster."
-        ],
-        "tags": [
-            "France",
-            "Healthy",
-            "minceur",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6951",
-        "title": "Curry de crevettes",
-        "description": "Une recette rapide et simple de curry de crevettes, qui peut également être réalisée avec du poulet. Ce plat savoureux est relevé par un mélange d&rsquo;épices cajun, du piment et du paprika fumé, et agrémenté de citron vert et de ciboulette ou coria",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7642393520979873057\" data-video-id=\"7642393520979873057\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7642393520979873057\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🦐\n             10 à 15 crevettes crues"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             10g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 gousses d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             3 cuillères à soupe de sauce tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             20cl de crème demi-épaisse"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             20cl de bouillon de volaille"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             20g de parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 cuillère à café d&rsquo;oignon en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à café d&rsquo;origan"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 cuillères à café d&rsquo;épices cajun"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1/2 citron vert"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Ciboulette ou coriandre"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Piment en poudre (pour l&rsquo;assaisonnement des crevettes)"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Ail en poudre (pour l&rsquo;assaisonnement des crevettes)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel (pour l&rsquo;assaisonnement des crevettes)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre (pour l&rsquo;assaisonnement des crevettes)"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "asiatique",
-            "épicé",
-            "Poissons et crustacés"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6949",
-        "title": "Feta grillée au miel et thym",
-        "description": "Découvrez une recette simple et rapide de feta grillée, agrémentée de miel, de thym et d&rsquo;huile d&rsquo;olive. Enveloppée dans des feuilles de brick croustillantes et garnie d&rsquo;amandes torréfiées et de graines de sésame, c&rsquo;est une ent",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "entrees",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7660190249666104609\" data-video-id=\"7660190249666104609\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7660190249666104609\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             1/2 feta"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Thym"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à soupe de miel"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 cuillère à soupe d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 feuilles de brick"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Amandes torréfiées"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Graines de sésame"
-            }
-        ],
-        "steps": [
-            "Préchauffez votre four à 200°C.",
-            "Placez la demi-feta sur une feuille de brick.",
-            "Arrosez la feta d&rsquo;une cuillère à soupe de miel et d&rsquo;une cuillère à soupe d&rsquo;huile d&rsquo;olive, puis parsemez généreusement de thym.",
-            "Enveloppez soigneusement la feta avec les deux feuilles de brick.",
-            "Enfournez pour 11 à 14 minutes à 200°C, jusqu&rsquo;à ce que les feuilles de brick soient dorées et croustillantes.",
-            "À la sortie du four, garnissez la feta grillée d&rsquo;amandes torréfiées et de graines de sésame avant de servir."
-        ],
-        "tags": [
-            "Grèce",
-            "Pas cher",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6947",
-        "title": "Galettes de tomates grecques (Tomatokeftedes)",
-        "description": "Ces tomatokeftedes sont un mezze exceptionnellement bon, originaire de Santorin en Grèce. Ces petites galettes sont parfaites pour l&rsquo;été.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7644832682320465185\" data-video-id=\"7644832682320465185\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7644832682320465185\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍅\n             550 g de tomates (coupées en petits morceaux)"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             140 g de farine (à ajuster si les tomates sont très juteuses)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à café de levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Basilic"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Menthe"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 oignon rouge (ciselé)"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d'ail (hachée)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             110 g de fêta (émiettée)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive (pour la cuisson)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pour la sauce : Yaourt grec"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pour la sauce : Olives noires (hachées)"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Pour la sauce : Persil ou menthe"
-            }
-        ],
-        "steps": [
-            "Dans un grand bol, mélanger les tomates coupées en petits morceaux, la farine, la levure chimique, le sel, le basilic, la menthe, le persil, l&rsquo;oignon rouge ciselé, l&rsquo;ail haché et la fêta émiettée. Ajuster la quantité de farine si les tomates sont très juteuses.",
-            "Former des petites galettes avec la préparation.",
-            "Faire chauffer de l&rsquo;huile d&rsquo;olive dans une poêle bien chaude.",
-            "Cuire les galettes dans la poêle, en les faisant dorer sur les deux faces jusqu&rsquo;à ce qu&rsquo;elles soient bien cuites.",
-            "Préparer la sauce en mélangeant du yaourt grec avec des olives noires hachées et du persil ou de la menthe.",
-            "Servir les tomatokeftedes chaudes avec la sauce."
-        ],
-        "tags": [
-            "Grèce",
-            "Végé",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "6945",
         "title": "Sandwich jambon de dinde, burrata et tomates rôties",
         "description": "Un sandwich gourmand et facile à préparer, garni de jambon de dinde, de burrata crémeuse, de tomates cerises rôties et d&rsquo;un pesto maison parfumé, le tout dans une baguette croustillante.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6945_1784303444178.jpg&v=1784310850000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -896,7 +255,7 @@ export const mockRecipes: Recipe[] = [
         "id": "6943",
         "title": "Sandwich jambon cru, burrata et poivrons marinés",
         "description": "Découvrez ce sandwich incroyable et parfait pour l&rsquo;été, garni de pesto rosso, de jambon cru, de burrata crémeuse et de poivrons marinés. Une explosion de saveurs pour un repas rapide et délicieux.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6943_1784303213334.jpg&v=1784310640000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -947,10 +306,332 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
+        "id": "6955",
+        "title": "Sandwich à la truite fumée et au fromage frais au zaatar",
+        "description": "Une recette coup de cœur pour un sandwich délicieux à la truite fumée et au fromage frais parfumé au zaatar, simple et rapide à préparer.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6955_1784303122038.jpg&v=1784310409000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7656094914027080992\" data-video-id=\"7656094914027080992\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7656094914027080992\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Pain croustillant"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Truite fumée (tranches)"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n             1/2 concombre"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Quelques tomates séchées"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Pickles d&rsquo;oignons rouges"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             Quelques feuilles de salade"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fromage frais"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 échalote émincée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 c. à c. de Zaatar"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre du moulin"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Orient",
+            "Poissons et crustacés",
+            "Sandwichs"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6935",
+        "title": "Salade fraîcheur melon, burrata et jambon cru",
+        "description": "Une salade estivale rafraîchissante, facile et rapide à préparer, idéale par temps chaud. Elle combine la douceur du melon, la richesse crémeuse de la burrata et le goût salé du jambon cru, le tout relevé par une touche de balsamique et d&rsquo;herbe",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6935_1784302519395.jpg&v=1784310317000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7659825723728874785\" data-video-id=\"7659825723728874785\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7659825723728874785\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 gros melon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 belle grosse boule de burrata"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             6 tranches de jambon cru"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Un filet d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 filet de velours de balsamique"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Quelques feuilles de menthe"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Quelques feuilles de basilic"
+            }
+        ],
+        "steps": [
+            "Couper le melon en quartiers, retirer les graines, puis le détailler en tranches ou en cubes.",
+            "Disposer harmonieusement les morceaux de melon sur un plat de service.",
+            "Déchirer la burrata en morceaux et la placer au centre du plat, ou la répartir sur le melon.",
+            "Ajouter les tranches de jambon cru autour de la burrata et du melon.",
+            "Arroser le tout d&rsquo;un filet d&rsquo;huile d&rsquo;olive et d&rsquo;un filet de velours de balsamique.",
+            "Garnir généreusement de feuilles de menthe et de basilic frais. Servir immédiatement."
+        ],
+        "tags": [
+            "Italie",
+            "Salades",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6937",
+        "title": "Salade de pastèque, roquette et feta",
+        "description": "Une salade rafraîchissante et facile à préparer, combinant la douceur de la pastèque, le piquant de la roquette et la saveur salée de la feta, agrémentée de concombre, d&rsquo;oignon rouge et de pignons de pin. Parfaite pour l&rsquo;été.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6937_1784302489192.jpg&v=1784309716000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7644371015782485279\" data-video-id=\"7644371015782485279\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7644371015782485279\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             2 rondelles de pastèque"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             2 tasses de roquette"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/4 d&rsquo;oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n             1/3 de concombre anglais"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de pignons de pin, grillés"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             2 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1/2 cuillère à café de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1/4 de cuillère à café de poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/3 de tasse de feta"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1/2 citron, pressé"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Feuilles de menthe (pour la garniture)"
+            }
+        ],
+        "steps": [
+            "1. Découper des rondelles de pastèque à l&rsquo;aide d&rsquo;un emporte-pièce ;",
+            "2. Mélanger la roquette avec les concombres tranchés, les oignons rouges, la feta, l&rsquo;huile d&rsquo;olive, le jus de citron, le sel et le poivre ; bien mélanger ;",
+            "3. Disposer la salade de roquette sur les rondelles de pastèque, garnir de pignons de pin, de feuilles de menthe et déguster !"
+        ],
+        "tags": [
+            "Grèce",
+            "Healthy",
+            "Salades",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6967",
+        "title": "Riz Pilaf",
+        "description": "Une recette simple et rapide de riz pilaf, un accompagnement savoureux et polyvalent, parfait pour compléter divers plats.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6967_1784302222072.jpg&v=1784309685000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7643902063755218208\" data-video-id=\"7643902063755218208\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7643902063755218208\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍚\n             200g de riz basmati"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon jaune"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             40g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             350ml de bouillon (volaille, légume ou bœuf)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 bouquet garni"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 feuille de laurier"
+            }
+        ],
+        "steps": [
+            "Faire revenir le demi-oignon jaune haché dans le beurre fondu jusqu&rsquo;à ce qu&rsquo;il soit translucide.",
+            "Ajouter le riz basmati et le faire nacrer pendant 1 à 2 minutes, en remuant constamment.",
+            "Verser le bouillon (volaille, légume ou bœuf) et ajouter le bouquet garni et la feuille de laurier.",
+            "Porter à ébullition, puis réduire le feu, couvrir et laisser mijoter jusqu&rsquo;à ce que tout le liquide soit absorbé et que le riz soit cuit et moelleux (environ 15-20 minutes).",
+            "Retirer le bouquet garni et la feuille de laurier avant de servir."
+        ],
+        "tags": [
+            "Accompagnements",
+            "Orient",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6969",
+        "title": "Plat de riz et viande hachée aux poivrons à la mexicaine",
+        "description": "Une recette facile et rapide pour un plat équilibré à base de riz, viande hachée, poivrons et saveurs mexicaines, idéale pour 3 repas.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6969_1784302157967.jpg&v=1784309418000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7648235839662689568\" data-video-id=\"7648235839662689568\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7648235839662689568\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍚\n             150 g de riz long grain"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             350 g de viande hachée à 5% de matière grasse"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             4 poivrons"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 pot de concentré de tomates (70 g)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 cube de bouillon de volaille"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Épices mexicaines"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Eau"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Cheddar râpé"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Healthy",
+            "Mexique"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
         "id": "6941",
         "title": "Patates grecques garnies",
         "description": "Découvrez une recette grecque populaire, simple à préparer et incroyablement savoureuse, parfaite pour un repas convivial. Ce plat complet comprend du poulet mariné grillé, des pommes de terre rôties, une sauce tzatziki rafraîchissante et une salade ",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6941_1784301512694.jpg&v=1784309352000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -1108,10 +789,394 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
+        "id": "6957",
+        "title": "Latte de Rêve au Nutella",
+        "description": "Un latte gourmand au Nutella, si délicieux qu&rsquo;il est impossible de revenir à un latte classique. Une boisson parfaite pour se faire plaisir !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6957_1784301218988.jpg&v=1784308709000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7662116728083647774\" data-video-id=\"7662116728083647774\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7662116728083647774\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 à 2 cuillères à soupe de Nutella, ramolli (pour la garniture du verre)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Glaçons"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             240 ml (1 tasse) de lait froid"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 shots d&rsquo;espresso"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             120 ml (½ tasse) de crème épaisse"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             2 cuillères à soupe de Nutella (pour la crème nuage)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             1 à 2 cuillères à soupe de lait (pour ajuster la consistance de la crème nuage)"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             Noisettes concassées (pour le topping)"
+            }
+        ],
+        "steps": [
+            "1. Étaler le Nutella à l&rsquo;intérieur du verre.",
+            "2. Remplir le verre de glaçons.",
+            "3. Verser le lait froid sur les glaçons.",
+            "4. Préparer 2 shots d&rsquo;espresso et les verser par-dessus.",
+            "5. Fouetter la crème épaisse, le Nutella et un filet de lait jusqu&rsquo;à obtenir une consistance épaisse et mousseuse.",
+            "6. Garnir le latte de noisettes concassées.",
+            "7. Essayer de ne pas le boire d&rsquo;une seule traite."
+        ],
+        "tags": [
+            "Rafraîchissements",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6953",
+        "title": "Gâteau invisible jambon courgette",
+        "description": "Découvrez cette recette fraîche et légère de gâteau invisible aux courgettes, jambon blanc et chèvre frais, idéale pour les repas d&rsquo;été. Facile à préparer, elle demande un temps de repos au frais pour révéler toutes ses saveurs.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6953_1784301147624.jpg&v=1784308415000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7662760543517691169\" data-video-id=\"7662760543517691169\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7662760543517691169\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 kg de courgettes"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             4 tranches de jambon blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             20 cl de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             10 cl de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             80 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             50 g de parmesan râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             150 g de chèvre frais"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Une pincée de muscade (facultatif)"
+            }
+        ],
+        "steps": [
+            "Préchauffez le four à 180°C.",
+            "Coupez les courgettes en très fines lamelles à l'aide d'une mandoline. Salez-les légèrement, laissez-les dégorger 15 à 20 minutes puis séchez-les.",
+            "Coupez le jambon blanc en petits morceaux.",
+            "Fouettez les œufs avec le lait et la crème. Ajoutez la farine, le parmesan, l'ail râpé, le poivre et la muscade.",
+            "Incorporez les courgettes, le jambon blanc et le chèvre émietté, puis mélangez délicatement pour bien enrober tous les ingrédients.",
+            "Versez la préparation dans un moule à cake.",
+            "Enfournez 45/50 minutes.",
+            "Laissez refroidir complètement puis placez au réfrigérateur au moins 4 heures, idéalement une nuit avant de déguster."
+        ],
+        "tags": [
+            "France",
+            "Healthy",
+            "minceur",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6947",
+        "title": "Galettes de tomates grecques (Tomatokeftedes)",
+        "description": "Ces tomatokeftedes sont un mezze exceptionnellement bon, originaire de Santorin en Grèce. Ces petites galettes sont parfaites pour l&rsquo;été.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6947_1784301126490.jpg&v=1784308344000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7644832682320465185\" data-video-id=\"7644832682320465185\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7644832682320465185\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍅\n             550 g de tomates (coupées en petits morceaux)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             140 g de farine (à ajuster si les tomates sont très juteuses)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Basilic"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Menthe"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 oignon rouge (ciselé)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d'ail (hachée)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             110 g de fêta (émiettée)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive (pour la cuisson)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pour la sauce : Yaourt grec"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pour la sauce : Olives noires (hachées)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Pour la sauce : Persil ou menthe"
+            }
+        ],
+        "steps": [
+            "Dans un grand bol, mélanger les tomates coupées en petits morceaux, la farine, la levure chimique, le sel, le basilic, la menthe, le persil, l&rsquo;oignon rouge ciselé, l&rsquo;ail haché et la fêta émiettée. Ajuster la quantité de farine si les tomates sont très juteuses.",
+            "Former des petites galettes avec la préparation.",
+            "Faire chauffer de l&rsquo;huile d&rsquo;olive dans une poêle bien chaude.",
+            "Cuire les galettes dans la poêle, en les faisant dorer sur les deux faces jusqu&rsquo;à ce qu&rsquo;elles soient bien cuites.",
+            "Préparer la sauce en mélangeant du yaourt grec avec des olives noires hachées et du persil ou de la menthe.",
+            "Servir les tomatokeftedes chaudes avec la sauce."
+        ],
+        "tags": [
+            "Grèce",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6949",
+        "title": "Feta grillée au miel et thym",
+        "description": "Découvrez une recette simple et rapide de feta grillée, agrémentée de miel, de thym et d&rsquo;huile d&rsquo;olive. Enveloppée dans des feuilles de brick croustillantes et garnie d&rsquo;amandes torréfiées et de graines de sésame, c&rsquo;est une ent",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6949_1784301105308.jpg&v=1784308323000",
+        "category": "entrees",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7660190249666104609\" data-video-id=\"7660190249666104609\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7660190249666104609\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1/2 feta"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Thym"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 feuilles de brick"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Amandes torréfiées"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Graines de sésame"
+            }
+        ],
+        "steps": [
+            "Préchauffez votre four à 200°C.",
+            "Placez la demi-feta sur une feuille de brick.",
+            "Arrosez la feta d&rsquo;une cuillère à soupe de miel et d&rsquo;une cuillère à soupe d&rsquo;huile d&rsquo;olive, puis parsemez généreusement de thym.",
+            "Enveloppez soigneusement la feta avec les deux feuilles de brick.",
+            "Enfournez pour 11 à 14 minutes à 200°C, jusqu&rsquo;à ce que les feuilles de brick soient dorées et croustillantes.",
+            "À la sortie du four, garnissez la feta grillée d&rsquo;amandes torréfiées et de graines de sésame avant de servir."
+        ],
+        "tags": [
+            "Grèce",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6951",
+        "title": "Curry de crevettes",
+        "description": "Une recette rapide et simple de curry de crevettes, qui peut également être réalisée avec du poulet. Ce plat savoureux est relevé par un mélange d&rsquo;épices cajun, du piment et du paprika fumé, et agrémenté de citron vert et de ciboulette ou coria",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6951_1784301094250.jpg&v=1784308303000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7642393520979873057\" data-video-id=\"7642393520979873057\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7642393520979873057\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🦐\n             10 à 15 crevettes crues"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             10g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             3 cuillères à soupe de sauce tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             20cl de crème demi-épaisse"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             20cl de bouillon de volaille"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             20g de parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 cuillère à café d&rsquo;oignon en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café d&rsquo;origan"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cuillères à café d&rsquo;épices cajun"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1/2 citron vert"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette ou coriandre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Piment en poudre (pour l&rsquo;assaisonnement des crevettes)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail en poudre (pour l&rsquo;assaisonnement des crevettes)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel (pour l&rsquo;assaisonnement des crevettes)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre (pour l&rsquo;assaisonnement des crevettes)"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "asiatique",
+            "épicé",
+            "Poissons et crustacés"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
         "id": "6939",
         "title": "Croque Mcdo en 5 minutes",
         "description": "Une recette rapide et facile pour préparer un Croque Mcdo maison en seulement 5 minutes.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6939_1784301065846.jpg&v=1784308292000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -1137,130 +1202,65 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "6937",
-        "title": "Salade de pastèque, roquette et feta",
-        "description": "Une salade rafraîchissante et facile à préparer, combinant la douceur de la pastèque, le piquant de la roquette et la saveur salée de la feta, agrémentée de concombre, d&rsquo;oignon rouge et de pignons de pin. Parfaite pour l&rsquo;été.",
-        "image": "/images/recipe-placeholder.jpg",
+        "id": "6961",
+        "title": "Bagel au saumon",
+        "description": "Une recette simple et fraîche de bagel au saumon, parfaite pour l&rsquo;été.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6961_1784301013896.jpg&v=1784308263000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7644371015782485279\" data-video-id=\"7644371015782485279\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7644371015782485279\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7646110679325216022\" data-video-id=\"7646110679325216022\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7646110679325216022\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🥣\n             2 rondelles de pastèque"
+                "name": "🐟\n             Saumon fumé"
             },
             {
                 "quantity": "",
-                "name": "🥗\n             2 tasses de roquette"
+                "name": "🥣\n             Fromage frais"
             },
             {
                 "quantity": "",
-                "name": "🧅\n             1/4 d&rsquo;oignon rouge"
+                "name": "🥒\n             Concombre"
             },
             {
                 "quantity": "",
-                "name": "🥒\n             1/3 de concombre anglais"
+                "name": "🧅\n             Oignon rouge"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             1 cuillère à soupe de pignons de pin, grillés"
+                "name": "🌿\n             Ciboulette"
             },
             {
                 "quantity": "",
-                "name": "🍾\n             2 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+                "name": "🌿\n             Aneth"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             1/2 cuillère à café de sel"
+                "name": "🍋\n             Citron"
             },
             {
                 "quantity": "",
-                "name": "🌶️\n             1/4 de cuillère à café de poivre noir"
+                "name": "🍾\n             Huile d&rsquo;olive"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             1/3 de tasse de feta"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1/2 citron, pressé"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Feuilles de menthe (pour la garniture)"
+                "name": "🌶️\n             Poivre"
             }
         ],
         "steps": [
-            "1. Découper des rondelles de pastèque à l&rsquo;aide d&rsquo;un emporte-pièce ;",
-            "2. Mélanger la roquette avec les concombres tranchés, les oignons rouges, la feta, l&rsquo;huile d&rsquo;olive, le jus de citron, le sel et le poivre ; bien mélanger ;",
-            "3. Disposer la salade de roquette sur les rondelles de pastèque, garnir de pignons de pin, de feuilles de menthe et déguster !"
+            "1. Déposez le fromage frais sur une planche à découper, puis ajoutez les tranches de saumon, les rondelles de concombre et d&rsquo;oignon rouge, la ciboulette, l&rsquo;aneth, un filet d&rsquo;huile d&rsquo;olive et du poivre. Il est inutile de saler, car le saumon et le fromage frais le sont déjà.",
+            "2. Hachez le tout et mélangez bien la préparation afin d&rsquo;obtenir un résultat homogène.",
+            "3. Coupez votre bagel en deux et tartinez la préparation sur une moitié.",
+            "4. Refermez avec l&rsquo;autre moitié. C&rsquo;est prêt, vous pouvez déguster."
         ],
         "tags": [
-            "Grèce",
             "Healthy",
-            "Salades",
-            "Végé",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6935",
-        "title": "Salade fraîcheur melon, burrata et jambon cru",
-        "description": "Une salade estivale rafraîchissante, facile et rapide à préparer, idéale par temps chaud. Elle combine la douceur du melon, la richesse crémeuse de la burrata et le goût salé du jambon cru, le tout relevé par une touche de balsamique et d&rsquo;herbe",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7659825723728874785\" data-video-id=\"7659825723728874785\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7659825723728874785\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             1 gros melon"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 belle grosse boule de burrata"
-            },
-            {
-                "quantity": "",
-                "name": "🥓\n             6 tranches de jambon cru"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Un filet d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 filet de velours de balsamique"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Quelques feuilles de menthe"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Quelques feuilles de basilic"
-            }
-        ],
-        "steps": [
-            "Couper le melon en quartiers, retirer les graines, puis le détailler en tranches ou en cubes.",
-            "Disposer harmonieusement les morceaux de melon sur un plat de service.",
-            "Déchirer la burrata en morceaux et la placer au centre du plat, ou la répartir sur le melon.",
-            "Ajouter les tranches de jambon cru autour de la burrata et du melon.",
-            "Arroser le tout d&rsquo;un filet d&rsquo;huile d&rsquo;olive et d&rsquo;un filet de velours de balsamique.",
-            "Garnir généreusement de feuilles de menthe et de basilic frais. Servir immédiatement."
-        ],
-        "tags": [
-            "Italie",
-            "Salades",
+            "Poissons et crustacés",
+            "Sandwichs",
+            "USA",
             "Voilà l'été"
         ],
         "isFeatured": false,
@@ -11330,74 +11330,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Italie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5514",
-        "title": "Tiramisu",
-        "description": "Recette de tiramisu maison avec un biscuit fait maison.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Fi196570-tiramisu-simple-1.jpg&v=1782578351000",
-        "category": "patisserie",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7463909495878569238\" data-video-id=\"7463909495878569238\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7463909495878569238\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧀\n 500g de Mascarpone"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n 6 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n 100g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n 100g de cacao en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 4 tasses à café"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 2 cuillères à café d'Amaretto"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n 180g de blancs d'œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n 150g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n 120g de jaune d'œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n 150g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n 40g de sucre glace"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Italie",
-            "pâtisserie"
         ],
         "isFeatured": false,
         "isFavorite": false,
