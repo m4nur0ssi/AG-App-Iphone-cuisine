@@ -2,11 +2,81 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 18/07/2026 05:25:55
- * Total: 578 recettes
+ * Dernière mise à jour: 18/07/2026 10:26:36
+ * Total: 579 recettes
  */
-export const exportSyncId = "1784352355497";
+export const exportSyncId = "1784370396848";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6991",
+        "title": "Parmigiana à la poêle",
+        "description": "Une version simplifiée et rapide de la Parmigiana, préparée directement à la poêle. Ce plat végétarien italien est composé de couches d&rsquo;aubergines grillées, de passata de tomate, de mozzarella et de parmesan, mijotées à la perfection.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7663474439140478241\" data-video-id=\"7663474439140478241\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7663474439140478241\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍆\n             1 grosse aubergine"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             2 mozzarellas"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             700g de passata de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Basilic"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            }
+        ],
+        "steps": [
+            "Laver et couper l&rsquo;aubergine en fines lamelles.",
+            "Saler les lamelles d&rsquo;aubergine et les laisser dégorger de leur eau.",
+            "Dans une poêle, faire griller les lamelles d&rsquo;aubergine avec de l&rsquo;huile d&rsquo;olive et une gousse d&rsquo;ail. Retirer ensuite les aubergines de la poêle.",
+            "Dans la même poêle, ajouter un peu d&rsquo;huile d&rsquo;olive.",
+            "Verser une couche de passata de tomate, puis disposer des lamelles d&rsquo;aubergine, du parmesan, des morceaux de mozzarella, du sel, du poivre et du basilic. Répéter l&rsquo;opération pour former plusieurs couches.",
+            "Une fois toutes les couches réalisées, laisser mijoter à feu doux pendant au moins 1 heure.",
+            "Pour accélérer la cuisson, il est possible de retirer l&rsquo;excédent d&rsquo;eau avec une louche.",
+            "Servir et déguster !"
+        ],
+        "tags": [
+            "Gratins",
+            "Italie",
+            "Pas cher",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6963",
         "title": "Tartelettes tatin courgettes, champignons, chèvre et miel",
