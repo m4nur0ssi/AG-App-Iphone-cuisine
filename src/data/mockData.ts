@@ -2,11 +2,136 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 23/07/2026 13:59:40
- * Total: 589 recettes
+ * Dernière mise à jour: 23/07/2026 15:38:47
+ * Total: 591 recettes
  */
-export const exportSyncId = "1784815180730";
+export const exportSyncId = "1784821127530";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7019",
+        "title": "Barre énergétique XXL sans cuisson framboise chocolat",
+        "description": "Une recette saine et ultra facile de barre énergétique XXL sans cuisson, à base de framboises et de chocolat. Elle est personnalisable avec différentes poudres et beurres de noix. Se conserve au réfrigérateur ou au congélateur et peut être dégustée r",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7657212519999753505\" data-video-id=\"7657212519999753505\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7657212519999753505\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍇\n             40 g de framboises"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             70 g de poudre d&rsquo;amande (complète)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             50 g de farine d&rsquo;avoine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 g d&rsquo;amandes concassées"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de sirop d'érable"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             60 g de beurre d'amande"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             80 g de chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café d&rsquo;huile de coco"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Fleur de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍇\n             Quelques framboises (pour la décoration)"
+            }
+        ],
+        "steps": [
+            "Dans un saladier, réduire les framboises en purée.",
+            "Ajouter le beurre d&rsquo;amande bien liquide et le sirop d&rsquo;érable. Mélanger.",
+            "Ajouter la poudre d&rsquo;amande, la farine d&rsquo;avoine et les amandes concassées.",
+            "Déposer la boule de pâte sur une feuille de papier cuisson et former un grand rectangle à l&rsquo;aide d&rsquo;un rouleau à pâtisserie, puis avec les mains car la pâte colle moins.",
+            "Verser le chocolat et l&rsquo;huile fondus sur la base.",
+            "Saupoudrer de fleur de sel.",
+            "Placer au réfrigérateur au moins 1 heure, puis découper."
+        ],
+        "tags": [
+            "Desserts",
+            "Healthy"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7017",
+        "title": "Biscuits apéritifs maison au fromage et aux graines",
+        "description": "Découvrez une recette simple et rapide pour préparer des biscuits salés faits maison, parfaits pour l&rsquo;apéritif. Ces petits sablés au fromage et aux graines, relevés d&rsquo;une touche de piment d&rsquo;Espelette, sont faciles à réaliser et se c",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7642378711655779617\" data-video-id=\"7642378711655779617\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7642378711655779617\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             50 g de beurre à température ambiante"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             100 g de fromage râpé (type Comté ou Beaufort)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             100 g de farine de blé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             20 g de graines de sésame ou de pavot"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Piment d&rsquo;Espelette, ou poivre et sel"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             2 cuillères à soupe d&rsquo;eau (30 g)"
+            }
+        ],
+        "steps": [
+            "Dans un saladier, mélangez le fromage râpé, le beurre coupé en morceaux, la farine, le piment d&rsquo;Espelette (ou poivre et sel) et les graines de sésame.",
+            "Sablez le mélange avec vos doigts jusqu&rsquo;à obtenir une texture granuleuse, puis ajoutez les 2 cuillères à soupe d&rsquo;eau.",
+            "Pétrissez la pâte jusqu&rsquo;à ce qu&rsquo;elle soit homogène, puis façonnez-la en un boudin d&rsquo;environ 5 cm de diamètre. Enroulez le boudin dans du papier cuisson (assez grand pour être réutilisé pour la cuisson).",
+            "Placez le boudin au congélateur pendant 25 à 30 minutes. Cela permettra de couper facilement les biscuits sans que la pâte ne s&rsquo;écrase.",
+            "Préchauffez votre four à 180°C. Coupez le boudin en tranches d&rsquo;environ 0,5 cm d&rsquo;épaisseur et disposez-les sur une plaque recouverte du papier cuisson.",
+            "Faites cuire les biscuits pendant 12 à 15 minutes à 180°C, ou jusqu&rsquo;à ce qu&rsquo;ils soient bien dorés. Il n&rsquo;est pas nécessaire de trop les espacer sur la plaque, car ils s&rsquo;étalent très peu.",
+            "Laissez refroidir les biscuits sur une grille avant de les déguster.",
+            "Conservez les biscuits dans une boîte en fer, ils resteront frais jusqu&rsquo;à 3 à 5 jours."
+        ],
+        "tags": [
+            "Apéritifs",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7015",
         "title": "Tiramisu aux spéculoos",
