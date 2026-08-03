@@ -2,11 +2,75 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 03/08/2026 06:12:36
- * Total: 592 recettes
+ * Dernière mise à jour: 03/08/2026 11:13:31
+ * Total: 593 recettes
  */
-export const exportSyncId = "1785737556920";
+export const exportSyncId = "1785755611545";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7024",
+        "title": "Cari de Poulet",
+        "description": "Une recette savoureuse de cari de poulet, typique de l&rsquo;île de la Réunion, préparée avec des épices aromatiques et des tomates.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7567792193025412374\" data-video-id=\"7567792193025412374\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7567792193025412374\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             Poulet entier"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             4 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Gingembre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 cuillère à soupe de poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Piment"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à soupe de curcuma"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             4 belles tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 oignons rouges"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Thym"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Afrique",
+            "épicé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7021",
         "title": "Truffade",
