@@ -1,8 +1,8 @@
 {
-  "lastSync": "2026-08-05T05:44:47.053Z",
+  "lastSync": "2026-08-06T05:46:49.987Z",
   "totalRecipes": 594,
   "trigger": "repository_dispatch",
   "mode": "recent",
   "status": "success",
-  "ts": 1785908687
+  "ts": 1785995209
 }
