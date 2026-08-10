@@ -2,11 +2,168 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/08/2026 10:07:58
- * Total: 596 recettes
+ * Dernière mise à jour: 10/08/2026 12:49:17
+ * Total: 599 recettes
  */
-export const exportSyncId = "1786356478754";
+export const exportSyncId = "1786366157823";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7057",
+        "title": "Kebbe au plat",
+        "description": "Le Kebbe au plat (Kebbeh bil sayniye) est un plat emblématique de la cuisine libanaise. L&rsquo;auteur partage comment ses expériences à l&rsquo;étranger, notamment au Danemark, ont enrichi sa cuisine quotidienne libanaise, intégrant de nouvelles déc",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7641344940395482401\" data-video-id=\"7641344940395482401\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7641344940395482401\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             350g de boulgour fin"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             250g de viande hachée (5% pour la pâte)"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             250ml d&rsquo;eau froide"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon (pour la pâte)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à soupe de sel (pour la pâte)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             0.25 cuillère à café de cannelle (pour la pâte)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             0.25 cuillère à café de poivre noir (pour la pâte)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe d&rsquo;épices kebbé"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon jaune (pour la farce)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             250g de viande hachée (pour la farce)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             0.5 cuillère à café de sel (pour la farce)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             0.25 cuillère à café de poivre noir (pour la farce)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             0.25 cuillère à café de cannelle (pour la farce)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             0.25 cuillère à café de 7 épices libanaises"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Pignons de pin (selon budget)"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Liban"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7055",
+        "title": "Risotto crémeux au fenouil et à la saucisse",
+        "description": "Un risotto crémeux et savoureux, facile et rapide à réaliser, avec du fenouil et de la saucisse de Toulouse. Le mascarpone et la tomme râpée lui confèrent une texture onctueuse à souhait.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7217115437920718086\" data-video-id=\"7217115437920718086\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7217115437920718086\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon jaune"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 fenouil"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             2 saucisses de Toulouse"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/2 cuillère à café de fenouil moulu"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             150g de riz à risotto"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             50g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             25g de tomme râpée"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cube de bouillon de légumes"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             4 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Poivre et sel"
+            }
+        ],
+        "steps": [
+            "Faites revenir l&rsquo;oignon, l&rsquo;ail et le fenouil coupé en petits morceaux dans l&rsquo;huile d&rsquo;olive.",
+            "Ajoutez ensuite les saucisses coupées en rondelles, le riz et le fenouil moulu.",
+            "Versez progressivement le bouillon de légumes tout en remuant.",
+            "En fin de cuisson, ajoutez le mascarpone et la tomme râpée pour un risotto crémeux à souhait."
+        ],
+        "tags": [
+            "Italie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7021",
         "title": "Truffade",
@@ -13283,6 +13440,104 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Les Glaces",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6365",
+        "title": "Giant Summer Rolls avec sauce cacahuète",
+        "description": "Des rouleaux de printemps géants frais, croquants et colorés, parfaits pour un repas d&rsquo;été léger et savoureux, accompagnés d&rsquo;une sauce crémeuse aux cacahuètes. Une version améliorée d&rsquo;un classique estival.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6365_1782568755980.jpg&v=1782576469000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7654280827907640597\" data-video-id=\"7654280827907640597\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7654280827907640597\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Pour 2 rouleaux de printemps géants :"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             6 feuilles de riz"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             2 grandes feuilles de laitue iceberg ou romaine"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n             1 concombre, coupé en julienne"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             1 carotte, coupée en julienne"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ⅛ tête de chou rouge, râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 poivron rouge, coupé en fines tranches"
+            },
+            {
+                "quantity": "",
+                "name": "🥑\n             1 avocat, coupé en tranches"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Petit bouquet de coriandre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Petit bouquet de menthe"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pour la sauce cacahuète :"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             ⅓ tasse de beurre de cacahuète"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             2 cuillères à soupe de sauce soja (ou tamari pour une option sans gluten)"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             2 cuillères à soupe de vinaigre de riz"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe d&rsquo;huile de sésame"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de 1 à 2 citrons verts"
+            }
+        ],
+        "steps": [
+            "Préparez d&rsquo;abord la sauce pour que les rouleaux de printemps puissent être servis frais. Dans un bol, mélangez le beurre de cacahuète, la sauce soja, le vinaigre de riz, l&rsquo;huile de sésame et le jus de citron vert. Mélangez bien et mettez de côté.",
+            "Coupez le concombre et la carotte en julienne, râpez le chou et coupez finement le poivron et l&rsquo;avocat en tranches.",
+            "Trempez 3 feuilles de riz dans de l&rsquo;eau froide pendant environ 10 secondes et chevauchez-les au centre de votre surface de travail. Travaillez rapidement pour éviter de les déchirer.",
+            "Placez une feuille de laitue au centre et superposez avec les légumes, l&rsquo;avocat, la coriandre et la menthe.",
+            "Pliez le bord inférieur vers le centre, puis pliez les côtés et roulez fermement comme un burrito. Si nécessaire, enveloppez avec une feuille de riz supplémentaire pour bien sceller.",
+            "Répétez l&rsquo;opération pour faire le deuxième rouleau de printemps géant.",
+            "Servez immédiatement avec la sauce crémeuse aux cacahuètes et dégustez !"
+        ],
+        "tags": [
+            "Asie",
+            "Healthy",
+            "Pas cher",
+            "Salades",
+            "Végé",
             "Voilà l'été"
         ],
         "isFeatured": false,
