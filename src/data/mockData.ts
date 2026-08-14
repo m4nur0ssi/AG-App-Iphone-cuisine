@@ -2,11 +2,568 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/08/2026 10:52:00
- * Total: 627 recettes
+ * Dernière mise à jour: 14/08/2026 16:27:56
+ * Total: 633 recettes
  */
-export const exportSyncId = "1786704720797";
+export const exportSyncId = "1786724876195";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7165",
+        "title": "Burger César au Poulet Croustillant",
+        "description": "Un délicieux burger garni de poulet croustillant, d&rsquo;une salade César crémeuse et de parmesan frais, le tout servi dans un pain brioché.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7672899733748321549\" data-video-id=\"7672899733748321549\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7672899733748321549\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍚\n             2 poitrines de poulet, coupées en deux horizontalement"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe d&rsquo;huile"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel, au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre noir, au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Poudre d&rsquo;ail, au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika, au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             ½ tasse de farine tout usage"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel, au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre noir, au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Poudre d&rsquo;ail, au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika, au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs, battus"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             1 tasse de chapelure panko"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 cuillère à café de persil séché"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile, pour la friture"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             ½ tasse de mayonnaise"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             ¼ tasse de parmesan finement râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1 cuillère à soupe de jus de citron frais"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à café de moutarde de Dijon"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à café de sauce Worcestershire"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 petite gousse d&rsquo;ail, râpée"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre noir, au goût"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             1 à 2 cuillères à soupe d&rsquo;eau, si nécessaire"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             4 pains à burger"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Laitue romaine, hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan fraîchement râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             2 cuillères à soupe de beurre fondu"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             ½ cuillère à café de persil séché"
+            }
+        ],
+        "steps": [
+            "Commencez par préparer le poulet. Coupez les poitrines de poulet en deux horizontalement pour obtenir des morceaux plus fins.",
+            "Ajoutez le poulet dans un bol et assaisonnez avec du sel, du poivre noir, de la poudre d&rsquo;ail et du paprika. Arrosez d&rsquo;huile et mélangez jusqu&rsquo;à ce que le poulet soit uniformément enrobé.",
+            "Ajoutez la farine dans un bol séparé et assaisonnez avec du sel, du poivre noir, de la poudre d&rsquo;ail et du paprika.",
+            "Ajoutez les œufs battus dans un autre bol.",
+            "Dans un troisième bol, combinez la chapelure panko avec le persil séché.",
+            "Enrobez chaque morceau de poulet dans la farine assaisonnée, trempez-le dans les œufs battus, puis enrobez-le généreusement de chapelure panko au persil.",
+            "Faites chauffer de l&rsquo;huile dans une poêle à feu moyen. Faites frire le poulet jusqu&rsquo;à ce qu&rsquo;il soit croustillant et doré des deux côtés et que la température interne atteigne 74°C (165°F). Mettez de côté.",
+            "Pour la sauce César maison, ajoutez la mayonnaise, le parmesan râpé, le jus de citron, la moutarde de Dijon, la sauce Worcestershire, l&rsquo;ail râpé et le poivre noir dans un bol. Mélangez jusqu&rsquo;à obtenir une consistance lisse et crémeuse. Ajoutez un peu d&rsquo;eau si nécessaire pour atteindre la consistance désirée.",
+            "Avant de mélanger la salade, mettez de côté une partie de la sauce César pour l&rsquo;utiliser sur les pains à burger.",
+            "Ajoutez la laitue romaine hachée au reste de la sauce César, ajoutez du parmesan fraîchement râpé et mélangez jusqu&rsquo;à ce que tout soit uniformément enrobé.",
+            "Pour l&rsquo;assemblage, étalez généreusement la sauce César réservée sur les pains.",
+            "Ajoutez le poulet croustillant, suivi de la salade César crémeuse et d&rsquo;un supplément de parmesan fraîchement râpé.",
+            "Fermez avec le pain supérieur.",
+            "Mélangez le beurre fondu avec le persil séché et badigeonnez-en le dessus de chaque burger assemblé.",
+            "Terminez avec du parmesan fraîchement râpé sur le dessus. Servez immédiatement et dégustez !"
+        ],
+        "tags": [
+            "Sandwichs",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7163",
+        "title": "Bombes au Nutella",
+        "description": "Préparez de délicieuses bombes au Nutella, des petits pains briochés moelleux garnis d&rsquo;un cœur de Nutella congelé et parsemés de pépites de chocolat. Parfaites pour le petit-déjeuner ou le goûter.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7660266813804186888\" data-video-id=\"7660266813804186888\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7660266813804186888\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             300g de Nutella (pour la garniture)"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             130g d&rsquo;eau tiède"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 jaune d&rsquo;œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             55g de beurre non salé fondu"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             20g de sucre en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             7g de levure instantanée"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1/2 cuillère à café de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             345g de farine tout usage"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             150g de pépites de chocolat (pour la pâte)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 jaunes d&rsquo;œufs (pour la dorure)"
+            }
+        ],
+        "steps": [
+            "Pour la garniture : Déposez 50g de Nutella sur 6 morceaux de papier sulfurisé séparés. Congelez jusqu&rsquo;à ce qu&rsquo;il soit solide.",
+            "Pour la pâte : Dans le bol de votre batteur sur socle muni d&rsquo;un crochet pétrisseur, fouettez l&rsquo;eau tiède, le sucre, la levure, le beurre fondu, le jaune d&rsquo;œuf et les œufs.",
+            "Ajoutez la farine et le sel.",
+            "Pétrissez pendant 10 à 15 minutes jusqu&rsquo;à obtenir une pâte lisse. Il est normal qu&rsquo;elle soit encore collante. Assurez-vous simplement qu&rsquo;elle passe le test de la fenêtre (window pane test). Elle doit rester collante pour que les pépites de chocolat puissent adhérer.",
+            "Formez la pâte en boule et placez-la dans un grand bol. Couvrez de film plastique et laissez lever pendant 2 heures.",
+            "Préchauffez votre four à 175°C (350°F) et tapissez un plat de cuisson de papier sulfurisé.",
+            "Sur une surface légèrement farinée, incorporez 150-200g de pépites de chocolat à la pâte en pétrissant.",
+            "Ne pétrissez pas trop, le chocolat pourrait s&rsquo;étaler. Mélangez juste assez pour combiner.",
+            "Sur une surface légèrement farinée, divisez la pâte en 6 morceaux. Farcissez chaque morceau avec le Nutella congelé, puis scellez-les bien.",
+            "Garnissez chaque petit pain de pépites de chocolat supplémentaires.",
+            "Pour la dorure à l&rsquo;œuf : Fouettez 2 jaunes d&rsquo;œufs jusqu&rsquo;à obtenir une consistance lisse.",
+            "Badigeonnez les petits pains avec la dorure.",
+            "Faites cuire dans un four préchauffé à 175°C (350°F) pendant 25 minutes."
+        ],
+        "tags": [
+            "Brioche",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7161",
+        "title": "Petits pains aux olives, ail et fromage frais",
+        "description": "Des petits pains moelleux garnis d&rsquo;un mélange crémeux de fromage frais aux ciboulettes, d&rsquo;olives vertes et de Kalamata, ainsi que de fromages Cheddar et Emmental râpés. Parfaits pour le petit-déjeuner, un brunch ou un apéritif.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7668063911924534561\" data-video-id=\"7668063911924534561\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7668063911924534561\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             350g de farine tout usage"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             35g de sucre en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             7g de levure sèche instantanée (1 sachet)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             7g de sel fin de mer"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             50g de beurre doux, fondu et refroidi"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 gros œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             150g de lait tiède"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             100g de fromage Cheddar râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100g de fromage Emmental râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             200g de fromage frais Philadelphia aux ciboulettes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Olives vertes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Olives de Kalamata"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fromage Emmental râpé (pour la garniture)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf (pour la dorure)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Micro-pousses (pour la décoration)"
+            }
+        ],
+        "steps": [
+            "Dans le bol de votre robot pâtissier, ajoutez la farine, le sel, le sucre, la levure sèche instantanée, le Cheddar râpé et l&rsquo;Emmental râpé. Mélangez le tout.",
+            "Ensuite, ajoutez le lait, l&rsquo;œuf et le beurre fondu.",
+            "À l&rsquo;aide du crochet pétrisseur, pétrissez à basse vitesse jusqu&rsquo;à ce que la pâte devienne lisse et forme une boule, environ 6 à 8 minutes.",
+            "Une fois prête, transférez la pâte dans un bol propre et légèrement huilé.",
+            "Couvrez et laissez lever à température ambiante pendant 2 heures.",
+            "Après 2 heures, dégazez la pâte et divisez-la en 8 boules égales, d&rsquo;environ 105 g chacune.",
+            "Placez-les sur une grande plaque de cuisson recouverte de papier sulfurisé, couvrez et laissez-les lever pendant 1 heure supplémentaire.",
+            "Préchauffez le four à 180°C.",
+            "Badigeonnez chaque petit pain avec la dorure à l&rsquo;œuf.",
+            "Garnissez chaque petit pain d&rsquo;un peu de fromage frais et déposez les olives par-dessus.",
+            "Saupoudrez de fromage râpé supplémentaire.",
+            "Faites cuire au four préchauffé pendant 20 à 25 minutes, ou jusqu&rsquo;à ce que les petits pains soient dorés.",
+            "Une fois prêts, garnissez de micro-pousses et servez chaud."
+        ],
+        "tags": [
+            "Apéritifs",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7159",
+        "title": "Poulet citron moutarde",
+        "description": "Une recette simple et savoureuse de poulet rôti, mariné au citron et à la moutarde, avec des aromates.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7673530780584348960\" data-video-id=\"7673530780584348960\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7673530780584348960\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧄\n             Volaille entière"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Citron jaune"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Moutarde de Dijon"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Moutarde à l'ancienne"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Sauce soja"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Jus de volaille"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Échalote"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Plats"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7157",
+        "title": "Burger de poulet croustillant au miel piquant",
+        "description": "Une recette de burger de poulet croustillant mariné, enrobé d&rsquo;une sauce au miel piquant et servi avec une sauce crémeuse maison. Parfait pour un repas savoureux et relevé.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7667237538360266017\" data-video-id=\"7667237538360266017\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7667237538360266017\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             Poitrine de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             300 ml de babeurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Poudre d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Poudre d&rsquo;oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🍗\n             Assaisonnement pour poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe de vinaigre blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Sauce piquante"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             1 tasse de farine tout usage"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 tasse de fécule de maïs"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             1 cuillère à soupe de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Sucre roux"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Mayonnaise"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil haché"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            }
+        ],
+        "steps": [
+            "Préparer la marinade du poulet : Dans un grand bol, mélanger le babeurre, le sel, le poivre noir, la poudre d&rsquo;ail, la poudre d&rsquo;oignon, l&rsquo;assaisonnement pour poulet, le paprika, l&rsquo;œuf, le vinaigre blanc et la sauce piquante. Ajouter la poitrine de poulet et s&rsquo;assurer qu&rsquo;elle est bien enrobée. Laisser mariner pendant au moins 30 minutes (ou plus, idéalement).",
+            "Préparer l&rsquo;enrobage : Dans un autre bol, mélanger la farine tout usage, la fécule de maïs, le sel, le poivre noir, l&rsquo;assaisonnement pour poulet, la poudre d&rsquo;ail et le paprika.",
+            "Paner et cuire le poulet : Retirer le poulet de la marinade, le laisser égoutter légèrement, puis l&rsquo;enrober généreusement du mélange de farine, en appuyant pour que la panure adhère bien. Faire frire le poulet dans de l&rsquo;huile chaude jusqu&rsquo;à ce qu&rsquo;il soit doré, croustillant et bien cuit à l&rsquo;intérieur.",
+            "Préparer le glaçage au miel piquant : Dans une petite casserole, faire fondre le beurre à feu moyen. Ajouter le miel, la sauce piquante, le sel, le poivre noir, la poudre d&rsquo;ail, la poudre d&rsquo;oignon, le sucre roux et le paprika. Porter à ébullition douce et laisser mijoter pendant quelques minutes jusqu&rsquo;à ce que le glaçage épaississe légèrement.",
+            "Préparer la sauce du burger : Dans un petit bol, mélanger la mayonnaise, le poivre noir, la poudre d&rsquo;ail, le persil haché et un filet de jus de citron.",
+            "Assembler le burger : Une fois le poulet cuit, le napper généreusement du glaçage au miel piquant. Servir le poulet croustillant dans un pain à burger avec la sauce préparée et les garnitures de votre choix (comme de la laitue, des cornichons, etc.)."
+        ],
+        "tags": [
+            "épicé",
+            "Sandwichs",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7155",
+        "title": "Wrap Salade Burger",
+        "description": "Un wrap léger et rapide à préparer, idéal pour un repas sain et riche en protéines, parfait pour un régime ou une prise de masse. Il contient de la viande hachée, de la laitue, de l&rsquo;avocat, des tomates, de l&rsquo;oignon rouge et du fromage all",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7490269306404588822\" data-video-id=\"7490269306404588822\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7490269306404588822\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             150g de viande hachée (5% de matière grasse)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Laitue"
+            },
+            {
+                "quantity": "",
+                "name": "🥑\n             1/2 avocat"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fromage allégé"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Sauce Sriracha et mayonnaise allégée"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Healthy",
+            "minceur",
+            "Sandwichs",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7137",
         "title": "Salade de poulpe aux oignons confits",
