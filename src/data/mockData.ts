@@ -2,11 +2,74 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 16/08/2026 17:43:04
- * Total: 634 recettes
+ * Dernière mise à jour: 16/08/2026 20:08:43
+ * Total: 635 recettes
  */
-export const exportSyncId = "1786902184517";
+export const exportSyncId = "1786910923509";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7175",
+        "title": "Spaghettis aux moules",
+        "description": "Les spaghettis aux moules, c&rsquo;est de la poésie. Peu d&rsquo;ingrédients, beaucoup de saveur et tout le parfum de la mer. Les recettes simples sont souvent les plus difficiles à réussir... et quand les moules sont fraîches, le reste vient tout se",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7665787703224487200\" data-video-id=\"7665787703224487200\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7665787703224487200\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍝\n             400 g de spaghettis"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 kg de moules très fraîches"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             4 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Un bouquet de persil frais"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive extra vierge"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Piment"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Poivre noir (selon le goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel (très peu, l&rsquo;eau des moules étant déjà salée)"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "épicé",
+            "Italie",
+            "Pas cher",
+            "pates",
+            "Poissons et crustacés"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7173",
         "title": "Brochettes de poulet miel moutarde",
