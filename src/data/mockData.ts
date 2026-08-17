@@ -2,10 +2,10 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 16/08/2026 22:23:03
+ * Dernière mise à jour: 17/08/2026 03:49:46
  * Total: 647 recettes
  */
-export const exportSyncId = "1786918983347";
+export const exportSyncId = "1786938586547";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7199",
