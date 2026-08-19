@@ -2,11 +2,484 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 19/08/2026 13:35:31
- * Total: 661 recettes
+ * Dernière mise à jour: 19/08/2026 14:55:39
+ * Total: 660 recettes
  */
-export const exportSyncId = "1787146531759";
+export const exportSyncId = "1787151339112";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7250",
+        "title": "Sour à l&rsquo;Aperol et à la Tequila",
+        "description": "Égayez vos journées d&rsquo;hiver avec ce Sour à l&rsquo;Aperol et à la Tequila, une boisson rafraîchissante et acidulée.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7250_1787149424940.jpg&v=1787156901000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7463486961026649386\" data-video-id=\"7463486961026649386\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7463486961026649386\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             45 ml de tequila"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             15 ml d&rsquo;Aperol"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             15 ml de sirop de fraise"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             22 ml de jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 blanc d&rsquo;œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Quelques gouttes d&rsquo;Angostura bitters"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1 tranche de citron séché (pour la garniture)"
+            }
+        ],
+        "steps": [
+            "Dans un shaker, combinez la tequila, l&rsquo;Aperol, le sirop de fraise, le jus de citron et le blanc d&rsquo;œuf.",
+            "Secouez vigoureusement sans glace (dry shake) pendant environ 15 secondes pour émulsionner le blanc d&rsquo;œuf.",
+            "Ajoutez de la glace dans le shaker et secouez à nouveau pendant 15 à 20 secondes pour refroidir le mélange.",
+            "Filtrez le mélange dans un verre à cocktail.",
+            "Décorez avec quelques gouttes d&rsquo;Angostura bitters et une tranche de citron séché."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Rafraîchissements",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7260",
+        "title": "Shot Black Kiss",
+        "description": "Osez ce shot et savourez ses délicieuses saveurs 🔥 Une combinaison inhabituelle de liqueur de café et de crème de tequila à la fraise, parfaite pour l&rsquo;après-dîner et pour surprendre vos invités 🥂 Santé à tous !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7260_1787149212509.jpg&v=1787156621000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7479912790572944662\" data-video-id=\"7479912790572944662\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7479912790572944662\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             30 ml de liqueur de café Kahlúa"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             30 ml de crème de tequila à la fraise Tequila Rose"
+            }
+        ],
+        "steps": [
+            "Mélanger la liqueur de café Kahlúa et la crème de tequila à la fraise Tequila Rose dans un verre à shot."
+        ],
+        "tags": [
+            "Rafraîchissements"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7252",
+        "title": "Paradis Mangue Dragon",
+        "description": "Un délicieux cocktail tropical, parfait pour les chaudes journées d&rsquo;été ! Je sers ce cocktail dans l&rsquo;un des bars que je gère, et j&rsquo;utilise les produits Finest Call car ils sont les meilleurs en termes de qualité, de consistance et d",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7252_1787149051891.jpg&v=1787156409000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7667984529986030862\" data-video-id=\"7667984529986030862\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7667984529986030862\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             30 ml de mélange de purée de mangue Finest Call"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             60 ml d&rsquo;eau de coco"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             15 ml de jus de citron vert frais"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             3 à 4 morceaux de fruit du dragon frais"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             60 ml de rhum à la noix de coco"
+            }
+        ],
+        "steps": [
+            "Pour la première couche, verser délicatement 30 ml de mélange de purée de mangue Finest Call, 60 ml d&rsquo;eau de coco et 15 ml de jus de citron vert frais dans un verre.",
+            "Pour la deuxième couche, ajouter 3 à 4 morceaux de fruit du dragon frais et 60 ml de rhum à la noix de coco.",
+            "Superposer délicatement les ingrédients, garnir avec du fruit du dragon frais et savourer. Santé !"
+        ],
+        "tags": [
+            "Rafraîchissements",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7254",
+        "title": "Margarita du Diable",
+        "description": "La Margarita du Diable s&rsquo;inspire du New York Sour avec une couche de vin rouge. Cela ajoute une certaine complexité à la boisson, mais préparée à la manière Tommy&rsquo;s, la Tequila reste la vedette du spectacle 👌",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7254_1787148656705.jpg&v=1787156249000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7392891424976522528\" data-video-id=\"7392891424976522528\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7392891424976522528\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Tequila - 60 ml"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron vert - 30 ml"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Sirop de sucre de canne - 22,5 ml"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Flottant de vin rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Bord du verre salé"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Rondelle de citron vert"
+            }
+        ],
+        "steps": [
+            "Saler le bord d&rsquo;un verre.",
+            "Dans un shaker, mélanger la tequila, le jus de citron vert et le sirop de sucre de canne avec de la glace.",
+            "Filtrer le mélange dans le verre préparé.",
+            "Ajouter délicatement une couche de vin rouge sur le dessus.",
+            "Garnir d&rsquo;une rondelle de citron vert."
+        ],
+        "tags": [
+            "Mexique",
+            "Rafraîchissements"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7264",
+        "title": "Hugo Tonic Porte-Bonheur",
+        "description": "Un premier cocktail vert pour la Saint-Patrick, inspiré par @join_jules.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7264_1787148608993.jpg&v=1787155853000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7479727412364774678\" data-video-id=\"7479727412364774678\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7479727412364774678\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             45 ml de gin"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 ml de liqueur de fleur de sureau"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n             45 ml de jus de concombre frais"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             60 ml d&rsquo;eau tonique"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n             Tranches de concombre et feuilles de menthe (pour la garniture)"
+            }
+        ],
+        "steps": [
+            "Mixer un demi-concombre avec de l&rsquo;eau et filtrer deux fois pour en extraire le jus.",
+            "Remplir un verre à spritz de glaçons.",
+            "Verser le gin, la liqueur de fleur de sureau et le jus de concombre.",
+            "Compléter avec l&rsquo;eau tonique et remuer délicatement.",
+            "Garnir avec des tranches de concombre frais et des feuilles de menthe."
+        ],
+        "tags": [
+            "Rafraîchissements"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7266",
+        "title": "Cookies Churros au Nutella",
+        "description": "Cette recette permet de réaliser 6 à 7 cookies moelleux fourrés au Nutella, enrobés d&rsquo;un mélange de sucre et de cannelle, puis trempés dans du chocolat fondu. Parfaits pour une envie gourmande, ils peuvent être préparés à l&rsquo;avance et cong",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7266_1787148550293.jpg&v=1787155805000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7659513178199477526\" data-video-id=\"7659513178199477526\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7659513178199477526\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             115g de beurre doux coupé en dés"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             80g de sucre semoule"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             80g de cassonade"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             238g de farine tout usage"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de cannelle en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             ½ cuillère à café de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère et demie à café de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ¼ cuillère à café de bicarbonate de soude"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf + 1 jaune d&rsquo;œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             ½ cuillère à café d&rsquo;extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Nutella"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             150g de tablette de chocolat"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             50g de sucre semoule (pour l&rsquo;enrobage)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             2 cuillères à café de cannelle en poudre (pour l&rsquo;enrobage)"
+            }
+        ],
+        "steps": [
+            "Coupez du film alimentaire en petits carrés. Déposez une cuillère à café de Nutella sur chaque carré de film alimentaire. Pliez pour sceller et congelez jusqu&rsquo;à ce que ce soit solide. (Répétez l&rsquo;opération pour le nombre de cookies fourrés que vous prévoyez de faire.)",
+            "Dans un grand saladier, ajoutez le beurre coupé en dés et fouettez jusqu&rsquo;à ce qu&rsquo;il soit légèrement crémeux. Ajoutez le sucre blanc et la cassonade, puis fouettez ensemble jusqu&rsquo;à ce que le mélange soit bien combiné et mousseux.",
+            "Ajoutez les œufs, l&rsquo;extrait de vanille et fouettez jusqu&rsquo;à incorporation complète.",
+            "Ajoutez la levure chimique, le bicarbonate de soude et le sel et mélangez le tout. Dans un bol séparé, mélangez la farine et la cannelle en poudre, puis ajoutez-les à la pâte. Mélangez délicatement juste assez pour combiner, ne mélangez pas trop.",
+            "Dans un bol séparé, mélangez la cannelle en poudre et le sucre et réservez.",
+            "Portionnez la pâte en boules de 85-90g. Pressez un morceau de Nutella congelé au centre de chaque boule de pâte, scellez bien et roulez en boule. Enrobez la boule de pâte du mélange sucre-cannelle et placez-la sur une plaque de cuisson.",
+            "Préchauffez un four à chaleur tournante à 175-180°C (350°F). Faites cuire pendant 10-15 minutes ou jusqu&rsquo;à ce que le dessus soit légèrement doré tandis que le centre reste moelleux.",
+            "Retirez du four et laissez refroidir. À ce stade, vous pouvez enrober à nouveau le cookie du mélange sucre-cannelle.",
+            "Faites maintenant fondre la tablette de chocolat en utilisant la méthode du bain-marie et enrobez le dessous de chaque cookie avec le chocolat fondu et mettez de côté pour qu&rsquo;il durcisse.",
+            "Dégustez !",
+            "REMARQUE : Conservez les boules de pâte supplémentaires dans un récipient hermétique ou un sac de congélation et congelez-les pour plus tard. Chaque fois qu&rsquo;une envie de cookie vous prend, faites-les cuire directement surgelés."
+        ],
+        "tags": [
+            "Espagne",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7258",
+        "title": "Cocktail Piña Colada Vierge",
+        "description": "Une recette simple et rafraîchissante pour préparer un cocktail Piña Colada sans alcool, parfait pour deux personnes. Idéal pour l&rsquo;été !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7258_1787147734477.jpg&v=1787155745000",
+        "category": "boissons",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7400691486238559521\" data-video-id=\"7400691486238559521\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7400691486238559521\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1/2 ananas"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             200 ml de lait de coco"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             3 cuillères à soupe de lait concentré sucré"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200 ml de jus d&rsquo;ananas"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Un peu de lait concentré sucré (pour la décoration)"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             Noix de coco râpée (pour la décoration)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Glaçons"
+            }
+        ],
+        "steps": [
+            "Couper le demi-ananas en quarts, retirer le cœur et la peau, puis le couper en petits cubes.",
+            "Dans une assiette, verser un peu de lait concentré sucré. Dans une autre assiette, déposer de la noix de coco râpée.",
+            "Tremper le bord des verres dans le lait concentré sucré, puis dans la noix de coco râpée pour la décoration.",
+            "Mixer les cubes d&rsquo;ananas avec le lait de coco, le lait concentré sucré et le jus d&rsquo;ananas.",
+            "Servir le cocktail dans les verres décorés avec des glaçons."
+        ],
+        "tags": [
+            "Rafraîchissements",
+            "USA",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7262",
+        "title": "Cocktail Ferrero Rocher",
+        "description": "Ce cocktail festif s&rsquo;inspire du célèbre chocolat Ferrero Rocher, créé en Italie. Il mélange de la liqueur de noisette Frangelico, de la liqueur de chocolat noir Mozart et de la crème irlandaise Baileys, adoucies par de la crème liquide. Servi d",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7262_1787147713865.jpg&v=1787154932000",
+        "category": "boissons",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7450074351958871329\" data-video-id=\"7450074351958871329\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7450074351958871329\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             45 ml de liqueur de noisette Frangelico"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             45 ml de liqueur de chocolat Mozart"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             40 ml de crème irlandaise Baileys"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             35 ml de crème liquide entière"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Nutella (pour le bord du verre)"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             Noisettes hachées (pour la garniture)"
+            }
+        ],
+        "steps": [
+            "Dans un shaker ou un verre, mélangez la liqueur de noisette Frangelico, la liqueur de chocolat Mozart, la crème irlandaise Baileys et la crème liquide entière.",
+            "Préparez un verre à cocktail en trempant le bord dans du Nutella, puis dans des noisettes hachées.",
+            "Versez le mélange dans le verre à cocktail préparé.",
+            "Servez et dégustez ce délicieux cocktail aux saveurs de Noël."
+        ],
+        "tags": [
+            "Italie",
+            "Noël",
+            "Rafraîchissements"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7256",
+        "title": "Cocktail Barbie",
+        "description": "Un cocktail rose et crémeux inspiré de l&rsquo;univers de Barbie, mélangeant vodka, jus d&rsquo;ananas, sirop de grenadine et lait concentré pour une boisson douce et fruitée.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7256_1787147526602.jpg&v=1787154910000",
+        "category": "boissons",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7264261135581465889\" data-video-id=\"7264261135581465889\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7264261135581465889\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             60 ml de vodka"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             120 ml de jus d&rsquo;ananas"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 ml de sirop de grenadine"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             45 ml de lait concentré"
+            }
+        ],
+        "steps": [
+            "Dans un shaker ou un verre, versez la vodka, le jus d&rsquo;ananas, le sirop de grenadine et le lait concentré.",
+            "Mélangez bien tous les ingrédients (vous pouvez ajouter des glaçons et secouer si vous utilisez un shaker).",
+            "Servez et dégustez votre cocktail Barbie."
+        ],
+        "tags": [
+            "Rafraîchissements"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7059",
         "title": "Porc au caramel",
@@ -166,90 +639,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "7177",
-        "title": "Magret de canard, sauce Tigre et fenouil à l&rsquo;orange",
-        "description": "Découvrez une recette originale de magret de canard, sublimé par une sauce Tigre qui pleure inspirée de la street food thaïlandaise. Le plat est accompagné d&rsquo;une salade fraîcheur de fenouil et d&rsquo;orange pour une touche acidulée et anisée d",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7177_1786965702968-1.jpg&v=1787152267000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7674625773940084000\" data-video-id=\"7674625773940084000\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7674625773940084000\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             1 beau magret de canard"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Fleur de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre du moulin"
-            },
-            {
-                "quantity": "",
-                "name": "🍚\n             1 cuillère à soupe de riz gluant torréfié"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Le jus d&rsquo;un citron vert"
-            },
-            {
-                "quantity": "",
-                "name": "🫘\n             3 cuillères à soupe de sauce poisson"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à soupe de sucre de palme (ou cassonade)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1 cuillère à café de piment séché en flocons"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 échalote émincée"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à soupe de pâte de tamarin"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 bulbe de fenouil (tranché très fin à la mandoline)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 orange pressée"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Le jus d&rsquo;un demi citron jaune"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Un filet d&rsquo;huile d&rsquo;olive"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Asie",
-            "épicé",
-            "Plats",
-            "Salades",
-            "Sauces",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "7193",
         "title": "Bouchées de poulet asiatiques",
         "description": "Découvrez une recette facile et savoureuse de bouchées de poulet aux saveurs asiatiques, roulées dans des feuilles de riz et cuites à l&rsquo;étouffée. L&rsquo;assaisonnement est clé pour personnaliser ce plat, idéal à servir avec une salade fraîche ",
@@ -392,479 +781,6 @@ export const mockRecipes: Recipe[] = [
             "Italie",
             "Végé",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7266",
-        "title": "Cookies Churros au Nutella",
-        "description": "Cette recette permet de réaliser 6 à 7 cookies moelleux fourrés au Nutella, enrobés d&rsquo;un mélange de sucre et de cannelle, puis trempés dans du chocolat fondu. Parfaits pour une envie gourmande, ils peuvent être préparés à l&rsquo;avance et cong",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7659513178199477526\" data-video-id=\"7659513178199477526\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7659513178199477526\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧈\n             115g de beurre doux coupé en dés"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             80g de sucre semoule"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             80g de cassonade"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             238g de farine tout usage"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de cannelle en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             ½ cuillère à café de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère et demie à café de levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             ¼ cuillère à café de bicarbonate de soude"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 œuf + 1 jaune d&rsquo;œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             ½ cuillère à café d&rsquo;extrait de vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Nutella"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             150g de tablette de chocolat"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             50g de sucre semoule (pour l&rsquo;enrobage)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             2 cuillères à café de cannelle en poudre (pour l&rsquo;enrobage)"
-            }
-        ],
-        "steps": [
-            "Coupez du film alimentaire en petits carrés. Déposez une cuillère à café de Nutella sur chaque carré de film alimentaire. Pliez pour sceller et congelez jusqu&rsquo;à ce que ce soit solide. (Répétez l&rsquo;opération pour le nombre de cookies fourrés que vous prévoyez de faire.)",
-            "Dans un grand saladier, ajoutez le beurre coupé en dés et fouettez jusqu&rsquo;à ce qu&rsquo;il soit légèrement crémeux. Ajoutez le sucre blanc et la cassonade, puis fouettez ensemble jusqu&rsquo;à ce que le mélange soit bien combiné et mousseux.",
-            "Ajoutez les œufs, l&rsquo;extrait de vanille et fouettez jusqu&rsquo;à incorporation complète.",
-            "Ajoutez la levure chimique, le bicarbonate de soude et le sel et mélangez le tout. Dans un bol séparé, mélangez la farine et la cannelle en poudre, puis ajoutez-les à la pâte. Mélangez délicatement juste assez pour combiner, ne mélangez pas trop.",
-            "Dans un bol séparé, mélangez la cannelle en poudre et le sucre et réservez.",
-            "Portionnez la pâte en boules de 85-90g. Pressez un morceau de Nutella congelé au centre de chaque boule de pâte, scellez bien et roulez en boule. Enrobez la boule de pâte du mélange sucre-cannelle et placez-la sur une plaque de cuisson.",
-            "Préchauffez un four à chaleur tournante à 175-180°C (350°F). Faites cuire pendant 10-15 minutes ou jusqu&rsquo;à ce que le dessus soit légèrement doré tandis que le centre reste moelleux.",
-            "Retirez du four et laissez refroidir. À ce stade, vous pouvez enrober à nouveau le cookie du mélange sucre-cannelle.",
-            "Faites maintenant fondre la tablette de chocolat en utilisant la méthode du bain-marie et enrobez le dessous de chaque cookie avec le chocolat fondu et mettez de côté pour qu&rsquo;il durcisse.",
-            "Dégustez !",
-            "REMARQUE : Conservez les boules de pâte supplémentaires dans un récipient hermétique ou un sac de congélation et congelez-les pour plus tard. Chaque fois qu&rsquo;une envie de cookie vous prend, faites-les cuire directement surgelés."
-        ],
-        "tags": [
-            "Espagne",
-            "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7264",
-        "title": "Hugo Tonic Porte-Bonheur",
-        "description": "Un premier cocktail vert pour la Saint-Patrick, inspiré par @join_jules.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7479727412364774678\" data-video-id=\"7479727412364774678\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7479727412364774678\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             45 ml de gin"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             30 ml de liqueur de fleur de sureau"
-            },
-            {
-                "quantity": "",
-                "name": "🥒\n             45 ml de jus de concombre frais"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             60 ml d&rsquo;eau tonique"
-            },
-            {
-                "quantity": "",
-                "name": "🥒\n             Tranches de concombre et feuilles de menthe (pour la garniture)"
-            }
-        ],
-        "steps": [
-            "Mixer un demi-concombre avec de l&rsquo;eau et filtrer deux fois pour en extraire le jus.",
-            "Remplir un verre à spritz de glaçons.",
-            "Verser le gin, la liqueur de fleur de sureau et le jus de concombre.",
-            "Compléter avec l&rsquo;eau tonique et remuer délicatement.",
-            "Garnir avec des tranches de concombre frais et des feuilles de menthe."
-        ],
-        "tags": [
-            "Rafraîchissements"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7262",
-        "title": "Cocktail Ferrero Rocher",
-        "description": "Ce cocktail festif s&rsquo;inspire du célèbre chocolat Ferrero Rocher, créé en Italie. Il mélange de la liqueur de noisette Frangelico, de la liqueur de chocolat noir Mozart et de la crème irlandaise Baileys, adoucies par de la crème liquide. Servi d",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "boissons",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7450074351958871329\" data-video-id=\"7450074351958871329\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7450074351958871329\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             45 ml de liqueur de noisette Frangelico"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             45 ml de liqueur de chocolat Mozart"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             40 ml de crème irlandaise Baileys"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             35 ml de crème liquide entière"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Nutella (pour le bord du verre)"
-            },
-            {
-                "quantity": "",
-                "name": "🥜\n             Noisettes hachées (pour la garniture)"
-            }
-        ],
-        "steps": [
-            "Dans un shaker ou un verre, mélangez la liqueur de noisette Frangelico, la liqueur de chocolat Mozart, la crème irlandaise Baileys et la crème liquide entière.",
-            "Préparez un verre à cocktail en trempant le bord dans du Nutella, puis dans des noisettes hachées.",
-            "Versez le mélange dans le verre à cocktail préparé.",
-            "Servez et dégustez ce délicieux cocktail aux saveurs de Noël."
-        ],
-        "tags": [
-            "Italie",
-            "Noël",
-            "Rafraîchissements"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7260",
-        "title": "Shot Black Kiss",
-        "description": "Osez ce shot et savourez ses délicieuses saveurs 🔥 Une combinaison inhabituelle de liqueur de café et de crème de tequila à la fraise, parfaite pour l&rsquo;après-dîner et pour surprendre vos invités 🥂 Santé à tous !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7479912790572944662\" data-video-id=\"7479912790572944662\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7479912790572944662\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             30 ml de liqueur de café Kahlúa"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             30 ml de crème de tequila à la fraise Tequila Rose"
-            }
-        ],
-        "steps": [
-            "Mélanger la liqueur de café Kahlúa et la crème de tequila à la fraise Tequila Rose dans un verre à shot."
-        ],
-        "tags": [
-            "Rafraîchissements"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7258",
-        "title": "Cocktail Piña Colada Vierge",
-        "description": "Une recette simple et rafraîchissante pour préparer un cocktail Piña Colada sans alcool, parfait pour deux personnes. Idéal pour l&rsquo;été !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "boissons",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7400691486238559521\" data-video-id=\"7400691486238559521\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7400691486238559521\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             1/2 ananas"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             200 ml de lait de coco"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             3 cuillères à soupe de lait concentré sucré"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             200 ml de jus d&rsquo;ananas"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Un peu de lait concentré sucré (pour la décoration)"
-            },
-            {
-                "quantity": "",
-                "name": "🥜\n             Noix de coco râpée (pour la décoration)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Glaçons"
-            }
-        ],
-        "steps": [
-            "Couper le demi-ananas en quarts, retirer le cœur et la peau, puis le couper en petits cubes.",
-            "Dans une assiette, verser un peu de lait concentré sucré. Dans une autre assiette, déposer de la noix de coco râpée.",
-            "Tremper le bord des verres dans le lait concentré sucré, puis dans la noix de coco râpée pour la décoration.",
-            "Mixer les cubes d&rsquo;ananas avec le lait de coco, le lait concentré sucré et le jus d&rsquo;ananas.",
-            "Servir le cocktail dans les verres décorés avec des glaçons."
-        ],
-        "tags": [
-            "Rafraîchissements",
-            "USA",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7256",
-        "title": "Cocktail Barbie",
-        "description": "Un cocktail rose et crémeux inspiré de l&rsquo;univers de Barbie, mélangeant vodka, jus d&rsquo;ananas, sirop de grenadine et lait concentré pour une boisson douce et fruitée.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "boissons",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7264261135581465889\" data-video-id=\"7264261135581465889\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7264261135581465889\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             60 ml de vodka"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             120 ml de jus d&rsquo;ananas"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             30 ml de sirop de grenadine"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             45 ml de lait concentré"
-            }
-        ],
-        "steps": [
-            "Dans un shaker ou un verre, versez la vodka, le jus d&rsquo;ananas, le sirop de grenadine et le lait concentré.",
-            "Mélangez bien tous les ingrédients (vous pouvez ajouter des glaçons et secouer si vous utilisez un shaker).",
-            "Servez et dégustez votre cocktail Barbie."
-        ],
-        "tags": [
-            "Rafraîchissements"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7254",
-        "title": "Margarita du Diable",
-        "description": "La Margarita du Diable s&rsquo;inspire du New York Sour avec une couche de vin rouge. Cela ajoute une certaine complexité à la boisson, mais préparée à la manière Tommy&rsquo;s, la Tequila reste la vedette du spectacle 👌",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7392891424976522528\" data-video-id=\"7392891424976522528\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7392891424976522528\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Tequila - 60 ml"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Jus de citron vert - 30 ml"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Sirop de sucre de canne - 22,5 ml"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Flottant de vin rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Bord du verre salé"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Rondelle de citron vert"
-            }
-        ],
-        "steps": [
-            "Saler le bord d&rsquo;un verre.",
-            "Dans un shaker, mélanger la tequila, le jus de citron vert et le sirop de sucre de canne avec de la glace.",
-            "Filtrer le mélange dans le verre préparé.",
-            "Ajouter délicatement une couche de vin rouge sur le dessus.",
-            "Garnir d&rsquo;une rondelle de citron vert."
-        ],
-        "tags": [
-            "Mexique",
-            "Rafraîchissements"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7252",
-        "title": "Paradis Mangue Dragon",
-        "description": "Un délicieux cocktail tropical, parfait pour les chaudes journées d&rsquo;été ! Je sers ce cocktail dans l&rsquo;un des bars que je gère, et j&rsquo;utilise les produits Finest Call car ils sont les meilleurs en termes de qualité, de consistance et d",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7667984529986030862\" data-video-id=\"7667984529986030862\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7667984529986030862\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             30 ml de mélange de purée de mangue Finest Call"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             60 ml d&rsquo;eau de coco"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             15 ml de jus de citron vert frais"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             3 à 4 morceaux de fruit du dragon frais"
-            },
-            {
-                "quantity": "",
-                "name": "🥜\n             60 ml de rhum à la noix de coco"
-            }
-        ],
-        "steps": [
-            "Pour la première couche, verser délicatement 30 ml de mélange de purée de mangue Finest Call, 60 ml d&rsquo;eau de coco et 15 ml de jus de citron vert frais dans un verre.",
-            "Pour la deuxième couche, ajouter 3 à 4 morceaux de fruit du dragon frais et 60 ml de rhum à la noix de coco.",
-            "Superposer délicatement les ingrédients, garnir avec du fruit du dragon frais et savourer. Santé !"
-        ],
-        "tags": [
-            "Rafraîchissements",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7250",
-        "title": "Sour à l&rsquo;Aperol et à la Tequila",
-        "description": "Égayez vos journées d&rsquo;hiver avec ce Sour à l&rsquo;Aperol et à la Tequila, une boisson rafraîchissante et acidulée.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7463486961026649386\" data-video-id=\"7463486961026649386\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7463486961026649386\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             45 ml de tequila"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             15 ml d&rsquo;Aperol"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             15 ml de sirop de fraise"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             22 ml de jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 blanc d&rsquo;œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Quelques gouttes d&rsquo;Angostura bitters"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1 tranche de citron séché (pour la garniture)"
-            }
-        ],
-        "steps": [
-            "Dans un shaker, combinez la tequila, l&rsquo;Aperol, le sirop de fraise, le jus de citron et le blanc d&rsquo;œuf.",
-            "Secouez vigoureusement sans glace (dry shake) pendant environ 15 secondes pour émulsionner le blanc d&rsquo;œuf.",
-            "Ajoutez de la glace dans le shaker et secouez à nouveau pendant 15 à 20 secondes pour refroidir le mélange.",
-            "Filtrez le mélange dans un verre à cocktail.",
-            "Décorez avec quelques gouttes d&rsquo;Angostura bitters et une tranche de citron séché."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Rafraîchissements",
-            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
