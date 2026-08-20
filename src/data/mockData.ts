@@ -2,11 +2,50 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 20/08/2026 16:10:15
+ * Dernière mise à jour: 20/08/2026 20:42:05
  * Total: 661 recettes
  */
-export const exportSyncId = "1787242215213";
+export const exportSyncId = "1787258525658";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7283",
+        "title": "Crème dessert choco-cacahuète",
+        "description": "Une crème dessert onctueuse et gourmande au chocolat noir et au beurre de cacahuètes, facile à préparer et idéale pour un dessert végétal. Cette recette est une collaboration commerciale avec Koro.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7283_1787257017844.jpg&v=1787264253000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7675012359705890080\" data-video-id=\"7675012359705890080\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7675012359705890080\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             400 ml de lait de coco chaud (ou autre lait végétal)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             200 g de chocolat noir pâtissier"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre de cacahuètes (pour la décoration)"
+            }
+        ],
+        "steps": [
+            "Dans un récipient, mélanger le lait de coco chaud avec le chocolat noir pâtissier jusqu&rsquo;à ce que le chocolat soit complètement fondu et que la préparation soit homogène.",
+            "Verser la crème obtenue dans des ramequins individuels ou un plat.",
+            "Ajouter un peu de beurre de cacahuètes sur le dessus de chaque crème et réaliser un petit dessin à l'aide de bâtonnets ou d'un couteau.",
+            "Laisser prendre au frais pendant au moins 4 heures. Pour un meilleur résultat, il est recommandé de laisser reposer une nuit entière."
+        ],
+        "tags": [
+            "Desserts",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6608",
         "title": "Fagots d&rsquo;aubergines farcis au bœuf et au fromage",
@@ -608,45 +647,6 @@ export const mockRecipes: Recipe[] = [
             "Astuces",
             "Mexique",
             "Sandwichs"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7283",
-        "title": "Crème dessert choco-cacahuète",
-        "description": "Une crème dessert onctueuse et gourmande au chocolat noir et au beurre de cacahuètes, facile à préparer et idéale pour un dessert végétal. Cette recette est une collaboration commerciale avec Koro.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7675012359705890080\" data-video-id=\"7675012359705890080\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7675012359705890080\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥛\n             400 ml de lait de coco chaud (ou autre lait végétal)"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             200 g de chocolat noir pâtissier"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             Beurre de cacahuètes (pour la décoration)"
-            }
-        ],
-        "steps": [
-            "Dans un récipient, mélanger le lait de coco chaud avec le chocolat noir pâtissier jusqu&rsquo;à ce que le chocolat soit complètement fondu et que la préparation soit homogène.",
-            "Verser la crème obtenue dans des ramequins individuels ou un plat.",
-            "Ajouter un peu de beurre de cacahuètes sur le dessus de chaque crème et réaliser un petit dessin à l'aide de bâtonnets ou d'un couteau.",
-            "Laisser prendre au frais pendant au moins 4 heures. Pour un meilleur résultat, il est recommandé de laisser reposer une nuit entière."
-        ],
-        "tags": [
-            "Desserts",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
