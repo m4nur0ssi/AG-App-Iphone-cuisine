@@ -2,11 +2,617 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 20/08/2026 03:48:10
+ * Dernière mise à jour: 20/08/2026 16:10:15
  * Total: 661 recettes
  */
-export const exportSyncId = "1787197690362";
+export const exportSyncId = "1787242215213";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6608",
+        "title": "Fagots d&rsquo;aubergines farcis au bœuf et au fromage",
+        "description": "Une recette savoureuse de fagots d&rsquo;aubergines garnis d&rsquo;un mélange de bœuf haché, de riz, d&rsquo;oignon et d&rsquo;herbes, cuits dans une sauce tomate basilic et gratinés à la mozzarella.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_6608_1787240556481.jpg&v=1787247766000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7648355109189061911\" data-video-id=\"7648355109189061911\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7648355109189061911\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍆\n             2 aubergines"
+            },
+            {
+                "quantity": "",
+                "name": "🥩\n             300 g de bœuf haché"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             40 g de riz"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 petit oignon, finement haché"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil frais, finement haché"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 cuillère à café de poudre d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 cuillère à café de poudre d&rsquo;oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1/2 cuillère à café de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1/2 cuillère à café de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1/2 cuillère à café de poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             200 ml de sauce tomate basilic"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             125 g de mozzarella"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Flocons de piment"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            }
+        ],
+        "steps": [
+            "Coupez les aubergines en tranches et disposez-les sur une plaque de cuisson. Salez, arrosez d&rsquo;huile d&rsquo;olive et faites cuire au four à 200°C pendant 20 minutes.",
+            "Mélangez le bœuf haché, le riz, l&rsquo;oignon, le persil et les assaisonnements.",
+            "Disposez deux tranches d&rsquo;aubergine en forme de croix, placez la farce au centre et repliez-les pour former des fagots.",
+            "Versez la sauce tomate dans un plat de cuisson et déposez les fagots par-dessus.",
+            "Couvrez et faites cuire au four à 220°C pendant 35 à 40 minutes.",
+            "Garnissez de 125 g de mozzarella et de flocons de piment, puis faites cuire à découvert pendant 8 minutes jusqu&rsquo;à ce que ce soit doré."
+        ],
+        "tags": [
+            "épicé",
+            "Gratins",
+            "Italie",
+            "Pas cher",
+            "Plats"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6931",
+        "title": "Sauce Barbecue Woody Maison",
+        "description": "Découvrez une recette de sauce barbecue maison, bien différente des sauces du commerce souvent trop sucrées. Cette sauce Woody offre un équilibre parfait entre le fumé, le légèrement sucré et une touche d&rsquo;orange rafraîchissante. Avec seulement ",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_6931_1787239654074.jpg&v=1787246948000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7659428546636500227\" data-video-id=\"7659428546636500227\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7659428546636500227\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧅\n             80 g d&rsquo;oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             5 g d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             50 g de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200 g de passata"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             15 g de vinaigre de cidre"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             10 g de sauce Worcestershire"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             10 g de moutarde de Dijon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Jus d&rsquo;une demi-orange"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             10 g de stévia brune"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika doux"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1/2 cuillère à café d&rsquo;ail semoule"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 cuillère à café d&rsquo;oignon semoule"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1/4 cuillère à café de cumin"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/2 cuillère à café de café soluble"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Zeste d&rsquo;une demi-orange"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Quelques gouttes de fumée liquide (optionnel)"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1/2 cuillère à soupe de sauce soja foncée (optionnel)"
+            }
+        ],
+        "steps": [
+            "Faire revenir 80 g d&rsquo;oignon rouge dans 5 g d&rsquo;huile d&rsquo;olive pendant quelques minutes. Ajouter 2 gousses d&rsquo;ail, puis 50 g de concentré de tomate et laisser cuire 2 minutes pour développer les arômes.",
+            "Ajouter le reste des ingrédients (sauf le zeste d&rsquo;orange) : 200 g de passata, 15 g de vinaigre de cidre, 10 g de sauce Worcestershire, 10 g de moutarde de Dijon, le jus d&rsquo;une demi-orange, 10 g de stévia brune, 1 cuillère à café de paprika fumé, 1 cuillère à café de paprika doux, 1/2 cuillère à café d&rsquo;ail semoule, 1/2 cuillère à café d&rsquo;oignon semoule, 1/4 cuillère à café de cumin, 1/2 cuillère à café de café soluble, du sel et du poivre. Laisser mijoter 20 à 25 minutes à feu doux, puis détendre avec de l&rsquo;eau jusqu&rsquo;à obtenir la texture désirée.",
+            "Pour une option cow-boy : ajouter quelques gouttes de fumée liquide pour un goût encore plus fumé et 1/2 cuillère à soupe de sauce soja foncée pour la couleur et l&rsquo;umami.",
+            "Hors du feu, ajouter le zeste d&rsquo;une demi-orange. Mixer jusqu&rsquo;à obtenir une sauce bien lisse."
+        ],
+        "tags": [
+            "barbecue",
+            "épicé",
+            "Healthy",
+            "minceur",
+            "Sauces",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6821",
+        "title": "Sandwich aux œufs et crudités",
+        "description": "Découvrez comment préparer un délicieux sandwich aux œufs et crudités, agrémenté d&rsquo;une mayonnaise maison onctueuse au yaourt grec. Une recette simple et rapide, parfaite pour un repas équilibré et savoureux, servie dans du pain de mie grillé.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_6821_1787239628132.jpeg&v=1787246848000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7490625111716826390\" data-video-id=\"7490625111716826390\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7490625111716826390\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             6 œufs durs"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs (crus, pour la mayonnaise)"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             2 cuillères à soupe de moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 yaourt grec"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe de vinaigre blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Céleri finement coupé"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignons verts émincés"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             4 tranches de pain de mie American Sandwich Rustique d'Harrys"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil frais haché"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             Quelques feuilles de salade"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika (optionnel)"
+            }
+        ],
+        "steps": [
+            "Préparez la mayonnaise maison : Mixez 2 œufs crus, 2 cuillères à soupe d'huile d'olive, 1 cuillère à soupe de moutarde, 2 cuillères à soupe de yaourt grec et 2 cuillères à soupe de vinaigre blanc jusqu'à obtenir une mayonnaise onctueuse.",
+            "Dans un bol, mélangez les 6 œufs durs écrasés, la mayonnaise préparée, le reste du yaourt grec, la moutarde restante et le jus de citron.",
+            "Incorporez le céleri finement coupé, les oignons verts émincés et la ciboulette hachée.",
+            "Assaisonnez avec du sel et du poivre.",
+            "Dans un autre bol, mélangez l'huile d'olive avec la gousse d'ail hachée et le persil frais haché. Salez et poivrez.",
+            "Badigeonnez une face des 4 tranches de pain de mie avec ce mélange, puis faites dorer chaque face à la poêle pendant 3 à 4 minutes.",
+            "Hors du feu, déposez le mélange aux œufs sur une tranche de pain de mie grillé Harrys.",
+            "Ajoutez quelques feuilles de salade et refermez avec une autre tranche de pain.",
+            "Optionnel : Ajoutez une pincée de paprika avant de refermer votre sandwich."
+        ],
+        "tags": [
+            "Healthy",
+            "Sandwichs",
+            "USA",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7205",
+        "title": "Côtes de porc étouffées à l&rsquo;ail et aux herbes",
+        "description": "Ces côtes de porc étouffées à l&rsquo;ail et aux herbes sont juteuses, saisies à la poêle et mijotées dans une riche sauce au beurre, à l&rsquo;ail et aux herbes fraîches jusqu&rsquo;à ce qu&rsquo;elles soient parfaitement tendres. Servies avec des p",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7205_1787238765583.jpg&v=1787246060000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7670195194251250975\" data-video-id=\"7670195194251250975\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7670195194251250975\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             4 côtes de porc avec os (environ 2,5 cm d&rsquo;épaisseur)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             2 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 cuillère à café d&rsquo;ail en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 cuillère à café d&rsquo;oignon en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             ½ cuillère à café de poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             3 cuillères à soupe de beurre non salé"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             6 gousses d&rsquo;ail, hachées"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 petit oignon, finement coupé en dés"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de moutarde de Dijon"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de sauce Worcestershire"
+            },
+            {
+                "quantity": "",
+                "name": "🍗\n             1½ tasses de bouillon de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             ½ tasse de crème épaisse"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 cuillère à café de romarin frais, haché"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 cuillère à café de feuilles de thym frais"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ½ cuillère à café d&rsquo;assaisonnement italien"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             1 cuillère à soupe de fécule de maïs mélangée à 2 cuillères à soupe d&rsquo;eau froide"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n             450 g de pommes de terre nouvelles, coupées en deux"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel et poivre au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil frais, haché"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre noir concassé supplémentaire"
+            }
+        ],
+        "steps": [
+            "Assaisonner les deux côtés des côtes de porc avec le paprika, l&rsquo;ail en poudre, l&rsquo;oignon en poudre, le sel et le poivre.",
+            "Faire chauffer l&rsquo;huile d&rsquo;olive dans une grande poêle à feu moyen-vif.",
+            "Saisir les côtes de porc 3 à 4 minutes par côté jusqu&rsquo;à ce qu&rsquo;elles soient dorées. Retirer et réserver.",
+            "Dans la même poêle, cuire les pommes de terre nouvelles pendant 10 à 12 minutes jusqu&rsquo;à ce qu&rsquo;elles soient légèrement dorées.",
+            "Ajouter le beurre, l&rsquo;oignon et l&rsquo;ail. Cuire pendant 2 minutes jusqu&rsquo;à ce que ce soit parfumé.",
+            "Incorporer la moutarde de Dijon, la sauce Worcestershire, le bouillon de poulet, la crème épaisse, le romarin, le thym et l&rsquo;assaisonnement italien.",
+            "Porter à frémissement doux.",
+            "Incorporer le mélange de fécule de maïs et cuire 2 à 3 minutes jusqu&rsquo;à ce que la sauce épaississe.",
+            "Remettre les côtes de porc dans la poêle et napper de sauce.",
+            "Couvrir et laisser mijoter à feu doux pendant 15 à 20 minutes jusqu&rsquo;à ce que le porc atteigne une température interne de **63°C (145°F)** et que les pommes de terre soient tendres.",
+            "Garnir de persil frais et de poivre noir concassé avant de servir."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Plats"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7197",
+        "title": "Bâtonnets de mozzarella façon Nashville",
+        "description": "Découvrez la recette authentique des bâtonnets de mozzarella façon Nashville, relevés et croustillants, accompagnés d&rsquo;une sauce Ranch traditionnelle et d&rsquo;un laquage pimenté. Une idée gourmande et facile à réaliser, parfaite pour les amate",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7197_1787237971328.jpeg&v=1787245180000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7673924987480313121\" data-video-id=\"7673924987480313121\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7673924987480313121\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧀\n             1 pain de mozzarella (bloc)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile (pour la marinade)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika (pour la marinade)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel (pour la marinade)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre (pour la marinade)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Piment (pour la marinade)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Corn flakes mixés"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             Chapelure de pain"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Poudre d&rsquo;ail (pour la chapelure)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs battus"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de mayonnaise"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             3 cuillères à soupe de crème épaisse allégée"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette ciselée"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil haché"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Aneth (frais ou déshydraté)"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus d&rsquo;un demi-citron"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à café de moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 cuillères à soupe de poudre d&rsquo;ail (pour la sauce Ranch)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel (pour la sauce Ranch)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre (pour la sauce Ranch)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 à 2 cuillères à soupe de piment de Cayenne"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à soupe de paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel (pour le laquage)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à café de sucre roux"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 cuillère à soupe d&rsquo;ail en poudre (pour le laquage)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             5 à 6 cl d&rsquo;huile de friture"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Coleslaw (pour servir)"
+            }
+        ],
+        "steps": [
+            "Coupez le pain de mozzarella en bâtonnets. Faites-les mariner avec un mélange d&rsquo;huile, de paprika, de sel, de poivre et de piment.",
+            "Pour la chapelure, mélangez des corn flakes mixés avec de la chapelure de pain, du paprika et de la poudre d&rsquo;ail.",
+            "Panez les bâtonnets de mozzarella dans l&rsquo;ordre suivant : farine, œufs battus, chapelure, puis à nouveau farine, œufs, et chapelure.",
+            "Laissez figer les bâtonnets panés au congélateur pendant 30 minutes.",
+            "Pour la sauce Ranch : dans un bol, mélangez 1 cuillère à soupe de mayonnaise, 3 cuillères à soupe de crème épaisse allégée, de la ciboulette ciselée, du persil haché, de l&rsquo;aneth, le jus d&rsquo;un demi-citron, 1 cuillère à café de moutarde, 2 cuillères à soupe de poudre d&rsquo;ail, du sel et du poivre.",
+            "Pour le laquage : dans un bol résistant à la chaleur, mélangez 1 à 2 cuillères à soupe de piment de Cayenne, 1 cuillère à soupe de paprika fumé, du sel, 1 cuillère à café de sucre roux et 1 cuillère à soupe d&rsquo;ail en poudre.",
+            "Faites chauffer 5 à 6 cl d&rsquo;huile de friture et versez-la chaude sur le mélange pour le laquage, puis mélangez bien.",
+            "Faites frire les bâtonnets de mozzarella panés jusqu&rsquo;à ce qu&rsquo;ils soient dorés.",
+            "Nappez les bâtonnets dorés avec le laquage pimenté.",
+            "Dégustez avec du coleslaw et la sauce Ranch."
+        ],
+        "tags": [
+            "épicé",
+            "Sauces",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6933",
+        "title": "Astuce Fajita",
+        "description": "Une astuce rapide pour préparer des fajitas.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_6933_1787237959172.jpg&v=1787245168000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7661386479981186326\" data-video-id=\"7661386479981186326\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7661386479981186326\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Astuces",
+            "Mexique",
+            "Sandwichs"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7283",
         "title": "Crème dessert choco-cacahuète",
@@ -1972,278 +2578,6 @@ export const mockRecipes: Recipe[] = [
             "Pas cher",
             "Végé",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7205",
-        "title": "Côtes de porc étouffées à l&rsquo;ail et aux herbes",
-        "description": "Ces côtes de porc étouffées à l&rsquo;ail et aux herbes sont juteuses, saisies à la poêle et mijotées dans une riche sauce au beurre, à l&rsquo;ail et aux herbes fraîches jusqu&rsquo;à ce qu&rsquo;elles soient parfaitement tendres. Servies avec des p",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7670195194251250975\" data-video-id=\"7670195194251250975\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7670195194251250975\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             4 côtes de porc avec os (environ 2,5 cm d&rsquo;épaisseur)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             2 cuillères à soupe d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 cuillère à café d&rsquo;ail en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 cuillère à café d&rsquo;oignon en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             ½ cuillère à café de poivre noir"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             3 cuillères à soupe de beurre non salé"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             6 gousses d&rsquo;ail, hachées"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 petit oignon, finement coupé en dés"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 cuillère à soupe de moutarde de Dijon"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 cuillère à soupe de sauce Worcestershire"
-            },
-            {
-                "quantity": "",
-                "name": "🍗\n             1½ tasses de bouillon de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             ½ tasse de crème épaisse"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 cuillère à café de romarin frais, haché"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 cuillère à café de feuilles de thym frais"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             ½ cuillère à café d&rsquo;assaisonnement italien"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             1 cuillère à soupe de fécule de maïs mélangée à 2 cuillères à soupe d&rsquo;eau froide"
-            },
-            {
-                "quantity": "",
-                "name": "🍎\n             450 g de pommes de terre nouvelles, coupées en deux"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 cuillère à soupe d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel et poivre au goût"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil frais, haché"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre noir concassé supplémentaire"
-            }
-        ],
-        "steps": [
-            "Assaisonner les deux côtés des côtes de porc avec le paprika, l&rsquo;ail en poudre, l&rsquo;oignon en poudre, le sel et le poivre.",
-            "Faire chauffer l&rsquo;huile d&rsquo;olive dans une grande poêle à feu moyen-vif.",
-            "Saisir les côtes de porc 3 à 4 minutes par côté jusqu&rsquo;à ce qu&rsquo;elles soient dorées. Retirer et réserver.",
-            "Dans la même poêle, cuire les pommes de terre nouvelles pendant 10 à 12 minutes jusqu&rsquo;à ce qu&rsquo;elles soient légèrement dorées.",
-            "Ajouter le beurre, l&rsquo;oignon et l&rsquo;ail. Cuire pendant 2 minutes jusqu&rsquo;à ce que ce soit parfumé.",
-            "Incorporer la moutarde de Dijon, la sauce Worcestershire, le bouillon de poulet, la crème épaisse, le romarin, le thym et l&rsquo;assaisonnement italien.",
-            "Porter à frémissement doux.",
-            "Incorporer le mélange de fécule de maïs et cuire 2 à 3 minutes jusqu&rsquo;à ce que la sauce épaississe.",
-            "Remettre les côtes de porc dans la poêle et napper de sauce.",
-            "Couvrir et laisser mijoter à feu doux pendant 15 à 20 minutes jusqu&rsquo;à ce que le porc atteigne une température interne de **63°C (145°F)** et que les pommes de terre soient tendres.",
-            "Garnir de persil frais et de poivre noir concassé avant de servir."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Plats"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7197",
-        "title": "Bâtonnets de mozzarella façon Nashville",
-        "description": "Découvrez la recette authentique des bâtonnets de mozzarella façon Nashville, relevés et croustillants, accompagnés d&rsquo;une sauce Ranch traditionnelle et d&rsquo;un laquage pimenté. Une idée gourmande et facile à réaliser, parfaite pour les amate",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7673924987480313121\" data-video-id=\"7673924987480313121\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7673924987480313121\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧀\n             1 pain de mozzarella (bloc)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Huile (pour la marinade)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika (pour la marinade)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel (pour la marinade)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre (pour la marinade)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Piment (pour la marinade)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Corn flakes mixés"
-            },
-            {
-                "quantity": "",
-                "name": "🥖\n             Chapelure de pain"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Poudre d&rsquo;ail (pour la chapelure)"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             Farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Œufs battus"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 cuillère à soupe de mayonnaise"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             3 cuillères à soupe de crème épaisse allégée"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Ciboulette ciselée"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil haché"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Aneth (frais ou déshydraté)"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Jus d&rsquo;un demi-citron"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 cuillère à café de moutarde"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 cuillères à soupe de poudre d&rsquo;ail (pour la sauce Ranch)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel (pour la sauce Ranch)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre (pour la sauce Ranch)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1 à 2 cuillères à soupe de piment de Cayenne"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à soupe de paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel (pour le laquage)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à café de sucre roux"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 cuillère à soupe d&rsquo;ail en poudre (pour le laquage)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             5 à 6 cl d&rsquo;huile de friture"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Coleslaw (pour servir)"
-            }
-        ],
-        "steps": [
-            "Coupez le pain de mozzarella en bâtonnets. Faites-les mariner avec un mélange d&rsquo;huile, de paprika, de sel, de poivre et de piment.",
-            "Pour la chapelure, mélangez des corn flakes mixés avec de la chapelure de pain, du paprika et de la poudre d&rsquo;ail.",
-            "Panez les bâtonnets de mozzarella dans l&rsquo;ordre suivant : farine, œufs battus, chapelure, puis à nouveau farine, œufs, et chapelure.",
-            "Laissez figer les bâtonnets panés au congélateur pendant 30 minutes.",
-            "Pour la sauce Ranch : dans un bol, mélangez 1 cuillère à soupe de mayonnaise, 3 cuillères à soupe de crème épaisse allégée, de la ciboulette ciselée, du persil haché, de l&rsquo;aneth, le jus d&rsquo;un demi-citron, 1 cuillère à café de moutarde, 2 cuillères à soupe de poudre d&rsquo;ail, du sel et du poivre.",
-            "Pour le laquage : dans un bol résistant à la chaleur, mélangez 1 à 2 cuillères à soupe de piment de Cayenne, 1 cuillère à soupe de paprika fumé, du sel, 1 cuillère à café de sucre roux et 1 cuillère à soupe d&rsquo;ail en poudre.",
-            "Faites chauffer 5 à 6 cl d&rsquo;huile de friture et versez-la chaude sur le mélange pour le laquage, puis mélangez bien.",
-            "Faites frire les bâtonnets de mozzarella panés jusqu&rsquo;à ce qu&rsquo;ils soient dorés.",
-            "Nappez les bâtonnets dorés avec le laquage pimenté.",
-            "Dégustez avec du coleslaw et la sauce Ranch."
-        ],
-        "tags": [
-            "épicé",
-            "Sauces",
-            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -7588,150 +7922,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "6933",
-        "title": "Astuce Fajita",
-        "description": "Une astuce rapide pour préparer des fajitas.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7661386479981186326\" data-video-id=\"7661386479981186326\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7661386479981186326\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Astuces",
-            "Mexique",
-            "Sandwichs"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6931",
-        "title": "Sauce Barbecue Woody Maison",
-        "description": "Découvrez une recette de sauce barbecue maison, bien différente des sauces du commerce souvent trop sucrées. Cette sauce Woody offre un équilibre parfait entre le fumé, le légèrement sucré et une touche d&rsquo;orange rafraîchissante. Avec seulement ",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7659428546636500227\" data-video-id=\"7659428546636500227\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7659428546636500227\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧅\n             80 g d&rsquo;oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             5 g d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 gousses d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             50 g de concentré de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             200 g de passata"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             15 g de vinaigre de cidre"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             10 g de sauce Worcestershire"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             10 g de moutarde de Dijon"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Jus d&rsquo;une demi-orange"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             10 g de stévia brune"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de paprika doux"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1/2 cuillère à café d&rsquo;ail semoule"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1/2 cuillère à café d&rsquo;oignon semoule"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1/4 cuillère à café de cumin"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1/2 cuillère à café de café soluble"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Zeste d&rsquo;une demi-orange"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Quelques gouttes de fumée liquide (optionnel)"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1/2 cuillère à soupe de sauce soja foncée (optionnel)"
-            }
-        ],
-        "steps": [
-            "Faire revenir 80 g d&rsquo;oignon rouge dans 5 g d&rsquo;huile d&rsquo;olive pendant quelques minutes. Ajouter 2 gousses d&rsquo;ail, puis 50 g de concentré de tomate et laisser cuire 2 minutes pour développer les arômes.",
-            "Ajouter le reste des ingrédients (sauf le zeste d&rsquo;orange) : 200 g de passata, 15 g de vinaigre de cidre, 10 g de sauce Worcestershire, 10 g de moutarde de Dijon, le jus d&rsquo;une demi-orange, 10 g de stévia brune, 1 cuillère à café de paprika fumé, 1 cuillère à café de paprika doux, 1/2 cuillère à café d&rsquo;ail semoule, 1/2 cuillère à café d&rsquo;oignon semoule, 1/4 cuillère à café de cumin, 1/2 cuillère à café de café soluble, du sel et du poivre. Laisser mijoter 20 à 25 minutes à feu doux, puis détendre avec de l&rsquo;eau jusqu&rsquo;à obtenir la texture désirée.",
-            "Pour une option cow-boy : ajouter quelques gouttes de fumée liquide pour un goût encore plus fumé et 1/2 cuillère à soupe de sauce soja foncée pour la couleur et l&rsquo;umami.",
-            "Hors du feu, ajouter le zeste d&rsquo;une demi-orange. Mixer jusqu&rsquo;à obtenir une sauce bien lisse."
-        ],
-        "tags": [
-            "barbecue",
-            "épicé",
-            "Healthy",
-            "minceur",
-            "Sauces",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "6925",
         "title": "Tartare de thon et tomates",
         "description": "Découvrez une recette fraîche et facile pour un tartare de thon et tomates, idéal pour les repas légers ou en entrée. Il se compose de rillettes de thon au fromage frais, d&rsquo;oignon rouge et de persil, alternées avec des dés de tomates cerises, l",
@@ -10633,108 +10823,6 @@ export const mockRecipes: Recipe[] = [
             "épicé",
             "Pas cher",
             "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6821",
-        "title": "Sandwich aux œufs et crudités",
-        "description": "Découvrez comment préparer un délicieux sandwich aux œufs et crudités, agrémenté d&rsquo;une mayonnaise maison onctueuse au yaourt grec. Une recette simple et rapide, parfaite pour un repas équilibré et savoureux, servie dans du pain de mie grillé.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7490625111716826390\" data-video-id=\"7490625111716826390\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7490625111716826390\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             6 œufs durs"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             2 œufs (crus, pour la mayonnaise)"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             2 cuillères à soupe de moutarde"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 yaourt grec"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 cuillère à soupe de vinaigre blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Céleri finement coupé"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Oignons verts émincés"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Ciboulette hachée"
-            },
-            {
-                "quantity": "",
-                "name": "🥖\n             4 tranches de pain de mie American Sandwich Rustique d'Harrys"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil frais haché"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🥗\n             Quelques feuilles de salade"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika (optionnel)"
-            }
-        ],
-        "steps": [
-            "Préparez la mayonnaise maison : Mixez 2 œufs crus, 2 cuillères à soupe d'huile d'olive, 1 cuillère à soupe de moutarde, 2 cuillères à soupe de yaourt grec et 2 cuillères à soupe de vinaigre blanc jusqu'à obtenir une mayonnaise onctueuse.",
-            "Dans un bol, mélangez les 6 œufs durs écrasés, la mayonnaise préparée, le reste du yaourt grec, la moutarde restante et le jus de citron.",
-            "Incorporez le céleri finement coupé, les oignons verts émincés et la ciboulette hachée.",
-            "Assaisonnez avec du sel et du poivre.",
-            "Dans un autre bol, mélangez l'huile d'olive avec la gousse d'ail hachée et le persil frais haché. Salez et poivrez.",
-            "Badigeonnez une face des 4 tranches de pain de mie avec ce mélange, puis faites dorer chaque face à la poêle pendant 3 à 4 minutes.",
-            "Hors du feu, déposez le mélange aux œufs sur une tranche de pain de mie grillé Harrys.",
-            "Ajoutez quelques feuilles de salade et refermez avec une autre tranche de pain.",
-            "Optionnel : Ajoutez une pincée de paprika avant de refermer votre sandwich."
-        ],
-        "tags": [
-            "Healthy",
-            "Sandwichs",
-            "USA",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -13757,94 +13845,6 @@ export const mockRecipes: Recipe[] = [
             "C'est l'hiver",
             "Famille",
             "France"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6608",
-        "title": "Fagots d&rsquo;aubergines farcis au bœuf et au fromage",
-        "description": "Une recette savoureuse de fagots d&rsquo;aubergines garnis d&rsquo;un mélange de bœuf haché, de riz, d&rsquo;oignon et d&rsquo;herbes, cuits dans une sauce tomate basilic et gratinés à la mozzarella.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7648355109189061911\" data-video-id=\"7648355109189061911\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7648355109189061911\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍆\n             2 aubergines"
-            },
-            {
-                "quantity": "",
-                "name": "🥩\n             300 g de bœuf haché"
-            },
-            {
-                "quantity": "",
-                "name": "🍚\n             40 g de riz"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 petit oignon, finement haché"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil frais, finement haché"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 cuillère à café de poudre d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 cuillère à café de poudre d&rsquo;oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1/2 cuillère à café de paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1/2 cuillère à café de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1/2 cuillère à café de poivre noir"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             200 ml de sauce tomate basilic"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             125 g de mozzarella"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Flocons de piment"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive"
-            }
-        ],
-        "steps": [
-            "Coupez les aubergines en tranches et disposez-les sur une plaque de cuisson. Salez, arrosez d&rsquo;huile d&rsquo;olive et faites cuire au four à 200°C pendant 20 minutes.",
-            "Mélangez le bœuf haché, le riz, l&rsquo;oignon, le persil et les assaisonnements.",
-            "Disposez deux tranches d&rsquo;aubergine en forme de croix, placez la farce au centre et repliez-les pour former des fagots.",
-            "Versez la sauce tomate dans un plat de cuisson et déposez les fagots par-dessus.",
-            "Couvrez et faites cuire au four à 220°C pendant 35 à 40 minutes.",
-            "Garnissez de 125 g de mozzarella et de flocons de piment, puis faites cuire à découvert pendant 8 minutes jusqu&rsquo;à ce que ce soit doré."
-        ],
-        "tags": [
-            "épicé",
-            "Gratins",
-            "Italie",
-            "Pas cher",
-            "Plats"
         ],
         "isFeatured": false,
         "isFavorite": false,
