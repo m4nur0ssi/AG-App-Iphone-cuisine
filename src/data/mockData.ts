@@ -2,10 +2,10 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 26/08/2026 03:56:24
+ * Dernière mise à jour: 26/08/2026 16:34:21
  * Total: 662 recettes
  */
-export const exportSyncId = "1787716584442";
+export const exportSyncId = "1787762061924";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7283",
@@ -4340,7 +4340,11 @@ export const mockRecipes: Recipe[] = [
             "libanais",
             "moyen-orient",
             "ramadan",
-            "rapide"
+            "rapide",
+            "recette",
+            "salade",
+            "tabouleh",
+            "Végétarien"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -5615,7 +5619,12 @@ export const mockRecipes: Recipe[] = [
             "Four",
             "fromage",
             "italien",
-            "Pain"
+            "Pain",
+            "rapide",
+            "Recette de Toscane",
+            "Saucisse",
+            "Toast",
+            "Toscan"
         ],
         "isFeatured": false,
         "isFavorite": false,
