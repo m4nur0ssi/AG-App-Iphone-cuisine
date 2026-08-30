@@ -2,11 +2,92 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 30/08/2026 12:52:05
+ * Dernière mise à jour: 30/08/2026 13:08:24
  * Total: 665 recettes
  */
-export const exportSyncId = "1788094325232";
+export const exportSyncId = "1788095304224";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7400",
+        "title": "Cheesecake sans cuisson au chocolat blanc et framboises",
+        "description": "C&rsquo;est l&rsquo;un de mes cheesecakes préférés de tous les temps !",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7667242830426803478\" data-video-id=\"7667242830426803478\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7667242830426803478\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             350g de biscuits sablés"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             100g de beurre salé ou non salé, fondu"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             350ml de crème double (crème entière liquide), froide"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             250g de chocolat blanc, fondu et légèrement refroidi"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             500g de fromage frais (type Philadelphia), à température ambiante"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             120g de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🍇\n             250g de framboises fraîches"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             170g de chocolat blanc (pour le topping)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             90ml de crème double (crème entière liquide, pour le topping)"
+            },
+            {
+                "quantity": "",
+                "name": "🍇\n             Framboises fraîches (environ 200g, pour la décoration)"
+            },
+            {
+                "quantity": "",
+                "name": "🍇\n             Framboises lyophilisées (pour la décoration)"
+            }
+        ],
+        "steps": [
+            "Pour la base : Écraser les biscuits sablés en miettes fines. Mélanger les miettes de biscuits avec le beurre fondu jusqu&rsquo;à ce que tout soit bien combiné.",
+            "Presser fermement le mélange de biscuits au fond d&rsquo;un moule à charnière de 20 cm (8 pouces). Placer au réfrigérateur pendant que vous préparez la garniture.",
+            "Pour la garniture au cheesecake : Dans un grand bol, fouetter la crème double froide jusqu&rsquo;à obtenir des pics fermes. Réserver.",
+            "Dans un autre grand bol, battre le fromage frais (à température ambiante) avec le sucre glace jusqu&rsquo;à obtenir une consistance lisse et homogène.",
+            "Incorporer délicatement le chocolat blanc fondu et légèrement refroidi au mélange de fromage frais.",
+            "Ajouter ensuite la crème fouettée au mélange de fromage frais et chocolat blanc, en pliant doucement jusqu&rsquo;à ce que tout soit bien incorporé.",
+            "Incorporer les 250g de framboises fraîches à la garniture.",
+            "Verser la garniture sur la base de biscuits refroidie et lisser le dessus avec une spatule.",
+            "Réfrigérer le cheesecake pendant au moins 4 à 6 heures, ou idéalement toute une nuit, pour qu&rsquo;il prenne bien.",
+            "Pour le topping : Faire fondre les 170g de chocolat blanc avec les 90ml de crème double au micro-ondes ou au bain-marie. Mélanger jusqu&rsquo;à obtenir une ganache lisse. Laisser refroidir légèrement.",
+            "Une fois le cheesecake bien pris, verser la ganache refroidie sur le dessus.",
+            "Décorer avec des framboises fraîches (environ 200g) et des framboises lyophilisées avant de servir. Démouler délicatement le cheesecake."
+        ],
+        "tags": [
+            "Glaces",
+            "pâtisserie",
+            "USA",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7398",
         "title": "Cookie chaud et glace",
@@ -43328,57 +43409,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Afrique",
             "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5144",
-        "title": "Batata Harra",
-        "description": "Un plat de pommes de terre croustillantes coupées en dés, mélangées à une sauce aillée, tomate et épicée. Servi sur un lit de sauce au yaourt et tahini, et garni de coriandre fraîche.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2FBatata-Harra-mx-01.jpg&v=1776347432000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7504700271566540054\" data-video-id=\"7504700271566540054\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7504700271566540054\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍎\n Pommes de terre"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n Ail"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n Tomates"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n Épices (mélange piquant)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n Yaourt"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n Tahini"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n Coriandre fraîche"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Liban"
         ],
         "isFeatured": false,
         "isFavorite": false,
