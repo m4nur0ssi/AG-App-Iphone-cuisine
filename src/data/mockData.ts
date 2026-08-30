@@ -2,11 +2,70 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 30/08/2026 08:46:00
- * Total: 663 recettes
+ * Dernière mise à jour: 30/08/2026 12:52:05
+ * Total: 665 recettes
  */
-export const exportSyncId = "1788079560746";
+export const exportSyncId = "1788094325232";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7398",
+        "title": "Cookie chaud et glace",
+        "description": "Une recette simple pour préparer un cookie moelleux et chocolaté, à servir chaud sur de la glace à la vanille. Le résultat est un mélange chaud, moelleux, chocolaté et légèrement croquant sur la glace froide.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7676544218990497046\" data-video-id=\"7676544218990497046\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7676544218990497046\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             150 g de beurre ramolli"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1,5 dl de sucre en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1,5 dl de cassonade"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cuillères à café de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             4 dl de farine de blé"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             100 g de chocolat noir concassé"
+            }
+        ],
+        "steps": [
+            "Préchauffer le four à 180°C.",
+            "Fouetter le beurre ramolli, le sucre en poudre et la cassonade jusqu&rsquo;à obtenir une consistance crémeuse.",
+            "Ajouter l&rsquo;œuf et mélanger.",
+            "Mélanger la farine de blé et la levure chimique, puis incorporer au mélange.",
+            "Incorporer le chocolat concassé.",
+            "Rouler la pâte en petites boules et les disposer serrées dans un petit plat allant au four, sans papier sulfurisé.",
+            "Cuire au four pendant environ 15 à 18 minutes, jusqu&rsquo;à ce que les cookies aient fondu ensemble et aient une surface dorée, mais soient encore moelleux au centre.",
+            "Laisser reposer quelques minutes, puis servir le cookie chaud et moelleux sur de la glace à la vanille."
+        ],
+        "tags": [
+            "Les Glaces",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7395",
         "title": "Pancakes aux Fraises",
@@ -43269,6 +43328,57 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Afrique",
             "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5144",
+        "title": "Batata Harra",
+        "description": "Un plat de pommes de terre croustillantes coupées en dés, mélangées à une sauce aillée, tomate et épicée. Servi sur un lit de sauce au yaourt et tahini, et garni de coriandre fraîche.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2FBatata-Harra-mx-01.jpg&v=1776347432000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7504700271566540054\" data-video-id=\"7504700271566540054\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7504700271566540054\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n Pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n Ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n Tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Épices (mélange piquant)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Yaourt"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Tahini"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Coriandre fraîche"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Liban"
         ],
         "isFeatured": false,
         "isFavorite": false,
