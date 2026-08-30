@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 28/08/2026 18:33:21
+ * Dernière mise à jour: 30/08/2026 00:21:09
  * Total: 663 recettes
  */
-export const exportSyncId = "1787942001907";
+export const exportSyncId = "1788049269393";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7395",
         "title": "Pancakes aux Fraises",
         "description": "Une recette de pancakes fins et moelleux, colorés en rose grâce à la poudre de betterave, garnis d&rsquo;une crème fouettée légère et de fraises fraîches. Ils sont ensuite roulés et servis frais.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_ia_7395_1788047470600.jpg&v=1788054753000",
         "category": "glaces",
         "difficulty": "moyen",
         "prepTime": 15,
