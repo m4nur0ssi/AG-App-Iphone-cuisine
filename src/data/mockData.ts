@@ -2,11 +2,74 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 06/09/2026 20:19:04
- * Total: 667 recettes
+ * Dernière mise à jour: 06/09/2026 20:40:12
+ * Total: 669 recettes
  */
-export const exportSyncId = "1788725944736";
+export const exportSyncId = "1788727212114";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7417",
+        "title": "Salade verte facile à la crème fraîche",
+        "description": "Découvrez une des salades vertes les plus simples et délicieuses, parfaite pour un soir de semaine paresseux. Elle se compose de laitue Boston ou Bibb, d&rsquo;une vinaigrette à base de moutarde de Dijon, de crème fraîche, d&rsquo;huile, de vinaigre,",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7143989331349212462\" data-video-id=\"7143989331349212462\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7143989331349212462\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             Laitue Boston ou Bibb"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Moutarde de Dijon"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Vinaigre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette (en grande quantité)"
+            }
+        ],
+        "steps": [
+            "Lavez et essorez soigneusement la laitue Boston ou Bibb. Déchirez-la en morceaux si nécessaire.",
+            "Dans un grand saladier, mélangez la moutarde de Dijon, la crème fraîche, l&rsquo;huile et le vinaigre.",
+            "Assaisonnez la vinaigrette avec du sel et du poivre selon votre goût.",
+            "Ciselez finement la ciboulette et ajoutez-la à la vinaigrette. Mélangez bien.",
+            "Ajoutez la laitue dans le saladier et mélangez délicatement pour bien enrober toutes les feuilles de vinaigrette.",
+            "Servez immédiatement comme accompagnement ou entrée légère."
+        ],
+        "tags": [
+            "Accompagnements",
+            "Healthy",
+            "Salades",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7414",
         "title": "Lasagnes",
@@ -36825,6 +36888,68 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "France",
             "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "5280",
+        "title": "Rochers Tiramisu",
+        "description": "Une recette gourmande de rochers Tiramisu, composés de boudoirs imbibés de café, d&rsquo;une crème onctueuse au mascarpone et d&rsquo;un glaçage croquant au chocolat et aux amandes ou noisettes.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frocher-x6.jpg&v=1780584698000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7630533247310581014\" data-video-id=\"7630533247310581014\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7630533247310581014\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n Boudoirs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 100 ml de café"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n 500 g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n 60 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n 250 g de crème liquide entière (30 % MG, bien froide)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n 200 g de chocolat"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n 50 g d'huile neutre"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n 60 g d'amandes ou noisettes"
+            }
+        ],
+        "steps": [
+            "Dans un saladier, fouettez le mascarpone avec le sucre.",
+            "Dans un autre bol, montez la crème liquide froide en chantilly ferme.",
+            "Incorporez délicatement la chantilly à la préparation au mascarpone à l'aide d'une spatule.",
+            "Montez les tiramisu (en alternant boudoirs imbibés de café et crème au mascarpone), puis congelez-les.",
+            "Faites fondre le chocolat avec l'huile neutre.",
+            "Ajoutez les amandes ou noisettes concassées au chocolat fondu.",
+            "Glacez les tiramisu congelés avec le glaçage, puis laissez-les décongeler au frais avant de servir."
+        ],
+        "tags": [
+            "Italie",
+            "Les Glaces"
         ],
         "isFeatured": false,
         "isFavorite": false,
