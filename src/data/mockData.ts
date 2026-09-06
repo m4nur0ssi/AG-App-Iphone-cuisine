@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 06/09/2026 21:28:52
+ * Dernière mise à jour: 06/09/2026 21:44:52
  * Total: 671 recettes
  */
-export const exportSyncId = "1788730132540";
+export const exportSyncId = "1788731092952";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7423",
         "title": "Apéritif Tomate Mozzarella",
         "description": "Une entrée ou un apéritif frais et savoureux à base de tomates, mozzarella, basilic et baguette grillée, assaisonné d&rsquo;huile d&rsquo;olive et de vinaigre balsamique.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7423.webp&v=1788737668000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -67,6 +67,61 @@ export const mockRecipes: Recipe[] = [
             "Salades",
             "Végé",
             "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7425",
+        "title": "Salade de laitue romaine au citron et parmesan",
+        "description": "J&rsquo;ai adoré à quel point cette salade est facile et fraîche. Elle ne contient pas beaucoup d&rsquo;ingrédients mais offre une saveur excellente !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7425.webp&v=1788737657000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7223408664017669418\" data-video-id=\"7223408664017669418\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7223408664017669418\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             Laitue romaine"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan frais"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive extra vierge"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Assaisonnement citron et poivre (facultatif)"
+            }
+        ],
+        "steps": [
+            "Laver et préparer la laitue romaine.",
+            "Dans un grand saladier, mélanger la laitue romaine avec le jus de citron, le parmesan frais et l&rsquo;huile d&rsquo;olive extra vierge.",
+            "Ajouter le sel, le poivre et l&rsquo;assaisonnement citron et poivre (si désiré).",
+            "Bien mélanger tous les ingrédients et servir immédiatement."
+        ],
+        "tags": [
+            "Healthy",
+            "Salades"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -21735,36 +21790,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Desserts",
             "France"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6484",
-        "title": "MUFFINS PIZZA",
-        "description": "Délicieux et faciles à préparer, ces muffins pizza sans gluten sont parfaits pour un apéritif, un pique-nique ou accompagnés d&rsquo;une salade. Avec leurs saveurs d&rsquo;été, ils raviront petits et grands.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6484_1783086288656.jpg&v=1783093608000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7290581924899245345\" data-video-id=\"7290581924899245345\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7290581924899245345\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Healthy",
-            "Italie",
-            "Sans Gluten",
-            "Voilà l'été"
         ],
         "isFeatured": false,
         "isFavorite": false,
