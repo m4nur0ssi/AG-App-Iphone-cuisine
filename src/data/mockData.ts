@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 06/09/2026 20:40:12
+ * Dernière mise à jour: 06/09/2026 20:58:11
  * Total: 669 recettes
  */
-export const exportSyncId = "1788727212114";
+export const exportSyncId = "1788728291631";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7417",
         "title": "Salade verte facile à la crème fraîche",
         "description": "Découvrez une des salades vertes les plus simples et délicieuses, parfaite pour un soir de semaine paresseux. Elle se compose de laitue Boston ou Bibb, d&rsquo;une vinaigrette à base de moutarde de Dijon, de crème fraîche, d&rsquo;huile, de vinaigre,",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7417.webp&v=1788734915000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -65,6 +65,63 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Salades",
             "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7419",
+        "title": "Frites croustillantes Peri Peri",
+        "description": "Des frites maison croustillantes assaisonnées avec un mélange d&rsquo;épices peri peri fait maison, garanties meilleures et plus croustillantes que celles des restaurants à emporter.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7419.webp&v=1788734905000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7277197479148375328\" data-video-id=\"7277197479148375328\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7277197479148375328\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             500g de grosses pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             1 grand bol d&rsquo;eau froide avec 2 tasses de glaçons"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             3 cuillères à soupe de fécule de maïs"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de sel en flocons"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à soupe de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 cuillère à café de poudre d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 cuillère à café de poudre d&rsquo;oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 à 3 cuillères à soupe d&rsquo;assaisonnement peri peri (recette disponible sur le profil)"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions mentionnées dans la vidéo."
+        ],
+        "tags": [
+            "Accompagnements",
+            "Afrique",
+            "épicé"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -36888,68 +36945,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "France",
             "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "5280",
-        "title": "Rochers Tiramisu",
-        "description": "Une recette gourmande de rochers Tiramisu, composés de boudoirs imbibés de café, d&rsquo;une crème onctueuse au mascarpone et d&rsquo;un glaçage croquant au chocolat et aux amandes ou noisettes.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F05%2Frocher-x6.jpg&v=1780584698000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7630533247310581014\" data-video-id=\"7630533247310581014\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7630533247310581014\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n Boudoirs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 100 ml de café"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n 500 g de mascarpone"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n 60 g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n 250 g de crème liquide entière (30 % MG, bien froide)"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n 200 g de chocolat"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n 50 g d'huile neutre"
-            },
-            {
-                "quantity": "",
-                "name": "🥜\n 60 g d'amandes ou noisettes"
-            }
-        ],
-        "steps": [
-            "Dans un saladier, fouettez le mascarpone avec le sucre.",
-            "Dans un autre bol, montez la crème liquide froide en chantilly ferme.",
-            "Incorporez délicatement la chantilly à la préparation au mascarpone à l'aide d'une spatule.",
-            "Montez les tiramisu (en alternant boudoirs imbibés de café et crème au mascarpone), puis congelez-les.",
-            "Faites fondre le chocolat avec l'huile neutre.",
-            "Ajoutez les amandes ou noisettes concassées au chocolat fondu.",
-            "Glacez les tiramisu congelés avec le glaçage, puis laissez-les décongeler au frais avant de servir."
-        ],
-        "tags": [
-            "Italie",
-            "Les Glaces"
         ],
         "isFeatured": false,
         "isFavorite": false,
