@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 06/09/2026 21:59:09
+ * Dernière mise à jour: 06/09/2026 22:09:22
  * Total: 672 recettes
  */
-export const exportSyncId = "1788731949606";
+export const exportSyncId = "1788732562473";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7429",
         "title": "Pain burger pliable",
         "description": "Une recette de pain burger maison, facile à plier, préparée en deux étapes avec un preferment pour une mie moelleuse et une cuisson au four.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7429.webp&v=1788739214000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
