@@ -2,11 +2,76 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 06/09/2026 21:03:36
- * Total: 669 recettes
+ * Dernière mise à jour: 06/09/2026 21:28:52
+ * Total: 671 recettes
  */
-export const exportSyncId = "1788728616128";
+export const exportSyncId = "1788730132540";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7423",
+        "title": "Apéritif Tomate Mozzarella",
+        "description": "Une entrée ou un apéritif frais et savoureux à base de tomates, mozzarella, basilic et baguette grillée, assaisonné d&rsquo;huile d&rsquo;olive et de vinaigre balsamique.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7671376167726746893\" data-video-id=\"7671376167726746893\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7671376167726746893\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Mozzarella"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Baguette"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Vinaigre balsamique"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Basilic"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            }
+        ],
+        "steps": [
+            "Dans un plat, verser l&rsquo;huile d&rsquo;olive et un peu de vinaigre balsamique. Saupoudrer de gros sel et de poivre, ajouter l&rsquo;ail haché et le basilic frais, puis bien mélanger pour créer une marinade.",
+            "Faire légèrement griller des tranches de baguette dans un peu d&rsquo;huile d&rsquo;olive jusqu&rsquo;à ce qu&rsquo;elles soient dorées et croustillantes.",
+            "Bien tremper les fines tranches de tomates et de mozzarella dans la marinade préparée.",
+            "Disposer les tranches de tomates et de mozzarella marinées sur les tranches de baguette grillées. Servir immédiatement."
+        ],
+        "tags": [
+            "Italie",
+            "Salades",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7417",
         "title": "Salade verte facile à la crème fraîche",
@@ -21670,6 +21735,36 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Desserts",
             "France"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6484",
+        "title": "MUFFINS PIZZA",
+        "description": "Délicieux et faciles à préparer, ces muffins pizza sans gluten sont parfaits pour un apéritif, un pique-nique ou accompagnés d&rsquo;une salade. Avec leurs saveurs d&rsquo;été, ils raviront petits et grands.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6484_1783086288656.jpg&v=1783093608000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7290581924899245345\" data-video-id=\"7290581924899245345\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7290581924899245345\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Healthy",
+            "Italie",
+            "Sans Gluten",
+            "Voilà l'été"
         ],
         "isFeatured": false,
         "isFavorite": false,
