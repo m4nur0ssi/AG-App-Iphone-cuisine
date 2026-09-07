@@ -2,11 +2,85 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 07/09/2026 08:48:48
+ * Dernière mise à jour: 07/09/2026 09:04:38
  * Total: 676 recettes
  */
-export const exportSyncId = "1788770928699";
+export const exportSyncId = "1788771878633";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7435",
+        "title": "Chakchouka aux pommes de terre et oignons caramélisés",
+        "description": "Une chakchouka revisitée et gourmande, préparée avec des pommes de terre et des oignons caramélisés, relevée de paprika fumé et de gingembre, et agrémentée d&rsquo;œufs. Parfaite pour un repas savoureux et réconfortant.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7435-1.webp&v=1788778121000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7328452086457224481\" data-video-id=\"7328452086457224481\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7328452086457224481\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             2 grosses pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 oignons"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1/2 cuillère à café de gingembre en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/2 cube Maggi KUBOR émietté"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             1 cuillère à café de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil pour la décoration"
+            }
+        ],
+        "steps": [
+            "Les étapes de préparation ne sont pas fournies dans la description."
+        ],
+        "tags": [
+            "Accompagnements",
+            "Afrique",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7437",
         "title": "Flans de patates douces rôties, saumon et sauce à l&rsquo;aneth",
@@ -201,80 +275,6 @@ export const mockRecipes: Recipe[] = [
             "Sauces",
             "Végé",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7435",
-        "title": "Chakchouka aux pommes de terre et oignons caramélisés",
-        "description": "Une chakchouka revisitée et gourmande, préparée avec des pommes de terre et des oignons caramélisés, relevée de paprika fumé et de gingembre, et agrémentée d&rsquo;œufs. Parfaite pour un repas savoureux et réconfortant.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7328452086457224481\" data-video-id=\"7328452086457224481\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7328452086457224481\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍎\n             2 grosses pommes de terre"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             2 oignons"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à soupe de miel"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1/2 cuillère à café de gingembre en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1/2 cube Maggi KUBOR émietté"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             2 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             1 cuillère à café de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil pour la décoration"
-            }
-        ],
-        "steps": [
-            "Les étapes de préparation ne sont pas fournies dans la description."
-        ],
-        "tags": [
-            "Accompagnements",
-            "Afrique",
-            "Pas cher",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
