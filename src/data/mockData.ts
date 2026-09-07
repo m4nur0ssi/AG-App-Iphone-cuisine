@@ -2,11 +2,337 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 07/09/2026 11:34:21
+ * Dernière mise à jour: 07/09/2026 11:50:22
  * Total: 682 recettes
  */
-export const exportSyncId = "1788780861793";
+export const exportSyncId = "1788781822630";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7453",
+        "title": "Tartinade de poivrons rôtis et mogettes",
+        "description": "Une tartinade ultra savoureuse, fondante et relevée, parfaite pour l&rsquo;apéritif ou un snack sain.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7453.webp&v=1788788431000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7524737676218551574\" data-video-id=\"7524737676218551574\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7524737676218551574\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌶️\n             3 poivrons rouges"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             1 carotte"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 tête d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🫘\n             150-200g de mogettes de Vendée (ou haricots blancs)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 branche de romarin"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/4 de bloc de feta"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Piment d&rsquo;Espelette"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika fumé"
+            }
+        ],
+        "steps": [
+            "Après cuisson des légumes (poivrons, oignon, carotte, ail), mixer tous les ingrédients ensemble.",
+            "Servir la tartinade sur du pain grillé."
+        ],
+        "tags": [
+            "Apéritifs",
+            "épicé",
+            "France",
+            "Healthy",
+            "Sauces",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7455",
+        "title": "Moules au chorizo",
+        "description": "Une recette savoureuse de moules cuisinées avec du chorizo, de l&rsquo;oignon, de l&rsquo;ail et du vin blanc.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7455.webp&v=1788788420000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7682465842545675552\" data-video-id=\"7682465842545675552\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7682465842545675552\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 kg de moules"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             200 g de chorizo"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             3 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             10 cl de vin blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 cl de"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "épicé",
+            "Espagne",
+            "Pas cher",
+            "Poissons et crustacés"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7451",
+        "title": "Tartinade d&rsquo;aubergines et poivrons",
+        "description": "Une tartinade savoureuse et facile à préparer, à base d&rsquo;aubergines et de poivrons rouges rôtis au four avec de l&rsquo;ail, parfaite pour accompagner des toasts à l&rsquo;apéritif.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7641965944423648534\" data-video-id=\"7641965944423648534\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7641965944423648534\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍆\n             2 grandes aubergines"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             2 poivrons rouges"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 tête d&rsquo;ail entière"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             3 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 poignée de persil frais haché"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pain grillé"
+            }
+        ],
+        "steps": [
+            "Préchauffer le four à 220°C.",
+            "Placer les aubergines entières et les poivrons entiers sur une plaque de cuisson. Couper le haut de la tête d&rsquo;ail et l&rsquo;arroser d&rsquo;huile d&rsquo;olive avant de l&rsquo;enfermer dans du papier cuisson.",
+            "Saler et poivrer les aubergines et les poivrons puis arroser d&rsquo;huile d&rsquo;olive. Enfourner 25 à 30 minutes pour que les légumes soient bien tendres et dorés.",
+            "Tailler en cubes les aubergines épluchées et les poivrons. Presser la tête d&rsquo;ail pour récupérer la pulpe.",
+            "Hacher les légumes rôtis avec la purée d&rsquo;ail et le persil ciselé. Goûter et ajuster l&rsquo;assaisonnement si besoin.",
+            "Déguster chaud ou froid avec des toasts de pain grillé !"
+        ],
+        "tags": [
+            "Apéritifs",
+            "Healthy",
+            "Pas cher",
+            "Sauces",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7449",
+        "title": "Olives panées à la feta",
+        "description": "Une recette d&rsquo;apéritif festive pour Noël, proposant des olives vertes dénoyautées farcies à la feta, panées et frites jusqu&rsquo;à obtenir une belle coloration dorée.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7584501402613927190\" data-video-id=\"7584501402613927190\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7584501402613927190\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Olives vertes dénoyautées"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Feta"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs battus"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             Chapelure"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de friture"
+            }
+        ],
+        "steps": [
+            "Farcir chaque olive avec un petit morceau de feta.",
+            "Rouler les olives dans la farine.",
+            "Les passer dans l'œuf battu.",
+            "Les enrober de chapelure.",
+            "Recommencer : farine → œuf → chapelure (double panure).",
+            "Plonger dans une huile bien chaude et frire quelques secondes jusqu'à belle coloration.",
+            "Égoutter sur papier absorbant."
+        ],
+        "tags": [
+            "Apéritifs",
+            "Noël",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7447",
+        "title": "Apéritif gourmand avocat et crevettes",
+        "description": "Un apéritif facile et savoureux composé de toasts de pain de mie grillés, garnis d&rsquo;un guacamole maison et de crevettes poêlées.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7675370204309802272\" data-video-id=\"7675370204309802272\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7675370204309802272\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥖\n             Pain de mie"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persillade"
+            },
+            {
+                "quantity": "",
+                "name": "🥑\n             Avocat"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🦐\n             Crevettes"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile"
+            }
+        ],
+        "steps": [
+            "Découper des rondelles dans les tranches de pain de mie à l&rsquo;aide d&rsquo;un emporte-pièce.",
+            "Badigeonner les rondelles d&rsquo;un mélange d&rsquo;huile, d&rsquo;ail et de persillade, puis les faire griller au four.",
+            "Dans un bol, écraser l&rsquo;avocat.",
+            "Ajouter l&rsquo;oignon, la tomate, le jus de citron, le sel, le poivre et la persillade. Bien mélanger jusqu&rsquo;à l&rsquo;obtention d&rsquo;un guacamole.",
+            "Faire revenir les crevettes dans un peu de beurre avec du sel et de la persillade.",
+            "Une fois tous les éléments prêts, assembler l&rsquo;apéritif et le déguster immédiatement afin d&rsquo;éviter l&rsquo;oxydation de l&rsquo;avocat."
+        ],
+        "tags": [
+            "Apéritifs",
+            "Mexique",
+            "Poissons et crustacés",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7445",
         "title": "Beignets de courgettes à la feta (Kolokithokeftedes) et Tzatziki",
@@ -7896,380 +8222,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "6821",
-        "title": "Sandwich aux œufs et crudités",
-        "description": "Découvrez comment préparer un délicieux sandwich aux œufs et crudités, agrémenté d&rsquo;une mayonnaise maison onctueuse au yaourt grec. Une recette simple et rapide, parfaite pour un repas équilibré et savoureux, servie dans du pain de mie grillé.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_6821_1787239628132.jpeg&v=1787246848000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7490625111716826390\" data-video-id=\"7490625111716826390\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7490625111716826390\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             6 œufs durs"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             2 œufs (crus, pour la mayonnaise)"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             2 cuillères à soupe de moutarde"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 yaourt grec"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 cuillère à soupe de vinaigre blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Céleri finement coupé"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Oignons verts émincés"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Ciboulette hachée"
-            },
-            {
-                "quantity": "",
-                "name": "🥖\n             4 tranches de pain de mie American Sandwich Rustique d'Harrys"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil frais haché"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🥗\n             Quelques feuilles de salade"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika (optionnel)"
-            }
-        ],
-        "steps": [
-            "Préparez la mayonnaise maison : Mixez 2 œufs crus, 2 cuillères à soupe d'huile d'olive, 1 cuillère à soupe de moutarde, 2 cuillères à soupe de yaourt grec et 2 cuillères à soupe de vinaigre blanc jusqu'à obtenir une mayonnaise onctueuse.",
-            "Dans un bol, mélangez les 6 œufs durs écrasés, la mayonnaise préparée, le reste du yaourt grec, la moutarde restante et le jus de citron.",
-            "Incorporez le céleri finement coupé, les oignons verts émincés et la ciboulette hachée.",
-            "Assaisonnez avec du sel et du poivre.",
-            "Dans un autre bol, mélangez l'huile d'olive avec la gousse d'ail hachée et le persil frais haché. Salez et poivrez.",
-            "Badigeonnez une face des 4 tranches de pain de mie avec ce mélange, puis faites dorer chaque face à la poêle pendant 3 à 4 minutes.",
-            "Hors du feu, déposez le mélange aux œufs sur une tranche de pain de mie grillé Harrys.",
-            "Ajoutez quelques feuilles de salade et refermez avec une autre tranche de pain.",
-            "Optionnel : Ajoutez une pincée de paprika avant de refermer votre sandwich."
-        ],
-        "tags": [
-            "Healthy",
-            "Sandwichs",
-            "USA",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7205",
-        "title": "Côtes de porc étouffées à l&rsquo;ail et aux herbes",
-        "description": "Ces côtes de porc étouffées à l&rsquo;ail et aux herbes sont juteuses, saisies à la poêle et mijotées dans une riche sauce au beurre, à l&rsquo;ail et aux herbes fraîches jusqu&rsquo;à ce qu&rsquo;elles soient parfaitement tendres. Servies avec des p",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7205_1787238765583.jpg&v=1787246060000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7670195194251250975\" data-video-id=\"7670195194251250975\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7670195194251250975\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             4 côtes de porc avec os (environ 2,5 cm d&rsquo;épaisseur)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             2 cuillères à soupe d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 cuillère à café d&rsquo;ail en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 cuillère à café d&rsquo;oignon en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             ½ cuillère à café de poivre noir"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             3 cuillères à soupe de beurre non salé"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             6 gousses d&rsquo;ail, hachées"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 petit oignon, finement coupé en dés"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 cuillère à soupe de moutarde de Dijon"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 cuillère à soupe de sauce Worcestershire"
-            },
-            {
-                "quantity": "",
-                "name": "🍗\n             1½ tasses de bouillon de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             ½ tasse de crème épaisse"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 cuillère à café de romarin frais, haché"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 cuillère à café de feuilles de thym frais"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             ½ cuillère à café d&rsquo;assaisonnement italien"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             1 cuillère à soupe de fécule de maïs mélangée à 2 cuillères à soupe d&rsquo;eau froide"
-            },
-            {
-                "quantity": "",
-                "name": "🍎\n             450 g de pommes de terre nouvelles, coupées en deux"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 cuillère à soupe d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel et poivre au goût"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil frais, haché"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre noir concassé supplémentaire"
-            }
-        ],
-        "steps": [
-            "Assaisonner les deux côtés des côtes de porc avec le paprika, l&rsquo;ail en poudre, l&rsquo;oignon en poudre, le sel et le poivre.",
-            "Faire chauffer l&rsquo;huile d&rsquo;olive dans une grande poêle à feu moyen-vif.",
-            "Saisir les côtes de porc 3 à 4 minutes par côté jusqu&rsquo;à ce qu&rsquo;elles soient dorées. Retirer et réserver.",
-            "Dans la même poêle, cuire les pommes de terre nouvelles pendant 10 à 12 minutes jusqu&rsquo;à ce qu&rsquo;elles soient légèrement dorées.",
-            "Ajouter le beurre, l&rsquo;oignon et l&rsquo;ail. Cuire pendant 2 minutes jusqu&rsquo;à ce que ce soit parfumé.",
-            "Incorporer la moutarde de Dijon, la sauce Worcestershire, le bouillon de poulet, la crème épaisse, le romarin, le thym et l&rsquo;assaisonnement italien.",
-            "Porter à frémissement doux.",
-            "Incorporer le mélange de fécule de maïs et cuire 2 à 3 minutes jusqu&rsquo;à ce que la sauce épaississe.",
-            "Remettre les côtes de porc dans la poêle et napper de sauce.",
-            "Couvrir et laisser mijoter à feu doux pendant 15 à 20 minutes jusqu&rsquo;à ce que le porc atteigne une température interne de **63°C (145°F)** et que les pommes de terre soient tendres.",
-            "Garnir de persil frais et de poivre noir concassé avant de servir."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Plats"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7197",
-        "title": "Bâtonnets de mozzarella façon Nashville",
-        "description": "Découvrez la recette authentique des bâtonnets de mozzarella façon Nashville, relevés et croustillants, accompagnés d&rsquo;une sauce Ranch traditionnelle et d&rsquo;un laquage pimenté. Une idée gourmande et facile à réaliser, parfaite pour les amate",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7197_1787237971328.jpeg&v=1787245180000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7673924987480313121\" data-video-id=\"7673924987480313121\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7673924987480313121\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧀\n             1 pain de mozzarella (bloc)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Huile (pour la marinade)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika (pour la marinade)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel (pour la marinade)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre (pour la marinade)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Piment (pour la marinade)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Corn flakes mixés"
-            },
-            {
-                "quantity": "",
-                "name": "🥖\n             Chapelure de pain"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Poudre d&rsquo;ail (pour la chapelure)"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             Farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Œufs battus"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 cuillère à soupe de mayonnaise"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             3 cuillères à soupe de crème épaisse allégée"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Ciboulette ciselée"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil haché"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Aneth (frais ou déshydraté)"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Jus d&rsquo;un demi-citron"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 cuillère à café de moutarde"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 cuillères à soupe de poudre d&rsquo;ail (pour la sauce Ranch)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel (pour la sauce Ranch)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre (pour la sauce Ranch)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1 à 2 cuillères à soupe de piment de Cayenne"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à soupe de paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel (pour le laquage)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à café de sucre roux"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 cuillère à soupe d&rsquo;ail en poudre (pour le laquage)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             5 à 6 cl d&rsquo;huile de friture"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Coleslaw (pour servir)"
-            }
-        ],
-        "steps": [
-            "Coupez le pain de mozzarella en bâtonnets. Faites-les mariner avec un mélange d&rsquo;huile, de paprika, de sel, de poivre et de piment.",
-            "Pour la chapelure, mélangez des corn flakes mixés avec de la chapelure de pain, du paprika et de la poudre d&rsquo;ail.",
-            "Panez les bâtonnets de mozzarella dans l&rsquo;ordre suivant : farine, œufs battus, chapelure, puis à nouveau farine, œufs, et chapelure.",
-            "Laissez figer les bâtonnets panés au congélateur pendant 30 minutes.",
-            "Pour la sauce Ranch : dans un bol, mélangez 1 cuillère à soupe de mayonnaise, 3 cuillères à soupe de crème épaisse allégée, de la ciboulette ciselée, du persil haché, de l&rsquo;aneth, le jus d&rsquo;un demi-citron, 1 cuillère à café de moutarde, 2 cuillères à soupe de poudre d&rsquo;ail, du sel et du poivre.",
-            "Pour le laquage : dans un bol résistant à la chaleur, mélangez 1 à 2 cuillères à soupe de piment de Cayenne, 1 cuillère à soupe de paprika fumé, du sel, 1 cuillère à café de sucre roux et 1 cuillère à soupe d&rsquo;ail en poudre.",
-            "Faites chauffer 5 à 6 cl d&rsquo;huile de friture et versez-la chaude sur le mélange pour le laquage, puis mélangez bien.",
-            "Faites frire les bâtonnets de mozzarella panés jusqu&rsquo;à ce qu&rsquo;ils soient dorés.",
-            "Nappez les bâtonnets dorés avec le laquage pimenté.",
-            "Dégustez avec du coleslaw et la sauce Ranch."
-        ],
-        "tags": [
-            "épicé",
-            "Sauces",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "6933",
         "title": "Astuce Fajita",
         "description": "Une astuce rapide pour préparer des fajitas.",
@@ -15329,99 +15281,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "6951",
-        "title": "Curry de crevettes",
-        "description": "Une recette rapide et simple de curry de crevettes, qui peut également être réalisée avec du poulet. Ce plat savoureux est relevé par un mélange d&rsquo;épices cajun, du piment et du paprika fumé, et agrémenté de citron vert et de ciboulette ou coria",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6951_1784301094250.jpg&v=1784308303000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7642393520979873057\" data-video-id=\"7642393520979873057\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7642393520979873057\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🦐\n             10 à 15 crevettes crues"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             10g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 gousses d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             3 cuillères à soupe de sauce tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             20cl de crème demi-épaisse"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             20cl de bouillon de volaille"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             20g de parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 cuillère à café d&rsquo;oignon en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à café d&rsquo;origan"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 cuillères à café d&rsquo;épices cajun"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1/2 citron vert"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Ciboulette ou coriandre"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Piment en poudre (pour l&rsquo;assaisonnement des crevettes)"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Ail en poudre (pour l&rsquo;assaisonnement des crevettes)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel (pour l&rsquo;assaisonnement des crevettes)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre (pour l&rsquo;assaisonnement des crevettes)"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "asiatique",
-            "épicé",
-            "Poissons et crustacés"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "6939",
         "title": "Croque Mcdo en 5 minutes",
         "description": "Une recette rapide et facile pour préparer un Croque Mcdo maison en seulement 5 minutes.",
@@ -22077,86 +21936,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Pas cher",
             "tarte"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6474",
-        "title": "Tarte Cheesy Crust",
-        "description": "Une tarte estivale végétarienne avec une croûte au fromage, garnie de tomates cerises, de féta et d&rsquo;une touche de citron.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6474_1783088594432.jpg&v=1783096304000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7392608306071686432\" data-video-id=\"7392608306071686432\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7392608306071686432\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             1 pâte feuilletée"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             80g de mozza râpée"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 jaune d'oeuf"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Graines de sésame"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             250g de tomates cerises"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 cas de soja sucré"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             3 cas d'huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             120g de féta"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cas de miel"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             2 cas de crème liquide"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Zeste d'1/2 citron"
-            }
-        ],
-        "steps": [
-            "Préparer le fond de tarte en étalant la pâte feuilletée, puis en la garnissant de 80g de mozza râpée, d&rsquo;un jaune d&rsquo;œuf et de graines de sésame.",
-            "Cuire ce fond de tarte pendant 15 minutes à 200 degrés.",
-            "Préparer la garniture en mélangeant 250g de tomates cerises, 2 cas de soja sucré, 3 cas d'huile d'olive, 120g de féta, 1 cas de miel, du sel, du poivre, 2 cas de crème liquide et le zeste d'1/2 citron."
-        ],
-        "tags": [
-            "Grèce",
-            "tarte",
-            "Végé",
-            "Voilà l'été"
         ],
         "isFeatured": false,
         "isFavorite": false,
