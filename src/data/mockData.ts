@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 07/09/2026 08:23:15
- * Total: 673 recettes
+ * Dernière mise à jour: 07/09/2026 08:32:52
+ * Total: 676 recettes
  */
-export const exportSyncId = "1788769395468";
+export const exportSyncId = "1788769972602";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7432",
         "title": "Biscotti Cantucci italiens",
         "description": "Découvrez comment préparer des Cantucci, ces délicieux biscuits aux amandes originaires de Toscane. Faciles et rapides à réaliser, même à la dernière minute, ils ne nécessitent aucun outil spécial. Parfaits pour un cadeau de dernière minute, ils sont",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7432.webp&v=1788776656000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -7680,6 +7680,58 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
+        "id": "7254",
+        "title": "Margarita du Diable",
+        "description": "La Margarita du Diable s&rsquo;inspire du New York Sour avec une couche de vin rouge. Cela ajoute une certaine complexité à la boisson, mais préparée à la manière Tommy&rsquo;s, la Tequila reste la vedette du spectacle 👌",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_7254_1787148656705.jpg&v=1787156249000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7392891424976522528\" data-video-id=\"7392891424976522528\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7392891424976522528\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Tequila - 60 ml"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron vert - 30 ml"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Sirop de sucre de canne - 22,5 ml"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Flottant de vin rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Bord du verre salé"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Rondelle de citron vert"
+            }
+        ],
+        "steps": [
+            "Saler le bord d&rsquo;un verre.",
+            "Dans un shaker, mélanger la tequila, le jus de citron vert et le sirop de sucre de canne avec de la glace.",
+            "Filtrer le mélange dans le verre préparé.",
+            "Ajouter délicatement une couche de vin rouge sur le dessus.",
+            "Garnir d&rsquo;une rondelle de citron vert."
+        ],
+        "tags": [
+            "Mexique",
+            "Rafraîchissements"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
         "id": "7264",
         "title": "Hugo Tonic Porte-Bonheur",
         "description": "Un premier cocktail vert pour la Saint-Patrick, inspiré par @join_jules.",
@@ -14804,6 +14856,178 @@ export const mockRecipes: Recipe[] = [
             "Asie",
             "épicé",
             "Gratins"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6922",
+        "title": "Smash Burger",
+        "description": "Découvrez comment préparer de délicieux smash burgers maison avec des oignons caramélisés et une sauce spéciale. Une recette simple et rapide pour un repas gourmand.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6922_1784125023453.jpg&v=1784132261000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7599725599007001878\" data-video-id=\"7599725599007001878\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7599725599007001878\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             2 cuillères à soupe de sauce Worcestershire"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             4 cuillères à soupe d&rsquo;eau (ou plus)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 steaks"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             4 tranches de cheddar"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             4 pains briochés"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             3 cuillères à soupe de mayonnaise"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             2 cuillères à soupe de ketchup"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de sauce Worcestershire"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             4 cornichons coupés en petits morceaux"
+            }
+        ],
+        "steps": [
+            "Commencez par préparer les oignons caramélisés : émincez l&rsquo;oignon et faites-le revenir dans une poêle. Ajoutez le sucre, les 2 cuillères à soupe de sauce Worcestershire et les 4 cuillères à soupe d&rsquo;eau. Laissez mijoter à feu doux jusqu&rsquo;à ce que les oignons soient tendres et caramélisés.",
+            "Pendant ce temps, préparez la sauce spéciale : dans un bol, mélangez la mayonnaise, le ketchup, la moutarde, la cuillère à soupe de sauce Worcestershire, le paprika et les cornichons coupés en petits morceaux. Réservez.",
+            "Faites chauffer une poêle ou une plancha à feu vif. Beurrez légèrement les pains briochés et faites-les dorer côté mie. Réservez.",
+            "Placez les steaks dans la poêle très chaude. À l&rsquo;aide d&rsquo;une spatule solide, écrasez fermement chaque steak pour former un &lsquo;smash burger&rsquo; fin. Salez et poivrez généreusement.",
+            "Après quelques minutes, retournez les steaks. Déposez une tranche de cheddar sur chaque steak et laissez fondre pendant la cuisson de l&rsquo;autre côté.",
+            "Assemblez vos burgers : sur la base de chaque pain brioché, étalez une généreuse couche de sauce, déposez un steak avec le cheddar fondu, puis ajoutez les oignons caramélisés. Refermez avec le chapeau du pain brioché et servez immédiatement."
+        ],
+        "tags": [
+            "Sandwichs",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6833",
+        "title": "Salade de tomates sauce crémeuse pistou",
+        "description": "Une salade de tomates fraîches et variées, agrémentée de croûtons croustillants à l&rsquo;ail et au thym, le tout nappé d&rsquo;une sauce crémeuse au basilic, pignons de pin et yaourt grec, inspirée de la Panzanella italienne.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6833_1784118626380.jpg&v=1784130335000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7651611234588052769\" data-video-id=\"7651611234588052769\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7651611234588052769\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍅\n Tomates anciennes (cœur de bœuf, verte, ananas noire de Crimée)"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n 3 tranches de pain de campagne"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n 2 gousses d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n Thym"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n 1 échalote ciselée"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n 1 bouquet de basilic"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Pignons de pin"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Origan"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n Huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 cuillère à soupe de yaourt grec"
+            }
+        ],
+        "steps": [
+            "Couper les tomates anciennes en quartiers.",
+            "Dans un saladier, mélanger les tomates avec l'échalote ciselée et l'origan.",
+            "Faire torréfier les pignons de pin dans une poêle sèche pendant 2 minutes. Réserver.",
+            "Couper le pain de campagne en petits croûtons.",
+            "Dans une poêle, faire revenir les croûtons dans de l'huile d'olive avec une gousse d'ail écrasée et du thym jusqu&rsquo;à ce qu&rsquo;ils soient dorés et croustillants.",
+            "Préparer la sauce : dans un mixeur, combiner 1 bouquet de basilic, 4-5 cuillères à soupe d'huile d'olive, du sel, 1 gousse d'ail, une partie des pignons de pin torréfiés et 1 cuillère à soupe de yaourt grec. Mixer jusqu&rsquo;à obtenir une sauce crémeuse.",
+            "Verser la sauce sur la salade de tomates et mélanger délicatement.",
+            "Ajouter les croûtons et le reste des pignons de pin torréfiés juste avant de servir."
+        ],
+        "tags": [
+            "Healthy",
+            "Italie",
+            "Salades",
+            "Sauces",
+            "Végé",
+            "Voilà l'été"
         ],
         "isFeatured": false,
         "isFavorite": false,
