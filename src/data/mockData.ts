@@ -2,11 +2,131 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 07/09/2026 11:50:22
+ * Dernière mise à jour: 07/09/2026 12:04:18
  * Total: 682 recettes
  */
-export const exportSyncId = "1788781822630";
+export const exportSyncId = "1788782658072";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7449",
+        "title": "Olives panées à la feta",
+        "description": "Une recette d&rsquo;apéritif festive pour Noël, proposant des olives vertes dénoyautées farcies à la feta, panées et frites jusqu&rsquo;à obtenir une belle coloration dorée.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7449.webp&v=1788789305000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7584501402613927190\" data-video-id=\"7584501402613927190\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7584501402613927190\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Olives vertes dénoyautées"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Feta"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs battus"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             Chapelure"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de friture"
+            }
+        ],
+        "steps": [
+            "Farcir chaque olive avec un petit morceau de feta.",
+            "Rouler les olives dans la farine.",
+            "Les passer dans l'œuf battu.",
+            "Les enrober de chapelure.",
+            "Recommencer : farine → œuf → chapelure (double panure).",
+            "Plonger dans une huile bien chaude et frire quelques secondes jusqu'à belle coloration.",
+            "Égoutter sur papier absorbant."
+        ],
+        "tags": [
+            "Apéritifs",
+            "Noël",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7451",
+        "title": "Tartinade d&rsquo;aubergines et poivrons",
+        "description": "Une tartinade savoureuse et facile à préparer, à base d&rsquo;aubergines et de poivrons rouges rôtis au four avec de l&rsquo;ail, parfaite pour accompagner des toasts à l&rsquo;apéritif.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7451-1.webp&v=1788789298000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7641965944423648534\" data-video-id=\"7641965944423648534\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7641965944423648534\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍆\n             2 grandes aubergines"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             2 poivrons rouges"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 tête d&rsquo;ail entière"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             3 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 poignée de persil frais haché"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pain grillé"
+            }
+        ],
+        "steps": [
+            "Préchauffer le four à 220°C.",
+            "Placer les aubergines entières et les poivrons entiers sur une plaque de cuisson. Couper le haut de la tête d&rsquo;ail et l&rsquo;arroser d&rsquo;huile d&rsquo;olive avant de l&rsquo;enfermer dans du papier cuisson.",
+            "Saler et poivrer les aubergines et les poivrons puis arroser d&rsquo;huile d&rsquo;olive. Enfourner 25 à 30 minutes pour que les légumes soient bien tendres et dorés.",
+            "Tailler en cubes les aubergines épluchées et les poivrons. Presser la tête d&rsquo;ail pour récupérer la pulpe.",
+            "Hacher les légumes rôtis avec la purée d&rsquo;ail et le persil ciselé. Goûter et ajuster l&rsquo;assaisonnement si besoin.",
+            "Déguster chaud ou froid avec des toasts de pain grillé !"
+        ],
+        "tags": [
+            "Apéritifs",
+            "Healthy",
+            "Pas cher",
+            "Sauces",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7453",
         "title": "Tartinade de poivrons rôtis et mogettes",
@@ -129,126 +249,6 @@ export const mockRecipes: Recipe[] = [
             "Espagne",
             "Pas cher",
             "Poissons et crustacés"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7451",
-        "title": "Tartinade d&rsquo;aubergines et poivrons",
-        "description": "Une tartinade savoureuse et facile à préparer, à base d&rsquo;aubergines et de poivrons rouges rôtis au four avec de l&rsquo;ail, parfaite pour accompagner des toasts à l&rsquo;apéritif.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7641965944423648534\" data-video-id=\"7641965944423648534\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7641965944423648534\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍆\n             2 grandes aubergines"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             2 poivrons rouges"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 tête d&rsquo;ail entière"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             3 cuillères à soupe d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 poignée de persil frais haché"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pain grillé"
-            }
-        ],
-        "steps": [
-            "Préchauffer le four à 220°C.",
-            "Placer les aubergines entières et les poivrons entiers sur une plaque de cuisson. Couper le haut de la tête d&rsquo;ail et l&rsquo;arroser d&rsquo;huile d&rsquo;olive avant de l&rsquo;enfermer dans du papier cuisson.",
-            "Saler et poivrer les aubergines et les poivrons puis arroser d&rsquo;huile d&rsquo;olive. Enfourner 25 à 30 minutes pour que les légumes soient bien tendres et dorés.",
-            "Tailler en cubes les aubergines épluchées et les poivrons. Presser la tête d&rsquo;ail pour récupérer la pulpe.",
-            "Hacher les légumes rôtis avec la purée d&rsquo;ail et le persil ciselé. Goûter et ajuster l&rsquo;assaisonnement si besoin.",
-            "Déguster chaud ou froid avec des toasts de pain grillé !"
-        ],
-        "tags": [
-            "Apéritifs",
-            "Healthy",
-            "Pas cher",
-            "Sauces",
-            "Végé",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7449",
-        "title": "Olives panées à la feta",
-        "description": "Une recette d&rsquo;apéritif festive pour Noël, proposant des olives vertes dénoyautées farcies à la feta, panées et frites jusqu&rsquo;à obtenir une belle coloration dorée.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7584501402613927190\" data-video-id=\"7584501402613927190\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7584501402613927190\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Olives vertes dénoyautées"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Feta"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             Farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Œufs battus"
-            },
-            {
-                "quantity": "",
-                "name": "🥖\n             Chapelure"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile de friture"
-            }
-        ],
-        "steps": [
-            "Farcir chaque olive avec un petit morceau de feta.",
-            "Rouler les olives dans la farine.",
-            "Les passer dans l'œuf battu.",
-            "Les enrober de chapelure.",
-            "Recommencer : farine → œuf → chapelure (double panure).",
-            "Plonger dans une huile bien chaude et frire quelques secondes jusqu'à belle coloration.",
-            "Égoutter sur papier absorbant."
-        ],
-        "tags": [
-            "Apéritifs",
-            "Noël",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
