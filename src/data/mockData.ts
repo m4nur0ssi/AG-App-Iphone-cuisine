@@ -2,11 +2,104 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 07/09/2026 12:15:04
- * Total: 682 recettes
+ * Dernière mise à jour: 07/09/2026 14:14:52
+ * Total: 683 recettes
  */
-export const exportSyncId = "1788783304168";
+export const exportSyncId = "1788790492348";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7462",
+        "title": "Riz façon kebab à la dinde",
+        "description": "Une recette de riz façon kebab à la dinde, préparée en un seul plat (one pot), idéale pour un régime alimentaire équilibré. Elle est riche en protéines et faible en lipides, avec des macros détaillées pour deux portions, conçue pour vous aider à appr",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7682043988622282016\" data-video-id=\"7682043988622282016\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7682043988622282016\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             360 g de filet de dinde"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             140 g de riz cru"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 poivron"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 courgette"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1/2 tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 portion de fromage blanc 0 %"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             10 g de moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             5 g d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             5 g de stévia"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Origan"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Épices au choix"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Eau"
+            }
+        ],
+        "steps": [
+            "Coupez la dinde en morceaux, assaisonnez avec du sel, des épices, de l'origan et de l'ail, puis faites-la griller dans une poêle bien chaude. Réservez.",
+            "Coupez l'oignon, le poivron et la courgette. Faites revenir la moitié de l'oignon avec le poivron et la dinde, puis réservez. Dans la même poêle, ajoutez le reste de l'oignon, la courgette et le riz cru. Ajoutez de l'eau, couvrez et laissez cuire tranquillement jusqu'à ce que le riz soit tendre.",
+            "Pendant ce temps, préparez la sauce en mélangeant le fromage blanc 0 %, la moutarde, les 5 g d'huile d'olive, la stévia, du sel et des épices.",
+            "Quand le riz est cuit, ajoutez la dinde et les légumes cuits puis couvrez quelques minutes pour bien réchauffer l'ensemble. Terminez avec l'oignon rouge et la tomate coupés finement pour apporter la fraîcheur façon kebab, puis ajoutez la sauce."
+        ],
+        "tags": [
+            "Healthy",
+            "minceur",
+            "Orient",
+            "Sandwichs"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7449",
         "title": "Olives panées à la feta",
