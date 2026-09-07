@@ -2,11 +2,75 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 07/09/2026 07:46:00
- * Total: 672 recettes
+ * Dernière mise à jour: 07/09/2026 08:23:15
+ * Total: 673 recettes
  */
-export const exportSyncId = "1788767160887";
+export const exportSyncId = "1788769395468";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7432",
+        "title": "Biscotti Cantucci italiens",
+        "description": "Découvrez comment préparer des Cantucci, ces délicieux biscuits aux amandes originaires de Toscane. Faciles et rapides à réaliser, même à la dernière minute, ils ne nécessitent aucun outil spécial. Parfaits pour un cadeau de dernière minute, ils sont",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7316104036002843936\" data-video-id=\"7316104036002843936\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7316104036002843936\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             200g de farine 00"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             100g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             2 cuillères à café de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100g d&rsquo;amandes entières (½ concassées, ½ entières)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             6g de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf moyen et 1 jaune d&rsquo;œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Le zeste d&rsquo;une demi-orange"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Le zeste d&rsquo;un demi-citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Une belle pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 cuillère à café d&rsquo;extrait de vanille"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Italie",
+            "Noël"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7429",
         "title": "Pain burger pliable",
