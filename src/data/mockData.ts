@@ -2,11 +2,74 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/09/2026 10:12:45
+ * Dernière mise à jour: 08/09/2026 10:28:18
  * Total: 688 recettes
  */
-export const exportSyncId = "1788862365409";
+export const exportSyncId = "1788863298098";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7470",
+        "title": "Orecchiette aux cime di rapa et burrata",
+        "description": "Découvrez cette recette italienne classique et très demandée d&rsquo;orecchiette aux cime di rapa, agrémentée d&rsquo;une onctueuse burrata. Un plat savoureux et réconfortant, parfait pour deux personnes.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7470.webp&v=1788869382000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7437248622682541334\" data-video-id=\"7437248622682541334\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7437248622682541334\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             260g d&rsquo;orecchiette"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200g de cime di rapa"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 piment séché"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 burratas de 125g chacune"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel (au goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre (au goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive extra vierge (au goût)"
+            }
+        ],
+        "steps": [
+            "Nettoyer les cime di rapa et les faire cuire à la vapeur ou bouillies dans de l&rsquo;eau salée jusqu&rsquo;à ce qu&rsquo;elles soient tendres. Égoutter et réserver.",
+            "Pendant ce temps, faire cuire les orecchiette dans une grande casserole d&rsquo;eau bouillante salée selon les instructions du paquet.",
+            "Dans une poêle, faire revenir la gousse d&rsquo;ail émincée et le piment séché dans un filet d&rsquo;huile d&rsquo;olive extra vierge jusqu&rsquo;à ce que l&rsquo;ail soit doré.",
+            "Ajouter les cime di rapa cuites à la poêle avec l&rsquo;ail et le piment. Faire sauter quelques minutes pour bien mélanger les saveurs.",
+            "Égoutter les orecchiette en conservant un peu d&rsquo;eau de cuisson. Ajouter les pâtes à la poêle avec les cime di rapa. Mélanger délicatement. Si le plat semble trop sec, ajouter un peu d&rsquo;eau de cuisson des pâtes pour créer une sauce légère.",
+            "Assaisonner avec du sel et du poivre selon votre goût. Servir immédiatement en disposant une burrata coupée en morceaux sur chaque portion. Arroser d&rsquo;un filet d&rsquo;huile d&rsquo;olive extra vierge avant de déguster."
+        ],
+        "tags": [
+            "épicé",
+            "Italie",
+            "pates",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7472",
         "title": "Pâtes à la Norma",
@@ -214,69 +277,6 @@ export const mockRecipes: Recipe[] = [
             "Italie",
             "Végé",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7470",
-        "title": "Orecchiette aux cime di rapa et burrata",
-        "description": "Découvrez cette recette italienne classique et très demandée d&rsquo;orecchiette aux cime di rapa, agrémentée d&rsquo;une onctueuse burrata. Un plat savoureux et réconfortant, parfait pour deux personnes.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7437248622682541334\" data-video-id=\"7437248622682541334\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7437248622682541334\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             260g d&rsquo;orecchiette"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             200g de cime di rapa"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1 piment séché"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 burratas de 125g chacune"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel (au goût)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre (au goût)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive extra vierge (au goût)"
-            }
-        ],
-        "steps": [
-            "Nettoyer les cime di rapa et les faire cuire à la vapeur ou bouillies dans de l&rsquo;eau salée jusqu&rsquo;à ce qu&rsquo;elles soient tendres. Égoutter et réserver.",
-            "Pendant ce temps, faire cuire les orecchiette dans une grande casserole d&rsquo;eau bouillante salée selon les instructions du paquet.",
-            "Dans une poêle, faire revenir la gousse d&rsquo;ail émincée et le piment séché dans un filet d&rsquo;huile d&rsquo;olive extra vierge jusqu&rsquo;à ce que l&rsquo;ail soit doré.",
-            "Ajouter les cime di rapa cuites à la poêle avec l&rsquo;ail et le piment. Faire sauter quelques minutes pour bien mélanger les saveurs.",
-            "Égoutter les orecchiette en conservant un peu d&rsquo;eau de cuisson. Ajouter les pâtes à la poêle avec les cime di rapa. Mélanger délicatement. Si le plat semble trop sec, ajouter un peu d&rsquo;eau de cuisson des pâtes pour créer une sauce légère.",
-            "Assaisonner avec du sel et du poivre selon votre goût. Servir immédiatement en disposant une burrata coupée en morceaux sur chaque portion. Arroser d&rsquo;un filet d&rsquo;huile d&rsquo;olive extra vierge avant de déguster."
-        ],
-        "tags": [
-            "épicé",
-            "Italie",
-            "pates",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
