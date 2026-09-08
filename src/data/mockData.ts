@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/09/2026 16:40:44
+ * Dernière mise à jour: 08/09/2026 16:56:54
  * Total: 689 recettes
  */
-export const exportSyncId = "1788885644970";
+export const exportSyncId = "1788886614252";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7467",
         "title": "Escalope à la Milanaise",
         "description": "Une escalope à la Milanaise, présentée comme étant meilleure qu&rsquo;au restaurant.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7467-1.webp&v=1788892250000",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7467-1-1.webp&v=1788892948000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
