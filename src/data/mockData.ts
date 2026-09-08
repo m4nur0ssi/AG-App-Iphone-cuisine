@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/09/2026 12:45:07
+ * Dernière mise à jour: 08/09/2026 12:56:55
  * Total: 689 recettes
  */
-export const exportSyncId = "1788871507401";
+export const exportSyncId = "1788872215946";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7482",
         "title": "Gyozas au poulet faits maison",
         "description": "Découvrez comment préparer facilement et économiquement des gyozas au poulet faits maison, bien meilleurs que ceux du commerce. Une farce savoureuse et une sauce pimentée pour un régal assuré.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7482.webp&v=1788878810000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
