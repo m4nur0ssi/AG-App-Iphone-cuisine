@@ -2,16 +2,139 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/09/2026 09:55:31
+ * Dernière mise à jour: 08/09/2026 10:12:45
  * Total: 688 recettes
  */
-export const exportSyncId = "1788861331766";
+export const exportSyncId = "1788862365409";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7472",
+        "title": "Pâtes à la Norma",
+        "description": "Découvrez la recette classique des Pâtes à la Norma, un plat végétarien emblématique de la cuisine sicilienne. Des aubergines rôties au four, une sauce tomate savoureuse à base d&rsquo;oignon et d&rsquo;ail, le tout mélangé à des pâtes al dente, du b",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7472.webp&v=1788868688000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7646122031783759126\" data-video-id=\"7646122031783759126\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7646122031783759126\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍝\n             200g de pâtes"
+            },
+            {
+                "quantity": "",
+                "name": "🍆\n             2 aubergines"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             10 tomates cerises"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 oignons"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             3 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             400ml de tomates concassées"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Basilic frais"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive vierge extra"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel et poivre"
+            }
+        ],
+        "steps": [
+            "1️⃣ Sur une plaque de cuisson, disposez l&rsquo;aubergine coupée en dés et les tomates cerises coupées en deux.",
+            "2️⃣ Ajoutez du sel, du poivre et de l&rsquo;huile d&rsquo;olive vierge extra, puis enfournez la plaque pendant 20 minutes à 200 degrés et réservez.",
+            "3️⃣ Dans une poêle avec de l&rsquo;huile d&rsquo;olive vierge extra, ajoutez l&rsquo;oignon et l&rsquo;ail et laissez cuire 20 minutes.",
+            "4️⃣ Ajoutez ensuite les tomates concassées et laissez cuire 5 minutes de plus.",
+            "5️⃣ Ajoutez les légumes rôtis et mélangez pour bien intégrer tous les ingrédients.",
+            "6️⃣ Ajoutez les pâtes et un peu de leur eau de cuisson, le basilic frais et le parmesan râpé, puis mélangez.",
+            "7️⃣ Dernière étape, dressez et savourez ce plat délicieux."
+        ],
+        "tags": [
+            "Italie",
+            "Pas cher",
+            "pates",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7474",
+        "title": "Côte de Bœuf Frite",
+        "description": "Découvrez la recette de la côte de bœuf frite, une méthode traditionnelle où la viande est cuite dans du beurre clarifié pour un résultat incroyablement savoureux. Une véritable gourmandise à partager !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7474.webp&v=1788868676000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7509927410251468054\" data-video-id=\"7509927410251468054\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7509927410251468054\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             1 kg de côte de bœuf"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             500 g de beurre clarifié"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Ail et romarin (selon le goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             100 g de farine T45"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             200 g de chapelure"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200 g de Panko"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             4 œufs"
+            }
+        ],
+        "steps": [
+            "Les étapes de préparation ne sont pas détaillées dans la description fournie."
+        ],
+        "tags": [
+            "Italie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7476",
         "title": "Polenta gratinée aux tomates cerises et burrata",
         "description": "Une recette facile et savoureuse de polenta crémeuse gratinée au four avec des tomates cerises, de l&rsquo;oignon rouge, du romarin, et garnie de burrata fondante et de pignons de pin.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7476.webp&v=1788868664000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -91,129 +214,6 @@ export const mockRecipes: Recipe[] = [
             "Italie",
             "Végé",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7474",
-        "title": "Côte de Bœuf Frite",
-        "description": "Découvrez la recette de la côte de bœuf frite, une méthode traditionnelle où la viande est cuite dans du beurre clarifié pour un résultat incroyablement savoureux. Une véritable gourmandise à partager !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7509927410251468054\" data-video-id=\"7509927410251468054\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7509927410251468054\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             1 kg de côte de bœuf"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             500 g de beurre clarifié"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Ail et romarin (selon le goût)"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             100 g de farine T45"
-            },
-            {
-                "quantity": "",
-                "name": "🥖\n             200 g de chapelure"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             200 g de Panko"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             4 œufs"
-            }
-        ],
-        "steps": [
-            "Les étapes de préparation ne sont pas détaillées dans la description fournie."
-        ],
-        "tags": [
-            "Italie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7472",
-        "title": "Pâtes à la Norma",
-        "description": "Découvrez la recette classique des Pâtes à la Norma, un plat végétarien emblématique de la cuisine sicilienne. Des aubergines rôties au four, une sauce tomate savoureuse à base d&rsquo;oignon et d&rsquo;ail, le tout mélangé à des pâtes al dente, du b",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7646122031783759126\" data-video-id=\"7646122031783759126\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7646122031783759126\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍝\n             200g de pâtes"
-            },
-            {
-                "quantity": "",
-                "name": "🍆\n             2 aubergines"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             10 tomates cerises"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             2 oignons"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             3 gousses d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             400ml de tomates concassées"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Basilic frais"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive vierge extra"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel et poivre"
-            }
-        ],
-        "steps": [
-            "1️⃣ Sur une plaque de cuisson, disposez l&rsquo;aubergine coupée en dés et les tomates cerises coupées en deux.",
-            "2️⃣ Ajoutez du sel, du poivre et de l&rsquo;huile d&rsquo;olive vierge extra, puis enfournez la plaque pendant 20 minutes à 200 degrés et réservez.",
-            "3️⃣ Dans une poêle avec de l&rsquo;huile d&rsquo;olive vierge extra, ajoutez l&rsquo;oignon et l&rsquo;ail et laissez cuire 20 minutes.",
-            "4️⃣ Ajoutez ensuite les tomates concassées et laissez cuire 5 minutes de plus.",
-            "5️⃣ Ajoutez les légumes rôtis et mélangez pour bien intégrer tous les ingrédients.",
-            "6️⃣ Ajoutez les pâtes et un peu de leur eau de cuisson, le basilic frais et le parmesan râpé, puis mélangez.",
-            "7️⃣ Dernière étape, dressez et savourez ce plat délicieux."
-        ],
-        "tags": [
-            "Italie",
-            "Pas cher",
-            "pates",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
