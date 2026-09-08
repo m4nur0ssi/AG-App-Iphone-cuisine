@@ -2,11 +2,207 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/09/2026 13:58:13
+ * Dernière mise à jour: 08/09/2026 14:24:43
  * Total: 689 recettes
  */
-export const exportSyncId = "1788875893883";
+export const exportSyncId = "1788877483893";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "6310",
+        "title": "Jus délicieux et rafraîchissant",
+        "description": "Un jus frais et désaltérant à base de pastèque, pêche, citron et menthe, parfait pour l&rsquo;été.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6310_1782231018872.jpg&v=1788883717000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7653924796475952416\" data-video-id=\"7653924796475952416\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7653924796475952416\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             400g de pastèques"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 à 3 pêches blanches"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Le jus de 1 ou 2 citrons"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Une pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Quelques feuilles de menthe"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Quelques glaçons"
+            }
+        ],
+        "steps": [
+            "Ajoutez la pastèque coupée en morceaux.",
+            "Ajoutez les pêches blanches coupées en morceaux.",
+            "Ajoutez le jus des citrons.",
+            "Ajoutez une pincée de sel.",
+            "Mélangez le tout jusqu'à obtenir une consistance lisse.",
+            "Filtrez le mélange pour enlever les pulpes.",
+            "Placez le jus filtré au congélateur pour le refroidir.",
+            "Ajoutez quelques feuilles de menthe pour la fraîcheur.",
+            "Servez bien frais, éventuellement avec des glaçons."
+        ],
+        "tags": [
+            "Healthy",
+            "Rafraîchissements",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6347",
+        "title": "PÂTES SAUCE TOMATE SPICY",
+        "description": "Des pâtes relevées à la sauce tomate, agrémentées de breasola et de parmesan, parfaites pour une personne.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6347_1782458952580.jpg&v=1788883245000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7606397282812038422\" data-video-id=\"7606397282812038422\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7606397282812038422\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍝\n             80 g de pâtes"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 demi oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             Un peu de vin blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             4 CAS de sauce tomate ou pulpe de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Un filet de crème"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Épices : piment d'Espelette, origan, sel poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Quelques tranches de breasola"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Une tranche de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil plat"
+            }
+        ],
+        "steps": [
+            "Cuisinez l'oignon rouge et l'ail dans une poêle, puis déglacez avec du vin blanc.",
+            "Ajoutez les pâtes et faites cuire jusqu'à ce qu'elles soient al dente.",
+            "Pendant ce temps, préparez la sauce en mélangeant la sauce tomate basilique, la crème épaisse, le piment d'Espelette, l'origan, le sel, le poivre et le parmesan.",
+            "Mélangez bien la préparation et laissez cuire quelques minutes.",
+            "Dressez le plat en ajoutant du parmesan, des tranches de bresaola, une tranche de citron et du persil plat."
+        ],
+        "tags": [
+            "épicé",
+            "Italie",
+            "pates"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6345",
+        "title": "Salade César",
+        "description": "Une salade César classique et rafraîchissante avec du poulet pané, des tomates cerises et du parmesan.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6345_1782459208381.jpg&v=1788882772000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7653779236460743968\" data-video-id=\"7653779236460743968\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7653779236460743968\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥗\n             salade Batavia"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomates cerises"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🍗\n             Poulet pané"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             2 cas de parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             copeaux de parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             crème balsamique"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             sauce César (vinaigrette)"
+            }
+        ],
+        "steps": [
+            "Coupez la salade en petits morceaux.",
+            "Mettez la salade de côté.",
+            "Coupez très finement l&rsquo;oignon rouge et le poulet pané.",
+            "Étalez la salade dans l&rsquo;assiette.",
+            "Ajoutez une première couche de sauce César.",
+            "Disposez l&rsquo;oignon et le poulet, en étalant bien les morceaux.",
+            "Ajoutez généreusement des croûtons de salade.",
+            "Saupoudrez 1 cuillère à soupe de parmesan et quelques copeaux de parmesan.",
+            "Coupez les tomates cerises en deux et étalez-les.",
+            "Ajoutez la crème balsamique et la sauce César."
+        ],
+        "tags": [
+            "Salades",
+            "USA",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6351",
         "title": "Taboulé de chou-fleur",
@@ -22035,56 +22231,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "6588",
-        "title": "Saumon Express à l&rsquo;Air Fryer",
-        "description": "Découvrez une recette de saumon ultra simple et gourmande, prête en seulement 10 minutes à l&rsquo;Air Fryer. Assaisonné d&rsquo;ail, de paprika, de gingembre, de jus de citron et de poivre, c&rsquo;est le plat parfait pour un repas rapide et savoure",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6588_1783516215584.jpg&v=1783523512000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7590806993141550358\" data-video-id=\"7590806993141550358\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7590806993141550358\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🐟\n             saumon"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             gingembre en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             poivre"
-            }
-        ],
-        "steps": [
-            "1. Commencez par assaisonner le saumon avec l&rsquo;ail, le paprika, le gingembre, le citron et le poivre, puis mélangez bien.",
-            "2. Faites cuire pendant 10 minutes à 180 degrés.",
-            "3. Servez avec un peu de riz et une bonne sauce. Bon appétit !"
-        ],
-        "tags": [
-            "Healthy",
-            "Poissons et crustacés"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "6610",
         "title": "Rouleaux d&rsquo;aubergines farcis au bœuf et au fromage",
         "description": "Une recette savoureuse de rouleaux d&rsquo;aubergines farcis avec un mélange de bœuf haché, de riz, d&rsquo;oignon et d&rsquo;herbes, cuits dans une sauce tomate-basilic et gratinés à la mozzarella et aux flocons de piment.",
@@ -27347,75 +27493,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "6347",
-        "title": "PÂTES SAUCE TOMATE SPICY",
-        "description": "Des pâtes relevées à la sauce tomate, agrémentées de breasola et de parmesan, parfaites pour une personne.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6347_1782458952580.jpg&v=1782466403000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7606397282812038422\" data-video-id=\"7606397282812038422\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7606397282812038422\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍝\n             80 g de pâtes"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 demi oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             Un peu de vin blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             4 CAS de sauce tomate ou pulpe de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Un filet de crème"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Épices : piment d'Espelette, origan, sel poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Quelques tranches de breasola"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Une tranche de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil plat"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "épicé",
-            "Italie",
-            "pates"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "6341",
         "title": "Jerk Chicken",
         "description": "Un poulet grillé, fumé, sucré et épicé, inspiré des saveurs de la Jamaïque. Cette version recrée le goût authentique du Jerk Chicken, parfait pour des grillades originales et terriblement addictives.",
@@ -27642,55 +27719,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Italie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6310",
-        "title": "Jus délicieux et rafraîchissant",
-        "description": "Un jus frais et désaltérant à base de pastèque, pêche, citron et menthe, parfait pour l&rsquo;été.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6310_1782231018872.jpg&v=1782238309000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7653924796475952416\" data-video-id=\"7653924796475952416\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7653924796475952416\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             400g de pastèques"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 à 3 pêches blanches"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Le jus de 1 ou 2 citrons"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Une pincée de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Quelques feuilles de menthe"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Quelques glaçons"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Healthy",
-            "Rafraîchissements",
-            "Voilà l'été"
         ],
         "isFeatured": false,
         "isFavorite": false,
