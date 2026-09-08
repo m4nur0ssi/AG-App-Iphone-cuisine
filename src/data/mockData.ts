@@ -2,11 +2,100 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/09/2026 09:45:13
- * Total: 687 recettes
+ * Dernière mise à jour: 08/09/2026 09:55:31
+ * Total: 688 recettes
  */
-export const exportSyncId = "1788860713115";
+export const exportSyncId = "1788861331766";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7476",
+        "title": "Polenta gratinée aux tomates cerises et burrata",
+        "description": "Une recette facile et savoureuse de polenta crémeuse gratinée au four avec des tomates cerises, de l&rsquo;oignon rouge, du romarin, et garnie de burrata fondante et de pignons de pin.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7666886871959473440\" data-video-id=\"7666886871959473440\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7666886871959473440\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             150g de polenta"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             300 ml de lait"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             300ml d'eau"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de fromage frais"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             40g de parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             400g de tomates cerises"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Du romarin"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Des olives (optionnel)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 burrata"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Des pignons de pin (optionnel)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Du sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Du poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Un filet d'huile d'olive"
+            }
+        ],
+        "steps": [
+            "Préchauffez le four à 210°C.",
+            "Émincez l'oignon rouge finement. Coupez les tomates cerises en deux.",
+            "Dans une casserole, portez à petites ébullitions l'eau et le lait.",
+            "Ajoutez la polenta puis fouettez constamment sur feu doux/moyen pendant 2 à 3 minutes.",
+            "Hors du feu, ajoutez le fromage frais, le parmesan râpé, le sel et le poivre.",
+            "Mélangez à nouveau puis versez la polenta sur une plaque recouverte de papier cuisson.",
+            "Ajoutez les tomates cerises, les oignons, le romarin, les olives, un filet d'huile d'olive, du sel et du poivre puis enfournez pour 20 minutes à 210°C.",
+            "Laissez-la refroidir une dizaine de minutes puis ajoutez la burrata et quelques pignons de pin torréfiés."
+        ],
+        "tags": [
+            "Gratins",
+            "Italie",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7474",
         "title": "Côte de Bœuf Frite",
