@@ -2,11 +2,87 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/09/2026 20:37:50
- * Total: 689 recettes
+ * Dernière mise à jour: 08/09/2026 22:14:51
+ * Total: 690 recettes
  */
-export const exportSyncId = "1788899870818";
+export const exportSyncId = "1788905692010";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7713",
+        "title": "Poulet au citron et parmesan",
+        "description": "Une recette saine et gourmande de blancs de poulet dorés, nappés d&rsquo;une sauce crémeuse au citron et parmesan, servie avec du riz basmati.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7713.webp&v=1788912292000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7682801030664293664\" data-video-id=\"7682801030664293664\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7682801030664293664\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             400 g de blancs de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             20 cl de lait écrémé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             40 g de fromage frais à 8% de matière grasse (type Saint-Morêt)"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1/2 citron (jus)"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             40 g de parmesan râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe d&rsquo;origan"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 cuillère à café de piment d&rsquo;Espelette"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             100 g de riz basmati cru"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            }
+        ],
+        "steps": [
+            "Assaisonnez les blancs de poulet avec du sel et du poivre.",
+            "Faites-les dorer dans une poêle avec un filet d&rsquo;huile d&rsquo;olive à feu moyen pendant environ 4 minutes de chaque côté, puis réservez-les hors de la poêle.",
+            "Dans la même poêle, pressez le jus d&rsquo;un demi-citron, puis ajoutez le lait, le fromage frais, le parmesan râpé, l&rsquo;origan et le piment d&rsquo;Espelette.",
+            "Mélangez bien et laissez épaissir la sauce pendant quelques minutes à feu moyen.",
+            "Faites cuire le riz basmati à l&rsquo;eau bouillante salée selon les indications du paquet.",
+            "Dressez le riz dans les assiettes, disposez les blancs de poulet et arrosez généreusement avec la sauce au citron et parmesan."
+        ],
+        "tags": [
+            "épicé",
+            "Healthy",
+            "Italie",
+            "minceur",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "6807",
         "title": "Œufs durs croustillants au fromage et chorizo",
