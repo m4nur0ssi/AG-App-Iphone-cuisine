@@ -2,11 +2,59 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/09/2026 15:46:13
+ * Dernière mise à jour: 08/09/2026 16:40:44
  * Total: 689 recettes
  */
-export const exportSyncId = "1788882373201";
+export const exportSyncId = "1788885644970";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7467",
+        "title": "Escalope à la Milanaise",
+        "description": "Une escalope à la Milanaise, présentée comme étant meilleure qu&rsquo;au restaurant.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7467-1.webp&v=1788892250000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7267573866627730720\" data-video-id=\"7267573866627730720\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7267573866627730720\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             escalope de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             sauce tomate"
+            }
+        ],
+        "steps": [
+            "Ouvrez le poulet en deux pour obtenir un format portefeuille.",
+            "Placez-le entre deux feuilles de papier sulfurisé.",
+            "Marteler le poulet avec une casserole pour l&rsquo;amincir et le rendre tendre.",
+            "Assaisonnez bien le poulet avec du sel et du poivre.",
+            "Passez le poulet dans la farine, en enlevant l&rsquo;excédent.",
+            "Cassez deux œufs dans un bol et trempez le poulet fariné dedans.",
+            "Mélangez la panure panko avec du parmesan râpé.",
+            "Enrobez le poulet de cette panure en appuyant bien pour qu&rsquo;elle adhère à l&rsquo;œuf.",
+            "Faites fondre du beurre dans une poêle avec un peu d&rsquo;huile pour éviter qu&rsquo;il brûle.",
+            "Cuire l&rsquo;escalope panée environ cinq minutes de chaque côté jusqu&rsquo;à ce qu&rsquo;elle ait une belle couleur dorée.",
+            "Retirez l&rsquo;escalope de la poêle et placez-la dans un four préchauffé à 150 °C.",
+            "Dans la même poêle, faites revenir un oignon rouge émincé et deux gousses d&rsquo;ail écrasées.",
+            "Ajoutez quelques olives hachées et des petites tomates en quartier.",
+            "Laissez mijoter pendant une dizaine de minutes.",
+            "Assaisonnez avec du sel, du poivre et du sucre selon votre goût.",
+            "Ajoutez du basilic frais haché, quelques pignons et un peu de harissa fumée.",
+            "Mélangez bien pour obtenir une sauce tomate aux saveurs fumées.",
+            "Nappez l&rsquo;escalope avec cette sauce et servez chaud."
+        ],
+        "tags": [
+            "Italie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "4008",
         "title": "Koobideh Kebab et Salade Shirazi",
@@ -2243,54 +2291,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Italie",
             "Noël"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7467",
-        "title": "Escalope à la Milanaise",
-        "description": "Une escalope à la Milanaise, présentée comme étant meilleure qu&rsquo;au restaurant.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7467.webp&v=1788887941000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7267573866627730720\" data-video-id=\"7267573866627730720\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7267573866627730720\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             escalope de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             sauce tomate"
-            }
-        ],
-        "steps": [
-            "Ouvrez le poulet en deux pour obtenir un format portefeuille.",
-            "Placez-le entre deux feuilles de papier sulfurisé.",
-            "Marteler le poulet avec une casserole pour l&rsquo;amincir et le rendre tendre.",
-            "Assaisonnez bien le poulet avec du sel et du poivre.",
-            "Passez le poulet dans la farine, en enlevant l&rsquo;excédent.",
-            "Cassez deux œufs dans un bol et trempez le poulet fariné dedans.",
-            "Mélangez la panure panko avec du parmesan râpé.",
-            "Enrobez le poulet de cette panure en appuyant bien pour qu&rsquo;elle adhère à l&rsquo;œuf.",
-            "Faites fondre du beurre dans une poêle avec un peu d&rsquo;huile pour éviter qu&rsquo;il brûle.",
-            "Cuire l&rsquo;escalope panée environ cinq minutes de chaque côté jusqu&rsquo;à ce qu&rsquo;elle ait une belle couleur dorée.",
-            "Retirez l&rsquo;escalope de la poêle et placez-la dans un four préchauffé à 150 °C.",
-            "Dans la même poêle, faites revenir un oignon rouge émincé et deux gousses d&rsquo;ail écrasées.",
-            "Ajoutez quelques olives hachées et des petites tomates en quartier.",
-            "Laissez mijoter pendant une dizaine de minutes.",
-            "Assaisonnez avec du sel, du poivre et du sucre selon votre goût.",
-            "Ajoutez du basilic frais haché, quelques pignons et un peu de harissa fumée.",
-            "Mélangez bien pour obtenir une sauce tomate aux saveurs fumées.",
-            "Nappez l&rsquo;escalope avec cette sauce et servez chaud."
-        ],
-        "tags": [
-            "Italie"
         ],
         "isFeatured": false,
         "isFavorite": false,
