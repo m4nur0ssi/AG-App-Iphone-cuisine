@@ -2,11 +2,197 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/09/2026 09:28:37
- * Total: 684 recettes
+ * Dernière mise à jour: 08/09/2026 09:45:13
+ * Total: 687 recettes
  */
-export const exportSyncId = "1788859717716";
+export const exportSyncId = "1788860713115";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7474",
+        "title": "Côte de Bœuf Frite",
+        "description": "Découvrez la recette de la côte de bœuf frite, une méthode traditionnelle où la viande est cuite dans du beurre clarifié pour un résultat incroyablement savoureux. Une véritable gourmandise à partager !",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7509927410251468054\" data-video-id=\"7509927410251468054\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7509927410251468054\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             1 kg de côte de bœuf"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             500 g de beurre clarifié"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Ail et romarin (selon le goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             100 g de farine T45"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             200 g de chapelure"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200 g de Panko"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             4 œufs"
+            }
+        ],
+        "steps": [
+            "Les étapes de préparation ne sont pas détaillées dans la description fournie."
+        ],
+        "tags": [
+            "Italie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7472",
+        "title": "Pâtes à la Norma",
+        "description": "Découvrez la recette classique des Pâtes à la Norma, un plat végétarien emblématique de la cuisine sicilienne. Des aubergines rôties au four, une sauce tomate savoureuse à base d&rsquo;oignon et d&rsquo;ail, le tout mélangé à des pâtes al dente, du b",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7646122031783759126\" data-video-id=\"7646122031783759126\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7646122031783759126\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍝\n             200g de pâtes"
+            },
+            {
+                "quantity": "",
+                "name": "🍆\n             2 aubergines"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             10 tomates cerises"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 oignons"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             3 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             400ml de tomates concassées"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Basilic frais"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive vierge extra"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel et poivre"
+            }
+        ],
+        "steps": [
+            "1️⃣ Sur une plaque de cuisson, disposez l&rsquo;aubergine coupée en dés et les tomates cerises coupées en deux.",
+            "2️⃣ Ajoutez du sel, du poivre et de l&rsquo;huile d&rsquo;olive vierge extra, puis enfournez la plaque pendant 20 minutes à 200 degrés et réservez.",
+            "3️⃣ Dans une poêle avec de l&rsquo;huile d&rsquo;olive vierge extra, ajoutez l&rsquo;oignon et l&rsquo;ail et laissez cuire 20 minutes.",
+            "4️⃣ Ajoutez ensuite les tomates concassées et laissez cuire 5 minutes de plus.",
+            "5️⃣ Ajoutez les légumes rôtis et mélangez pour bien intégrer tous les ingrédients.",
+            "6️⃣ Ajoutez les pâtes et un peu de leur eau de cuisson, le basilic frais et le parmesan râpé, puis mélangez.",
+            "7️⃣ Dernière étape, dressez et savourez ce plat délicieux."
+        ],
+        "tags": [
+            "Italie",
+            "Pas cher",
+            "pates",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7470",
+        "title": "Orecchiette aux cime di rapa et burrata",
+        "description": "Découvrez cette recette italienne classique et très demandée d&rsquo;orecchiette aux cime di rapa, agrémentée d&rsquo;une onctueuse burrata. Un plat savoureux et réconfortant, parfait pour deux personnes.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7437248622682541334\" data-video-id=\"7437248622682541334\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7437248622682541334\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             260g d&rsquo;orecchiette"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200g de cime di rapa"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 piment séché"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 burratas de 125g chacune"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel (au goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre (au goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive extra vierge (au goût)"
+            }
+        ],
+        "steps": [
+            "Nettoyer les cime di rapa et les faire cuire à la vapeur ou bouillies dans de l&rsquo;eau salée jusqu&rsquo;à ce qu&rsquo;elles soient tendres. Égoutter et réserver.",
+            "Pendant ce temps, faire cuire les orecchiette dans une grande casserole d&rsquo;eau bouillante salée selon les instructions du paquet.",
+            "Dans une poêle, faire revenir la gousse d&rsquo;ail émincée et le piment séché dans un filet d&rsquo;huile d&rsquo;olive extra vierge jusqu&rsquo;à ce que l&rsquo;ail soit doré.",
+            "Ajouter les cime di rapa cuites à la poêle avec l&rsquo;ail et le piment. Faire sauter quelques minutes pour bien mélanger les saveurs.",
+            "Égoutter les orecchiette en conservant un peu d&rsquo;eau de cuisson. Ajouter les pâtes à la poêle avec les cime di rapa. Mélanger délicatement. Si le plat semble trop sec, ajouter un peu d&rsquo;eau de cuisson des pâtes pour créer une sauce légère.",
+            "Assaisonner avec du sel et du poivre selon votre goût. Servir immédiatement en disposant une burrata coupée en morceaux sur chaque portion. Arroser d&rsquo;un filet d&rsquo;huile d&rsquo;olive extra vierge avant de déguster."
+        ],
+        "tags": [
+            "épicé",
+            "Italie",
+            "pates",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7467",
         "title": "Escalope à la Milanaise",
