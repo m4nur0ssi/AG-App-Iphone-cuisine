@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/09/2026 22:27:54
+ * Dernière mise à jour: 08/09/2026 22:48:01
  * Total: 690 recettes
  */
-export const exportSyncId = "1788906474850";
+export const exportSyncId = "1788907681351";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7713",
         "title": "Poulet au citron et parmesan",
         "description": "Une recette saine et gourmande de blancs de poulet dorés, nappés d&rsquo;une sauce crémeuse au citron et parmesan, servie avec du riz basmati.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7713.webp&v=1788912292000",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7713-1.webp&v=1788914273000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
