@@ -2,11 +2,449 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/09/2026 18:30:09
+ * Dernière mise à jour: 08/09/2026 19:52:32
  * Total: 689 recettes
  */
-export const exportSyncId = "1788892209219";
+export const exportSyncId = "1788897152059";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7451",
+        "title": "Tartinade d&rsquo;aubergines et poivrons",
+        "description": "Une tartinade savoureuse et facile à préparer, à base d&rsquo;aubergines et de poivrons rouges rôtis au four avec de l&rsquo;ail, parfaite pour accompagner des toasts à l&rsquo;apéritif.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7451-1-1.webp&v=1788903777000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7641965944423648534\" data-video-id=\"7641965944423648534\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7641965944423648534\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍆\n             2 grandes aubergines"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             2 poivrons rouges"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 tête d&rsquo;ail entière"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             3 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 poignée de persil frais haché"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pain grillé"
+            }
+        ],
+        "steps": [
+            "Préchauffer le four à 220°C.",
+            "Placer les aubergines entières et les poivrons entiers sur une plaque de cuisson. Couper le haut de la tête d&rsquo;ail et l&rsquo;arroser d&rsquo;huile d&rsquo;olive avant de l&rsquo;enfermer dans du papier cuisson.",
+            "Saler et poivrer les aubergines et les poivrons puis arroser d&rsquo;huile d&rsquo;olive. Enfourner 25 à 30 minutes pour que les légumes soient bien tendres et dorés.",
+            "Tailler en cubes les aubergines épluchées et les poivrons. Presser la tête d&rsquo;ail pour récupérer la pulpe.",
+            "Hacher les légumes rôtis avec la purée d&rsquo;ail et le persil ciselé. Goûter et ajuster l&rsquo;assaisonnement si besoin.",
+            "Déguster chaud ou froid avec des toasts de pain grillé !"
+        ],
+        "tags": [
+            "Apéritifs",
+            "Healthy",
+            "Pas cher",
+            "Sauces",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7449",
+        "title": "Olives panées à la feta",
+        "description": "Une recette d&rsquo;apéritif festive pour Noël, proposant des olives vertes dénoyautées farcies à la feta, panées et frites jusqu&rsquo;à obtenir une belle coloration dorée.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7449-1.webp&v=1788903768000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7584501402613927190\" data-video-id=\"7584501402613927190\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7584501402613927190\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Olives vertes dénoyautées"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Feta"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs battus"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             Chapelure"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de friture"
+            }
+        ],
+        "steps": [
+            "Farcir chaque olive avec un petit morceau de feta.",
+            "Rouler les olives dans la farine.",
+            "Les passer dans l'œuf battu.",
+            "Les enrober de chapelure.",
+            "Recommencer : farine → œuf → chapelure (double panure).",
+            "Plonger dans une huile bien chaude et frire quelques secondes jusqu'à belle coloration.",
+            "Égoutter sur papier absorbant."
+        ],
+        "tags": [
+            "Apéritifs",
+            "Noël",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7462",
+        "title": "Riz façon kebab à la dinde",
+        "description": "Une recette de riz façon kebab à la dinde, préparée en un seul plat (one pot), idéale pour un régime alimentaire équilibré. Elle est riche en protéines et faible en lipides, avec des macros détaillées pour deux portions, conçue pour vous aider à appr",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7462-1.webp&v=1788903760000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7682043988622282016\" data-video-id=\"7682043988622282016\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7682043988622282016\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             360 g de filet de dinde"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             140 g de riz cru"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 poivron"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 courgette"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1/2 tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 portion de fromage blanc 0 %"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             10 g de moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             5 g d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             5 g de stévia"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Origan"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Épices au choix"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Eau"
+            }
+        ],
+        "steps": [
+            "Coupez la dinde en morceaux, assaisonnez avec du sel, des épices, de l'origan et de l'ail, puis faites-la griller dans une poêle bien chaude. Réservez.",
+            "Coupez l'oignon, le poivron et la courgette. Faites revenir la moitié de l'oignon avec le poivron et la dinde, puis réservez. Dans la même poêle, ajoutez le reste de l'oignon, la courgette et le riz cru. Ajoutez de l'eau, couvrez et laissez cuire tranquillement jusqu'à ce que le riz soit tendre.",
+            "Pendant ce temps, préparez la sauce en mélangeant le fromage blanc 0 %, la moutarde, les 5 g d'huile d'olive, la stévia, du sel et des épices.",
+            "Quand le riz est cuit, ajoutez la dinde et les légumes cuits puis couvrez quelques minutes pour bien réchauffer l'ensemble. Terminez avec l'oignon rouge et la tomate coupés finement pour apporter la fraîcheur façon kebab, puis ajoutez la sauce."
+        ],
+        "tags": [
+            "Healthy",
+            "minceur",
+            "Orient",
+            "Sandwichs"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7447",
+        "title": "Apéritif gourmand avocat et crevettes",
+        "description": "Un apéritif facile et savoureux composé de toasts de pain de mie grillés, garnis d&rsquo;un guacamole maison et de crevettes poêlées.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7447-1.webp&v=1788903752000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7675370204309802272\" data-video-id=\"7675370204309802272\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7675370204309802272\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥖\n             Pain de mie"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persillade"
+            },
+            {
+                "quantity": "",
+                "name": "🥑\n             Avocat"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🦐\n             Crevettes"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile"
+            }
+        ],
+        "steps": [
+            "Découper des rondelles dans les tranches de pain de mie à l&rsquo;aide d&rsquo;un emporte-pièce.",
+            "Badigeonner les rondelles d&rsquo;un mélange d&rsquo;huile, d&rsquo;ail et de persillade, puis les faire griller au four.",
+            "Dans un bol, écraser l&rsquo;avocat.",
+            "Ajouter l&rsquo;oignon, la tomate, le jus de citron, le sel, le poivre et la persillade. Bien mélanger jusqu&rsquo;à l&rsquo;obtention d&rsquo;un guacamole.",
+            "Faire revenir les crevettes dans un peu de beurre avec du sel et de la persillade.",
+            "Une fois tous les éléments prêts, assembler l&rsquo;apéritif et le déguster immédiatement afin d&rsquo;éviter l&rsquo;oxydation de l&rsquo;avocat."
+        ],
+        "tags": [
+            "Apéritifs",
+            "Mexique",
+            "Poissons et crustacés",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7455",
+        "title": "Moules au chorizo",
+        "description": "Une recette savoureuse de moules cuisinées avec du chorizo, de l&rsquo;oignon, de l&rsquo;ail et du vin blanc.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7455-1.webp&v=1788903744000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7682465842545675552\" data-video-id=\"7682465842545675552\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7682465842545675552\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 kg de moules"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             200 g de chorizo"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             3 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             10 cl de vin blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 cl de"
+            }
+        ],
+        "steps": [
+            "Coupez le chorizo en deux : une moitié en grosses rondelles et l&rsquo;autre en petits dés.",
+            "Saucisez l&rsquo;oignon blanc, en gardant les chutes pour la sauce.",
+            "Dans une casserole à froid, faites revenir le chorizo, l&rsquo;oignon et les gousses d&rsquo;ail jusqu&rsquo;à ce qu&rsquo;ils commencent à colorer.",
+            "Déglacez avec le vin blanc.",
+            "Ajoutez la crème, laissez cuire environ 10 minutes à feu doux.",
+            "Mélangez la sauce jusqu&rsquo;à obtenir une crème homogène, puis réservez.",
+            "Dans une autre casserole, faites revenir les petits dés de chorizo jusqu&rsquo;à ce qu&rsquo;ils colorent.",
+            "Retirez les dés, ajoutez l&rsquo;oignon et les moules, mélangez légèrement, puis couvrez.",
+            "Laissez cuire 4 minutes, jusqu&rsquo;à ce que les moules soient bien ouvertes.",
+            "Ajoutez la crème, les dés de chorizo et le persil, mélangez bien.",
+            "Servez chaud, accompagné de frites maison si désiré."
+        ],
+        "tags": [
+            "épicé",
+            "Espagne",
+            "Pas cher",
+            "Poissons et crustacés"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7453",
+        "title": "Tartinade de poivrons rôtis et mogettes",
+        "description": "Une tartinade ultra savoureuse, fondante et relevée, parfaite pour l&rsquo;apéritif ou un snack sain.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7453-1.webp&v=1788903735000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7524737676218551574\" data-video-id=\"7524737676218551574\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7524737676218551574\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌶️\n             3 poivrons rouges"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             1 carotte"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 tête d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🫘\n             150-200g de mogettes de Vendée (ou haricots blancs)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 branche de romarin"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/4 de bloc de feta"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Piment d&rsquo;Espelette"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika fumé"
+            }
+        ],
+        "steps": [
+            "Coupez les 3 poivrons en quatre, retirez les pépins et la partie blanche.",
+            "Épluchez et coupez la carotte en grosses rondelles.",
+            "Coupez l'oignon rouge en quatre.",
+            "Coupez la gousse d'ail en deux.",
+            "Déposez tous les légumes dans un plat allant au four.",
+            "Ajoutez la branche de romarin frais et aspergez les légumes d'huile d'olive, salez et poivrez.",
+            "Enfournez 40 minutes à 200 °C.",
+            "Laissez refroidir puis retirez la peau des poivrons.",
+            "Mettez tous les légumes dans un mixeur, ajoutez 200 g de mogettes, le quart de bloc de feta et la tête d'ail confite.",
+            "Ajoutez un petit peu de piment d'Espelette et mixez jusqu'à obtenir une texture lisse.",
+            "Déposez la tartinade dans une assiette creuse, ajoutez un filet d'huile d'olive, un peu de piment d'Espelette, du paprika fumé et des herbes fraîches."
+        ],
+        "tags": [
+            "Apéritifs",
+            "épicé",
+            "France",
+            "Healthy",
+            "Sauces",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7482",
         "title": "Gyozas au poulet faits maison",
@@ -1395,92 +1833,6 @@ export const mockRecipes: Recipe[] = [
             "Accompagnements",
             "Afrique",
             "Pas cher",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7453",
-        "title": "Tartinade de poivrons rôtis et mogettes",
-        "description": "Une tartinade ultra savoureuse, fondante et relevée, parfaite pour l&rsquo;apéritif ou un snack sain.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7453.webp&v=1788888106000",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7524737676218551574\" data-video-id=\"7524737676218551574\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7524737676218551574\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌶️\n             3 poivrons rouges"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🥕\n             1 carotte"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 tête d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🫘\n             150-200g de mogettes de Vendée (ou haricots blancs)"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 branche de romarin"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1/4 de bloc de feta"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Piment d&rsquo;Espelette"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika fumé"
-            }
-        ],
-        "steps": [
-            "Coupez les 3 poivrons en quatre, retirez les pépins et la partie blanche.",
-            "Épluchez et coupez la carotte en grosses rondelles.",
-            "Coupez l'oignon rouge en quatre.",
-            "Coupez la gousse d'ail en deux.",
-            "Déposez tous les légumes dans un plat allant au four.",
-            "Ajoutez la branche de romarin frais et aspergez les légumes d'huile d'olive, salez et poivrez.",
-            "Enfournez 40 minutes à 200 °C.",
-            "Laissez refroidir puis retirez la peau des poivrons.",
-            "Mettez tous les légumes dans un mixeur, ajoutez 200 g de mogettes, le quart de bloc de feta et la tête d'ail confite.",
-            "Ajoutez un petit peu de piment d'Espelette et mixez jusqu'à obtenir une texture lisse.",
-            "Déposez la tartinade dans une assiette creuse, ajoutez un filet d'huile d'olive, un peu de piment d'Espelette, du paprika fumé et des herbes fraîches."
-        ],
-        "tags": [
-            "Apéritifs",
-            "épicé",
-            "France",
-            "Healthy",
-            "Sauces",
             "Végé"
         ],
         "isFeatured": false,
@@ -11904,66 +12256,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "7455",
-        "title": "Moules au chorizo",
-        "description": "Une recette savoureuse de moules cuisinées avec du chorizo, de l&rsquo;oignon, de l&rsquo;ail et du vin blanc.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7455.webp&v=1788881268000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7682465842545675552\" data-video-id=\"7682465842545675552\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7682465842545675552\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             1 kg de moules"
-            },
-            {
-                "quantity": "",
-                "name": "🥓\n             200 g de chorizo"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             3 gousses d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             10 cl de vin blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             30 cl de"
-            }
-        ],
-        "steps": [
-            "Coupez le chorizo en deux : une moitié en grosses rondelles et l&rsquo;autre en petits dés.",
-            "Saucisez l&rsquo;oignon blanc, en gardant les chutes pour la sauce.",
-            "Dans une casserole à froid, faites revenir le chorizo, l&rsquo;oignon et les gousses d&rsquo;ail jusqu&rsquo;à ce qu&rsquo;ils commencent à colorer.",
-            "Déglacez avec le vin blanc.",
-            "Ajoutez la crème, laissez cuire environ 10 minutes à feu doux.",
-            "Mélangez la sauce jusqu&rsquo;à obtenir une crème homogène, puis réservez.",
-            "Dans une autre casserole, faites revenir les petits dés de chorizo jusqu&rsquo;à ce qu&rsquo;ils colorent.",
-            "Retirez les dés, ajoutez l&rsquo;oignon et les moules, mélangez légèrement, puis couvrez.",
-            "Laissez cuire 4 minutes, jusqu&rsquo;à ce que les moules soient bien ouvertes.",
-            "Ajoutez la crème, les dés de chorizo et le persil, mélangez bien.",
-            "Servez chaud, accompagné de frites maison si désiré."
-        ],
-        "tags": [
-            "épicé",
-            "Espagne",
-            "Pas cher",
-            "Poissons et crustacés"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "7474",
         "title": "Côte de Bœuf Frite",
         "description": "Découvrez la recette de la côte de bœuf frite, une méthode traditionnelle où la viande est cuite dans du beurre clarifié pour un résultat incroyablement savoureux. Une véritable gourmandise à partager !",
@@ -12557,298 +12849,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Apéritifs",
             "Grèce",
-            "Sauces",
-            "Végé",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7447",
-        "title": "Apéritif gourmand avocat et crevettes",
-        "description": "Un apéritif facile et savoureux composé de toasts de pain de mie grillés, garnis d&rsquo;un guacamole maison et de crevettes poêlées.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7447.webp&v=1788797956000",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7675370204309802272\" data-video-id=\"7675370204309802272\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7675370204309802272\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥖\n             Pain de mie"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Ail"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persillade"
-            },
-            {
-                "quantity": "",
-                "name": "🥑\n             Avocat"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🦐\n             Crevettes"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             Beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Huile"
-            }
-        ],
-        "steps": [
-            "Découper des rondelles dans les tranches de pain de mie à l&rsquo;aide d&rsquo;un emporte-pièce.",
-            "Badigeonner les rondelles d&rsquo;un mélange d&rsquo;huile, d&rsquo;ail et de persillade, puis les faire griller au four.",
-            "Dans un bol, écraser l&rsquo;avocat.",
-            "Ajouter l&rsquo;oignon, la tomate, le jus de citron, le sel, le poivre et la persillade. Bien mélanger jusqu&rsquo;à l&rsquo;obtention d&rsquo;un guacamole.",
-            "Faire revenir les crevettes dans un peu de beurre avec du sel et de la persillade.",
-            "Une fois tous les éléments prêts, assembler l&rsquo;apéritif et le déguster immédiatement afin d&rsquo;éviter l&rsquo;oxydation de l&rsquo;avocat."
-        ],
-        "tags": [
-            "Apéritifs",
-            "Mexique",
-            "Poissons et crustacés",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7462",
-        "title": "Riz façon kebab à la dinde",
-        "description": "Une recette de riz façon kebab à la dinde, préparée en un seul plat (one pot), idéale pour un régime alimentaire équilibré. Elle est riche en protéines et faible en lipides, avec des macros détaillées pour deux portions, conçue pour vous aider à appr",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7462.webp&v=1788797948000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7682043988622282016\" data-video-id=\"7682043988622282016\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7682043988622282016\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             360 g de filet de dinde"
-            },
-            {
-                "quantity": "",
-                "name": "🍚\n             140 g de riz cru"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1 poivron"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 courgette"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1/2 oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1/2 tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 portion de fromage blanc 0 %"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             10 g de moutarde"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             5 g d'huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             5 g de stévia"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Ail"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Origan"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Épices au choix"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Eau"
-            }
-        ],
-        "steps": [
-            "Coupez la dinde en morceaux, assaisonnez avec du sel, des épices, de l'origan et de l'ail, puis faites-la griller dans une poêle bien chaude. Réservez.",
-            "Coupez l'oignon, le poivron et la courgette. Faites revenir la moitié de l'oignon avec le poivron et la dinde, puis réservez. Dans la même poêle, ajoutez le reste de l'oignon, la courgette et le riz cru. Ajoutez de l'eau, couvrez et laissez cuire tranquillement jusqu'à ce que le riz soit tendre.",
-            "Pendant ce temps, préparez la sauce en mélangeant le fromage blanc 0 %, la moutarde, les 5 g d'huile d'olive, la stévia, du sel et des épices.",
-            "Quand le riz est cuit, ajoutez la dinde et les légumes cuits puis couvrez quelques minutes pour bien réchauffer l'ensemble. Terminez avec l'oignon rouge et la tomate coupés finement pour apporter la fraîcheur façon kebab, puis ajoutez la sauce."
-        ],
-        "tags": [
-            "Healthy",
-            "minceur",
-            "Orient",
-            "Sandwichs"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7449",
-        "title": "Olives panées à la feta",
-        "description": "Une recette d&rsquo;apéritif festive pour Noël, proposant des olives vertes dénoyautées farcies à la feta, panées et frites jusqu&rsquo;à obtenir une belle coloration dorée.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7449.webp&v=1788789305000",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7584501402613927190\" data-video-id=\"7584501402613927190\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7584501402613927190\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Olives vertes dénoyautées"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Feta"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             Farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Œufs battus"
-            },
-            {
-                "quantity": "",
-                "name": "🥖\n             Chapelure"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile de friture"
-            }
-        ],
-        "steps": [
-            "Farcir chaque olive avec un petit morceau de feta.",
-            "Rouler les olives dans la farine.",
-            "Les passer dans l'œuf battu.",
-            "Les enrober de chapelure.",
-            "Recommencer : farine → œuf → chapelure (double panure).",
-            "Plonger dans une huile bien chaude et frire quelques secondes jusqu'à belle coloration.",
-            "Égoutter sur papier absorbant."
-        ],
-        "tags": [
-            "Apéritifs",
-            "Noël",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7451",
-        "title": "Tartinade d&rsquo;aubergines et poivrons",
-        "description": "Une tartinade savoureuse et facile à préparer, à base d&rsquo;aubergines et de poivrons rouges rôtis au four avec de l&rsquo;ail, parfaite pour accompagner des toasts à l&rsquo;apéritif.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7451-1.webp&v=1788789298000",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7641965944423648534\" data-video-id=\"7641965944423648534\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7641965944423648534\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍆\n             2 grandes aubergines"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             2 poivrons rouges"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 tête d&rsquo;ail entière"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             3 cuillères à soupe d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 poignée de persil frais haché"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pain grillé"
-            }
-        ],
-        "steps": [
-            "Préchauffer le four à 220°C.",
-            "Placer les aubergines entières et les poivrons entiers sur une plaque de cuisson. Couper le haut de la tête d&rsquo;ail et l&rsquo;arroser d&rsquo;huile d&rsquo;olive avant de l&rsquo;enfermer dans du papier cuisson.",
-            "Saler et poivrer les aubergines et les poivrons puis arroser d&rsquo;huile d&rsquo;olive. Enfourner 25 à 30 minutes pour que les légumes soient bien tendres et dorés.",
-            "Tailler en cubes les aubergines épluchées et les poivrons. Presser la tête d&rsquo;ail pour récupérer la pulpe.",
-            "Hacher les légumes rôtis avec la purée d&rsquo;ail et le persil ciselé. Goûter et ajuster l&rsquo;assaisonnement si besoin.",
-            "Déguster chaud ou froid avec des toasts de pain grillé !"
-        ],
-        "tags": [
-            "Apéritifs",
-            "Healthy",
-            "Pas cher",
             "Sauces",
             "Végé",
             "Voilà l'été"
