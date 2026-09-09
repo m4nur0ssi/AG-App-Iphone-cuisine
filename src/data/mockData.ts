@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/09/2026 14:42:11
+ * Dernière mise à jour: 09/09/2026 14:58:54
  * Total: 692 recettes
  */
-export const exportSyncId = "1788964931057";
+export const exportSyncId = "1788965934787";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7717",
         "title": "Tartelettes Amandine Faciles",
         "description": "Une recette simple pour préparer de délicieuses tartelettes amandine, composées d&rsquo;une pâte sablée maison et d&rsquo;une crème d&rsquo;amande onctueuse, garnies d&rsquo;amandes effilées et nappées de miel ou de sirop.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7717.webp&v=1788972524000",
         "category": "glaces",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -108,6 +108,130 @@ export const mockRecipes: Recipe[] = [
             "Pas cher",
             "pâtisserie",
             "tarte"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7719",
+        "title": "Poulet Frit Façon Los Pollos Hermanos",
+        "description": "Découvrez la recette inspirée du célèbre poulet frit de Los Pollos Hermanos, la chaîne de restaurants de Gus Fring dans l&rsquo;univers de Breaking Bad et Better Call Saul. Ce poulet ultra croustillant et épicé, fait maison, est préparé avec une mari",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7719.webp&v=1788972513000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7683213734285741345\" data-video-id=\"7683213734285741345\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7683213734285741345\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧄\n             Pièces de poulet (ailes, pilons, aiguillettes ou filets)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Origan"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Piment de Cayenne"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Poudre d&rsquo;oignons"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Coriandre fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile (pour la marinade)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Cumin"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Eau gazeuse (50 cl)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Lait (10 cl)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine (250 grs)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Maïzena (200 grs)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Poudre d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine de maïs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Corn flakes broyés"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de friture"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile chaude (environ 2 cuillères à soupe, pour le laquage)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Sucre (1 cuillère à soupe, pour le laquage)"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Mayonnaise (environ 2 cuillères à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fromage blanc (environ 2 cuillères à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron vert"
+            }
+        ],
+        "steps": [
+            "Préparez la marinade du poulet : mélangez les pièces de poulet (ailes, pilons, aiguillettes ou filets) avec du sel, du poivre, de l&rsquo;origan, du paprika fumé, du piment de Cayenne, de la poudre d&rsquo;oignons, de la coriandre fraîche, un filet d&rsquo;huile et du cumin. Laissez mariner le poulet pendant au moins 12 heures, idéalement 24 heures, pour que la chair s&rsquo;imprègne bien des saveurs.",
+            "Préparez la sauce : dans un bol, mélangez à parts égales de la mayonnaise et du fromage blanc. Ajoutez de la poudre d&rsquo;ail, du sel, du jus de citron vert, du paprika, du piment de Cayenne, de l&rsquo;origan et du poivre. Mélangez bien.",
+            "Préparez la pâte à frire (fry batter) au dernier moment : dans un récipient, mélangez l&rsquo;eau gazeuse, le lait, la farine, la maïzena, de la poudre d&rsquo;ail et du sel.",
+            "Préparez l&rsquo;enrobage sec : dans un autre récipient, mélangez de la farine de maïs et des corn flakes broyés. Vous pouvez également utiliser uniquement de la farine avec du paprika et du piment. Ajoutez un peu d&rsquo;épices à ce mélange.",
+            "Enrobez le poulet : enrobez chaque pièce de poulet marinée dans le mélange de farine et de corn flakes (ou farine épicée). Trempez ensuite le poulet dans la pâte à frire, puis repassez-le une dernière fois dans le mélange de farine.",
+            "Faites frire le poulet : faites chauffer de l&rsquo;huile à 170-180°C (pas plus). Plongez les pièces de poulet enrobées dans l&rsquo;huile chaude. Faites frire les tenders pendant environ 5 minutes, les ailes pendant environ 10 minutes, et les pilons pendant environ 15 minutes. Les temps de cuisson précis sont indiqués dans la description.",
+            "Appliquez le laquage : à la sortie de la friture, préparez un mélange avec de l&rsquo;huile chaude (environ 2 cuillères à soupe), du paprika fumé, du piment et une cuillère à soupe de sucre. Passez ce laquage au pinceau sur la panure du poulet frit. Ce détail fait toute la différence."
+        ],
+        "tags": [
+            "épicé",
+            "Mexique",
+            "Sauces",
+            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -14731,45 +14855,6 @@ export const mockRecipes: Recipe[] = [
             "pâtisserie",
             "USA",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7283",
-        "title": "Crème dessert choco-cacahuète",
-        "description": "Une crème dessert onctueuse et gourmande au chocolat noir et au beurre de cacahuètes, facile à préparer et idéale pour un dessert végétal. Cette recette est une collaboration commerciale avec Koro.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_ia_7283_1787597716784.jpg&v=1787605076000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7675012359705890080\" data-video-id=\"7675012359705890080\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7675012359705890080\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥛\n             400 ml de lait de coco chaud (ou autre lait végétal)"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             200 g de chocolat noir pâtissier"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             Beurre de cacahuètes (pour la décoration)"
-            }
-        ],
-        "steps": [
-            "Dans un récipient, mélanger le lait de coco chaud avec le chocolat noir pâtissier jusqu&rsquo;à ce que le chocolat soit complètement fondu et que la préparation soit homogène.",
-            "Verser la crème obtenue dans des ramequins individuels ou un plat.",
-            "Ajouter un peu de beurre de cacahuètes sur le dessus de chaque crème et réaliser un petit dessin à l'aide de bâtonnets ou d'un couteau.",
-            "Laisser prendre au frais pendant au moins 4 heures. Pour un meilleur résultat, il est recommandé de laisser reposer une nuit entière."
-        ],
-        "tags": [
-            "Desserts",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
