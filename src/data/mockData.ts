@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/09/2026 18:51:45
+ * Dernière mise à jour: 09/09/2026 19:03:57
  * Total: 693 recettes
  */
-export const exportSyncId = "1788979905806";
+export const exportSyncId = "1788980637400";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7723",
         "title": "Osso Buco",
         "description": "Découvrez la recette de l&rsquo;osso buco, un plat italien traditionnel avec des morceaux de veau ultra fondants, mijotés dans une sauce riche et parfumée, et accompagné d&rsquo;une gremolata fraîche, idéalement servi avec du riz ou de la purée.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7723.webp&v=1788987262000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
