@@ -2,11 +2,116 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/09/2026 17:50:47
- * Total: 692 recettes
+ * Dernière mise à jour: 09/09/2026 18:51:45
+ * Total: 693 recettes
  */
-export const exportSyncId = "1788976247951";
+export const exportSyncId = "1788979905806";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7723",
+        "title": "Osso Buco",
+        "description": "Découvrez la recette de l&rsquo;osso buco, un plat italien traditionnel avec des morceaux de veau ultra fondants, mijotés dans une sauce riche et parfumée, et accompagné d&rsquo;une gremolata fraîche, idéalement servi avec du riz ou de la purée.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7542174559089200406\" data-video-id=\"7542174559089200406\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7542174559089200406\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Morceaux de veau (2)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             Carotte (1)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Céleri"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignon (1)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Concentré de tomate (2 cuillères à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             Vin blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fond de veau"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Bouquet garni"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Feuilles de laurier (2)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil (1/2 botte)"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Citron (1/2)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre"
+            }
+        ],
+        "steps": [
+            "Salez et farinez les deux morceaux de veau.",
+            "Marquez la viande en la faisant dorer de tous les côtés dans une marmite. Réservez.",
+            "Épluchez et taillez grossièrement une carotte, du céleri et un oignon.",
+            "Prélevez une gousse d&rsquo;ail et coupez-la grossièrement.",
+            "Dans la même marmite où la viande a été dorée, faites revenir les oignons, les carottes, le céleri et l&rsquo;ail.",
+            "Une fois les légumes légèrement revenus, poivrez, ajoutez le concentré de tomate et déglacez avec du vin blanc.",
+            "Mouillez à hauteur avec du fond de veau, ajoutez le bouquet garni et les deux feuilles de laurier.",
+            "Laissez mijoter pendant au moins deux heures et demie.",
+            "Pendant ce temps, préparez la gremolata : hachez finement le persil, prélevez le zeste d&rsquo;un demi-citron et hachez de l&rsquo;ail.",
+            "Mélangez le persil haché, le zeste de citron et l&rsquo;ail avec un filet d&rsquo;huile d&rsquo;olive, du sel et du poivre. Mélangez bien.",
+            "Une fois la viande bien mijotée, retirez la garniture aromatique (bouquet garni, laurier, légumes).",
+            "Filtrez le bouillon, puis remettez-le avec la viande et laissez mijoter à nouveau quelques minutes.",
+            "Terminez la sauce en ajoutant un tout petit peu de beurre.",
+            "Servez l&rsquo;osso buco accompagné de riz ou de purée, nappé de sauce et garni de la gremolata."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Italie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7717",
         "title": "Tartelettes Amandine Faciles",
