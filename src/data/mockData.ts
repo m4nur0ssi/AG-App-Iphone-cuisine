@@ -2,11 +2,117 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/09/2026 07:48:01
- * Total: 690 recettes
+ * Dernière mise à jour: 09/09/2026 14:42:11
+ * Total: 692 recettes
  */
-export const exportSyncId = "1788940081930";
+export const exportSyncId = "1788964931057";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7717",
+        "title": "Tartelettes Amandine Faciles",
+        "description": "Une recette simple pour préparer de délicieuses tartelettes amandine, composées d&rsquo;une pâte sablée maison et d&rsquo;une crème d&rsquo;amande onctueuse, garnies d&rsquo;amandes effilées et nappées de miel ou de sirop.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7441551106288766241\" data-video-id=\"7441551106288766241\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7441551106288766241\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             250g de farine (type T45)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             80g de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             125g de beurre (à température ambiante)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 sachet de sucre vanillé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 jaune d&rsquo;œuf"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             3 à 4 cuillères à soupe d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             160g de beurre doux"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             140g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             50ml de crème liquide entière"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             150g de poudre d&rsquo;amande"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             4 cuillères à soupe de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café d&rsquo;extrait d&rsquo;amande pure (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             Amandes effilées"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Miel chaud ou un sirop (20g d&rsquo;eau et 20g de sucre)"
+            }
+        ],
+        "steps": [
+            "Pour la pâte sablée : Mélanger la farine, le sel, le sucre et le sachet de sucre vanillé.",
+            "Ajouter le beurre coupé en dés et mélanger du bout des doigts jusqu&rsquo;à obtenir une texture sableuse.",
+            "Incorporer le jaune d&rsquo;œuf et l&rsquo;eau (3 à 4 cuillères à soupe), puis mélanger délicatement jusqu&rsquo;à former une boule de pâte.",
+            "Filmer la boule de pâte et la placer au frais pendant au moins 1 heure.",
+            "Abaisser la pâte sur un plan de travail fariné à l&rsquo;aide d&rsquo;un rouleau.",
+            "Placer les moules à tartelettes sur la pâte, découper la pâte en laissant 2cm de bord, puis foncer les moules. Couper l&rsquo;excédent de pâte avec un couteau.",
+            "Piquer le fond des tartelettes (ou de la grande tarte) avec une fourchette.",
+            "Réserver au frais pendant la préparation de la crème.",
+            "Pour la crème amande : À l&rsquo;aide d&rsquo;un batteur, crémer le beurre avec le sucre.",
+            "Ajouter la crème liquide, les œufs et l&rsquo;extrait d&rsquo;amande (si utilisé). Bien mélanger.",
+            "Incorporer la poudre d&rsquo;amande et la farine. Mélanger délicatement jusqu&rsquo;à obtenir une texture homogène.",
+            "Pour l&rsquo;assemblage : Sortir les fonds de tartelettes du frais.",
+            "Garnir les fonds de tartelettes avec la crème d&rsquo;amande, puis ajouter des amandes effilées par-dessus.",
+            "Enfourner dans un four préchauffé à 180°C pendant environ 25 minutes, jusqu&rsquo;à ce que le dessus soit doré (surveiller la cuisson selon votre four).",
+            "À la sortie du four, badigeonner les tartelettes de miel chaud à l&rsquo;aide d&rsquo;un pinceau, ou d&rsquo;un sirop préparé en portant à ébullition 20g d&rsquo;eau et 20g de sucre.",
+            "Démouler les tartelettes une fois qu&rsquo;elles sont froides."
+        ],
+        "tags": [
+            "France",
+            "Glaces",
+            "Pas cher",
+            "pâtisserie",
+            "tarte"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7713",
         "title": "Poulet au citron et parmesan",
@@ -14625,6 +14731,45 @@ export const mockRecipes: Recipe[] = [
             "pâtisserie",
             "USA",
             "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7283",
+        "title": "Crème dessert choco-cacahuète",
+        "description": "Une crème dessert onctueuse et gourmande au chocolat noir et au beurre de cacahuètes, facile à préparer et idéale pour un dessert végétal. Cette recette est une collaboration commerciale avec Koro.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_ia_7283_1787597716784.jpg&v=1787605076000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7675012359705890080\" data-video-id=\"7675012359705890080\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7675012359705890080\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             400 ml de lait de coco chaud (ou autre lait végétal)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             200 g de chocolat noir pâtissier"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre de cacahuètes (pour la décoration)"
+            }
+        ],
+        "steps": [
+            "Dans un récipient, mélanger le lait de coco chaud avec le chocolat noir pâtissier jusqu&rsquo;à ce que le chocolat soit complètement fondu et que la préparation soit homogène.",
+            "Verser la crème obtenue dans des ramequins individuels ou un plat.",
+            "Ajouter un peu de beurre de cacahuètes sur le dessus de chaque crème et réaliser un petit dessin à l'aide de bâtonnets ou d'un couteau.",
+            "Laisser prendre au frais pendant au moins 4 heures. Pour un meilleur résultat, il est recommandé de laisser reposer une nuit entière."
+        ],
+        "tags": [
+            "Desserts",
+            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
