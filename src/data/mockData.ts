@@ -2,126 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 09/09/2026 21:54:29
+ * Dernière mise à jour: 09/09/2026 22:11:57
  * Total: 696 recettes
  */
-export const exportSyncId = "1788990869114";
+export const exportSyncId = "1788991918008";
 export const mockRecipes: Recipe[] = [
-    {
-        "id": "7728",
-        "title": "Panuozzo maison",
-        "description": "Découvrez la recette du panuozzo, un sandwich italien populaire à base d&rsquo;une pâte maison similaire à celle de la pizza. Garnissez-le généreusement de charcuterie, de stracciatella maison, de légumes frais et de sauces pour un repas estival savo",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7676856770488192289\" data-video-id=\"7676856770488192289\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7676856770488192289\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             Farine de type 00"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Eau froide"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Levain déshydraté (ou levure boulangère)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive extra vierge"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Burrata"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Crème liquide entière"
-            },
-            {
-                "quantity": "",
-                "name": "🥓\n             Jambon de veau"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Cecina (bœuf séché)"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Tomates séchées"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivrons confits"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Mâche"
-            },
-            {
-                "quantity": "",
-                "name": "🥗\n             Roquette"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pesto de pistache"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Parmesan râpé"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Crème de basilic"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Semoule"
-            }
-        ],
-        "steps": [
-            "Pour la pâte, mélangez la farine de type 00 avec les trois quarts de l&rsquo;eau froide.",
-            "Mélangez bien, ajoutez un filet d&rsquo;huile d&rsquo;olive par-dessus et laissez reposer pendant 30 minutes.",
-            "Après 30 minutes, ajoutez le levain déshydraté (vous pouvez aussi utiliser de la levure boulangère).",
-            "Ajoutez le sel et le reste de l&rsquo;eau petit à petit.",
-            "Une fois que toute l&rsquo;eau est absorbée, terminez avec un filet d&rsquo;huile d&rsquo;olive et pétrissez encore 3 minutes jusqu&rsquo;à obtenir une pâte bien homogène et élastique.",
-            "Couvrez la pâte et laissez-la pousser environ 3 heures à température ambiante.",
-            "Pendant ces 3 heures, faites des rabats toutes les 30 minutes : soulevez délicatement la pâte et repliez-la sur elle-même de chaque côté pour obtenir un pain bien alvéolé à la fin.",
-            "Après les 3 heures de pousse, divisez la pâte en 4 pâtons de taille égale.",
-            "Placez les pâtons dans une boîte légèrement huilée et laissez-les détendre encore 1 heure à température ambiante.",
-            "Pour former les panuozzo, mettez de la semoule directement sur le plan de travail.",
-            "Étirez les pâtons simplement avec vos mains, en essayant de garder l&rsquo;épaisseur et un maximum d&rsquo;air à l&rsquo;intérieur.",
-            "Ajoutez un bon filet d&rsquo;huile d&rsquo;olive par-dessus.",
-            "Faites cuire dans un four à pizza à environ 400°C pendant environ 2 minutes, ou dans un four traditionnel bien préchauffé à 250°C pendant environ 6 à 8 minutes. Le pain doit être bien gonflé, croustillant à l&rsquo;extérieur et alvéolé à l&rsquo;intérieur.",
-            "Pour la garniture, préparez une stracciatella maison : effilochez une burrata et ajoutez un peu de crème liquide entière pour obtenir quelque chose de bien crémeux.",
-            "Garnissez le pain encore chaud avec la stracciatella, du jambon de veau et de la cecina (bœuf séché).",
-            "Ajoutez des tomates séchées, des poivrons confits et un mélange de mâche et de roquette pour apporter de la fraîcheur.",
-            "Terminez par un bon pesto de pistache, du parmesan râpé et une petite crème de basilic.",
-            "Vous pouvez garnir le panuozzo avec les ingrédients de votre choix, y compris une version 100% végétarienne."
-        ],
-        "tags": [
-            "Italie",
-            "Sandwichs",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
     {
         "id": "7726",
         "title": "Poulet au poivre",
         "description": "Cette recette de poulet au poivre est incroyablement délicieuse et a été ajoutée à la rotation hebdomadaire de l&rsquo;auteur. Un plat complet avec des pommes de terre croustillantes et une sauce crémeuse au poivre.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7726.webp&v=1788998573000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -261,6 +151,186 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "épicé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7728",
+        "title": "Panuozzo maison",
+        "description": "Découvrez la recette du panuozzo, un sandwich italien populaire à base d&rsquo;une pâte maison similaire à celle de la pizza. Garnissez-le généreusement de charcuterie, de stracciatella maison, de légumes frais et de sauces pour un repas estival savo",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7728.webp&v=1788998566000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7676856770488192289\" data-video-id=\"7676856770488192289\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7676856770488192289\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine de type 00"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Eau froide"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Levain déshydraté (ou levure boulangère)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive extra vierge"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Burrata"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème liquide entière"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             Jambon de veau"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Cecina (bœuf séché)"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomates séchées"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivrons confits"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Mâche"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             Roquette"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pesto de pistache"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème de basilic"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Semoule"
+            }
+        ],
+        "steps": [
+            "Pour la pâte, mélangez la farine de type 00 avec les trois quarts de l&rsquo;eau froide.",
+            "Mélangez bien, ajoutez un filet d&rsquo;huile d&rsquo;olive par-dessus et laissez reposer pendant 30 minutes.",
+            "Après 30 minutes, ajoutez le levain déshydraté (vous pouvez aussi utiliser de la levure boulangère).",
+            "Ajoutez le sel et le reste de l&rsquo;eau petit à petit.",
+            "Une fois que toute l&rsquo;eau est absorbée, terminez avec un filet d&rsquo;huile d&rsquo;olive et pétrissez encore 3 minutes jusqu&rsquo;à obtenir une pâte bien homogène et élastique.",
+            "Couvrez la pâte et laissez-la pousser environ 3 heures à température ambiante.",
+            "Pendant ces 3 heures, faites des rabats toutes les 30 minutes : soulevez délicatement la pâte et repliez-la sur elle-même de chaque côté pour obtenir un pain bien alvéolé à la fin.",
+            "Après les 3 heures de pousse, divisez la pâte en 4 pâtons de taille égale.",
+            "Placez les pâtons dans une boîte légèrement huilée et laissez-les détendre encore 1 heure à température ambiante.",
+            "Pour former les panuozzo, mettez de la semoule directement sur le plan de travail.",
+            "Étirez les pâtons simplement avec vos mains, en essayant de garder l&rsquo;épaisseur et un maximum d&rsquo;air à l&rsquo;intérieur.",
+            "Ajoutez un bon filet d&rsquo;huile d&rsquo;olive par-dessus.",
+            "Faites cuire dans un four à pizza à environ 400°C pendant environ 2 minutes, ou dans un four traditionnel bien préchauffé à 250°C pendant environ 6 à 8 minutes. Le pain doit être bien gonflé, croustillant à l&rsquo;extérieur et alvéolé à l&rsquo;intérieur.",
+            "Pour la garniture, préparez une stracciatella maison : effilochez une burrata et ajoutez un peu de crème liquide entière pour obtenir quelque chose de bien crémeux.",
+            "Garnissez le pain encore chaud avec la stracciatella, du jambon de veau et de la cecina (bœuf séché).",
+            "Ajoutez des tomates séchées, des poivrons confits et un mélange de mâche et de roquette pour apporter de la fraîcheur.",
+            "Terminez par un bon pesto de pistache, du parmesan râpé et une petite crème de basilic.",
+            "Vous pouvez garnir le panuozzo avec les ingrédients de votre choix, y compris une version 100% végétarienne."
+        ],
+        "tags": [
+            "Italie",
+            "Sandwichs",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7730",
+        "title": "Pasta all&rsquo;Assassina",
+        "description": "Découvrez la Pasta all&rsquo;Assassina, une spécialité des Pouilles en Italie. Ce plat revisite les spaghettis en les faisant griller directement dans une sauce tomate légèrement épicée pour un résultat croustillant et savoureux.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7730.webp&v=1788998556000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7683559925192166689\" data-video-id=\"7683559925192166689\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7683559925192166689\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "💧\n             1 L d'eau bouillante"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 cuillère à soupe de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 branche de basilic"
+            },
+            {
+                "quantity": "",
+                "name": "🍝\n             300 g de spaghetti"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             500 g de sauce tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 piment (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d'ail"
+            }
+        ],
+        "steps": [
+            "Dans une casserole, mettez l&rsquo;eau bouillante avec le sel et une cuillère à soupe de concentré de tomate.",
+            "Fouettez, ajoutez une branche de basilic et laissez mijoter environ 5 minutes pour créer un bouillon.",
+            "Dans une poêle, versez un bon filet d&rsquo;huile d&rsquo;olive.",
+            "Faites cuire deux gousses d&rsquo;ail avec le piment (facultatif).",
+            "Ajoutez une bonne sauce tomate (maison ou du commerce).",
+            "Déposez les spaghettis crus dans la poêle, recouvrez-les de sauce tomate et ne les touchez plus pendant environ 3 à 4 minutes pour qu&rsquo;une croûte se forme.",
+            "Retournez les spaghettis pour former une croûte croustillante de l&rsquo;autre côté.",
+            "Ajoutez quelques louches de bouillon petit à petit. Dès que les pâtes ont absorbé le liquide, si elles ne sont pas encore cuites, ajoutez-en davantage, comme pour un risotto.",
+            "Lorsque les pâtes sont al dente, servez immédiatement."
+        ],
+        "tags": [
+            "épicé",
+            "Italie",
+            "Pas cher",
+            "pates"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -37395,92 +37465,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "barbecue",
             "Healthy",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6171",
-        "title": "Chocolate Chip Banana Bread Muffins",
-        "description": "Une recette facile pour préparer de délicieux muffins moelleux au pain de banane et aux pépites de chocolat.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6171_1781797710615.jpg&v=1781968734000",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7627199246860684558\" data-video-id=\"7627199246860684558\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7627199246860684558\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍌\n             2 bananes mûres, écrasées (220g)"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             ⅓ tasse de beurre fondu (75g)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             ½ tasse de sucre granulé (100g)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             ¼ tasse de sucre brun (50g)"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             2 gros œufs, à température ambiante"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             ½ tasse de lait ribot (120g)"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             1½ cuillères à café de vanille (7g)"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             1½ tasses de farine tout usage (180g)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à café de bicarbonate de soude (5g)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à café de levure chimique (4g)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             ½ cuillère à café de sel (3g)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             ½ cuillère à café de cannelle"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             mini pépites de chocolat (mesurer avec votre cœur)"
-            }
-        ],
-        "steps": [
-            "Préchauffer le four à 218°C et tapisser un moule à muffins.",
-            "Dans un bol, fouetter ensemble la farine, le bicarbonate de soude, la levure chimique, le sel et la cannelle jusqu&rsquo;à ce que le tout soit bien combiné.",
-            "Dans un bol séparé, fouetter les bananes écrasées et le beurre jusqu&rsquo;à obtenir une consistance lisse.",
-            "Ajouter le sucre granulé et le sucre brun et mélanger jusqu&rsquo;à ce que le mélange soit brillant.",
-            "Incorporer les œufs, le lait ribot et la vanille jusqu&rsquo;à ce que le tout soit bien combiné.",
-            "Ajouter les ingrédients secs aux ingrédients humides et incorporer délicatement jusqu&rsquo;à ce que le mélange soit presque homogène, avec quelques traces de farine restantes.",
-            "Incorporer les mini pépites de chocolat juste assez pour qu&rsquo;elles soient réparties. Éviter de trop mélanger pour que les muffins restent doux et moelleux.",
-            "Laisser reposer la pâte pendant environ 15 minutes. Cela aide à hydrater la farine et donne aux muffins des sommets plus hauts.",
-            "Remplir les moules à muffins presque jusqu&rsquo;au bord et saupoudrer le dessus de mini pépites de chocolat.",
-            "Cuire au four pendant 5 minutes à 218°C, puis réduire la température du four à 175°C et cuire encore 13 à 15 minutes, jusqu&rsquo;à ce qu&rsquo;un cure-dent inséré au centre en ressorte avec seulement quelques miettes humides.",
-            "Laisser refroidir légèrement et déguster."
-        ],
-        "tags": [
-            "pâtisserie",
             "USA"
         ],
         "isFeatured": false,
