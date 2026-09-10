@@ -2,11 +2,87 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/09/2026 19:53:19
- * Total: 703 recettes
+ * Dernière mise à jour: 10/09/2026 20:47:37
+ * Total: 704 recettes
  */
-export const exportSyncId = "1789069999532";
+export const exportSyncId = "1789073257363";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7757",
+        "title": "Tarte Mousse au Chocolat",
+        "description": "Préparez une délicieuse tarte à la mousse au chocolat avec une base de pâte à cookies croustillante. Suivez les étapes pour une mousse onctueuse et une cuisson parfaite de la pâte.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7683913393606053152\" data-video-id=\"7683913393606053152\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7683913393606053152\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             100g de beurre mou"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             130g de vergeoise"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             De la vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             230g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             100g de pépites de chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             100g de pépites de chocolat au lait"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             200g de chocolat noir (pour la mousse)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             6 œufs"
+            }
+        ],
+        "steps": [
+            "Mélangez 100g de beurre mou avec 130g de vergeoise.",
+            "Ajoutez 1 œuf et de la vanille.",
+            "Incorporez 230g de farine.",
+            "Ajoutez 100g de pépites de chocolat noir et 100g de pépites de chocolat au lait.",
+            "Déposez la pâte dans un cercle et étalez-la bien sur les bords.",
+            "Placez la pâte au congélateur pendant deux heures.",
+            "Pour la cuisson de la pâte à cookies, déposez une feuille de papier cuisson sur la pâte, versez du riz à hauteur, puis enfournez pendant 30 minutes à 180°C.",
+            "Retirez le riz et le papier cuisson, puis faites cuire encore 10 minutes à 180°C.",
+            "Laissez la pâte à cookies complètement refroidir.",
+            "Faites fondre 200g de chocolat noir.",
+            "Séparez les blancs des jaunes de 6 œufs.",
+            "Montez les blancs en neige.",
+            "Mélangez le chocolat fondu avec les jaunes d&rsquo;œufs.",
+            "Ajoutez les blancs en neige petit à petit au mélange chocolat-jaunes.",
+            "Versez la mousse au chocolat dans la pâte à cookies cuite.",
+            "Placez la tarte une nuit au réfrigérateur.",
+            "Retirez le cercle et servez la tarte."
+        ],
+        "tags": [
+            "pâtisserie",
+            "tarte"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7744",
         "title": "Muffins aux œufs et légumes pour bébés",
