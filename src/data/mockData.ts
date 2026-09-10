@@ -2,11 +2,226 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/09/2026 18:20:08
- * Total: 699 recettes
+ * Dernière mise à jour: 10/09/2026 19:28:41
+ * Total: 703 recettes
  */
-export const exportSyncId = "1789064408517";
+export const exportSyncId = "1789068521785";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7750",
+        "title": "Macaroni au fromage et patate douce rapide",
+        "description": "Une recette rapide et facile de macaroni au fromage avec de la patate douce, parfaite pour les enfants et les bébés à partir de 6 mois. Idéale pour la diversification alimentaire menée par bébé (DME).",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7331757796175760673\" data-video-id=\"7331757796175760673\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7331757796175760673\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍝\n             80g de pâtes crues"
+            },
+            {
+                "quantity": "",
+                "name": "🥔\n             80g de patates douces, cuites et écrasées"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             60g de fromage cheddar râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             100ml de lait chaud"
+            }
+        ],
+        "steps": [
+            "1. Cuire les pâtes selon les instructions sur l'emballage.",
+            "2. Égoutter et transférer dans un bol.",
+            "3. Ajouter les patates douces écrasées, le fromage et le lait chaud, puis bien mélanger le tout. (Vous pouvez réchauffer ou passer un peu au micro-ondes si vous le souhaitez).",
+            "4. Servir et bon appétit ! 😋"
+        ],
+        "tags": [
+            "Bébé",
+            "Dès 6 mois",
+            "Pas cher",
+            "pates",
+            "USA",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7748",
+        "title": "Saucisses de poulet et légumes maison",
+        "description": "Ces saucisses de poulet et légumes faites maison sont parfaites pour la diversification alimentaire des bébés (dès 8 mois). Préparées avec seulement 6 ingrédients, elles sont tendres, moelleuses, riches en protéines et constituent un repas facile à c",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7527293570231946503\" data-video-id=\"7527293570231946503\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7527293570231946503\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Ingrédients non spécifiés (6 ingrédients mentionnés dans la description)"
+            }
+        ],
+        "steps": [
+            "Étapes non spécifiées dans la description"
+        ],
+        "tags": [
+            "Bébé",
+            "Dès 8 mois",
+            "Healthy"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7746",
+        "title": "Picadillo Facile",
+        "description": "Une recette de Picadillo facile et adaptée aux tout-petits (dès 12 mois) pour un repas familial rapide et savoureux. Idéal pour les parents à la recherche d&rsquo;inspiration pour des repas simples et équilibrés.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7647173832775634189\" data-video-id=\"7647173832775634189\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7647173832775634189\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥩\n             450 g de bœuf haché extra maigre"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n             2 pommes de terre moyennes, coupées en petits dés"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             2 carottes, coupées en dés"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 petit oignon, coupé en dés"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2-3 gousses d&rsquo;ail, hachées"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 boîte (225 g) de sauce tomate"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             1 tasse d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Coriandre fraîche, hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel (au goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre noir (au goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Cumin (au goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail en poudre (au goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Origan (au goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🍗\n             Bouillon de poulet (au goût)"
+            }
+        ],
+        "steps": [
+            "Coupez les pommes de terre en petits dés et placez-les dans un bol d&rsquo;eau froide pendant que vous préparez les autres ingrédients. Cela aide à retirer l&rsquo;excès d&rsquo;amidon.",
+            "Coupez les carottes et l&rsquo;oignon en dés, puis hachez l&rsquo;ail.",
+            "Faites chauffer une grande poêle à feu moyen et ajoutez un filet d&rsquo;huile d&rsquo;olive.",
+            "Ajoutez les oignons et une pincée de sel. Faites cuire 2-3 minutes jusqu&rsquo;à ce qu&rsquo;ils ramollissent, puis ajoutez l&rsquo;ail et faites cuire environ 30 secondes.",
+            "Ajoutez le bœuf haché et assaisonnez avec du sel, du poivre, du cumin, de l&rsquo;ail en poudre, de l&rsquo;origan et du bouillon de poulet, selon votre goût.",
+            "Couvrez et faites cuire environ 5 minutes, ou jusqu&rsquo;à ce que le bœuf soit doré.",
+            "Ajoutez les dés de pommes de terre, les carottes, la sauce tomate et 1 tasse d&rsquo;eau. Mélangez le tout.",
+            "Couvrez et réduisez le feu à moyen-doux. Laissez mijoter pendant 20-25 minutes, en remuant occasionnellement et en vérifiant que les pommes de terre et les carottes deviennent tendres.",
+            "Une fois les légumes cuits, incorporez la coriandre fraîchement hachée et laissez cuire encore 1-2 minutes.",
+            "Servez chaud avec du riz blanc et dégustez ! Vous pouvez ajouter plus de sel ou de poivre au goût."
+        ],
+        "tags": [
+            "Bébé",
+            "Dès 12 mois",
+            "Mexique",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7744",
+        "title": "Muffins aux œufs et légumes pour bébés",
+        "description": "Ces muffins aux œufs et légumes sont parfaits pour la diversification alimentaire des bébés à partir de 6 mois. Faciles à préparer, ils peuvent être congelés pour des repas rapides et sains.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7439068584141163808\" data-video-id=\"7439068584141163808\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7439068584141163808\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             5 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥦\n             3 fleurons de brocoli - cuits"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de petits pois - cuits"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             Une poignée de carottes - cuites"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Une poignée de fromage"
+            }
+        ],
+        "steps": [
+            "Étape 1 : Hacher finement les légumes sur une planche à découper.",
+            "Étape 2 : Battre les œufs dans un pichet et verser uniformément dans 8 moules à muffins. Ajouter ensuite 1 cuillère à soupe de légumes dans chacun des 8 moules avec l&rsquo;œuf, puis parsemer de fromage dans chaque muffin.",
+            "Étape 3 : Préchauffer le four et cuire à 200°C pendant 30 minutes."
+        ],
+        "tags": [
+            "Bébé",
+            "Dès 6 mois",
+            "Healthy",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7741",
         "title": "Pastina crémeuse aux œufs",
