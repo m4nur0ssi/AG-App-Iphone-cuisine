@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/09/2026 21:15:56
+ * Dernière mise à jour: 10/09/2026 21:28:12
  * Total: 705 recettes
  */
-export const exportSyncId = "1789074956232";
+export const exportSyncId = "1789075692396";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7760",
         "title": "Tuiles aux amandes",
         "description": "Ces petits biscuits croustillants qui rappellent immédiatement les goûters du dimanche chez nos grands-mères.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7760.webp&v=1789081792000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
