@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/09/2026 17:57:58
+ * Dernière mise à jour: 10/09/2026 18:09:28
  * Total: 699 recettes
  */
-export const exportSyncId = "1789063078211";
+export const exportSyncId = "1789063768088";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7741",
         "title": "Pastina crémeuse aux œufs",
         "description": "Une pastina crémeuse et réconfortante aux œufs, facile à préparer et adaptée aux bébés dès 12 mois. Parfaite pour les repas des tout-petits.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7741.webp&v=1789070380000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
