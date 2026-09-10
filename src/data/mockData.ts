@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/09/2026 20:47:37
- * Total: 704 recettes
+ * Dernière mise à jour: 10/09/2026 20:58:26
+ * Total: 705 recettes
  */
-export const exportSyncId = "1789073257363";
+export const exportSyncId = "1789073906060";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7757",
         "title": "Tarte Mousse au Chocolat",
         "description": "Préparez une délicieuse tarte à la mousse au chocolat avec une base de pâte à cookies croustillante. Suivez les étapes pour une mousse onctueuse et une cuisson parfaite de la pâte.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7757.webp&v=1789080526000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -52213,6 +52213,76 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Italie",
             "rapide"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "4126",
+        "title": "Salade César",
+        "description": "Une recette de Salade César complète, avec sa mayonnaise maison aux anchois et son poulet pané croustillant.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FSalade-Cesar.jpeg&v=1774522966000",
+        "category": "entrees",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7599239897358093600\" data-video-id=\"7599239897358093600\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7599239897358093600\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥗\n             Salade romaine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 jaunes d'œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 c. à s. de moutarde à l'ancienne"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de tournesol"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             6 anchois finement coupés"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 belle gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Blanc de volaille"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Panure à l'anglaise"
+            }
+        ],
+        "steps": [
+            "Préparez la mayonnaise César : mélangez 2 jaunes d'œufs avec 1 cuillère à soupe de moutarde à l'ancienne.",
+            "Montez la mayonnaise en incorporant l&rsquo;huile de tournesol en filet, petit à petit, jusqu'à obtenir la bonne consistance.",
+            "Ajoutez 6 anchois finement coupés et 1 belle gousse d'ail à la mayonnaise.",
+            "Préparez le poulet pané : assaisonnez le blanc de volaille avec du sel et du poivre.",
+            "Panez le poulet à l'anglaise.",
+            "Faites cuire le poulet pané à 180 °C dans de l'huile de tournesol.",
+            "Assemblez la salade César avec la salade romaine, le poulet pané coupé en morceaux et la mayonnaise César."
+        ],
+        "tags": [
+            "Famille",
+            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
