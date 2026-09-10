@@ -2,11 +2,58 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/09/2026 07:44:00
- * Total: 696 recettes
+ * Dernière mise à jour: 10/09/2026 16:54:54
+ * Total: 697 recettes
  */
-export const exportSyncId = "1789026240673";
+export const exportSyncId = "1789059294202";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7735",
+        "title": "Bâtonnets de courgette",
+        "description": "Ces bâtonnets de courgette sont une excellente façon d&rsquo;utiliser les courgettes en surplus. Ils sont moelleux, fromagés et parfaits pour les petites mains qui apprennent à manger seules.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7663783663305362708\" data-video-id=\"7663783663305362708\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7663783663305362708\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             2 courgettes moyennes, râpées"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             4 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             1 tasse de fromage râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             1/2 tasse de farine avec levure incorporée"
+            }
+        ],
+        "steps": [
+            "Préchauffer le four à 170°C.",
+            "Presser les courgettes râpées pour en extraire le plus d&rsquo;humidité possible, puis mélanger avec les œufs, le fromage et la farine avec levure incorporée.",
+            "Étaler dans un moule tapissé de papier cuisson, saupoudrer d&rsquo;un peu de fromage supplémentaire et cuire au four pendant 25 à 30 minutes, jusqu&rsquo;à ce que ce soit doré et pris.",
+            "Laisser refroidir avant de couper en bâtonnets."
+        ],
+        "tags": [
+            "Bébé",
+            "Dès 7 mois",
+            "Healthy",
+            "Pas cher",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7726",
         "title": "Poulet au poivre",
