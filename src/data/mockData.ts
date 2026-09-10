@@ -2,11 +2,73 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/09/2026 20:58:26
+ * Dernière mise à jour: 10/09/2026 21:15:56
  * Total: 705 recettes
  */
-export const exportSyncId = "1789073906060";
+export const exportSyncId = "1789074956232";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7760",
+        "title": "Tuiles aux amandes",
+        "description": "Ces petits biscuits croustillants qui rappellent immédiatement les goûters du dimanche chez nos grands-mères.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7683565820697447713\" data-video-id=\"7683565820697447713\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7683565820697447713\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥜\n             100 g d&rsquo;amandes effilées"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             100 g de sucre blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             35 g de farine T45"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             35 g de beurre doux (fondu et tiédi)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 blancs d&rsquo;œufs moyens (~60 g, à température ambiante)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de fleur de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             ½ c. à café d&rsquo;extrait de vanille liquide (facultatif)"
+            }
+        ],
+        "steps": [
+            "Mélanger le sucre, la farine et la fleur de sel.",
+            "Incorporer les blancs d&rsquo;œufs et l&rsquo;extrait de vanille.",
+            "Ajouter le beurre fondu tiédi et mélanger jusqu&rsquo;à obtenir un appareil lisse.",
+            "Incorporer délicatement les amandes effilées à la spatule pour ne pas les briser.",
+            "Placer la préparation au réfrigérateur pendant 30 minutes.",
+            "Préchauffer le four à 165 °C (chaleur tournante).",
+            "Déposer de petites cuillerées de pâte bien espacées sur une plaque recouverte de papier cuisson.",
+            "Étaler chaque tas avec le dos d&rsquo;une fourchette humidifiée pour former de grands disques ultra fins.",
+            "Enfourner 10 à 12 minutes jusqu&rsquo;à ce que les bords soient bien dorés.",
+            "Décoller immédiatement les tuiles encore chaudes et les déposer sur un rouleau à pâtisserie pour leur donner leur forme courbée (ou les laisser refroidir à plat).",
+            "Laisser refroidir complètement avant de déguster."
+        ],
+        "tags": [
+            "France",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7757",
         "title": "Tarte Mousse au Chocolat",
@@ -52213,76 +52275,6 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Italie",
             "rapide"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "4126",
-        "title": "Salade César",
-        "description": "Une recette de Salade César complète, avec sa mayonnaise maison aux anchois et son poulet pané croustillant.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F03%2FSalade-Cesar.jpeg&v=1774522966000",
-        "category": "entrees",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7599239897358093600\" data-video-id=\"7599239897358093600\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7599239897358093600\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥗\n             Salade romaine"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             2 jaunes d'œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 c. à s. de moutarde à l'ancienne"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile de tournesol"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             6 anchois finement coupés"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 belle gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Blanc de volaille"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Panure à l'anglaise"
-            }
-        ],
-        "steps": [
-            "Préparez la mayonnaise César : mélangez 2 jaunes d'œufs avec 1 cuillère à soupe de moutarde à l'ancienne.",
-            "Montez la mayonnaise en incorporant l&rsquo;huile de tournesol en filet, petit à petit, jusqu'à obtenir la bonne consistance.",
-            "Ajoutez 6 anchois finement coupés et 1 belle gousse d'ail à la mayonnaise.",
-            "Préparez le poulet pané : assaisonnez le blanc de volaille avec du sel et du poivre.",
-            "Panez le poulet à l'anglaise.",
-            "Faites cuire le poulet pané à 180 °C dans de l'huile de tournesol.",
-            "Assemblez la salade César avec la salade romaine, le poulet pané coupé en morceaux et la mayonnaise César."
-        ],
-        "tags": [
-            "Famille",
-            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
