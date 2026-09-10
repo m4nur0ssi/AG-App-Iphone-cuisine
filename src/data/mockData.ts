@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/09/2026 17:15:53
+ * Dernière mise à jour: 10/09/2026 17:33:33
  * Total: 698 recettes
  */
-export const exportSyncId = "1789060553424";
+export const exportSyncId = "1789061613303";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7738",
         "title": "Barres aux baies à 5 ingrédients",
         "description": "Des barres énergétiques simples et saines à base de banane, de flocons d&rsquo;avoine, de beurre de cacahuète et de fruits rouges, idéales pour le petit-déjeuner ou le goûter des bébés et des enfants.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7738.webp&v=1789067933000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
