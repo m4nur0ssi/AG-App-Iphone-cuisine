@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/09/2026 23:10:36
+ * Dernière mise à jour: 11/09/2026 23:21:10
  * Total: 706 recettes
  */
-export const exportSyncId = "1789168236710";
+export const exportSyncId = "1789168870807";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7767",
         "title": "Gâteau aux noisettes",
         "description": "Un gâteau aux noisettes moelleux avec des pépites de chocolat fondantes - un pur moment de réconfort tout droit sorti du four. Moelleux, noisetté et rempli de morceaux de chocolat fondants - un gâteau aux noisettes qui fond littéralement dans la bouc",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7767.webp&v=1789175484000",
         "category": "glaces",
         "difficulty": "moyen",
         "prepTime": 15,
