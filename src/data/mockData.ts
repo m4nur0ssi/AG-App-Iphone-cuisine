@@ -2,40 +2,50 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/09/2026 21:52:50
+ * Dernière mise à jour: 12/09/2026 22:04:36
  * Total: 724 recettes
  */
-export const exportSyncId = "1789249970820";
+export const exportSyncId = "1789250676114";
 export const mockRecipes: Recipe[] = [
     {
-        "id": "7819",
-        "title": "Fagots d&rsquo;haricots verts au lard",
-        "description": "Un accompagnement simple et gourmand qui peut accompagner tous vos plats, ajoutant une touche de verdure et de saveur.",
-        "image": "/images/recipe-placeholder.jpg",
+        "id": "7776",
+        "title": "Pancakes aux petits pois",
+        "description": "Des pancakes aux petits pois prêts en 5 minutes, parfaits pour la diversification alimentaire des bébés.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7776.webp&v=1789257286000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7558512828299185430\" data-video-id=\"7558512828299185430\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7558512828299185430\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7641666625921404193\" data-video-id=\"7641666625921404193\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7641666625921404193\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🥓\n             2 tranches de lard"
+                "name": "🥣\n             80g de petits pois"
             },
             {
                 "quantity": "",
-                "name": "🫘\n             Haricots verts"
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/2 Kiri ou carré frais"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             2 cuillères à soupe de farine"
             }
         ],
         "steps": [
-            "Enroulez les haricots verts dans les tranches de lard.",
-            "Déposez les fagots ainsi formés sur une grille.",
-            "Enfournez."
+            "Mixer les petits pois, l&rsquo;œuf, le Kiri (ou carré frais) et la farine jusqu&rsquo;à obtenir une pâte homogène.",
+            "Faire cuire les pancakes à feu doux dans une poêle."
         ],
         "tags": [
-            "Accompagnements",
-            "Pas cher"
+            "Bébé",
+            "Dès 6 mois",
+            "Healthy",
+            "Pas cher",
+            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -45,7 +55,7 @@ export const mockRecipes: Recipe[] = [
         "id": "7817",
         "title": "Beignets de courgettes croustillants et rapides",
         "description": "Oubliez les beignets habituels, lourds et gorgés d&rsquo;huile ! Ces beignets sont légers, gonflés et avec une croûte qui craque à chaque bouchée.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7817.webp&v=1789257280000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -98,6 +108,40 @@ export const mockRecipes: Recipe[] = [
             "Pas cher",
             "Végé",
             "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7819",
+        "title": "Fagots d&rsquo;haricots verts au lard",
+        "description": "Un accompagnement simple et gourmand qui peut accompagner tous vos plats, ajoutant une touche de verdure et de saveur.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7819.webp&v=1789257273000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7558512828299185430\" data-video-id=\"7558512828299185430\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7558512828299185430\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥓\n             2 tranches de lard"
+            },
+            {
+                "quantity": "",
+                "name": "🫘\n             Haricots verts"
+            }
+        ],
+        "steps": [
+            "Enroulez les haricots verts dans les tranches de lard.",
+            "Déposez les fagots ainsi formés sur une grille.",
+            "Enfournez."
+        ],
+        "tags": [
+            "Accompagnements",
+            "Pas cher"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -739,50 +783,6 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Plats",
             "Sans Gluten"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7776",
-        "title": "Pancakes aux petits pois",
-        "description": "Des pancakes aux petits pois prêts en 5 minutes, parfaits pour la diversification alimentaire des bébés.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7641666625921404193\" data-video-id=\"7641666625921404193\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7641666625921404193\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             80g de petits pois"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1/2 Kiri ou carré frais"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             2 cuillères à soupe de farine"
-            }
-        ],
-        "steps": [
-            "Mixer les petits pois, l&rsquo;œuf, le Kiri (ou carré frais) et la farine jusqu&rsquo;à obtenir une pâte homogène.",
-            "Faire cuire les pancakes à feu doux dans une poêle."
-        ],
-        "tags": [
-            "Bébé",
-            "Dès 6 mois",
-            "Healthy",
-            "Pas cher",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
