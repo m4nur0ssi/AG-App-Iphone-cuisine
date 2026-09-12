@@ -2,11 +2,71 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/09/2026 13:01:35
- * Total: 721 recettes
+ * Dernière mise à jour: 12/09/2026 16:37:38
+ * Total: 722 recettes
  */
-export const exportSyncId = "1789218095545";
+export const exportSyncId = "1789231058937";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7810",
+        "title": "Salade de concombre coréenne (Oi Muchim)",
+        "description": "Découvrez l&rsquo;Oi Muchim, une salade de concombre coréenne fraîche, croquante et acidulée. Idéale pour contrebalancer la richesse d&rsquo;un poulet frit caramélisé, elle apporte un équilibre parfait de saveurs. Facile à préparer avec des ingrédien",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7675001687475522849\" data-video-id=\"7675001687475522849\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7675001687475522849\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥒\n             1 concombre"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de sauce soja"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe d&rsquo;huile de sésame"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             1 cuillère à soupe de vinaigre de riz"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 pincée de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 pincée de gochugaru ou 1 cuillère à café de gochujang"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d&rsquo;ail"
+            }
+        ],
+        "steps": [
+            "Laissez le concombre dégorger avec du sel pendant 1 heure.",
+            "Pressez le concombre pour retirer l&rsquo;excédent d&rsquo;eau.",
+            "Ajoutez la sauce soja, l&rsquo;huile de sésame, le vinaigre de riz, le sucre, le gochugaru (ou gochujang) et la gousse d&rsquo;ail hachée.",
+            "Mélangez bien tous les ingrédients.",
+            "Laissez la salade reposer au frais pendant au moins 2 heures, ou idéalement une nuit pour développer toutes les saveurs."
+        ],
+        "tags": [
+            "Accompagnements",
+            "Asie",
+            "épicé",
+            "Healthy",
+            "Salades",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7784",
         "title": "Pancakes à la pêche",
