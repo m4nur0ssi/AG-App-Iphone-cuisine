@@ -2,16 +2,110 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/09/2026 12:34:30
+ * Dernière mise à jour: 12/09/2026 12:46:02
  * Total: 721 recettes
  */
-export const exportSyncId = "1789216470603";
+export const exportSyncId = "1789217162230";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7786",
+        "title": "Bolognaise aux légumes fondants pour bébé",
+        "description": "Découvrez une recette simple et rapide de bolognaise aux légumes fondants, parfaite pour les bébés dès 6 mois qui commencent la diversification alimentaire avec des morceaux. Facile à préparer à la maison, elle permet d&rsquo;introduire les carottes ",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7786.webp&v=1789223792000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7616827176456817942\" data-video-id=\"7616827176456817942\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7616827176456817942\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥕\n             2 carottes"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Coulis de tomate (ou concentré, ou pulpe)"
+            },
+            {
+                "quantity": "",
+                "name": "🍝\n             Pâtes alphabets"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Protéine (par exemple, viande hachée, 10g par portion)"
+            }
+        ],
+        "steps": [
+            "Coupez deux carottes en tout petits morceaux.",
+            "Faites-les cuire dans une poêle avec un peu d&rsquo;huile d&rsquo;olive jusqu&rsquo;à ce qu&rsquo;elles soient bien fondantes.",
+            "Une fois les carottes bien cuites, ajoutez le coulis de tomate (ou le concentré, ou la pulpe, que vous pouvez mixer au préalable) et laissez mijoter quelques minutes.",
+            "Pendant ce temps, faites cuire les pâtes alphabets.",
+            "Mélangez les pâtes cuites avec la sauce aux légumes.",
+            "Ajoutez un filet d&rsquo;huile d&rsquo;olive.",
+            "Au moment de servir, incorporez une portion de 10g de protéine (par exemple, des petits cubes de viande hachée) pour le repas du midi de votre bébé."
+        ],
+        "tags": [
+            "Bébé",
+            "Dès 6 mois",
+            "Healthy",
+            "Italie",
+            "Pas cher",
+            "pates",
+            "Sauces"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7788",
+        "title": "Pancakes à la carotte pour bébé",
+        "description": "Des pancakes à la carotte prêts en 5 minutes top chrono avec seulement 3 ingrédients, parfaits pour la diversification alimentaire. Ils peuvent être congelés jusqu&rsquo;à 2 mois.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7788.webp&v=1789223785000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7622386822823333152\" data-video-id=\"7622386822823333152\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7622386822823333152\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥕\n             75g de carottes"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             2 cuillères à soupe de farine"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Bébé",
+            "Dès 6 mois",
+            "Healthy",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7803",
         "title": "Burger au poivron",
         "description": "Découvrez une recette de burger originale avec un steak entouré de poivrons, agrémenté de poitrine fumée au miel, de cheddar et d&rsquo;oignons caramélisés.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7803.webp&v=1789223778000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -312,100 +406,6 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Plats",
             "Sans Gluten"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7788",
-        "title": "Pancakes à la carotte pour bébé",
-        "description": "Des pancakes à la carotte prêts en 5 minutes top chrono avec seulement 3 ingrédients, parfaits pour la diversification alimentaire. Ils peuvent être congelés jusqu&rsquo;à 2 mois.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7622386822823333152\" data-video-id=\"7622386822823333152\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7622386822823333152\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥕\n             75g de carottes"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             2 cuillères à soupe de farine"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Bébé",
-            "Dès 6 mois",
-            "Healthy",
-            "Pas cher",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7786",
-        "title": "Bolognaise aux légumes fondants pour bébé",
-        "description": "Découvrez une recette simple et rapide de bolognaise aux légumes fondants, parfaite pour les bébés dès 6 mois qui commencent la diversification alimentaire avec des morceaux. Facile à préparer à la maison, elle permet d&rsquo;introduire les carottes ",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7616827176456817942\" data-video-id=\"7616827176456817942\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7616827176456817942\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥕\n             2 carottes"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Coulis de tomate (ou concentré, ou pulpe)"
-            },
-            {
-                "quantity": "",
-                "name": "🍝\n             Pâtes alphabets"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Protéine (par exemple, viande hachée, 10g par portion)"
-            }
-        ],
-        "steps": [
-            "Coupez deux carottes en tout petits morceaux.",
-            "Faites-les cuire dans une poêle avec un peu d&rsquo;huile d&rsquo;olive jusqu&rsquo;à ce qu&rsquo;elles soient bien fondantes.",
-            "Une fois les carottes bien cuites, ajoutez le coulis de tomate (ou le concentré, ou la pulpe, que vous pouvez mixer au préalable) et laissez mijoter quelques minutes.",
-            "Pendant ce temps, faites cuire les pâtes alphabets.",
-            "Mélangez les pâtes cuites avec la sauce aux légumes.",
-            "Ajoutez un filet d&rsquo;huile d&rsquo;olive.",
-            "Au moment de servir, incorporez une portion de 10g de protéine (par exemple, des petits cubes de viande hachée) pour le repas du midi de votre bébé."
-        ],
-        "tags": [
-            "Bébé",
-            "Dès 6 mois",
-            "Healthy",
-            "Italie",
-            "Pas cher",
-            "pates",
-            "Sauces"
         ],
         "isFeatured": false,
         "isFavorite": false,
