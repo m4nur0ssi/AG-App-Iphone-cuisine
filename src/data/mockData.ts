@@ -2,11 +2,68 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/09/2026 10:05:27
- * Total: 720 recettes
+ * Dernière mise à jour: 12/09/2026 12:34:30
+ * Total: 721 recettes
  */
-export const exportSyncId = "1789207527217";
+export const exportSyncId = "1789216470603";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7803",
+        "title": "Burger au poivron",
+        "description": "Découvrez une recette de burger originale avec un steak entouré de poivrons, agrémenté de poitrine fumée au miel, de cheddar et d&rsquo;oignons caramélisés.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7672430369991314720\" data-video-id=\"7672430369991314720\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7672430369991314720\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Pain à burger"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Sauces"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivrons"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Viande hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Cheddar"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Poitrine fumée au miel"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignons caramélisés"
+            }
+        ],
+        "steps": [
+            "Préparez le steak de viande hachée.",
+            "Faites cuire le steak en l&rsquo;entourant de poivrons.",
+            "Pendant ce temps, faites rôtir la poitrine fumée au miel.",
+            "Faites caraméliser les oignons.",
+            "Assemblez le burger : sur un pain à burger, ajoutez vos sauces préférées, le steak aux poivrons, le cheddar, la poitrine fumée au miel et les oignons caramélisés."
+        ],
+        "tags": [
+            "Pas cher",
+            "Sandwichs",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7790",
         "title": "Boulettes de saumon, riz et brocoli pour bébé",
