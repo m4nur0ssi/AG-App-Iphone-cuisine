@@ -2,11 +2,107 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/09/2026 17:12:52
- * Total: 722 recettes
+ * Dernière mise à jour: 12/09/2026 21:52:50
+ * Total: 724 recettes
  */
-export const exportSyncId = "1789233172921";
+export const exportSyncId = "1789249970820";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7819",
+        "title": "Fagots d&rsquo;haricots verts au lard",
+        "description": "Un accompagnement simple et gourmand qui peut accompagner tous vos plats, ajoutant une touche de verdure et de saveur.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7558512828299185430\" data-video-id=\"7558512828299185430\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7558512828299185430\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥓\n             2 tranches de lard"
+            },
+            {
+                "quantity": "",
+                "name": "🫘\n             Haricots verts"
+            }
+        ],
+        "steps": [
+            "Enroulez les haricots verts dans les tranches de lard.",
+            "Déposez les fagots ainsi formés sur une grille.",
+            "Enfournez."
+        ],
+        "tags": [
+            "Accompagnements",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7817",
+        "title": "Beignets de courgettes croustillants et rapides",
+        "description": "Oubliez les beignets habituels, lourds et gorgés d&rsquo;huile ! Ces beignets sont légers, gonflés et avec une croûte qui craque à chaque bouchée.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7670919582323903777\" data-video-id=\"7670919582323903777\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7670919582323903777\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             500 g de courgettes"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             250 g de farine T45"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50 g de Parmigiano"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 g de levure de bière sèche"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             230 g d&rsquo;eau à température ambiante"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel (quantité suffisante)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile d&rsquo;arachide (quantité suffisante)"
+            }
+        ],
+        "steps": [
+            "Râpez les courgettes avec une râpe à gros trous.",
+            "Laissez-les égoutter sur une passoire pendant au moins 30 minutes afin que toute l&rsquo;eau s&rsquo;écoule et que la pâte ne devienne pas molle.",
+            "Dans un saladier, mélangez la farine et la levure.",
+            "Ajoutez l&rsquo;eau en filet et mélangez jusqu&rsquo;à obtenir une base lisse et sans grumeaux.",
+            "Incorporez le Parmigiano, les courgettes bien essorées et enfin le sel.",
+            "Mélangez le tout jusqu&rsquo;à obtenir une pâte homogène.",
+            "Couvrez et laissez lever pendant environ 3 heures. Ce passage rendra les beignets bien gonflés et aérés.",
+            "Faites frire des petites cuillerées de pâte dans de l&rsquo;huile bouillante à environ 170°C. Faites-le par petites quantités pour que l&rsquo;huile reste stable et que la friture soit uniforme.",
+            "Égouttez les beignets sur du papier absorbant et salez-les légèrement."
+        ],
+        "tags": [
+            "Italie",
+            "Pas cher",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7778",
         "title": "Petites galettes de pommes de terre et brocoli",
