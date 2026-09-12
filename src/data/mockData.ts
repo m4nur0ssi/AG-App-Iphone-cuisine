@@ -2,11 +2,53 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/09/2026 12:46:02
+ * Dernière mise à jour: 12/09/2026 13:01:35
  * Total: 721 recettes
  */
-export const exportSyncId = "1789217162230";
+export const exportSyncId = "1789218095545";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7784",
+        "title": "Pancakes à la pêche",
+        "description": "Des pancakes à la pêche, à tester absolument !!",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7784-1.webp&v=1789224496000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7652437948323089696\" data-video-id=\"7652437948323089696\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7652437948323089696\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 pêche"
+            },
+            {
+                "quantity": "",
+                "name": "🍌\n             1 banane"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             3 cuillères à soupe de farine"
+            }
+        ],
+        "steps": [
+            "Mélanger la pêche, la banane, l&rsquo;œuf et la farine.",
+            "Cuire les pancakes dans une poêle."
+        ],
+        "tags": [
+            "Bébé",
+            "Dès 6 mois",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7786",
         "title": "Bolognaise aux légumes fondants pour bébé",
@@ -406,48 +448,6 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Plats",
             "Sans Gluten"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7784",
-        "title": "Pancakes à la pêche",
-        "description": "Des pancakes à la pêche, à tester absolument !!",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7652437948323089696\" data-video-id=\"7652437948323089696\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7652437948323089696\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             1 pêche"
-            },
-            {
-                "quantity": "",
-                "name": "🍌\n             1 banane"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             3 cuillères à soupe de farine"
-            }
-        ],
-        "steps": [
-            "Mélanger la pêche, la banane, l&rsquo;œuf et la farine.",
-            "Cuire les pancakes dans une poêle."
-        ],
-        "tags": [
-            "Bébé",
-            "Dès 6 mois",
-            "Voilà l'été"
         ],
         "isFeatured": false,
         "isFavorite": false,
