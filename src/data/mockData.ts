@@ -2,52 +2,75 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/09/2026 09:27:45
- * Total: 719 recettes
+ * Dernière mise à jour: 12/09/2026 09:44:05
+ * Total: 720 recettes
  */
-export const exportSyncId = "1789205265808";
+export const exportSyncId = "1789206245759";
 export const mockRecipes: Recipe[] = [
     {
-        "id": "7794",
-        "title": "Galettes bretonnes de sarrasin",
-        "description": "Découvrez une recette incontournable de galettes de sarrasin, un plat breton sain et sans gluten, parfait pour le petit-déjeuner ou un repas salé. La pâte, préparée sans levain, peut bénéficier d&rsquo;un temps de repos pour une meilleure hydratation",
+        "id": "7799",
+        "title": "Beignets Indiens à l&rsquo;oignon (Bhaji)",
+        "description": "Des beignets indiens à l&rsquo;oignon (Bhaji), croustillants et épicés, parfaits pour l&rsquo;apéritif. Une recette facile et rapide à réaliser, adaptée avec de la farine classique au lieu de la farine de pois chiche.",
         "image": "/images/recipe-placeholder.jpg",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7680604824592715040\" data-video-id=\"7680604824592715040\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7680604824592715040\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7668994442254175520\" data-video-id=\"7668994442254175520\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7668994442254175520\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🌾\n             250 g de farine de sarrasin"
+                "name": "🧅\n             1 gros oignon blanc"
             },
             {
                 "quantity": "",
-                "name": "💧\n             500 ml d&rsquo;eau froide"
+                "name": "🌾\n             1 tasse de farine"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             5 g de sel"
+                "name": "💧\n             1 tasse d&rsquo;eau"
             },
             {
                 "quantity": "",
-                "name": "🥚\n             1 œuf (facultatif)"
+                "name": "🥣\n             1 cuillère à café de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Curry"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Curcuma"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Gingembre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de friture"
             }
         ],
         "steps": [
-            "Versez la farine de sarrasin et le sel dans un saladier en formant un puits.",
-            "Ajoutez l&rsquo;eau froide (et l&rsquo;œuf si vous choisissez d&rsquo;en mettre) petit à petit tout en mélangeant énergiquement avec un fouet pour lisser la pâte et incorporer de l&rsquo;air.",
-            "Laissez reposer la pâte au moins 1 à 2 heures au réfrigérateur. Cette étape n&rsquo;est pas obligatoire mais elle permet à la farine de bien s&rsquo;hydrater et d&rsquo;assouplir la pâte.",
-            "Remuez bien la pâte avant de l&rsquo;utiliser.",
-            "Faites cuire sur une poêle bien chaude et légèrement graissée, en versant une louche et en inclinant la poêle pour napper toute la surface. Laissez dorer des deux côtés."
+            "Émincez les oignons blancs.",
+            "Dans un récipient, ajoutez les oignons émincés, le sel, la farine, l&rsquo;eau, la levure chimique, le curry, le curcuma et le gingembre. Mélangez bien pour enrober les oignons et obtenir une pâte assez collante.",
+            "Faites chauffer l&rsquo;huile de friture. Versez des petits tas de pâte dans l&rsquo;huile chaude et faites-les frire très rapidement jusqu&rsquo;à ce qu&rsquo;ils soient bien dorés et croustillants.",
+            "Servez les beignets avec un peu de coriandre et de sauce Sriracha."
         ],
         "tags": [
-            "France",
-            "Healthy",
-            "Plats",
-            "Sans Gluten"
+            "Asie",
+            "épicé",
+            "Pas cher",
+            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -57,7 +80,7 @@ export const mockRecipes: Recipe[] = [
         "id": "7792",
         "title": "Brochettes de poulet et riz sauté à la tomate",
         "description": "De savoureuses brochettes de hauts de cuisses de poulet marinées aux épices, servies avec un riz parfumé à la tomate, au poivron et à la sauce pimentée douce.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7792.webp&v=1789212626000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -138,6 +161,52 @@ export const mockRecipes: Recipe[] = [
             "airfryer",
             "épicé",
             "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7794",
+        "title": "Galettes bretonnes de sarrasin",
+        "description": "Découvrez une recette incontournable de galettes de sarrasin, un plat breton sain et sans gluten, parfait pour le petit-déjeuner ou un repas salé. La pâte, préparée sans levain, peut bénéficier d&rsquo;un temps de repos pour une meilleure hydratation",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7794.webp&v=1789212615000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7680604824592715040\" data-video-id=\"7680604824592715040\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7680604824592715040\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             250 g de farine de sarrasin"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             500 ml d&rsquo;eau froide"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             5 g de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf (facultatif)"
+            }
+        ],
+        "steps": [
+            "Versez la farine de sarrasin et le sel dans un saladier en formant un puits.",
+            "Ajoutez l&rsquo;eau froide (et l&rsquo;œuf si vous choisissez d&rsquo;en mettre) petit à petit tout en mélangeant énergiquement avec un fouet pour lisser la pâte et incorporer de l&rsquo;air.",
+            "Laissez reposer la pâte au moins 1 à 2 heures au réfrigérateur. Cette étape n&rsquo;est pas obligatoire mais elle permet à la farine de bien s&rsquo;hydrater et d&rsquo;assouplir la pâte.",
+            "Remuez bien la pâte avant de l&rsquo;utiliser.",
+            "Faites cuire sur une poêle bien chaude et légèrement graissée, en versant une louche et en inclinant la poêle pour napper toute la surface. Laissez dorer des deux côtés."
+        ],
+        "tags": [
+            "France",
+            "Healthy",
+            "Plats",
+            "Sans Gluten"
         ],
         "isFeatured": false,
         "isFavorite": false,
