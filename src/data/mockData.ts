@@ -2,16 +2,64 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/09/2026 09:44:05
+ * Dernière mise à jour: 12/09/2026 10:05:27
  * Total: 720 recettes
  */
-export const exportSyncId = "1789206245759";
+export const exportSyncId = "1789207527217";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7790",
+        "title": "Boulettes de saumon, riz et brocoli pour bébé",
+        "description": "Ces boulettes, très appréciées par les enfants, sont rapides à préparer et disparaissent en un clin d&rsquo;œil.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7790-1.webp&v=1789213435000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7632765029993024790\" data-video-id=\"7632765029993024790\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7632765029993024790\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍚\n             80g de riz cuit"
+            },
+            {
+                "quantity": "",
+                "name": "🐟\n             50g de saumon"
+            },
+            {
+                "quantity": "",
+                "name": "🥦\n             60g de brocoli cuit"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 petite poignée d'emmental"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             1 cuillère à soupe de chapelure"
+            }
+        ],
+        "steps": [
+            "Mélanger le riz cuit, le saumon, le brocoli cuit, l'emmental et la chapelure.",
+            "Former des boulettes avec le mélange.",
+            "Cuire les boulettes dans un Airfryer à 180 degrés pendant 8 à 10 minutes."
+        ],
+        "tags": [
+            "Bébé",
+            "Dès 6 mois",
+            "Healthy",
+            "Poissons et crustacés"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7799",
         "title": "Beignets Indiens à l&rsquo;oignon (Bhaji)",
         "description": "Des beignets indiens à l&rsquo;oignon (Bhaji), croustillants et épicés, parfaits pour l&rsquo;apéritif. Une recette facile et rapide à réaliser, adaptée avec de la farine classique au lieu de la farine de pois chiche.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7799.webp&v=1789213424000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -207,54 +255,6 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Plats",
             "Sans Gluten"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7790",
-        "title": "Boulettes de saumon, riz et brocoli pour bébé",
-        "description": "Ces boulettes, très appréciées par les enfants, sont rapides à préparer et disparaissent en un clin d&rsquo;œil.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7632765029993024790\" data-video-id=\"7632765029993024790\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7632765029993024790\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍚\n             80g de riz cuit"
-            },
-            {
-                "quantity": "",
-                "name": "🐟\n             50g de saumon"
-            },
-            {
-                "quantity": "",
-                "name": "🥦\n             60g de brocoli cuit"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 petite poignée d'emmental"
-            },
-            {
-                "quantity": "",
-                "name": "🥖\n             1 cuillère à soupe de chapelure"
-            }
-        ],
-        "steps": [
-            "Mélanger le riz cuit, le saumon, le brocoli cuit, l'emmental et la chapelure.",
-            "Former des boulettes avec le mélange.",
-            "Cuire les boulettes dans un Airfryer à 180 degrés pendant 8 à 10 minutes."
-        ],
-        "tags": [
-            "Bébé",
-            "Dès 6 mois",
-            "Healthy",
-            "Poissons et crustacés"
         ],
         "isFeatured": false,
         "isFavorite": false,
