@@ -2,16 +2,60 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/09/2026 16:37:38
+ * Dernière mise à jour: 12/09/2026 16:54:02
  * Total: 722 recettes
  */
-export const exportSyncId = "1789231058937";
+export const exportSyncId = "1789232042466";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7782",
+        "title": "Pancakes aux fraises",
+        "description": "Découvrez la recette des meilleurs pancakes à la fraise, parfaits pour la diversification alimentaire des bébés. Faciles à préparer avec seulement quelques ingrédients.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7782.webp&v=1789238402000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7645368025322917152\" data-video-id=\"7645368025322917152\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7645368025322917152\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍓\n             2 fraises"
+            },
+            {
+                "quantity": "",
+                "name": "🍌\n             1/2 banane"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             2 cuillères à soupe de farine"
+            }
+        ],
+        "steps": [
+            "Mélanger les 2 fraises, la demi-banane, l&rsquo;œuf et les 2 cuillères à soupe de farine.",
+            "Faire cuire la pâte à feu doux.",
+            "Servir et déguster."
+        ],
+        "tags": [
+            "Bébé",
+            "Dès 6 mois",
+            "Pas cher",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7810",
         "title": "Salade de concombre coréenne (Oi Muchim)",
         "description": "Découvrez l&rsquo;Oi Muchim, une salade de concombre coréenne fraîche, croquante et acidulée. Idéale pour contrebalancer la richesse d&rsquo;un poulet frit caramélisé, elle apporte un équilibre parfait de saveurs. Facile à préparer avec des ingrédien",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7810.webp&v=1789238391000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -508,50 +552,6 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Plats",
             "Sans Gluten"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7782",
-        "title": "Pancakes aux fraises",
-        "description": "Découvrez la recette des meilleurs pancakes à la fraise, parfaits pour la diversification alimentaire des bébés. Faciles à préparer avec seulement quelques ingrédients.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7645368025322917152\" data-video-id=\"7645368025322917152\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7645368025322917152\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍓\n             2 fraises"
-            },
-            {
-                "quantity": "",
-                "name": "🍌\n             1/2 banane"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             2 cuillères à soupe de farine"
-            }
-        ],
-        "steps": [
-            "Mélanger les 2 fraises, la demi-banane, l&rsquo;œuf et les 2 cuillères à soupe de farine.",
-            "Faire cuire la pâte à feu doux.",
-            "Servir et déguster."
-        ],
-        "tags": [
-            "Bébé",
-            "Dès 6 mois",
-            "Pas cher",
-            "Voilà l'été"
         ],
         "isFeatured": false,
         "isFavorite": false,
