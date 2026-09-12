@@ -2,11 +2,102 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/09/2026 16:54:02
+ * Dernière mise à jour: 12/09/2026 17:12:52
  * Total: 722 recettes
  */
-export const exportSyncId = "1789232042466";
+export const exportSyncId = "1789233172921";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7778",
+        "title": "Petites galettes de pommes de terre et brocoli",
+        "description": "Une recette simple et nutritive de petites galettes de pommes de terre et brocoli, idéales pour la diversification alimentaire des bébés dès 6 mois. Faciles à préparer et à congeler.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7778.webp&v=1789239121000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7423109426908810499\" data-video-id=\"7423109426908810499\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7423109426908810499\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             2 pommes de terre bouillies ou cuites à la vapeur"
+            },
+            {
+                "quantity": "",
+                "name": "🥦\n             2 tasses de fleurons de brocoli cuits à la vapeur ou bouillis"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             1/2 tasse de fromage râpé"
+            }
+        ],
+        "steps": [
+            "Étape 1 : Écraser tous les ingrédients dans un bol.",
+            "Étape 2 : À l&rsquo;aide de vos mains, former de petites galettes et les placer sur une plaque de cuisson recouverte de papier sulfurisé. Cuire au four pendant 25 minutes à 180°C."
+        ],
+        "tags": [
+            "Bébé",
+            "Dès 6 mois",
+            "Healthy",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7780",
+        "title": "Bouchées à la carotte et pomme de terre",
+        "description": "Ces bouchées très fondantes s'écrasent facilement entre la langue et le palais de bébé, même sans dents ! Idéales pour la diversification alimentaire dès 6 mois.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7780-1.webp&v=1789239110000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7613059062523088160\" data-video-id=\"7613059062523088160\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7613059062523088160\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥕\n             100g de carottes"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n             100g de pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 échalote"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             1 cuillère à soupe de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d'olive"
+            }
+        ],
+        "steps": [
+            "Commencez par écraser les pommes de terre en purée.",
+            "Ajoutez les carottes râpées, l&rsquo;échalote cuite et la farine à la purée de pommes de terre.",
+            "Mélangez le tout jusqu&rsquo;à obtenir une pâte bien homogène.",
+            "Formez de petites boules entre vos mains.",
+            "Faites-les cuire dans une poêle avec de l&rsquo;huile d&rsquo;olive pendant 4 à 5 minutes, en les retournant régulièrement."
+        ],
+        "tags": [
+            "Bébé",
+            "Dès 6 mois",
+            "Healthy",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7782",
         "title": "Pancakes aux fraises",
@@ -552,97 +643,6 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Plats",
             "Sans Gluten"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7780",
-        "title": "Bouchées à la carotte et pomme de terre",
-        "description": "Ces bouchées très fondantes s'écrasent facilement entre la langue et le palais de bébé, même sans dents ! Idéales pour la diversification alimentaire dès 6 mois.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7613059062523088160\" data-video-id=\"7613059062523088160\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7613059062523088160\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥕\n             100g de carottes"
-            },
-            {
-                "quantity": "",
-                "name": "🍎\n             100g de pommes de terre"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 échalote"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             1 cuillère à soupe de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d'olive"
-            }
-        ],
-        "steps": [
-            "Commencez par écraser les pommes de terre en purée.",
-            "Ajoutez les carottes râpées, l&rsquo;échalote cuite et la farine à la purée de pommes de terre.",
-            "Mélangez le tout jusqu&rsquo;à obtenir une pâte bien homogène.",
-            "Formez de petites boules entre vos mains.",
-            "Faites-les cuire dans une poêle avec de l&rsquo;huile d&rsquo;olive pendant 4 à 5 minutes, en les retournant régulièrement."
-        ],
-        "tags": [
-            "Bébé",
-            "Dès 6 mois",
-            "Healthy",
-            "Pas cher",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7778",
-        "title": "Petites galettes de pommes de terre et brocoli",
-        "description": "Une recette simple et nutritive de petites galettes de pommes de terre et brocoli, idéales pour la diversification alimentaire des bébés dès 6 mois. Faciles à préparer et à congeler.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7423109426908810499\" data-video-id=\"7423109426908810499\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7423109426908810499\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍎\n             2 pommes de terre bouillies ou cuites à la vapeur"
-            },
-            {
-                "quantity": "",
-                "name": "🥦\n             2 tasses de fleurons de brocoli cuits à la vapeur ou bouillis"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             1/2 tasse de fromage râpé"
-            }
-        ],
-        "steps": [
-            "Étape 1 : Écraser tous les ingrédients dans un bol.",
-            "Étape 2 : À l&rsquo;aide de vos mains, former de petites galettes et les placer sur une plaque de cuisson recouverte de papier sulfurisé. Cuire au four pendant 25 minutes à 180°C."
-        ],
-        "tags": [
-            "Bébé",
-            "Dès 6 mois",
-            "Healthy",
-            "Pas cher",
-            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
