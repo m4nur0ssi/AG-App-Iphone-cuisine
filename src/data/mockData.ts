@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 13/09/2026 21:18:49
+ * Dernière mise à jour: 13/09/2026 21:29:42
  * Total: 725 recettes
  */
-export const exportSyncId = "1789334329612";
+export const exportSyncId = "1789334982108";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7830",
         "title": "Recette de Maritozzi",
         "description": "Petits pains romains doux et sucrés, traditionnellement garnis de crème fouettée.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7830.webp&v=1789341591000",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 15,
