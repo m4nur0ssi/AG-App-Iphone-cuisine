@@ -2,11 +2,68 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 13/09/2026 09:15:32
- * Total: 723 recettes
+ * Dernière mise à jour: 13/09/2026 09:29:53
+ * Total: 724 recettes
  */
-export const exportSyncId = "1789290932496";
+export const exportSyncId = "1789291793302";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7827",
+        "title": "Purée Maison Façon Grand-Mère",
+        "description": "Redécouvrez le goût authentique de la purée maison, une recette réconfortante inspirée des traditions de grand-mère. Simple et délicieuse, elle évoque les souvenirs d&rsquo;enfance avec sa texture fondante et son goût riche.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7288733095954500896\" data-video-id=\"7288733095954500896\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7288733095954500896\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             Pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Vert d&rsquo;oignon nouveau"
+            }
+        ],
+        "steps": [
+            "Épluchez et coupez grossièrement les pommes de terre.",
+            "Faites-les cuire dans de l&rsquo;eau bouillante pendant environ quinze minutes, jusqu&rsquo;à ce qu&rsquo;elles soient fondantes.",
+            "Écrasez les pommes de terre à l&rsquo;aide d&rsquo;un moulin à légumes.",
+            "En parallèle, faites bouillir la crème et une généreuse noix de beurre.",
+            "Hors du feu, ajoutez les pommes de terre écrasées au mélange crème-beurre. Fouettez pendant environ cinq minutes en ajoutant progressivement 50g de beurre.",
+            "Assaisonnez avec du sel et du poivre.",
+            "Dressez la purée dans un plat. Pour la présentation, ajoutez le vert d&rsquo;un oignon nouveau ciselé, un peu de poivre et, si désiré, une noisette de beurre supplémentaire."
+        ],
+        "tags": [
+            "Accompagnements",
+            "C'est l'hiver",
+            "France",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7770",
         "title": "Galettes de poulet et légumes",
