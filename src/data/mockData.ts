@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 13/09/2026 09:29:53
+ * Dernière mise à jour: 13/09/2026 09:44:51
  * Total: 724 recettes
  */
-export const exportSyncId = "1789291793302";
+export const exportSyncId = "1789292691506";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7827",
         "title": "Purée Maison Façon Grand-Mère",
         "description": "Redécouvrez le goût authentique de la purée maison, une recette réconfortante inspirée des traditions de grand-mère. Simple et délicieuse, elle évoque les souvenirs d&rsquo;enfance avec sa texture fondante et son goût riche.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7827.webp&v=1789298845000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
