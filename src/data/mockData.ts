@@ -2,11 +2,72 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/09/2026 21:40:43
+ * Dernière mise à jour: 14/09/2026 21:56:42
  * Total: 731 recettes
  */
-export const exportSyncId = "1789422043554";
+export const exportSyncId = "1789423002216";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7845",
+        "title": "Bol de frites garnies aux hot-dogs",
+        "description": "Si vous aimez la cuisine réconfortante et fromagère, vous devez absolument essayer ce bol ! Des frites croustillantes, des saucisses de bœuf juteuses et du cheddar fondu - rapide à préparer et tellement délicieux. Enregistrez cette recette - parfaite",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7682135013340515617\" data-video-id=\"7682135013340515617\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7682135013340515617\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             5 saucisses de bœuf, coupées en rondelles"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n             2 pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile pour la friture"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             2 cuillères à soupe de ketchup"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika doux"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             ½ cuillère à café de poudre de curry"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             4 tranches de cheddar"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignons nouveaux"
+            }
+        ],
+        "steps": [
+            "Couper les pommes de terre en frites et les faire frire jusqu&rsquo;à ce qu&rsquo;elles soient dorées et croustillantes.",
+            "Faire revenir les saucisses de bœuf dans une poêle.",
+            "Ajouter le ketchup, le paprika et le curry, puis bien mélanger le tout.",
+            "Déposer le cheddar par-dessus, couvrir et laisser fondre à feu moyen à doux.",
+            "Mettre les frites dans un bol, répartir les saucisses au fromage par-dessus et garnir d&rsquo;oignons nouveaux."
+        ],
+        "tags": [
+            "Plats",
+            "Sandwichs",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7843",
         "title": "Baguettes aux Olives et au Fromage",
@@ -36494,77 +36555,6 @@ export const mockRecipes: Recipe[] = [
             "barbecue",
             "Végé",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6357",
-        "title": "Tartinade de chorizo",
-        "description": "Une tartinade savoureuse et facile à préparer à base de chorizo, fromage frais, tomates séchées, parmesan, basilic et pignons de pin torréfiés, parfaite pour l&rsquo;apéritif.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6357_1782466789218.jpg&v=1782473995000",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7643491060076793121\" data-video-id=\"7643491060076793121\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7643491060076793121\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥓\n             120 g de chorizo"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             90 g de fromage frais (Philadelphia)"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             40 g de tomates séchées"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             10 g de parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1/3 cuillère à café de poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1/4 cuillère à café de piment"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             2 cuillères à café d'huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             zest de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1 cuillère à soupe de jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             13 feuilles de basilic"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             15 g de pignons de pin torréfiés"
-            }
-        ],
-        "steps": [
-            "Faire cuire le chorizo.",
-            "Dans un mixeur, ajouter le chorizo cuit, le fromage frais, les tomates séchées, le parmesan, le poivre, le piment, l&rsquo;huile d&rsquo;olive, le zeste de citron, le jus de citron, le basilic et les pignons de pin torréfiés.",
-            "Mixer le tout jusqu&rsquo;à obtenir une tartinade homogène."
-        ],
-        "tags": [
-            "Apéritifs",
-            "épicé",
-            "Espagne"
         ],
         "isFeatured": false,
         "isFavorite": false,
