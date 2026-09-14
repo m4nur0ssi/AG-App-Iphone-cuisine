@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/09/2026 09:38:13
+ * Dernière mise à jour: 14/09/2026 09:57:25
  * Total: 727 recettes
  */
-export const exportSyncId = "1789378693875";
+export const exportSyncId = "1789379845663";
 export const mockRecipes: Recipe[] = [
     {
         "id": "7833",
         "title": "Ragoût à la Bolognaise",
         "description": "Découvrez la recette traditionnelle du ragoût à la bolognaise, un plat mijoté riche en saveurs avec de la viande hachée, de la pancetta, des légumes, du vin rouge, de la tomate et une touche de lait pour l&rsquo;onctuosité, servi avec des pâtes et du",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7833.webp&v=1789386440000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -100,6 +100,101 @@ export const mockRecipes: Recipe[] = [
             "C'est l'hiver",
             "Italie",
             "pates"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7835",
+        "title": "Poulet rôti du dimanche",
+        "description": "Découvrez comment préparer un poulet rôti croustillant et savoureux, accompagné de pommes de terre fondantes et d&rsquo;une sauce maison irrésistible, parfait pour votre repas du dimanche.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7835.webp&v=1789386428000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7677183457864256801\" data-video-id=\"7677183457864256801\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7677183457864256801\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             1 poulet entier"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 c. à soupe de moutarde de Dijon"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 c. à soupe de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 c. à café d'ail semoule"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 c. à café d'oignon en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 c. à soupe de paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 c. à café de piri-piri"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             3 c. à soupe d'huile de tomates séchées"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             3 c. à soupe d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 tranches de speck (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n             Pommes de terre (type grenade), coupées en quartiers"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Quelques gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             Un petit verre d&rsquo;eau"
+            }
+        ],
+        "steps": [
+            "Retirez la ficelle du poulet pour que les cuisses soient moins serrées et que la cuisson soit plus uniforme.",
+            "Si vous le souhaitez, entourez les cuisses de deux petites tranches de speck pour plus de goût.",
+            "Préparez la marinade en mélangeant la moutarde de Dijon, le concentré de tomate, l&rsquo;ail semoule, l&rsquo;oignon en poudre, le paprika fumé, le piri-piri, l&rsquo;huile de tomates séchées, l&rsquo;huile d&rsquo;olive, le sel et le poivre.",
+            "Massez généreusement le poulet avec cette marinade, en veillant à bien le recouvrir pour une peau nourrie, dorée et croustillante.",
+            "Déposez le poulet dans une plaque allant au four, en commençant la cuisson à l&rsquo;envers.",
+            "Faites cuire pendant 30 minutes.",
+            "Après 30 minutes de cuisson, ajoutez un petit verre d&rsquo;eau dans le plat pour décoller les sucs.",
+            "Retournez le poulet.",
+            "Ajoutez les pommes de terre grenade coupées en quartiers et quelques gousses d&rsquo;ail autour du poulet.",
+            "Remettez au four pour environ 30 minutes supplémentaires, jusqu&rsquo;à ce que le poulet soit bien doré et les pommes de terre fondantes.",
+            "Servez le poulet rôti avec les pommes de terre et l&rsquo;ail confit, accompagné de la sauce incroyable formée par les sucs de cuisson."
+        ],
+        "tags": [
+            "épicé",
+            "France",
+            "Plats"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -36481,51 +36576,6 @@ export const mockRecipes: Recipe[] = [
             "Salades",
             "Végé",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6313",
-        "title": "Pâte à pizza Napolitaine",
-        "description": "Découvrez la recette traditionnelle de la pâte à pizza Napolitaine, idéale pour les débutants et sans besoin de matériel spécialisé. Cette recette vous permettra de créer des pizzas authentiques avec une croûte parfaite.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_1782132052582-1.jpg&v=1782238326000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             614g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             368g d&rsquo;eau"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             18g de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             0,71g de levure fraiche de boulanger ou 0,40g de levure sèche active"
-            }
-        ],
-        "steps": [
-            "Mélangez les ingrédients pour former une première boule de pâte qui a bien absorbé toute la farine.",
-            "Laissez reposer pendant 20 minutes.",
-            "Effectuez les derniers rabats pour obtenir une pâte lisse.",
-            "Placez la pâte au repos à température ambiante dans un récipient fermé hermétiquement pendant 18 heures.",
-            "4 heures avant la cuisson des pizzas, formez les pâtons.",
-            "Déposez les pâtons à température ambiante dans un récipient fermé pendant 4 heures.",
-            "Préchauffez votre four à la température appropriée et cuisez vos pizzas."
-        ],
-        "tags": [
-            "Italie"
         ],
         "isFeatured": false,
         "isFavorite": false,
