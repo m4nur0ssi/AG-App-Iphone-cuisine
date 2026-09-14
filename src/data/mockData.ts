@@ -2,11 +2,109 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/09/2026 08:21:24
- * Total: 725 recettes
+ * Dernière mise à jour: 14/09/2026 09:38:13
+ * Total: 727 recettes
  */
-export const exportSyncId = "1789374084685";
+export const exportSyncId = "1789378693875";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7833",
+        "title": "Ragoût à la Bolognaise",
+        "description": "Découvrez la recette traditionnelle du ragoût à la bolognaise, un plat mijoté riche en saveurs avec de la viande hachée, de la pancetta, des légumes, du vin rouge, de la tomate et une touche de lait pour l&rsquo;onctuosité, servi avec des pâtes et du",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7685069338256133408\" data-video-id=\"7685069338256133408\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7685069338256133408\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             400g de viande hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             150g de pancetta"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             1 carotte"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 branche de céleri"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 verre de vin rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             200g de purée de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 cuillère à soupe de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             1 verre de lait entier"
+            },
+            {
+                "quantity": "",
+                "name": "🥩\n             1 verre de bouillon de bœuf ou de légumes"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍝\n             Pâtes"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan"
+            }
+        ],
+        "steps": [
+            "Commencez par préparer le soffritto : coupez l&rsquo;oignon, la carotte et la branche de céleri en brunoise.",
+            "Hachez finement la pancetta.",
+            "Préparez à l&rsquo;avance tous les ingrédients nécessaires pour faciliter la cuisine.",
+            "Faites griller la pancetta dans un bon filet d&rsquo;huile d&rsquo;olive jusqu&rsquo;à ce qu&rsquo;elle soit bien dorée.",
+            "Faites revenir le soffritto sans trop le colorer.",
+            "Ajoutez le bœuf haché, assaisonnez de sel et de poivre, et laissez-lui rendre son eau. L&rsquo;idée est que la viande accroche légèrement au fond de la casserole pour récupérer tous les sucs.",
+            "Déglacez avec le vin rouge et laissez-le s&rsquo;évaporer jusqu&rsquo;à ce que vous ne sentiez plus son odeur dans la fumée.",
+            "Ajoutez le concentré de tomate et la purée de tomate.",
+            "Versez le bouillon de bœuf ou de légumes.",
+            "Couvrez et laissez mijoter à feu doux pendant au minimum deux heures.",
+            "À mi-cuisson, ajoutez le verre de lait entier pour adoucir la sauce et lui donner un côté onctueux.",
+            "Faites cuire les pâtes al dente.",
+            "Incorporez les pâtes al dente directement dans la sauce avec un peu d&rsquo;eau de cuisson.",
+            "Servez avec une montagne de parmesan râpé."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Italie",
+            "pates"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7830",
         "title": "Recette de Maritozzi",
@@ -36383,6 +36481,51 @@ export const mockRecipes: Recipe[] = [
             "Salades",
             "Végé",
             "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6313",
+        "title": "Pâte à pizza Napolitaine",
+        "description": "Découvrez la recette traditionnelle de la pâte à pizza Napolitaine, idéale pour les débutants et sans besoin de matériel spécialisé. Cette recette vous permettra de créer des pizzas authentiques avec une croûte parfaite.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_1782132052582-1.jpg&v=1782238326000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             614g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             368g d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             18g de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             0,71g de levure fraiche de boulanger ou 0,40g de levure sèche active"
+            }
+        ],
+        "steps": [
+            "Mélangez les ingrédients pour former une première boule de pâte qui a bien absorbé toute la farine.",
+            "Laissez reposer pendant 20 minutes.",
+            "Effectuez les derniers rabats pour obtenir une pâte lisse.",
+            "Placez la pâte au repos à température ambiante dans un récipient fermé hermétiquement pendant 18 heures.",
+            "4 heures avant la cuisson des pizzas, formez les pâtons.",
+            "Déposez les pâtons à température ambiante dans un récipient fermé pendant 4 heures.",
+            "Préchauffez votre four à la température appropriée et cuisez vos pizzas."
+        ],
+        "tags": [
+            "Italie"
         ],
         "isFeatured": false,
         "isFavorite": false,
