@@ -2,11 +2,281 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/09/2026 10:08:28
- * Total: 727 recettes
+ * Dernière mise à jour: 14/09/2026 21:40:43
+ * Total: 731 recettes
  */
-export const exportSyncId = "1789380508044";
+export const exportSyncId = "1789422043554";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7843",
+        "title": "Baguettes aux Olives et au Fromage",
+        "description": "Croustillantes, dorées et délicieusement moelleuses à l&rsquo;intérieur ! Ces baguettes maison sont garnies d&rsquo;olives vertes juteuses et de fromage savoureux pour un supplément de goût. 🤤✨ Parfaites tout juste sorties du four - croustillantes à",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7676469752327458066\" data-video-id=\"7676469752327458066\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7676469752327458066\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             225 g de farine de force (11-13% de protéines est idéal)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             25 g de farine de blé complet"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             187,5 g d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             15 g d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             6 g de levure fraîche ou 2 g de levure sèche active"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             4,5 g de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50 g d&rsquo;olives vertes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50 g de fromage savoureux (facultatif)"
+            }
+        ],
+        "steps": [
+            "❶ Mélangez tous les ingrédients de la pâte, sauf les olives et le fromage, jusqu&rsquo;à ce qu&rsquo;ils soient bien combinés. Couvrez et laissez reposer à température ambiante pendant 15 minutes. Effectuez un jeu de rabats pour renforcer la pâte, puis laissez-la reposer encore 15 minutes.",
+            "❷ Incorporez les olives et le fromage savoureux, puis couvrez et placez au réfrigérateur. Laissez fermenter toute une nuit ou jusqu&rsquo;à 36 heures.",
+            "❸ Préchauffez le four à 250°C.",
+            "❹ Divisez la pâte en 3 morceaux. Façonnez délicatement chaque morceau et torsadez pour créer une certaine tension. Vous pouvez les façonner comme vous le souhaitez, ou simplement couper la pâte en morceaux à l&rsquo;aide d&rsquo;une corne de pâtissier. Placez sur une feuille de papier cuisson et laissez reposer pendant 15 minutes.",
+            "❺ Faites cuire pendant 10 minutes avec de la vapeur. Retirez ensuite la vapeur et continuez la cuisson pendant 5 à 10 minutes supplémentaires, ou jusqu&rsquo;à ce qu&rsquo;elles soient bien dorées.",
+            "❻ Pas besoin de les laisser refroidir - vous pouvez les manger tout de suite ! 😉 Bonne cuisson ! 🤍 Suivez-nous pour plus de recettes faciles et d&rsquo;astuces de cuisson 😀"
+        ],
+        "tags": [
+            "France",
+            "Sandwichs"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7841",
+        "title": "Loco Moco à ma façon",
+        "description": "Découvrez ma version du célèbre Loco Moco hawaïen : un plat réconfortant composé d&rsquo;un steak haché maison, de riz chaud, d&rsquo;une sauce riche aux oignons et champignons de Paris, le tout surmonté d&rsquo;un œuf au plat coulant.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7678707579903577376\" data-video-id=\"7678707579903577376\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7678707579903577376\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥩\n             600 g de bœuf haché"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             3 cuillères à soupe de sauce soja salée"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             2 cuillères à soupe de sauce Worcestershire"
+            },
+            {
+                "quantity": "",
+                "name": "🥖\n             2 cuillères à soupe de chapelure"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 oignons"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             500 g de champignons de Paris"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Un beau morceau de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             2 cuillères à soupe de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🥩\n             50 cl de bouillon de bœuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             3 cuillères à soupe de sauce soja"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             Riz"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette fraîche"
+            }
+        ],
+        "steps": [
+            "Assaisonnez la viande hachée avec l&rsquo;œuf, la sauce soja salée, la sauce Worcestershire, la chapelure, le sel et le poivre. Formez des steaks et faites-les cuire selon votre préférence.",
+            "Émincez les oignons. Nettoyez et coupez les champignons de Paris, puis émincez-les (notez que les champignons sont facultatifs dans cette recette).",
+            "Dans la même casserole où vous avez cuit les steaks, ajoutez un beau morceau de beurre et faites revenir les oignons jusqu&rsquo;à ce qu&rsquo;ils soient bien colorés.",
+            "Ajoutez l&rsquo;ail, puis les champignons. Laissez cuire tranquillement sur feu moyen jusqu&rsquo;à ce qu&rsquo;ils aient rendu toute leur eau et soient légèrement colorés.",
+            "Saupoudrez d&rsquo;une cuillère à soupe de farine et laissez cuire 1 à 2 minutes.",
+            "Versez le bouillon de bœuf (ou une glace de bœuf diluée avec de l&rsquo;eau), la moutarde et un peu de sauce soja. Laissez mijoter une dizaine de minutes.",
+            "Au dernier moment, réchauffez les steaks dans la sauce.",
+            "Préparez des œufs au plat.",
+            "Dans un bol de riz blanc chaud, déposez un steak, une belle louche de sauce et un œuf au plat. Terminez avec de la ciboulette fraîche."
+        ],
+        "tags": [
+            "Plats",
+            "Sauces",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7839",
+        "title": "Burger Crispy Maison (Façon McChicken)",
+        "description": "Découvrez comment préparer un burger croustillant maison, inspiré du célèbre McCrispy, avec une marinade savoureuse, une sauce onctueuse et une panure ultra-croustillante pour un résultat bien meilleur qu&rsquo;au fast-food.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7680502153219181856\" data-video-id=\"7680502153219181856\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7680502153219181856\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             Filets de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Yaourt grec"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Piment de Cayenne"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cébette"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Sucrine"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Moutarde à l&rsquo;ancienne"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Miel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cornichon malossol"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Maïzena"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de friture"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pain brioché"
+            }
+        ],
+        "steps": [
+            "Assaisonnez les filets de poulet de sel et de poivre.",
+            "Faites-les mariner dans du yaourt grec avec de l&rsquo;ail, du paprika et du piment de Cayenne. Laissez reposer au réfrigérateur pendant environ 20 minutes.",
+            "Pendant ce temps, préparez la sauce et les condiments. Émincez grossièrement la cébette et la sucrine.",
+            "Dans un bol, mélangez la crème fraîche, la moutarde à l&rsquo;ancienne et un peu de miel.",
+            "Taillez un gros cornichon malossol en grosse brunoise et ajoutez-le à la préparation.",
+            "Assaisonnez de sel et de poivre. Incorporez la salade et la cébette émincées grossièrement. Réservez cette préparation de côté.",
+            "Préparez la panure : mélangez la maïzena, la farine, le paprika, le piment de Cayenne, le sel et le poivre.",
+            "Pour créer des morceaux croustillants, ajoutez un peu de marinade dans la farine et remuez. Panez ensuite les filets de poulet dans ce mélange, en vous assurant qu&rsquo;ils soient bien enrobés.",
+            "Faites chauffer l&rsquo;huile de friture à 170°C. Plongez les filets de poulet panés et faites-les frire pendant environ 8 à 9 minutes, jusqu&rsquo;à ce qu&rsquo;ils soient bien dorés et très croustillants.",
+            "Assaisonnez le poulet frit de sel et de poivre dès la sortie de l&rsquo;huile.",
+            "Toastez un pain brioché au four pendant 5 minutes à 180°C.",
+            "Assemblez le burger en ajoutant la préparation de sauce et condiments (coleslaw), le poulet croustillant, puis refermez le pain."
+        ],
+        "tags": [
+            "épicé",
+            "Sandwichs",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7833",
         "title": "Ragoût à la Bolognaise",
@@ -36224,6 +36494,77 @@ export const mockRecipes: Recipe[] = [
             "barbecue",
             "Végé",
             "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6357",
+        "title": "Tartinade de chorizo",
+        "description": "Une tartinade savoureuse et facile à préparer à base de chorizo, fromage frais, tomates séchées, parmesan, basilic et pignons de pin torréfiés, parfaite pour l&rsquo;apéritif.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6357_1782466789218.jpg&v=1782473995000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7643491060076793121\" data-video-id=\"7643491060076793121\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7643491060076793121\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥓\n             120 g de chorizo"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             90 g de fromage frais (Philadelphia)"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             40 g de tomates séchées"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             10 g de parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1/3 cuillère à café de poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1/4 cuillère à café de piment"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             2 cuillères à café d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             zest de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1 cuillère à soupe de jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             13 feuilles de basilic"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             15 g de pignons de pin torréfiés"
+            }
+        ],
+        "steps": [
+            "Faire cuire le chorizo.",
+            "Dans un mixeur, ajouter le chorizo cuit, le fromage frais, les tomates séchées, le parmesan, le poivre, le piment, l&rsquo;huile d&rsquo;olive, le zeste de citron, le jus de citron, le basilic et les pignons de pin torréfiés.",
+            "Mixer le tout jusqu&rsquo;à obtenir une tartinade homogène."
+        ],
+        "tags": [
+            "Apéritifs",
+            "épicé",
+            "Espagne"
         ],
         "isFeatured": false,
         "isFavorite": false,
