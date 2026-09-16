@@ -2,138 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 15/09/2026 08:16:07
+ * Dernière mise à jour: 16/09/2026 08:17:58
  * Total: 731 recettes
  */
-export const exportSyncId = "1789460167904";
+export const exportSyncId = "1789546678684";
 export const mockRecipes: Recipe[] = [
-    {
-        "id": "7845",
-        "title": "Bol de frites garnies aux hot-dogs",
-        "description": "Si vous aimez la cuisine réconfortante et fromagère, vous devez absolument essayer ce bol ! Des frites croustillantes, des saucisses de bœuf juteuses et du cheddar fondu - rapide à préparer et tellement délicieux. Enregistrez cette recette - parfaite",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7682135013340515617\" data-video-id=\"7682135013340515617\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7682135013340515617\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             5 saucisses de bœuf, coupées en rondelles"
-            },
-            {
-                "quantity": "",
-                "name": "🍎\n             2 pommes de terre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Huile pour la friture"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             2 cuillères à soupe de ketchup"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de paprika doux"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             ½ cuillère à café de poudre de curry"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             4 tranches de cheddar"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Oignons nouveaux"
-            }
-        ],
-        "steps": [
-            "Couper les pommes de terre en frites et les faire frire jusqu&rsquo;à ce qu&rsquo;elles soient dorées et croustillantes.",
-            "Faire revenir les saucisses de bœuf dans une poêle.",
-            "Ajouter le ketchup, le paprika et le curry, puis bien mélanger le tout.",
-            "Déposer le cheddar par-dessus, couvrir et laisser fondre à feu moyen à doux.",
-            "Mettre les frites dans un bol, répartir les saucisses au fromage par-dessus et garnir d&rsquo;oignons nouveaux."
-        ],
-        "tags": [
-            "Plats",
-            "Sandwichs",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7843",
-        "title": "Baguettes aux Olives et au Fromage",
-        "description": "Croustillantes, dorées et délicieusement moelleuses à l&rsquo;intérieur ! Ces baguettes maison sont garnies d&rsquo;olives vertes juteuses et de fromage savoureux pour un supplément de goût. 🤤✨ Parfaites tout juste sorties du four - croustillantes à",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7676469752327458066\" data-video-id=\"7676469752327458066\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7676469752327458066\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             225 g de farine de force (11-13% de protéines est idéal)"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             25 g de farine de blé complet"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             187,5 g d&rsquo;eau"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             15 g d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             6 g de levure fraîche ou 2 g de levure sèche active"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             4,5 g de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             50 g d&rsquo;olives vertes"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             50 g de fromage savoureux (facultatif)"
-            }
-        ],
-        "steps": [
-            "❶ Mélangez tous les ingrédients de la pâte, sauf les olives et le fromage, jusqu&rsquo;à ce qu&rsquo;ils soient bien combinés. Couvrez et laissez reposer à température ambiante pendant 15 minutes. Effectuez un jeu de rabats pour renforcer la pâte, puis laissez-la reposer encore 15 minutes.",
-            "❷ Incorporez les olives et le fromage savoureux, puis couvrez et placez au réfrigérateur. Laissez fermenter toute une nuit ou jusqu&rsquo;à 36 heures.",
-            "❸ Préchauffez le four à 250°C.",
-            "❹ Divisez la pâte en 3 morceaux. Façonnez délicatement chaque morceau et torsadez pour créer une certaine tension. Vous pouvez les façonner comme vous le souhaitez, ou simplement couper la pâte en morceaux à l&rsquo;aide d&rsquo;une corne de pâtissier. Placez sur une feuille de papier cuisson et laissez reposer pendant 15 minutes.",
-            "❺ Faites cuire pendant 10 minutes avec de la vapeur. Retirez ensuite la vapeur et continuez la cuisson pendant 5 à 10 minutes supplémentaires, ou jusqu&rsquo;à ce qu&rsquo;elles soient bien dorées.",
-            "❻ Pas besoin de les laisser refroidir - vous pouvez les manger tout de suite ! 😉 Bonne cuisson ! 🤍 Suivez-nous pour plus de recettes faciles et d&rsquo;astuces de cuisson 😀"
-        ],
-        "tags": [
-            "France",
-            "Sandwichs"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
     {
         "id": "7841",
         "title": "Loco Moco à ma façon",
         "description": "Découvrez ma version du célèbre Loco Moco hawaïen : un plat réconfortant composé d&rsquo;un steak haché maison, de riz chaud, d&rsquo;une sauce riche aux oignons et champignons de Paris, le tout surmonté d&rsquo;un œuf au plat coulant.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7841.webp&v=1789553301000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -228,6 +106,128 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Plats",
             "Sauces",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7843",
+        "title": "Baguettes aux Olives et au Fromage",
+        "description": "Croustillantes, dorées et délicieusement moelleuses à l&rsquo;intérieur ! Ces baguettes maison sont garnies d&rsquo;olives vertes juteuses et de fromage savoureux pour un supplément de goût. 🤤✨ Parfaites tout juste sorties du four - croustillantes à",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7843.webp&v=1789553294000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7676469752327458066\" data-video-id=\"7676469752327458066\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7676469752327458066\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             225 g de farine de force (11-13% de protéines est idéal)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             25 g de farine de blé complet"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             187,5 g d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             15 g d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             6 g de levure fraîche ou 2 g de levure sèche active"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             4,5 g de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50 g d&rsquo;olives vertes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50 g de fromage savoureux (facultatif)"
+            }
+        ],
+        "steps": [
+            "❶ Mélangez tous les ingrédients de la pâte, sauf les olives et le fromage, jusqu&rsquo;à ce qu&rsquo;ils soient bien combinés. Couvrez et laissez reposer à température ambiante pendant 15 minutes. Effectuez un jeu de rabats pour renforcer la pâte, puis laissez-la reposer encore 15 minutes.",
+            "❷ Incorporez les olives et le fromage savoureux, puis couvrez et placez au réfrigérateur. Laissez fermenter toute une nuit ou jusqu&rsquo;à 36 heures.",
+            "❸ Préchauffez le four à 250°C.",
+            "❹ Divisez la pâte en 3 morceaux. Façonnez délicatement chaque morceau et torsadez pour créer une certaine tension. Vous pouvez les façonner comme vous le souhaitez, ou simplement couper la pâte en morceaux à l&rsquo;aide d&rsquo;une corne de pâtissier. Placez sur une feuille de papier cuisson et laissez reposer pendant 15 minutes.",
+            "❺ Faites cuire pendant 10 minutes avec de la vapeur. Retirez ensuite la vapeur et continuez la cuisson pendant 5 à 10 minutes supplémentaires, ou jusqu&rsquo;à ce qu&rsquo;elles soient bien dorées.",
+            "❻ Pas besoin de les laisser refroidir - vous pouvez les manger tout de suite ! 😉 Bonne cuisson ! 🤍 Suivez-nous pour plus de recettes faciles et d&rsquo;astuces de cuisson 😀"
+        ],
+        "tags": [
+            "France",
+            "Sandwichs"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7845",
+        "title": "Bol de frites garnies aux hot-dogs",
+        "description": "Si vous aimez la cuisine réconfortante et fromagère, vous devez absolument essayer ce bol ! Des frites croustillantes, des saucisses de bœuf juteuses et du cheddar fondu - rapide à préparer et tellement délicieux. Enregistrez cette recette - parfaite",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7845.webp&v=1789553284000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7682135013340515617\" data-video-id=\"7682135013340515617\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7682135013340515617\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             5 saucisses de bœuf, coupées en rondelles"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n             2 pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile pour la friture"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             2 cuillères à soupe de ketchup"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika doux"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             ½ cuillère à café de poudre de curry"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             4 tranches de cheddar"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignons nouveaux"
+            }
+        ],
+        "steps": [
+            "Couper les pommes de terre en frites et les faire frire jusqu&rsquo;à ce qu&rsquo;elles soient dorées et croustillantes.",
+            "Faire revenir les saucisses de bœuf dans une poêle.",
+            "Ajouter le ketchup, le paprika et le curry, puis bien mélanger le tout.",
+            "Déposer le cheddar par-dessus, couvrir et laisser fondre à feu moyen à doux.",
+            "Mettre les frites dans un bol, répartir les saucisses au fromage par-dessus et garnir d&rsquo;oignons nouveaux."
+        ],
+        "tags": [
+            "Plats",
+            "Sandwichs",
             "USA"
         ],
         "isFeatured": false,
