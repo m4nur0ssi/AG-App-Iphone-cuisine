@@ -2,11 +2,215 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 16/09/2026 08:17:58
- * Total: 731 recettes
+ * Dernière mise à jour: 16/09/2026 16:15:43
+ * Total: 732 recettes
  */
-export const exportSyncId = "1789546678684";
+export const exportSyncId = "1789575343951";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7851",
+        "title": "Lentilles fondantes aux oignons caramélisés et burrata",
+        "description": "Préparez des lentilles fondantes et parfumées, mijotées avec des oignons caramélisés et des épices, puis servies avec une burrata bien crémeuse. Une recette simple et délicieuse à essayer absolument !",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7685797855298096417\" data-video-id=\"7685797855298096417\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7685797855298096417\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             200 g de lentilles vertes"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 gros oignons jaunes"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 c. à soupe d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 c. à soupe de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 c. à café de cumin moulu"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             ½ c. à café de paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             ½ c. à café d'herbes de Provence"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             500 ml de bouillon de légumes chaud"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 c. à café de sauce soja"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             ½ à 1 c. à café de vinaigre balsamique"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             ½ citron jaune"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 burrata de 125 g"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Quelques brins de persil frais"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Un filet d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            }
+        ],
+        "steps": [
+            "Ciselez finement les oignons. Faites chauffer l'huile d'olive dans une grande sauteuse, ajoutez les oignons avec une pincée de sel et laissez-les caraméliser à feu doux-moyen en mélangeant régulièrement, jusqu'à ce qu'ils soient bien dorés, fondants et presque confits.",
+            "Ajoutez l'ail finement râpé et poursuivez la cuisson pendant 30 secondes.",
+            "Incorporez le concentré de tomate, le cumin, le paprika fumé et les herbes de Provence. Faites revenir pendant 1 à 2 minutes afin de torréfier légèrement les épices.",
+            "Rincez les lentilles, ajoutez-les dans la sauteuse puis versez 500 ml de bouillon chaud. Mélangez et laissez mijoter à petits frémissements pendant 35 à 45 minutes, en remuant de temps en temps. Ajoutez un peu de bouillon si nécessaire au cours de la cuisson. Les lentilles doivent être bien tendres, fondantes et rester enrobées d'une petite sauce épaisse et brillante.",
+            "Ajoutez la sauce soja et le vinaigre balsamique, mélangez puis poursuivez la cuisson pendant 1 à 2 minutes.",
+            "Hors du feu, ajoutez le jus de citron. Salez et poivrez selon votre goût.",
+            "Servez les lentilles bien chaudes, déposez la burrata au centre puis terminez simplement avec du persil frais et un filet d'huile d'olive."
+        ],
+        "tags": [
+            "Accompagnements",
+            "C'est l'hiver",
+            "Healthy",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7839",
+        "title": "Burger Crispy Maison (Façon McChicken)",
+        "description": "Découvrez comment préparer un burger croustillant maison, inspiré du célèbre McCrispy, avec une marinade savoureuse, une sauce onctueuse et une panure ultra-croustillante pour un résultat bien meilleur qu&rsquo;au fast-food.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7839.webp&v=1789553964000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7680502153219181856\" data-video-id=\"7680502153219181856\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7680502153219181856\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             Filets de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Yaourt grec"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Piment de Cayenne"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cébette"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Sucrine"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Moutarde à l&rsquo;ancienne"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Miel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cornichon malossol"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Maïzena"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de friture"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pain brioché"
+            }
+        ],
+        "steps": [
+            "Assaisonnez les filets de poulet de sel et de poivre.",
+            "Faites-les mariner dans du yaourt grec avec de l&rsquo;ail, du paprika et du piment de Cayenne. Laissez reposer au réfrigérateur pendant environ 20 minutes.",
+            "Pendant ce temps, préparez la sauce et les condiments. Émincez grossièrement la cébette et la sucrine.",
+            "Dans un bol, mélangez la crème fraîche, la moutarde à l&rsquo;ancienne et un peu de miel.",
+            "Taillez un gros cornichon malossol en grosse brunoise et ajoutez-le à la préparation.",
+            "Assaisonnez de sel et de poivre. Incorporez la salade et la cébette émincées grossièrement. Réservez cette préparation de côté.",
+            "Préparez la panure : mélangez la maïzena, la farine, le paprika, le piment de Cayenne, le sel et le poivre.",
+            "Pour créer des morceaux croustillants, ajoutez un peu de marinade dans la farine et remuez. Panez ensuite les filets de poulet dans ce mélange, en vous assurant qu&rsquo;ils soient bien enrobés.",
+            "Faites chauffer l&rsquo;huile de friture à 170°C. Plongez les filets de poulet panés et faites-les frire pendant environ 8 à 9 minutes, jusqu&rsquo;à ce qu&rsquo;ils soient bien dorés et très croustillants.",
+            "Assaisonnez le poulet frit de sel et de poivre dès la sortie de l&rsquo;huile.",
+            "Toastez un pain brioché au four pendant 5 minutes à 180°C.",
+            "Assemblez le burger en ajoutant la préparation de sauce et condiments (coleslaw), le poulet croustillant, puis refermez le pain."
+        ],
+        "tags": [
+            "épicé",
+            "Sandwichs",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7841",
         "title": "Loco Moco à ma façon",
@@ -227,110 +431,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Plats",
-            "Sandwichs",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7839",
-        "title": "Burger Crispy Maison (Façon McChicken)",
-        "description": "Découvrez comment préparer un burger croustillant maison, inspiré du célèbre McCrispy, avec une marinade savoureuse, une sauce onctueuse et une panure ultra-croustillante pour un résultat bien meilleur qu&rsquo;au fast-food.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7680502153219181856\" data-video-id=\"7680502153219181856\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7680502153219181856\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             Filets de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Yaourt grec"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Piment de Cayenne"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Cébette"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Sucrine"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Crème fraîche"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             Moutarde à l&rsquo;ancienne"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Miel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Cornichon malossol"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Maïzena"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             Farine"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile de friture"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pain brioché"
-            }
-        ],
-        "steps": [
-            "Assaisonnez les filets de poulet de sel et de poivre.",
-            "Faites-les mariner dans du yaourt grec avec de l&rsquo;ail, du paprika et du piment de Cayenne. Laissez reposer au réfrigérateur pendant environ 20 minutes.",
-            "Pendant ce temps, préparez la sauce et les condiments. Émincez grossièrement la cébette et la sucrine.",
-            "Dans un bol, mélangez la crème fraîche, la moutarde à l&rsquo;ancienne et un peu de miel.",
-            "Taillez un gros cornichon malossol en grosse brunoise et ajoutez-le à la préparation.",
-            "Assaisonnez de sel et de poivre. Incorporez la salade et la cébette émincées grossièrement. Réservez cette préparation de côté.",
-            "Préparez la panure : mélangez la maïzena, la farine, le paprika, le piment de Cayenne, le sel et le poivre.",
-            "Pour créer des morceaux croustillants, ajoutez un peu de marinade dans la farine et remuez. Panez ensuite les filets de poulet dans ce mélange, en vous assurant qu&rsquo;ils soient bien enrobés.",
-            "Faites chauffer l&rsquo;huile de friture à 170°C. Plongez les filets de poulet panés et faites-les frire pendant environ 8 à 9 minutes, jusqu&rsquo;à ce qu&rsquo;ils soient bien dorés et très croustillants.",
-            "Assaisonnez le poulet frit de sel et de poivre dès la sortie de l&rsquo;huile.",
-            "Toastez un pain brioché au four pendant 5 minutes à 180°C.",
-            "Assemblez le burger en ajoutant la préparation de sauce et condiments (coleslaw), le poulet croustillant, puis refermez le pain."
-        ],
-        "tags": [
-            "épicé",
             "Sandwichs",
             "USA"
         ],
