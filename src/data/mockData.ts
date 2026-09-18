@@ -2,89 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 17/09/2026 15:27:14
+ * Dernière mise à jour: 18/09/2026 08:05:38
  * Total: 733 recettes
  */
-export const exportSyncId = "1789658834223";
+export const exportSyncId = "1789718738302";
 export const mockRecipes: Recipe[] = [
-    {
-        "id": "7853",
-        "title": "Milanaise de poulet",
-        "description": "Préparez une délicieuse milanaise de poulet croustillante, panée avec de la chapelure panko et du paprika. Servez-la avec une salade fraîche de roquette, parmesan et tomates cerises, arrosée d&rsquo;un filet de citron pour un plat savoureux et équili",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7289077909862583584\" data-video-id=\"7289077909862583584\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7289077909862583584\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             Escalope de poulet (environ 300g)"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             Farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Œufs (2)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Chapelure (type panko avec un peu de paprika)"
-            },
-            {
-                "quantity": "",
-                "name": "🥗\n             Roquette"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Tomates cerises"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile de friture"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Citron (un demi)"
-            }
-        ],
-        "steps": [
-            "Découpez l&rsquo;escalope de poulet en deux sans la séparer complètement, ou demandez à votre boucher de l&rsquo;aplatir.",
-            "Aplatissez l&rsquo;escalope à l&rsquo;aide d&rsquo;un rouleau à pâtisserie, éventuellement en la couvrant d&rsquo;un film alimentaire.",
-            "Passez l&rsquo;escalope successivement dans la farine, les œufs battus, puis la chapelure (type panko mélangée à un peu de paprika).",
-            "Faites frire l&rsquo;escalope dans de l&rsquo;huile chaude jusqu&rsquo;à ce qu&rsquo;elle soit dorée. Vous pouvez également la cuire au four à 200°C pendant 30 minutes.",
-            "Égouttez l&rsquo;escalope sur du papier absorbant.",
-            "Servez la milanaise avec une petite salade composée de roquette, de parmesan et de tomates cerises, puis pressez un filet de jus de citron par-dessus."
-        ],
-        "tags": [
-            "Italie",
-            "Pas cher"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
     {
         "id": "7851",
         "title": "Lentilles fondantes aux oignons caramélisés et burrata",
         "description": "Préparez des lentilles fondantes et parfumées, mijotées avec des oignons caramélisés et des épices, puis servies avec une burrata bien crémeuse. Une recette simple et délicieuse à essayer absolument !",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7851.webp&v=1789724838000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -175,6 +102,79 @@ export const mockRecipes: Recipe[] = [
             "C'est l'hiver",
             "Healthy",
             "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7853",
+        "title": "Milanaise de poulet",
+        "description": "Préparez une délicieuse milanaise de poulet croustillante, panée avec de la chapelure panko et du paprika. Servez-la avec une salade fraîche de roquette, parmesan et tomates cerises, arrosée d&rsquo;un filet de citron pour un plat savoureux et équili",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7289077909862583584\" data-video-id=\"7289077909862583584\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7289077909862583584\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             Escalope de poulet (environ 300g)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs (2)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Chapelure (type panko avec un peu de paprika)"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             Roquette"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomates cerises"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de friture"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Citron (un demi)"
+            }
+        ],
+        "steps": [
+            "Découpez l&rsquo;escalope de poulet en deux sans la séparer complètement, ou demandez à votre boucher de l&rsquo;aplatir.",
+            "Aplatissez l&rsquo;escalope à l&rsquo;aide d&rsquo;un rouleau à pâtisserie, éventuellement en la couvrant d&rsquo;un film alimentaire.",
+            "Passez l&rsquo;escalope successivement dans la farine, les œufs battus, puis la chapelure (type panko mélangée à un peu de paprika).",
+            "Faites frire l&rsquo;escalope dans de l&rsquo;huile chaude jusqu&rsquo;à ce qu&rsquo;elle soit dorée. Vous pouvez également la cuire au four à 200°C pendant 30 minutes.",
+            "Égouttez l&rsquo;escalope sur du papier absorbant.",
+            "Servez la milanaise avec une petite salade composée de roquette, de parmesan et de tomates cerises, puis pressez un filet de jus de citron par-dessus."
+        ],
+        "tags": [
+            "Italie",
+            "Pas cher"
         ],
         "isFeatured": false,
         "isFavorite": false,
