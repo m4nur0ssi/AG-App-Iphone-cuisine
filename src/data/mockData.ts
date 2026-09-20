@@ -2,11 +2,219 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 20/09/2026 14:28:47
- * Total: 741 recettes
+ * Dernière mise à jour: 20/09/2026 21:33:53
+ * Total: 743 recettes
  */
-export const exportSyncId = "1789914527842";
+export const exportSyncId = "1789940033397";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7874",
+        "title": "Cookies Millionaire",
+        "description": "Cette recette vous guide pas à pas pour réaliser de délicieux Cookies Millionaire, composés d&rsquo;une base de cookie moelleuse, d&rsquo;une couche de caramel onctueux et d&rsquo;un glaçage au chocolat croquant.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7687625353149418785\" data-video-id=\"7687625353149418785\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7687625353149418785\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             120 g de beurre doux ramolli"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             80 g de cassonade"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             40 g de sucre en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 cuillère à café d&rsquo;extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             180 g de farine tout usage"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             20 g de fécule de maïs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ½ cuillère à café de bicarbonate de soude"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             150 g de pépites de chocolat"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             397 g de lait concentré sucré"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             100 g de beurre doux"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100 g de cassonade"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             50 g de miel ou de sirop de glucose"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 cuillère à café d&rsquo;extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de fleur de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             200 g de chocolat au lait ou noir"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             15 g d&rsquo;huile neutre ou de beurre de cacao"
+            }
+        ],
+        "steps": [
+            "Préchauffer le four à 170°C.",
+            "Crémer le beurre ramolli avec la cassonade et le sucre en poudre.",
+            "Ajouter l&rsquo;œuf et l&rsquo;extrait de vanille, puis mélanger.",
+            "Ajouter la farine, la fécule de maïs, le bicarbonate de soude et le sel.",
+            "Incorporer les pépites de chocolat.",
+            "Étaler la pâte dans un moule carré de 20 × 20 cm tapissé de papier sulfurisé.",
+            "Presser et lisser la surface.",
+            "Cuire au four pendant 18 à 22 minutes. Les bords doivent être légèrement dorés tandis que le centre reste moelleux.",
+            "Laisser refroidir complètement.",
+            "Faire fondre le beurre avec la cassonade et le miel dans une casserole.",
+            "Une fois le sucre dissous, ajouter le lait concentré sucré.",
+            "Cuire à feu moyen-doux, en remuant constamment avec une spatule.",
+            "Continuer la cuisson pendant environ 8 à 12 minutes, jusqu&rsquo;à ce que le caramel soit épais et doré.",
+            "Ajouter l&rsquo;extrait de vanille et la fleur de sel.",
+            "Verser immédiatement sur la base de cookie refroidie.",
+            "Lisser la surface et réfrigérer pendant 1 à 2 heures.",
+            "Faire fondre le chocolat.",
+            "Ajouter l&rsquo;huile ou le beurre de cacao et mélanger.",
+            "Verser sur le caramel refroidi.",
+            "Lisser avec une spatule.",
+            "Réfrigérer pendant environ 30 minutes, jusqu&rsquo;à ce que le chocolat soit pris."
+        ],
+        "tags": [
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7872",
+        "title": "Beurres Maison Aromatisés",
+        "description": "Découvrez comment préparer facilement trois délicieux beurres maison : citronné, tomate-piment et aux herbes. Parfaits pour accompagner du pain chaud, des légumes rôtis ou des pâtes, ces beurres sont simples à réaliser et peuvent être conservés au ré",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7687543202101906721\" data-video-id=\"7687543202101906721\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7687543202101906721\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             1 L de crème liquide entière à minimum 30 % de matière grasse"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Zeste de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Une pincée de sel (pour le beurre citronné)"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 cuillère à soupe de concentré de tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             1 petite gousse d'ail (pour le beurre tomate-piment)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Une pincée de piment"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Une pincée de sel (pour le beurre tomate-piment)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 filet d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             1 petite gousse d'ail (pour le beurre aux herbes)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Aneth"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Thym"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Fleur de sel"
+            }
+        ],
+        "steps": [
+            "Versez la crème liquide entière (minimum 30% de matière grasse) dans un grand saladier.",
+            "Fouettez la crème énergiquement jusqu&rsquo;à ce qu&rsquo;elle tranche, séparant ainsi le beurre du petit-lait.",
+            "Récupérez le beurre et pressez-le avec des mains propres pour en retirer un maximum de petit-lait.",
+            "Passez rapidement le beurre dans un torchon propre, puis rincez-le dans de l&rsquo;eau glacée.",
+            "Divisez ensuite le beurre en trois portions égales.",
+            "Pour la première portion (beurre citronné), ajoutez du zeste de citron, du jus de citron et une pincée de sel. Mélangez bien.",
+            "Pour la deuxième portion (beurre tomate-piment), faites chauffer pendant environ deux minutes le concentré de tomates avec une petite gousse d&rsquo;ail, du piment, du sel et un filet d&rsquo;huile d&rsquo;olive. Laissez légèrement tiédir le mélange avant de l&rsquo;incorporer au beurre. Mélangez bien.",
+            "Pour la dernière portion (beurre aux herbes), ajoutez une petite gousse d&rsquo;ail, de l&rsquo;aneth, du persil, du thym et de la fleur de sel. Mélangez bien.",
+            "Façonnez les beurres aromatisés comme vous le souhaitez (par exemple, dans des moules à cannelés ou du papier cuisson). Tassez bien si vous utilisez des moules.",
+            "Placez les beurres au congélateur pendant environ 20 minutes pour faciliter le démoulage.",
+            "Démoulez délicatement et servez.",
+            "Conservez les beurres au réfrigérateur pendant 3 à 4 jours, ou congelez-les pour une conservation plus longue (plusieurs mois)."
+        ],
+        "tags": [
+            "Astuces",
+            "Pas cher",
+            "Sauces",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7870",
         "title": "Jacket Potatoes au yaourt et saumon",
