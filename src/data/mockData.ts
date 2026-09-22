@@ -2,16 +2,424 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 21/09/2026 08:32:32
+ * Dernière mise à jour: 22/09/2026 08:11:32
  * Total: 743 recettes
  */
-export const exportSyncId = "1789979552064";
+export const exportSyncId = "1790064692304";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7864",
+        "title": "Assiette de chips de riz et tartare de truite",
+        "description": "Découvrez une manière originale et croustillante de déguster votre tartare de truite préféré. Cette recette propose de frire une feuille de riz avec un jaune d&rsquo;œuf pour créer une coupelle comestible, parfaite pour accueillir un tartare frais et",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7864.webp&v=1790071559000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7603041144385080598\" data-video-id=\"7603041144385080598\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7603041144385080598\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍚\n             Feuilles de riz"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Jaunes d&rsquo;œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de friture"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Filet de truite fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Kiwi gold"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Échalote"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Coriandre fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Zeste de citron vert"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile de sésame"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Sauce soja"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Nuoc mam"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Sésame noir et doré"
+            }
+        ],
+        "steps": [
+            "Préparez le filet de truite : retirez la peau et les arêtes, puis taillez-le en longues bandes avant de le couper en gros cubes.",
+            "Ciselez grossièrement une échalote.",
+            "Préparez un kiwi gold en le coupant en petits dés.",
+            "Hachez finement une belle botte de coriandre fraîche.",
+            "Dans un grand bol, mélangez les cubes de truite, l&rsquo;échalote ciselée, les dés de kiwi, la coriandre hachée, le zeste de citron vert, l&rsquo;huile de sésame, la sauce soja et le nuoc mam.",
+            "Assaisonnez avec quelques tours de moulin à poivre et mélangez délicatement. Réservez le tartare au frais.",
+            "Dans une poêle ou une friteuse, faites chauffer de l&rsquo;huile de friture à 180 degrés Celsius.",
+            "Déposez délicatement un jaune d&rsquo;œuf au centre d&rsquo;une feuille de riz.",
+            "Plongez la feuille de riz avec le jaune d&rsquo;œuf dans l&rsquo;huile chaude et faites-la frire jusqu&rsquo;à ce qu&rsquo;elle devienne croustillante et dorée, formant une coupelle.",
+            "Égouttez la coupelle croustillante sur du papier absorbant et salez-la légèrement.",
+            "Garnissez la coupelle de feuille de riz frite avec le tartare de truite préparé.",
+            "Saupoudrez de sésame noir et doré pour la décoration et la saveur.",
+            "Servez immédiatement et dégustez en cassant des morceaux de la coupelle croustillante."
+        ],
+        "tags": [
+            "Asie",
+            "Healthy",
+            "Poissons et crustacés",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7866",
+        "title": "Croquettes au chorizo",
+        "description": "Préparez de délicieuses croquettes au chorizo, parfaites pour un apéritif dînatoire ou à déguster avec une salade. Faciles et rapides à réaliser, elles sont un vrai régal !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7866.webp&v=1790071550000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7527309218236452118\" data-video-id=\"7527309218236452118\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7527309218236452118\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧀\n             100g de gruyère râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             100g de chorizo"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             2 cuillères à soupe de farine"
+            }
+        ],
+        "steps": [
+            "Commencez par mixer le gruyère avec le chorizo.",
+            "Ajoutez la ciboulette et les deux œufs.",
+            "Mélangez le tout.",
+            "Si la texture ne convient pas, ajoutez deux cuillères à soupe de farine et mélangez jusqu&rsquo;à obtenir une texture parfaite.",
+            "Formez les croquettes.",
+            "Disposez les croquettes sur une plaque allant au four recouverte de papier cuisson.",
+            "Enfournez pendant 20 minutes à 180°C."
+        ],
+        "tags": [
+            "Apéritifs",
+            "Espagne"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7868",
+        "title": "Pâtes au Mont d'Or et saucisse de Montbéliard",
+        "description": "Un plat ultra réconfortant avec du bon fromage, de la saucisse de Montbéliard et une sauce bien crémeuse au vin blanc du Jura !",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7868.webp&v=1790071543000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7687233833816608033\" data-video-id=\"7687233833816608033\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7687233833816608033\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍝\n             250 g de pâtes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 saucisses de Montbéliard"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 Mont d'Or"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             Vin blanc du Jura"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil frais"
+            }
+        ],
+        "steps": [
+            "Faites revenir les petits cubes de saucisses de Montbéliard.",
+            "Ajoutez les oignons et l&rsquo;ail.",
+            "Déglacez avec du vin blanc du Jura.",
+            "Récupérez tous les sucs en grattant le fond de la poêle.",
+            "Laissez réduire quasiment à sec.",
+            "Ajoutez de la crème.",
+            "Ajoutez les cubes de Mont d&rsquo;Or.",
+            "Laissez-les fondre tranquillement sur feu doux jusqu&rsquo;à obtenir une sauce bien crémeuse.",
+            "Assaisonnez avec du poivre (le sel n&rsquo;est pas nécessaire en raison de la saucisse et du fromage).",
+            "Terminez la cuisson des pâtes directement dans la sauce.",
+            "Ajoutez un peu de persil frais."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "France",
+            "pates"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7870",
+        "title": "Jacket Potatoes au yaourt et saumon",
+        "description": "Découvrez une recette simple, équilibrée et gourmande de Jacket Potatoes (pommes de terre au four) garnies d&rsquo;une sauce crémeuse au yaourt et de saumon fumé. Une préparation facile et rapide, idéale pour un repas complet.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7870.webp&v=1790071536000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7612213107338792214\" data-video-id=\"7612213107338792214\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7612213107338792214\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             Pommes de terre (2 à 3 moyennes par personne, type Charlotte)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive (3 cuillères à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Herbes de Provence"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Origan"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Épices au choix"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Yaourt à la grecque (1 pot)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fromage à tartiner (2 cuillères à café)"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Moutarde (1 cuillère à café)"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomates séchées (3 à 4, coupées en dés)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Menthe"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Saumon fumé (4 tranches, ou autre garniture au choix comme blanc de poulet, blanc de dinde, œufs brouillés, pois chiches grillés, tofu, maquereau)"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignon nouveau (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Aneth (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             Noix concassées (quelques-unes, facultatif)"
+            }
+        ],
+        "steps": [
+            "Préchauffez votre four à 200°C.",
+            "Mélangez les pommes de terre avec l&rsquo;huile d&rsquo;olive, le sel, le poivre, les herbes de Provence, l&rsquo;origan et les épices de votre choix.",
+            "Enfournez les pommes de terre pour environ 35 minutes à 200°C. Si vous les préférez plus fondantes, prolongez la cuisson jusqu&rsquo;à 45 minutes.",
+            "Pendant ce temps, préparez la sauce au yaourt : dans un bol, mélangez le yaourt à la grecque, le fromage à tartiner, la moutarde, les tomates séchées coupées en dés, la ciboulette, la menthe, le sel et le poivre.",
+            "À la sortie du four, découpez chaque pomme de terre en croix, sans aller trop profondément.",
+            "Écrasez légèrement la chair à l&rsquo;intérieur de chaque pomme de terre à l&rsquo;aide d&rsquo;une fourchette.",
+            "Garnissez généreusement les pommes de terre avec la sauce au yaourt, les tranches de saumon fumé et, si désiré, de l&rsquo;oignon nouveau, de l&rsquo;aneth, de la ciboulette fraîche ou quelques noix concassées.",
+            "Servez ces Jacket Potatoes chaudes, accompagnées d&rsquo;une salade verte ou de crudités pour un repas complet et équilibré."
+        ],
+        "tags": [
+            "Healthy",
+            "Poissons et crustacés",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7872",
+        "title": "Beurres Maison Aromatisés",
+        "description": "Découvrez comment préparer facilement trois délicieux beurres maison : citronné, tomate-piment et aux herbes. Parfaits pour accompagner du pain chaud, des légumes rôtis ou des pâtes, ces beurres sont simples à réaliser et peuvent être conservés au ré",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7872.webp&v=1790071529000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7687543202101906721\" data-video-id=\"7687543202101906721\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7687543202101906721\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             1 L de crème liquide entière à minimum 30 % de matière grasse"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Zeste de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Une pincée de sel (pour le beurre citronné)"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 cuillère à soupe de concentré de tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             1 petite gousse d'ail (pour le beurre tomate-piment)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Une pincée de piment"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Une pincée de sel (pour le beurre tomate-piment)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 filet d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             1 petite gousse d'ail (pour le beurre aux herbes)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Aneth"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Thym"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Fleur de sel"
+            }
+        ],
+        "steps": [
+            "Versez la crème liquide entière (minimum 30% de matière grasse) dans un grand saladier.",
+            "Fouettez la crème énergiquement jusqu&rsquo;à ce qu&rsquo;elle tranche, séparant ainsi le beurre du petit-lait.",
+            "Récupérez le beurre et pressez-le avec des mains propres pour en retirer un maximum de petit-lait.",
+            "Passez rapidement le beurre dans un torchon propre, puis rincez-le dans de l&rsquo;eau glacée.",
+            "Divisez ensuite le beurre en trois portions égales.",
+            "Pour la première portion (beurre citronné), ajoutez du zeste de citron, du jus de citron et une pincée de sel. Mélangez bien.",
+            "Pour la deuxième portion (beurre tomate-piment), faites chauffer pendant environ deux minutes le concentré de tomates avec une petite gousse d&rsquo;ail, du piment, du sel et un filet d&rsquo;huile d&rsquo;olive. Laissez légèrement tiédir le mélange avant de l&rsquo;incorporer au beurre. Mélangez bien.",
+            "Pour la dernière portion (beurre aux herbes), ajoutez une petite gousse d&rsquo;ail, de l&rsquo;aneth, du persil, du thym et de la fleur de sel. Mélangez bien.",
+            "Façonnez les beurres aromatisés comme vous le souhaitez (par exemple, dans des moules à cannelés ou du papier cuisson). Tassez bien si vous utilisez des moules.",
+            "Placez les beurres au congélateur pendant environ 20 minutes pour faciliter le démoulage.",
+            "Démoulez délicatement et servez.",
+            "Conservez les beurres au réfrigérateur pendant 3 à 4 jours, ou congelez-les pour une conservation plus longue (plusieurs mois)."
+        ],
+        "tags": [
+            "Astuces",
+            "Pas cher",
+            "Sauces",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7874",
         "title": "Cookies Millionaire",
         "description": "Cette recette vous guide pas à pas pour réaliser de délicieux Cookies Millionaire, composés d&rsquo;une base de cookie moelleuse, d&rsquo;une couche de caramel onctueux et d&rsquo;un glaçage au chocolat croquant.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7874.webp&v=1790071520000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -117,414 +525,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7872",
-        "title": "Beurres Maison Aromatisés",
-        "description": "Découvrez comment préparer facilement trois délicieux beurres maison : citronné, tomate-piment et aux herbes. Parfaits pour accompagner du pain chaud, des légumes rôtis ou des pâtes, ces beurres sont simples à réaliser et peuvent être conservés au ré",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7687543202101906721\" data-video-id=\"7687543202101906721\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7687543202101906721\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥛\n             1 L de crème liquide entière à minimum 30 % de matière grasse"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Zeste de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             Une pincée de sel (pour le beurre citronné)"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 cuillère à soupe de concentré de tomates"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             1 petite gousse d'ail (pour le beurre tomate-piment)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Une pincée de piment"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             Une pincée de sel (pour le beurre tomate-piment)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 filet d'huile d'olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             1 petite gousse d'ail (pour le beurre aux herbes)"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Aneth"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Thym"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Fleur de sel"
-            }
-        ],
-        "steps": [
-            "Versez la crème liquide entière (minimum 30% de matière grasse) dans un grand saladier.",
-            "Fouettez la crème énergiquement jusqu&rsquo;à ce qu&rsquo;elle tranche, séparant ainsi le beurre du petit-lait.",
-            "Récupérez le beurre et pressez-le avec des mains propres pour en retirer un maximum de petit-lait.",
-            "Passez rapidement le beurre dans un torchon propre, puis rincez-le dans de l&rsquo;eau glacée.",
-            "Divisez ensuite le beurre en trois portions égales.",
-            "Pour la première portion (beurre citronné), ajoutez du zeste de citron, du jus de citron et une pincée de sel. Mélangez bien.",
-            "Pour la deuxième portion (beurre tomate-piment), faites chauffer pendant environ deux minutes le concentré de tomates avec une petite gousse d&rsquo;ail, du piment, du sel et un filet d&rsquo;huile d&rsquo;olive. Laissez légèrement tiédir le mélange avant de l&rsquo;incorporer au beurre. Mélangez bien.",
-            "Pour la dernière portion (beurre aux herbes), ajoutez une petite gousse d&rsquo;ail, de l&rsquo;aneth, du persil, du thym et de la fleur de sel. Mélangez bien.",
-            "Façonnez les beurres aromatisés comme vous le souhaitez (par exemple, dans des moules à cannelés ou du papier cuisson). Tassez bien si vous utilisez des moules.",
-            "Placez les beurres au congélateur pendant environ 20 minutes pour faciliter le démoulage.",
-            "Démoulez délicatement et servez.",
-            "Conservez les beurres au réfrigérateur pendant 3 à 4 jours, ou congelez-les pour une conservation plus longue (plusieurs mois)."
-        ],
-        "tags": [
-            "Astuces",
-            "Pas cher",
-            "Sauces",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7870",
-        "title": "Jacket Potatoes au yaourt et saumon",
-        "description": "Découvrez une recette simple, équilibrée et gourmande de Jacket Potatoes (pommes de terre au four) garnies d&rsquo;une sauce crémeuse au yaourt et de saumon fumé. Une préparation facile et rapide, idéale pour un repas complet.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7612213107338792214\" data-video-id=\"7612213107338792214\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7612213107338792214\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍎\n             Pommes de terre (2 à 3 moyennes par personne, type Charlotte)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive (3 cuillères à soupe)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Herbes de Provence"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Origan"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Épices au choix"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Yaourt à la grecque (1 pot)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fromage à tartiner (2 cuillères à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             Moutarde (1 cuillère à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Tomates séchées (3 à 4, coupées en dés)"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Ciboulette"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Menthe"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Saumon fumé (4 tranches, ou autre garniture au choix comme blanc de poulet, blanc de dinde, œufs brouillés, pois chiches grillés, tofu, maquereau)"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Oignon nouveau (facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Aneth (facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🥜\n             Noix concassées (quelques-unes, facultatif)"
-            }
-        ],
-        "steps": [
-            "Préchauffez votre four à 200°C.",
-            "Mélangez les pommes de terre avec l&rsquo;huile d&rsquo;olive, le sel, le poivre, les herbes de Provence, l&rsquo;origan et les épices de votre choix.",
-            "Enfournez les pommes de terre pour environ 35 minutes à 200°C. Si vous les préférez plus fondantes, prolongez la cuisson jusqu&rsquo;à 45 minutes.",
-            "Pendant ce temps, préparez la sauce au yaourt : dans un bol, mélangez le yaourt à la grecque, le fromage à tartiner, la moutarde, les tomates séchées coupées en dés, la ciboulette, la menthe, le sel et le poivre.",
-            "À la sortie du four, découpez chaque pomme de terre en croix, sans aller trop profondément.",
-            "Écrasez légèrement la chair à l&rsquo;intérieur de chaque pomme de terre à l&rsquo;aide d&rsquo;une fourchette.",
-            "Garnissez généreusement les pommes de terre avec la sauce au yaourt, les tranches de saumon fumé et, si désiré, de l&rsquo;oignon nouveau, de l&rsquo;aneth, de la ciboulette fraîche ou quelques noix concassées.",
-            "Servez ces Jacket Potatoes chaudes, accompagnées d&rsquo;une salade verte ou de crudités pour un repas complet et équilibré."
-        ],
-        "tags": [
-            "Healthy",
-            "Poissons et crustacés",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7868",
-        "title": "Pâtes au Mont d'Or et saucisse de Montbéliard",
-        "description": "Un plat ultra réconfortant avec du bon fromage, de la saucisse de Montbéliard et une sauce bien crémeuse au vin blanc du Jura !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7687233833816608033\" data-video-id=\"7687233833816608033\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7687233833816608033\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍝\n             250 g de pâtes"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 saucisses de Montbéliard"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 gousses d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Crème"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 Mont d'Or"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             Vin blanc du Jura"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil frais"
-            }
-        ],
-        "steps": [
-            "Faites revenir les petits cubes de saucisses de Montbéliard.",
-            "Ajoutez les oignons et l&rsquo;ail.",
-            "Déglacez avec du vin blanc du Jura.",
-            "Récupérez tous les sucs en grattant le fond de la poêle.",
-            "Laissez réduire quasiment à sec.",
-            "Ajoutez de la crème.",
-            "Ajoutez les cubes de Mont d&rsquo;Or.",
-            "Laissez-les fondre tranquillement sur feu doux jusqu&rsquo;à obtenir une sauce bien crémeuse.",
-            "Assaisonnez avec du poivre (le sel n&rsquo;est pas nécessaire en raison de la saucisse et du fromage).",
-            "Terminez la cuisson des pâtes directement dans la sauce.",
-            "Ajoutez un peu de persil frais."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "France",
-            "pates"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7866",
-        "title": "Croquettes au chorizo",
-        "description": "Préparez de délicieuses croquettes au chorizo, parfaites pour un apéritif dînatoire ou à déguster avec une salade. Faciles et rapides à réaliser, elles sont un vrai régal !",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7527309218236452118\" data-video-id=\"7527309218236452118\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7527309218236452118\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧀\n             100g de gruyère râpé"
-            },
-            {
-                "quantity": "",
-                "name": "🥓\n             100g de chorizo"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             2 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Ciboulette"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             2 cuillères à soupe de farine"
-            }
-        ],
-        "steps": [
-            "Commencez par mixer le gruyère avec le chorizo.",
-            "Ajoutez la ciboulette et les deux œufs.",
-            "Mélangez le tout.",
-            "Si la texture ne convient pas, ajoutez deux cuillères à soupe de farine et mélangez jusqu&rsquo;à obtenir une texture parfaite.",
-            "Formez les croquettes.",
-            "Disposez les croquettes sur une plaque allant au four recouverte de papier cuisson.",
-            "Enfournez pendant 20 minutes à 180°C."
-        ],
-        "tags": [
-            "Apéritifs",
-            "Espagne"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7864",
-        "title": "Assiette de chips de riz et tartare de truite",
-        "description": "Découvrez une manière originale et croustillante de déguster votre tartare de truite préféré. Cette recette propose de frire une feuille de riz avec un jaune d&rsquo;œuf pour créer une coupelle comestible, parfaite pour accueillir un tartare frais et",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7603041144385080598\" data-video-id=\"7603041144385080598\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7603041144385080598\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍚\n             Feuilles de riz"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Jaunes d&rsquo;œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile de friture"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Filet de truite fraîche"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Kiwi gold"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Échalote"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Coriandre fraîche"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Zeste de citron vert"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Huile de sésame"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             Sauce soja"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Nuoc mam"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Sésame noir et doré"
-            }
-        ],
-        "steps": [
-            "Préparez le filet de truite : retirez la peau et les arêtes, puis taillez-le en longues bandes avant de le couper en gros cubes.",
-            "Ciselez grossièrement une échalote.",
-            "Préparez un kiwi gold en le coupant en petits dés.",
-            "Hachez finement une belle botte de coriandre fraîche.",
-            "Dans un grand bol, mélangez les cubes de truite, l&rsquo;échalote ciselée, les dés de kiwi, la coriandre hachée, le zeste de citron vert, l&rsquo;huile de sésame, la sauce soja et le nuoc mam.",
-            "Assaisonnez avec quelques tours de moulin à poivre et mélangez délicatement. Réservez le tartare au frais.",
-            "Dans une poêle ou une friteuse, faites chauffer de l&rsquo;huile de friture à 180 degrés Celsius.",
-            "Déposez délicatement un jaune d&rsquo;œuf au centre d&rsquo;une feuille de riz.",
-            "Plongez la feuille de riz avec le jaune d&rsquo;œuf dans l&rsquo;huile chaude et faites-la frire jusqu&rsquo;à ce qu&rsquo;elle devienne croustillante et dorée, formant une coupelle.",
-            "Égouttez la coupelle croustillante sur du papier absorbant et salez-la légèrement.",
-            "Garnissez la coupelle de feuille de riz frite avec le tartare de truite préparé.",
-            "Saupoudrez de sésame noir et doré pour la décoration et la saveur.",
-            "Servez immédiatement et dégustez en cassant des morceaux de la coupelle croustillante."
-        ],
-        "tags": [
-            "Asie",
-            "Healthy",
-            "Poissons et crustacés",
-            "Voilà l'été"
         ],
         "isFeatured": false,
         "isFavorite": false,
