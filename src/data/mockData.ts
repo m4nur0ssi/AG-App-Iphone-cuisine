@@ -2,11 +2,325 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 22/09/2026 08:11:32
+ * Dernière mise à jour: 22/09/2026 08:39:52
  * Total: 743 recettes
  */
-export const exportSyncId = "1790064692304";
+export const exportSyncId = "1790066392658";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7853",
+        "title": "Milanaise de poulet",
+        "description": "Préparez une délicieuse milanaise de poulet croustillante, panée avec de la chapelure panko et du paprika. Servez-la avec une salade fraîche de roquette, parmesan et tomates cerises, arrosée d&rsquo;un filet de citron pour un plat savoureux et équili",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7853.webp&v=1790072610000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7289077909862583584\" data-video-id=\"7289077909862583584\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7289077909862583584\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             Escalope de poulet (environ 300g)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs (2)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Chapelure (type panko avec un peu de paprika)"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             Roquette"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomates cerises"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de friture"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Citron (un demi)"
+            }
+        ],
+        "steps": [
+            "Découpez l&rsquo;escalope de poulet en deux sans la séparer complètement, ou demandez à votre boucher de l&rsquo;aplatir.",
+            "Aplatissez l&rsquo;escalope à l&rsquo;aide d&rsquo;un rouleau à pâtisserie, éventuellement en la couvrant d&rsquo;un film alimentaire.",
+            "Passez l&rsquo;escalope successivement dans la farine, les œufs battus, puis la chapelure (type panko mélangée à un peu de paprika).",
+            "Faites frire l&rsquo;escalope dans de l&rsquo;huile chaude jusqu&rsquo;à ce qu&rsquo;elle soit dorée. Vous pouvez également la cuire au four à 200°C pendant 30 minutes.",
+            "Égouttez l&rsquo;escalope sur du papier absorbant.",
+            "Servez la milanaise avec une petite salade composée de roquette, de parmesan et de tomates cerises, puis pressez un filet de jus de citron par-dessus."
+        ],
+        "tags": [
+            "Italie",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7856",
+        "title": "Apéritif croustillant de tortillas de Noël",
+        "description": "Découvrez une recette facile et rapide pour un apéritif de Noël gourmand et croustillant. Des cercles de tortillas sont badigeonnés de beurre à l&rsquo;ail et persil, garnis de cheddar, puis cuits au four. Une fois refroidis, ils sont recouverts de f",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7856.webp&v=1790072601000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7450180293014686998\" data-video-id=\"7450180293014686998\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7450180293014686998\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             3 tortillas"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             15g de beurre fondu"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             20g de persil"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             30g de cheddar râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             40g de fromage frais"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             25g de bacon"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             20g de pistaches"
+            }
+        ],
+        "steps": [
+            "Découpez des petits cercles dans les tortillas (environ 12 cercles).",
+            "Faites fondre le beurre. Émincez la gousse d&rsquo;ail et ciselez une partie du persil.",
+            "Mélangez le beurre fondu avec l&rsquo;ail émincé et le persil ciselé.",
+            "Badigeonnez les petits cercles de tortilla avec ce mélange.",
+            "Recouvrez chaque cercle de tortilla d&rsquo;un peu de cheddar râpé.",
+            "Superposez les cercles deux par deux.",
+            "Enfournez pour 10 minutes à 200°C.",
+            "À la sortie du four, laissez les galettes refroidir légèrement.",
+            "Étalez du fromage frais sur le dessus de chaque galette croustillante.",
+            "Dans une assiette, mélangez le bacon grillé et mixé, les pistaches mixées et le reste du persil ciselé.",
+            "Recouvrez chaque galette avec ce mélange."
+        ],
+        "tags": [
+            "Apéritifs",
+            "Noël"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7858",
+        "title": "Œufs mimosa frits croustillants à la crème de curry, bacon et cresson",
+        "description": "Une nouvelle version des populaires œufs mimosa frits. Les jaunes d&rsquo;œufs durs sont mélangés avec du fromage frais, du curry et de la moutarde, et les blancs d&rsquo;œufs sont frits. C&rsquo;est une entrée parfaite pour Pâques.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7858.webp&v=1790071593000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7624451601821895958\" data-video-id=\"7624451601821895958\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7624451601821895958\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs durs"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Jaunes d&rsquo;œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fromage frais"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Curry"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Blancs d&rsquo;œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Bacon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cresson"
+            }
+        ],
+        "steps": [
+            "Faire bouillir les œufs.",
+            "Séparer les jaunes des blancs d&rsquo;œufs.",
+            "Mélanger les jaunes d&rsquo;œufs avec du fromage frais, du curry et de la moutarde.",
+            "Faire frire les blancs d&rsquo;œufs.",
+            "Servir les œufs mimosa frits garnis de crème de curry, de bacon et de cresson."
+        ],
+        "tags": [
+            "Apéritifs",
+            "épicé",
+            "Pâques",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7860",
+        "title": "Billes de Beaufort AOP extra croustillantes",
+        "description": "Découvrez comment réaliser facilement des billes de Beaufort AOP extra croustillantes pour l&rsquo;apéritif, avec seulement quelques ingrédients. Une recette simple et originale qui surprendra vos invités.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7860.webp&v=1790071583000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7608991848706723094\" data-video-id=\"7608991848706723094\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7608991848706723094\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             200 g de Beaufort AOP râpé très finement"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 blancs d'œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de friture"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Miel fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Flocons de piment"
+            }
+        ],
+        "steps": [
+            "Râpez très finement le Beaufort AOP.",
+            "Dans un bol, mélangez le Beaufort râpé avec les blancs d&rsquo;œufs et un tour de moulin à poivre jusqu&rsquo;à obtenir une pâte homogène.",
+            "Formez des petites billes à la main.",
+            "Faites chauffer l&rsquo;huile de friture. Plongez les billes dans l&rsquo;huile bien chaude et faites-les frire jusqu&rsquo;à ce qu&rsquo;elles soient bien dorées de tous les côtés. Il est important d&rsquo;attendre qu&rsquo;elles soient bien cuites avant de les sortir pour qu&rsquo;elles ne dégonflent pas et restent rondes.",
+            "Égouttez les billes sur du papier absorbant ou sur une grille.",
+            "Ajoutez un filet de miel fumé et quelques flocons de piment. Servez chaud."
+        ],
+        "tags": [
+            "Apéritifs",
+            "épicé",
+            "France"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7862",
+        "title": "Bouchées de concombre au saumon fumé",
+        "description": "Ces bouchées de concombre au saumon fumé sont une collation ou un apéritif facile et rapide à préparer. Sans cuisson, il suffit de les assembler. Elles sont prêtes en un rien de temps, ce qui en fait une excellente option à servir lors d&rsquo;une fê",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7862.webp&v=1790071570000",
+        "category": "aperitifs",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7318080121016044842\" data-video-id=\"7318080121016044842\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7318080121016044842\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥒\n             1 concombre anglais"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             180 ml de fromage frais"
+            },
+            {
+                "quantity": "",
+                "name": "🐟\n             115 g de saumon fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             assaisonnement pour bagel &lsquo;everything&rsquo;"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             aneth (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             jus de citron frais"
+            }
+        ],
+        "steps": [
+            "Coupez le concombre anglais en tranches d&rsquo;environ 0,6 cm d&rsquo;épaisseur, pour obtenir environ 20 à 24 tranches.",
+            "Épongez les tranches avec une serviette en papier pour retirer l&rsquo;excès d&rsquo;humidité.",
+            "Étalez environ 1 cuillère à café de fromage frais sur chaque tranche de concombre à l&rsquo;aide d&rsquo;un couteau ou d&rsquo;une cuillère, puis recouvrez d&rsquo;un morceau de saumon fumé. Répétez l&rsquo;opération pour toutes les tranches de concombre.",
+            "Saupoudrez d&rsquo;assaisonnement pour bagel &lsquo;everything&rsquo; et ajoutez un brin d&rsquo;aneth sur le dessus.",
+            "Ajoutez une pincée de sel, pressez du jus de citron frais par-dessus, et dégustez !"
+        ],
+        "tags": [
+            "Apéritifs",
+            "C'est l'hiver",
+            "Healthy",
+            "Noël",
+            "Poissons et crustacés"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7864",
         "title": "Assiette de chips de riz et tartare de truite",
@@ -531,247 +845,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "7862",
-        "title": "Bouchées de concombre au saumon fumé",
-        "description": "Ces bouchées de concombre au saumon fumé sont une collation ou un apéritif facile et rapide à préparer. Sans cuisson, il suffit de les assembler. Elles sont prêtes en un rien de temps, ce qui en fait une excellente option à servir lors d&rsquo;une fê",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7318080121016044842\" data-video-id=\"7318080121016044842\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7318080121016044842\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥒\n             1 concombre anglais"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             180 ml de fromage frais"
-            },
-            {
-                "quantity": "",
-                "name": "🐟\n             115 g de saumon fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             assaisonnement pour bagel &lsquo;everything&rsquo;"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             aneth (facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             sel"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             jus de citron frais"
-            }
-        ],
-        "steps": [
-            "Coupez le concombre anglais en tranches d&rsquo;environ 0,6 cm d&rsquo;épaisseur, pour obtenir environ 20 à 24 tranches.",
-            "Épongez les tranches avec une serviette en papier pour retirer l&rsquo;excès d&rsquo;humidité.",
-            "Étalez environ 1 cuillère à café de fromage frais sur chaque tranche de concombre à l&rsquo;aide d&rsquo;un couteau ou d&rsquo;une cuillère, puis recouvrez d&rsquo;un morceau de saumon fumé. Répétez l&rsquo;opération pour toutes les tranches de concombre.",
-            "Saupoudrez d&rsquo;assaisonnement pour bagel &lsquo;everything&rsquo; et ajoutez un brin d&rsquo;aneth sur le dessus.",
-            "Ajoutez une pincée de sel, pressez du jus de citron frais par-dessus, et dégustez !"
-        ],
-        "tags": [
-            "Apéritifs",
-            "C'est l'hiver",
-            "Healthy",
-            "Noël",
-            "Poissons et crustacés"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7860",
-        "title": "Billes de Beaufort AOP extra croustillantes",
-        "description": "Découvrez comment réaliser facilement des billes de Beaufort AOP extra croustillantes pour l&rsquo;apéritif, avec seulement quelques ingrédients. Une recette simple et originale qui surprendra vos invités.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7608991848706723094\" data-video-id=\"7608991848706723094\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7608991848706723094\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             200 g de Beaufort AOP râpé très finement"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             3 blancs d'œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile de friture"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Miel fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Flocons de piment"
-            }
-        ],
-        "steps": [
-            "Râpez très finement le Beaufort AOP.",
-            "Dans un bol, mélangez le Beaufort râpé avec les blancs d&rsquo;œufs et un tour de moulin à poivre jusqu&rsquo;à obtenir une pâte homogène.",
-            "Formez des petites billes à la main.",
-            "Faites chauffer l&rsquo;huile de friture. Plongez les billes dans l&rsquo;huile bien chaude et faites-les frire jusqu&rsquo;à ce qu&rsquo;elles soient bien dorées de tous les côtés. Il est important d&rsquo;attendre qu&rsquo;elles soient bien cuites avant de les sortir pour qu&rsquo;elles ne dégonflent pas et restent rondes.",
-            "Égouttez les billes sur du papier absorbant ou sur une grille.",
-            "Ajoutez un filet de miel fumé et quelques flocons de piment. Servez chaud."
-        ],
-        "tags": [
-            "Apéritifs",
-            "épicé",
-            "France"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7858",
-        "title": "Œufs mimosa frits croustillants à la crème de curry, bacon et cresson",
-        "description": "Une nouvelle version des populaires œufs mimosa frits. Les jaunes d&rsquo;œufs durs sont mélangés avec du fromage frais, du curry et de la moutarde, et les blancs d&rsquo;œufs sont frits. C&rsquo;est une entrée parfaite pour Pâques.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7624451601821895958\" data-video-id=\"7624451601821895958\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7624451601821895958\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             Œufs durs"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Jaunes d&rsquo;œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fromage frais"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Curry"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             Moutarde"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Blancs d&rsquo;œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Bacon"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Cresson"
-            }
-        ],
-        "steps": [
-            "Faire bouillir les œufs.",
-            "Séparer les jaunes des blancs d&rsquo;œufs.",
-            "Mélanger les jaunes d&rsquo;œufs avec du fromage frais, du curry et de la moutarde.",
-            "Faire frire les blancs d&rsquo;œufs.",
-            "Servir les œufs mimosa frits garnis de crème de curry, de bacon et de cresson."
-        ],
-        "tags": [
-            "Apéritifs",
-            "épicé",
-            "Pâques",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7856",
-        "title": "Apéritif croustillant de tortillas de Noël",
-        "description": "Découvrez une recette facile et rapide pour un apéritif de Noël gourmand et croustillant. Des cercles de tortillas sont badigeonnés de beurre à l&rsquo;ail et persil, garnis de cheddar, puis cuits au four. Une fois refroidis, ils sont recouverts de f",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7450180293014686998\" data-video-id=\"7450180293014686998\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7450180293014686998\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             3 tortillas"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             15g de beurre fondu"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             20g de persil"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             30g de cheddar râpé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             40g de fromage frais"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             25g de bacon"
-            },
-            {
-                "quantity": "",
-                "name": "🥜\n             20g de pistaches"
-            }
-        ],
-        "steps": [
-            "Découpez des petits cercles dans les tortillas (environ 12 cercles).",
-            "Faites fondre le beurre. Émincez la gousse d&rsquo;ail et ciselez une partie du persil.",
-            "Mélangez le beurre fondu avec l&rsquo;ail émincé et le persil ciselé.",
-            "Badigeonnez les petits cercles de tortilla avec ce mélange.",
-            "Recouvrez chaque cercle de tortilla d&rsquo;un peu de cheddar râpé.",
-            "Superposez les cercles deux par deux.",
-            "Enfournez pour 10 minutes à 200°C.",
-            "À la sortie du four, laissez les galettes refroidir légèrement.",
-            "Étalez du fromage frais sur le dessus de chaque galette croustillante.",
-            "Dans une assiette, mélangez le bacon grillé et mixé, les pistaches mixées et le reste du persil ciselé.",
-            "Recouvrez chaque galette avec ce mélange."
-        ],
-        "tags": [
-            "Apéritifs",
-            "Noël"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "7851",
         "title": "Lentilles fondantes aux oignons caramélisés et burrata",
         "description": "Préparez des lentilles fondantes et parfumées, mijotées avec des oignons caramélisés et des épices, puis servies avec une burrata bien crémeuse. Une recette simple et délicieuse à essayer absolument !",
@@ -866,79 +939,6 @@ export const mockRecipes: Recipe[] = [
             "C'est l'hiver",
             "Healthy",
             "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7853",
-        "title": "Milanaise de poulet",
-        "description": "Préparez une délicieuse milanaise de poulet croustillante, panée avec de la chapelure panko et du paprika. Servez-la avec une salade fraîche de roquette, parmesan et tomates cerises, arrosée d&rsquo;un filet de citron pour un plat savoureux et équili",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7289077909862583584\" data-video-id=\"7289077909862583584\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7289077909862583584\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             Escalope de poulet (environ 300g)"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             Farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Œufs (2)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Chapelure (type panko avec un peu de paprika)"
-            },
-            {
-                "quantity": "",
-                "name": "🥗\n             Roquette"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Parmesan"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Tomates cerises"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile de friture"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Citron (un demi)"
-            }
-        ],
-        "steps": [
-            "Découpez l&rsquo;escalope de poulet en deux sans la séparer complètement, ou demandez à votre boucher de l&rsquo;aplatir.",
-            "Aplatissez l&rsquo;escalope à l&rsquo;aide d&rsquo;un rouleau à pâtisserie, éventuellement en la couvrant d&rsquo;un film alimentaire.",
-            "Passez l&rsquo;escalope successivement dans la farine, les œufs battus, puis la chapelure (type panko mélangée à un peu de paprika).",
-            "Faites frire l&rsquo;escalope dans de l&rsquo;huile chaude jusqu&rsquo;à ce qu&rsquo;elle soit dorée. Vous pouvez également la cuire au four à 200°C pendant 30 minutes.",
-            "Égouttez l&rsquo;escalope sur du papier absorbant.",
-            "Servez la milanaise avec une petite salade composée de roquette, de parmesan et de tomates cerises, puis pressez un filet de jus de citron par-dessus."
-        ],
-        "tags": [
-            "Italie",
-            "Pas cher"
         ],
         "isFeatured": false,
         "isFavorite": false,
