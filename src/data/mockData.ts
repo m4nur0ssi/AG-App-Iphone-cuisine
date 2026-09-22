@@ -2,11 +2,188 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 22/09/2026 08:39:52
- * Total: 743 recettes
+ * Dernière mise à jour: 22/09/2026 10:51:41
+ * Total: 746 recettes
  */
-export const exportSyncId = "1790066392658";
+export const exportSyncId = "1790074301845";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7891",
+        "title": "Mini Glaces Biscoff Légères",
+        "description": "Découvrez une astuce simple et rapide pour préparer de délicieuses mini glaces Biscoff. Avec de la crème fouettée allégée, chaque portion contient moins de 70 calories, parfait pour une pause gourmande et légère. Il suffit de mélanger, congeler et dé",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7670121433665785110\" data-video-id=\"7670121433665785110\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7670121433665785110\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème fouettée allégée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Biscoff fondu"
+            }
+        ],
+        "steps": [
+            "Mélangez la crème fouettée allégée avec le Biscoff fondu.",
+            "Congelez pendant 2 heures.",
+            "Dégustez."
+        ],
+        "tags": [
+            "Astuces",
+            "Healthy",
+            "minceur",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7889",
+        "title": "Mini pommes de terre croustillantes",
+        "description": "Découvrez une nouvelle façon de préparer des pommes de terre ultra-croustillantes à la friteuse à air, assaisonnées d&rsquo;un mélange d&rsquo;épices savoureux. Parfaites comme accompagnement ou en apéritif.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7685121288058277153\" data-video-id=\"7685121288058277153\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7685121288058277153\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             1,5 kg de pommes de terre (type Maris Piper)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe d&rsquo;huile (à ajouter avant la cuisson à la friteuse à air)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 cuillère à café de poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 cuillère à café de poudre d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 cuillère à café de poudre d&rsquo;oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de cumin"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil frais haché"
+            }
+        ],
+        "steps": [
+            "Laver et couper les pommes de terre en petits morceaux de taille égale.",
+            "Dans un grand bol, mélanger les pommes de terre coupées avec l&rsquo;huile, le sel, le poivre, la poudre d&rsquo;ail, la poudre d&rsquo;oignon, le paprika et le cumin, en s&rsquo;assurant que toutes les pommes de terre sont bien enrobées.",
+            "Préchauffer votre friteuse à air si nécessaire. Placer les pommes de terre assaisonnées dans le panier de la friteuse à air en une seule couche, ou en plusieurs fois si nécessaire pour éviter de surcharger.",
+            "Faire cuire les pommes de terre à la friteuse à air selon les instructions de votre appareil, en les secouant ou en les retournant à mi-cuisson, jusqu&rsquo;à ce qu&rsquo;elles soient dorées et croustillantes.",
+            "Servir immédiatement, garni de persil frais haché."
+        ],
+        "tags": [
+            "Accompagnements",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7887",
+        "title": "Jambon sauce Madère",
+        "description": "Découvrez une recette économique et délicieuse de jambon roulé en sauce Madère, agrémentée de champignons et d&rsquo;échalotes. Un plat réconfortant, parfait avec une purée maison.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7688058473606565152\" data-video-id=\"7688058473606565152\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7688058473606565152\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥓\n             18 petites tranches de jambon blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             250 g de champignons de Paris"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             3 échalotes"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             20 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 bonne cuillère à soupe de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             10 cl de Madère"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             35 cl d'eau"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cuillères à soupe de fond de veau ou de fond de champignons"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             20 cl de crème liquide, crème fraîche entière ou un mélange des deux"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil (pour la garniture, facultatif)"
+            }
+        ],
+        "steps": [
+            "Roulez les tranches de jambon sur elles-mêmes. Faites-les griller quelques minutes dans une grande sauteuse, sans matière grasse, en les retournant pour obtenir une belle coloration. Poivrez puis réservez.",
+            "Dans la même sauteuse, faites fondre le beurre. Ajoutez les champignons nettoyés et coupés ainsi que les échalotes ciselées. Faites revenir pendant 5 minutes en remuant de temps en temps.",
+            "Incorporez le concentré de tomate et poursuivez la cuisson pendant 1 minute.",
+            "Déglacez avec le Madère et laissez bouillonner pendant 2 à 3 minutes.",
+            "Diluez le fond de veau ou de champignons dans l&rsquo;eau, puis versez dans la sauteuse. Poivrez et laissez mijoter pendant 7 à 8 minutes.",
+            "Ajoutez la crème (liquide, fraîche entière ou un mélange des deux, selon votre préférence). Laissez mijoter à feu doux sans faire bouillir pendant quelques minutes, jusqu&rsquo;à ce que la sauce réduise et devienne onctueuse et nappante.",
+            "Remettez les roulés de jambon dans la sauce et laissez mijoter encore quelques minutes, juste le temps de les réchauffer. Servez avec une purée maison et, si vous le souhaitez, parsemez d&rsquo;un peu de persil ciselé."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "France",
+            "Pas cher",
+            "Sauces"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7853",
         "title": "Milanaise de poulet",
