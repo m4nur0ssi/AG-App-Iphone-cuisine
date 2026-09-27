@@ -2,64 +2,399 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 26/09/2026 17:01:05
+ * Dernière mise à jour: 27/09/2026 10:08:55
  * Total: 763 recettes
  */
-export const exportSyncId = "1790442065915";
+export const exportSyncId = "1790503735013";
 export const mockRecipes: Recipe[] = [
     {
-        "id": "7928",
-        "title": "Gaufres de fête foraine",
-        "description": "Une recette simple et gourmande pour préparer des gaufres moelleuses et croustillantes, parfaites pour un goûter ou un dessert qui rappellera l&rsquo;ambiance des fêtes foraines.",
-        "image": "/images/recipe-placeholder.jpg",
+        "id": "7904",
+        "title": "Crème brûlée banane façon panna cotta",
+        "description": "La douceur tropicale à tester d&rsquo;urgence ! Une texture fondante, une saveur de banane vanillée, un petit twist de rhum... et ce craquant du sucre caramélisé.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7904.webp&v=1790510341000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7689744025808653601\" data-video-id=\"7689744025808653601\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7689744025808653601\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7514705455067811094\" data-video-id=\"7514705455067811094\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7514705455067811094\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🌾\n             350g de farine"
+                "name": "🍌\n             3 bananes bien mûres"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             2 cuillères à soupe de cassonade"
+                "name": "🥣\n             Une noisette d&rsquo;huile de coco"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             1 pincée de sel"
+                "name": "🍯\n             Sucre roux (pour la compote et pour caraméliser)"
             },
             {
                 "quantity": "",
-                "name": "🧈\n             120g de beurre"
+                "name": "💧\n             Un trait de rhum ambré"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             15g de levure fraîche"
+                "name": "🥛\n             300 ml de crème"
             },
             {
                 "quantity": "",
-                "name": "🍯\n             1 sachet de sucre vanillé"
+                "name": "🥛\n             300 ml de crème de coco"
             },
             {
                 "quantity": "",
-                "name": "🥚\n             2 œufs"
+                "name": "🍦\n             1 gousse de vanille"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             50cl de lait tiède"
+                "name": "🥣\n             1 càc d'agar-agar"
             }
         ],
         "steps": [
-            "Délayer la levure dans le lait tiède, mélanger et réserver.",
-            "Dans un saladier, verser la farine, la cassonade et le sucre vanillé. Mélanger. Ajouter les jaunes d&rsquo;œufs. Mélanger.",
-            "Ajouter le mélange de lait et de levure. Mélanger. Ajouter le beurre fondu. Mélanger.",
-            "Battre le tout énergiquement jusqu&rsquo;à obtenir une pâte lisse.",
-            "Battre les blancs en neige avec le sel puis les incorporer délicatement à la pâte.",
-            "Couvrir et laisser reposer 2 heures.",
-            "Une fois la pâte bien levée, verser une louche sur les plaques chaudes du gaufrier sans mélanger. Cuire 3 minutes chaque tournée."
+            "Commencez par trancher une banane sur le flanc et récupérez sa chair.",
+            "Ne jetez surtout pas la peau, elle servira de récipient. Coupez la chair de la banane en petits morceaux.",
+            "Dans une poêle, déposez une noisette d&rsquo;huile de coco et faites revenir les morceaux de banane quelques minutes.",
+            "Ajoutez ensuite un peu de sucre roux. Laissez compoter et caraméliser les bananes.",
+            "Quand elles sont légèrement colorées, flambez avec une lichette de rhum ambré.",
+            "Ajoutez ensuite la crème et la crème de coco, la pulpe d&rsquo;une gousse de vanille et la gousse de vanille.",
+            "Laissez infuser environ cinq minutes à petite ébullition, puis ajoutez l&rsquo;agar-agar.",
+            "Mélangez bien, puis mixez jusqu&rsquo;à obtenir une belle crème bien lisse.",
+            "Déposez ensuite la crème dans les peaux de banane et placez-les au frais pendant au minimum deux heures.",
+            "Juste avant de servir, déposez un peu de sucre roux sur les bananes, puis caramélisez-le avec un chalumeau pour le rendre bien craquant."
+        ],
+        "tags": [
+            "Desserts",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7906",
+        "title": "Roulés à la Cannelle au Pain de Banane Faciles",
+        "description": "Découvrez une recette incroyablement simple pour préparer des roulés à la cannelle à base de pain de banane. Parfaits pour le petit-déjeuner ou une collation saine, ces roulés sont adaptés aux bébés à partir de 12 mois et peuvent être agrémentés d&rs",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7906.webp&v=1790510334000",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7222723474052189446\" data-video-id=\"7222723474052189446\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7222723474052189446\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍌\n             170g (1/2 tasse US) de banane mûre"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             160g (1 1/4 tasses US) de farine avec levure incorporée"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             30g (1/4 tasse US) de beurre fondu ou de beurre végétal"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Poudre de cannelle"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Sucre roux ou sucre de coco"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             POUR LE GLAÇAGE (facultatif - à éviter pour les jeunes bébés) :"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             2 cuillères à soupe de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             1-2 cuillères à soupe d&rsquo;eau"
+            }
+        ],
+        "steps": [
+            "1. Préchauffez votre four à 180°C.",
+            "2. Dans un bol moyen, écrasez les bananes à la fourchette, puis ajoutez la farine avec levure incorporée et mélangez le tout pour former une pâte. (Ajoutez progressivement plus de farine si la pâte est trop collante, mais essayez de ne pas en ajouter trop, sinon les roulés à la cannelle deviendront trop durs).",
+            "3. Sur une surface légèrement farinée, étalez la pâte en un rectangle (environ 1 centimètre d&rsquo;épaisseur).",
+            "4. Badigeonnez le dessus de beurre fondu, puis saupoudrez de cannelle et de sucre roux.",
+            "5. Coupez le rectangle en 7-8 bandes.",
+            "6. Roulez chaque bande individuelle pour former un roulé.",
+            "7. Ensuite, transférez-les dans un plat de cuisson beurré. Si désiré, assurez-vous que chaque morceau adhère bien aux autres. Faites cuire pendant 20-25 minutes, jusqu&rsquo;à ce que les bords commencent à dorer.",
+            "8. Retirez les roulés du four et laissez-les refroidir. Pendant qu&rsquo;ils refroidissent, préparez le glaçage. Pour faire le glaçage, mélangez le sucre glace avec 1-2 cuillères à soupe d&rsquo;eau, jusqu&rsquo;à obtenir la consistance désirée.",
+            "9. Bon appétit ! 😋"
+        ],
+        "tags": [
+            "Bébé",
+            "Dès 12 mois",
+            "Healthy",
+            "Pas cher",
+            "pâtisserie",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7908",
+        "title": "Pudding à la banane maison",
+        "description": "Un pudding à la banane doux et crémeux fait maison 🍌💛",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7908-1.webp&v=1790510327000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7533519791009713416\" data-video-id=\"7533519791009713416\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7533519791009713416\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             3 jaunes d&rsquo;œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             60g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             15g de fécule de maïs"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             10g de beurre non salé"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             300g de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 cuillère à café (5ml) d&rsquo;extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             200g de crème fraîche (crème à fouetter)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             20g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Biscuits aux œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍌\n             2-3 bananes"
+            }
+        ],
+        "steps": [
+            "Pour la crème pâtissière : Mélangez bien les jaunes d&rsquo;œufs, le sucre, la fécule et le lait jusqu&rsquo;à obtenir une consistance homogène.",
+            "Faites chauffer à feu doux en remuant constamment jusqu&rsquo;à épaississement. Retirez du feu, puis incorporez le beurre et l&rsquo;extrait de vanille.",
+            "Transférez dans un bol, couvrez d&rsquo;un film alimentaire au contact et laissez refroidir au réfrigérateur pendant environ 1 heure.",
+            "Pour le pudding à la banane : Fouettez la crème fraîche jusqu&rsquo;à obtenir une consistance souple et coulante. Détendez légèrement la crème pâtissière refroidie, puis mélangez les deux crèmes ensemble.",
+            "Dans un récipient, alternez les couches de biscuits aux œufs, de bananes et de crème. Laissez reposer au réfrigérateur pendant au moins 4 heures (c&rsquo;est encore meilleur le lendemain 😋)."
+        ],
+        "tags": [
+            "Desserts",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7910",
+        "title": "Cookies banana bread",
+        "description": "Découvrez une version cookie du célèbre banana bread, parfaite pour un dessert ou un goûter équilibré. Facile à préparer, cette recette est idéale si vous recevez du monde ou si vous cherchez de nouvelles idées gourmandes.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7910.webp&v=1790509661000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7633441785913609504\" data-video-id=\"7633441785913609504\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7633441785913609504\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍌\n             1 banane"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de sucre de coco, de canne ou de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             2 cuillères à soupe de beurre de cacahuète"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             130g de flocons d'avoine mixés ou de farine de votre choix"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             4 à 5 carrés de chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Facultatif : un peu de fleur de sel"
+            }
+        ],
+        "steps": [
+            "Commencez par écraser une banane en purée.",
+            "Mélangez-la avec un œuf, du sucre de coco, du beurre de cacahuète, des flocons d&rsquo;avoine mixés et du chocolat noir concassé.",
+            "Formez ensuite des petits tas sur une plaque de cuisson.",
+            "Enfournez pendant 12 minutes à 180°C.",
+            "Après cuisson, ajoutez un peu de fleur de sel."
+        ],
+        "tags": [
+            "Healthy",
+            "pâtisserie",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7912",
+        "title": "Plaisir Banane Express",
+        "description": "Oubliez tout ce que vous savez sur les desserts ! Voici une recette magique : ultra rapide, incroyablement crémeuse et sans cuisson au four.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7912.webp&v=1790509649000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7597163794170645782\" data-video-id=\"7597163794170645782\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7597163794170645782\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍌\n             3 bananes bien mûres"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             40g de beurre (2 cuillères à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1 cuillère à soupe de jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1/3 cuillère à café de curcuma (optionnel, pour la couleur)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 jaunes d'œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             25g de fécule de maïs (2 cuillères à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             200ml de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             250ml de crème liquide 33-38% (bien froide)"
+            }
+        ],
+        "steps": [
+            "Écrasez les bananes, mélangez avec le beurre, le citron et le curcuma.",
+            "Ajoutez les jaunes d'œufs, la fécule et le lait. Mixez bien.",
+            "Faites épaissir à feu doux, laissez refroidir.",
+            "Incorporez délicatement la crème liquide montée en chantilly.",
+            "Servez et régalez-vous !"
+        ],
+        "tags": [
+            "Desserts"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7914",
+        "title": "Cake salé aux tomates séchées et feta",
+        "description": "Un cake salé facile et délicieux aux tomates séchées, feta, gruyère et basilic, parfait pour l&rsquo;apéritif.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7914.webp&v=1790508765000",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7333647251656412449\" data-video-id=\"7333647251656412449\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7333647251656412449\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍅\n             140 g de tomates séchées"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             180 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100 g de feta"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             50 g de gruyère râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             12 cl de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             6 cl d&rsquo;huile (d&rsquo;olive ou neutre)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 sachet de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 bouquet de basilic (frais ou congelé)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            }
+        ],
+        "steps": [
+            "Coupez 100 g de feta en cubes et 140 g de tomates séchées en petits morceaux.",
+            "Dans un saladier, mélangez 180 g de farine, 1 sachet de levure chimique, du sel et du poivre.",
+            "Dans un autre récipient, cassez 3 œufs et battez-les.",
+            "Versez les œufs battus et 6 cl d&rsquo;huile (d&rsquo;olive ou neutre) dans la préparation sèche. Mélangez. Dès que la pâte commence à épaissir, ajoutez 12 cl de lait et mélangez à nouveau.",
+            "Incorporez 50 g de gruyère râpé, du basilic (frais ou congelé), la feta coupée et les tomates séchées.",
+            "Mélangez le tout à l&rsquo;aide d&rsquo;une spatule. Versez la préparation dans un moule à cake (environ 27 cm sur 9 cm) chemisé de papier cuisson.",
+            "Enfournez à 180°C pendant 30 minutes.",
+            "Laissez tiédir avant de déguster."
         ],
         "tags": [
             "pâtisserie"
@@ -69,485 +404,10 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "7926",
-        "title": "Tourte au poulet et aux poireaux à la poêle",
-        "description": "Accueillez l&rsquo;automne avec cette tourte réconfortante au poulet et aux poireaux, préparée directement à la poêle. L&rsquo;auteur la présente comme le plat gourmand idéal pour les soirées fraîches, facile à réaliser et incroyablement savoureuse a",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7689129072290450721\" data-video-id=\"7689129072290450721\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7689129072290450721\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             400 g de dés de poulet ou de hauts de cuisses de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🍐\n             1 gros poireau émincé"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             3 gousses d'ail finement hachées"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 pincée de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1 pincée de poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à café d'origan"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             1 cuillère à soupe de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             200 ml de crème liquide"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             200 ml de bouillon de volaille dilué"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             1 pâte feuilletée"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 jaune d'œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d'olive"
-            }
-        ],
-        "steps": [
-            "Dans une poêle chaude, versez un filet d'huile d'olive.",
-            "Ajoutez le poireau émincé ainsi que l&rsquo;ail. Laissez revenir jusqu'à ce que les poireaux soient fondants.",
-            "Ajoutez ensuite le poulet coupé en morceaux, le paprika, le sel, le poivre, l'origan ainsi que la farine. Mélangez et faites revenir pendant 8 minutes.",
-            "Versez ensuite la crème ainsi que le bouillon de volaille. Laissez mijoter pendant 5 minutes.",
-            "Retirez la poêle du feu et ajoutez des morceaux de pâte feuilletée sur la préparation afin de former une tourte.",
-            "Badigeonnez la pâte avec le jaune d'œuf, puis enfournez pendant 25 minutes à 200 °C.",
-            "Une fois la pâte bien dorée, retirez du four et servez."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "France",
-            "recettefacile",
-            "tarte"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7924",
-        "title": "Gratin de pommes de terre à la sauce bolognaise",
-        "description": "Un gratin réconfortant et savoureux composé d&rsquo;une couche de purée de pommes de terre crémeuse, d&rsquo;une riche sauce bolognaise à base de viande hachée et de légumes, le tout gratiné au four avec de la mozzarella fondante.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7686429205126581536\" data-video-id=\"7686429205126581536\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7686429205126581536\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍎\n             Pommes de terre - 1 kg"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Viande hachée - 400 g"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Oignon - 1"
-            },
-            {
-                "quantity": "",
-                "name": "🥕\n             Carotte - 1"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Branche de céleri - 1"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Ail - 2 gousses"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Concentré de tomate - 1 cuillère à soupe"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Tomates concassées - 400 g"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Mozzarella - 200 g"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             Beurre - 40 g"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Lait - 50 ml"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel et poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Sucre"
-            }
-        ],
-        "steps": [
-            "Faire bouillir les pommes de terre jusqu&rsquo;à ce qu&rsquo;elles soient tendres.",
-            "Les écraser en purée avec le beurre, le lait et 100 g de mozzarella.",
-            "Couper finement l&rsquo;oignon, la carotte et le céleri en dés et les faire revenir jusqu&rsquo;à ce qu&rsquo;ils soient tendres.",
-            "Ajouter l&rsquo;ail et la viande hachée et cuire jusqu&rsquo;à ce qu&rsquo;elle soit dorée.",
-            "Ajouter le concentré de tomate, les tomates concassées, le paprika, le sel, le poivre et un peu de sucre.",
-            "Bien mélanger et laisser mijoter jusqu&rsquo;à ce que la sauce épaississe légèrement.",
-            "Étaler la purée de pommes de terre dans un plat allant au four, ajouter la sauce bolognaise par-dessus et terminer avec les 100 g de mozzarella restantes.",
-            "Faire cuire au four à 200°C pendant 10 minutes, jusqu&rsquo;à ce que le fromage soit fondu et doré."
-        ],
-        "tags": [
-            "facile",
-            "Gratins",
-            "Italie",
-            "réconfortant"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7922",
-        "title": "Hachis parmentier de patate douce",
-        "description": "Découvrez une version revisitée du hachis parmentier, préparée avec de la patate douce pour une saveur encore meilleure. Cette recette est simple et rapide à réaliser, parfaite pour un repas réconfortant.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7433831718781537568\" data-video-id=\"7433831718781537568\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7433831718781537568\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥔\n             2 grosses patates douces"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Environ 15 cl de crème fraîche"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             Beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥖\n             Chapelure"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             350 g de viande hachée"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 gousses d'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             2 tomates"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             2 cuillères à soupe de sauce tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Un filet de sriracha"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             1 cuillère à soupe de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             2 cuillères à soupe de parmesan"
-            }
-        ],
-        "steps": [
-            "Épluchez les patates douces et coupez-les en petits morceaux.",
-            "Faites-les cuire dans de l&rsquo;eau bouillante pendant 15 minutes.",
-            "Pendant ce temps, dans une poêle, faites revenir l&rsquo;ail, l&rsquo;oignon, la viande hachée et les morceaux de tomates.",
-            "Laissez cuire à feu moyen pendant 5 minutes.",
-            "Ajoutez ensuite la sriracha, la farine et le parmesan.",
-            "Laissez cuire à feu doux pendant une dizaine de minutes.",
-            "Une fois les patates cuites, écrasez-les. Ajoutez la crème fraîche et le beurre pour faire la purée.",
-            "Dans un plat, déposez la viande au fond.",
-            "Ajoutez la purée par-dessus.",
-            "Faites des traces sur la purée avec une fourchette et saupoudrez de chapelure.",
-            "Enfournez à 200°C pendant 20 minutes."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "épicé",
-            "France",
-            "Gratins",
-            "Pas cher"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7920",
-        "title": "Cornets de bœuf croustillants",
-        "description": "Des cornets de tortilla croustillants garnis de bœuf épicé et juteux, le tout surmonté de mozzarella fondue 🧀🔥. L&rsquo;en-cas croustillant parfait ou un dîner rapide que tout le monde adorera. Une seule bouchée et vous serez conquis 🤤.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7621164672254872834\" data-video-id=\"7621164672254872834\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7621164672254872834\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             6 tortillas (25-30 cm)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Cure-dents"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Fromage mozzarella, 100 g"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil haché, 1 cuillère à café"
-            },
-            {
-                "quantity": "",
-                "name": "🥩\n             Bœuf haché, 400 g"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon jaune, finement haché"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Ail, 4 gousses, hachées"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivron rouge, coupé en dés (environ 1 petit)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivron vert, coupé en dés (environ 1 petit)"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Concentré de tomate, 1 grande cuillère à soupe"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Lait de soja, 100 ml (environ ½ tasse)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika, 1 cuillère à soupe"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Poudre de chili, 1 cuillère à café"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Curcuma, 1 cuillère à café"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Ail en poudre, 1 cuillère à café"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre noir, 1 cuillère à café"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Garam masala, 1 cuillère à café"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel, ½ cuillère à café"
-            }
-        ],
-        "steps": [
-            "1. Préparer la garniture au bœuf : Faire chauffer un peu d&rsquo;huile dans une poêle à feu moyen. Ajouter l&rsquo;oignon et faire revenir jusqu&rsquo;à ce qu&rsquo;il soit tendre.",
-            "Ajouter l&rsquo;ail haché et cuire 30 secondes jusqu&rsquo;à ce qu&rsquo;il soit parfumé.",
-            "Ajouter le bœuf haché et cuire jusqu&rsquo;à ce qu&rsquo;il soit doré, en le brisant pendant la cuisson.",
-            "Incorporer le concentré de tomate, le lait de soja, les poivrons coupés en dés et tous les assaisonnements. Cuire jusqu&rsquo;à ce que le mélange épaississe légèrement. Retirer du feu et laisser refroidir un peu.",
-            "2. Préparer les cornets : Couper les tortillas en deux. Rouler chaque moitié en forme de cornet et fixer le bord avec un cure-dent.",
-            "Méthode de cuisson au four :",
-            "1. Préchauffer le four à 190°C.",
-            "2. Placer les cornets sur une plaque de cuisson recouverte de papier sulfurisé. Vaporiser légèrement d&rsquo;huile de cuisson.",
-            "3. Cuire au four pendant 10 à 12 minutes jusqu&rsquo;à ce qu&rsquo;ils soient croustillants et dorés.",
-            "4. Remplir chaque cornet avec la garniture au bœuf et recouvrir de fromage mozzarella.",
-            "5. Remettre au four pendant 5 minutes jusqu&rsquo;à ce que le fromage fonde.",
-            "6. Garnir de persil et servir chaud.",
-            "Méthode de cuisson à la friteuse à air chaud :",
-            "1. Préchauffer la friteuse à air chaud à 180°C.",
-            "2. Vaporiser légèrement les cornets d&rsquo;huile de cuisson et les placer dans le panier de la friteuse à air chaud. S&rsquo;assurer qu&rsquo;ils ne se touchent pas.",
-            "3. Cuire à la friteuse à air chaud pendant 6 à 8 minutes jusqu&rsquo;à ce qu&rsquo;ils soient croustillants et dorés.",
-            "4. Remplir délicatement chaque cornet avec la garniture au bœuf et recouvrir de fromage mozzarella.",
-            "5. Cuire à nouveau à la friteuse à air chaud pendant 3 à 4 minutes jusqu&rsquo;à ce que le fromage fonde.",
-            "6. Garnir de persil et servir chaud."
-        ],
-        "tags": [
-            "épicé",
-            "Mexique",
-            "Pas cher",
-            "Sandwichs",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7918",
-        "title": "Raviolis au poulet piquants au curry rouge et lait de coco",
-        "description": "Découvrez une recette de raviolis au poulet, relevés par une sauce onctueuse au curry rouge thaï et lait de coco. Faciles et rapides à préparer, ces raviolis sont d&rsquo;abord dorés pour un côté croustillant, puis terminent leur cuisson à la vapeur ",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7618543369718959382\" data-video-id=\"7618543369718959382\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7618543369718959382\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             1 paquet de pâte à ravioles fraîche"
-            },
-            {
-                "quantity": "",
-                "name": "🍗\n             300g de poulet haché"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             75g d'oignon rouge finement haché"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             4 gousses d'ail finement hachées"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 morceau de gingembre frais râpé"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 petite botte de ciboulette ciselée"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             2 cuillères à soupe de sauce soja"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 cuillère à soupe d'huile de sésame"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             1 cuillère à soupe d'eau"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             40cl de lait de coco bio KoRo France"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 petite cuillère à café de pâte de curry rouge thaï"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à soupe de sauce nuoc-mâm"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1 cuillère à soupe de jus de citron vert"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 cébettes finement hachées"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile neutre (pour la cuisson)"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Coriandre fraîche (pour le service)"
-            }
-        ],
-        "steps": [
-            "Mélangez le poulet haché, l'oignon rouge, l'ail, le gingembre, la ciboulette, la sauce soja, l'huile de sésame et l'eau dans un bol jusqu&rsquo;à obtenir une farce homogène.",
-            "Façonnez la farce en petites boules de la taille d&rsquo;une grosse noix.",
-            "Découpez la pâte à ravioles en carrés d'environ 6 à 7 cm et humidifiez-les légèrement avec un peu d&rsquo;eau.",
-            "Posez un carré de pâte sur chaque boule de farce et resserrez la pâte autour pour former un ravioli ouvert, laissant la farce visible sur le dessus.",
-            "Chauffez un filet d&rsquo;huile neutre dans une poêle à feu moyen. Déposez les raviolis côté farce dans la poêle et laissez dorer pendant environ 1 minute 30 sans les bouger. Réservez-les.",
-            "Dans la même poêle, faites revenir la pâte de curry rouge pendant 20 à 30 secondes. Ajoutez les blancs des cébettes et laissez cuire quelques secondes. Versez le lait de coco, la sauce nuoc-mâm et le jus de citron, puis mélangez bien.",
-            "Remettez les raviolis dans la sauce, côté pâte vers le bas (farce vers le haut). Couvrez et laissez cuire pendant 5 minutes pour terminer la cuisson à la vapeur.",
-            "Parsemez du vert des cébettes et de coriandre fraîche ciselée au moment de servir."
-        ],
-        "tags": [
-            "Asie",
-            "épicé",
-            "pates"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "7916",
         "title": "Cakes salés variés (8 versions avec une seule pâte)",
         "description": "Découvrez une recette simple et rapide pour préparer 8 cakes salés différents à partir d&rsquo;une seule pâte de base. Parfaits pour vos apéritifs dînatoires ou vos pique-niques, ces cakes sont faciles à personnaliser avec une multitude de garnitures",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7916.webp&v=1790508751000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -680,52 +540,241 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "7914",
-        "title": "Cake salé aux tomates séchées et feta",
-        "description": "Un cake salé facile et délicieux aux tomates séchées, feta, gruyère et basilic, parfait pour l&rsquo;apéritif.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "patisserie",
+        "id": "7918",
+        "title": "Raviolis au poulet piquants au curry rouge et lait de coco",
+        "description": "Découvrez une recette de raviolis au poulet, relevés par une sauce onctueuse au curry rouge thaï et lait de coco. Faciles et rapides à préparer, ces raviolis sont d&rsquo;abord dorés pour un côté croustillant, puis terminent leur cuisson à la vapeur ",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7918.webp&v=1790507837000",
+        "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7333647251656412449\" data-video-id=\"7333647251656412449\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7333647251656412449\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7618543369718959382\" data-video-id=\"7618543369718959382\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7618543369718959382\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🍅\n             140 g de tomates séchées"
+                "name": "🥣\n             1 paquet de pâte à ravioles fraîche"
             },
             {
                 "quantity": "",
-                "name": "🌾\n             180 g de farine"
+                "name": "🍗\n             300g de poulet haché"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             100 g de feta"
+                "name": "🧅\n             75g d'oignon rouge finement haché"
             },
             {
                 "quantity": "",
-                "name": "🧀\n             50 g de gruyère râpé"
+                "name": "🧄\n             4 gousses d'ail finement hachées"
             },
             {
                 "quantity": "",
-                "name": "🥚\n             3 œufs"
+                "name": "🧂\n             1 morceau de gingembre frais râpé"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             12 cl de lait"
+                "name": "🌿\n             1 petite botte de ciboulette ciselée"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             6 cl d&rsquo;huile (d&rsquo;olive ou neutre)"
+                "name": "🥫\n             2 cuillères à soupe de sauce soja"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             1 sachet de levure chimique"
+                "name": "🍾\n             1 cuillère à soupe d'huile de sésame"
             },
             {
                 "quantity": "",
-                "name": "🌿\n             1 bouquet de basilic (frais ou congelé)"
+                "name": "💧\n             1 cuillère à soupe d'eau"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             40cl de lait de coco bio KoRo France"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 petite cuillère à café de pâte de curry rouge thaï"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de sauce nuoc-mâm"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1 cuillère à soupe de jus de citron vert"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cébettes finement hachées"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile neutre (pour la cuisson)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Coriandre fraîche (pour le service)"
+            }
+        ],
+        "steps": [
+            "Mélangez le poulet haché, l'oignon rouge, l'ail, le gingembre, la ciboulette, la sauce soja, l'huile de sésame et l'eau dans un bol jusqu&rsquo;à obtenir une farce homogène.",
+            "Façonnez la farce en petites boules de la taille d&rsquo;une grosse noix.",
+            "Découpez la pâte à ravioles en carrés d'environ 6 à 7 cm et humidifiez-les légèrement avec un peu d&rsquo;eau.",
+            "Posez un carré de pâte sur chaque boule de farce et resserrez la pâte autour pour former un ravioli ouvert, laissant la farce visible sur le dessus.",
+            "Chauffez un filet d&rsquo;huile neutre dans une poêle à feu moyen. Déposez les raviolis côté farce dans la poêle et laissez dorer pendant environ 1 minute 30 sans les bouger. Réservez-les.",
+            "Dans la même poêle, faites revenir la pâte de curry rouge pendant 20 à 30 secondes. Ajoutez les blancs des cébettes et laissez cuire quelques secondes. Versez le lait de coco, la sauce nuoc-mâm et le jus de citron, puis mélangez bien.",
+            "Remettez les raviolis dans la sauce, côté pâte vers le bas (farce vers le haut). Couvrez et laissez cuire pendant 5 minutes pour terminer la cuisson à la vapeur.",
+            "Parsemez du vert des cébettes et de coriandre fraîche ciselée au moment de servir."
+        ],
+        "tags": [
+            "Asie",
+            "épicé",
+            "pates"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7920",
+        "title": "Cornets de bœuf croustillants",
+        "description": "Des cornets de tortilla croustillants garnis de bœuf épicé et juteux, le tout surmonté de mozzarella fondue 🧀🔥. L&rsquo;en-cas croustillant parfait ou un dîner rapide que tout le monde adorera. Une seule bouchée et vous serez conquis 🤤.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7920.webp&v=1790507824000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7621164672254872834\" data-video-id=\"7621164672254872834\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7621164672254872834\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             6 tortillas (25-30 cm)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cure-dents"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Fromage mozzarella, 100 g"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil haché, 1 cuillère à café"
+            },
+            {
+                "quantity": "",
+                "name": "🥩\n             Bœuf haché, 400 g"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon jaune, finement haché"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail, 4 gousses, hachées"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivron rouge, coupé en dés (environ 1 petit)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivron vert, coupé en dés (environ 1 petit)"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Concentré de tomate, 1 grande cuillère à soupe"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Lait de soja, 100 ml (environ ½ tasse)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika, 1 cuillère à soupe"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Poudre de chili, 1 cuillère à café"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Curcuma, 1 cuillère à café"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail en poudre, 1 cuillère à café"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre noir, 1 cuillère à café"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Garam masala, 1 cuillère à café"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel, ½ cuillère à café"
+            }
+        ],
+        "steps": [
+            "1. Préparer la garniture au bœuf : Faire chauffer un peu d&rsquo;huile dans une poêle à feu moyen. Ajouter l&rsquo;oignon et faire revenir jusqu&rsquo;à ce qu&rsquo;il soit tendre.",
+            "Ajouter l&rsquo;ail haché et cuire 30 secondes jusqu&rsquo;à ce qu&rsquo;il soit parfumé.",
+            "Ajouter le bœuf haché et cuire jusqu&rsquo;à ce qu&rsquo;il soit doré, en le brisant pendant la cuisson.",
+            "Incorporer le concentré de tomate, le lait de soja, les poivrons coupés en dés et tous les assaisonnements. Cuire jusqu&rsquo;à ce que le mélange épaississe légèrement. Retirer du feu et laisser refroidir un peu.",
+            "2. Préparer les cornets : Couper les tortillas en deux. Rouler chaque moitié en forme de cornet et fixer le bord avec un cure-dent.",
+            "Méthode de cuisson au four :",
+            "1. Préchauffer le four à 190°C.",
+            "2. Placer les cornets sur une plaque de cuisson recouverte de papier sulfurisé. Vaporiser légèrement d&rsquo;huile de cuisson.",
+            "3. Cuire au four pendant 10 à 12 minutes jusqu&rsquo;à ce qu&rsquo;ils soient croustillants et dorés.",
+            "4. Remplir chaque cornet avec la garniture au bœuf et recouvrir de fromage mozzarella.",
+            "5. Remettre au four pendant 5 minutes jusqu&rsquo;à ce que le fromage fonde.",
+            "6. Garnir de persil et servir chaud.",
+            "Méthode de cuisson à la friteuse à air chaud :",
+            "1. Préchauffer la friteuse à air chaud à 180°C.",
+            "2. Vaporiser légèrement les cornets d&rsquo;huile de cuisson et les placer dans le panier de la friteuse à air chaud. S&rsquo;assurer qu&rsquo;ils ne se touchent pas.",
+            "3. Cuire à la friteuse à air chaud pendant 6 à 8 minutes jusqu&rsquo;à ce qu&rsquo;ils soient croustillants et dorés.",
+            "4. Remplir délicatement chaque cornet avec la garniture au bœuf et recouvrir de fromage mozzarella.",
+            "5. Cuire à nouveau à la friteuse à air chaud pendant 3 à 4 minutes jusqu&rsquo;à ce que le fromage fonde.",
+            "6. Garnir de persil et servir chaud."
+        ],
+        "tags": [
+            "épicé",
+            "Mexique",
+            "Pas cher",
+            "Sandwichs",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7922",
+        "title": "Hachis parmentier de patate douce",
+        "description": "Découvrez une version revisitée du hachis parmentier, préparée avec de la patate douce pour une saveur encore meilleure. Cette recette est simple et rapide à réaliser, parfaite pour un repas réconfortant.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7922.webp&v=1790506908000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7433831718781537568\" data-video-id=\"7433831718781537568\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7433831718781537568\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥔\n             2 grosses patates douces"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Environ 15 cl de crème fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre"
             },
             {
                 "quantity": "",
@@ -733,343 +782,294 @@ export const mockRecipes: Recipe[] = [
             },
             {
                 "quantity": "",
-                "name": "🌶️\n             Poivre"
+                "name": "🥖\n             Chapelure"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             350 g de viande hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             2 tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             2 cuillères à soupe de sauce tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Un filet de sriracha"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             1 cuillère à soupe de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             2 cuillères à soupe de parmesan"
             }
         ],
         "steps": [
-            "Coupez 100 g de feta en cubes et 140 g de tomates séchées en petits morceaux.",
-            "Dans un saladier, mélangez 180 g de farine, 1 sachet de levure chimique, du sel et du poivre.",
-            "Dans un autre récipient, cassez 3 œufs et battez-les.",
-            "Versez les œufs battus et 6 cl d&rsquo;huile (d&rsquo;olive ou neutre) dans la préparation sèche. Mélangez. Dès que la pâte commence à épaissir, ajoutez 12 cl de lait et mélangez à nouveau.",
-            "Incorporez 50 g de gruyère râpé, du basilic (frais ou congelé), la feta coupée et les tomates séchées.",
-            "Mélangez le tout à l&rsquo;aide d&rsquo;une spatule. Versez la préparation dans un moule à cake (environ 27 cm sur 9 cm) chemisé de papier cuisson.",
-            "Enfournez à 180°C pendant 30 minutes.",
-            "Laissez tiédir avant de déguster."
+            "Épluchez les patates douces et coupez-les en petits morceaux.",
+            "Faites-les cuire dans de l&rsquo;eau bouillante pendant 15 minutes.",
+            "Pendant ce temps, dans une poêle, faites revenir l&rsquo;ail, l&rsquo;oignon, la viande hachée et les morceaux de tomates.",
+            "Laissez cuire à feu moyen pendant 5 minutes.",
+            "Ajoutez ensuite la sriracha, la farine et le parmesan.",
+            "Laissez cuire à feu doux pendant une dizaine de minutes.",
+            "Une fois les patates cuites, écrasez-les. Ajoutez la crème fraîche et le beurre pour faire la purée.",
+            "Dans un plat, déposez la viande au fond.",
+            "Ajoutez la purée par-dessus.",
+            "Faites des traces sur la purée avec une fourchette et saupoudrez de chapelure.",
+            "Enfournez à 200°C pendant 20 minutes."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "épicé",
+            "France",
+            "Gratins",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7924",
+        "title": "Gratin de pommes de terre à la sauce bolognaise",
+        "description": "Un gratin réconfortant et savoureux composé d&rsquo;une couche de purée de pommes de terre crémeuse, d&rsquo;une riche sauce bolognaise à base de viande hachée et de légumes, le tout gratiné au four avec de la mozzarella fondante.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7924-1.webp&v=1790506895000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7686429205126581536\" data-video-id=\"7686429205126581536\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7686429205126581536\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             Pommes de terre - 1 kg"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Viande hachée - 400 g"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignon - 1"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             Carotte - 1"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Branche de céleri - 1"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail - 2 gousses"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Concentré de tomate - 1 cuillère à soupe"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomates concassées - 400 g"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Mozzarella - 200 g"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre - 40 g"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Lait - 50 ml"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel et poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Sucre"
+            }
+        ],
+        "steps": [
+            "Faire bouillir les pommes de terre jusqu&rsquo;à ce qu&rsquo;elles soient tendres.",
+            "Les écraser en purée avec le beurre, le lait et 100 g de mozzarella.",
+            "Couper finement l&rsquo;oignon, la carotte et le céleri en dés et les faire revenir jusqu&rsquo;à ce qu&rsquo;ils soient tendres.",
+            "Ajouter l&rsquo;ail et la viande hachée et cuire jusqu&rsquo;à ce qu&rsquo;elle soit dorée.",
+            "Ajouter le concentré de tomate, les tomates concassées, le paprika, le sel, le poivre et un peu de sucre.",
+            "Bien mélanger et laisser mijoter jusqu&rsquo;à ce que la sauce épaississe légèrement.",
+            "Étaler la purée de pommes de terre dans un plat allant au four, ajouter la sauce bolognaise par-dessus et terminer avec les 100 g de mozzarella restantes.",
+            "Faire cuire au four à 200°C pendant 10 minutes, jusqu&rsquo;à ce que le fromage soit fondu et doré."
+        ],
+        "tags": [
+            "facile",
+            "Gratins",
+            "Italie",
+            "réconfortant"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7926",
+        "title": "Tourte au poulet et aux poireaux à la poêle",
+        "description": "Accueillez l&rsquo;automne avec cette tourte réconfortante au poulet et aux poireaux, préparée directement à la poêle. L&rsquo;auteur la présente comme le plat gourmand idéal pour les soirées fraîches, facile à réaliser et incroyablement savoureuse a",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7926.webp&v=1790505988000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7689129072290450721\" data-video-id=\"7689129072290450721\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7689129072290450721\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             400 g de dés de poulet ou de hauts de cuisses de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🍐\n             1 gros poireau émincé"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             3 gousses d'ail finement hachées"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 pincée de poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café d'origan"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             1 cuillère à soupe de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             200 ml de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             200 ml de bouillon de volaille dilué"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             1 pâte feuilletée"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 jaune d'œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d'olive"
+            }
+        ],
+        "steps": [
+            "Dans une poêle chaude, versez un filet d'huile d'olive.",
+            "Ajoutez le poireau émincé ainsi que l&rsquo;ail. Laissez revenir jusqu'à ce que les poireaux soient fondants.",
+            "Ajoutez ensuite le poulet coupé en morceaux, le paprika, le sel, le poivre, l'origan ainsi que la farine. Mélangez et faites revenir pendant 8 minutes.",
+            "Versez ensuite la crème ainsi que le bouillon de volaille. Laissez mijoter pendant 5 minutes.",
+            "Retirez la poêle du feu et ajoutez des morceaux de pâte feuilletée sur la préparation afin de former une tourte.",
+            "Badigeonnez la pâte avec le jaune d'œuf, puis enfournez pendant 25 minutes à 200 °C.",
+            "Une fois la pâte bien dorée, retirez du four et servez."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "France",
+            "recettefacile",
+            "tarte"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7928",
+        "title": "Gaufres de fête foraine",
+        "description": "Une recette simple et gourmande pour préparer des gaufres moelleuses et croustillantes, parfaites pour un goûter ou un dessert qui rappellera l&rsquo;ambiance des fêtes foraines.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7928.webp&v=1790505975000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7689744025808653601\" data-video-id=\"7689744025808653601\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7689744025808653601\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             350g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cuillères à soupe de cassonade"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             120g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             15g de levure fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 sachet de sucre vanillé"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             50cl de lait tiède"
+            }
+        ],
+        "steps": [
+            "Délayer la levure dans le lait tiède, mélanger et réserver.",
+            "Dans un saladier, verser la farine, la cassonade et le sucre vanillé. Mélanger. Ajouter les jaunes d&rsquo;œufs. Mélanger.",
+            "Ajouter le mélange de lait et de levure. Mélanger. Ajouter le beurre fondu. Mélanger.",
+            "Battre le tout énergiquement jusqu&rsquo;à obtenir une pâte lisse.",
+            "Battre les blancs en neige avec le sel puis les incorporer délicatement à la pâte.",
+            "Couvrir et laisser reposer 2 heures.",
+            "Une fois la pâte bien levée, verser une louche sur les plaques chaudes du gaufrier sans mélanger. Cuire 3 minutes chaque tournée."
         ],
         "tags": [
             "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7912",
-        "title": "Plaisir Banane Express",
-        "description": "Oubliez tout ce que vous savez sur les desserts ! Voici une recette magique : ultra rapide, incroyablement crémeuse et sans cuisson au four.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7597163794170645782\" data-video-id=\"7597163794170645782\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7597163794170645782\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍌\n             3 bananes bien mûres"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             40g de beurre (2 cuillères à soupe)"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1 cuillère à soupe de jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1/3 cuillère à café de curcuma (optionnel, pour la couleur)"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             2 jaunes d'œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             25g de fécule de maïs (2 cuillères à soupe)"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             200ml de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             250ml de crème liquide 33-38% (bien froide)"
-            }
-        ],
-        "steps": [
-            "Écrasez les bananes, mélangez avec le beurre, le citron et le curcuma.",
-            "Ajoutez les jaunes d'œufs, la fécule et le lait. Mixez bien.",
-            "Faites épaissir à feu doux, laissez refroidir.",
-            "Incorporez délicatement la crème liquide montée en chantilly.",
-            "Servez et régalez-vous !"
-        ],
-        "tags": [
-            "Desserts"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7910",
-        "title": "Cookies banana bread",
-        "description": "Découvrez une version cookie du célèbre banana bread, parfaite pour un dessert ou un goûter équilibré. Facile à préparer, cette recette est idéale si vous recevez du monde ou si vous cherchez de nouvelles idées gourmandes.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7633441785913609504\" data-video-id=\"7633441785913609504\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7633441785913609504\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍌\n             1 banane"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à soupe de sucre de coco, de canne ou de miel"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             2 cuillères à soupe de beurre de cacahuète"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             130g de flocons d'avoine mixés ou de farine de votre choix"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à soupe de levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             4 à 5 carrés de chocolat noir"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Facultatif : un peu de fleur de sel"
-            }
-        ],
-        "steps": [
-            "Commencez par écraser une banane en purée.",
-            "Mélangez-la avec un œuf, du sucre de coco, du beurre de cacahuète, des flocons d&rsquo;avoine mixés et du chocolat noir concassé.",
-            "Formez ensuite des petits tas sur une plaque de cuisson.",
-            "Enfournez pendant 12 minutes à 180°C.",
-            "Après cuisson, ajoutez un peu de fleur de sel."
-        ],
-        "tags": [
-            "Healthy",
-            "pâtisserie",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7908",
-        "title": "Pudding à la banane maison",
-        "description": "Un pudding à la banane doux et crémeux fait maison 🍌💛",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7533519791009713416\" data-video-id=\"7533519791009713416\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7533519791009713416\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             3 jaunes d&rsquo;œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             60g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             15g de fécule de maïs"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             10g de beurre non salé"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             300g de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             1 cuillère à café (5ml) d&rsquo;extrait de vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             200g de crème fraîche (crème à fouetter)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             20g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Biscuits aux œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🍌\n             2-3 bananes"
-            }
-        ],
-        "steps": [
-            "Pour la crème pâtissière : Mélangez bien les jaunes d&rsquo;œufs, le sucre, la fécule et le lait jusqu&rsquo;à obtenir une consistance homogène.",
-            "Faites chauffer à feu doux en remuant constamment jusqu&rsquo;à épaississement. Retirez du feu, puis incorporez le beurre et l&rsquo;extrait de vanille.",
-            "Transférez dans un bol, couvrez d&rsquo;un film alimentaire au contact et laissez refroidir au réfrigérateur pendant environ 1 heure.",
-            "Pour le pudding à la banane : Fouettez la crème fraîche jusqu&rsquo;à obtenir une consistance souple et coulante. Détendez légèrement la crème pâtissière refroidie, puis mélangez les deux crèmes ensemble.",
-            "Dans un récipient, alternez les couches de biscuits aux œufs, de bananes et de crème. Laissez reposer au réfrigérateur pendant au moins 4 heures (c&rsquo;est encore meilleur le lendemain 😋)."
-        ],
-        "tags": [
-            "Desserts",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7906",
-        "title": "Roulés à la Cannelle au Pain de Banane Faciles",
-        "description": "Découvrez une recette incroyablement simple pour préparer des roulés à la cannelle à base de pain de banane. Parfaits pour le petit-déjeuner ou une collation saine, ces roulés sont adaptés aux bébés à partir de 12 mois et peuvent être agrémentés d&rs",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "patisserie",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7222723474052189446\" data-video-id=\"7222723474052189446\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7222723474052189446\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍌\n             170g (1/2 tasse US) de banane mûre"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             160g (1 1/4 tasses US) de farine avec levure incorporée"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             30g (1/4 tasse US) de beurre fondu ou de beurre végétal"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Poudre de cannelle"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Sucre roux ou sucre de coco"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             POUR LE GLAÇAGE (facultatif - à éviter pour les jeunes bébés) :"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             2 cuillères à soupe de sucre glace"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             1-2 cuillères à soupe d&rsquo;eau"
-            }
-        ],
-        "steps": [
-            "1. Préchauffez votre four à 180°C.",
-            "2. Dans un bol moyen, écrasez les bananes à la fourchette, puis ajoutez la farine avec levure incorporée et mélangez le tout pour former une pâte. (Ajoutez progressivement plus de farine si la pâte est trop collante, mais essayez de ne pas en ajouter trop, sinon les roulés à la cannelle deviendront trop durs).",
-            "3. Sur une surface légèrement farinée, étalez la pâte en un rectangle (environ 1 centimètre d&rsquo;épaisseur).",
-            "4. Badigeonnez le dessus de beurre fondu, puis saupoudrez de cannelle et de sucre roux.",
-            "5. Coupez le rectangle en 7-8 bandes.",
-            "6. Roulez chaque bande individuelle pour former un roulé.",
-            "7. Ensuite, transférez-les dans un plat de cuisson beurré. Si désiré, assurez-vous que chaque morceau adhère bien aux autres. Faites cuire pendant 20-25 minutes, jusqu&rsquo;à ce que les bords commencent à dorer.",
-            "8. Retirez les roulés du four et laissez-les refroidir. Pendant qu&rsquo;ils refroidissent, préparez le glaçage. Pour faire le glaçage, mélangez le sucre glace avec 1-2 cuillères à soupe d&rsquo;eau, jusqu&rsquo;à obtenir la consistance désirée.",
-            "9. Bon appétit ! 😋"
-        ],
-        "tags": [
-            "Bébé",
-            "Dès 12 mois",
-            "Healthy",
-            "Pas cher",
-            "pâtisserie",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7904",
-        "title": "Crème brûlée banane façon panna cotta",
-        "description": "La douceur tropicale à tester d&rsquo;urgence ! Une texture fondante, une saveur de banane vanillée, un petit twist de rhum... et ce craquant du sucre caramélisé.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7514705455067811094\" data-video-id=\"7514705455067811094\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7514705455067811094\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍌\n             3 bananes bien mûres"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Une noisette d&rsquo;huile de coco"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Sucre roux (pour la compote et pour caraméliser)"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             Un trait de rhum ambré"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             300 ml de crème"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             300 ml de crème de coco"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             1 gousse de vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 càc d'agar-agar"
-            }
-        ],
-        "steps": [
-            "Commencez par trancher une banane sur le flanc et récupérez sa chair.",
-            "Ne jetez surtout pas la peau, elle servira de récipient. Coupez la chair de la banane en petits morceaux.",
-            "Dans une poêle, déposez une noisette d&rsquo;huile de coco et faites revenir les morceaux de banane quelques minutes.",
-            "Ajoutez ensuite un peu de sucre roux. Laissez compoter et caraméliser les bananes.",
-            "Quand elles sont légèrement colorées, flambez avec une lichette de rhum ambré.",
-            "Ajoutez ensuite la crème et la crème de coco, la pulpe d&rsquo;une gousse de vanille et la gousse de vanille.",
-            "Laissez infuser environ cinq minutes à petite ébullition, puis ajoutez l&rsquo;agar-agar.",
-            "Mélangez bien, puis mixez jusqu&rsquo;à obtenir une belle crème bien lisse.",
-            "Déposez ensuite la crème dans les peaux de banane et placez-les au frais pendant au minimum deux heures.",
-            "Juste avant de servir, déposez un peu de sucre roux sur les bananes, puis caramélisez-le avec un chalumeau pour le rendre bien craquant."
-        ],
-        "tags": [
-            "Desserts",
-            "Végé",
-            "Voilà l'été"
         ],
         "isFeatured": false,
         "isFavorite": false,
