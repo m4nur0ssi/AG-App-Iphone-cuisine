@@ -2,78 +2,84 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 06/10/2026 09:43:50
+ * Dernière mise à jour: 07/10/2026 09:52:52
  * Total: 777 recettes
  */
-export const exportSyncId = "1791279830168";
+export const exportSyncId = "1791366772442";
 export const mockRecipes: Recipe[] = [
     {
-        "id": "7982",
-        "title": "Rillettes de poulet rôti anti-gaspillage",
-        "description": "Ne jetez plus les restes de votre poulet rôti ! Transformez-les en de délicieuses rillettes ultra crémeuses et pleines de saveurs. Une recette facile et anti-gaspillage, parfaite à tartiner sur du pain grillé ou à déguster à l&rsquo;apéritif.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "aperitifs",
+        "id": "7978",
+        "title": "Cookies façon kinder aux noix de pécan",
+        "description": "Des cookies moelleux et gourmands, fourrés d&rsquo;une pâte à tartiner à la noisette et agrémentés de pépites de chocolat et de noix de pécan.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-7978.webp&v=1791372810000",
+        "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7693188212092603681\" data-video-id=\"7693188212092603681\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7693188212092603681\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7692097667861695776\" data-video-id=\"7692097667861695776\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7692097667861695776\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🍗\n             Restes de poulet rôti (environ 200 g)"
+                "name": "🥣\n             5 cuillères de pâte à tartiner à la noisette"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             1 cuillère à soupe de fromage frais"
+                "name": "🧈\n             120 g de beurre doux mou"
             },
             {
                 "quantity": "",
-                "name": "🥫\n             1 cuillère à café de moutarde à l&rsquo;ancienne"
+                "name": "🥣\n             100 g de cassonade"
             },
             {
                 "quantity": "",
-                "name": "🥫\n             1 cuillère à café de mayonnaise"
+                "name": "🍯\n             40 g de sucre blanc"
             },
             {
                 "quantity": "",
-                "name": "🍋\n             1 filet de jus de citron"
+                "name": "🥚\n             1 œuf"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             Sel"
+                "name": "🍦\n             1 cuillère à café d&rsquo;extrait de vanille"
             },
             {
                 "quantity": "",
-                "name": "🌶️\n             Poivre noir"
+                "name": "🌾\n             200 g de farine"
             },
             {
                 "quantity": "",
-                "name": "🧄\n             1/2 cuillère à café d&rsquo;ail semoule (ou 1/2 gousse d&rsquo;ail râpée)"
+                "name": "🥣\n             ½ cuillère à café de bicarbonate alimentaire"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             1 cuillère à café de paprika fumé"
+                "name": "🧂\n             1 pincée de sel"
             },
             {
                 "quantity": "",
-                "name": "🌿\n             Ciboulette"
+                "name": "🥛\n             100 g de pépites de chocolat noir ou au lait"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             Eau chaude (facultatif)"
+                "name": "🥜\n             70 g de noix de pécan concassées"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             60 g de chocolat (pour la base)"
             }
         ],
         "steps": [
-            "Récupérez toute la chair des restes de poulet rôti de la veille. Dépiotez le poulet à la main pour retirer toute la chair, en veillant à ne pas laisser d&rsquo;os et en retirant la peau. Effilez au maximum les morceaux un peu secs.",
-            "Dans un saladier, ajoutez la chair de poulet effilée, le fromage frais, la moutarde à l&rsquo;ancienne, la mayonnaise, un filet de jus de citron, du sel (ajustez selon le salage du poulet rôti), du poivre noir, l&rsquo;ail semoule (ou la gousse d&rsquo;ail râpée), le paprika fumé et la ciboulette ciselée.",
-            "À l&rsquo;aide d&rsquo;une fourchette, mélangez et écrasez le poulet avec les autres ingrédients jusqu&rsquo;à obtenir une belle rillette. Si des morceaux résistent ou si la préparation est trop difficile à mélanger, ajoutez une cuillère à soupe d&rsquo;eau chaude et continuez d&rsquo;écraser et de mélanger."
+            "Déposer 5 petits tas de pâte à tartiner à la noisette sur du papier cuisson et placer au congélateur pendant le temps de préparer la pâte.",
+            "Mélanger le beurre mou avec la cassonade et le sucre. Ajouter l&rsquo;œuf et la vanille, puis mélanger.",
+            "Incorporer la farine, le bicarbonate et le sel. Ajouter les pépites de chocolat et les noix de pécan.",
+            "Diviser la pâte en 5 portions. Aplatir chaque portion, déposer un cœur de noisette congelé au centre et refermer soigneusement.",
+            "Former des boules et réserver au congélateur pendant 30 minutes.",
+            "Enfourner à 180 °C pendant 12 à 15 minutes, jusqu&rsquo;à ce que les bords soient légèrement dorés et le centre encore moelleux. Laisser refroidir.",
+            "Faire fondre 60 g de chocolat, étaler environ 1 cuillère à café de chocolat en dessous de chaque cookie et laisser figer."
         ],
         "tags": [
-            "Apéritifs",
-            "Astuces",
-            "France",
-            "Pas cher"
+            "pâtisserie",
+            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -83,7 +89,7 @@ export const mockRecipes: Recipe[] = [
         "id": "7980",
         "title": "Soupe crémeuse au poulet, légumes et bacon",
         "description": "Une soupe réconfortante et savoureuse à base de poulet, de légumes variés, de bacon grillé et de cheddar, parfaite pour se réchauffer pendant la saison froide.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-7980.webp&v=1791372803000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -175,78 +181,72 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "7978",
-        "title": "Cookies façon kinder aux noix de pécan",
-        "description": "Des cookies moelleux et gourmands, fourrés d&rsquo;une pâte à tartiner à la noisette et agrémentés de pépites de chocolat et de noix de pécan.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
+        "id": "7982",
+        "title": "Rillettes de poulet rôti anti-gaspillage",
+        "description": "Ne jetez plus les restes de votre poulet rôti ! Transformez-les en de délicieuses rillettes ultra crémeuses et pleines de saveurs. Une recette facile et anti-gaspillage, parfaite à tartiner sur du pain grillé ou à déguster à l&rsquo;apéritif.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-7982.webp&v=1791372795000",
+        "category": "aperitifs",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7692097667861695776\" data-video-id=\"7692097667861695776\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7692097667861695776\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7693188212092603681\" data-video-id=\"7693188212092603681\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7693188212092603681\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🥣\n             5 cuillères de pâte à tartiner à la noisette"
+                "name": "🍗\n             Restes de poulet rôti (environ 200 g)"
             },
             {
                 "quantity": "",
-                "name": "🧈\n             120 g de beurre doux mou"
+                "name": "🥣\n             1 cuillère à soupe de fromage frais"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             100 g de cassonade"
+                "name": "🥫\n             1 cuillère à café de moutarde à l&rsquo;ancienne"
             },
             {
                 "quantity": "",
-                "name": "🍯\n             40 g de sucre blanc"
+                "name": "🥫\n             1 cuillère à café de mayonnaise"
             },
             {
                 "quantity": "",
-                "name": "🥚\n             1 œuf"
+                "name": "🍋\n             1 filet de jus de citron"
             },
             {
                 "quantity": "",
-                "name": "🍦\n             1 cuillère à café d&rsquo;extrait de vanille"
+                "name": "🧂\n             Sel"
             },
             {
                 "quantity": "",
-                "name": "🌾\n             200 g de farine"
+                "name": "🌶️\n             Poivre noir"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             ½ cuillère à café de bicarbonate alimentaire"
+                "name": "🧄\n             1/2 cuillère à café d&rsquo;ail semoule (ou 1/2 gousse d&rsquo;ail râpée)"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             1 pincée de sel"
+                "name": "🧂\n             1 cuillère à café de paprika fumé"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             100 g de pépites de chocolat noir ou au lait"
+                "name": "🌿\n             Ciboulette"
             },
             {
                 "quantity": "",
-                "name": "🥜\n             70 g de noix de pécan concassées"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             60 g de chocolat (pour la base)"
+                "name": "🥣\n             Eau chaude (facultatif)"
             }
         ],
         "steps": [
-            "Déposer 5 petits tas de pâte à tartiner à la noisette sur du papier cuisson et placer au congélateur pendant le temps de préparer la pâte.",
-            "Mélanger le beurre mou avec la cassonade et le sucre. Ajouter l&rsquo;œuf et la vanille, puis mélanger.",
-            "Incorporer la farine, le bicarbonate et le sel. Ajouter les pépites de chocolat et les noix de pécan.",
-            "Diviser la pâte en 5 portions. Aplatir chaque portion, déposer un cœur de noisette congelé au centre et refermer soigneusement.",
-            "Former des boules et réserver au congélateur pendant 30 minutes.",
-            "Enfourner à 180 °C pendant 12 à 15 minutes, jusqu&rsquo;à ce que les bords soient légèrement dorés et le centre encore moelleux. Laisser refroidir.",
-            "Faire fondre 60 g de chocolat, étaler environ 1 cuillère à café de chocolat en dessous de chaque cookie et laisser figer."
+            "Récupérez toute la chair des restes de poulet rôti de la veille. Dépiotez le poulet à la main pour retirer toute la chair, en veillant à ne pas laisser d&rsquo;os et en retirant la peau. Effilez au maximum les morceaux un peu secs.",
+            "Dans un saladier, ajoutez la chair de poulet effilée, le fromage frais, la moutarde à l&rsquo;ancienne, la mayonnaise, un filet de jus de citron, du sel (ajustez selon le salage du poulet rôti), du poivre noir, l&rsquo;ail semoule (ou la gousse d&rsquo;ail râpée), le paprika fumé et la ciboulette ciselée.",
+            "À l&rsquo;aide d&rsquo;une fourchette, mélangez et écrasez le poulet avec les autres ingrédients jusqu&rsquo;à obtenir une belle rillette. Si des morceaux résistent ou si la préparation est trop difficile à mélanger, ajoutez une cuillère à soupe d&rsquo;eau chaude et continuez d&rsquo;écraser et de mélanger."
         ],
         "tags": [
-            "pâtisserie",
-            "USA"
+            "Apéritifs",
+            "Astuces",
+            "France",
+            "Pas cher"
         ],
         "isFeatured": false,
         "isFavorite": false,
