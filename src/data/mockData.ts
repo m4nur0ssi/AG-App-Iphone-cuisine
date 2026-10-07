@@ -2,11 +2,446 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 07/10/2026 09:52:52
+ * Dernière mise à jour: 07/10/2026 10:05:51
  * Total: 777 recettes
  */
-export const exportSyncId = "1791366772442";
+export const exportSyncId = "1791367551889";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7968",
+        "title": "Raviolis Gyozas Asiatiques sans Pliage",
+        "description": "Découvrez une méthode simple et astucieuse pour préparer des raviolis gyozas asiatiques sans pliage, tout en obtenant un résultat joli et appétissant. Apprenez à les cuire parfaitement pour une texture croustillante et moelleuse.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-7968.webp&v=1791373581000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7691939151393885473\" data-video-id=\"7691939151393885473\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7691939151393885473\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             400 g de viande hachée (hauts de cuisse de poulet, porc, bœuf ou crevettes)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             ¼ cuillère à café de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             ¼ cuillère à café de poivre moulu"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             2 cuillères à soupe de sauce soja claire"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de saké pour cuisine"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de gingembre frais râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à café de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍐\n             1 blanc de poireau"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             3 cébettes"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de fécule de maïs"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             2 cuillères à soupe d&rsquo;huile de sésame grillé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 feuilles à raviolis wonton"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             2 cuillères à soupe d&rsquo;huile de tournesol"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Eau (environ 150 ml pour 20 raviolis)"
+            }
+        ],
+        "steps": [
+            "Pour la farce, prenez 400 g de viande hachée (poulet, porc, bœuf ou crevettes).",
+            "Hachez 2 gousses d&rsquo;ail. Râpez 1 cuillère à café de gingembre frais. Émincez 3 cébettes et 1 blanc de poireau.",
+            "Dans un grand bol, assaisonnez la viande hachée avec ¼ cuillère à café de sel, ¼ cuillère à café de poivre moulu, 1 cuillère à soupe de saké pour cuisine, 2 cuillères à soupe de sauce soja claire, 1 cuillère à café de sucre, 1 cuillère à soupe de fécule de maïs et 1 cuillère à soupe d&rsquo;huile de sésame grillé. Ajoutez l&rsquo;ail haché, le gingembre râpé et 1 œuf.",
+            "Mélangez bien la farce jusqu&rsquo;à obtenir une consistance collante.",
+            "Incorporez les cébettes et le poireau émincés, puis mélangez à nouveau.",
+            "Formez des boulettes de farce et déposez-les sur du papier cuisson.",
+            "Prenez des feuilles à raviolis wonton prêtes à l'emploi. Humidifiez un côté de chaque feuille avec de l&rsquo;eau et posez le côté humide sur une boulette de farce.",
+            "Faites tourner la feuille en appuyant légèrement pour qu&rsquo;elle adhère et se colle autour de la farce, formant ainsi le ravioli.",
+            "À ce stade, vous pouvez congeler les raviolis : disposez-les d&rsquo;abord séparément sur un plateau, puis une fois durcis, transférez-les dans un sac de congélation.",
+            "Dans une poêle, étalez 1 cuillère à soupe d&rsquo;huile de tournesol. Déposez les raviolis, côté feuille contre la poêle. Faites chauffer à feu doux à moyen pendant environ 4 minutes, jusqu&rsquo;à ce que le dessous soit légèrement doré.",
+            "Une fois les raviolis légèrement dorés, versez de l&rsquo;eau pour couvrir le bas des raviolis (environ 150 ml pour 20 raviolis). Couvrez la poêle et augmentez légèrement le feu. Laissez cuire à la vapeur pendant 5 à 6 minutes.",
+            "Retirez le couvercle. Une fois l&rsquo;eau presque complètement évaporée, ajoutez 1 cuillère à soupe d&rsquo;huile de tournesol et 1 cuillère à soupe d&rsquo;huile de sésame grillé.",
+            "Laissez griller pendant 7 à 8 minutes, en bougeant la poêle de temps en temps pour bien répartir l&rsquo;huile. Surveillez le dessous des raviolis jusqu&rsquo;à ce qu&rsquo;ils soient bien dorés.",
+            "Retournez les raviolis pour griller la face de viande pendant 5 à 6 minutes. Surveillez la cuisson et coupez le feu une fois qu&rsquo;ils sont bien grillés."
+        ],
+        "tags": [
+            "Asie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7970",
+        "title": "Pancakes Nutella et Banane",
+        "description": "Absurdement bons. Une pâte de base avec un cœur de Nutella et de banane mûre, scellée et cuite à la poêle. Ils se mangent même sans garniture, tout au plus avec une pincée de sucre glace. ASTUCE EDEN : n&rsquo;exagérez pas avec la garniture et scelle",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-7970.webp&v=1791373571000",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7690987742372564257\" data-video-id=\"7690987742372564257\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7690987742372564257\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             90 g de farine d&rsquo;épeautre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café de levure"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 pointe de bicarbonate"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             80 g de yaourt grec"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             45 g de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe d&rsquo;huile"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             5 cuillères à café de Nutella"
+            },
+            {
+                "quantity": "",
+                "name": "🍌\n             1 banane mûre"
+            }
+        ],
+        "steps": [
+            "Mélangez les ingrédients secs dans un bol.",
+            "Dans un autre bol, mélangez les ingrédients humides.",
+            "Versez les liquides sur les secs et mélangez peu : il doit rester des grumeaux.",
+            "Coupez la banane en tranches épaisses.",
+            "Dans une poêle : déposez une cuillère à soupe de pâte, par-dessus une cuillère à café de Nutella et 3 tranches de banane, puis une autre cuillère à soupe de pâte.",
+            "Scellez bien les bords et faites cuire à feu moyen avec un couvercle, 2 minutes et demie par côté.",
+            "Servez-les tièdes, tels quels ou avec du sucre glace."
+        ],
+        "tags": [
+            "Glaces",
+            "Italie",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7972",
+        "title": "Petits pains Sloppy Joe",
+        "description": "Découvrez comment préparer de délicieux petits pains moelleux garnis d&rsquo;une farce savoureuse au bœuf haché épicé, de fromage fondant et d&rsquo;une sauce burger onctueuse. Parfaits pour un repas convivial ou un pique-nique gourmand.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-7972.webp&v=1791373561000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7690183216061238560\" data-video-id=\"7690183216061238560\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7690183216061238560\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             250 ml de lait tiède (1 tasse)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             15 g de miel (1 cuillère à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             7 g de levure instantanée (1 cuillère à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 gros œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             45 g de beurre doux, à température ambiante (3 cuillères à soupe, 1/2 bâtonnet)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             500 g de farine tout usage (4 tasses)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             8 g de sel fin (1⅓ cuillère à café)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             25 ml d&rsquo;huile d&rsquo;olive (2 cuillères à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🥩\n             600 g de bœuf haché (1⅓ livre)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             4 g de sel fin (⅔ cuillère à café)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             3 g de paprika (1 cuillère à café)"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 g de poudre d&rsquo;ail (⅔ cuillère à café)"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             3 g de poudre d&rsquo;oignon (1 cuillère à café)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             3 g de poivre de Cayenne (1 cuillère à café)"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1,5 g de poivre noir (½ cuillère à café)"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             100 g de ketchup (6 cuillères à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Tranches de fromage (américain ou cheddar)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Sauce burger style Big Mac"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf, battu"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Graines de sésame"
+            }
+        ],
+        "steps": [
+            "Préparez tous les ingrédients.",
+            "Dans un grand bol, mélangez le lait tiède, le miel et la levure. Remuez bien et laissez reposer le mélange pendant 5 minutes.",
+            "Ajoutez l&rsquo;œuf et le beurre et mélangez bien.",
+            "Ajoutez la farine et le sel. Pétrissez la pâte pendant 10 à 12 minutes jusqu&rsquo;à ce qu&rsquo;elle soit lisse.",
+            "Couvrez le bol et laissez la pâte lever dans un endroit chaud pendant 1 heure, ou jusqu&rsquo;à ce qu&rsquo;elle ait doublé de volume.",
+            "Faites chauffer l&rsquo;huile d&rsquo;olive dans une poêle à feu moyen-vif. Ajoutez le bœuf haché, le sel, le paprika, la poudre d&rsquo;ail, la poudre d&rsquo;oignon, le poivre de Cayenne et le poivre noir. Faites cuire pendant 7 à 8 minutes, jusqu&rsquo;à ce qu&rsquo;il soit doré et bien cuit.",
+            "Ajoutez le ketchup. Incorporez le ketchup au bœuf jusqu&rsquo;à ce que le tout soit bien mélangé. Laissez la farce refroidir complètement avant de l&rsquo;ajouter à la pâte.",
+            "Dégonflez la pâte levée et divisez-la en 9 morceaux égaux. Façonnez chaque morceau en boule.",
+            "Abaissez chaque boule de pâte en un disque rond. Placez une tranche de fromage au centre de chaque disque, puis garnissez d&rsquo;un peu de farce au bœuf et d&rsquo;une cuillerée de sauce burger. Ajoutez du fromage supplémentaire si vous le souhaitez.",
+            "Repliez la pâte vers l&rsquo;intérieur et pincez-la fermement pour la fermer. Placez les petits pains, côté jointure vers le bas, sur une plaque de cuisson recouverte de papier sulfurisé.",
+            "Badigeonnez d&rsquo;œuf battu et saupoudrez de graines de sésame. Laissez lever pendant 30 minutes.",
+            "Faites cuire dans un four préchauffé à 200°C (400°F) pendant 12 à 18 minutes, ou jusqu&rsquo;à ce qu&rsquo;ils soient dorés."
+        ],
+        "tags": [
+            "épicé",
+            "Sandwichs",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7974",
+        "title": "Casserole d&rsquo;œufs et de chou-fleur au fromage",
+        "description": "Une casserole d&rsquo;œufs et de chou-fleur au fromage, facile, délicieuse et riche en protéines. Un plat simple et savoureux à déguster en famille.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-7974.webp&v=1791373551000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7691425169579035911\" data-video-id=\"7691425169579035911\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7691425169579035911\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥬\n             Chou-fleur - 250-300 g"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs - 5-6 pièces"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Mozzarella - 150 g, râpée"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             Jambon - 100 g, finement haché"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel - au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre noir - au goût"
+            }
+        ],
+        "steps": [
+            "1. Coupez le chou-fleur en petits bouquets et faites-le bouillir dans de l&rsquo;eau salée pendant 2 à 4 minutes.",
+            "2. Égouttez très bien le chou-fleur et laissez tout excès d&rsquo;eau s&rsquo;écouler.",
+            "3. Tapissez un plat de cuisson de papier sulfurisé et étalez le chou-fleur uniformément à l&rsquo;intérieur.",
+            "4. Cassez les œufs directement sur le chou-fleur. Ajoutez le jambon finement haché, le sel et le poivre noir.",
+            "5. Mélangez délicatement le tout, en vous assurant que les œufs et le jambon sont uniformément répartis.",
+            "6. Saupoudrez uniformément la mozzarella râpée sur le dessus.",
+            "7. Placez dans un four préchauffé à 190°C (375°F) et faites cuire pendant 20 à 25 minutes, jusqu&rsquo;à ce que les œufs soient bien pris et que le fromage soit fondu et légèrement doré.",
+            "8. Retirez du four, coupez en portions et savourez ce plat simple, délicieux et riche en protéines !"
+        ],
+        "tags": [
+            "Accompagnements",
+            "Gratins",
+            "Healthy"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "7976",
+        "title": "Velouté de courge et lentilles corail",
+        "description": "Un velouté de courge et lentilles corail, le plat réconfortant automnal par excellence. Facile et rapide à préparer, il est parfait pour un dîner sain et savoureux.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-7976-1.webp&v=1791373539000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7691734733683838241\" data-video-id=\"7691734733683838241\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7691734733683838241\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧅\n             1 échalote"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             2 carottes"
+            },
+            {
+                "quantity": "",
+                "name": "🥔\n             1 grosse pomme de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             250 g de courge"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             100 g de lentilles corail"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             2 cuillères à soupe de pulpe de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Bouillon de légumes (quantité suffisante)"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Thym frais"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Piment (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive extra vierge"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Graines de courge (pour décorer)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème fraîche (pour décorer)"
+            }
+        ],
+        "steps": [
+            "Dans une casserole, faites chauffer un filet d&rsquo;huile d&rsquo;olive et faites revenir l&rsquo;échalote.",
+            "Ajoutez les carottes, la pomme de terre et la courge coupées en morceaux, le sel, le poivre, le thym et, si vous aimez, une pincée de piment.",
+            "Incorporez les lentilles corail et la pulpe de tomate, couvrez de bouillon de légumes et laissez cuire jusqu&rsquo;à ce que tous les légumes soient tendres.",
+            "Mixez le tout jusqu&rsquo;à obtenir une crème lisse et veloutée.",
+            "Servez en complétant avec des graines de courge, un filet d&rsquo;huile d&rsquo;olive et un peu de crème fraîche."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Healthy",
+            "Italie",
+            "Pas cher",
+            "Soupes",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7978",
         "title": "Cookies façon kinder aux noix de pécan",
@@ -247,441 +682,6 @@ export const mockRecipes: Recipe[] = [
             "Astuces",
             "France",
             "Pas cher"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7976",
-        "title": "Velouté de courge et lentilles corail",
-        "description": "Un velouté de courge et lentilles corail, le plat réconfortant automnal par excellence. Facile et rapide à préparer, il est parfait pour un dîner sain et savoureux.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7691734733683838241\" data-video-id=\"7691734733683838241\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7691734733683838241\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧅\n             1 échalote"
-            },
-            {
-                "quantity": "",
-                "name": "🥕\n             2 carottes"
-            },
-            {
-                "quantity": "",
-                "name": "🥔\n             1 grosse pomme de terre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             250 g de courge"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             100 g de lentilles corail"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             2 cuillères à soupe de pulpe de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             Bouillon de légumes (quantité suffisante)"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Thym frais"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Piment (facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive extra vierge"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Graines de courge (pour décorer)"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Crème fraîche (pour décorer)"
-            }
-        ],
-        "steps": [
-            "Dans une casserole, faites chauffer un filet d&rsquo;huile d&rsquo;olive et faites revenir l&rsquo;échalote.",
-            "Ajoutez les carottes, la pomme de terre et la courge coupées en morceaux, le sel, le poivre, le thym et, si vous aimez, une pincée de piment.",
-            "Incorporez les lentilles corail et la pulpe de tomate, couvrez de bouillon de légumes et laissez cuire jusqu&rsquo;à ce que tous les légumes soient tendres.",
-            "Mixez le tout jusqu&rsquo;à obtenir une crème lisse et veloutée.",
-            "Servez en complétant avec des graines de courge, un filet d&rsquo;huile d&rsquo;olive et un peu de crème fraîche."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Healthy",
-            "Italie",
-            "Pas cher",
-            "Soupes",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7974",
-        "title": "Casserole d&rsquo;œufs et de chou-fleur au fromage",
-        "description": "Une casserole d&rsquo;œufs et de chou-fleur au fromage, facile, délicieuse et riche en protéines. Un plat simple et savoureux à déguster en famille.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7691425169579035911\" data-video-id=\"7691425169579035911\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7691425169579035911\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥬\n             Chou-fleur - 250-300 g"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Œufs - 5-6 pièces"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Mozzarella - 150 g, râpée"
-            },
-            {
-                "quantity": "",
-                "name": "🥓\n             Jambon - 100 g, finement haché"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel - au goût"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre noir - au goût"
-            }
-        ],
-        "steps": [
-            "1. Coupez le chou-fleur en petits bouquets et faites-le bouillir dans de l&rsquo;eau salée pendant 2 à 4 minutes.",
-            "2. Égouttez très bien le chou-fleur et laissez tout excès d&rsquo;eau s&rsquo;écouler.",
-            "3. Tapissez un plat de cuisson de papier sulfurisé et étalez le chou-fleur uniformément à l&rsquo;intérieur.",
-            "4. Cassez les œufs directement sur le chou-fleur. Ajoutez le jambon finement haché, le sel et le poivre noir.",
-            "5. Mélangez délicatement le tout, en vous assurant que les œufs et le jambon sont uniformément répartis.",
-            "6. Saupoudrez uniformément la mozzarella râpée sur le dessus.",
-            "7. Placez dans un four préchauffé à 190°C (375°F) et faites cuire pendant 20 à 25 minutes, jusqu&rsquo;à ce que les œufs soient bien pris et que le fromage soit fondu et légèrement doré.",
-            "8. Retirez du four, coupez en portions et savourez ce plat simple, délicieux et riche en protéines !"
-        ],
-        "tags": [
-            "Accompagnements",
-            "Gratins",
-            "Healthy"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7972",
-        "title": "Petits pains Sloppy Joe",
-        "description": "Découvrez comment préparer de délicieux petits pains moelleux garnis d&rsquo;une farce savoureuse au bœuf haché épicé, de fromage fondant et d&rsquo;une sauce burger onctueuse. Parfaits pour un repas convivial ou un pique-nique gourmand.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7690183216061238560\" data-video-id=\"7690183216061238560\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7690183216061238560\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥛\n             250 ml de lait tiède (1 tasse)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             15 g de miel (1 cuillère à soupe)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             7 g de levure instantanée (1 cuillère à soupe)"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 gros œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             45 g de beurre doux, à température ambiante (3 cuillères à soupe, 1/2 bâtonnet)"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             500 g de farine tout usage (4 tasses)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             8 g de sel fin (1⅓ cuillère à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             25 ml d&rsquo;huile d&rsquo;olive (2 cuillères à soupe)"
-            },
-            {
-                "quantity": "",
-                "name": "🥩\n             600 g de bœuf haché (1⅓ livre)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             4 g de sel fin (⅔ cuillère à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             3 g de paprika (1 cuillère à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 g de poudre d&rsquo;ail (⅔ cuillère à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             3 g de poudre d&rsquo;oignon (1 cuillère à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             3 g de poivre de Cayenne (1 cuillère à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1,5 g de poivre noir (½ cuillère à café)"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             100 g de ketchup (6 cuillères à soupe)"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Tranches de fromage (américain ou cheddar)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Sauce burger style Big Mac"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 œuf, battu"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Graines de sésame"
-            }
-        ],
-        "steps": [
-            "Préparez tous les ingrédients.",
-            "Dans un grand bol, mélangez le lait tiède, le miel et la levure. Remuez bien et laissez reposer le mélange pendant 5 minutes.",
-            "Ajoutez l&rsquo;œuf et le beurre et mélangez bien.",
-            "Ajoutez la farine et le sel. Pétrissez la pâte pendant 10 à 12 minutes jusqu&rsquo;à ce qu&rsquo;elle soit lisse.",
-            "Couvrez le bol et laissez la pâte lever dans un endroit chaud pendant 1 heure, ou jusqu&rsquo;à ce qu&rsquo;elle ait doublé de volume.",
-            "Faites chauffer l&rsquo;huile d&rsquo;olive dans une poêle à feu moyen-vif. Ajoutez le bœuf haché, le sel, le paprika, la poudre d&rsquo;ail, la poudre d&rsquo;oignon, le poivre de Cayenne et le poivre noir. Faites cuire pendant 7 à 8 minutes, jusqu&rsquo;à ce qu&rsquo;il soit doré et bien cuit.",
-            "Ajoutez le ketchup. Incorporez le ketchup au bœuf jusqu&rsquo;à ce que le tout soit bien mélangé. Laissez la farce refroidir complètement avant de l&rsquo;ajouter à la pâte.",
-            "Dégonflez la pâte levée et divisez-la en 9 morceaux égaux. Façonnez chaque morceau en boule.",
-            "Abaissez chaque boule de pâte en un disque rond. Placez une tranche de fromage au centre de chaque disque, puis garnissez d&rsquo;un peu de farce au bœuf et d&rsquo;une cuillerée de sauce burger. Ajoutez du fromage supplémentaire si vous le souhaitez.",
-            "Repliez la pâte vers l&rsquo;intérieur et pincez-la fermement pour la fermer. Placez les petits pains, côté jointure vers le bas, sur une plaque de cuisson recouverte de papier sulfurisé.",
-            "Badigeonnez d&rsquo;œuf battu et saupoudrez de graines de sésame. Laissez lever pendant 30 minutes.",
-            "Faites cuire dans un four préchauffé à 200°C (400°F) pendant 12 à 18 minutes, ou jusqu&rsquo;à ce qu&rsquo;ils soient dorés."
-        ],
-        "tags": [
-            "épicé",
-            "Sandwichs",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7970",
-        "title": "Pancakes Nutella et Banane",
-        "description": "Absurdement bons. Une pâte de base avec un cœur de Nutella et de banane mûre, scellée et cuite à la poêle. Ils se mangent même sans garniture, tout au plus avec une pincée de sucre glace. ASTUCE EDEN : n&rsquo;exagérez pas avec la garniture et scelle",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "glaces",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7690987742372564257\" data-video-id=\"7690987742372564257\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7690987742372564257\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             90 g de farine d&rsquo;épeautre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à café de levure"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 pointe de bicarbonate"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à soupe de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 pincée de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             80 g de yaourt grec"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             45 g de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à soupe d&rsquo;huile"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             5 cuillères à café de Nutella"
-            },
-            {
-                "quantity": "",
-                "name": "🍌\n             1 banane mûre"
-            }
-        ],
-        "steps": [
-            "Mélangez les ingrédients secs dans un bol.",
-            "Dans un autre bol, mélangez les ingrédients humides.",
-            "Versez les liquides sur les secs et mélangez peu : il doit rester des grumeaux.",
-            "Coupez la banane en tranches épaisses.",
-            "Dans une poêle : déposez une cuillère à soupe de pâte, par-dessus une cuillère à café de Nutella et 3 tranches de banane, puis une autre cuillère à soupe de pâte.",
-            "Scellez bien les bords et faites cuire à feu moyen avec un couvercle, 2 minutes et demie par côté.",
-            "Servez-les tièdes, tels quels ou avec du sucre glace."
-        ],
-        "tags": [
-            "Glaces",
-            "Italie",
-            "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7968",
-        "title": "Raviolis Gyozas Asiatiques sans Pliage",
-        "description": "Découvrez une méthode simple et astucieuse pour préparer des raviolis gyozas asiatiques sans pliage, tout en obtenant un résultat joli et appétissant. Apprenez à les cuire parfaitement pour une texture croustillante et moelleuse.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7691939151393885473\" data-video-id=\"7691939151393885473\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7691939151393885473\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             400 g de viande hachée (hauts de cuisse de poulet, porc, bœuf ou crevettes)"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 gousses d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             ¼ cuillère à café de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             ¼ cuillère à café de poivre moulu"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             2 cuillères à soupe de sauce soja claire"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à soupe de saké pour cuisine"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de gingembre frais râpé"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à café de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🍐\n             1 blanc de poireau"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             3 cébettes"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à soupe de fécule de maïs"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             2 cuillères à soupe d&rsquo;huile de sésame grillé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             30 feuilles à raviolis wonton"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             2 cuillères à soupe d&rsquo;huile de tournesol"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Eau (environ 150 ml pour 20 raviolis)"
-            }
-        ],
-        "steps": [
-            "Pour la farce, prenez 400 g de viande hachée (poulet, porc, bœuf ou crevettes).",
-            "Hachez 2 gousses d&rsquo;ail. Râpez 1 cuillère à café de gingembre frais. Émincez 3 cébettes et 1 blanc de poireau.",
-            "Dans un grand bol, assaisonnez la viande hachée avec ¼ cuillère à café de sel, ¼ cuillère à café de poivre moulu, 1 cuillère à soupe de saké pour cuisine, 2 cuillères à soupe de sauce soja claire, 1 cuillère à café de sucre, 1 cuillère à soupe de fécule de maïs et 1 cuillère à soupe d&rsquo;huile de sésame grillé. Ajoutez l&rsquo;ail haché, le gingembre râpé et 1 œuf.",
-            "Mélangez bien la farce jusqu&rsquo;à obtenir une consistance collante.",
-            "Incorporez les cébettes et le poireau émincés, puis mélangez à nouveau.",
-            "Formez des boulettes de farce et déposez-les sur du papier cuisson.",
-            "Prenez des feuilles à raviolis wonton prêtes à l'emploi. Humidifiez un côté de chaque feuille avec de l&rsquo;eau et posez le côté humide sur une boulette de farce.",
-            "Faites tourner la feuille en appuyant légèrement pour qu&rsquo;elle adhère et se colle autour de la farce, formant ainsi le ravioli.",
-            "À ce stade, vous pouvez congeler les raviolis : disposez-les d&rsquo;abord séparément sur un plateau, puis une fois durcis, transférez-les dans un sac de congélation.",
-            "Dans une poêle, étalez 1 cuillère à soupe d&rsquo;huile de tournesol. Déposez les raviolis, côté feuille contre la poêle. Faites chauffer à feu doux à moyen pendant environ 4 minutes, jusqu&rsquo;à ce que le dessous soit légèrement doré.",
-            "Une fois les raviolis légèrement dorés, versez de l&rsquo;eau pour couvrir le bas des raviolis (environ 150 ml pour 20 raviolis). Couvrez la poêle et augmentez légèrement le feu. Laissez cuire à la vapeur pendant 5 à 6 minutes.",
-            "Retirez le couvercle. Une fois l&rsquo;eau presque complètement évaporée, ajoutez 1 cuillère à soupe d&rsquo;huile de tournesol et 1 cuillère à soupe d&rsquo;huile de sésame grillé.",
-            "Laissez griller pendant 7 à 8 minutes, en bougeant la poêle de temps en temps pour bien répartir l&rsquo;huile. Surveillez le dessous des raviolis jusqu&rsquo;à ce qu&rsquo;ils soient bien dorés.",
-            "Retournez les raviolis pour griller la face de viande pendant 5 à 6 minutes. Surveillez la cuisson et coupez le feu une fois qu&rsquo;ils sont bien grillés."
-        ],
-        "tags": [
-            "Asie"
         ],
         "isFeatured": false,
         "isFavorite": false,
