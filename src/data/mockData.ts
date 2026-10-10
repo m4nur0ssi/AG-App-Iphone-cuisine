@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/10/2026 19:59:24
+ * Dernière mise à jour: 10/10/2026 20:13:24
  * Total: 783 recettes
  */
-export const exportSyncId = "1791662364088";
+export const exportSyncId = "1791663204828";
 export const mockRecipes: Recipe[] = [
     {
         "id": "8008",
         "title": "Rougail Saucisses",
         "description": "Découvrez comment préparer un authentique rougail saucisses, un plat réunionnais savoureux et facile à réaliser. Cette recette étape par étape vous guidera pour obtenir un plat mijoté avec des saucisses fumées, des tomates, des oignons et de l&rsquo;",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8008.webp&v=1791669187000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
