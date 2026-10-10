@@ -2,11 +2,228 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/10/2026 09:32:54
- * Total: 780 recettes
+ * Dernière mise à jour: 10/10/2026 19:39:33
+ * Total: 782 recettes
  */
-export const exportSyncId = "1791624774264";
+export const exportSyncId = "1791661173406";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8005",
+        "title": "Fondant à la pistache",
+        "description": "Un fondant à la pistache exceptionnel, hyper simple à réaliser, plus protéiné et moins sucré qu&rsquo;un fondant traditionnel, avec une texture très fondante. Cette recette est sans gluten et à faible indice glycémique.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7694667678388194593\" data-video-id=\"7694667678388194593\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7694667678388194593\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             70g de yaourt grec 0% ou classique (fromage blanc épais)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de sirop d&rsquo;agave"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             60g de pistaches grillées"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel (si les pistaches ne sont pas salées)"
+            }
+        ],
+        "steps": [
+            "Mettez le yaourt grec (0% ou classique), l&rsquo;œuf, le sirop d&rsquo;agave, les pistaches grillées et une pincée de sel (si vos pistaches ne sont pas salées) dans un blender.",
+            "Mixez le tout jusqu&rsquo;à obtenir une préparation homogène.",
+            "Enfournez à 160°C pendant environ 15 minutes.",
+            "Surveillez attentivement la cuisson : le centre doit rester tremblotant pour garantir une texture très fondante.",
+            "Laissez reposer au frais avant de déguster."
+        ],
+        "tags": [
+            "Healthy",
+            "minceur",
+            "Sans Gluten"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8002",
+        "title": "Muffins au Fromage Frais et Pommes Caramélisées",
+        "description": "✨Voici ma recette de muffins au fromage frais et pommes caramélisées, et honnêtement, c&rsquo;est l&rsquo;une des meilleures combinaisons. Les muffins sont si moelleux et remplis de cette saveur chaude de pomme et de cannelle, avec une garniture crém",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8002.webp&v=1791667195000",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7693947130993511711\" data-video-id=\"7693947130993511711\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7693947130993511711\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             240 g de farine tout usage, tamisée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             ½ cuillère à café de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café de fécule de maïs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             120 g de sucre cristallisé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             80 g de cassonade"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             113 g de beurre non salé, ramolli ou fondu"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             60 ml d&rsquo;huile d&rsquo;avocat ou d&rsquo;huile neutre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 gros œufs + 1 blanc d&rsquo;œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1½ cuillère à soupe d&rsquo;extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             80 ml de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             60 g de yaourt grec"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1½ cuillère à café de cannelle moulue"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             150 g de fromage frais, ramolli"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1½ cuillère à soupe de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 jaune d&rsquo;œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cuillères à café de fécule de maïs"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             2 cuillères à soupe de crème épaisse"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             ½ cuillère à café de pâte de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n             350 g de pommes, pelées, épépinées et très finement tranchées"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             35 g de beurre non salé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             70 g de cassonade"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 cuillère à café d&rsquo;extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             ½ cuillère à café de cannelle moulue"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1 cuillère à café de jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             50 g de farine tout usage"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             35 g de cassonade"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             40 g de beurre non salé, froid et coupé en dés"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             ¾ cuillère à café de cannelle moulue"
+            }
+        ],
+        "steps": [
+            "Préchauffer le four à 175°C (350°F). Tapisser un moule à muffins de caissettes en papier.",
+            "Fouetter ensemble la farine, la levure chimique, le sel, la fécule de maïs et la cannelle.",
+            "Dans un bol séparé, mélanger le beurre, l&rsquo;huile d&rsquo;avocat, le sucre cristallisé et la cassonade jusqu&rsquo;à ce que le tout soit combiné.",
+            "Ajouter les œufs et le blanc d&rsquo;œuf un par un, en mélangeant après chaque ajout.",
+            "Ajouter la vanille, le lait et le yaourt grec. Mélanger jusqu&rsquo;à obtenir une consistance lisse.",
+            "Incorporer progressivement les ingrédients secs et mélanger juste assez pour combiner. Ne pas trop mélanger.",
+            "Peler, épépiner et trancher finement les pommes, environ 2 à 3 mm d&rsquo;épaisseur.",
+            "Faire fondre le beurre dans une poêle à feu moyen.",
+            "Ajouter les pommes, la cassonade, la cannelle et le jus de citron.",
+            "Cuire jusqu&rsquo;à ce que les pommes ramollissent et deviennent brillantes et caramélisées, mais qu&rsquo;elles conservent leur forme.",
+            "Retirer du feu et incorporer la vanille.",
+            "Laisser refroidir légèrement.",
+            "Battre le fromage frais jusqu&rsquo;à ce qu&rsquo;il soit complètement lisse.",
+            "Ajouter le miel, le jaune d&rsquo;œuf, la crème épaisse, la vanille et la fécule de maïs.",
+            "Mélanger jusqu&rsquo;à obtenir une consistance lisse et homogène.",
+            "Transférer dans une poche à douille munie d&rsquo;une douille ronde.",
+            "Combiner la farine, la cassonade, la cannelle et le sel.",
+            "Ajouter le beurre froid coupé en dés.",
+            "Utiliser les doigts ou une fourchette pour incorporer le beurre aux ingrédients secs jusqu&rsquo;à obtenir de petites et moyennes miettes.",
+            "Garder au frais jusqu&rsquo;à utilisation.",
+            "Remplir chaque caissette à muffins aux deux tiers avec la pâte à muffins.",
+            "Disposer plusieurs tranches de pomme caramélisée sur la surface.",
+            "Insérer la douille au centre de la pâte.",
+            "Pocher la garniture au fromage frais au centre en tirant lentement la douille vers le haut.",
+            "Pocher juste assez pour qu&rsquo;une petite quantité de garniture au fromage frais reste visible sur le dessus.",
+            "Saupoudrer de crumble à la cannelle.",
+            "Cuire au four à 175°C (350°F) pendant 20 à 25 minutes, ou jusqu&rsquo;à ce qu&rsquo;ils soient dorés et que le centre soit pris.",
+            "Laisser refroidir dans le moule pendant 5 à 10 minutes, puis transférer sur une grille de refroidissement."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "pâtisserie",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "7999",
         "title": "Fleurs feuilletées au chorizo",
