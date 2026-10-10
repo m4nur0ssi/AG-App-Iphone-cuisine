@@ -2,16 +2,76 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 10/10/2026 19:39:33
- * Total: 782 recettes
+ * Dernière mise à jour: 10/10/2026 19:59:24
+ * Total: 783 recettes
  */
-export const exportSyncId = "1791661173406";
+export const exportSyncId = "1791662364088";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8008",
+        "title": "Rougail Saucisses",
+        "description": "Découvrez comment préparer un authentique rougail saucisses, un plat réunionnais savoureux et facile à réaliser. Cette recette étape par étape vous guidera pour obtenir un plat mijoté avec des saucisses fumées, des tomates, des oignons et de l&rsquo;",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7695054617645731104\" data-video-id=\"7695054617645731104\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7695054617645731104\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             2 saucisses fumées"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             3 tomates bien charnues"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 gros oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Un peu de poudre de piment de Cayenne"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 filet d'huile"
+            }
+        ],
+        "steps": [
+            "Plongez les saucisses fumées dans une casserole d&rsquo;eau chaude et laissez-les cuire pendant une dizaine de minutes.",
+            "Pendant ce temps, épluchez un oignon rouge et une gousse d&rsquo;ail, puis émincez-les finement.",
+            "Prenez de belles tomates charnues et coupez-les grossièrement en morceaux.",
+            "Une fois les saucisses cuites, retirez-les de l&rsquo;eau et plongez-les directement dans de l&rsquo;eau froide pour stopper la cuisson.",
+            "Coupez ensuite les saucisses en morceaux assez épais.",
+            "Dans une poêle bien chaude avec un filet d&rsquo;huile, faites griller les morceaux de saucisses sur toutes les faces pour obtenir une belle coloration.",
+            "Une fois qu&rsquo;ils sont bien dorés, retirez-les de la poêle et réservez-les quelques instants.",
+            "Dans la même poêle, faites suer l&rsquo;oignon avec la gousse d&rsquo;ail écrasée, en récupérant tous les sucs laissés par les saucisses.",
+            "Ajoutez ensuite les morceaux de tomates et laissez-les commencer à fondre tranquillement.",
+            "Remettez les saucisses grillées, ajoutez un peu de piment de Cayenne selon vos goûts et mélangez bien le tout.",
+            "Laissez mijoter quelques minutes pour que les tomates réduisent et viennent bien compoter autour des saucisses, jusqu&rsquo;à obtenir une texture homogène."
+        ],
+        "tags": [
+            "épicé",
+            "France",
+            "Pas cher",
+            "Plats"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8005",
         "title": "Fondant à la pistache",
         "description": "Un fondant à la pistache exceptionnel, hyper simple à réaliser, plus protéiné et moins sucré qu&rsquo;un fondant traditionnel, avec une texture très fondante. Cette recette est sans gluten et à faible indice glycémique.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8005.webp&v=1791668413000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
