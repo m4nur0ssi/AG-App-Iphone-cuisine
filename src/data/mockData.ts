@@ -2,11 +2,249 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/10/2026 09:34:53
- * Total: 783 recettes
+ * Dernière mise à jour: 11/10/2026 15:38:11
+ * Total: 786 recettes
  */
-export const exportSyncId = "1791711293818";
+export const exportSyncId = "1791733091118";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8015",
+        "title": "Potatoes de Butternut au Parmesan",
+        "description": "Découvrez une recette de frites de courge butternut croustillantes et savoureuses, enrobées d&rsquo;une marinade aux épices et de parmesan râpé, puis cuites au four. Elles sont servies avec une sauce crémeuse au yaourt grec, mayonnaise et citron vert",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7695330639700102433\" data-video-id=\"7695330639700102433\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7695330639700102433\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 grosse courge butternut"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             4 cuillères à soupe d'huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             2 pincées de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à soupe de paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe d'origan"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 cuillère à soupe de poudre d'oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             4 cuillères à soupe de yaourt grec épais (ou crème épaisse / sour cream)"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             2 cuillères à soupe de mayonnaise"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika fumé (pour la sauce)"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 cuillère à café de poudre d'oignon (pour la sauce)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel et poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Le jus d'un demi citron vert"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette fraîche"
+            }
+        ],
+        "steps": [
+            "Coupez la courge butternut en deux, retirez les graines, puis épluchez-la. Coupez ensuite la courge en frites assez épaisses, comme des potatoes.",
+            "Dans un grand bol, préparez une marinade en mélangeant l&rsquo;huile d&rsquo;olive, le sel, le paprika fumé, l&rsquo;origan et la poudre d&rsquo;oignon.",
+            "Ajoutez les bâtonnets de butternut dans le bol et mélangez bien pour les enrober uniformément de marinade.",
+            "Dans un autre bol, mettez le parmesan fraîchement râpé. Trempez chaque frite dans le fromage pour bien les recouvrir sur les deux faces.",
+            "Disposez les frites sur une plaque recouverte de papier cuisson. Faites-les cuire au four pendant environ 20 à 30 minutes à 200°C. Environ 5 minutes avant la fin de la cuisson, retournez les frites pour bien griller les deux côtés. Si vous le souhaitez, ajoutez un peu de fromage sur le dessus avant de remettre au four pour les dorer.",
+            "Pendant ce temps, préparez la sauce : mélangez tous les ingrédients de la sauce dans un bol (yaourt grec, mayonnaise, paprika fumé, poudre d&rsquo;oignon, sel, poivre, jus de citron vert et ciboulette fraîche). Goûtez et ajustez l&rsquo;assaisonnement selon votre goût.",
+            "Servez les potatoes de butternut bien croustillantes et chaudes avec la sauce."
+        ],
+        "tags": [
+            "Accompagnements",
+            "C'est l'hiver",
+            "épicé",
+            "Healthy",
+            "Sauces",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8013",
+        "title": "Spaghettis au poulet barbecue et cheddar",
+        "description": "Découvrez l&rsquo;épisode 15 de la série One Pot Meal : des spaghettis au poulet barbecue et cheddar, un plat gourmand et riche en protéines (558 kcal, 51,2 g de protéines par portion) parfait pour se faire plaisir même en période de diète.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7695076711402163488\" data-video-id=\"7695076711402163488\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7695076711402163488\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             300 g de cuisses de poulet désossées sans peau"
+            },
+            {
+                "quantity": "",
+                "name": "🍝\n             140 g de pâtes Protein+ Barilla (poids cru)"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 poivron jaune"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             50 g de cheddar râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             20 g de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             20 g de sauce soja"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             10 g de vinaigre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             10 g de stévia"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             Un peu d&rsquo;eau"
+            }
+        ],
+        "steps": [
+            "Coupez le poulet en morceaux, assaisonnez-le avec du sel et du paprika. Faites-le revenir dans une poêle avec l&rsquo;oignon rouge et le poivron émincés.",
+            "Mélangez le concentré de tomate, la sauce soja, le vinaigre, la stévia et un peu d&rsquo;eau. Versez cette sauce barbecue sur le poulet et les légumes, mélangez bien puis réservez.",
+            "Dans la même poêle, ajoutez les pâtes crues et suffisamment d&rsquo;eau pour les cuire. Laissez mijoter en remuant régulièrement et ajoutez de l&rsquo;eau si nécessaire.",
+            "Une fois les pâtes cuites, remettez le poulet et les légumes dans la poêle. Mélangez bien, ajoutez le cheddar râpé et laissez-le fondre. Terminez avec quelques morceaux d&rsquo;oignon rouge cru et de la verdure pour apporter de la fraîcheur."
+        ],
+        "tags": [
+            "barbecue",
+            "Healthy",
+            "pates",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8011",
+        "title": "Tarte mille-feuille de pomme de terre à la cancoillotte",
+        "description": "Découvrez une tarte salée gourmande et réconfortante, inspirée de la Franche-Comté. Cette recette emblématique de l&rsquo;auteur se compose d&rsquo;une pâte feuilletée garnie de fines tranches de pommes de terre, de saucisse de Morteau croustillante,",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7694343237707828512\" data-video-id=\"7694343237707828512\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7694343237707828512\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             1 pâte feuilletée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 saucisse de Morteau"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 oignons"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             15 cl de vin du Jura"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n             500 g de pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             250 g de cancoillotte à l'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             4 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Lait (quantité non spécifiée)"
+            }
+        ],
+        "steps": [
+            "Coupez la saucisse de Morteau déjà cuite en petits cubes.",
+            "Faites revenir les cubes de saucisse dans une poêle jusqu&rsquo;à ce qu&rsquo;ils soient bien croustillants, puis réservez-les.",
+            "Dans la même poêle, faites revenir les oignons jusqu&rsquo;à ce qu&rsquo;ils soient fondants.",
+            "Ajoutez la saucisse réservée aux oignons.",
+            "Déglacez avec le vin du Jura et laissez bien réduire le vin.",
+            "Préparez l&rsquo;appareil : dans un saladier, mélangez la cancoillotte à l&rsquo;ail avec les œufs, un peu de lait pour la détendre et du poivre. Mélangez jusqu&rsquo;à obtenir un appareil bien lisse.",
+            "Foncez un plat à tarte avec la pâte feuilletée.",
+            "Déposez le mélange d&rsquo;oignons et de saucisse sur le fond de tarte.",
+            "Ajoutez une ou deux louches de l&rsquo;appareil à la cancoillotte.",
+            "Disposez joliment les pommes de terre coupées en fines tranches sur le dessus.",
+            "Versez le reste de l&rsquo;appareil sur les pommes de terre, en le laissant bien pénétrer.",
+            "Enfournez la tarte pendant 1 heure à 170 degrés Celsius."
+        ],
+        "tags": [
+            "France",
+            "tarte"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8008",
         "title": "Rougail Saucisses",
