@@ -2,16 +2,164 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/10/2026 15:38:11
- * Total: 786 recettes
+ * Dernière mise à jour: 11/10/2026 15:57:56
+ * Total: 787 recettes
  */
-export const exportSyncId = "1791733091118";
+export const exportSyncId = "1791734276561";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8011",
+        "title": "Tarte mille-feuille de pomme de terre à la cancoillotte",
+        "description": "Découvrez une tarte salée gourmande et réconfortante, inspirée de la Franche-Comté. Cette recette emblématique de l&rsquo;auteur se compose d&rsquo;une pâte feuilletée garnie de fines tranches de pommes de terre, de saucisse de Morteau croustillante,",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8011.webp&v=1791740313000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7694343237707828512\" data-video-id=\"7694343237707828512\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7694343237707828512\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             1 pâte feuilletée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 saucisse de Morteau"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 oignons"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             15 cl de vin du Jura"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n             500 g de pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             250 g de cancoillotte à l'ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             4 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Lait (quantité non spécifiée)"
+            }
+        ],
+        "steps": [
+            "Coupez la saucisse de Morteau déjà cuite en petits cubes.",
+            "Faites revenir les cubes de saucisse dans une poêle jusqu&rsquo;à ce qu&rsquo;ils soient bien croustillants, puis réservez-les.",
+            "Dans la même poêle, faites revenir les oignons jusqu&rsquo;à ce qu&rsquo;ils soient fondants.",
+            "Ajoutez la saucisse réservée aux oignons.",
+            "Déglacez avec le vin du Jura et laissez bien réduire le vin.",
+            "Préparez l&rsquo;appareil : dans un saladier, mélangez la cancoillotte à l&rsquo;ail avec les œufs, un peu de lait pour la détendre et du poivre. Mélangez jusqu&rsquo;à obtenir un appareil bien lisse.",
+            "Foncez un plat à tarte avec la pâte feuilletée.",
+            "Déposez le mélange d&rsquo;oignons et de saucisse sur le fond de tarte.",
+            "Ajoutez une ou deux louches de l&rsquo;appareil à la cancoillotte.",
+            "Disposez joliment les pommes de terre coupées en fines tranches sur le dessus.",
+            "Versez le reste de l&rsquo;appareil sur les pommes de terre, en le laissant bien pénétrer.",
+            "Enfournez la tarte pendant 1 heure à 170 degrés Celsius."
+        ],
+        "tags": [
+            "France",
+            "tarte"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8013",
+        "title": "Spaghettis au poulet barbecue et cheddar",
+        "description": "Découvrez l&rsquo;épisode 15 de la série One Pot Meal : des spaghettis au poulet barbecue et cheddar, un plat gourmand et riche en protéines (558 kcal, 51,2 g de protéines par portion) parfait pour se faire plaisir même en période de diète.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8013.webp&v=1791740307000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7695076711402163488\" data-video-id=\"7695076711402163488\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7695076711402163488\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             300 g de cuisses de poulet désossées sans peau"
+            },
+            {
+                "quantity": "",
+                "name": "🍝\n             140 g de pâtes Protein+ Barilla (poids cru)"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 poivron jaune"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             50 g de cheddar râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             20 g de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             20 g de sauce soja"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             10 g de vinaigre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             10 g de stévia"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             Un peu d&rsquo;eau"
+            }
+        ],
+        "steps": [
+            "Coupez le poulet en morceaux, assaisonnez-le avec du sel et du paprika. Faites-le revenir dans une poêle avec l&rsquo;oignon rouge et le poivron émincés.",
+            "Mélangez le concentré de tomate, la sauce soja, le vinaigre, la stévia et un peu d&rsquo;eau. Versez cette sauce barbecue sur le poulet et les légumes, mélangez bien puis réservez.",
+            "Dans la même poêle, ajoutez les pâtes crues et suffisamment d&rsquo;eau pour les cuire. Laissez mijoter en remuant régulièrement et ajoutez de l&rsquo;eau si nécessaire.",
+            "Une fois les pâtes cuites, remettez le poulet et les légumes dans la poêle. Mélangez bien, ajoutez le cheddar râpé et laissez-le fondre. Terminez avec quelques morceaux d&rsquo;oignon rouge cru et de la verdure pour apporter de la fraîcheur."
+        ],
+        "tags": [
+            "barbecue",
+            "Healthy",
+            "pates",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8015",
         "title": "Potatoes de Butternut au Parmesan",
         "description": "Découvrez une recette de frites de courge butternut croustillantes et savoureuses, enrobées d&rsquo;une marinade aux épices et de parmesan râpé, puis cuites au four. Elles sont servies avec une sauce crémeuse au yaourt grec, mayonnaise et citron vert",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8015.webp&v=1791740300000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -92,154 +240,6 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Sauces",
             "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8013",
-        "title": "Spaghettis au poulet barbecue et cheddar",
-        "description": "Découvrez l&rsquo;épisode 15 de la série One Pot Meal : des spaghettis au poulet barbecue et cheddar, un plat gourmand et riche en protéines (558 kcal, 51,2 g de protéines par portion) parfait pour se faire plaisir même en période de diète.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7695076711402163488\" data-video-id=\"7695076711402163488\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7695076711402163488\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             300 g de cuisses de poulet désossées sans peau"
-            },
-            {
-                "quantity": "",
-                "name": "🍝\n             140 g de pâtes Protein+ Barilla (poids cru)"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1 poivron jaune"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             50 g de cheddar râpé"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             20 g de concentré de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             20 g de sauce soja"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             10 g de vinaigre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             10 g de stévia"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             Un peu d&rsquo;eau"
-            }
-        ],
-        "steps": [
-            "Coupez le poulet en morceaux, assaisonnez-le avec du sel et du paprika. Faites-le revenir dans une poêle avec l&rsquo;oignon rouge et le poivron émincés.",
-            "Mélangez le concentré de tomate, la sauce soja, le vinaigre, la stévia et un peu d&rsquo;eau. Versez cette sauce barbecue sur le poulet et les légumes, mélangez bien puis réservez.",
-            "Dans la même poêle, ajoutez les pâtes crues et suffisamment d&rsquo;eau pour les cuire. Laissez mijoter en remuant régulièrement et ajoutez de l&rsquo;eau si nécessaire.",
-            "Une fois les pâtes cuites, remettez le poulet et les légumes dans la poêle. Mélangez bien, ajoutez le cheddar râpé et laissez-le fondre. Terminez avec quelques morceaux d&rsquo;oignon rouge cru et de la verdure pour apporter de la fraîcheur."
-        ],
-        "tags": [
-            "barbecue",
-            "Healthy",
-            "pates",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8011",
-        "title": "Tarte mille-feuille de pomme de terre à la cancoillotte",
-        "description": "Découvrez une tarte salée gourmande et réconfortante, inspirée de la Franche-Comté. Cette recette emblématique de l&rsquo;auteur se compose d&rsquo;une pâte feuilletée garnie de fines tranches de pommes de terre, de saucisse de Morteau croustillante,",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7694343237707828512\" data-video-id=\"7694343237707828512\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7694343237707828512\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             1 pâte feuilletée"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 saucisse de Morteau"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             2 oignons"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             15 cl de vin du Jura"
-            },
-            {
-                "quantity": "",
-                "name": "🍎\n             500 g de pommes de terre"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             250 g de cancoillotte à l'ail"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             4 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Lait (quantité non spécifiée)"
-            }
-        ],
-        "steps": [
-            "Coupez la saucisse de Morteau déjà cuite en petits cubes.",
-            "Faites revenir les cubes de saucisse dans une poêle jusqu&rsquo;à ce qu&rsquo;ils soient bien croustillants, puis réservez-les.",
-            "Dans la même poêle, faites revenir les oignons jusqu&rsquo;à ce qu&rsquo;ils soient fondants.",
-            "Ajoutez la saucisse réservée aux oignons.",
-            "Déglacez avec le vin du Jura et laissez bien réduire le vin.",
-            "Préparez l&rsquo;appareil : dans un saladier, mélangez la cancoillotte à l&rsquo;ail avec les œufs, un peu de lait pour la détendre et du poivre. Mélangez jusqu&rsquo;à obtenir un appareil bien lisse.",
-            "Foncez un plat à tarte avec la pâte feuilletée.",
-            "Déposez le mélange d&rsquo;oignons et de saucisse sur le fond de tarte.",
-            "Ajoutez une ou deux louches de l&rsquo;appareil à la cancoillotte.",
-            "Disposez joliment les pommes de terre coupées en fines tranches sur le dessus.",
-            "Versez le reste de l&rsquo;appareil sur les pommes de terre, en le laissant bien pénétrer.",
-            "Enfournez la tarte pendant 1 heure à 170 degrés Celsius."
-        ],
-        "tags": [
-            "France",
-            "tarte"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -22107,6 +22107,86 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Famille",
             "Liban"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "4347",
+        "title": "Toasts patate douce chèvre frais",
+        "description": "Mon dieu que c'est bon 🤤 Vous devez testez absolument !! C'est tellement original, ça change des toasts classiques, et le mélange sucré/salé c'est exceptionnel.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F08%2Frecipe_ia_4347_1787596839772.jpg&v=1787604240000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7447583065959927062\" data-video-id=\"7447583065959927062\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7447583065959927062\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 patate douce"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200g de fromage de chèvre frais"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             1 grosse poignée de noix de pécan grillées"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             4cas de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 grosse poignée de cranberries"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             persil ciselé"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             miel"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             herbes de Provence"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             roquette"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             grenades"
+            }
+        ],
+        "steps": [
+            "Coupez la patate douce en rondelles d&rsquo;environ 5cm, puis placez-les dans un saladier et assaisonnez de sel, poivre, herbes de Provence et huile d'olive.",
+            "Disposez les rondelles sur une plaque allant au four pendant 10/15min à 220 degrés.",
+            "Pendant ce temps, mélangez le fromage de chèvre frais avec le lait, un peu de sel, poivre et un peu d'herbes de Provence.",
+            "Une fois les patates douces prêtes, disposez une cuillère de chèvre frais par-dessus, quelques noix de pécan concassées, quelques cranberries et enfin un filet de miel.",
+            "Disposez ces rondelles sur un lit de roquette et parsemez le tout de persil et de grenades."
+        ],
+        "tags": [
+            "Healthy",
+            "Végé"
         ],
         "isFeatured": false,
         "isFavorite": false,
