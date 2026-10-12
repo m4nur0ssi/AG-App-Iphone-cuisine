@@ -2,11 +2,83 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/10/2026 20:43:57
+ * Dernière mise à jour: 12/10/2026 21:05:48
  * Total: 793 recettes
  */
-export const exportSyncId = "1791837837817";
+export const exportSyncId = "1791839148143";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8035",
+        "title": "Sauce crémeuse aux champignons",
+        "description": "Une sauce onctueuse aux champignons, vin blanc et fond de veau, idéale pour sublimer vos pièces de viande.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7666519580340210976\" data-video-id=\"7666519580340210976\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7666519580340210976\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             5 à 6 champignons de Paris bruns"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 échalote"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             200 ml de vin blanc"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             100 ml d&rsquo;eau chaude"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café de fond de veau"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             200 ml de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            }
+        ],
+        "steps": [
+            "Nettoyez soigneusement les champignons sans les gorger d&rsquo;eau et émincez-les en conservant la peau.",
+            "Hachez finement l&rsquo;échalote et la gousse d&rsquo;ail.",
+            "Faites cuire votre pièce de viande dans une poêle en l&rsquo;arrosant généreusement de beurre, puis débarrassez la viande en conservant les sucs de cuisson.",
+            "Dans la même poêle, ajoutez l&rsquo;échalote et l&rsquo;ail hachés, puis faites-les suer pendant 2 à 3 minutes.",
+            "Déglacez avec le vin blanc en grattant le fond de la poêle pour détacher les sucs, puis laissez réduire de moitié.",
+            "Ajoutez les champignons émincés, salez, poivrez et poursuivez la cuisson pendant environ 5 minutes.",
+            "Diluez le fond de veau dans l&rsquo;eau chaude, versez dans la poêle pour déglacer à nouveau et laissez réduire pendant 3 à 4 minutes.",
+            "Baissez le feu, incorporez la crème liquide ainsi que le jus rendu par la viande réservée.",
+            "Laissez mijoter 2 à 3 minutes jusqu&rsquo;à ce que la sauce épaississe, puis servez aussitôt."
+        ],
+        "tags": [
+            "France",
+            "Sauces"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8033",
         "title": "Buns à la noisette et crème vanille",
@@ -37040,99 +37112,6 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Sandwichs",
             "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6614",
-        "title": "Mijoté de bœuf aux pommes de terre, petits pois et carottes",
-        "description": "Un plat réconfortant de bœuf mijoté avec des pommes de terre, des carottes et des petits pois, parfait pour un repas savoureux et chaleureux.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6614_1783514860390.jpg&v=1783522450000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7642360728757849377\" data-video-id=\"7642360728757849377\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7642360728757849377\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             600 g de paleron de bœuf"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             Farine"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 cube de bouillon de volaille"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cube Kubor"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             800 ml d&rsquo;eau chaude"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon haché"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 feuille de laurier"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 branche de romarin"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             2 gousses d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 grande cuillère de concentré de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🍎\n             Pommes de terre (épluchées et coupées en morceaux)"
-            },
-            {
-                "quantity": "",
-                "name": "🥕\n             Carottes (épluchées et coupées en morceaux)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             350 g de petits pois"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            }
-        ],
-        "steps": [
-            "Dans une poêle, faire chauffer un filet d&rsquo;huile d&rsquo;olive. Fariner légèrement les morceaux de viande et les faire dorer des deux côtés.",
-            "Ajouter l&rsquo;oignon haché, la feuille de laurier, la branche de romarin et les gousses d&rsquo;ail.",
-            "Incorporer le concentré de tomate et bien mélanger, laisser cuire quelques minutes pour que les saveurs se développent.",
-            "Ajouter le bouillon de volaille et le Kubor chaud (dilués dans 800 ml d&rsquo;eau chaude) jusqu&rsquo;à couvrir la viande. Mettre le couvercle et laisser mijoter à feu doux pendant environ 1 heure, en remuant de temps en temps.",
-            "Au cours des 15 dernières minutes, ajouter les pommes de terre, les carottes coupées en morceaux et les petits pois. Ajuster l&rsquo;assaisonnement en sel et en poivre. Remettre le couvercle et laisser cuire jusqu&rsquo;à ce que le tout soit bien tendre et crémeux."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Famille",
-            "France"
         ],
         "isFeatured": false,
         "isFavorite": false,
