@@ -2,11 +2,203 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/10/2026 18:09:45
- * Total: 790 recettes
+ * Dernière mise à jour: 12/10/2026 20:43:57
+ * Total: 793 recettes
  */
-export const exportSyncId = "1791828585414";
+export const exportSyncId = "1791837837817";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8033",
+        "title": "Buns à la noisette et crème vanille",
+        "description": "Des petits pains moelleux à la noisette, garnis d&rsquo;une crème pâtissière onctueuse à la noisette et à la vanille.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7695491897258872097\" data-video-id=\"7695491897258872097\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7695491897258872097\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             200-225 g de farine tout usage (1 ⅔-1 ¾ tasses)"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             50 g de noisettes moulues, grillées (½ tasse)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             40 g de sucre (3 c. à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 c. à café de levure sèche (5 g)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             110 ml de lait tiède (½ tasse)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             40 g de beurre mou (2 ½ c. à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Une pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             De la vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             250 ml de lait (1 tasse)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 jaunes d&rsquo;œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             50 g de sucre (¼ tasse)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 g de fécule de maïs (¼ tasse)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             15 g de beurre (1 c. à soupe)"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             40 g de noisettes moulues, grillées (⅓ tasse)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             1 jaune d&rsquo;œuf + 1 c. à soupe de lait (pour la dorure)"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             30 g de noisettes effilées"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Du sucre glace"
+            }
+        ],
+        "steps": [
+            "1. Faites griller 90 g de noisettes moulues dans une poêle sèche jusqu&rsquo;à ce qu&rsquo;elles soient dorées. 50 g seront pour la pâte, 40 g pour la crème pâtissière.",
+            "2. Crème pâtissière : Faites chauffer le lait avec la vanille. Battez les jaunes d&rsquo;œufs, le sucre et la fécule de maïs jusqu&rsquo;à ce que le mélange blanchisse, incorporez le lait, filtrez et faites cuire jusqu&rsquo;à épaississement. Incorporez le beurre et les noisettes. Couvrez et laissez refroidir complètement.",
+            "3. Pâte : Mélangez la farine et les noisettes, faites un puits. Ajoutez la levure, 1 c. à café de sucre et un peu de lait, le sel sur le bord. Attendez 10 minutes jusqu&rsquo;à ce que le mélange mousse.",
+            "4. Ajoutez le reste du sucre, le lait, l&rsquo;œuf et la vanille et pétrissez. Ajoutez un peu de farine si la pâte est collante. Incorporez le beurre morceau par morceau. Laissez lever environ 1 heure.",
+            "5. Façonnez 9-10 boules (50-55 g chacune), placez-les sur une plaque recouverte de papier cuisson et laissez lever 30 minutes.",
+            "6. Badigeonnez avec le mélange jaune d&rsquo;œuf/lait, saupoudrez de noisettes. Faites cuire à 180 °C (350 °F) pendant 15-18 minutes. Laissez refroidir complètement.",
+            "7. Coupez-les en deux, garnissez de crème pâtissière et saupoudrez de sucre glace. Dégustez !"
+        ],
+        "tags": [
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8031",
+        "title": "Soupe à l&rsquo;oignon gratinée",
+        "description": "Découvrez une recette gourmande et économique de soupe à l&rsquo;oignon gratinée, un véritable classique français réconfortant. Avec ses oignons caramélisés, son bouillon savoureux, son pain grillé et sa généreuse couche de comté fondu, elle saura ra",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7695451189873331489\" data-video-id=\"7695451189873331489\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7695451189873331489\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧅\n             8 oignons jaunes"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             1 noisette de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             1 cuillère à soupe de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥩\n             2 litres de bouillon de bœuf"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Thym"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Laurier"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pain"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Comté râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette"
+            }
+        ],
+        "steps": [
+            "Émincez tous les oignons.",
+            "Faites revenir les oignons émincés dans une poêle chaude avec une noisette de beurre, du sel, du poivre et le sucre.",
+            "Laissez les oignons devenir fondants et caramélisés.",
+            "Ajoutez la farine et mélangez bien.",
+            "Versez le bouillon de bœuf, puis ajoutez le thym et le laurier.",
+            "Laissez mijoter à feu doux pendant 30 minutes.",
+            "Pendant ce temps, faites griller quelques tranches de pain au four.",
+            "Frottez les tranches de pain grillé avec une gousse d&rsquo;ail.",
+            "Versez la soupe dans des bols adaptés au four.",
+            "Ajoutez les tranches de pain grillé dans chaque bol.",
+            "Parsemez généreusement de comté râpé.",
+            "Passez les bols sous le gril pendant environ 5 minutes, ou jusqu&rsquo;à ce que le fromage soit bien fondu et gratiné.",
+            "Ajoutez un peu de ciboulette avant de servir."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "France",
+            "Gratins",
+            "Pas cher",
+            "Soupes"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8029",
         "title": "Gratin de chou-fleur, pommes de terre et jambon",
@@ -36848,6 +37040,99 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Sandwichs",
             "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6614",
+        "title": "Mijoté de bœuf aux pommes de terre, petits pois et carottes",
+        "description": "Un plat réconfortant de bœuf mijoté avec des pommes de terre, des carottes et des petits pois, parfait pour un repas savoureux et chaleureux.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6614_1783514860390.jpg&v=1783522450000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7642360728757849377\" data-video-id=\"7642360728757849377\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7642360728757849377\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             600 g de paleron de bœuf"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 cube de bouillon de volaille"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cube Kubor"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             800 ml d&rsquo;eau chaude"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon haché"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 feuille de laurier"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 branche de romarin"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 grande cuillère de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n             Pommes de terre (épluchées et coupées en morceaux)"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             Carottes (épluchées et coupées en morceaux)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             350 g de petits pois"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            }
+        ],
+        "steps": [
+            "Dans une poêle, faire chauffer un filet d&rsquo;huile d&rsquo;olive. Fariner légèrement les morceaux de viande et les faire dorer des deux côtés.",
+            "Ajouter l&rsquo;oignon haché, la feuille de laurier, la branche de romarin et les gousses d&rsquo;ail.",
+            "Incorporer le concentré de tomate et bien mélanger, laisser cuire quelques minutes pour que les saveurs se développent.",
+            "Ajouter le bouillon de volaille et le Kubor chaud (dilués dans 800 ml d&rsquo;eau chaude) jusqu&rsquo;à couvrir la viande. Mettre le couvercle et laisser mijoter à feu doux pendant environ 1 heure, en remuant de temps en temps.",
+            "Au cours des 15 dernières minutes, ajouter les pommes de terre, les carottes coupées en morceaux et les petits pois. Ajuster l&rsquo;assaisonnement en sel et en poivre. Remettre le couvercle et laisser cuire jusqu&rsquo;à ce que le tout soit bien tendre et crémeux."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Famille",
+            "France"
         ],
         "isFeatured": false,
         "isFavorite": false,
