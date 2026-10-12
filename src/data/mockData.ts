@@ -2,16 +2,257 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/10/2026 17:53:01
- * Total: 789 recettes
+ * Dernière mise à jour: 12/10/2026 18:09:45
+ * Total: 790 recettes
  */
-export const exportSyncId = "1791741181777";
+export const exportSyncId = "1791828585414";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8029",
+        "title": "Gratin de chou-fleur, pommes de terre et jambon",
+        "description": "Un gratin bien crémeux et réconfortant, parfait pour un repas en famille ou un dîner cosy. Avec une béchamel maison onctueuse, des légumes fondants et du comté gratiné au four, c&rsquo;est un plat auquel il est impossible de résister !",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7608236797155429654\" data-video-id=\"7608236797155429654\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7608236797155429654\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥬\n             1 chou-fleur"
+            },
+            {
+                "quantity": "",
+                "name": "🍎\n             5 pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             4 tranches de jambon blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             4 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             50 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             50 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             60 cl de lait entier"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             200 g de comté râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Muscade"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            }
+        ],
+        "steps": [
+            "Prélevez les fleurettes d&rsquo;un chou-fleur et nettoyez-les avec de l&rsquo;eau et un peu de jus de citron.",
+            "Coupez les pommes de terre en gros morceaux. Faites cuire le chou-fleur et les pommes de terre à la vapeur.",
+            "Faites cuire les œufs pour qu&rsquo;ils soient durs. Découpez le jambon blanc en grandes lanières.",
+            "Râpez le comté.",
+            "Préparez une béchamel en réalisant un roux avec du beurre et de la farine, puis montez-le avec du lait entier.",
+            "Assaisonnez la béchamel avec du sel, du poivre et de la noix de muscade. Coupez les œufs durs en quatre morceaux.",
+            "Dans un plat à gratin, déposez la moitié des légumes cuits, puis les lanières de jambon et les œufs. Ajoutez une couche de comté râpé, puis le reste des légumes.",
+            "Versez toute la béchamel et terminez avec le reste du comté râpé.",
+            "Enfournez pour environ 30 à 35 minutes à 190 degrés, jusqu&rsquo;à ce que le gratin soit bien doré. Servez avec une salade verte bien vinaigrée."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "France",
+            "Gratins",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8020",
+        "title": "Renversé poire, chocolat et noisette",
+        "description": "Des poires caramélisées, un gâteau au chocolat bien moelleux et une touche de noisette, une version automnale du traditionnel gâteau renversé.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8020.webp&v=1791806636000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7690260069212081441\" data-video-id=\"7690260069212081441\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7690260069212081441\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍐\n             380 g de poires"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             100 g de sucre pour le caramel"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             100 g de chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             90 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             70 g de vergeoise brune"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             20 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             80 g de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             100 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             35 g de poudre de noisette"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             5 g de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             Vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Une pincée de sel"
+            }
+        ],
+        "steps": [
+            "Coupez les poires en fines lamelles.",
+            "Faites un caramel à sec, versez-le dans le moule (20 cm) puis disposez les poires en rosace.",
+            "Faites fondre le chocolat et le beurre.",
+            "Ajoutez les œufs, les sucres, le lait et la vanille.",
+            "Incorporez la farine, la poudre de noisette, la levure et le sel.",
+            "Versez la préparation sur les poires.",
+            "Faites cuire à 170°C en chaleur tournante pendant 28 à 30 minutes.",
+            "Laissez reposer 8 à 10 minutes, puis démoulez encore tiède.",
+            "Pour la finition : ajoutez des noisettes torréfiées et de fins filets de chocolat noir."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8022",
+        "title": "Côte de porc sauce charcutière",
+        "description": "Un grand classique de la cuisine française, cette recette de côte de porc est dorée et nappée d&rsquo;une sauce charcutière relevée aux échalotes, cornichons, moutarde et vinaigre de vin. Économique et rapide à préparer, elle est parfaite pour un rep",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8022.webp&v=1791806629000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7690605439578279200\" data-video-id=\"7690605439578279200\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7690605439578279200\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             4 côtes de porc"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 échalotes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             6 cornichons"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             2 cuillères à soupe de vinaigre de vin"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             15 cl de vin blanc sec"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50 cl de fond de veau"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             30 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            }
+        ],
+        "steps": [
+            "Saisissez les côtes de porc sur les deux faces pour bien les colorer, puis réservez-les.",
+            "Ajoutez un beau morceau de beurre et faites revenir les échalotes.",
+            "Déglacez ensuite avec le vinaigre de vin et le vin blanc.",
+            "Une fois que le vin blanc a réduit de moitié, ajoutez le fond de veau et laissez épaissir légèrement.",
+            "Remettez les côtes de porc dans la sauce pour terminer leur cuisson.",
+            "Lorsque les côtes de porc sont bien cuites, réservez-les.",
+            "Pour terminer la sauce, sur feu doux, ajoutez une cuillère à soupe de moutarde et mélangez bien.",
+            "Goûtez et rectifiez l&rsquo;assaisonnement en sel et poivre.",
+            "Hors du feu, terminez la sauce avec quelques morceaux de beurre froid.",
+            "Ajoutez les cornichons hachés."
+        ],
+        "tags": [
+            "France",
+            "Pas cher",
+            "Plats",
+            "Sauces"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8024",
         "title": "Poulet façon grand-mère",
         "description": "Un plat familial et réconfortant, avec un poulet fondant et une sauce crémeuse et généreuse. Parfait pour les journées froides, il se déguste avec une purée, des frites ou du riz.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8024.webp&v=1791806618000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -101,165 +342,6 @@ export const mockRecipes: Recipe[] = [
             "C'est l'hiver",
             "France",
             "Plats"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8022",
-        "title": "Côte de porc sauce charcutière",
-        "description": "Un grand classique de la cuisine française, cette recette de côte de porc est dorée et nappée d&rsquo;une sauce charcutière relevée aux échalotes, cornichons, moutarde et vinaigre de vin. Économique et rapide à préparer, elle est parfaite pour un rep",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7690605439578279200\" data-video-id=\"7690605439578279200\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7690605439578279200\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             4 côtes de porc"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             2 échalotes"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             6 cornichons"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             2 cuillères à soupe de vinaigre de vin"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             15 cl de vin blanc sec"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             50 cl de fond de veau"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 cuillère à soupe de moutarde"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             30 g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            }
-        ],
-        "steps": [
-            "Saisissez les côtes de porc sur les deux faces pour bien les colorer, puis réservez-les.",
-            "Ajoutez un beau morceau de beurre et faites revenir les échalotes.",
-            "Déglacez ensuite avec le vinaigre de vin et le vin blanc.",
-            "Une fois que le vin blanc a réduit de moitié, ajoutez le fond de veau et laissez épaissir légèrement.",
-            "Remettez les côtes de porc dans la sauce pour terminer leur cuisson.",
-            "Lorsque les côtes de porc sont bien cuites, réservez-les.",
-            "Pour terminer la sauce, sur feu doux, ajoutez une cuillère à soupe de moutarde et mélangez bien.",
-            "Goûtez et rectifiez l&rsquo;assaisonnement en sel et poivre.",
-            "Hors du feu, terminez la sauce avec quelques morceaux de beurre froid.",
-            "Ajoutez les cornichons hachés."
-        ],
-        "tags": [
-            "France",
-            "Pas cher",
-            "Plats",
-            "Sauces"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8020",
-        "title": "Renversé poire, chocolat et noisette",
-        "description": "Des poires caramélisées, un gâteau au chocolat bien moelleux et une touche de noisette, une version automnale du traditionnel gâteau renversé.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7690260069212081441\" data-video-id=\"7690260069212081441\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7690260069212081441\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍐\n             380 g de poires"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             100 g de sucre pour le caramel"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             100 g de chocolat noir"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             90 g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             2 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             70 g de vergeoise brune"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             20 g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             80 g de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             100 g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             35 g de poudre de noisette"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             5 g de levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             Vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Une pincée de sel"
-            }
-        ],
-        "steps": [
-            "Coupez les poires en fines lamelles.",
-            "Faites un caramel à sec, versez-le dans le moule (20 cm) puis disposez les poires en rosace.",
-            "Faites fondre le chocolat et le beurre.",
-            "Ajoutez les œufs, les sucres, le lait et la vanille.",
-            "Incorporez la farine, la poudre de noisette, la levure et le sel.",
-            "Versez la préparation sur les poires.",
-            "Faites cuire à 170°C en chaleur tournante pendant 28 à 30 minutes.",
-            "Laissez reposer 8 à 10 minutes, puis démoulez encore tiède.",
-            "Pour la finition : ajoutez des noisettes torréfiées et de fins filets de chocolat noir."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "pâtisserie"
         ],
         "isFeatured": false,
         "isFavorite": false,
