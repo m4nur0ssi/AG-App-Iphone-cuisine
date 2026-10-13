@@ -2,16 +2,118 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 13/10/2026 19:32:45
+ * Dernière mise à jour: 13/10/2026 19:56:07
  * Total: 798 recettes
  */
-export const exportSyncId = "1791919965652";
+export const exportSyncId = "1791921367223";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8043",
+        "title": "Sauce Choron",
+        "description": "La sauce Choron est une sauce classique de la cuisine française, dérivée de la sauce béarnaise, enrichie de concentré de tomate et d&rsquo;estragon frais. Elle est idéale pour accompagner les viandes, les poissons ou les œufs.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8043.webp&v=1791927154000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7692533415014452510\" data-video-id=\"7692533415014452510\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7692533415014452510\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             250 g de beurre clarifié"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             2 cuillères à soupe d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             3 échalotes, finement hachées"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             100 ml de vinaigre blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             4 jaunes d&rsquo;œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             15 g de poivre noir concassé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Estragon"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             20 g de concentré de tomate"
+            }
+        ],
+        "steps": [
+            "1 - Faire réduire le vinaigre avec les échalotes, le poivre concassé et les tiges d&rsquo;estragon jusqu&rsquo;à ce que le mélange soit presque sec.",
+            "2 - Fouetter les jaunes d&rsquo;œufs avec l&rsquo;eau et le sel.",
+            "3 - Au-dessus d&rsquo;un bain-marie, fouetter continuellement en formant un huit jusqu&rsquo;à obtenir un sabayon léger et épais. Ne pas trop cuire les jaunes.",
+            "4 - Émulsionner lentement avec le beurre clarifié chaud. Maintenir au chaud, jamais brûlant, pour éviter de cuire les œufs.",
+            "5 - Terminer avec le mélange d&rsquo;échalotes réduit, l&rsquo;estragon frais et le concentré de tomate.",
+            "6 - Rectifier l&rsquo;assaisonnement et servir."
+        ],
+        "tags": [
+            "France",
+            "Sauces"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8045",
+        "title": "Mini-bretzels au chocolat",
+        "description": "Une collation simple et rapide à préparer, combinant le croquant des mini-bretzels avec la douceur du chocolat fondu.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8045.webp&v=1791927144000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7695710856985759008\" data-video-id=\"7695710856985759008\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7695710856985759008\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Mini-bretzels"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Morceaux de chocolat"
+            }
+        ],
+        "steps": [
+            "Placer des mini-bretzels sur une plaque de cuisson.",
+            "Répartir des morceaux de chocolat sur chaque mini-bretzel.",
+            "Enfourner quelques minutes à 70 °C jusqu&rsquo;à ce que le chocolat soit légèrement fondu.",
+            "Retirer du four.",
+            "Déposer un autre mini-bretzel sur le chocolat fondu de chaque bretzel.",
+            "Laisser refroidir complètement jusqu&rsquo;à ce que le chocolat redevienne ferme."
+        ],
+        "tags": [
+            "Allemagne",
+            "Desserts"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8049",
         "title": "Toasts de butternut rôtie",
         "description": "Découvrez une recette saine et ultra-gourmande de toasts à base de courge butternut rôtie, parfaits pour l&rsquo;automne. Un pur délice facile à préparer et équilibré.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8049.webp&v=1791927131000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -126,108 +228,6 @@ export const mockRecipes: Recipe[] = [
             "chocolat",
             "Pâte levée",
             "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8045",
-        "title": "Mini-bretzels au chocolat",
-        "description": "Une collation simple et rapide à préparer, combinant le croquant des mini-bretzels avec la douceur du chocolat fondu.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7695710856985759008\" data-video-id=\"7695710856985759008\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7695710856985759008\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Mini-bretzels"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             Morceaux de chocolat"
-            }
-        ],
-        "steps": [
-            "Placer des mini-bretzels sur une plaque de cuisson.",
-            "Répartir des morceaux de chocolat sur chaque mini-bretzel.",
-            "Enfourner quelques minutes à 70 °C jusqu&rsquo;à ce que le chocolat soit légèrement fondu.",
-            "Retirer du four.",
-            "Déposer un autre mini-bretzel sur le chocolat fondu de chaque bretzel.",
-            "Laisser refroidir complètement jusqu&rsquo;à ce que le chocolat redevienne ferme."
-        ],
-        "tags": [
-            "Allemagne",
-            "Desserts"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8043",
-        "title": "Sauce Choron",
-        "description": "La sauce Choron est une sauce classique de la cuisine française, dérivée de la sauce béarnaise, enrichie de concentré de tomate et d&rsquo;estragon frais. Elle est idéale pour accompagner les viandes, les poissons ou les œufs.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7692533415014452510\" data-video-id=\"7692533415014452510\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7692533415014452510\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧈\n             250 g de beurre clarifié"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             2 cuillères à soupe d&rsquo;eau"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             3 échalotes, finement hachées"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             100 ml de vinaigre blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             4 jaunes d&rsquo;œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             15 g de poivre noir concassé"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Estragon"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             20 g de concentré de tomate"
-            }
-        ],
-        "steps": [
-            "1 - Faire réduire le vinaigre avec les échalotes, le poivre concassé et les tiges d&rsquo;estragon jusqu&rsquo;à ce que le mélange soit presque sec.",
-            "2 - Fouetter les jaunes d&rsquo;œufs avec l&rsquo;eau et le sel.",
-            "3 - Au-dessus d&rsquo;un bain-marie, fouetter continuellement en formant un huit jusqu&rsquo;à obtenir un sabayon léger et épais. Ne pas trop cuire les jaunes.",
-            "4 - Émulsionner lentement avec le beurre clarifié chaud. Maintenir au chaud, jamais brûlant, pour éviter de cuire les œufs.",
-            "5 - Terminer avec le mélange d&rsquo;échalotes réduit, l&rsquo;estragon frais et le concentré de tomate.",
-            "6 - Rectifier l&rsquo;assaisonnement et servir."
-        ],
-        "tags": [
-            "France",
-            "Sauces"
         ],
         "isFeatured": false,
         "isFavorite": false,
