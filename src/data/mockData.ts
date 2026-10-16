@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 16/10/2026 10:07:07
+ * Dernière mise à jour: 16/10/2026 10:32:35
  * Total: 799 recettes
  */
-export const exportSyncId = "1792145227141";
+export const exportSyncId = "1792146755320";
 export const mockRecipes: Recipe[] = [
     {
         "id": "8056",
         "title": "Gâteau moelleux aux poires, amandes et chocolat",
         "description": "Un gâteau d&rsquo;automne ultra moelleux et fondant garni de morceaux de poires fraîches, de pépites de chocolat et d&rsquo;amandes effilées croustillantes.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8056.webp&v=1792152841000",
         "category": "glaces",
         "difficulty": "moyen",
         "prepTime": 15,
