@@ -2,16 +2,65 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 18/10/2026 16:14:17
+ * Dernière mise à jour: 18/10/2026 16:30:54
  * Total: 801 recettes
  */
-export const exportSyncId = "1792340057328";
+export const exportSyncId = "1792341054125";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8059",
+        "title": "Bâtonnets sablés au chocolat",
+        "description": "Découvrez une recette simple et économique de délicieux bâtonnets sablés, réputés plus savoureux que les chocolats Milka. Faciles à préparer, ils sont parfaits pour une pause gourmande, trempés dans du chocolat fondu.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8059.webp&v=1792347265000",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7680597211327008018\" data-video-id=\"7680597211327008018\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7680597211327008018\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             75g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             70g de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             180g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Du chocolat (pour la trempette)"
+            }
+        ],
+        "steps": [
+            "Dans un saladier, mélanger le beurre, le sucre glace et la farine jusqu&rsquo;à obtenir une texture sableuse.",
+            "Ajouter l&rsquo;œuf et pétrir rapidement la pâte jusqu&rsquo;à ce qu&rsquo;elle soit homogène.",
+            "Étaler la pâte sur une surface légèrement farinée (sans l&rsquo;étaler trop finement) et la couper en bâtonnets.",
+            "Disposer les bâtonnets sur une plaque de cuisson recouverte de papier sulfurisé.",
+            "Enfourner à 180°C pendant 5 à 7 minutes, jusqu&rsquo;à ce qu&rsquo;ils soient légèrement dorés.",
+            "Une fois les bâtonnets refroidis, les tremper dans du chocolat fondu. Laisser durcir le chocolat avant de servir."
+        ],
+        "tags": [
+            "Pas cher",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8061",
         "title": "Cake marbré cacao et cacahuète",
         "description": "Une recette gourmande de cake marbré au cacao et à la cacahuète, avec un cœur de praliné, imbibé d&rsquo;un sirop vanillé et recouvert d&rsquo;un glaçage rocher au chocolat au lait et cacahuètes hachées. Parfait pour l&rsquo;automne.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8061.webp&v=1792347257000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -133,55 +182,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "C'est l'hiver",
-            "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8059",
-        "title": "Bâtonnets sablés au chocolat",
-        "description": "Découvrez une recette simple et économique de délicieux bâtonnets sablés, réputés plus savoureux que les chocolats Milka. Faciles à préparer, ils sont parfaits pour une pause gourmande, trempés dans du chocolat fondu.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "patisserie",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7680597211327008018\" data-video-id=\"7680597211327008018\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7680597211327008018\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧈\n             75g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             70g de sucre glace"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             180g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             Du chocolat (pour la trempette)"
-            }
-        ],
-        "steps": [
-            "Dans un saladier, mélanger le beurre, le sucre glace et la farine jusqu&rsquo;à obtenir une texture sableuse.",
-            "Ajouter l&rsquo;œuf et pétrir rapidement la pâte jusqu&rsquo;à ce qu&rsquo;elle soit homogène.",
-            "Étaler la pâte sur une surface légèrement farinée (sans l&rsquo;étaler trop finement) et la couper en bâtonnets.",
-            "Disposer les bâtonnets sur une plaque de cuisson recouverte de papier sulfurisé.",
-            "Enfourner à 180°C pendant 5 à 7 minutes, jusqu&rsquo;à ce qu&rsquo;ils soient légèrement dorés.",
-            "Une fois les bâtonnets refroidis, les tremper dans du chocolat fondu. Laisser durcir le chocolat avant de servir."
-        ],
-        "tags": [
-            "Pas cher",
             "pâtisserie"
         ],
         "isFeatured": false,
