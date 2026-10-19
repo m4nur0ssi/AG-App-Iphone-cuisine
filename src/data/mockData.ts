@@ -2,11 +2,82 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 19/10/2026 08:21:44
- * Total: 801 recettes
+ * Dernière mise à jour: 19/10/2026 09:40:55
+ * Total: 802 recettes
  */
-export const exportSyncId = "1792398104283";
+export const exportSyncId = "1792402855729";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8065",
+        "title": "Ferrero Rocher Maison",
+        "description": "Découvrez comment réaliser vos propres Ferrero Rocher avec un cœur praliné croustillant, une noisette entière et un délicieux enrobage au chocolat au lait.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8065.webp&v=1792409049000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7698044782047661344\" data-video-id=\"7698044782047661344\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7698044782047661344\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             833 g de praliné amande-noisette"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             83 g de beurre de cacao"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             83 g de chocolat au lait"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             83 g de chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             150 g de feuilletine Gavottes"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             500 g de chocolat au lait (pour l&rsquo;enrobage)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             75 g de beurre de cacao (pour l&rsquo;enrobage)"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             150 g de noisettes hachées torréfiées"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             Noisettes entières"
+            }
+        ],
+        "steps": [
+            "Pour le praliné croustillant : Faire fondre les chocolats avec le beurre de cacao.",
+            "Stabiliser le mélange à 30 °C.",
+            "Incorporer le praliné légèrement tiédi, puis la feuilletine.",
+            "Pocher la préparation dans des moules demi-sphères et laisser cristalliser au frais.",
+            "Pour l&rsquo;enrobage Rocher : Faire fondre le chocolat au lait avec le beurre de cacao.",
+            "Tempérer le mélange et l&rsquo;utiliser à 30 °C.",
+            "Ajouter les noisettes hachées torréfiées à l&rsquo;enrobage.",
+            "Pour le montage : Placer une noisette entière au cœur de chaque demi-sphère de praliné avant cristallisation.",
+            "Démouler les demi-sphères.",
+            "Assembler deux demi-sphères avec du chocolat au lait tempéré et laisser figer.",
+            "Tremper les rochers assemblés dans l&rsquo;enrobage Rocher.",
+            "Laisser cristalliser sur du papier cuisson à température ambiante."
+        ],
+        "tags": [
+            "Desserts",
+            "Italie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8059",
         "title": "Bâtonnets sablés au chocolat",
