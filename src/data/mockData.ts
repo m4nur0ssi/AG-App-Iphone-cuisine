@@ -2,68 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 24/10/2026 14:21:09
+ * Dernière mise à jour: 24/10/2026 14:38:37
  * Total: 809 recettes
  */
-export const exportSyncId = "1792851669148";
+export const exportSyncId = "1792852717802";
 export const mockRecipes: Recipe[] = [
-    {
-        "id": "8085",
-        "title": "Rouleaux de mangue et jambon cru",
-        "description": "Une entrée ou un apéritif festif et rapide à préparer en seulement 5 minutes, parfait pour les fêtes de fin d&rsquo;année. Ces rouleaux combinent la douceur de la mangue, le salé du jambon cru, la fraîcheur de la roquette et du fromage frais, le tout",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7698322151421578497\" data-video-id=\"7698322151421578497\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7698322151421578497\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥓\n             Jambon cru (ou autre charcuterie séchée)"
-            },
-            {
-                "quantity": "",
-                "name": "🥗\n             Roquette"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Mangue"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fromage frais (type Philadelphia)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Amandes"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Sauce balsamique"
-            }
-        ],
-        "steps": [
-            "Déposez les tranches de jambon cru sur une surface plane.",
-            "Ajoutez une cuillère de fromage frais, quelques feuilles de roquette et un morceau de mangue sur chaque tranche.",
-            "Roulez chaque tranche pour former un petit rouleau.",
-            "Saupoudrez les rouleaux d&rsquo;amandes concassées et arrosez-les de sauce balsamique avant de servir."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Espagne",
-            "Noël"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
     {
         "id": "8083",
         "title": "Le Courchevel Gâteau de Crêpes",
         "description": "Un élégant gâteau de crêpes inspiré de Courchevel, alliant la tradition pâtissière française à la simplicité. Composé de crêpes, de coulis de framboises, de crème au mascarpone et de fruits rouges, il est impressionnant mais facile à réaliser à la ma",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8083.webp&v=1792858903000",
         "category": "glaces",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -152,6 +100,58 @@ export const mockRecipes: Recipe[] = [
             "Glaces",
             "pâtisserie",
             "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8085",
+        "title": "Rouleaux de mangue et jambon cru",
+        "description": "Une entrée ou un apéritif festif et rapide à préparer en seulement 5 minutes, parfait pour les fêtes de fin d&rsquo;année. Ces rouleaux combinent la douceur de la mangue, le salé du jambon cru, la fraîcheur de la roquette et du fromage frais, le tout",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8085.webp&v=1792858895000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7698322151421578497\" data-video-id=\"7698322151421578497\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7698322151421578497\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥓\n             Jambon cru (ou autre charcuterie séchée)"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             Roquette"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Mangue"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fromage frais (type Philadelphia)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Amandes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Sauce balsamique"
+            }
+        ],
+        "steps": [
+            "Déposez les tranches de jambon cru sur une surface plane.",
+            "Ajoutez une cuillère de fromage frais, quelques feuilles de roquette et un morceau de mangue sur chaque tranche.",
+            "Roulez chaque tranche pour former un petit rouleau.",
+            "Saupoudrez les rouleaux d&rsquo;amandes concassées et arrosez-les de sauce balsamique avant de servir."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Espagne",
+            "Noël"
         ],
         "isFeatured": false,
         "isFavorite": false,
