@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 28/10/2026 21:04:07
+ * Dernière mise à jour: 28/10/2026 21:23:00
  * Total: 817 recettes
  */
-export const exportSyncId = "1793221447773";
+export const exportSyncId = "1793222580705";
 export const mockRecipes: Recipe[] = [
     {
         "id": "8110",
         "title": "Rondelles de pommes façon pancake",
         "description": "Une recette simple et gourmande de rondelles de pommes enrobées d&rsquo;une pâte à pancake, frites jusqu&rsquo;à être dorées, puis trempées dans de la cassonade et nappées de sauce caramel.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8110.webp&v=1793225161000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
