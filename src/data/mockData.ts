@@ -2,155 +2,202 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 28/10/2026 20:44:43
- * Total: 816 recettes
+ * Dernière mise à jour: 28/10/2026 21:04:07
+ * Total: 817 recettes
  */
-export const exportSyncId = "1793220283840";
+export const exportSyncId = "1793221447773";
 export const mockRecipes: Recipe[] = [
     {
-        "id": "8104",
-        "title": "Napolitain maison",
-        "description": "Un Napolitain maison, un dessert ou un goûter gourmand et très simple à réaliser pour toute la famille.",
+        "id": "8110",
+        "title": "Rondelles de pommes façon pancake",
+        "description": "Une recette simple et gourmande de rondelles de pommes enrobées d&rsquo;une pâte à pancake, frites jusqu&rsquo;à être dorées, puis trempées dans de la cassonade et nappées de sauce caramel.",
         "image": "/images/recipe-placeholder.jpg",
-        "category": "patisserie",
+        "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7701378731583016225\" data-video-id=\"7701378731583016225\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7701378731583016225\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7700899403212639521\" data-video-id=\"7700899403212639521\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7700899403212639521\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🧈\n             200 g de beurre fondu"
+                "name": "🌾\n             250 g de farine"
             },
             {
                 "quantity": "",
-                "name": "🍯\n             150 g de sucre"
+                "name": "🥣\n             16 g de levure chimique"
             },
             {
                 "quantity": "",
-                "name": "🥚\n             4 œufs"
+                "name": "🥣\n             1 cuillère à café de bicarbonate de soude"
             },
             {
                 "quantity": "",
-                "name": "🌾\n             200 g de farine"
+                "name": "🧂\n             Une pincée de sel"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             ½ sachet de levure chimique"
+                "name": "🥣\n             1 cuillère à café de cassonade claire"
             },
             {
                 "quantity": "",
-                "name": "🍦\n             1 cuillère à soupe d&rsquo;arôme vanille"
+                "name": "🧂\n             1 cuillère à café de cannelle"
             },
             {
                 "quantity": "",
-                "name": "🍫\n             15 g de cacao en poudre"
+                "name": "🥚\n             2 œufs"
             },
             {
                 "quantity": "",
-                "name": "🍫\n             150 g de chocolat noir"
+                "name": "🥛\n             30 ml de lait"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             150 g de crème liquide à 30 % de matière grasse"
+                "name": "🥣\n             300 ml de yaourt entier"
             },
             {
                 "quantity": "",
-                "name": "🍯\n             150 g de sucre glace"
+                "name": "🍎\n             Pommes"
             },
             {
                 "quantity": "",
-                "name": "💧\n             2 cuillères à soupe d'eau"
+                "name": "🥣\n             Cassonade claire (pour enrober)"
             },
             {
                 "quantity": "",
-                "name": "🍫\n             Vermicelles au chocolat"
+                "name": "🥣\n             Sauce caramel"
             }
         ],
         "steps": [
-            "Après avoir mis la ganache (après montage), emballez le Napolitain, posez un poids dessus et placez le tout au frais pendant 30 minutes. Cela permet à la ganache de figer et d'avoir un gâteau bien nivelé."
+            "1. Mélangez la farine, la levure chimique, le bicarbonate de soude, le sel, la cassonade et la cannelle.",
+            "2. Ajoutez les œufs, le lait et le yaourt, puis mélangez jusqu&rsquo;à obtenir une pâte lisse et épaisse.",
+            "3. Coupez les pommes en rondelles et retirez le trognon.",
+            "4. Trempez les rondelles de pommes dans la pâte jusqu&rsquo;à ce qu&rsquo;elles soient entièrement recouvertes.",
+            "5. Faites-les frire dans une poêle des deux côtés jusqu&rsquo;à ce qu&rsquo;elles soient dorées.",
+            "6. Trempez les rondelles de pommes chaudes dans la cassonade claire et arrosez-les de sauce caramel. Dégustez !"
         ],
         "tags": [
-            "France",
-            "pâtisserie"
+            "C'est l'hiver",
+            "Desserts",
+            "pancakes"
         ],
         "isFeatured": false,
         "isFavorite": false,
         "address": ""
     },
     {
-        "id": "8102",
-        "title": "Profiteroles",
-        "description": "Découvrez comment préparer de délicieuses profiteroles maison, composées d&rsquo;une pâte à choux légère, d&rsquo;une onctueuse sauce au chocolat et généralement servies avec de la glace à la vanille.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "patisserie",
+        "id": "8098",
+        "title": "Macaroni au fromage cuit au four façon pizza pepperoni",
+        "description": "Une version gourmande et réconfortante du classique macaroni au fromage, agrémentée de saveurs de pizza et de pepperoni. Ce plat cuit au four est parfait pour les amateurs de fromage et de pizza.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8098.webp&v=1793223969000",
+        "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7691002021469539617\" data-video-id=\"7691002021469539617\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7691002021469539617\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7698954606642154782\" data-video-id=\"7698954606642154782\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7698954606642154782\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "💧\n             63g d'eau"
+                "name": "🥣\n             225 g de macaronis secs"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             63g de lait entier"
+                "name": "🧈\n             3 cuillères à soupe de beurre"
             },
             {
                 "quantity": "",
-                "name": "🧈\n             63g de beurre"
+                "name": "🌾\n             1 cuillère et demie à soupe de farine"
             },
             {
                 "quantity": "",
-                "name": "🥚\n             125g d'œuf"
+                "name": "🥛\n             1 tasse et demie de crème chaude"
             },
             {
                 "quantity": "",
-                "name": "🌾\n             75g de farine"
+                "name": "🧂\n             1 cuillère à café de paprika"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             1g de sel"
+                "name": "🌿\n             1/2 cuillère à soupe de basilic séché"
             },
             {
                 "quantity": "",
-                "name": "🍯\n             3g de sucre"
+                "name": "🥣\n             1 cuillère à soupe d&rsquo;assaisonnement pour pizza ou italien"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             150ml de crème liquide 30%"
+                "name": "🥣\n             3 cuillères à soupe de fromage frais"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             80ml de lait entier"
+                "name": "🥣\n             1/2 tasse de sauce pizza"
             },
             {
                 "quantity": "",
-                "name": "🍫\n             100g de chocolat noir"
+                "name": "🧀\n             1 tasse de cheddar frais râpé"
             },
             {
                 "quantity": "",
-                "name": "🍦\n             Glace à la vanille (pour le service)"
+                "name": "🧀\n             1/2 tasse de mozzarella fraîche râpée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/4 tasse de gouda frais râpé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             55 g de tranches de pepperoni, coupées en quatre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pour le dessus :"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/2 tasse de sauce pizza"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             1 tasse et demie de mozzarella fraîche râpée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Tranches de pepperoni supplémentaires"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Assaisonnement pour pizza ou italien"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pour la garniture :"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Parmesan frais"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil frais"
             }
         ],
         "steps": [
-            "Pour la pâte à choux, faites frémir l&rsquo;eau, le lait entier, le beurre, le sel et le sucre dans une casserole.",
-            "Hors du feu, ajoutez la farine en une seule fois et mélangez énergiquement.",
-            "Remettez la casserole sur le feu et desséchez la panade pendant environ 1 à 2 minutes, en remuant constamment.",
-            "Transférez la pâte dans un cul de poule pour stopper la cuisson.",
-            "Incorporez les œufs en 2 à 3 fois, en battant énergiquement après chaque ajout, jusqu&rsquo;à obtenir une pâte lisse et homogène.",
-            "Mettez la pâte à choux dans une poche à douille et pochez des petits choux sur une plaque de cuisson.",
-            "Badigeonnez les choux d&rsquo;une dorure (non spécifiée dans la description).",
-            "Enfournez les choux à 200°C pendant environ 20 à 25 minutes. Fiez-vous au visuel pour la cuisson, car chaque four est différent.",
-            "En parallèle, préparez la sauce au chocolat : mélangez la crème liquide, le lait entier et le chocolat noir jusqu&rsquo;à obtenir une sauce onctueuse.",
-            "Servez les profiteroles garnies de glace à la vanille et nappées de sauce au chocolat."
+            "1. Macaronis : Faites cuire les macaronis selon les instructions de l'emballage.",
+            "2. Préchauffage : Préchauffez le four à 175°C (350°F). Faites chauffer la crème au micro-ondes pendant environ 1 minute, en remuant à mi-parcours.",
+            "3. Sauce : Faites chauffer une casserole à feu moyen, puis ajoutez le beurre. Une fois fondu, incorporez la farine au fouet et faites cuire pendant 2 minutes, jusqu&rsquo;à ce que le mélange bouillonne et prenne une couleur dorée. Versez la crème lentement, en fouettant jusqu&rsquo;à obtenir une consistance lisse. Incorporez le fromage frais et toutes les épices au fouet. Faites cuire pendant 3 à 4 minutes ou jusqu&rsquo;à épaississement. Réduisez le feu à doux. Ajoutez la 1/2 tasse de sauce pizza et les fromages, en remuant jusqu&rsquo;à ce qu&rsquo;ils soient fondus et que le mélange soit complètement lisse.",
+            "4. Combinaison : Incorporez les macaronis cuits et les tranches de pepperoni coupées en quatre à votre sauce.",
+            "5. Assemblage : Versez votre macaroni au fromage dans un plat de cuisson carré graissé. Étalez 1/2 tasse de sauce pizza sur tous les macaronis. Saupoudrez 1 tasse et demie de mozzarella par-dessus. Disposez vos tranches de pepperoni supplémentaires sur le fromage. Enfin, saupoudrez le tout d&rsquo;un peu d&rsquo;assaisonnement pour pizza ou italien. Faites cuire au four pendant 10 minutes, puis faites griller jusqu&rsquo;à ce que le fromage commence à dorer.",
+            "6. Garniture : Saupoudrez de persil frais et de parmesan frais sur le dessus. Dégustez !"
         ],
         "tags": [
-            "France",
-            "pâtisserie"
+            "Gratins",
+            "pates",
+            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -160,7 +207,7 @@ export const mockRecipes: Recipe[] = [
         "id": "8100",
         "title": "Escalopes de veau milanaises gratinées à la mozzarella, sauce tomate maison et spaghettis",
         "description": "Découvrez une délicieuse recette italienne d&rsquo;escalopes de veau panées à la milanaise, généreusement gratinées à la mozzarella fondante, accompagnées d&rsquo;une savoureuse sauce tomate maison et de spaghettis.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8100.webp&v=1793223961000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -273,118 +320,149 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "8098",
-        "title": "Macaroni au fromage cuit au four façon pizza pepperoni",
-        "description": "Une version gourmande et réconfortante du classique macaroni au fromage, agrémentée de saveurs de pizza et de pepperoni. Ce plat cuit au four est parfait pour les amateurs de fromage et de pizza.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
+        "id": "8102",
+        "title": "Profiteroles",
+        "description": "Découvrez comment préparer de délicieuses profiteroles maison, composées d&rsquo;une pâte à choux légère, d&rsquo;une onctueuse sauce au chocolat et généralement servies avec de la glace à la vanille.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8102.webp&v=1793223955000",
+        "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7698954606642154782\" data-video-id=\"7698954606642154782\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7698954606642154782\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7691002021469539617\" data-video-id=\"7691002021469539617\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7691002021469539617\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🥣\n             225 g de macaronis secs"
+                "name": "💧\n             63g d'eau"
             },
             {
                 "quantity": "",
-                "name": "🧈\n             3 cuillères à soupe de beurre"
+                "name": "🥛\n             63g de lait entier"
             },
             {
                 "quantity": "",
-                "name": "🌾\n             1 cuillère et demie à soupe de farine"
+                "name": "🧈\n             63g de beurre"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             1 tasse et demie de crème chaude"
+                "name": "🥚\n             125g d'œuf"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             1 cuillère à café de paprika"
+                "name": "🌾\n             75g de farine"
             },
             {
                 "quantity": "",
-                "name": "🌿\n             1/2 cuillère à soupe de basilic séché"
+                "name": "🧂\n             1g de sel"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             1 cuillère à soupe d&rsquo;assaisonnement pour pizza ou italien"
+                "name": "🍯\n             3g de sucre"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             3 cuillères à soupe de fromage frais"
+                "name": "🥛\n             150ml de crème liquide 30%"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             1/2 tasse de sauce pizza"
+                "name": "🥛\n             80ml de lait entier"
             },
             {
                 "quantity": "",
-                "name": "🧀\n             1 tasse de cheddar frais râpé"
+                "name": "🍫\n             100g de chocolat noir"
             },
             {
                 "quantity": "",
-                "name": "🧀\n             1/2 tasse de mozzarella fraîche râpée"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1/4 tasse de gouda frais râpé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             55 g de tranches de pepperoni, coupées en quatre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel au goût"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pour le dessus :"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1/2 tasse de sauce pizza"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             1 tasse et demie de mozzarella fraîche râpée"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Tranches de pepperoni supplémentaires"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Assaisonnement pour pizza ou italien"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pour la garniture :"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Parmesan frais"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil frais"
+                "name": "🍦\n             Glace à la vanille (pour le service)"
             }
         ],
         "steps": [
-            "1. Macaronis : Faites cuire les macaronis selon les instructions de l'emballage.",
-            "2. Préchauffage : Préchauffez le four à 175°C (350°F). Faites chauffer la crème au micro-ondes pendant environ 1 minute, en remuant à mi-parcours.",
-            "3. Sauce : Faites chauffer une casserole à feu moyen, puis ajoutez le beurre. Une fois fondu, incorporez la farine au fouet et faites cuire pendant 2 minutes, jusqu&rsquo;à ce que le mélange bouillonne et prenne une couleur dorée. Versez la crème lentement, en fouettant jusqu&rsquo;à obtenir une consistance lisse. Incorporez le fromage frais et toutes les épices au fouet. Faites cuire pendant 3 à 4 minutes ou jusqu&rsquo;à épaississement. Réduisez le feu à doux. Ajoutez la 1/2 tasse de sauce pizza et les fromages, en remuant jusqu&rsquo;à ce qu&rsquo;ils soient fondus et que le mélange soit complètement lisse.",
-            "4. Combinaison : Incorporez les macaronis cuits et les tranches de pepperoni coupées en quatre à votre sauce.",
-            "5. Assemblage : Versez votre macaroni au fromage dans un plat de cuisson carré graissé. Étalez 1/2 tasse de sauce pizza sur tous les macaronis. Saupoudrez 1 tasse et demie de mozzarella par-dessus. Disposez vos tranches de pepperoni supplémentaires sur le fromage. Enfin, saupoudrez le tout d&rsquo;un peu d&rsquo;assaisonnement pour pizza ou italien. Faites cuire au four pendant 10 minutes, puis faites griller jusqu&rsquo;à ce que le fromage commence à dorer.",
-            "6. Garniture : Saupoudrez de persil frais et de parmesan frais sur le dessus. Dégustez !"
+            "Pour la pâte à choux, faites frémir l&rsquo;eau, le lait entier, le beurre, le sel et le sucre dans une casserole.",
+            "Hors du feu, ajoutez la farine en une seule fois et mélangez énergiquement.",
+            "Remettez la casserole sur le feu et desséchez la panade pendant environ 1 à 2 minutes, en remuant constamment.",
+            "Transférez la pâte dans un cul de poule pour stopper la cuisson.",
+            "Incorporez les œufs en 2 à 3 fois, en battant énergiquement après chaque ajout, jusqu&rsquo;à obtenir une pâte lisse et homogène.",
+            "Mettez la pâte à choux dans une poche à douille et pochez des petits choux sur une plaque de cuisson.",
+            "Badigeonnez les choux d&rsquo;une dorure (non spécifiée dans la description).",
+            "Enfournez les choux à 200°C pendant environ 20 à 25 minutes. Fiez-vous au visuel pour la cuisson, car chaque four est différent.",
+            "En parallèle, préparez la sauce au chocolat : mélangez la crème liquide, le lait entier et le chocolat noir jusqu&rsquo;à obtenir une sauce onctueuse.",
+            "Servez les profiteroles garnies de glace à la vanille et nappées de sauce au chocolat."
         ],
         "tags": [
-            "Gratins",
-            "pates",
-            "USA"
+            "France",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8104",
+        "title": "Napolitain maison",
+        "description": "Un Napolitain maison, un dessert ou un goûter gourmand et très simple à réaliser pour toute la famille.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F10%2Frecette-8104.webp&v=1793223947000",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7701378731583016225\" data-video-id=\"7701378731583016225\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7701378731583016225\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             200 g de beurre fondu"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             150 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             4 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             200 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ½ sachet de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 cuillère à soupe d&rsquo;arôme vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             15 g de cacao en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             150 g de chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             150 g de crème liquide à 30 % de matière grasse"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             150 g de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             2 cuillères à soupe d'eau"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Vermicelles au chocolat"
+            }
+        ],
+        "steps": [
+            "Après avoir mis la ganache (après montage), emballez le Napolitain, posez un poids dessus et placez le tout au frais pendant 30 minutes. Cela permet à la ganache de figer et d'avoir un gâteau bien nivelé."
+        ],
+        "tags": [
+            "France",
+            "pâtisserie"
         ],
         "isFeatured": false,
         "isFavorite": false,
