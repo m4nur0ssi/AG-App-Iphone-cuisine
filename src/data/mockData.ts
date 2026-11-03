@@ -2,92 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 03/11/2026 21:14:31
+ * Dernière mise à jour: 03/11/2026 21:29:55
  * Total: 826 recettes
  */
-export const exportSyncId = "1793740471016";
+export const exportSyncId = "1793741395540";
 export const mockRecipes: Recipe[] = [
-    {
-        "id": "8135",
-        "title": "Brownies Tiramisu",
-        "description": "Des brownies moelleux imbibés de café, surmontés d&rsquo;une crème onctueuse au mascarpone et saupoudrés de cacao.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "patisserie",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7703877346050329889\" data-video-id=\"7703877346050329889\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7703877346050329889\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧈\n             110g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             200g de chocolat noir"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             50g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             100g de cassonade"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             3 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             90g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 petit verre d&rsquo;espresso (pour l&rsquo;imbibage)"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             250g de mascarpone"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             250ml de crème liquide entière"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             70g de sucre glace (facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             Cacao en poudre non sucré (pour le saupoudrage)"
-            }
-        ],
-        "steps": [
-            "Faire fondre le chocolat noir et le beurre dans une petite casserole, puis ajouter le sucre et bien mélanger.",
-            "Incorporer les œufs un par un, en mélangeant bien après chaque ajout.",
-            "Ajouter progressivement la farine tamisée, en mélangeant délicatement.",
-            "Faire cuire au four à 175°C pendant 25 à 30 minutes.",
-            "Laisser refroidir le brownie, puis le piquer à l&rsquo;aide d&rsquo;une fourchette.",
-            "Verser l&rsquo;espresso sur le brownie pour l&rsquo;imbiber.",
-            "Fouetter les 250ml de crème liquide entière, puis incorporer les 250g de mascarpone et les 70g de sucre glace (facultatif).",
-            "Étaler cette crème sur le brownie.",
-            "Avant de servir, saupoudrer de cacao en poudre non sucré."
-        ],
-        "tags": [
-            "Italie",
-            "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
     {
         "id": "8133",
         "title": "Shakshuka d&rsquo;automne aux poireaux et lait de coco",
         "description": "Découvrez une version automnale et réconfortante de la shakshuka, revisitée avec une fondue de poireaux au curry et lait de coco. Ce plat végétarien complet est agrémenté de pois chiches, d&rsquo;œufs, et servi avec du pain pita, des noix de cajou et",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8133.webp&v=1793744538000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -183,6 +107,82 @@ export const mockRecipes: Recipe[] = [
             "Healthy",
             "Orient",
             "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8135",
+        "title": "Brownies Tiramisu",
+        "description": "Des brownies moelleux imbibés de café, surmontés d&rsquo;une crème onctueuse au mascarpone et saupoudrés de cacao.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7703877346050329889\" data-video-id=\"7703877346050329889\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7703877346050329889\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             110g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             200g de chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             50g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100g de cassonade"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             90g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 petit verre d&rsquo;espresso (pour l&rsquo;imbibage)"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             250g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             250ml de crème liquide entière"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             70g de sucre glace (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Cacao en poudre non sucré (pour le saupoudrage)"
+            }
+        ],
+        "steps": [
+            "Faire fondre le chocolat noir et le beurre dans une petite casserole, puis ajouter le sucre et bien mélanger.",
+            "Incorporer les œufs un par un, en mélangeant bien après chaque ajout.",
+            "Ajouter progressivement la farine tamisée, en mélangeant délicatement.",
+            "Faire cuire au four à 175°C pendant 25 à 30 minutes.",
+            "Laisser refroidir le brownie, puis le piquer à l&rsquo;aide d&rsquo;une fourchette.",
+            "Verser l&rsquo;espresso sur le brownie pour l&rsquo;imbiber.",
+            "Fouetter les 250ml de crème liquide entière, puis incorporer les 250g de mascarpone et les 70g de sucre glace (facultatif).",
+            "Étaler cette crème sur le brownie.",
+            "Avant de servir, saupoudrer de cacao en poudre non sucré."
+        ],
+        "tags": [
+            "Italie",
+            "pâtisserie"
         ],
         "isFeatured": false,
         "isFavorite": false,
