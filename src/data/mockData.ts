@@ -2,16 +2,94 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 07/11/2026 14:01:41
+ * Dernière mise à jour: 07/11/2026 14:19:32
  * Total: 832 recettes
  */
-export const exportSyncId = "1794060101069";
+export const exportSyncId = "1794061172306";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8143",
+        "title": "Fonkie (Cookie et Fondant au Chocolat)",
+        "description": "Découvrez la recette du Fonkie, un dessert gourmand qui combine un cookie moelleux et un fondant au chocolat intense, le tout cuit en deux étapes pour une texture parfaite.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8143.webp&v=1794063760000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7704997233699097889\" data-video-id=\"7704997233699097889\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7704997233699097889\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             100 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             30 g de sucre (de coco ou roux)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             115 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             100 g de pépites de chocolat"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             40 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             100 g de chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             30 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 g de maïzena"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Cacao en poudre (pour saupoudrer)"
+            }
+        ],
+        "steps": [
+            "Pour le cookie : dans un saladier, crémez 100 g de beurre pommade avec 30 g de sucre (de coco ou roux) à l&rsquo;aide d&rsquo;une maryse.",
+            "Ajoutez 1 œuf, puis 115 g de farine et incorporez le tout avec la maryse.",
+            "Terminez en ajoutant 100 g de pépites de chocolat. Mélangez.",
+            "Chemisez un moule à charnière de 18 cm et étalez la pâte à cookie au fond en la tassant bien.",
+            "Enfournez le cookie pour 8 minutes à 180°C.",
+            "Pendant ce temps, préparez le fondant au chocolat : faites fondre 40 g de beurre avec 100 g de chocolat noir. Réservez.",
+            "Dans un autre saladier, fouettez 3 œufs.",
+            "Ajoutez 30 g de farine et 30 g de maïzena, puis incorporez le mélange de chocolat et beurre fondu. Mélangez bien.",
+            "Récupérez le cookie pré-cuit. Versez la préparation du fondant sur le dessus du cookie.",
+            "Ré-enfournez pour 6 minutes à 200°C.",
+            "Saupoudrez de cacao en poudre pour une jolie finition et dégustez tiède."
+        ],
+        "tags": [
+            "pâtisserie",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8154",
         "title": "Magret de canard séché aux 5 épices chinoises",
         "description": "Découvrez la recette d&rsquo;un magret de canard séché aux cinq épices chinoises, une préparation savoureuse et parfumée qui rappelle le foie gras aux quatre épices. Un délice à préparer pour les amateurs de charcuterie maison.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8154.webp&v=1794063751000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -247,84 +325,6 @@ export const mockRecipes: Recipe[] = [
             "Italie",
             "Noël",
             "Rafraîchissements"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8143",
-        "title": "Fonkie (Cookie et Fondant au Chocolat)",
-        "description": "Découvrez la recette du Fonkie, un dessert gourmand qui combine un cookie moelleux et un fondant au chocolat intense, le tout cuit en deux étapes pour une texture parfaite.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7704997233699097889\" data-video-id=\"7704997233699097889\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7704997233699097889\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧈\n             100 g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             30 g de sucre (de coco ou roux)"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             115 g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             100 g de pépites de chocolat"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             40 g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             100 g de chocolat noir"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             3 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             30 g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             30 g de maïzena"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             Cacao en poudre (pour saupoudrer)"
-            }
-        ],
-        "steps": [
-            "Pour le cookie : dans un saladier, crémez 100 g de beurre pommade avec 30 g de sucre (de coco ou roux) à l&rsquo;aide d&rsquo;une maryse.",
-            "Ajoutez 1 œuf, puis 115 g de farine et incorporez le tout avec la maryse.",
-            "Terminez en ajoutant 100 g de pépites de chocolat. Mélangez.",
-            "Chemisez un moule à charnière de 18 cm et étalez la pâte à cookie au fond en la tassant bien.",
-            "Enfournez le cookie pour 8 minutes à 180°C.",
-            "Pendant ce temps, préparez le fondant au chocolat : faites fondre 40 g de beurre avec 100 g de chocolat noir. Réservez.",
-            "Dans un autre saladier, fouettez 3 œufs.",
-            "Ajoutez 30 g de farine et 30 g de maïzena, puis incorporez le mélange de chocolat et beurre fondu. Mélangez bien.",
-            "Récupérez le cookie pré-cuit. Versez la préparation du fondant sur le dessus du cookie.",
-            "Ré-enfournez pour 6 minutes à 200°C.",
-            "Saupoudrez de cacao en poudre pour une jolie finition et dégustez tiède."
-        ],
-        "tags": [
-            "pâtisserie",
-            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
