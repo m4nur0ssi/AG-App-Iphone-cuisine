@@ -2,16 +2,178 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 07/11/2026 13:41:07
- * Total: 831 recettes
+ * Dernière mise à jour: 07/11/2026 14:01:41
+ * Total: 832 recettes
  */
-export const exportSyncId = "1794058867458";
+export const exportSyncId = "1794060101069";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8154",
+        "title": "Magret de canard séché aux 5 épices chinoises",
+        "description": "Découvrez la recette d&rsquo;un magret de canard séché aux cinq épices chinoises, une préparation savoureuse et parfumée qui rappelle le foie gras aux quatre épices. Un délice à préparer pour les amateurs de charcuterie maison.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7696538351293222177\" data-video-id=\"7696538351293222177\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7696538351293222177\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Magret de canard"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Gros sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cinq épices chinoises"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre de Sichuan"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Zeste d&rsquo;orange"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Sucre cassonade"
+            }
+        ],
+        "steps": [
+            "Commencez par parer et dénerver le magret de canard au maximum pour obtenir une viande propre, en veillant à conserver une couche de gras sur le dessus.",
+            "Sur une plaque, tapissez le fond de gros sel. Déposez les magrets de canard et recouvrez-les entièrement d&rsquo;une bonne couche de sel, en vous assurant qu&rsquo;aucun morceau de viande ne dépasse.",
+            "Laissez déshydrater pendant au moins 12 heures.",
+            "Pendant ce temps, préparez le mélange d&rsquo;épices : mélangez les cinq épices chinoises, le poivre de Sichuan, le zeste d&rsquo;orange et une cuillère de sucre cassonade. Réservez.",
+            "Une fois le temps de déshydratation écoulé, dessalez le magret en le plongeant rapidement dans un grand volume d&rsquo;eau pour retirer tout le sel collé à la surface.",
+            "Épongez soigneusement le magret entre deux papiers absorbants, puis placez-le sur un torchon propre (non lavé avec de la lessive pour éviter d&rsquo;altérer le goût).",
+            "Enrobez généreusement le magret de canard avec le mélange d&rsquo;épices. Enveloppez-le fermement dans le torchon et déposez-le sur une grille posée sur une plaque. Laissez sécher au réfrigérateur pendant deux semaines."
+        ],
+        "tags": [
+            "Asie",
+            "C'est l'hiver",
+            "Noël"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8145",
+        "title": "Martini Caramel Brûlée",
+        "description": "Un cocktail festif inspiré du menu de Noël de Starbucks, avec une touche alcoolisée de Baileys Caramel Salé, de vodka et de caramel, garni de crème fouettée et de sauce caramel.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8145.webp&v=1794062545000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7704873652126354701\" data-video-id=\"7704873652126354701\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7704873652126354701\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧄\n             45 ml de Baileys Caramel Salé"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             45 ml de crème épaisse"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 ml de vodka"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de caramel salé"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de sucre, pour caraméliser au chalumeau"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème fouettée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Sauce caramel"
+            }
+        ],
+        "steps": [
+            "Dans un shaker rempli de glace, verser le Baileys Caramel Salé, la crème épaisse, la vodka et le caramel salé.",
+            "Secouer vigoureusement jusqu&rsquo;à ce que le mélange soit bien frais.",
+            "Filtrer et verser dans un verre à martini.",
+            "Garnir généreusement de crème fouettée.",
+            "Saupoudrer la crème fouettée d&rsquo;une cuillère à soupe de sucre et caraméliser délicatement à l&rsquo;aide d&rsquo;un chalumeau de cuisine.",
+            "Arroser d&rsquo;un filet de sauce caramel pour la touche finale."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Noël",
+            "Rafraîchissements",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8147",
+        "title": "Espresso Martini au Baileys Caramel Salé",
+        "description": "Une boisson festive et gourmande, parfaite pour la saison des fêtes. Ce cocktail combine l&rsquo;intensité de l&rsquo;espresso avec la douceur du Baileys Caramel Salé, une touche de vodka et un soupçon de vanille, le tout servi frais.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8147.webp&v=1794062538000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7703996791389293857\" data-video-id=\"7703996791389293857\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7703996791389293857\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             4 à 5 glaçons"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             40 ml d&rsquo;espresso"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             50 ml de Baileys Caramel Salé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             20 ml de vodka (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             2 à 3 gouttes d&rsquo;extrait de vanille"
+            }
+        ],
+        "steps": [
+            "Mettre les glaçons dans un shaker.",
+            "Ajouter l&rsquo;espresso, le Baileys Caramel Salé, la vodka (si utilisée) et l&rsquo;extrait de vanille.",
+            "Secouer vigoureusement jusqu&rsquo;à ce que le mélange soit bien frais.",
+            "Filtrer et verser dans un verre à cocktail."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Noël",
+            "Rafraîchissements"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8149",
         "title": "Spritz Apérol des Fêtes",
         "description": "Si vous cherchez une boisson pour la saison des fêtes, préparez ce Spritz Apérol des Fêtes. Le sirop maison de canneberge et romarin épicé a le goût de Noël en bouteille et est également parfait pour de nombreux autres cocktails et mocktails.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8149.webp&v=1794062530000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -85,113 +247,6 @@ export const mockRecipes: Recipe[] = [
             "Italie",
             "Noël",
             "Rafraîchissements"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8147",
-        "title": "Espresso Martini au Baileys Caramel Salé",
-        "description": "Une boisson festive et gourmande, parfaite pour la saison des fêtes. Ce cocktail combine l&rsquo;intensité de l&rsquo;espresso avec la douceur du Baileys Caramel Salé, une touche de vodka et un soupçon de vanille, le tout servi frais.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7703996791389293857\" data-video-id=\"7703996791389293857\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7703996791389293857\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             4 à 5 glaçons"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             40 ml d&rsquo;espresso"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             50 ml de Baileys Caramel Salé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             20 ml de vodka (facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             2 à 3 gouttes d&rsquo;extrait de vanille"
-            }
-        ],
-        "steps": [
-            "Mettre les glaçons dans un shaker.",
-            "Ajouter l&rsquo;espresso, le Baileys Caramel Salé, la vodka (si utilisée) et l&rsquo;extrait de vanille.",
-            "Secouer vigoureusement jusqu&rsquo;à ce que le mélange soit bien frais.",
-            "Filtrer et verser dans un verre à cocktail."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Noël",
-            "Rafraîchissements"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8145",
-        "title": "Martini Caramel Brûlée",
-        "description": "Un cocktail festif inspiré du menu de Noël de Starbucks, avec une touche alcoolisée de Baileys Caramel Salé, de vodka et de caramel, garni de crème fouettée et de sauce caramel.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7704873652126354701\" data-video-id=\"7704873652126354701\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7704873652126354701\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧄\n             45 ml de Baileys Caramel Salé"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             45 ml de crème épaisse"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             30 ml de vodka"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à soupe de caramel salé"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à soupe de sucre, pour caraméliser au chalumeau"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Crème fouettée"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Sauce caramel"
-            }
-        ],
-        "steps": [
-            "Dans un shaker rempli de glace, verser le Baileys Caramel Salé, la crème épaisse, la vodka et le caramel salé.",
-            "Secouer vigoureusement jusqu&rsquo;à ce que le mélange soit bien frais.",
-            "Filtrer et verser dans un verre à martini.",
-            "Garnir généreusement de crème fouettée.",
-            "Saupoudrer la crème fouettée d&rsquo;une cuillère à soupe de sucre et caraméliser délicatement à l&rsquo;aide d&rsquo;un chalumeau de cuisine.",
-            "Arroser d&rsquo;un filet de sauce caramel pour la touche finale."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Noël",
-            "Rafraîchissements",
-            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
