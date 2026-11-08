@@ -2,11 +2,119 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/11/2026 09:46:03
+ * Dernière mise à jour: 08/11/2026 10:02:59
  * Total: 833 recettes
  */
-export const exportSyncId = "1794131163424";
+export const exportSyncId = "1794132179073";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "7858",
+        "title": "Œufs mimosa frits croustillants à la crème de curry, bacon et cresson",
+        "description": "Une nouvelle version des populaires œufs mimosa frits. Les jaunes d&rsquo;œufs durs sont mélangés avec du fromage frais, du curry et de la moutarde, et les blancs d&rsquo;œufs sont frits. C&rsquo;est une entrée parfaite pour Pâques.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7858.webp&v=1794134754000",
+        "category": "entrees",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7624451601821895958\" data-video-id=\"7624451601821895958\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7624451601821895958\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs durs"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Jaunes d&rsquo;œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fromage frais"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Curry"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Blancs d&rsquo;œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Bacon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cresson"
+            }
+        ],
+        "steps": [
+            "Faire bouillir les œufs.",
+            "Séparer les jaunes des blancs d&rsquo;œufs.",
+            "Mélanger les jaunes d&rsquo;œufs avec du fromage frais, du curry et de la moutarde.",
+            "Faire frire les blancs d&rsquo;œufs.",
+            "Servir les œufs mimosa frits garnis de crème de curry, de bacon et de cresson."
+        ],
+        "tags": [
+            "Entrées",
+            "épicé",
+            "Pâques",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "6353",
+        "title": "Virgin Mojito",
+        "description": "Un mojito express, prêt en seulement 2 minutes.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6353_1782569582238-1.jpg&v=1794134419000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7252370449462562074\" data-video-id=\"7252370449462562074\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7252370449462562074\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍋\n             1/2 citron vert"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             10 feuilles menthe"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             1/2 jus de citron vert"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Glaçon"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Sprite ou eau gazeuse + sucre roux"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Pas cher",
+            "Rafraîchissements",
+            "Végé",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8158",
         "title": "Carottes enrobées de bacon avec un glaçage érable et Dijon",
@@ -7322,68 +7430,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Apéritifs",
             "Noël"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "7858",
-        "title": "Œufs mimosa frits croustillants à la crème de curry, bacon et cresson",
-        "description": "Une nouvelle version des populaires œufs mimosa frits. Les jaunes d&rsquo;œufs durs sont mélangés avec du fromage frais, du curry et de la moutarde, et les blancs d&rsquo;œufs sont frits. C&rsquo;est une entrée parfaite pour Pâques.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F09%2Frecette-7858.webp&v=1790071593000",
-        "category": "aperitifs",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7624451601821895958\" data-video-id=\"7624451601821895958\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7624451601821895958\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             Œufs durs"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Jaunes d&rsquo;œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fromage frais"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Curry"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             Moutarde"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Blancs d&rsquo;œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Bacon"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Cresson"
-            }
-        ],
-        "steps": [
-            "Faire bouillir les œufs.",
-            "Séparer les jaunes des blancs d&rsquo;œufs.",
-            "Mélanger les jaunes d&rsquo;œufs avec du fromage frais, du curry et de la moutarde.",
-            "Faire frire les blancs d&rsquo;œufs.",
-            "Servir les œufs mimosa frits garnis de crème de curry, de bacon et de cresson."
-        ],
-        "tags": [
-            "Apéritifs",
-            "épicé",
-            "Pâques",
-            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -37705,95 +37751,6 @@ export const mockRecipes: Recipe[] = [
             "Pas cher",
             "Poissons et crustacés",
             "Salades",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6811",
-        "title": "Salade de pommes de terre garnie",
-        "description": "Une salade de pommes de terre garnie ultra crémeuse, fraîche, riche en protéines et parfaite pour la chaleur. Une recette simple et gourmande pour manger sainement et perdre du gras.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6811_1784117560239.jpg&v=1784124843000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7661358430317235489\" data-video-id=\"7661358430317235489\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7661358430317235489\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍎\n             500 g de pommes de terre grenaille"
-            },
-            {
-                "quantity": "",
-                "name": "🍗\n             250 g de filet de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             200 g de Carré Frais 0 %"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             50 g de skyr nature"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             30 à 40 g d'allumettes de bacon"
-            },
-            {
-                "quantity": "",
-                "name": "🥒\n             80 g de concombre"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             40 g d'oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Ciboulette"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             Moutarde"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Ail en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            }
-        ],
-        "steps": [
-            "1. Faire cuire les pommes de terre, puis les couper en deux.",
-            "2. Les faire dorer à la poêle avec du paprika fumé, de l&rsquo;ail, du sel et du poivre (facultatif).",
-            "3. Faire cuire le poulet puis l&rsquo;effilocher.",
-            "4. Faire griller le bacon jusqu'à ce qu'il soit croustillant.",
-            "5. Mixer le Carré Frais, le skyr, la moutarde, le citron, les épices et la ciboulette.",
-            "6. Mélanger les pommes de terre froides, le poulet, le concombre, l'oignon rouge et la sauce.",
-            "7. Terminer avec le bacon croustillant, un peu de ciboulette et du paprika fumé."
-        ],
-        "tags": [
-            "Healthy",
-            "minceur",
-            "Salades",
-            "USA",
             "Voilà l'été"
         ],
         "isFeatured": false,
