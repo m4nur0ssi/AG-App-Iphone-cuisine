@@ -2,11 +2,94 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/11/2026 09:14:05
+ * Dernière mise à jour: 08/11/2026 09:46:03
  * Total: 833 recettes
  */
-export const exportSyncId = "1794129245809";
+export const exportSyncId = "1794131163424";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8158",
+        "title": "Carottes enrobées de bacon avec un glaçage érable et Dijon",
+        "description": "Ces carottes enrobées de bacon et nappées d&rsquo;un glaçage sucré-salé à l&rsquo;érable et à la moutarde de Dijon sont le plat d&rsquo;accompagnement idéal pour votre menu de Thanksgiving. La cuisson sur une grille assure un bacon croustillant de to",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8158.webp&v=1794133559000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7703969526731377933\" data-video-id=\"7703969526731377933\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7703969526731377933\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥕\n             10 carottes moyennes d&rsquo;environ 20 cm de long, pelées"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             10 tranches de bacon de coupe régulière"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             3 cuillères à soupe de sirop d&rsquo;érable pur"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             2 cuillères à soupe de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de moutarde de Dijon"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             ½ cuillère à café de sel casher"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             ½ cuillère à café de paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             ¼ cuillère à café de thym séché"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             ¼ cuillère à café de poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à café de vinaigre de cidre de pomme"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette ou persil finement haché (pour la garniture, facultatif)"
+            }
+        ],
+        "steps": [
+            "Préchauffez le four à 200˚C (400˚F). Placez une grille sur une plaque de cuisson recouverte de papier aluminium.",
+            "Dans une grande casserole d&rsquo;eau bouillante, faites blanchir les carottes entières pendant 6 à 7 minutes (environ 4 minutes pour les carottes fines, 8 à 9 minutes pour les très épaisses). Égouttez-les et séchez-les complètement.",
+            "En commençant par l&rsquo;extrémité la plus épaisse de chaque carotte, enroulez une tranche de bacon en spirale. Espacez les tours de manière à laisser apparaître une bande de carotte entre chaque tour, sans chevauchement.",
+            "À chaque extrémité, insérez un cure-dent à travers le bacon et la carotte pour le faire ressortir de l&rsquo;autre côté du bacon, afin de bien fixer le bacon.",
+            "Disposez les carottes sur la grille. Enfournez pendant 10 minutes, jusqu&rsquo;à ce que le gras du bacon commence à fondre.",
+            "Pendant ce temps, dans un bol, fouettez ensemble le sirop d&rsquo;érable, le miel, la moutarde de Dijon, l&rsquo;huile d&rsquo;olive, le sel casher, le paprika fumé, le thym, le poivre noir et le vinaigre de cidre de pomme jusqu&rsquo;à obtenir un mélange homogène.",
+            "Badigeonnez le dessus des carottes avec environ un tiers du glaçage, puis remettez au four et faites cuire encore 10 à 12 minutes.",
+            "Retournez les carottes, badigeonnez le côté maintenant vers le haut avec un autre tiers du glaçage, et remettez au four pour 10 à 12 minutes supplémentaires.",
+            "Retournez à nouveau, badigeonnez avec le glaçage restant, et faites cuire une dernière fois pendant 10 à 12 minutes, jusqu&rsquo;à ce que le bacon soit croustillant et que le glaçage soit brillant et figé.",
+            "Vérifiez la cuisson en insérant un couteau d&rsquo;office dans la partie la plus épaisse d&rsquo;une carotte. S&rsquo;il s&rsquo;enfonce facilement, elles sont cuites. Sinon, remettez-les au four pour 5 minutes supplémentaires, en couvrant lâchement d&rsquo;une feuille d&rsquo;aluminium si le bacon est déjà croustillant.",
+            "Laissez reposer 5 minutes pour que le glaçage se fixe, puis retirez les cure-dents et garnissez de ciboulette ou de persil finement haché. Ne laissez pas les carottes sur la grille plus de 5 à 10 minutes, sinon le glaçage pourrait les rendre difficiles à retirer."
+        ],
+        "tags": [
+            "Accompagnements",
+            "C'est l'hiver",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8149",
         "title": "Spritz Apérol des Fêtes",
@@ -191,89 +274,6 @@ export const mockRecipes: Recipe[] = [
             "C'est l'hiver",
             "Cocktails",
             "Noël",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8158",
-        "title": "Carottes enrobées de bacon avec un glaçage érable et Dijon",
-        "description": "Ces carottes enrobées de bacon et nappées d&rsquo;un glaçage sucré-salé à l&rsquo;érable et à la moutarde de Dijon sont le plat d&rsquo;accompagnement idéal pour votre menu de Thanksgiving. La cuisson sur une grille assure un bacon croustillant de to",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7703969526731377933\" data-video-id=\"7703969526731377933\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7703969526731377933\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥕\n             10 carottes moyennes d&rsquo;environ 20 cm de long, pelées"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             10 tranches de bacon de coupe régulière"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             3 cuillères à soupe de sirop d&rsquo;érable pur"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             2 cuillères à soupe de miel"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 cuillère à soupe de moutarde de Dijon"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 cuillère à soupe d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             ½ cuillère à café de sel casher"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             ½ cuillère à café de paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             ¼ cuillère à café de thym séché"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             ¼ cuillère à café de poivre noir"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 cuillère à café de vinaigre de cidre de pomme"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Ciboulette ou persil finement haché (pour la garniture, facultatif)"
-            }
-        ],
-        "steps": [
-            "Préchauffez le four à 200˚C (400˚F). Placez une grille sur une plaque de cuisson recouverte de papier aluminium.",
-            "Dans une grande casserole d&rsquo;eau bouillante, faites blanchir les carottes entières pendant 6 à 7 minutes (environ 4 minutes pour les carottes fines, 8 à 9 minutes pour les très épaisses). Égouttez-les et séchez-les complètement.",
-            "En commençant par l&rsquo;extrémité la plus épaisse de chaque carotte, enroulez une tranche de bacon en spirale. Espacez les tours de manière à laisser apparaître une bande de carotte entre chaque tour, sans chevauchement.",
-            "À chaque extrémité, insérez un cure-dent à travers le bacon et la carotte pour le faire ressortir de l&rsquo;autre côté du bacon, afin de bien fixer le bacon.",
-            "Disposez les carottes sur la grille. Enfournez pendant 10 minutes, jusqu&rsquo;à ce que le gras du bacon commence à fondre.",
-            "Pendant ce temps, dans un bol, fouettez ensemble le sirop d&rsquo;érable, le miel, la moutarde de Dijon, l&rsquo;huile d&rsquo;olive, le sel casher, le paprika fumé, le thym, le poivre noir et le vinaigre de cidre de pomme jusqu&rsquo;à obtenir un mélange homogène.",
-            "Badigeonnez le dessus des carottes avec environ un tiers du glaçage, puis remettez au four et faites cuire encore 10 à 12 minutes.",
-            "Retournez les carottes, badigeonnez le côté maintenant vers le haut avec un autre tiers du glaçage, et remettez au four pour 10 à 12 minutes supplémentaires.",
-            "Retournez à nouveau, badigeonnez avec le glaçage restant, et faites cuire une dernière fois pendant 10 à 12 minutes, jusqu&rsquo;à ce que le bacon soit croustillant et que le glaçage soit brillant et figé.",
-            "Vérifiez la cuisson en insérant un couteau d&rsquo;office dans la partie la plus épaisse d&rsquo;une carotte. S&rsquo;il s&rsquo;enfonce facilement, elles sont cuites. Sinon, remettez-les au four pour 5 minutes supplémentaires, en couvrant lâchement d&rsquo;une feuille d&rsquo;aluminium si le bacon est déjà croustillant.",
-            "Laissez reposer 5 minutes pour que le glaçage se fixe, puis retirez les cure-dents et garnissez de ciboulette ou de persil finement haché. Ne laissez pas les carottes sur la grille plus de 5 à 10 minutes, sinon le glaçage pourrait les rendre difficiles à retirer."
-        ],
-        "tags": [
-            "Accompagnements",
-            "C'est l'hiver",
             "USA"
         ],
         "isFeatured": false,
@@ -37801,6 +37801,95 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
+        "id": "6811",
+        "title": "Salade de pommes de terre garnie",
+        "description": "Une salade de pommes de terre garnie ultra crémeuse, fraîche, riche en protéines et parfaite pour la chaleur. Une recette simple et gourmande pour manger sainement et perdre du gras.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F07%2Frecipe_6811_1784117560239.jpg&v=1784124843000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7661358430317235489\" data-video-id=\"7661358430317235489\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7661358430317235489\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             500 g de pommes de terre grenaille"
+            },
+            {
+                "quantity": "",
+                "name": "🍗\n             250 g de filet de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200 g de Carré Frais 0 %"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50 g de skyr nature"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 à 40 g d'allumettes de bacon"
+            },
+            {
+                "quantity": "",
+                "name": "🥒\n             80 g de concombre"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             40 g d'oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            }
+        ],
+        "steps": [
+            "1. Faire cuire les pommes de terre, puis les couper en deux.",
+            "2. Les faire dorer à la poêle avec du paprika fumé, de l&rsquo;ail, du sel et du poivre (facultatif).",
+            "3. Faire cuire le poulet puis l&rsquo;effilocher.",
+            "4. Faire griller le bacon jusqu'à ce qu'il soit croustillant.",
+            "5. Mixer le Carré Frais, le skyr, la moutarde, le citron, les épices et la ciboulette.",
+            "6. Mélanger les pommes de terre froides, le poulet, le concombre, l'oignon rouge et la sauce.",
+            "7. Terminer avec le bacon croustillant, un peu de ciboulette et du paprika fumé."
+        ],
+        "tags": [
+            "Healthy",
+            "minceur",
+            "Salades",
+            "USA",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
         "id": "6817",
         "title": "Salade de lentilles fraîches, mozza et lardons grillés",
         "description": "Une salade fraîche, simple et gourmande aux herbes du sud, parfaite pour les déjeuners ensoleillés, avec une vinaigrette au Melfor.",
@@ -43521,52 +43610,6 @@ export const mockRecipes: Recipe[] = [
         ],
         "tags": [
             "Salades",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "6353",
-        "title": "Mojito express",
-        "description": "Un mojito express, prêt en seulement 2 minutes.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F06%2Frecipe_6353_1782569582238-1.jpg&v=1782830677000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7252370449462562074\" data-video-id=\"7252370449462562074\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7252370449462562074\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍋\n             1/2 citron vert"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             10 feuilles menthe"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             1/2 jus de citron vert"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Glaçon"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Sprite ou eau gazeuse + sucre roux"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Pas cher",
-            "Rafraîchissements",
-            "Végé",
             "Voilà l'été"
         ],
         "isFeatured": false,
