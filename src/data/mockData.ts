@@ -2,11 +2,201 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 07/11/2026 17:46:01
+ * Dernière mise à jour: 08/11/2026 09:14:05
  * Total: 833 recettes
  */
-export const exportSyncId = "1794073561232";
+export const exportSyncId = "1794129245809";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8149",
+        "title": "Spritz Apérol des Fêtes",
+        "description": "Si vous cherchez une boisson pour la saison des fêtes, préparez ce Spritz Apérol des Fêtes. Le sirop maison de canneberge et romarin épicé a le goût de Noël en bouteille et est également parfait pour de nombreux autres cocktails et mocktails.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8149.webp&v=1794132466000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7705095580011334926\" data-video-id=\"7705095580011334926\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7705095580011334926\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             90 ml de prosecco, réfrigéré"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 ml d&rsquo;Apérol, réfrigéré"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             15 ml de sirop de canneberge et romarin épicé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 ml de club soda, réfrigéré"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Canneberges fraîches pour la garniture"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Brin de romarin pour la garniture"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Anis étoilé pour la garniture"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pour le sirop de canneberge et romarin épicé :"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             240 ml d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             200 g de sucre blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100 g de canneberges fraîches"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 brin de romarin frais"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 ou 2 bâtons de cannelle entiers"
+            }
+        ],
+        "steps": [
+            "Préparer le sirop de canneberge et romarin épicé : Dans une casserole, mélanger l&rsquo;eau, le sucre blanc, les canneberges fraîches, le brin de romarin frais et les bâtons de cannelle entiers.",
+            "Porter à ébullition, puis réduire le feu et laisser mijoter pendant environ 10 à 15 minutes, jusqu&rsquo;à ce que les canneberges éclatent et que le sirop épaississe légèrement.",
+            "Retirer du feu et laisser infuser pendant au moins 30 minutes (ou plus pour un goût plus prononcé), puis filtrer le sirop pour retirer les solides. Laisser refroidir complètement avant utilisation.",
+            "Pour préparer le Spritz Apérol des Fêtes : Dans un verre à vin ou un grand verre rempli de glaçons, verser le prosecco réfrigéré, l&rsquo;Apérol réfrigéré et le sirop de canneberge et romarin épicé.",
+            "Compléter avec le club soda réfrigéré.",
+            "Garnir avec quelques canneberges fraîches, un brin de romarin et un anis étoilé. Servir immédiatement."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Cocktails",
+            "Italie",
+            "Noël"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8147",
+        "title": "Espresso Martini au Baileys Caramel Salé",
+        "description": "Une boisson festive et gourmande, parfaite pour la saison des fêtes. Ce cocktail combine l&rsquo;intensité de l&rsquo;espresso avec la douceur du Baileys Caramel Salé, une touche de vodka et un soupçon de vanille, le tout servi frais.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8147.webp&v=1794132450000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7703996791389293857\" data-video-id=\"7703996791389293857\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7703996791389293857\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             4 à 5 glaçons"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             40 ml d&rsquo;espresso"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             50 ml de Baileys Caramel Salé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             20 ml de vodka (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             2 à 3 gouttes d&rsquo;extrait de vanille"
+            }
+        ],
+        "steps": [
+            "Mettre les glaçons dans un shaker.",
+            "Ajouter l&rsquo;espresso, le Baileys Caramel Salé, la vodka (si utilisée) et l&rsquo;extrait de vanille.",
+            "Secouer vigoureusement jusqu&rsquo;à ce que le mélange soit bien frais.",
+            "Filtrer et verser dans un verre à cocktail."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Cocktails",
+            "Noël"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8145",
+        "title": "Martini Caramel Brûlée",
+        "description": "Un cocktail festif inspiré du menu de Noël de Starbucks, avec une touche alcoolisée de Baileys Caramel Salé, de vodka et de caramel, garni de crème fouettée et de sauce caramel.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8145.webp&v=1794132431000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7704873652126354701\" data-video-id=\"7704873652126354701\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7704873652126354701\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧄\n             45 ml de Baileys Caramel Salé"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             45 ml de crème épaisse"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 ml de vodka"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de caramel salé"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de sucre, pour caraméliser au chalumeau"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Crème fouettée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Sauce caramel"
+            }
+        ],
+        "steps": [
+            "Dans un shaker rempli de glace, verser le Baileys Caramel Salé, la crème épaisse, la vodka et le caramel salé.",
+            "Secouer vigoureusement jusqu&rsquo;à ce que le mélange soit bien frais.",
+            "Filtrer et verser dans un verre à martini.",
+            "Garnir généreusement de crème fouettée.",
+            "Saupoudrer la crème fouettée d&rsquo;une cuillère à soupe de sucre et caraméliser délicatement à l&rsquo;aide d&rsquo;un chalumeau de cuisine.",
+            "Arroser d&rsquo;un filet de sauce caramel pour la touche finale."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Cocktails",
+            "Noël",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8158",
         "title": "Carottes enrobées de bacon avec un glaçage érable et Dijon",
@@ -218,196 +408,6 @@ export const mockRecipes: Recipe[] = [
             "Asie",
             "C'est l'hiver",
             "Noël"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8145",
-        "title": "Martini Caramel Brûlée",
-        "description": "Un cocktail festif inspiré du menu de Noël de Starbucks, avec une touche alcoolisée de Baileys Caramel Salé, de vodka et de caramel, garni de crème fouettée et de sauce caramel.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8145.webp&v=1794062545000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7704873652126354701\" data-video-id=\"7704873652126354701\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7704873652126354701\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧄\n             45 ml de Baileys Caramel Salé"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             45 ml de crème épaisse"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             30 ml de vodka"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à soupe de caramel salé"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à soupe de sucre, pour caraméliser au chalumeau"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Crème fouettée"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Sauce caramel"
-            }
-        ],
-        "steps": [
-            "Dans un shaker rempli de glace, verser le Baileys Caramel Salé, la crème épaisse, la vodka et le caramel salé.",
-            "Secouer vigoureusement jusqu&rsquo;à ce que le mélange soit bien frais.",
-            "Filtrer et verser dans un verre à martini.",
-            "Garnir généreusement de crème fouettée.",
-            "Saupoudrer la crème fouettée d&rsquo;une cuillère à soupe de sucre et caraméliser délicatement à l&rsquo;aide d&rsquo;un chalumeau de cuisine.",
-            "Arroser d&rsquo;un filet de sauce caramel pour la touche finale."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Noël",
-            "Rafraîchissements",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8147",
-        "title": "Espresso Martini au Baileys Caramel Salé",
-        "description": "Une boisson festive et gourmande, parfaite pour la saison des fêtes. Ce cocktail combine l&rsquo;intensité de l&rsquo;espresso avec la douceur du Baileys Caramel Salé, une touche de vodka et un soupçon de vanille, le tout servi frais.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8147.webp&v=1794062538000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7703996791389293857\" data-video-id=\"7703996791389293857\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7703996791389293857\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             4 à 5 glaçons"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             40 ml d&rsquo;espresso"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             50 ml de Baileys Caramel Salé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             20 ml de vodka (facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             2 à 3 gouttes d&rsquo;extrait de vanille"
-            }
-        ],
-        "steps": [
-            "Mettre les glaçons dans un shaker.",
-            "Ajouter l&rsquo;espresso, le Baileys Caramel Salé, la vodka (si utilisée) et l&rsquo;extrait de vanille.",
-            "Secouer vigoureusement jusqu&rsquo;à ce que le mélange soit bien frais.",
-            "Filtrer et verser dans un verre à cocktail."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Noël",
-            "Rafraîchissements"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8149",
-        "title": "Spritz Apérol des Fêtes",
-        "description": "Si vous cherchez une boisson pour la saison des fêtes, préparez ce Spritz Apérol des Fêtes. Le sirop maison de canneberge et romarin épicé a le goût de Noël en bouteille et est également parfait pour de nombreux autres cocktails et mocktails.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8149.webp&v=1794062530000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7705095580011334926\" data-video-id=\"7705095580011334926\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7705095580011334926\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             90 ml de prosecco, réfrigéré"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             30 ml d&rsquo;Apérol, réfrigéré"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             15 ml de sirop de canneberge et romarin épicé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             30 ml de club soda, réfrigéré"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Canneberges fraîches pour la garniture"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Brin de romarin pour la garniture"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Anis étoilé pour la garniture"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pour le sirop de canneberge et romarin épicé :"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             240 ml d&rsquo;eau"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             200 g de sucre blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             100 g de canneberges fraîches"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 brin de romarin frais"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 ou 2 bâtons de cannelle entiers"
-            }
-        ],
-        "steps": [
-            "Préparer le sirop de canneberge et romarin épicé : Dans une casserole, mélanger l&rsquo;eau, le sucre blanc, les canneberges fraîches, le brin de romarin frais et les bâtons de cannelle entiers.",
-            "Porter à ébullition, puis réduire le feu et laisser mijoter pendant environ 10 à 15 minutes, jusqu&rsquo;à ce que les canneberges éclatent et que le sirop épaississe légèrement.",
-            "Retirer du feu et laisser infuser pendant au moins 30 minutes (ou plus pour un goût plus prononcé), puis filtrer le sirop pour retirer les solides. Laisser refroidir complètement avant utilisation.",
-            "Pour préparer le Spritz Apérol des Fêtes : Dans un verre à vin ou un grand verre rempli de glaçons, verser le prosecco réfrigéré, l&rsquo;Apérol réfrigéré et le sirop de canneberge et romarin épicé.",
-            "Compléter avec le club soda réfrigéré.",
-            "Garnir avec quelques canneberges fraîches, un brin de romarin et un anis étoilé. Servir immédiatement."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Italie",
-            "Noël",
-            "Rafraîchissements"
         ],
         "isFeatured": false,
         "isFavorite": false,
