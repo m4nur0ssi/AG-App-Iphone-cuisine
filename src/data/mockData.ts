@@ -2,11 +2,179 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 08/11/2026 16:40:43
- * Total: 834 recettes
+ * Dernière mise à jour: 09/11/2026 11:20:12
+ * Total: 836 recettes
  */
-export const exportSyncId = "1794156043050";
+export const exportSyncId = "1794223212994";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8164",
+        "title": "Poêlée automnale : Patate douce sautée, champignons et marrons",
+        "description": "Une poêlée savoureuse et réconfortante pour l&rsquo;automne, combinant la douceur de la patate douce, le goût terreux des champignons et des marrons, relevée par de la sauce soja et des épinards, le tout servi avec un œuf et des noix.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8164-1.webp&v=1794224993000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7431653825875823904\" data-video-id=\"7431653825875823904\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7431653825875823904\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 patate douce"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             300g de champignons"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 gros oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             1 poignée de pousses d&rsquo;épinards"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Quelques marrons en morceaux"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Sauce soja salée"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d'olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             Noix"
+            }
+        ],
+        "steps": [
+            "Peler et couper la patate douce en dés. Nettoyer et trancher les champignons. Émincer l&rsquo;oignon.",
+            "Dans une grande poêle, faire chauffer un filet d&rsquo;huile d&rsquo;olive. Ajouter l&rsquo;oignon émincé et faire revenir jusqu&rsquo;à ce qu&rsquo;il soit translucide.",
+            "Ajouter les dés de patate douce et les champignons tranchés. Faire sauter pendant environ 10-15 minutes, jusqu&rsquo;à ce que les légumes soient tendres et légèrement dorés.",
+            "Assaisonner avec le sel, le poivre et la sauce soja salée. Bien mélanger.",
+            "Incorporer les pousses d&rsquo;épinards et les marrons en morceaux. Poursuivre la cuisson quelques minutes, juste le temps que les épinards tombent.",
+            "Servir la poêlée chaude, accompagnée d&rsquo;un œuf au plat ou mollet et parsemée de noix concassées."
+        ],
+        "tags": [
+            "Accompagnements",
+            "C'est l'hiver",
+            "Healthy",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8166",
+        "title": "Légumes rôtis d&rsquo;automne au miel et vinaigre balsamique",
+        "description": "Un mélange réconfortant de légumes de saison rôtis et caramélisés au four avec du miel, du vinaigre balsamique, des épices et une tête d&rsquo;ail confite.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8166.webp&v=1794223741000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7415640846609026336\" data-video-id=\"7415640846609026336\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7415640846609026336\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             700 g de pommes de terre Délicatesse"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             3 carottes"
+            },
+            {
+                "quantity": "",
+                "name": "🥬\n             1 petit chou-fleur"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 petit potimarron"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 tête d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2,5 cuillères à soupe d&rsquo;huile d&rsquo;olive (plus un filet pour l&rsquo;ail)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1,5 cuillère à soupe de vinaigre balsamique"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café bombée d&rsquo;origan séché"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café bombée de paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Fleur de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Feuilles de basilic ou roquette (pour le service)"
+            }
+        ],
+        "steps": [
+            "Préchauffez votre four à 180°C.",
+            "Lavez et préparez les légumes : coupez le chou-fleur en fleurettes, le potimarron en cubes, les carottes en biseau, les pommes de terre en deux ou trois morceaux selon leur taille, et émincez l&rsquo;oignon.",
+            "Disposez tous les légumes découpés dans un grand plat allant au four.",
+            "Arrosez avec l&rsquo;huile d&rsquo;olive, le vinaigre balsamique et le miel.",
+            "Assaisonnez avec l&rsquo;origan séché, le paprika fumé, la fleur de sel et le poivre.",
+            "Mélangez soigneusement avec les mains pour bien enrober tous les morceaux, puis répartissez les légumes en une couche homogène.",
+            "Coupez le sommet de la tête d&rsquo;ail, arrosez-la généreusement d&rsquo;huile d&rsquo;olive, assaisonnez-la, puis emballez-la dans du papier cuisson et déposez-la dans le plat.",
+            "Enfournez pour environ 45 minutes au total à 180°C, en mélangeant délicatement à mi-cuisson (au bout de 30 minutes) jusqu&rsquo;à ce que les légumes soient bien dorés et fondants.",
+            "À la sortie du four, pressez la tête d&rsquo;ail confite pour récupérer la chair parfumée, parsemez d&rsquo;herbes fraîches ou de roquette, et servez chaud ou tiède, éventuellement accompagné d&rsquo;un œuf mollet."
+        ],
+        "tags": [
+            "Accompagnements",
+            "C'est l'hiver",
+            "France",
+            "Healthy",
+            "Sans Gluten",
+            "Sans lactose",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8162",
         "title": "Saumon Gravlax",
