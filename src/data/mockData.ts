@@ -2,11 +2,196 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/11/2026 12:14:45
- * Total: 838 recettes
+ * Dernière mise à jour: 11/11/2026 15:23:19
+ * Total: 841 recettes
  */
-export const exportSyncId = "1794399285199";
+export const exportSyncId = "1794410599940";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8182",
+        "title": "Caldo Verde",
+        "description": "Le Caldo Verde est une soupe emblématique du Portugal, à base de chou vert, de pommes de terre et de saucisse fumée. C&rsquo;est une recette simple et réconfortante, parfaite pour l&rsquo;hiver ou en fin de soirée.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7706606170248727841\" data-video-id=\"7706606170248727841\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7706606170248727841\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             500 g de pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             250 g de chou vert"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             3 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 feuille de laurier"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             200 g de saucisse fumée ou de chorizo"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             4 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             1,2 à 1,5 litre d&rsquo;eau"
+            }
+        ],
+        "steps": [
+            "Faites revenir les oignons avec une feuille de laurier dans un filet d&rsquo;huile d&rsquo;olive.",
+            "Ajoutez les pommes de terre et l&rsquo;eau.",
+            "Vérifiez la cuisson des pommes de terre en les piquant avec un couteau ; elles doivent être tendres.",
+            "Incorporez une bonne poignée de chou vert émincé.",
+            "Après 5 à 6 minutes de cuisson, mixez la soupe.",
+            "Ajoutez le reste du chou et laissez mijoter doucement à feu doux.",
+            "Pendant ce temps, coupez la saucisse ou le chorizo en petites rondelles.",
+            "Ajoutez les rondelles de saucisse ou de chorizo à la soupe.",
+            "Laissez infuser de nouveau pendant 30 minutes à feu doux."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Portugal",
+            "Soupes"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8180",
+        "title": "Tiramisu",
+        "description": "Une recette facile et rapide pour préparer un délicieux tiramisu maison, un dessert italien classique.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7706472352271338785\" data-video-id=\"7706472352271338785\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7706472352271338785\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧀\n             400 g de mascarpone (à température ambiante)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             400 g de crème liquide bien froide"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             50 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             10 cc d&rsquo;essence de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             20 biscuits à la cuillère"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             300 cc de café fort"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Du cacao amer (à saupoudrer)"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Italie",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8178",
+        "title": "Cocktail d&rsquo;hiver aux épices de Noël",
+        "description": "Découvrez ce cocktail d&rsquo;hiver incontournable, l&rsquo;apéritif parfait pour les fêtes de fin d&rsquo;année. Ses glaçons hivernaux à la pomme, à la cannelle et à l&rsquo;anis étoilé sont non seulement visuellement attrayants, mais aussi incroyab",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "boissons",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7695439250732404000\" data-video-id=\"7695439250732404000\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7695439250732404000\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 pomme"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             6 bâtons de cannelle"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             12 anis étoilés"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200 ml de jus de pomme clair"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             200 ml d&rsquo;eau plate"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50 ml de Lillet Blanc par verre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100 ml de jus de pomme par verre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100 ml de Prosecco par verre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Sauce caramel"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Cannelle et sucre pour le bord du verre"
+            }
+        ],
+        "steps": [
+            "1. Couper la pomme en petits morceaux et les répartir dans un moule à glaçons. Ajouter une demi-bâton de cannelle et un anis étoilé dans chaque compartiment.",
+            "2. Mélanger le jus de pomme avec l&rsquo;eau, remplir les moules et congeler toute une nuit.",
+            "3. Tremper le bord du verre d&rsquo;abord dans la sauce caramel, puis dans le mélange cannelle-sucre.",
+            "4. Mettre 2 glaçons dans chaque verre et compléter avec le Lillet, le jus de pomme et le Prosecco."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Cocktails",
+            "Noël"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8172",
         "title": "Gâteau tout simple à la vanille",
