@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/11/2026 11:30:32
+ * Dernière mise à jour: 11/11/2026 12:04:14
  * Total: 838 recettes
  */
-export const exportSyncId = "1794396632744";
+export const exportSyncId = "1794398654484";
 export const mockRecipes: Recipe[] = [
     {
         "id": "8172",
         "title": "Gâteau tout simple à la vanille",
         "description": "Un gâteau à la vanille facile à réaliser, super moelleux, parfait pour retrouver les saveurs de l&rsquo;enfance.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8172.webp&v=1794401238000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -64,6 +64,102 @@ export const mockRecipes: Recipe[] = [
             "Pas cher",
             "pâtisserie",
             "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8174",
+        "title": "Cake marbré avec glaçage marbré",
+        "description": "Découvrez la recette d&rsquo;un véritable cake marbré, aussi bien pour l&rsquo;intérieur que pour son glaçage, promettant un incroyable effet waouh et une réalisation facile. Ce cake est ajusté pour un moule de 26 × 10 × 8 cm.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8174.webp&v=1794401228000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7620140704529927446\" data-video-id=\"7620140704529927446\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7620140704529927446\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             125 g de beurre pommade"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             220 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             2 gousses de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             230 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             8 g de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             210 g de crème liquide entière"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             42 g de cacao en poudre non sucré"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             160 g de chocolat noir 64 %"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             45 g d&rsquo;huile neutre"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             160 g de chocolat Dulcey"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             40 g d&rsquo;huile neutre"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             160 g de chocolat blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             35 g d&rsquo;huile neutre"
+            }
+        ],
+        "steps": [
+            "Préparez votre moule à cake (un moule à pain de mie qui se ferme est pratique pour une forme rectangulaire, mais un moule classique convient aussi). Beurrez-le et farinez-le soigneusement.",
+            "Pour l&rsquo;appareil à cake vanille : Dans la cuve d&rsquo;un batteur équipé de la feuille, mélangez le sucre, les gousses de vanille grattées et le beurre pommade jusqu&rsquo;à obtenir une consistance homogène.",
+            "Ajoutez les œufs un par un en mélangeant bien après chaque ajout.",
+            "Incorporez le mélange de farine et de levure chimique, puis mélangez de nouveau.",
+            "Terminez en ajoutant la crème liquide entière et mélangez jusqu&rsquo;à ce que la pâte soit lisse. Mettez cette pâte dans une poche à douille.",
+            "Pour l&rsquo;appareil à cake cacao : Réalisez la même préparation que pour l&rsquo;appareil vanille, mais ajoutez le cacao en poudre non sucré en même temps que la farine et la levure. Il n&rsquo;y a pas de vanille dans cette version. Mettez également cette pâte dans une poche à douille.",
+            "Procédez au remplissage du moule en alternant des petits tas de pâte vanille et de pâte cacao, selon votre préférence pour la marbrure intérieure.",
+            "Si vous utilisez un moule fermé, veillez à ne pas remplir le moule à plus d&rsquo;un centimètre du bord pour laisser le cake pousser. À l&rsquo;aide d&rsquo;un couteau, réalisez la marbrure finale en traçant des motifs dans la pâte.",
+            "Enfournez le cake dans un four préchauffé à 160°C pendant environ 50 minutes. Pour vérifier la cuisson, plantez la pointe d&rsquo;un couteau au centre : elle doit ressortir sèche.",
+            "Laissez le cake reposer 5 minutes dans le moule, puis démoulez-le à chaud directement sur une feuille de papier cuisson.",
+            "Laissez le cake refroidir un peu à température ambiante, puis placez-le au congélateur pendant que vous préparez le glaçage marbré.",
+            "Préparez les trois glaçages : Faites fondre séparément les chocolats (noir, Dulcey, blanc) au bain-marie, chacun avec la quantité d&rsquo;huile neutre correspondante. Les grammages d&rsquo;huile sont différents pour obtenir la même viscosité pour chaque chocolat.",
+            "Une fois que les trois chocolats sont fondus et à une température de 34-35°C, commencez le glaçage. Versez d&rsquo;abord le chocolat blanc au fond du récipient, puis le chocolat au lait par-dessus, et enfin le chocolat noir. L&rsquo;idée est de les superposer sans les mélanger.",
+            "Assurez-vous que votre cake est bien froid et que le chocolat pour le glaçage est entre 32 et 34°C. Pour créer l&rsquo;effet marbré, partez du fond du cake, ramenez le glaçage vers l&rsquo;avant, puis revenez en arrière avec votre spatule ou couteau.",
+            "Ajustez le glaçage sur les côtés si nécessaire pour qu&rsquo;il recouvre bien tout le cake. Laissez le tout figer au frais.",
+            "Dégustez votre magnifique cake marbré avec un effet waouh !"
+        ],
+        "tags": [
+            "facile",
+            "France",
+            "pâtisserie"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -59737,84 +59833,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "asiatique",
             "Asie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "4916",
-        "title": "Casatiello stracciato",
-        "description": "Une version super simple et traditionnelle du Casatiello stracciato, un plat italien convivial et gourmand, parfait pour les fêtes ou un repas en famille.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Fcasatiello-stracciato.jpeg&v=1775571098000",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7624906581947288854\" data-video-id=\"7624906581947288854\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7624906581947288854\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n 1 kg de farine 00 (pour pizza)"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n 850 g d'eau (à température ambiante)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 90 g de saindoux"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 7 g de levure boulangère sèche instantané"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n 13 g de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n Poivre noir en abondance"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n Parmesan râpé en abondance"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n 5 œufs durs"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 1 scamorza"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 250 g d'emmental"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n 1 saucisson"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n Fromages secs et affinés (pecorino romano, provolone doux ou piquant - facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🥓\n Charcuterie (jambon, cicoli, lard - facultatif)"
-            }
-        ],
-        "steps": [
-            "Préparer la pâte avec la farine, l&rsquo;eau, le saindoux, la levure et le sel.",
-            "Incorporer le poivre, le parmesan, les œufs durs, la scamorza, l'emmental et le saucisson (ainsi que les fromages et charcuteries facultatifs si désiré).",
-            "Faire cuire au four statique, en bas, à 180°C pendant 1 heure."
-        ],
-        "tags": [
-            "Italie",
-            "Pâques"
         ],
         "isFeatured": false,
         "isFavorite": false,
