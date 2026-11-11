@@ -2,11 +2,73 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/11/2026 10:21:56
- * Total: 836 recettes
+ * Dernière mise à jour: 11/11/2026 11:30:32
+ * Total: 838 recettes
  */
-export const exportSyncId = "1794392516347";
+export const exportSyncId = "1794396632744";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8172",
+        "title": "Gâteau tout simple à la vanille",
+        "description": "Un gâteau à la vanille facile à réaliser, super moelleux, parfait pour retrouver les saveurs de l&rsquo;enfance.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7265639688474512673\" data-video-id=\"7265639688474512673\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7265639688474512673\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             140g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             190g de yaourt grec"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             80g de beurre fondu"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             100g de sucre (ou de cassonade)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             2 sachets de sucre vanillé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 sachet de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             2 cuillères à café de vanille liquide"
+            }
+        ],
+        "steps": [
+            "Mélangez les œufs avec le sucre et le sucre vanillé.",
+            "Ajoutez le yaourt grec et la vanille liquide, puis mélangez bien.",
+            "Incorporez ensuite le beurre fondu, en veillant à ce qu&rsquo;il ait bien refroidi pour ne pas cuire les œufs.",
+            "Pour finir, ajoutez la farine et la levure chimique, puis mélangez une dernière fois jusqu&rsquo;à obtenir une pâte homogène.",
+            "Versez la préparation dans un moule (idéalement rond de 20 cm de diamètre, ou un moule à cake).",
+            "Faites cuire au four préchauffé à 190°C pendant 25 à 30 minutes."
+        ],
+        "tags": [
+            "Pas cher",
+            "pâtisserie",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8162",
         "title": "Saumon Gravlax",
@@ -59675,6 +59737,84 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "asiatique",
             "Asie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "4916",
+        "title": "Casatiello stracciato",
+        "description": "Une version super simple et traditionnelle du Casatiello stracciato, un plat italien convivial et gourmand, parfait pour les fêtes ou un repas en famille.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F04%2Fcasatiello-stracciato.jpeg&v=1775571098000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7624906581947288854\" data-video-id=\"7624906581947288854\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7624906581947288854\" rel=\"noopener noreferrer\">Regarder la vidéo sur TikTok</a><br />\n</section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n 1 kg de farine 00 (pour pizza)"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n 850 g d'eau (à température ambiante)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 90 g de saindoux"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 7 g de levure boulangère sèche instantané"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n 13 g de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n Poivre noir en abondance"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n Parmesan râpé en abondance"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n 5 œufs durs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 scamorza"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 250 g d'emmental"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n 1 saucisson"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n Fromages secs et affinés (pecorino romano, provolone doux ou piquant - facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n Charcuterie (jambon, cicoli, lard - facultatif)"
+            }
+        ],
+        "steps": [
+            "Préparer la pâte avec la farine, l&rsquo;eau, le saindoux, la levure et le sel.",
+            "Incorporer le poivre, le parmesan, les œufs durs, la scamorza, l'emmental et le saucisson (ainsi que les fromages et charcuteries facultatifs si désiré).",
+            "Faire cuire au four statique, en bas, à 180°C pendant 1 heure."
+        ],
+        "tags": [
+            "Italie",
+            "Pâques"
         ],
         "isFeatured": false,
         "isFavorite": false,
