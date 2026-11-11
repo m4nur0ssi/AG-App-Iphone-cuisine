@@ -2,11 +2,129 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/11/2026 15:23:19
- * Total: 841 recettes
+ * Dernière mise à jour: 11/11/2026 16:04:07
+ * Total: 843 recettes
  */
-export const exportSyncId = "1794410599940";
+export const exportSyncId = "1794413047765";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8186",
+        "title": "Frites longues",
+        "description": "Une recette simple pour préparer des frites extra-longues et croustillantes.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7697491195764706568\" data-video-id=\"7697491195764706568\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7697491195764706568\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Accompagnements",
+            "Pas cher",
+            "USA",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8184",
+        "title": "Wrap de poulet crémeux et croustillant",
+        "description": "Une recette de wraps de poulet crémeux et croustillants. Des dés de poulet sont cuits avec des poivrons, des oignons, de la pâte de tomate et de la crème, puis assaisonnés. Le mélange est ensuite enveloppé dans du pain lavash avec du fromage kaşar, s",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7689167347965431058\" data-video-id=\"7689167347965431058\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7689167347965431058\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             500 g de blanc de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Un peu d&rsquo;huile"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 poivron rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 gros oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 cuillère à soupe de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             1 paquet de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             ½ cuillère à café de poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café d&rsquo;origan séché"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 cuillère à café de piment rouge en flocons"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pains lavash"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Fromage kaşar râpé (ou mozzarella râpée)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             1 cuillère à soupe de farine"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             2 cuillères à soupe d&rsquo;eau"
+            }
+        ],
+        "steps": [
+            "Coupez 500 g de blanc de poulet en petits cubes et mettez-les dans une poêle. Faites-les cuire jusqu&rsquo;à ce qu&rsquo;ils aient rendu leur jus et l&rsquo;aient absorbé.",
+            "Ajoutez un peu d&rsquo;huile, 1 poivron rouge et 1 gros oignon, puis faites revenir.",
+            "Ajoutez 1 cuillère à soupe de concentré de tomate et faites revenir pendant quelques minutes.",
+            "Versez 1 paquet de crème liquide, puis ajoutez 1 cuillère à café de sel, ½ cuillère à café de poivre noir, 1 cuillère à café d&rsquo;origan séché et 1 cuillère à café de piment rouge en flocons.",
+            "Faites cuire jusqu&rsquo;à ce que la crème soit absorbée.",
+            "Remplissez les pains lavash avec le mélange de poulet et ajoutez du fromage kaşar râpé par-dessus.",
+            "Roulez-les en forme de wrap.",
+            "Pour sceller les extrémités, mélangez 1 cuillère à soupe de farine avec 2 cuillères à soupe d&rsquo;eau et badigeonnez les bords du lavash.",
+            "Faites cuire les wraps dans un peu d&rsquo;huile jusqu&rsquo;à ce qu&rsquo;ils soient dorés et croustillants des deux côtés."
+        ],
+        "tags": [
+            "Orient",
+            "Sandwichs"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8182",
         "title": "Caldo Verde",
