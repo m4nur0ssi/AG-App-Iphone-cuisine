@@ -2,11 +2,123 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/11/2026 12:09:00
- * Total: 853 recettes
+ * Dernière mise à jour: 12/11/2026 18:48:27
+ * Total: 854 recettes
  */
-export const exportSyncId = "1794485340525";
+export const exportSyncId = "1794509307679";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8205",
+        "title": "Chocolat chaud à l&rsquo;ancienne",
+        "description": "Préparez un délicieux chocolat chaud à l&rsquo;ancienne, onctueux et réconfortant, parfait pour se réchauffer tout l&rsquo;hiver.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8205.webp&v=1794511831000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7702146680908533024\" data-video-id=\"7702146680908533024\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7702146680908533024\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍫\n             200 g de chocolat"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             20 cl de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             65 cl de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 goutte d'extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de cannelle"
+            }
+        ],
+        "steps": [
+            "Dans une casserole, faites chauffer la crème liquide avec le sucre.",
+            "Ajoutez le chocolat coupé en morceaux, une goutte d&rsquo;extrait de vanille et la cannelle.",
+            "Une fois le chocolat complètement fondu, versez progressivement le lait.",
+            "Faites chauffer à feu doux pendant 10 minutes en remuant de temps en temps, sans laisser bouillir, jusqu&rsquo;à obtenir une texture bien onctueuse."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8220",
+        "title": "Petits pots chocolat-orange au Baileys",
+        "description": "Découvrez ces irrésistibles petits pots chocolat-orange au Baileys, un dessert de Noël sans cuisson que l&rsquo;auteure prépare depuis près de 15 ans. Composés d&rsquo;une base croustillante de biscuits, d&rsquo;une crème onctueuse au chocolat et à l",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7703256953337744662\" data-video-id=\"7703256953337744662\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7703256953337744662\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍫\n             157 g de chocolat à l&rsquo;orange"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             100 g de chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             100 ml de Baileys (ou équivalent)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1/2 cuillère à café de zeste d&rsquo;orange"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             300 ml de crème double"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             8 biscuits digestifs"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             25 g de beurre fondu"
+            }
+        ],
+        "steps": [
+            "Mettez les biscuits digestifs dans un sac de congélation et écrasez-les avec un rouleau à pâtisserie jusqu&rsquo;à obtenir une chapelure grossière.",
+            "Ajoutez 25 g de beurre fondu à la chapelure et mélangez bien jusqu&rsquo;à ce que toutes les miettes soient enrobées.",
+            "Répartissez la chapelure de biscuits dans 6 ramequins et tassez-la avec le dos d&rsquo;une petite cuillère.",
+            "Réservez 6 segments de chocolat à l&rsquo;orange pour la garniture et mettez le reste dans un bol allant au micro-ondes avec le chocolat noir cassé en morceaux.",
+            "Faites fondre le chocolat au micro-ondes par intervalles de 30 secondes, en remuant à chaque fois avant de remettre au micro-ondes. Lorsque la majeure partie du chocolat a fondu, retirez-le du micro-ondes et remuez jusqu&rsquo;à ce qu&rsquo;il soit complètement lisse, cela évitera qu&rsquo;il ne surchauffe et ne devienne granuleux. Laissez refroidir.",
+            "Versez 300 ml de crème double dans un saladier et, à l&rsquo;aide d&rsquo;un mixeur plongeant, mélangez pendant environ 30 secondes jusqu&rsquo;à ce qu&rsquo;elle commence à épaissir.",
+            "Ajoutez 100 ml de Baileys, le zeste d&rsquo;orange et le chocolat fondu, puis fouettez jusqu&rsquo;à obtenir un mélange lisse et de couleur uniforme.",
+            "Répartissez le mélange dans les ramequins et placez-les au réfrigérateur pendant 4 heures ou toute une nuit.",
+            "Sortez-les du réfrigérateur 15 minutes avant de servir.",
+            "Déposez un segment de chocolat à l&rsquo;orange sur chaque pot avant de servir."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Noël"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8218",
         "title": "Nuggets de pomme de terre croustillants et sauce Creamy Deluxe maison",
@@ -954,57 +1066,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "C'est l'hiver",
             "France",
-            "Pas cher"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8205",
-        "title": "Chocolat chaud à l&rsquo;ancienne",
-        "description": "Préparez un délicieux chocolat chaud à l&rsquo;ancienne, onctueux et réconfortant, parfait pour se réchauffer tout l&rsquo;hiver.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7702146680908533024\" data-video-id=\"7702146680908533024\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7702146680908533024\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍫\n             200 g de chocolat"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             20 cl de crème liquide"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             65 cl de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à soupe de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             1 goutte d'extrait de vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de cannelle"
-            }
-        ],
-        "steps": [
-            "Dans une casserole, faites chauffer la crème liquide avec le sucre.",
-            "Ajoutez le chocolat coupé en morceaux, une goutte d&rsquo;extrait de vanille et la cannelle.",
-            "Une fois le chocolat complètement fondu, versez progressivement le lait.",
-            "Faites chauffer à feu doux pendant 10 minutes en remuant de temps en temps, sans laisser bouillir, jusqu&rsquo;à obtenir une texture bien onctueuse."
-        ],
-        "tags": [
-            "C'est l'hiver",
             "Pas cher"
         ],
         "isFeatured": false,
