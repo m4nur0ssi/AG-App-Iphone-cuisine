@@ -2,11 +2,590 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/11/2026 10:02:49
+ * Dernière mise à jour: 12/11/2026 10:20:22
  * Total: 852 recettes
  */
-export const exportSyncId = "1794477769447";
+export const exportSyncId = "1794478822178";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8178",
+        "title": "Cocktail d&rsquo;hiver aux épices de Noël",
+        "description": "Découvrez ce cocktail d&rsquo;hiver incontournable, l&rsquo;apéritif parfait pour les fêtes de fin d&rsquo;année. Ses glaçons hivernaux à la pomme, à la cannelle et à l&rsquo;anis étoilé sont non seulement visuellement attrayants, mais aussi incroyab",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8178.webp&v=1794481396000",
+        "category": "boissons",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7695439250732404000\" data-video-id=\"7695439250732404000\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7695439250732404000\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             1 pomme"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             6 bâtons de cannelle"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             12 anis étoilés"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200 ml de jus de pomme clair"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             200 ml d&rsquo;eau plate"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             50 ml de Lillet Blanc par verre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100 ml de jus de pomme par verre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100 ml de Prosecco par verre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Sauce caramel"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Cannelle et sucre pour le bord du verre"
+            }
+        ],
+        "steps": [
+            "1. Couper la pomme en petits morceaux et les répartir dans un moule à glaçons. Ajouter une demi-bâton de cannelle et un anis étoilé dans chaque compartiment.",
+            "2. Mélanger le jus de pomme avec l&rsquo;eau, remplir les moules et congeler toute une nuit.",
+            "3. Tremper le bord du verre d&rsquo;abord dans la sauce caramel, puis dans le mélange cannelle-sucre.",
+            "4. Mettre 2 glaçons dans chaque verre et compléter avec le Lillet, le jus de pomme et le Prosecco."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Cocktails",
+            "Noël"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8180",
+        "title": "Tiramisu",
+        "description": "Une recette facile et rapide pour préparer un délicieux tiramisu maison, un dessert italien classique.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8180.webp&v=1794481389000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7706472352271338785\" data-video-id=\"7706472352271338785\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7706472352271338785\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧀\n             400 g de mascarpone (à température ambiante)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             400 g de crème liquide bien froide"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             50 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             10 cc d&rsquo;essence de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             20 biscuits à la cuillère"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             300 cc de café fort"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Du cacao amer (à saupoudrer)"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Italie",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8182",
+        "title": "Caldo Verde",
+        "description": "Le Caldo Verde est une soupe emblématique du Portugal, à base de chou vert, de pommes de terre et de saucisse fumée. C&rsquo;est une recette simple et réconfortante, parfaite pour l&rsquo;hiver ou en fin de soirée.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8182.webp&v=1794481382000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7706606170248727841\" data-video-id=\"7706606170248727841\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7706606170248727841\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             500 g de pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             250 g de chou vert"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             3 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 feuille de laurier"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             200 g de saucisse fumée ou de chorizo"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             4 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             1,2 à 1,5 litre d&rsquo;eau"
+            }
+        ],
+        "steps": [
+            "Faites revenir les oignons avec une feuille de laurier dans un filet d&rsquo;huile d&rsquo;olive.",
+            "Ajoutez les pommes de terre et l&rsquo;eau.",
+            "Vérifiez la cuisson des pommes de terre en les piquant avec un couteau ; elles doivent être tendres.",
+            "Incorporez une bonne poignée de chou vert émincé.",
+            "Après 5 à 6 minutes de cuisson, mixez la soupe.",
+            "Ajoutez le reste du chou et laissez mijoter doucement à feu doux.",
+            "Pendant ce temps, coupez la saucisse ou le chorizo en petites rondelles.",
+            "Ajoutez les rondelles de saucisse ou de chorizo à la soupe.",
+            "Laissez infuser de nouveau pendant 30 minutes à feu doux."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Portugal",
+            "Soupes"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8184",
+        "title": "Wrap de poulet crémeux et croustillant",
+        "description": "Une recette de wraps de poulet crémeux et croustillants. Des dés de poulet sont cuits avec des poivrons, des oignons, de la pâte de tomate et de la crème, puis assaisonnés. Le mélange est ensuite enveloppé dans du pain lavash avec du fromage kaşar, s",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8184.webp&v=1794481375000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7689167347965431058\" data-video-id=\"7689167347965431058\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7689167347965431058\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             500 g de blanc de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Un peu d&rsquo;huile"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 poivron rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 gros oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 cuillère à soupe de concentré de tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             1 paquet de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             ½ cuillère à café de poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café d&rsquo;origan séché"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 cuillère à café de piment rouge en flocons"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pains lavash"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Fromage kaşar râpé (ou mozzarella râpée)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             1 cuillère à soupe de farine"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             2 cuillères à soupe d&rsquo;eau"
+            }
+        ],
+        "steps": [
+            "Coupez 500 g de blanc de poulet en petits cubes et mettez-les dans une poêle. Faites-les cuire jusqu&rsquo;à ce qu&rsquo;ils aient rendu leur jus et l&rsquo;aient absorbé.",
+            "Ajoutez un peu d&rsquo;huile, 1 poivron rouge et 1 gros oignon, puis faites revenir.",
+            "Ajoutez 1 cuillère à soupe de concentré de tomate et faites revenir pendant quelques minutes.",
+            "Versez 1 paquet de crème liquide, puis ajoutez 1 cuillère à café de sel, ½ cuillère à café de poivre noir, 1 cuillère à café d&rsquo;origan séché et 1 cuillère à café de piment rouge en flocons.",
+            "Faites cuire jusqu&rsquo;à ce que la crème soit absorbée.",
+            "Remplissez les pains lavash avec le mélange de poulet et ajoutez du fromage kaşar râpé par-dessus.",
+            "Roulez-les en forme de wrap.",
+            "Pour sceller les extrémités, mélangez 1 cuillère à soupe de farine avec 2 cuillères à soupe d&rsquo;eau et badigeonnez les bords du lavash.",
+            "Faites cuire les wraps dans un peu d&rsquo;huile jusqu&rsquo;à ce qu&rsquo;ils soient dorés et croustillants des deux côtés."
+        ],
+        "tags": [
+            "Orient",
+            "Sandwichs"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8186",
+        "title": "Frites longues",
+        "description": "Une recette simple pour préparer des frites extra-longues et croustillantes.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8186.webp&v=1794481368000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7697491195764706568\" data-video-id=\"7697491195764706568\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7697491195764706568\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "Ingrédients détaillés dans la vidéo"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "Accompagnements",
+            "Pas cher",
+            "USA",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8188",
+        "title": "Gâteau à l&rsquo;orange ultra moelleux",
+        "description": "Un gâteau à l&rsquo;orange incroyablement moelleux, parfait pour les fêtes de fin d&rsquo;année. Facile à préparer, il est imbibé d&rsquo;un sirop d&rsquo;orange et recouvert d&rsquo;un glaçage crémeux au fromage frais.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8188.webp&v=1794481358000",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7705779352390323474\" data-video-id=\"7705779352390323474\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7705779352390323474\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Pour le gâteau :"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 grande orange"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             150 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             50 ml d&rsquo;huile végétale"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             200 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             10 g de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Une pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pour le sirop :"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Jus d&rsquo;1 orange"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pour le glaçage :"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             120 g de fromage frais"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             2 cuillères à soupe de sucre glace"
+            }
+        ],
+        "steps": [
+            "1. Coupez l&rsquo;orange en morceaux et placez-la dans un mixeur. Ajoutez les œufs, le sucre, l&rsquo;huile et une pincée de sel. Mixez jusqu&rsquo;à obtenir une consistance complètement lisse.",
+            "2. Ajoutez la farine tamisée et la levure chimique. Mélangez jusqu&rsquo;à obtenir une pâte lisse.",
+            "3. Transférez la pâte dans un moule à pâtisserie et faites cuire à 170°C pendant environ 50 minutes.",
+            "4. Pendant que le gâteau refroidit légèrement, faites chauffer le jus d&rsquo;orange et le sucre dans une petite casserole jusqu&rsquo;à ce que le sucre soit dissous.",
+            "5. Piquez de petits trous sur toute la surface du gâteau et versez lentement le sirop d&rsquo;orange dessus. Laissez le gâteau absorber le sirop et refroidir complètement.",
+            "6. Battez le fromage frais avec le sucre glace jusqu&rsquo;à obtenir une consistance crémeuse et lisse.",
+            "7. Étalez le glaçage sur le gâteau refroidi et terminez avec du zeste d&rsquo;orange fraîchement râpé."
+        ],
+        "tags": [
+            "Glaces",
+            "Noël",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8190",
+        "title": "Le meilleur dessert de Noël en 5 minutes",
+        "description": "Découvrez le meilleur dessert de Noël, rapide et facile à préparer en seulement 5 minutes (temps de préparation hors cuisson et refroidissement). Ce dessert festif fond littéralement en bouche et est parfait pour le menu de Noël, le réveillon du Nouv",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8190.webp&v=1794481347000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7705114873247714580\" data-video-id=\"7705114873247714580\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7705114873247714580\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍯\n             180 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             180 ml de crème liquide (33 % de matière grasse)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             40 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Une pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             300 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             60 g de beurre fondu"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             60 ml d&rsquo;huile de tournesol"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             280 ml de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             250 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             50 g de cacao en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             8 g de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200 g de canneberges"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             40 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             50 ml d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             10 g de fécule de maïs"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             20 ml d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             300 g de fromage frais (type Philadelphia)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             200 ml de crème liquide (33 % de matière grasse)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             50 g de lait concentré"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             Noix de coco râpée pour saupoudrer"
+            }
+        ],
+        "steps": [
+            "**Préparer le caramel :** Dans une casserole, mélanger 180 g de sucre, 180 ml de crème liquide (33 % de matière grasse), 40 g de beurre et une pincée de sel. Faire chauffer à feu moyen jusqu&rsquo;à obtenir un caramel. Laisser refroidir.",
+            "**Préparer la base du gâteau :** Dans un grand bol, battre 2 œufs avec 300 g de sucre. Ajouter 60 g de beurre fondu, 60 ml d&rsquo;huile de tournesol et 280 ml de lait, puis bien mélanger.",
+            "Incorporer 250 g de farine, 50 g de cacao en poudre et 8 g de levure chimique à la préparation liquide jusqu&rsquo;à obtenir une pâte homogène.",
+            "Verser la pâte dans un moule (environ 20&#215;20 cm ou rond de 24 cm) et cuire au four préchauffé pendant 15 minutes à 180 degrés Celsius.",
+            "**Préparer la compote de canneberges :** Dans une petite casserole, mélanger 200 g de canneberges, 40 g de sucre et 50 ml d&rsquo;eau. Porter à ébullition et laisser mijoter quelques minutes jusqu&rsquo;à ce que les canneberges ramollissent.",
+            "Dans un petit bol, délayer 10 g de fécule de maïs dans 20 ml d&rsquo;eau. Ajouter ce mélange aux canneberges et remuer constamment jusqu&rsquo;à ce que la compote épaississe. Retirer du feu et laisser refroidir.",
+            "**Préparer la crème au fromage frais :** Dans un bol, fouetter 300 g de fromage frais avec 200 ml de crème liquide (33 % de matière grasse) et 50 g de lait concentré jusqu&rsquo;à obtenir une crème onctueuse et homogène.",
+            "**Assemblage :** Une fois le gâteau, le caramel et la compote refroidis, assembler le dessert en couches dans un plat de service ou des verrines (par exemple : une couche de gâteau émietté, suivie de caramel, puis de crème au fromage frais et enfin de compote de canneberges). Répéter les couches si désiré.",
+            "Saupoudrer généreusement de noix de coco râpée avant de servir. Réfrigérer au moins 1 heure pour que les saveurs se mélangent bien."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Desserts",
+            "Noël"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8192",
+        "title": "Paleron de bœuf aux oignons confits",
+        "description": "Une recette traditionnelle de paleron de bœuf mijoté, inspirée de la cuisine de grand-mère et de la soupe à l&rsquo;oignon. Le bœuf est cuit lentement avec des oignons confits dans une sauce riche au vin blanc et bouillon, jusqu&rsquo;à devenir incro",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8192.webp&v=1794481334000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7699515349280017697\" data-video-id=\"7699515349280017697\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7699515349280017697\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             Un morceau de paleron de bœuf"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1,5 kg d&rsquo;oignons"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Du beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             2 cuillères à soupe de farine"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             20 cl de vin blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥩\n             1,5 L de bouillon de bœuf (maison ou cubes du commerce dilués)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Un bouquet garni"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Du romarin"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Du sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Du poivre"
+            }
+        ],
+        "steps": [
+            "Assaisonnez généreusement un beau morceau de paleron de bœuf sur toutes les faces.",
+            "Marquez le paleron dans une poêle chaude.",
+            "Dans la même poêle, ajoutez une bonne dose de beurre et faites-y compoter les oignons longuement jusqu&rsquo;à ce qu&rsquo;ils soient fondants et bien colorés.",
+            "Singe-les avec 2 cuillères à soupe de farine et laissez cuire 1 minute.",
+            "Déglacez avec le vin blanc, puis ajoutez le bouillon de bœuf (maison ou dilué si vous utilisez des cubes du commerce), un bouquet garni et du romarin.",
+            "Transférez le tout dans un plat allant au four et enfournez pour 6 heures à 120 °C.",
+            "Pendant la cuisson, n&rsquo;oubliez pas de retourner la viande une fois.",
+            "Servez l&rsquo;effiloché de bœuf fondant en bouche, par exemple avec un bon riz blanc."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "France",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8205",
         "title": "Chocolat chaud à l&rsquo;ancienne",
@@ -490,585 +1069,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Desserts",
             "France"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8192",
-        "title": "Paleron de bœuf aux oignons confits",
-        "description": "Une recette traditionnelle de paleron de bœuf mijoté, inspirée de la cuisine de grand-mère et de la soupe à l&rsquo;oignon. Le bœuf est cuit lentement avec des oignons confits dans une sauce riche au vin blanc et bouillon, jusqu&rsquo;à devenir incro",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7699515349280017697\" data-video-id=\"7699515349280017697\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7699515349280017697\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             Un morceau de paleron de bœuf"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1,5 kg d&rsquo;oignons"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             Du beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             2 cuillères à soupe de farine"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             20 cl de vin blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🥩\n             1,5 L de bouillon de bœuf (maison ou cubes du commerce dilués)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Un bouquet garni"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Du romarin"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Du sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Du poivre"
-            }
-        ],
-        "steps": [
-            "Assaisonnez généreusement un beau morceau de paleron de bœuf sur toutes les faces.",
-            "Marquez le paleron dans une poêle chaude.",
-            "Dans la même poêle, ajoutez une bonne dose de beurre et faites-y compoter les oignons longuement jusqu&rsquo;à ce qu&rsquo;ils soient fondants et bien colorés.",
-            "Singe-les avec 2 cuillères à soupe de farine et laissez cuire 1 minute.",
-            "Déglacez avec le vin blanc, puis ajoutez le bouillon de bœuf (maison ou dilué si vous utilisez des cubes du commerce), un bouquet garni et du romarin.",
-            "Transférez le tout dans un plat allant au four et enfournez pour 6 heures à 120 °C.",
-            "Pendant la cuisson, n&rsquo;oubliez pas de retourner la viande une fois.",
-            "Servez l&rsquo;effiloché de bœuf fondant en bouche, par exemple avec un bon riz blanc."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "France",
-            "Pas cher"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8190",
-        "title": "Le meilleur dessert de Noël en 5 minutes",
-        "description": "Découvrez le meilleur dessert de Noël, rapide et facile à préparer en seulement 5 minutes (temps de préparation hors cuisson et refroidissement). Ce dessert festif fond littéralement en bouche et est parfait pour le menu de Noël, le réveillon du Nouv",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7705114873247714580\" data-video-id=\"7705114873247714580\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7705114873247714580\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍯\n             180 g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             180 ml de crème liquide (33 % de matière grasse)"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             40 g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Une pincée de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             2 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             300 g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             60 g de beurre fondu"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             60 ml d&rsquo;huile de tournesol"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             280 ml de lait"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             250 g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             50 g de cacao en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             8 g de levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             200 g de canneberges"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             40 g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             50 ml d&rsquo;eau"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             10 g de fécule de maïs"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             20 ml d&rsquo;eau"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             300 g de fromage frais (type Philadelphia)"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             200 ml de crème liquide (33 % de matière grasse)"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             50 g de lait concentré"
-            },
-            {
-                "quantity": "",
-                "name": "🥜\n             Noix de coco râpée pour saupoudrer"
-            }
-        ],
-        "steps": [
-            "**Préparer le caramel :** Dans une casserole, mélanger 180 g de sucre, 180 ml de crème liquide (33 % de matière grasse), 40 g de beurre et une pincée de sel. Faire chauffer à feu moyen jusqu&rsquo;à obtenir un caramel. Laisser refroidir.",
-            "**Préparer la base du gâteau :** Dans un grand bol, battre 2 œufs avec 300 g de sucre. Ajouter 60 g de beurre fondu, 60 ml d&rsquo;huile de tournesol et 280 ml de lait, puis bien mélanger.",
-            "Incorporer 250 g de farine, 50 g de cacao en poudre et 8 g de levure chimique à la préparation liquide jusqu&rsquo;à obtenir une pâte homogène.",
-            "Verser la pâte dans un moule (environ 20&#215;20 cm ou rond de 24 cm) et cuire au four préchauffé pendant 15 minutes à 180 degrés Celsius.",
-            "**Préparer la compote de canneberges :** Dans une petite casserole, mélanger 200 g de canneberges, 40 g de sucre et 50 ml d&rsquo;eau. Porter à ébullition et laisser mijoter quelques minutes jusqu&rsquo;à ce que les canneberges ramollissent.",
-            "Dans un petit bol, délayer 10 g de fécule de maïs dans 20 ml d&rsquo;eau. Ajouter ce mélange aux canneberges et remuer constamment jusqu&rsquo;à ce que la compote épaississe. Retirer du feu et laisser refroidir.",
-            "**Préparer la crème au fromage frais :** Dans un bol, fouetter 300 g de fromage frais avec 200 ml de crème liquide (33 % de matière grasse) et 50 g de lait concentré jusqu&rsquo;à obtenir une crème onctueuse et homogène.",
-            "**Assemblage :** Une fois le gâteau, le caramel et la compote refroidis, assembler le dessert en couches dans un plat de service ou des verrines (par exemple : une couche de gâteau émietté, suivie de caramel, puis de crème au fromage frais et enfin de compote de canneberges). Répéter les couches si désiré.",
-            "Saupoudrer généreusement de noix de coco râpée avant de servir. Réfrigérer au moins 1 heure pour que les saveurs se mélangent bien."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Desserts",
-            "Noël"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8188",
-        "title": "Gâteau à l&rsquo;orange ultra moelleux",
-        "description": "Un gâteau à l&rsquo;orange incroyablement moelleux, parfait pour les fêtes de fin d&rsquo;année. Facile à préparer, il est imbibé d&rsquo;un sirop d&rsquo;orange et recouvert d&rsquo;un glaçage crémeux au fromage frais.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "glaces",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7705779352390323474\" data-video-id=\"7705779352390323474\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7705779352390323474\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Pour le gâteau :"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 grande orange"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             3 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             150 g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             50 ml d&rsquo;huile végétale"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             200 g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             10 g de levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Une pincée de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pour le sirop :"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Jus d&rsquo;1 orange"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à soupe de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pour le glaçage :"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             120 g de fromage frais"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             2 cuillères à soupe de sucre glace"
-            }
-        ],
-        "steps": [
-            "1. Coupez l&rsquo;orange en morceaux et placez-la dans un mixeur. Ajoutez les œufs, le sucre, l&rsquo;huile et une pincée de sel. Mixez jusqu&rsquo;à obtenir une consistance complètement lisse.",
-            "2. Ajoutez la farine tamisée et la levure chimique. Mélangez jusqu&rsquo;à obtenir une pâte lisse.",
-            "3. Transférez la pâte dans un moule à pâtisserie et faites cuire à 170°C pendant environ 50 minutes.",
-            "4. Pendant que le gâteau refroidit légèrement, faites chauffer le jus d&rsquo;orange et le sucre dans une petite casserole jusqu&rsquo;à ce que le sucre soit dissous.",
-            "5. Piquez de petits trous sur toute la surface du gâteau et versez lentement le sirop d&rsquo;orange dessus. Laissez le gâteau absorber le sirop et refroidir complètement.",
-            "6. Battez le fromage frais avec le sucre glace jusqu&rsquo;à obtenir une consistance crémeuse et lisse.",
-            "7. Étalez le glaçage sur le gâteau refroidi et terminez avec du zeste d&rsquo;orange fraîchement râpé."
-        ],
-        "tags": [
-            "Glaces",
-            "Noël",
-            "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8186",
-        "title": "Frites longues",
-        "description": "Une recette simple pour préparer des frites extra-longues et croustillantes.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7697491195764706568\" data-video-id=\"7697491195764706568\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7697491195764706568\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "Ingrédients détaillés dans la vidéo"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Accompagnements",
-            "Pas cher",
-            "USA",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8184",
-        "title": "Wrap de poulet crémeux et croustillant",
-        "description": "Une recette de wraps de poulet crémeux et croustillants. Des dés de poulet sont cuits avec des poivrons, des oignons, de la pâte de tomate et de la crème, puis assaisonnés. Le mélange est ensuite enveloppé dans du pain lavash avec du fromage kaşar, s",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7689167347965431058\" data-video-id=\"7689167347965431058\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7689167347965431058\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             500 g de blanc de poulet"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Un peu d&rsquo;huile"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1 poivron rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 gros oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 cuillère à soupe de concentré de tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             1 paquet de crème liquide"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 cuillère à café de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             ½ cuillère à café de poivre noir"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à café d&rsquo;origan séché"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1 cuillère à café de piment rouge en flocons"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pains lavash"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Fromage kaşar râpé (ou mozzarella râpée)"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             1 cuillère à soupe de farine"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             2 cuillères à soupe d&rsquo;eau"
-            }
-        ],
-        "steps": [
-            "Coupez 500 g de blanc de poulet en petits cubes et mettez-les dans une poêle. Faites-les cuire jusqu&rsquo;à ce qu&rsquo;ils aient rendu leur jus et l&rsquo;aient absorbé.",
-            "Ajoutez un peu d&rsquo;huile, 1 poivron rouge et 1 gros oignon, puis faites revenir.",
-            "Ajoutez 1 cuillère à soupe de concentré de tomate et faites revenir pendant quelques minutes.",
-            "Versez 1 paquet de crème liquide, puis ajoutez 1 cuillère à café de sel, ½ cuillère à café de poivre noir, 1 cuillère à café d&rsquo;origan séché et 1 cuillère à café de piment rouge en flocons.",
-            "Faites cuire jusqu&rsquo;à ce que la crème soit absorbée.",
-            "Remplissez les pains lavash avec le mélange de poulet et ajoutez du fromage kaşar râpé par-dessus.",
-            "Roulez-les en forme de wrap.",
-            "Pour sceller les extrémités, mélangez 1 cuillère à soupe de farine avec 2 cuillères à soupe d&rsquo;eau et badigeonnez les bords du lavash.",
-            "Faites cuire les wraps dans un peu d&rsquo;huile jusqu&rsquo;à ce qu&rsquo;ils soient dorés et croustillants des deux côtés."
-        ],
-        "tags": [
-            "Orient",
-            "Sandwichs"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8182",
-        "title": "Caldo Verde",
-        "description": "Le Caldo Verde est une soupe emblématique du Portugal, à base de chou vert, de pommes de terre et de saucisse fumée. C&rsquo;est une recette simple et réconfortante, parfaite pour l&rsquo;hiver ou en fin de soirée.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7706606170248727841\" data-video-id=\"7706606170248727841\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7706606170248727841\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍎\n             500 g de pommes de terre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             250 g de chou vert"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             3 gousses d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 feuille de laurier"
-            },
-            {
-                "quantity": "",
-                "name": "🥓\n             200 g de saucisse fumée ou de chorizo"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             4 cuillères à soupe d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             1,2 à 1,5 litre d&rsquo;eau"
-            }
-        ],
-        "steps": [
-            "Faites revenir les oignons avec une feuille de laurier dans un filet d&rsquo;huile d&rsquo;olive.",
-            "Ajoutez les pommes de terre et l&rsquo;eau.",
-            "Vérifiez la cuisson des pommes de terre en les piquant avec un couteau ; elles doivent être tendres.",
-            "Incorporez une bonne poignée de chou vert émincé.",
-            "Après 5 à 6 minutes de cuisson, mixez la soupe.",
-            "Ajoutez le reste du chou et laissez mijoter doucement à feu doux.",
-            "Pendant ce temps, coupez la saucisse ou le chorizo en petites rondelles.",
-            "Ajoutez les rondelles de saucisse ou de chorizo à la soupe.",
-            "Laissez infuser de nouveau pendant 30 minutes à feu doux."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Portugal",
-            "Soupes"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8180",
-        "title": "Tiramisu",
-        "description": "Une recette facile et rapide pour préparer un délicieux tiramisu maison, un dessert italien classique.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7706472352271338785\" data-video-id=\"7706472352271338785\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7706472352271338785\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧀\n             400 g de mascarpone (à température ambiante)"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             400 g de crème liquide bien froide"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             50 g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             10 cc d&rsquo;essence de vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             20 biscuits à la cuillère"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             300 cc de café fort"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             Du cacao amer (à saupoudrer)"
-            }
-        ],
-        "steps": [
-            "Suivre les instructions dans la vidéo"
-        ],
-        "tags": [
-            "Italie",
-            "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8178",
-        "title": "Cocktail d&rsquo;hiver aux épices de Noël",
-        "description": "Découvrez ce cocktail d&rsquo;hiver incontournable, l&rsquo;apéritif parfait pour les fêtes de fin d&rsquo;année. Ses glaçons hivernaux à la pomme, à la cannelle et à l&rsquo;anis étoilé sont non seulement visuellement attrayants, mais aussi incroyab",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "boissons",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7695439250732404000\" data-video-id=\"7695439250732404000\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7695439250732404000\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             1 pomme"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             6 bâtons de cannelle"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             12 anis étoilés"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             200 ml de jus de pomme clair"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             200 ml d&rsquo;eau plate"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             50 ml de Lillet Blanc par verre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             100 ml de jus de pomme par verre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             100 ml de Prosecco par verre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Sauce caramel"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Cannelle et sucre pour le bord du verre"
-            }
-        ],
-        "steps": [
-            "1. Couper la pomme en petits morceaux et les répartir dans un moule à glaçons. Ajouter une demi-bâton de cannelle et un anis étoilé dans chaque compartiment.",
-            "2. Mélanger le jus de pomme avec l&rsquo;eau, remplir les moules et congeler toute une nuit.",
-            "3. Tremper le bord du verre d&rsquo;abord dans la sauce caramel, puis dans le mélange cannelle-sucre.",
-            "4. Mettre 2 glaçons dans chaque verre et compléter avec le Lillet, le jus de pomme et le Prosecco."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Cocktails",
-            "Noël"
         ],
         "isFeatured": false,
         "isFavorite": false,
