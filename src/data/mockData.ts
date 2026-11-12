@@ -2,11 +2,354 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/11/2026 02:15:22
- * Total: 848 recettes
+ * Dernière mise à jour: 12/11/2026 10:02:49
+ * Total: 852 recettes
  */
-export const exportSyncId = "1794449722901";
+export const exportSyncId = "1794477769447";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8205",
+        "title": "Chocolat chaud à l&rsquo;ancienne",
+        "description": "Préparez un délicieux chocolat chaud à l&rsquo;ancienne, onctueux et réconfortant, parfait pour se réchauffer tout l&rsquo;hiver.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7702146680908533024\" data-video-id=\"7702146680908533024\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7702146680908533024\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍫\n             200 g de chocolat"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             20 cl de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             65 cl de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 goutte d'extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de cannelle"
+            }
+        ],
+        "steps": [
+            "Dans une casserole, faites chauffer la crème liquide avec le sucre.",
+            "Ajoutez le chocolat coupé en morceaux, une goutte d&rsquo;extrait de vanille et la cannelle.",
+            "Une fois le chocolat complètement fondu, versez progressivement le lait.",
+            "Faites chauffer à feu doux pendant 10 minutes en remuant de temps en temps, sans laisser bouillir, jusqu&rsquo;à obtenir une texture bien onctueuse."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8203",
+        "title": "Wrap Protéiné au Maïs Croustillant",
+        "description": "Découvrez une recette virale de wrap au maïs, testée et améliorée pour être plus riche en protéines et moins calorique. Ce wrap croustillant est facile à préparer et peut être garni selon vos envies pour un repas sain et gourmand.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7700285666919255329\" data-video-id=\"7700285666919255329\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7700285666919255329\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Maïs (285g)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs (2)"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             Mozzarella râpée (100g)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Curcuma"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Cumin"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             Jambon (140g)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Carré Frais 0% (50g)"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             Salade"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥑\n             Avocat"
+            }
+        ],
+        "steps": [
+            "Rincez le maïs.",
+            "Dans un grand bol, ajoutez le maïs rincé, les œufs, le paprika fumé, le curcuma, le cumin, l&rsquo;ail en poudre, la mozzarella râpée et un peu de sel.",
+            "Mélangez bien tous les ingrédients jusqu&rsquo;à obtenir une préparation homogène.",
+            "Étalez la préparation sur une plaque de cuisson recouverte de papier sulfurisé, en essayant de former un grand wrap fin.",
+            "Enfournez pour 22 minutes à 190 degrés Celsius.",
+            "Une fois le wrap cuit et croustillant, garnissez-le avec du Carré Frais 0%, du jambon, de la salade, des tomates, de l&rsquo;oignon rouge et de l&rsquo;avocat, ou les ingrédients de votre choix.",
+            "Pliez le wrap et dégustez."
+        ],
+        "tags": [
+            "épicé",
+            "Healthy",
+            "minceur",
+            "Sandwichs"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8201",
+        "title": "Nems au poulet maison",
+        "description": "Découvrez une recette maison de nems au poulet, avec une farce généreuse et parfumée, et des astuces pour obtenir une enveloppe ultra croustillante, comme au restaurant. Faciles à réaliser, ces nems vous feront oublier les versions industrielles.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7695431670148680982\" data-video-id=\"7695431670148680982\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7695431670148680982\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             30 g de champignons noirs déshydratés"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100 g de vermicelles de haricot mungo"
+            },
+            {
+                "quantity": "",
+                "name": "🍗\n             5 cuisses de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 échalotes"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             1 carotte"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à soupe de sauce huître"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             2 cuillères à soupe de sauce soja"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cuillères à soupe de nuoc-mâm"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             2 cuillères à soupe d&rsquo;huile de sésame"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Une pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Une pincée de bouillon de volaille"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Une pincée de poivre blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             Galettes de riz pour nems"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Eau"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Lait de coco"
+            }
+        ],
+        "steps": [
+            "Réhydratez les champignons noirs et les vermicelles de haricot mungo, puis mettez-les de côté.",
+            "Désossez les cuisses de poulet, coupez la chair en gros cubes, puis mixez-la.",
+            "Ciselez l&rsquo;oignon et les échalotes.",
+            "Taillez la carotte en bâtonnets, puis salez-la légèrement pour la dégorger.",
+            "Hachez les champignons noirs réhydratés.",
+            "Coupez les vermicelles réhydratés aux ciseaux.",
+            "Dans un grand saladier, mélangez le poulet mixé avec les échalotes et les oignons ciselés, les champignons noirs hachés, les carottes pressées et les vermicelles coupés.",
+            "Ajoutez les deux œufs, la sauce huître, la sauce soja, le nuoc-mâm, l&rsquo;huile de sésame, une pincée de sel, une pincée de bouillon de volaille et une pincée de poivre blanc. Mélangez bien le tout.",
+            "Étalez la farce sur une plaque, filmez-la et laissez reposer 10 à 15 minutes au réfrigérateur pour faciliter le portionnage.",
+            "Pendant ce temps, préparez un mélange d&rsquo;eau et de lait de coco dans un plat pour humidifier les galettes de riz et éviter qu&rsquo;elles ne collent entre elles.",
+            "Humidifiez une galette de riz, posez-la en losange. Déposez une portion de farce sur l&rsquo;extrémité.",
+            "Rabattez les bords de la galette pour qu&rsquo;ils soient parallèles, puis roulez-la en serrant bien. Ajoutez un peu du mélange d&rsquo;eau et de lait de coco pour bien refermer le nem. Répétez l&rsquo;opération pour toutes les galettes.",
+            "Pour la première cuisson, faites frire les nems dans un bain d&rsquo;huile à 160 °C pendant 4 à 5 minutes. À ce stade, vous pouvez les congeler.",
+            "Si vous souhaitez les consommer immédiatement, passez à la deuxième friture. Montez l&rsquo;huile à 180 °C et faites frire les nems une seconde fois pendant 2 minutes, en adaptant selon leur taille et jusqu&rsquo;à cuisson complète du poulet, pour qu&rsquo;ils soient bien dorés et croustillants.",
+            "Servez les nems chauds."
+        ],
+        "tags": [
+            "Asie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8199",
+        "title": "Salade de poulet du traiteur chinois",
+        "description": "Découvrez la recette authentique de la salade de poulet des traiteurs chinois, avec sa vinaigrette blanche légèrement sucrée et sa texture onctueuse. Une salade fraîche et croquante, facile à reproduire à la maison pour retrouver les saveurs de votre",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7696520585995816194\" data-video-id=\"7696520585995816194\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7696520585995816194\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥗\n             1 salade batavia"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             1 carotte"
+            },
+            {
+                "quantity": "",
+                "name": "🍗\n             1 filet de blanc de poulet"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Une pincée de sel (pour la cuisson du poulet)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 jaunes d&rsquo;œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de moutarde de Dijon"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel (pour la vinaigrette)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             3 cuillères à café de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1 pincée de poivre blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             2 cuillères à soupe de vinaigre blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile de tournesol"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile de sésame"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Eau froide"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus de citron"
+            }
+        ],
+        "steps": [
+            "Salez l&rsquo;eau dans une casserole et mélangez pour dissoudre le sel. Portez l&rsquo;eau à ébullition.",
+            "Plongez le filet de poulet dans l&rsquo;eau frémissante et laissez cuire 2 à 3 minutes. Éteignez le feu et laissez le poulet reposer dans l&rsquo;eau chaude pendant 20 minutes pour qu&rsquo;il finisse de cuire à cœur.",
+            "Pendant ce temps, effeuillez la salade batavia en appuyant sur le cœur. Émincez-la très finement, idéalement en la roulant pour faciliter la découpe.",
+            "Plongez la salade émincée et la carotte taillée en julienne dans de l&rsquo;eau glacée. Laissez reposer 10 minutes.",
+            "Une fois le poulet cuit et refroidi, coupez-le d&rsquo;abord en lamelles, puis émincez-le dans l&rsquo;autre sens pour obtenir de petits morceaux.",
+            "Pour la vinaigrette, dans un bol, fouettez les jaunes d&rsquo;œufs avec la moutarde de Dijon, le sel, le sucre, le poivre blanc et le vinaigre blanc jusqu&rsquo;à obtenir une pâte homogène.",
+            "Incorporez progressivement l&rsquo;huile de tournesol comme pour monter une mayonnaise, puis ajoutez un peu d&rsquo;huile d&rsquo;olive.",
+            "Ajoutez ensuite progressivement de l&rsquo;eau bien froide, petit à petit, pour obtenir une texture légère et fluide.",
+            "Terminez l&rsquo;assaisonnement avec du jus de citron et quelques gouttes d&rsquo;huile de sésame selon vos goûts.",
+            "Égouttez et essorez soigneusement la salade et les carottes. Dressez-les dans un plat.",
+            "Déposez le poulet émincé par-dessus la salade et les carottes.",
+            "Nappez généreusement de vinaigrette blanche avant de servir. Bonne dégustation !"
+        ],
+        "tags": [
+            "Asie",
+            "Healthy",
+            "Pas cher",
+            "Salades",
+            "Sauces",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8194",
         "title": "Tarte Tatin d&rsquo;oignon et lardons fumés",
