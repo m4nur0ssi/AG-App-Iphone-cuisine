@@ -2,11 +2,152 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/11/2026 22:28:33
+ * Dernière mise à jour: 12/11/2026 22:50:35
  * Total: 857 recettes
  */
-export const exportSyncId = "1794522513876";
+export const exportSyncId = "1794523835867";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8226",
+        "title": "Dessert de Knafeh à la crème de noisette",
+        "description": "Un dessert gourmand et facile à réaliser, composé de couches de kadaïf croustillant mélangé à de la crème de noisette, de biscuits trempés dans du lait, d&rsquo;une crème onctueuse à la vanille et d&rsquo;un glaçage au chocolat au lait. Idéal pour un",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8226.webp&v=1794526418000",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7705893613565218066\" data-video-id=\"7705893613565218066\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7705893613565218066\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             24 biscuits (type petit-beurre ou similaire)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Lait (pour tremper les biscuits)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             250 g de kadaïf (cheveux d&rsquo;ange) congelé"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             50 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             300 g de crème de noisette (type pâte à tartiner)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             500 ml de crème liquide froide (30% MG minimum)"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             80 g de préparation pour pudding instantané à la vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             4 cuillères à soupe de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 cuillère à café d&rsquo;extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             200 g de chocolat au lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             125 ml de crème liquide"
+            }
+        ],
+        "steps": [
+            "Faire cuire le kadaïf avec le beurre jusqu&rsquo;à ce qu&rsquo;il soit doré et croustillant, puis laisser refroidir.",
+            "Tremper les biscuits dans le lait et les disposer au fond d&rsquo;un moule de 24&#215;24 cm.",
+            "Mélanger le kadaïf refroidi avec la crème de noisette et étaler cette préparation sur la couche de biscuits.",
+            "Dans un autre bol, fouetter la crème liquide froide avec la préparation pour pudding, le sucre glace et l&rsquo;extrait de vanille jusqu&rsquo;à obtenir une crème ferme. Étaler cette crème sur la couche de kadaïf.",
+            "Faire fondre le chocolat au lait avec la crème liquide chaude, puis verser cette ganache au chocolat sur la crème à la vanille.",
+            "Mettre le dessert au congélateur pendant une demi-heure. Ensuite, disposer une couche supérieure de biscuits trempés dans le lait et congeler le dessert pendant 3 heures avant de servir."
+        ],
+        "tags": [
+            "chocolat",
+            "facile",
+            "Orient",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8228",
+        "title": "Brownie Praliné",
+        "description": "Découvrez une recette facile et gourmande de brownie au chocolat praliné, avec des noix et des pépites de chocolat pour une texture irrésistiblement fondante et fudgy.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8228.webp&v=1794526410000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7690136334425460000\" data-video-id=\"7690136334425460000\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7690136334425460000\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             60g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 sachet de sucre vanillé"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             150g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100g de cassonade"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             200g de chocolat praliné"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 bonne pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             Des noix (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Des pépites de chocolat (facultatif)"
+            }
+        ],
+        "steps": [
+            "Faites fondre le chocolat praliné cassé en morceaux avec le beurre.",
+            "Pendant ce temps, battez les œufs avec la cassonade jusqu'à ce que le mélange blanchisse.",
+            "Ajoutez la farine, le sucre vanillé et le sel au mélange œufs-sucre. Incorporez ensuite le mélange chocolat-beurre fondu.",
+            "Ajoutez les noix et les pépites de chocolat si vous le souhaitez.",
+            "Versez la préparation dans un moule. Ajoutez de nouveau quelques noix et pépites sur le dessus pour le topping.",
+            "Enfournez à 180°C pendant 20 à 25 minutes. Pour un brownie très fondant, laissez cuire 20 minutes et placez-le au frais environ 1 heure pour obtenir un effet fudgy. Si vous le préférez moins fondant, prolongez la cuisson."
+        ],
+        "tags": [
+            "Pas cher",
+            "pâtisserie",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8203",
         "title": "Wrap Protéiné au Maïs Croustillant",
@@ -151,147 +292,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "C'est l'hiver",
             "Noël"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8228",
-        "title": "Brownie Praliné",
-        "description": "Découvrez une recette facile et gourmande de brownie au chocolat praliné, avec des noix et des pépites de chocolat pour une texture irrésistiblement fondante et fudgy.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7690136334425460000\" data-video-id=\"7690136334425460000\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7690136334425460000\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             60g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 sachet de sucre vanillé"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             3 œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             150g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             100g de cassonade"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             200g de chocolat praliné"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 bonne pincée de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥜\n             Des noix (facultatif)"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             Des pépites de chocolat (facultatif)"
-            }
-        ],
-        "steps": [
-            "Faites fondre le chocolat praliné cassé en morceaux avec le beurre.",
-            "Pendant ce temps, battez les œufs avec la cassonade jusqu'à ce que le mélange blanchisse.",
-            "Ajoutez la farine, le sucre vanillé et le sel au mélange œufs-sucre. Incorporez ensuite le mélange chocolat-beurre fondu.",
-            "Ajoutez les noix et les pépites de chocolat si vous le souhaitez.",
-            "Versez la préparation dans un moule. Ajoutez de nouveau quelques noix et pépites sur le dessus pour le topping.",
-            "Enfournez à 180°C pendant 20 à 25 minutes. Pour un brownie très fondant, laissez cuire 20 minutes et placez-le au frais environ 1 heure pour obtenir un effet fudgy. Si vous le préférez moins fondant, prolongez la cuisson."
-        ],
-        "tags": [
-            "Pas cher",
-            "pâtisserie",
-            "USA"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8226",
-        "title": "Dessert de Knafeh à la crème de noisette",
-        "description": "Un dessert gourmand et facile à réaliser, composé de couches de kadaïf croustillant mélangé à de la crème de noisette, de biscuits trempés dans du lait, d&rsquo;une crème onctueuse à la vanille et d&rsquo;un glaçage au chocolat au lait. Idéal pour un",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "patisserie",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7705893613565218066\" data-video-id=\"7705893613565218066\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7705893613565218066\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧈\n             24 biscuits (type petit-beurre ou similaire)"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Lait (pour tremper les biscuits)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             250 g de kadaïf (cheveux d&rsquo;ange) congelé"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             50 g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             300 g de crème de noisette (type pâte à tartiner)"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             500 ml de crème liquide froide (30% MG minimum)"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             80 g de préparation pour pudding instantané à la vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             4 cuillères à soupe de sucre glace"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             1 cuillère à café d&rsquo;extrait de vanille"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             200 g de chocolat au lait"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             125 ml de crème liquide"
-            }
-        ],
-        "steps": [
-            "Faire cuire le kadaïf avec le beurre jusqu&rsquo;à ce qu&rsquo;il soit doré et croustillant, puis laisser refroidir.",
-            "Tremper les biscuits dans le lait et les disposer au fond d&rsquo;un moule de 24&#215;24 cm.",
-            "Mélanger le kadaïf refroidi avec la crème de noisette et étaler cette préparation sur la couche de biscuits.",
-            "Dans un autre bol, fouetter la crème liquide froide avec la préparation pour pudding, le sucre glace et l&rsquo;extrait de vanille jusqu&rsquo;à obtenir une crème ferme. Étaler cette crème sur la couche de kadaïf.",
-            "Faire fondre le chocolat au lait avec la crème liquide chaude, puis verser cette ganache au chocolat sur la crème à la vanille.",
-            "Mettre le dessert au congélateur pendant une demi-heure. Ensuite, disposer une couche supérieure de biscuits trempés dans le lait et congeler le dessert pendant 3 heures avant de servir."
-        ],
-        "tags": [
-            "chocolat",
-            "facile",
-            "Orient",
-            "pâtisserie"
         ],
         "isFeatured": false,
         "isFavorite": false,
