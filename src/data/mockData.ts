@@ -2,11 +2,109 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/11/2026 11:06:27
- * Total: 852 recettes
+ * Dernière mise à jour: 12/11/2026 12:09:00
+ * Total: 853 recettes
  */
-export const exportSyncId = "1794481587288";
+export const exportSyncId = "1794485340525";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8218",
+        "title": "Nuggets de pomme de terre croustillants et sauce Creamy Deluxe maison",
+        "description": "Préparez de délicieux nuggets de pomme de terre, dorés et croustillants à l&rsquo;extérieur, moelleux à l&rsquo;intérieur. Accompagnez-les d&rsquo;une sauce Creamy Deluxe maison, fraîche et gourmande, pour un encas facile et savoureux.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7705806821583342870\" data-video-id=\"7705806821583342870\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7705806821583342870\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             2 pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥔\n             3 c. à soupe de fécule de pomme de terre (à ajuster)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile pour la cuisson"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Zeste de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             2 c. à soupe de mayonnaise"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             1 c. à soupe de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 c. à soupe d&rsquo;oignon rouge finement haché"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 bonne pincée de cébette ciselée"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 pincée de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Quelques tours de moulin à poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Le jus d&rsquo;1/2 citron vert"
+            }
+        ],
+        "steps": [
+            "Épluchez les pommes de terre.",
+            "Mettez les pommes de terre épluchées dans l&rsquo;eau pour éviter l&rsquo;oxydation.",
+            "Coupez les pommes de terre.",
+            "Égouttez les pommes de terre coupées.",
+            "Faites cuire les pommes de terre à la vapeur pendant environ 30 minutes, jusqu&rsquo;à ce qu&rsquo;elles soient bien fondantes.",
+            "Pendant la cuisson des pommes de terre, préparez la sauce Creamy Deluxe. Dans un bol, mélangez la mayonnaise, la crème liquide, la cébette, les oignons rouges, une pincée de sel, une pincée de sucre, un filet de jus de citron vert et un peu de poivre moulu.",
+            "Mélangez bien la sauce et laissez-la reposer pour que les arômes de l&rsquo;oignon et de la cébette s&rsquo;imprègnent.",
+            "Une fois les pommes de terre cuites et fondantes, débarrassez-les dans un bol.",
+            "Écrasez soigneusement les pommes de terre pour obtenir une purée.",
+            "Assaisonnez la purée avec un peu de sel et un peu de poivre noir.",
+            "Laissez la préparation de pommes de terre refroidir un peu.",
+            "Incorporez progressivement la fécule de pomme de terre jusqu&rsquo;à obtenir une pâte homogène et souple.",
+            "Mettez un peu de fécule de pomme de terre sur vos mains pour éviter que la pâte ne colle.",
+            "Façonnez des petits nuggets de la forme que vous souhaitez et déposez-les sur une plaque légèrement huilée.",
+            "Faites chauffer un bon fond d&rsquo;huile dans une poêle à 180 °C.",
+            "Déposez délicatement les nuggets dans l&rsquo;huile chaude.",
+            "Faites frire les nuggets jusqu&rsquo;à ce qu&rsquo;ils soient bien dorés de chaque côté.",
+            "Débarrassez les nuggets frits et égouttez-les sur du papier absorbant.",
+            "Ajoutez un peu de sel sur les nuggets chauds.",
+            "Terminez avec un tout petit peu de zeste de citron pour contrebalancer le gras.",
+            "Servez les nuggets avec la sauce Creamy Deluxe maison."
+        ],
+        "tags": [
+            "Asie",
+            "Pas cher",
+            "Sauces",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8196",
         "title": "Fondant chocolat et noisette",
