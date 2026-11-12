@@ -2,57 +2,94 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 12/11/2026 18:48:27
- * Total: 854 recettes
+ * Dernière mise à jour: 12/11/2026 22:28:33
+ * Total: 857 recettes
  */
-export const exportSyncId = "1794509307679";
+export const exportSyncId = "1794522513876";
 export const mockRecipes: Recipe[] = [
     {
-        "id": "8205",
-        "title": "Chocolat chaud à l&rsquo;ancienne",
-        "description": "Préparez un délicieux chocolat chaud à l&rsquo;ancienne, onctueux et réconfortant, parfait pour se réchauffer tout l&rsquo;hiver.",
-        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8205.webp&v=1794511831000",
-        "category": "desserts",
+        "id": "8203",
+        "title": "Wrap Protéiné au Maïs Croustillant",
+        "description": "Découvrez une recette virale de wrap au maïs, testée et améliorée pour être plus riche en protéines et moins calorique. Ce wrap croustillant est facile à préparer et peut être garni selon vos envies pour un repas sain et gourmand.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8203.webp&v=1794525398000",
+        "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7702146680908533024\" data-video-id=\"7702146680908533024\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7702146680908533024\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7700285666919255329\" data-video-id=\"7700285666919255329\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7700285666919255329\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🍫\n             200 g de chocolat"
+                "name": "🥣\n             Maïs (285g)"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             20 cl de crème liquide"
+                "name": "🥚\n             Œufs (2)"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             65 cl de lait"
+                "name": "🧀\n             Mozzarella râpée (100g)"
             },
             {
                 "quantity": "",
-                "name": "🍯\n             1 cuillère à soupe de sucre"
+                "name": "🧂\n             Paprika fumé"
             },
             {
                 "quantity": "",
-                "name": "🍦\n             1 goutte d'extrait de vanille"
+                "name": "🧂\n             Curcuma"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             1 cuillère à café de cannelle"
+                "name": "🧂\n             Cumin"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             Ail en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             Jambon (140g)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Carré Frais 0% (50g)"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             Salade"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             Tomate"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥑\n             Avocat"
             }
         ],
         "steps": [
-            "Dans une casserole, faites chauffer la crème liquide avec le sucre.",
-            "Ajoutez le chocolat coupé en morceaux, une goutte d&rsquo;extrait de vanille et la cannelle.",
-            "Une fois le chocolat complètement fondu, versez progressivement le lait.",
-            "Faites chauffer à feu doux pendant 10 minutes en remuant de temps en temps, sans laisser bouillir, jusqu&rsquo;à obtenir une texture bien onctueuse."
+            "Rincez le maïs.",
+            "Dans un grand bol, ajoutez le maïs rincé, les œufs, le paprika fumé, le curcuma, le cumin, l&rsquo;ail en poudre, la mozzarella râpée et un peu de sel.",
+            "Mélangez bien tous les ingrédients jusqu&rsquo;à obtenir une préparation homogène.",
+            "Étalez la préparation sur une plaque de cuisson recouverte de papier sulfurisé, en essayant de former un grand wrap fin.",
+            "Enfournez pour 22 minutes à 190 degrés Celsius.",
+            "Une fois le wrap cuit et croustillant, garnissez-le avec du Carré Frais 0%, du jambon, de la salade, des tomates, de l&rsquo;oignon rouge et de l&rsquo;avocat, ou les ingrédients de votre choix.",
+            "Pliez le wrap et dégustez."
         ],
         "tags": [
-            "C'est l'hiver",
-            "Pas cher"
+            "épicé",
+            "Healthy",
+            "minceur",
+            "Sandwichs"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -62,7 +99,7 @@ export const mockRecipes: Recipe[] = [
         "id": "8220",
         "title": "Petits pots chocolat-orange au Baileys",
         "description": "Découvrez ces irrésistibles petits pots chocolat-orange au Baileys, un dessert de Noël sans cuisson que l&rsquo;auteure prépare depuis près de 15 ans. Composés d&rsquo;une base croustillante de biscuits, d&rsquo;une crème onctueuse au chocolat et à l",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8220.webp&v=1794525387000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -120,10 +157,227 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
+        "id": "8228",
+        "title": "Brownie Praliné",
+        "description": "Découvrez une recette facile et gourmande de brownie au chocolat praliné, avec des noix et des pépites de chocolat pour une texture irrésistiblement fondante et fudgy.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7690136334425460000\" data-video-id=\"7690136334425460000\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7690136334425460000\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             60g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 sachet de sucre vanillé"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             150g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100g de cassonade"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             200g de chocolat praliné"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 bonne pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             Des noix (facultatif)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Des pépites de chocolat (facultatif)"
+            }
+        ],
+        "steps": [
+            "Faites fondre le chocolat praliné cassé en morceaux avec le beurre.",
+            "Pendant ce temps, battez les œufs avec la cassonade jusqu'à ce que le mélange blanchisse.",
+            "Ajoutez la farine, le sucre vanillé et le sel au mélange œufs-sucre. Incorporez ensuite le mélange chocolat-beurre fondu.",
+            "Ajoutez les noix et les pépites de chocolat si vous le souhaitez.",
+            "Versez la préparation dans un moule. Ajoutez de nouveau quelques noix et pépites sur le dessus pour le topping.",
+            "Enfournez à 180°C pendant 20 à 25 minutes. Pour un brownie très fondant, laissez cuire 20 minutes et placez-le au frais environ 1 heure pour obtenir un effet fudgy. Si vous le préférez moins fondant, prolongez la cuisson."
+        ],
+        "tags": [
+            "Pas cher",
+            "pâtisserie",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8226",
+        "title": "Dessert de Knafeh à la crème de noisette",
+        "description": "Un dessert gourmand et facile à réaliser, composé de couches de kadaïf croustillant mélangé à de la crème de noisette, de biscuits trempés dans du lait, d&rsquo;une crème onctueuse à la vanille et d&rsquo;un glaçage au chocolat au lait. Idéal pour un",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7705893613565218066\" data-video-id=\"7705893613565218066\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7705893613565218066\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             24 biscuits (type petit-beurre ou similaire)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Lait (pour tremper les biscuits)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             250 g de kadaïf (cheveux d&rsquo;ange) congelé"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             50 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             300 g de crème de noisette (type pâte à tartiner)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             500 ml de crème liquide froide (30% MG minimum)"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             80 g de préparation pour pudding instantané à la vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             4 cuillères à soupe de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 cuillère à café d&rsquo;extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             200 g de chocolat au lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             125 ml de crème liquide"
+            }
+        ],
+        "steps": [
+            "Faire cuire le kadaïf avec le beurre jusqu&rsquo;à ce qu&rsquo;il soit doré et croustillant, puis laisser refroidir.",
+            "Tremper les biscuits dans le lait et les disposer au fond d&rsquo;un moule de 24&#215;24 cm.",
+            "Mélanger le kadaïf refroidi avec la crème de noisette et étaler cette préparation sur la couche de biscuits.",
+            "Dans un autre bol, fouetter la crème liquide froide avec la préparation pour pudding, le sucre glace et l&rsquo;extrait de vanille jusqu&rsquo;à obtenir une crème ferme. Étaler cette crème sur la couche de kadaïf.",
+            "Faire fondre le chocolat au lait avec la crème liquide chaude, puis verser cette ganache au chocolat sur la crème à la vanille.",
+            "Mettre le dessert au congélateur pendant une demi-heure. Ensuite, disposer une couche supérieure de biscuits trempés dans le lait et congeler le dessert pendant 3 heures avant de servir."
+        ],
+        "tags": [
+            "chocolat",
+            "facile",
+            "Orient",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8224",
+        "title": "Cake aux fruits confits façon Pierre Hermé",
+        "description": "Un délicieux cake aux fruits confits, inspiré de la recette de Pierre Hermé. Les raisins secs sont macérés dans du rhum ambré (ou du thé aux fruits rouges) avant d&rsquo;être incorporés à la pâte, puis le cake est badigeonné de ce même liquide à la s",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7707319463107906849\" data-video-id=\"7707319463107906849\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7707319463107906849\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre mou (200g)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine (300g)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs (4)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Levure chimique (5g)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cassonade (150g)"
+            },
+            {
+                "quantity": "",
+                "name": "🍇\n             Raisins secs (150g)"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             Rhum ambré (20cl) ou thé aux fruits rouges"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Cerises confites (150g)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fruits confits mélangés (150g)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel (une petite pincée)"
+            }
+        ],
+        "steps": [
+            "Faites gonfler les raisins secs dans le rhum ambré (ou le thé aux fruits rouges) pendant 2 heures. Égouttez les raisins en conservant le rhum pour plus tard.",
+            "Préchauffez votre four à 250°C.",
+            "Dans un saladier, fouettez le beurre mou avec la cassonade jusqu&rsquo;à obtenir un mélange crémeux et homogène.",
+            "Incorporez les œufs un à un, en fouettant bien après chaque ajout. Le mélange peut sembler trancher légèrement, mais cela n&rsquo;affectera pas le résultat final.",
+            "À l&rsquo;aide d&rsquo;une cuillère en bois ou d&rsquo;une spatule, incorporez délicatement la farine mélangée à la levure chimique et une petite pincée de sel.",
+            "Ajoutez les raisins secs égouttés et les fruits confits (le mélange et les cerises) à la pâte, puis mélangez pour bien les répartir.",
+            "Versez la pâte dans un moule à cake beurré (ou chemisé d&rsquo;un tapis de cuisson en silicone).",
+            "Lissez le dessus de la pâte et déposez une petite bande de beurre au centre du cake pour favoriser un développement harmonieux à la cuisson.",
+            "Baissez la température du four à 180°C et enfournez le cake pendant 1 heure et 10 minutes.",
+            "À la sortie du four, badigeonnez immédiatement le cake encore chaud avec le rhum (ou le thé aux fruits rouges) que vous aviez réservé.",
+            "Laissez le cake refroidir complètement avant de le déguster."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "France",
+            "Noël",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
         "id": "8218",
         "title": "Nuggets de pomme de terre croustillants et sauce Creamy Deluxe maison",
         "description": "Préparez de délicieux nuggets de pomme de terre, dorés et croustillants à l&rsquo;extérieur, moelleux à l&rsquo;intérieur. Accompagnez-les d&rsquo;une sauce Creamy Deluxe maison, fraîche et gourmande, pour un encas facile et savoureux.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8218.webp&v=1794512820000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -212,6 +466,57 @@ export const mockRecipes: Recipe[] = [
             "Pas cher",
             "Sauces",
             "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8205",
+        "title": "Chocolat chaud à l&rsquo;ancienne",
+        "description": "Préparez un délicieux chocolat chaud à l&rsquo;ancienne, onctueux et réconfortant, parfait pour se réchauffer tout l&rsquo;hiver.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8205.webp&v=1794511831000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7702146680908533024\" data-video-id=\"7702146680908533024\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7702146680908533024\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍫\n             200 g de chocolat"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             20 cl de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             65 cl de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 goutte d'extrait de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de cannelle"
+            }
+        ],
+        "steps": [
+            "Dans une casserole, faites chauffer la crème liquide avec le sucre.",
+            "Ajoutez le chocolat coupé en morceaux, une goutte d&rsquo;extrait de vanille et la cannelle.",
+            "Une fois le chocolat complètement fondu, versez progressivement le lait.",
+            "Faites chauffer à feu doux pendant 10 minutes en remuant de temps en temps, sans laisser bouillir, jusqu&rsquo;à obtenir une texture bien onctueuse."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Pas cher"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -1067,94 +1372,6 @@ export const mockRecipes: Recipe[] = [
             "C'est l'hiver",
             "France",
             "Pas cher"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8203",
-        "title": "Wrap Protéiné au Maïs Croustillant",
-        "description": "Découvrez une recette virale de wrap au maïs, testée et améliorée pour être plus riche en protéines et moins calorique. Ce wrap croustillant est facile à préparer et peut être garni selon vos envies pour un repas sain et gourmand.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7700285666919255329\" data-video-id=\"7700285666919255329\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7700285666919255329\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Maïs (285g)"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Œufs (2)"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             Mozzarella râpée (100g)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Curcuma"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Cumin"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             Ail en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥓\n             Jambon (140g)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Carré Frais 0% (50g)"
-            },
-            {
-                "quantity": "",
-                "name": "🥗\n             Salade"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             Tomate"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🥑\n             Avocat"
-            }
-        ],
-        "steps": [
-            "Rincez le maïs.",
-            "Dans un grand bol, ajoutez le maïs rincé, les œufs, le paprika fumé, le curcuma, le cumin, l&rsquo;ail en poudre, la mozzarella râpée et un peu de sel.",
-            "Mélangez bien tous les ingrédients jusqu&rsquo;à obtenir une préparation homogène.",
-            "Étalez la préparation sur une plaque de cuisson recouverte de papier sulfurisé, en essayant de former un grand wrap fin.",
-            "Enfournez pour 22 minutes à 190 degrés Celsius.",
-            "Une fois le wrap cuit et croustillant, garnissez-le avec du Carré Frais 0%, du jambon, de la salade, des tomates, de l&rsquo;oignon rouge et de l&rsquo;avocat, ou les ingrédients de votre choix.",
-            "Pliez le wrap et dégustez."
-        ],
-        "tags": [
-            "épicé",
-            "Healthy",
-            "minceur",
-            "Sandwichs"
         ],
         "isFeatured": false,
         "isFavorite": false,
