@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 11/11/2026 17:58:23
- * Total: 847 recettes
+ * Dernière mise à jour: 12/11/2026 02:05:18
+ * Total: 848 recettes
  */
-export const exportSyncId = "1794419903156";
+export const exportSyncId = "1794449118118";
 export const mockRecipes: Recipe[] = [
     {
         "id": "8194",
         "title": "Tarte Tatin d&rsquo;oignon et lardons fumés",
         "description": "Découvrez une façon originale et rapide de préparer une Tarte Tatin salée. Cette recette met en vedette des oignons doux caramélisés, des lardons fumés et du fromage, le tout sur une pâte feuilletée croustillante. Elle est accompagnée d&rsquo;une crè",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8194.webp&v=1794451720000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -75,6 +75,78 @@ export const mockRecipes: Recipe[] = [
             "France",
             "Pas cher",
             "tarte"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8196",
+        "title": "Fondant chocolat et noisette",
+        "description": "Un dessert gourmand composé d&rsquo;un fondant au chocolat et noisette, surmonté d&rsquo;une onctueuse mousse au chocolat.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7706598333237742880\" data-video-id=\"7706598333237742880\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7706598333237742880\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             70 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             75 g de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             150 g de chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             159 g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             90 g de poudre d'amandes"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             180 g de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 jaunes d'œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             300 g de chocolat"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             350 g de crème liquide entière froide"
+            }
+        ],
+        "steps": [
+            "Pour le fondant au chocolat : Préchauffer le four à 170 °C.",
+            "Fouetter les œufs avec le sucre.",
+            "Ajouter le lait, puis incorporer le chocolat fondu avec le beurre.",
+            "Terminer en ajoutant la poudre d'amandes et mélanger jusqu'à obtenir une pâte homogène.",
+            "Verser dans un moule et enfourner pendant environ 25 minutes.",
+            "Pour la mousse au chocolat : Faire chauffer le lait avec les jaunes d'œufs à feu doux, en mélangeant constamment, sans porter à ébullition.",
+            "Verser le mélange chaud sur le chocolat et mélanger jusqu'à obtenir une ganache lisse et homogène.",
+            "Laisser tiédir.",
+            "Monter la crème liquide, puis l'incorporer délicatement à la préparation au chocolat en plusieurs fois."
+        ],
+        "tags": [
+            "Desserts",
+            "France"
         ],
         "isFeatured": false,
         "isFavorite": false,
