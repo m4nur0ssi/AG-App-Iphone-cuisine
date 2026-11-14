@@ -2,85 +2,148 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 13/11/2026 16:00:48
+ * Dernière mise à jour: 14/11/2026 09:59:39
  * Total: 862 recettes
  */
-export const exportSyncId = "1794585648381";
+export const exportSyncId = "1794650379781";
 export const mockRecipes: Recipe[] = [
     {
-        "id": "8242",
-        "title": "Brioche façon pain perdu inspirée de Cédric Grolet",
-        "description": "Une recette gourmande de brioche façon pain perdu, accompagnée d&rsquo;un caramel au beurre salé maison et d&rsquo;une crème légère au mascarpone, inspirée du chef Cédric Grolet.",
-        "image": "/images/recipe-placeholder.jpg",
+        "id": "8224",
+        "title": "Cake aux fruits confits façon Pierre Hermé",
+        "description": "Un délicieux cake aux fruits confits, inspiré de la recette de Pierre Hermé. Les raisins secs sont macérés dans du rhum ambré (ou du thé aux fruits rouges) avant d&rsquo;être incorporés à la pâte, puis le cake est badigeonné de ce même liquide à la s",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8224.webp&v=1794652974000",
         "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7316969128105905440\" data-video-id=\"7316969128105905440\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7316969128105905440\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7707319463107906849\" data-video-id=\"7707319463107906849\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7707319463107906849\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🍯\n             150 g de sucre (pour le caramel)"
+                "name": "🧈\n             Beurre mou (200g)"
             },
             {
                 "quantity": "",
-                "name": "🧈\n             70 g de beurre demi-sel (pour le caramel)"
+                "name": "🌾\n             Farine (300g)"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             20 cl de crème fleurette 30% (pour le caramel)"
+                "name": "🥚\n             Œufs (4)"
             },
             {
                 "quantity": "",
-                "name": "🧀\n             20 cl de crème fleurette 30% (pour la crème mascarpone)"
+                "name": "🥣\n             Levure chimique (5g)"
             },
             {
                 "quantity": "",
-                "name": "🧀\n             50 g de mascarpone"
+                "name": "🥣\n             Cassonade (150g)"
             },
             {
                 "quantity": "",
-                "name": "🍦\n             1 gousse de vanille (optionnel)"
+                "name": "🍇\n             Raisins secs (150g)"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             Des tranches de brioche rassie de 2 cm d'épaisseur (ou du pain normal)"
+                "name": "💧\n             Rhum ambré (20cl) ou thé aux fruits rouges"
             },
             {
                 "quantity": "",
-                "name": "🥛\n             50 cl de lait entier"
+                "name": "🥣\n             Cerises confites (150g)"
             },
             {
                 "quantity": "",
-                "name": "🥚\n             1 œuf"
+                "name": "🥣\n             Fruits confits mélangés (150g)"
             },
             {
                 "quantity": "",
-                "name": "🍯\n             100 g de sucre (pour le trempage)"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             Du beurre (pour toaster)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Du sucre (pour toaster)"
+                "name": "🧂\n             Sel (une petite pincée)"
             }
         ],
         "steps": [
-            "La veille, préparer le caramel au beurre salé : chauffer la crème à feu doux pour éviter le choc thermique.",
-            "En même temps, chauffer le sucre à feu moyen jusqu'à l'obtention d'un caramel ambré, pas trop cuit.",
-            "Ajouter les dés de beurre à température ambiante en trois fois, et mélanger tout de suite énergiquement en faisant attention aux éclaboussures.",
-            "Quand le beurre est intégré, ajouter la crème chaude HORS DU FEU.",
-            "Mélanger vivement en essayant de ne pas laisser de caramel solide, laisser refroidir, et couler dans un pot avant de réserver au frais une nuit.",
-            "Dans un cul de poule, fouetter l'œuf et le sucre jusqu'à blanchissement. Il est important de bien fouetter pour éviter un goût d&rsquo;œuf désagréable.",
-            "Ajouter le lait et mélanger de nouveau.",
-            "Tremper les tranches de brioches et laisser imbiber environ 3 à 5 minutes par côté.",
-            "Réserver les tranches sur une grille pour enlever l'excédent de liquide.",
-            "Dans un bol froid avec des fouets froids, fouetter la crème et le mascarpone à vitesse moyenne, et monter comme une chantilly pas trop ferme, puis réserver au frais.",
-            "Dans une poêle à feu moyen/fort, mettre une bonne noix de beurre et environ une cuillère à soupe de sucre, et cuire chaque face des tranches de brioche jusqu'à ce qu'elles soient bien grillées.",
-            "Dresser dans une assiette avec une bonne dose de crème au mascarpone et du caramel au beurre salé."
+            "Faites gonfler les raisins secs dans le rhum ambré (ou le thé aux fruits rouges) pendant 2 heures. Égouttez les raisins en conservant le rhum pour plus tard.",
+            "Préchauffez votre four à 250°C.",
+            "Dans un saladier, fouettez le beurre mou avec la cassonade jusqu&rsquo;à obtenir un mélange crémeux et homogène.",
+            "Incorporez les œufs un à un, en fouettant bien après chaque ajout. Le mélange peut sembler trancher légèrement, mais cela n&rsquo;affectera pas le résultat final.",
+            "À l&rsquo;aide d&rsquo;une cuillère en bois ou d&rsquo;une spatule, incorporez délicatement la farine mélangée à la levure chimique et une petite pincée de sel.",
+            "Ajoutez les raisins secs égouttés et les fruits confits (le mélange et les cerises) à la pâte, puis mélangez pour bien les répartir.",
+            "Versez la pâte dans un moule à cake beurré (ou chemisé d&rsquo;un tapis de cuisson en silicone).",
+            "Lissez le dessus de la pâte et déposez une petite bande de beurre au centre du cake pour favoriser un développement harmonieux à la cuisson.",
+            "Baissez la température du four à 180°C et enfournez le cake pendant 1 heure et 10 minutes.",
+            "À la sortie du four, badigeonnez immédiatement le cake encore chaud avec le rhum (ou le thé aux fruits rouges) que vous aviez réservé.",
+            "Laissez le cake refroidir complètement avant de le déguster."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "France",
+            "Noël",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8234",
+        "title": "Mini Fondants au chocolat et mascarpone",
+        "description": "La recette parfaite pour des petits fondants ultra gourmands avec une texture fondante et une fine croûte sur le dessus, juste délicieux.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8234.webp&v=1794652965000",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7699453971248811296\" data-video-id=\"7699453971248811296\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7699453971248811296\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍫\n             120 g de chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             120 g de beurre doux"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             3 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             70 g de sucre blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             30 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             1 grosse cuillère à soupe de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Fleur de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             30 g de sucre roux"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             Extrait de vanille liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Sucre glace (pour saupoudrer)"
+            }
+        ],
+        "steps": [
+            "Préchauffez le four à 180 °C.",
+            "Faites fondre le chocolat avec le beurre au bain-marie ou au micro-ondes.",
+            "Dans un saladier, fouettez les œufs avec le sucre jusqu'à ce que le mélange soit homogène. Ajoutez l'extrait de vanille liquide.",
+            "Incorporez le mélange chocolat-beurre fondu, puis ajoutez la grosse cuillère à soupe de mascarpone. Mélangez bien jusqu'à obtenir une préparation lisse. Et enfin ajoutez la farine et la fleur de sel.",
+            "Répartissez la pâte dans des mini moules en silicone.",
+            "Enfournez à 180 °C pendant environ 12 minutes, selon la taille des moules et la texture souhaitée. Le centre doit rester légèrement tremblotant pour conserver un cœur fondant. Et ajoutez 5 minutes de cuisson à 130 degrés.",
+            "Laissez tiédir quelques minutes avant de démouler délicatement. Saupoudrez de sucre glace et régalez-vous !"
         ],
         "tags": [
             "France",
@@ -91,123 +154,10 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "8240",
-        "title": "Brioche Perdue Tiramisu",
-        "description": "Découvrez une recette gourmande et originale pour les fêtes : une brioche perdue revisitée façon tiramisu. Un dessert simple à réaliser, qui combine la douceur de la brioche imbibée de café et l&rsquo;onctuosité d&rsquo;une crème tiramisu sans compli",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7584572601050205462\" data-video-id=\"7584572601050205462\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7584572601050205462\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             4 tranches de brioches (idéalement un peu rassises)"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             500 g de mascarpone"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             4 jaunes d'œufs"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             120 g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             2 œufs (pour l'appareil à brioche)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 pincée de sucre (pour l'appareil à brioche)"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Un peu de lait (pour l'appareil à brioche)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Un shot d'espresso bien corsé (pour l'appareil à brioche)"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             Cacao en poudre (pour servir)"
-            }
-        ],
-        "steps": [
-            "Fouettez les jaunes d&rsquo;œuf et le sucre ensemble jusqu&rsquo;à ce qu&rsquo;ils blanchissent, épaississent et deviennent onctueux comme un ruban.",
-            "Incorporez le mascarpone en plusieurs fois, en fouettant bien entre chaque ajout, jusqu&rsquo;à obtenir une crème onctueuse, homogène et qui tient sur la cuillère. N&rsquo;ajoutez pas de chantilly ou de blancs en neige pour simplifier la préparation.",
-            "Versez cette crème dans une poche à douille ou un sac congélation et réservez au frais.",
-            "Préparez l&rsquo;appareil à brioche perdue en mélangeant les 2 œufs, la pincée de sucre, le lait et le shot d&rsquo;espresso bien corsé.",
-            "Trempez les tranches de brioche dans cet appareil, sur chaque face, et laissez-les s&rsquo;imbiber pendant environ 5 minutes. Égouttez-les ensuite.",
-            "Faites dorer les tranches de brioche imbibées sur les deux faces dans une poêle beurrée. Réservez-les et laissez-les tiédir.",
-            "Garnissez généreusement les tranches de brioche perdue tièdes avec la crème tiramisu pochée.",
-            "Terminez en saupoudrant de cacao en poudre et servez immédiatement."
-        ],
-        "tags": [
-            "Italie",
-            "Noël",
-            "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8238",
-        "title": "Frites de patates douces croustillantes",
-        "description": "Découvrez la technique pour réaliser des frites de patates douces parfaitement croustillantes. La vidéo explique pourquoi l&rsquo;amidon des patates douces se transforme en sucres simples à la cuisson, les rendant molles et brûlantes, et propose une ",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7084537095603145989\" data-video-id=\"7084537095603145989\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7084537095603145989\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥔\n             Patates douces"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             30 g de maïzena"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             50 g d&rsquo;eau froide"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Huile (pour la friture)"
-            }
-        ],
-        "steps": [
-            "Épluchez et coupez les patates douces en bâtonnets, sans qu&rsquo;ils soient trop fins.",
-            "Faites-les cuire dans l&rsquo;eau bouillante pendant 8 minutes, jusqu&rsquo;à ce qu&rsquo;elles soient bien tendres.",
-            "Dans un bol, mélangez 30 g de maïzena avec 50 g d&rsquo;eau froide.",
-            "Ajoutez les frites de patates douces cuites et enrobez-les bien du mélange. Le liquide va s&rsquo;épaissir au contact des patates douces chaudes.",
-            "Faites-les frire pendant 8 minutes dans une huile chauffée à 180°C."
-        ],
-        "tags": [
-            "Accompagnements",
-            "USA",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "8236",
         "title": "Gâteau crumble aux pommes",
         "description": "Un gâteau moelleux aux pommes, surmonté d&rsquo;une garniture aux pommes fondante et d&rsquo;un délicieux crumble croustillant, idéal pour l&rsquo;automne.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8236.webp&v=1794652957000",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -350,66 +300,192 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "8234",
-        "title": "Mini Fondants au chocolat et mascarpone",
-        "description": "La recette parfaite pour des petits fondants ultra gourmands avec une texture fondante et une fine croûte sur le dessus, juste délicieux.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "patisserie",
+        "id": "8238",
+        "title": "Frites de patates douces croustillantes",
+        "description": "Découvrez la technique pour réaliser des frites de patates douces parfaitement croustillantes. La vidéo explique pourquoi l&rsquo;amidon des patates douces se transforme en sucres simples à la cuisson, les rendant molles et brûlantes, et propose une ",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8238.webp&v=1794652950000",
+        "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7699453971248811296\" data-video-id=\"7699453971248811296\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7699453971248811296\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7084537095603145989\" data-video-id=\"7084537095603145989\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7084537095603145989\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🍫\n             120 g de chocolat noir"
+                "name": "🥔\n             Patates douces"
             },
             {
                 "quantity": "",
-                "name": "🧈\n             120 g de beurre doux"
+                "name": "🥣\n             30 g de maïzena"
             },
             {
                 "quantity": "",
-                "name": "🥚\n             3 œufs"
+                "name": "💧\n             50 g d&rsquo;eau froide"
             },
             {
                 "quantity": "",
-                "name": "🍯\n             70 g de sucre blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             30 g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🧀\n             1 grosse cuillère à soupe de mascarpone"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Fleur de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             30 g de sucre roux"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             Extrait de vanille liquide"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Sucre glace (pour saupoudrer)"
+                "name": "🥣\n             Huile (pour la friture)"
             }
         ],
         "steps": [
-            "Préchauffez le four à 180 °C.",
-            "Faites fondre le chocolat avec le beurre au bain-marie ou au micro-ondes.",
-            "Dans un saladier, fouettez les œufs avec le sucre jusqu'à ce que le mélange soit homogène. Ajoutez l'extrait de vanille liquide.",
-            "Incorporez le mélange chocolat-beurre fondu, puis ajoutez la grosse cuillère à soupe de mascarpone. Mélangez bien jusqu'à obtenir une préparation lisse. Et enfin ajoutez la farine et la fleur de sel.",
-            "Répartissez la pâte dans des mini moules en silicone.",
-            "Enfournez à 180 °C pendant environ 12 minutes, selon la taille des moules et la texture souhaitée. Le centre doit rester légèrement tremblotant pour conserver un cœur fondant. Et ajoutez 5 minutes de cuisson à 130 degrés.",
-            "Laissez tiédir quelques minutes avant de démouler délicatement. Saupoudrez de sucre glace et régalez-vous !"
+            "Épluchez et coupez les patates douces en bâtonnets, sans qu&rsquo;ils soient trop fins.",
+            "Faites-les cuire dans l&rsquo;eau bouillante pendant 8 minutes, jusqu&rsquo;à ce qu&rsquo;elles soient bien tendres.",
+            "Dans un bol, mélangez 30 g de maïzena avec 50 g d&rsquo;eau froide.",
+            "Ajoutez les frites de patates douces cuites et enrobez-les bien du mélange. Le liquide va s&rsquo;épaissir au contact des patates douces chaudes.",
+            "Faites-les frire pendant 8 minutes dans une huile chauffée à 180°C."
+        ],
+        "tags": [
+            "Accompagnements",
+            "USA",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8240",
+        "title": "Brioche Perdue Tiramisu",
+        "description": "Découvrez une recette gourmande et originale pour les fêtes : une brioche perdue revisitée façon tiramisu. Un dessert simple à réaliser, qui combine la douceur de la brioche imbibée de café et l&rsquo;onctuosité d&rsquo;une crème tiramisu sans compli",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8240.webp&v=1794652942000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7584572601050205462\" data-video-id=\"7584572601050205462\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7584572601050205462\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             4 tranches de brioches (idéalement un peu rassises)"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             500 g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             4 jaunes d'œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             120 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs (pour l'appareil à brioche)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 pincée de sucre (pour l'appareil à brioche)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Un peu de lait (pour l'appareil à brioche)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Un shot d'espresso bien corsé (pour l'appareil à brioche)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Cacao en poudre (pour servir)"
+            }
+        ],
+        "steps": [
+            "Fouettez les jaunes d&rsquo;œuf et le sucre ensemble jusqu&rsquo;à ce qu&rsquo;ils blanchissent, épaississent et deviennent onctueux comme un ruban.",
+            "Incorporez le mascarpone en plusieurs fois, en fouettant bien entre chaque ajout, jusqu&rsquo;à obtenir une crème onctueuse, homogène et qui tient sur la cuillère. N&rsquo;ajoutez pas de chantilly ou de blancs en neige pour simplifier la préparation.",
+            "Versez cette crème dans une poche à douille ou un sac congélation et réservez au frais.",
+            "Préparez l&rsquo;appareil à brioche perdue en mélangeant les 2 œufs, la pincée de sucre, le lait et le shot d&rsquo;espresso bien corsé.",
+            "Trempez les tranches de brioche dans cet appareil, sur chaque face, et laissez-les s&rsquo;imbiber pendant environ 5 minutes. Égouttez-les ensuite.",
+            "Faites dorer les tranches de brioche imbibées sur les deux faces dans une poêle beurrée. Réservez-les et laissez-les tiédir.",
+            "Garnissez généreusement les tranches de brioche perdue tièdes avec la crème tiramisu pochée.",
+            "Terminez en saupoudrant de cacao en poudre et servez immédiatement."
+        ],
+        "tags": [
+            "Italie",
+            "Noël",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8242",
+        "title": "Brioche façon pain perdu inspirée de Cédric Grolet",
+        "description": "Une recette gourmande de brioche façon pain perdu, accompagnée d&rsquo;un caramel au beurre salé maison et d&rsquo;une crème légère au mascarpone, inspirée du chef Cédric Grolet.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8242.webp&v=1794652932000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7316969128105905440\" data-video-id=\"7316969128105905440\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7316969128105905440\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍯\n             150 g de sucre (pour le caramel)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             70 g de beurre demi-sel (pour le caramel)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             20 cl de crème fleurette 30% (pour le caramel)"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             20 cl de crème fleurette 30% (pour la crème mascarpone)"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             50 g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 gousse de vanille (optionnel)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Des tranches de brioche rassie de 2 cm d'épaisseur (ou du pain normal)"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             50 cl de lait entier"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             100 g de sucre (pour le trempage)"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Du beurre (pour toaster)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Du sucre (pour toaster)"
+            }
+        ],
+        "steps": [
+            "La veille, préparer le caramel au beurre salé : chauffer la crème à feu doux pour éviter le choc thermique.",
+            "En même temps, chauffer le sucre à feu moyen jusqu'à l'obtention d'un caramel ambré, pas trop cuit.",
+            "Ajouter les dés de beurre à température ambiante en trois fois, et mélanger tout de suite énergiquement en faisant attention aux éclaboussures.",
+            "Quand le beurre est intégré, ajouter la crème chaude HORS DU FEU.",
+            "Mélanger vivement en essayant de ne pas laisser de caramel solide, laisser refroidir, et couler dans un pot avant de réserver au frais une nuit.",
+            "Dans un cul de poule, fouetter l'œuf et le sucre jusqu'à blanchissement. Il est important de bien fouetter pour éviter un goût d&rsquo;œuf désagréable.",
+            "Ajouter le lait et mélanger de nouveau.",
+            "Tremper les tranches de brioches et laisser imbiber environ 3 à 5 minutes par côté.",
+            "Réserver les tranches sur une grille pour enlever l'excédent de liquide.",
+            "Dans un bol froid avec des fouets froids, fouetter la crème et le mascarpone à vitesse moyenne, et monter comme une chantilly pas trop ferme, puis réserver au frais.",
+            "Dans une poêle à feu moyen/fort, mettre une bonne noix de beurre et environ une cuillère à soupe de sucre, et cuire chaque face des tranches de brioche jusqu'à ce qu'elles soient bien grillées.",
+            "Dresser dans une assiette avec une bonne dose de crème au mascarpone et du caramel au beurre salé."
         ],
         "tags": [
             "France",
@@ -704,82 +780,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "C'est l'hiver",
             "Noël"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8224",
-        "title": "Cake aux fruits confits façon Pierre Hermé",
-        "description": "Un délicieux cake aux fruits confits, inspiré de la recette de Pierre Hermé. Les raisins secs sont macérés dans du rhum ambré (ou du thé aux fruits rouges) avant d&rsquo;être incorporés à la pâte, puis le cake est badigeonné de ce même liquide à la s",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7707319463107906849\" data-video-id=\"7707319463107906849\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7707319463107906849\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🧈\n             Beurre mou (200g)"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             Farine (300g)"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Œufs (4)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Levure chimique (5g)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Cassonade (150g)"
-            },
-            {
-                "quantity": "",
-                "name": "🍇\n             Raisins secs (150g)"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             Rhum ambré (20cl) ou thé aux fruits rouges"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Cerises confites (150g)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fruits confits mélangés (150g)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel (une petite pincée)"
-            }
-        ],
-        "steps": [
-            "Faites gonfler les raisins secs dans le rhum ambré (ou le thé aux fruits rouges) pendant 2 heures. Égouttez les raisins en conservant le rhum pour plus tard.",
-            "Préchauffez votre four à 250°C.",
-            "Dans un saladier, fouettez le beurre mou avec la cassonade jusqu&rsquo;à obtenir un mélange crémeux et homogène.",
-            "Incorporez les œufs un à un, en fouettant bien après chaque ajout. Le mélange peut sembler trancher légèrement, mais cela n&rsquo;affectera pas le résultat final.",
-            "À l&rsquo;aide d&rsquo;une cuillère en bois ou d&rsquo;une spatule, incorporez délicatement la farine mélangée à la levure chimique et une petite pincée de sel.",
-            "Ajoutez les raisins secs égouttés et les fruits confits (le mélange et les cerises) à la pâte, puis mélangez pour bien les répartir.",
-            "Versez la pâte dans un moule à cake beurré (ou chemisé d&rsquo;un tapis de cuisson en silicone).",
-            "Lissez le dessus de la pâte et déposez une petite bande de beurre au centre du cake pour favoriser un développement harmonieux à la cuisson.",
-            "Baissez la température du four à 180°C et enfournez le cake pendant 1 heure et 10 minutes.",
-            "À la sortie du four, badigeonnez immédiatement le cake encore chaud avec le rhum (ou le thé aux fruits rouges) que vous aviez réservé.",
-            "Laissez le cake refroidir complètement avant de le déguster."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "France",
-            "Noël",
-            "pâtisserie"
         ],
         "isFeatured": false,
         "isFavorite": false,
