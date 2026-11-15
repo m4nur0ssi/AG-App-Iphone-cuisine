@@ -2,11 +2,83 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 14/11/2026 09:59:39
- * Total: 862 recettes
+ * Dernière mise à jour: 15/11/2026 17:01:10
+ * Total: 863 recettes
  */
-export const exportSyncId = "1794650379781";
+export const exportSyncId = "1794762070851";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8250",
+        "title": "Riz au lait ultra crémeux",
+        "description": "Découvrez la recette d&rsquo;un riz au lait ultra crémeux, un dessert d&rsquo;enfance réconfortant. Ce riz au lait est préparé avec du lait, de la crème, du sucre et de la vanille, puis allégé par une chantilly mascarpone onctueuse pour une texture i",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8250.webp&v=1794764591000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7482455246753582358\" data-video-id=\"7482455246753582358\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7482455246753582358\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥛\n             850 g de lait"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             150 g de crème liquide entière"
+            },
+            {
+                "quantity": "",
+                "name": "🍚\n             150 g de riz rond"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             100 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             2 gousses de vanille (type Tahiti ou Madagascar)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             200 g de crème liquide entière (pour la chantilly)"
+            },
+            {
+                "quantity": "",
+                "name": "🧀\n             20 g de mascarpone"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             25 g de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 gousse de vanille (facultative, pour la chantilly)"
+            }
+        ],
+        "steps": [
+            "Dans une grande casserole, versez le lait, la crème et le sucre.",
+            "Prenez les deux gousses de vanille, grattez-les et ajoutez les graines et les gousses au mélange.",
+            "Portez le tout à ébullition.",
+            "Versez le riz rond en pluie, puis baissez le feu et laissez cuire à petit bouillon pendant 40 à 50 minutes.",
+            "Mélangez toutes les 10 minutes environ pour éviter que le riz n&rsquo;accroche au fond de la casserole. Le riz doit devenir très fondant et nacré.",
+            "Débarrassez le riz cuit dans un saladier et réservez-le de côté.",
+            "Pour la chantilly mascarpone, assurez-vous que tous les éléments sont très froids. Dans la cuve d&rsquo;un batteur, mettez la crème liquide entière, le mascarpone, le sucre glace et les graines d&rsquo;une gousse de vanille (facultatif).",
+            "Montez le mélange tranquillement au batteur jusqu&rsquo;à obtenir une chantilly onctueuse, mais pas trop ferme.",
+            "Ajoutez délicatement la chantilly au riz au lait refroidi et incorporez-la à l&rsquo;aide d&rsquo;une spatule.",
+            "Pour une touche gourmande, ajoutez une belle couche de caramel onctueux sur le dessus."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Desserts",
+            "facile",
+            "France",
+            "rapide"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8224",
         "title": "Cake aux fruits confits façon Pierre Hermé",
