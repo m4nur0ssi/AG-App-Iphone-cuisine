@@ -2,11 +2,648 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 15/11/2026 17:01:10
- * Total: 863 recettes
+ * Dernière mise à jour: 16/11/2026 20:43:08
+ * Total: 872 recettes
  */
-export const exportSyncId = "1794762070851";
+export const exportSyncId = "1794861788164";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8269",
+        "title": "Gaufres de pommes de terre à la raclette",
+        "description": "Découvrez une manière originale et gourmande de déguster la raclette avec ces gaufres de pommes de terre croustillantes et fondantes au fromage.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7707679835191037206\" data-video-id=\"7707679835191037206\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7707679835191037206\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             5 pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             2 cuillères à soupe de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Quelques tranches de fromage à raclette"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Une pincée de noix de muscade"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Un peu d'huile pour le gaufrier"
+            }
+        ],
+        "steps": [
+            "Lavez et épluchez les pommes de terre, puis râpez-les finement.",
+            "Pressez soigneusement les pommes de terre râpées pour retirer un maximum d'eau.",
+            "Dans un saladier, mélangez les pommes de terre râpées avec l'œuf, la farine, le sel, le poivre et une pincée de noix de muscade, jusqu'à obtenir un mélange homogène.",
+            "Huilez légèrement les plaques du gaufrier.",
+            "Déposez une première couche du mélange de pommes de terre sur les plaques du gaufrier.",
+            "Ajoutez quelques tranches de fromage à raclette au centre.",
+            "Recouvrez avec une seconde couche de pommes de terre pour bien emprisonner le fromage.",
+            "Refermez le gaufrier et laissez cuire jusqu'à ce que les gaufres soient bien dorées et croustillantes."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "France",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8267",
+        "title": "Tarte poire &#038; chocolat",
+        "description": "Cette recette de tarte poire &#038; chocolat met en avant la liberté de création en pâtisserie une fois les bases maîtrisées. Elle se compose d&rsquo;une pâte sucrée marbrée au cacao, d&rsquo;une ganache au chocolat noir, d&rsquo;un financier aux poi",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7704244725829602593\" data-video-id=\"7704244725829602593\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7704244725829602593\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍫\n             Pâte sucrée marbrée cacao"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Ganache chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Financier au chocolat et poires"
+            },
+            {
+                "quantity": "",
+                "name": "🍐\n             Gel poire"
+            },
+            {
+                "quantity": "",
+                "name": "🍐\n             Poires fraîches et caramélisées"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Ganache montée au chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             75 g de beurre noisette (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             25 g de farine (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 g de levure chimique (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             60 g de poudre d'amandes (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             50 g de sucre glace (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             80 g de blancs d'œufs (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             70 g de chocolat noir (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🍐\n             250 g de poires (pour le gel)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             25 g de sucre (pour le gel)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             4 g de pectine NH (pour le gel)"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Le jus d'un demi-citron (pour le gel)"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             De la vanille (pour le gel)"
+            }
+        ],
+        "steps": [
+            "Préchauffer le four à 180 °C.",
+            "Préparer un beurre noisette, puis le filtrer et le laisser tiédir.",
+            "Dans un saladier, mélanger la farine, la levure, la poudre d'amandes et le sucre glace.",
+            "Ajouter les blancs d'œufs et le beurre noisette, puis mélanger jusqu'à obtenir une préparation homogène.",
+            "Faire fondre le chocolat noir, l&rsquo;ajouter à la préparation et mélanger à nouveau.",
+            "Verser dans un moule ou cercle plus large que la tarte et enfourner environ 15 minutes à 180 °C.",
+            "Vérifier la cuisson du financier.",
+            "Laisser refroidir le financier avant de l'intégrer au montage de la tarte.",
+            "Faire cuire les poires coupées en morceaux avec le jus de citron et la vanille, jusqu'à ce qu'elles soient fondantes.",
+            "Mixer les poires pour obtenir une purée lisse.",
+            "Mélanger le sucre et la pectine NH, puis les incorporer à la purée chaude en fouettant.",
+            "Porter le gel à ébullition environ 1 minute.",
+            "Laisser refroidir complètement le gel au réfrigérateur.",
+            "Une fois le gel pris, le mixer à nouveau pour l'assouplir.",
+            "Ajouter les dés de poires fraîches et caramélisées refroidis au gel avant le montage de la tarte."
+        ],
+        "tags": [
+            "France",
+            "Glaces",
+            "pâtisserie",
+            "tarte"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8265",
+        "title": "Pommes de terre caramélisées croustillantes",
+        "description": "Découvrez une recette simple et délicieuse de pommes de terre croustillantes et caramélisées, parfaites pour accompagner vos plats ou à déguster en plat principal végétarien.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7705106328083041568\" data-video-id=\"7705106328083041568\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7705106328083041568\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             800 g de pommes de terre (type grenaille de préférence)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             3 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 cuillère à café d&rsquo;oignon en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café d&rsquo;origan séché"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             3 cuillères à café d&rsquo;ail en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1/2 cuillère à café de poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             40 g de parmesan râpé (ou plus, selon votre goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Miel (quantité selon votre goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Fleur de sel"
+            }
+        ],
+        "steps": [
+            "Découpez les pommes de terre.",
+            "Dans un grand saladier, mélangez les pommes de terre découpées avec l&rsquo;huile d&rsquo;olive, l&rsquo;oignon en poudre, l&rsquo;ail en poudre, le poivre, l&rsquo;origan et le parmesan.",
+            "Ajoutez une belle quantité de miel et mélangez bien pour enrober les pommes de terre.",
+            "Faites cuire au four préchauffé à 200°C pendant 35 à 40 minutes, jusqu&rsquo;à ce que les pommes de terre soient dorées et caramélisées.",
+            "Salez avec de la fleur de sel avant de servir."
+        ],
+        "tags": [
+            "Accompagnements",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8263",
+        "title": "Pommes Dauphine",
+        "description": "Découvrez la recette des pommes dauphine, un classique intemporel apprécié pour sa texture légère et croustillante à l&rsquo;extérieur, et moelleuse à cœur. Composées d&rsquo;une base de pommes de terre et de pâte à choux, elles sont simples, généreu",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7696487159204678934\" data-video-id=\"7696487159204678934\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7696487159204678934\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             Pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Gros sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Eau"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             Lait"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             Beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile (pour la friture)"
+            }
+        ],
+        "steps": [
+            "Déposez les pommes de terre sur du gros sel et enfournez-les pendant 45 minutes à 180°C.",
+            "Préparez la pâte à choux : dans une casserole, portez à ébullition l&rsquo;eau, le lait, le beurre et un peu de sel.",
+            "Ajoutez toute la farine en une seule fois et mélangez bien jusqu&rsquo;à incorporation complète. Remettez la casserole sur le feu et desséchez la pâte pendant environ 30 secondes.",
+            "Incorporez les œufs un par un, en mélangeant bien après chaque ajout.",
+            "Une fois les pommes de terre cuites, coupez-les en deux et récupérez la pulpe. Passez la pulpe au tamis pour obtenir une purée bien sèche.",
+            "Ajoutez la pulpe de pommes de terre à la pâte à choux et mélangez bien.",
+            "Faites chauffer l&rsquo;huile de friture. Formez des boules de pâte à pommes dauphine et plongez-les directement dans l&rsquo;huile chaude.",
+            "Égouttez les pommes dauphine sur du papier absorbant. Servez et dégustez."
+        ],
+        "tags": [
+            "Accompagnements",
+            "France"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8261",
+        "title": "Sandwich aux œufs et aux sardines",
+        "description": "Un sandwich facile et savoureux à base d&rsquo;œufs mollets écrasés, de sardines, de mayonnaise, de moutarde de Dijon et d&rsquo;herbes fraîches, servi sur du pain au levain grillé. Idéal pour un déjeuner rapide et nutritif.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7700108797313846558\" data-video-id=\"7700108797313846558\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7700108797313846558\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs mollets"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 boîte de sardines à l&rsquo;huile d&rsquo;olive extra vierge, égouttées"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Mayonnaise ou Kewpie, au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Moutarde de Dijon, au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Câpres hachées"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil haché"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Zeste de citron et un filet de jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignon rouge haché"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Huile de piment, facultatif"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pain au levain"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive extra vierge, pour griller"
+            }
+        ],
+        "steps": [
+            "Écrasez les œufs mollets et les sardines ensemble avec de la mayonnaise ou du Kewpie et un peu de moutarde de Dijon.",
+            "Incorporez les câpres hachées, le persil, la ciboulette, l&rsquo;oignon rouge, le zeste de citron et un filet de jus de citron.",
+            "Faites griller le pain au levain dans de l&rsquo;huile d&rsquo;olive extra vierge jusqu&rsquo;à ce qu&rsquo;il soit doré et croustillant.",
+            "Déposez le mélange d&rsquo;œufs et de sardines sur le pain grillé. Ajoutez de l&rsquo;huile de piment si vous aimez un peu de piquant."
+        ],
+        "tags": [
+            "Healthy",
+            "Pas cher",
+            "Poissons et crustacés",
+            "Sandwichs"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8259",
+        "title": "Pâte sucrée inratable",
+        "description": "Découvrez une recette de pâte sucrée inratable, idéale pour une grande tarte ou deux de 20 cm. Apprenez la méthode par sablage et des astuces pour éviter que les bords de vos tartes ne retombent à la cuisson, garantissant un fond de tarte parfaitemen",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7698321621584579872\" data-video-id=\"7698321621584579872\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7698321621584579872\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             250 g de farine T55"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             90 g de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 g de poudre d'amande"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             2 g de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             120 g de beurre froid"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             55 g d'œuf"
+            }
+        ],
+        "steps": [
+            "Mélangez la farine, le sucre glace, la poudre d&rsquo;amande, le sel et les morceaux de beurre froid jusqu&rsquo;à obtenir une texture sablée.",
+            "Ajoutez l&rsquo;œuf et mélangez juste quelques secondes. Dès que la pâte commence à s&rsquo;amalgamer, arrêtez le batteur.",
+            "Sur votre plan de travail, écrasez légèrement la pâte avec la paume de la main pour la rendre lisse et homogène, sans la pétrir.",
+            "Laissez la pâte reposer au moins deux heures au réfrigérateur, ou idéalement une nuit.",
+            "Abaissez la pâte entre deux feuilles de papier cuisson sur une épaisseur de 3 à 4 mm.",
+            "Foncez la pâte dans un cercle beurré, en plaquant bien les bords. Si la pâte se réchauffe, remettez-la quelques minutes au froid.",
+            "Placez le fond de tarte foncé au congélateur pendant 15 à 30 minutes pour que la pâte se fige au cercle et éviter que les bords ne retombent à la cuisson.",
+            "Faites une première cuisson à 160°C pendant 15 minutes. Le fond de tarte doit être encore clair, avec une légère coloration.",
+            "Laissez le fond de tarte refroidir, puis appliquez une fine couche de jaune d&rsquo;œuf mélangé à un peu de crème sur toute la surface.",
+            "Réenfournez pour 10 à 15 minutes à 160°C, jusqu&rsquo;à obtenir une belle coloration dorée. Surveillez bien la fin de cuisson.",
+            "Pour une finition nette, passez un léger coup de Microplane sur les bords."
+        ],
+        "tags": [
+            "France",
+            "Glaces",
+            "pâtisserie",
+            "tarte"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8257",
+        "title": "Accras de morue antillais",
+        "description": "Les accras de morue sont une spécialité incontournable de la cuisine antillaise, symbolisant le partage, la convivialité et les saveurs des Antilles. Découvrez comment les réussir pas à pas.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7708348037281877281\" data-video-id=\"7708348037281877281\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7708348037281877281\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             500 g de morue émiettée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 branches de cive"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 poignée de persil plat"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             8 piments végétariens rouges et verts"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             6 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus d&rsquo;un demi-citron"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             200 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             200 g d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile (pour la friture)"
+            }
+        ],
+        "steps": [
+            "La veille, faites tremper la morue dans de l&rsquo;eau pour la dessaler.",
+            "Émiettez ensuite la morue.",
+            "Émincez très finement la cive, l&rsquo;oignon, le persil, le piment végétarien et l&rsquo;ail.",
+            "Avant de couper les piments végétariens, retirez la petite tête et les graines à l&rsquo;intérieur.",
+            "Ajoutez les condiments émincés à la morue.",
+            "Assaisonnez avec du poivre et le jus d&rsquo;un demi-citron. N&rsquo;ajoutez pas de sel, la morue étant déjà salée.",
+            "Mélangez bien le tout et réservez.",
+            "Pour la pâte à accras, mettez la farine, la levure chimique et l&rsquo;eau.",
+            "Mélangez bien jusqu&rsquo;à obtenir une texture lisse et sans grumeaux.",
+            "Ajoutez ensuite la morue à la pâte et mélangez. La texture de la pâte doit être épaisse, non liquide.",
+            "Pour la cuisson, utilisez deux cuillères pour former les boules d&rsquo;accras.",
+            "Faites-les dorer tranquillement dans de l&rsquo;huile bien chaude."
+        ],
+        "tags": [
+            "Afrique",
+            "France",
+            "Poissons et crustacés",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8255",
+        "title": "Couronne croustillante au saumon fumé",
+        "description": "Découvrez une recette festive et facile à réaliser : une couronne croustillante au saumon fumé, parfaite pour l&rsquo;apéritif ou en entrée pendant les fêtes de fin d&rsquo;année. Une pâte feuilletée garnie de fromage frais, de saumon et d&rsquo;anet",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7708427659281239328\" data-video-id=\"7708427659281239328\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7708427659281239328\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Pâte à pizza ou feuilletée"
+            },
+            {
+                "quantity": "",
+                "name": "🐟\n             Saumon fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fromage frais"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Aneth"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Jaune d&rsquo;œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Graines de pavot"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Grenade ou groseilles"
+            }
+        ],
+        "steps": [
+            "Préparez une pâte feuilletée ou une pâte à pizza.",
+            "Étalez du fromage frais sur toute la surface de la pâte.",
+            "Disposez le saumon fumé et ajoutez de l&rsquo;aneth.",
+            "Roulez la pâte fermement pour obtenir un boudin.",
+            "Coupez le boudin en deux dans le sens de la longueur, en laissant une extrémité attachée.",
+            "Tresser les deux morceaux de pâte et connectez les extrémités pour former un cercle.",
+            "Badigeonnez la couronne de jaune d&rsquo;œuf et parsemez de graines de pavot.",
+            "Enfournez pendant 25 minutes à 180°C.",
+            "Après cuisson, disposez un peu de grenade ou de groseilles sur la couronne."
+        ],
+        "tags": [
+            "Noël",
+            "Poissons et crustacés"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8253",
+        "title": "Caramel 13.0",
+        "description": "Découvrez une recette de caramel facile à réaliser, même si vous avez eu des difficultés par le passé. Avec quelques astuces, obtenez une texture parfaite et onctueuse, idéale pour toutes vos pâtisseries.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7707609294874742049\" data-video-id=\"7707609294874742049\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7707609294874742049\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍯\n             250g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             450g de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             110g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             50g de chocolat blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 gousse de vanille"
+            }
+        ],
+        "steps": [
+            "Réalisez un caramel à sec avec le sucre, en l&rsquo;ajoutant progressivement. N&rsquo;hésitez pas à mélanger une fois que le caramel commence à se former. Ne le faites pas trop brunir car il continuera de cuire.",
+            "Ajoutez la crème (même froide, cela ne posera pas de problème). Laissez chauffer plusieurs minutes pour que le liquide s&rsquo;évapore suffisamment.",
+            "Hors du feu, incorporez le beurre, le chocolat blanc et les grains de vanille. Le chocolat blanc aidera le caramel à figer.",
+            "Mixez bien la préparation. Placez le caramel au frais pendant au moins 4 heures, ou idéalement une nuit. Avant utilisation, sortez-le 10 minutes à l&rsquo;avance pour qu&rsquo;il remonte en température et soit plus facile à travailler. Vous obtiendrez une texture parfaite que vous pourrez même passer au batteur."
+        ],
+        "tags": [
+            "Desserts",
+            "Sauces"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8250",
         "title": "Riz au lait ultra crémeux",
