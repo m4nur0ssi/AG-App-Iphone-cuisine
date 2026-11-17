@@ -2,11 +2,263 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 16/11/2026 20:43:08
+ * Dernière mise à jour: 17/11/2026 11:47:14
  * Total: 872 recettes
  */
-export const exportSyncId = "1794861788164";
+export const exportSyncId = "1794916034994";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8253",
+        "title": "Caramel 13.0",
+        "description": "Découvrez une recette de caramel facile à réaliser, même si vous avez eu des difficultés par le passé. Avec quelques astuces, obtenez une texture parfaite et onctueuse, idéale pour toutes vos pâtisseries.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8253.webp&v=1794918547000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7707609294874742049\" data-video-id=\"7707609294874742049\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7707609294874742049\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍯\n             250g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             450g de crème liquide"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             110g de beurre"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             50g de chocolat blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 gousse de vanille"
+            }
+        ],
+        "steps": [
+            "Réalisez un caramel à sec avec le sucre, en l&rsquo;ajoutant progressivement. N&rsquo;hésitez pas à mélanger une fois que le caramel commence à se former. Ne le faites pas trop brunir car il continuera de cuire.",
+            "Ajoutez la crème (même froide, cela ne posera pas de problème). Laissez chauffer plusieurs minutes pour que le liquide s&rsquo;évapore suffisamment.",
+            "Hors du feu, incorporez le beurre, le chocolat blanc et les grains de vanille. Le chocolat blanc aidera le caramel à figer.",
+            "Mixez bien la préparation. Placez le caramel au frais pendant au moins 4 heures, ou idéalement une nuit. Avant utilisation, sortez-le 10 minutes à l&rsquo;avance pour qu&rsquo;il remonte en température et soit plus facile à travailler. Vous obtiendrez une texture parfaite que vous pourrez même passer au batteur."
+        ],
+        "tags": [
+            "Desserts",
+            "Sauces"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8255",
+        "title": "Couronne croustillante au saumon fumé",
+        "description": "Découvrez une recette festive et facile à réaliser : une couronne croustillante au saumon fumé, parfaite pour l&rsquo;apéritif ou en entrée pendant les fêtes de fin d&rsquo;année. Une pâte feuilletée garnie de fromage frais, de saumon et d&rsquo;anet",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8255.webp&v=1794918540000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7708427659281239328\" data-video-id=\"7708427659281239328\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7708427659281239328\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             Pâte à pizza ou feuilletée"
+            },
+            {
+                "quantity": "",
+                "name": "🐟\n             Saumon fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Fromage frais"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Aneth"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             Jaune d&rsquo;œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Graines de pavot"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Grenade ou groseilles"
+            }
+        ],
+        "steps": [
+            "Préparez une pâte feuilletée ou une pâte à pizza.",
+            "Étalez du fromage frais sur toute la surface de la pâte.",
+            "Disposez le saumon fumé et ajoutez de l&rsquo;aneth.",
+            "Roulez la pâte fermement pour obtenir un boudin.",
+            "Coupez le boudin en deux dans le sens de la longueur, en laissant une extrémité attachée.",
+            "Tresser les deux morceaux de pâte et connectez les extrémités pour former un cercle.",
+            "Badigeonnez la couronne de jaune d&rsquo;œuf et parsemez de graines de pavot.",
+            "Enfournez pendant 25 minutes à 180°C.",
+            "Après cuisson, disposez un peu de grenade ou de groseilles sur la couronne."
+        ],
+        "tags": [
+            "Noël",
+            "Poissons et crustacés"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8257",
+        "title": "Accras de morue antillais",
+        "description": "Les accras de morue sont une spécialité incontournable de la cuisine antillaise, symbolisant le partage, la convivialité et les saveurs des Antilles. Découvrez comment les réussir pas à pas.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8257.webp&v=1794918531000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7708348037281877281\" data-video-id=\"7708348037281877281\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7708348037281877281\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥣\n             500 g de morue émiettée"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 branches de cive"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             1 poignée de persil plat"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             8 piments végétariens rouges et verts"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             6 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Jus d&rsquo;un demi-citron"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             200 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             200 g d&rsquo;eau"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Huile (pour la friture)"
+            }
+        ],
+        "steps": [
+            "La veille, faites tremper la morue dans de l&rsquo;eau pour la dessaler.",
+            "Émiettez ensuite la morue.",
+            "Émincez très finement la cive, l&rsquo;oignon, le persil, le piment végétarien et l&rsquo;ail.",
+            "Avant de couper les piments végétariens, retirez la petite tête et les graines à l&rsquo;intérieur.",
+            "Ajoutez les condiments émincés à la morue.",
+            "Assaisonnez avec du poivre et le jus d&rsquo;un demi-citron. N&rsquo;ajoutez pas de sel, la morue étant déjà salée.",
+            "Mélangez bien le tout et réservez.",
+            "Pour la pâte à accras, mettez la farine, la levure chimique et l&rsquo;eau.",
+            "Mélangez bien jusqu&rsquo;à obtenir une texture lisse et sans grumeaux.",
+            "Ajoutez ensuite la morue à la pâte et mélangez. La texture de la pâte doit être épaisse, non liquide.",
+            "Pour la cuisson, utilisez deux cuillères pour former les boules d&rsquo;accras.",
+            "Faites-les dorer tranquillement dans de l&rsquo;huile bien chaude."
+        ],
+        "tags": [
+            "Afrique",
+            "France",
+            "Poissons et crustacés",
+            "Voilà l'été"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8259",
+        "title": "Pâte sucrée inratable",
+        "description": "Découvrez une recette de pâte sucrée inratable, idéale pour une grande tarte ou deux de 20 cm. Apprenez la méthode par sablage et des astuces pour éviter que les bords de vos tartes ne retombent à la cuisson, garantissant un fond de tarte parfaitemen",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8259.webp&v=1794865221000",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7698321621584579872\" data-video-id=\"7698321621584579872\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7698321621584579872\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             250 g de farine T55"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             90 g de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             30 g de poudre d'amande"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             2 g de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             120 g de beurre froid"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             55 g d'œuf"
+            }
+        ],
+        "steps": [
+            "Mélangez la farine, le sucre glace, la poudre d&rsquo;amande, le sel et les morceaux de beurre froid jusqu&rsquo;à obtenir une texture sablée.",
+            "Ajoutez l&rsquo;œuf et mélangez juste quelques secondes. Dès que la pâte commence à s&rsquo;amalgamer, arrêtez le batteur.",
+            "Sur votre plan de travail, écrasez légèrement la pâte avec la paume de la main pour la rendre lisse et homogène, sans la pétrir.",
+            "Laissez la pâte reposer au moins deux heures au réfrigérateur, ou idéalement une nuit.",
+            "Abaissez la pâte entre deux feuilles de papier cuisson sur une épaisseur de 3 à 4 mm.",
+            "Foncez la pâte dans un cercle beurré, en plaquant bien les bords. Si la pâte se réchauffe, remettez-la quelques minutes au froid.",
+            "Placez le fond de tarte foncé au congélateur pendant 15 à 30 minutes pour que la pâte se fige au cercle et éviter que les bords ne retombent à la cuisson.",
+            "Faites une première cuisson à 160°C pendant 15 minutes. Le fond de tarte doit être encore clair, avec une légère coloration.",
+            "Laissez le fond de tarte refroidir, puis appliquez une fine couche de jaune d&rsquo;œuf mélangé à un peu de crème sur toute la surface.",
+            "Réenfournez pour 10 à 15 minutes à 160°C, jusqu&rsquo;à obtenir une belle coloration dorée. Surveillez bien la fin de cuisson.",
+            "Pour une finition nette, passez un léger coup de Microplane sur les bords."
+        ],
+        "tags": [
+            "France",
+            "Glaces",
+            "pâtisserie",
+            "tarte"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8269",
         "title": "Gaufres de pommes de terre à la raclette",
@@ -387,258 +639,6 @@ export const mockRecipes: Recipe[] = [
             "Pas cher",
             "Poissons et crustacés",
             "Sandwichs"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8259",
-        "title": "Pâte sucrée inratable",
-        "description": "Découvrez une recette de pâte sucrée inratable, idéale pour une grande tarte ou deux de 20 cm. Apprenez la méthode par sablage et des astuces pour éviter que les bords de vos tartes ne retombent à la cuisson, garantissant un fond de tarte parfaitemen",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "glaces",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7698321621584579872\" data-video-id=\"7698321621584579872\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7698321621584579872\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             250 g de farine T55"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             90 g de sucre glace"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             30 g de poudre d'amande"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             2 g de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             120 g de beurre froid"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             55 g d'œuf"
-            }
-        ],
-        "steps": [
-            "Mélangez la farine, le sucre glace, la poudre d&rsquo;amande, le sel et les morceaux de beurre froid jusqu&rsquo;à obtenir une texture sablée.",
-            "Ajoutez l&rsquo;œuf et mélangez juste quelques secondes. Dès que la pâte commence à s&rsquo;amalgamer, arrêtez le batteur.",
-            "Sur votre plan de travail, écrasez légèrement la pâte avec la paume de la main pour la rendre lisse et homogène, sans la pétrir.",
-            "Laissez la pâte reposer au moins deux heures au réfrigérateur, ou idéalement une nuit.",
-            "Abaissez la pâte entre deux feuilles de papier cuisson sur une épaisseur de 3 à 4 mm.",
-            "Foncez la pâte dans un cercle beurré, en plaquant bien les bords. Si la pâte se réchauffe, remettez-la quelques minutes au froid.",
-            "Placez le fond de tarte foncé au congélateur pendant 15 à 30 minutes pour que la pâte se fige au cercle et éviter que les bords ne retombent à la cuisson.",
-            "Faites une première cuisson à 160°C pendant 15 minutes. Le fond de tarte doit être encore clair, avec une légère coloration.",
-            "Laissez le fond de tarte refroidir, puis appliquez une fine couche de jaune d&rsquo;œuf mélangé à un peu de crème sur toute la surface.",
-            "Réenfournez pour 10 à 15 minutes à 160°C, jusqu&rsquo;à obtenir une belle coloration dorée. Surveillez bien la fin de cuisson.",
-            "Pour une finition nette, passez un léger coup de Microplane sur les bords."
-        ],
-        "tags": [
-            "France",
-            "Glaces",
-            "pâtisserie",
-            "tarte"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8257",
-        "title": "Accras de morue antillais",
-        "description": "Les accras de morue sont une spécialité incontournable de la cuisine antillaise, symbolisant le partage, la convivialité et les saveurs des Antilles. Découvrez comment les réussir pas à pas.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7708348037281877281\" data-video-id=\"7708348037281877281\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7708348037281877281\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             500 g de morue émiettée"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 branches de cive"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 oignon"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             1 poignée de persil plat"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             8 piments végétariens rouges et verts"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             6 gousses d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Jus d&rsquo;un demi-citron"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             200 g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             200 g d&rsquo;eau"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à café de levure chimique"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Huile (pour la friture)"
-            }
-        ],
-        "steps": [
-            "La veille, faites tremper la morue dans de l&rsquo;eau pour la dessaler.",
-            "Émiettez ensuite la morue.",
-            "Émincez très finement la cive, l&rsquo;oignon, le persil, le piment végétarien et l&rsquo;ail.",
-            "Avant de couper les piments végétariens, retirez la petite tête et les graines à l&rsquo;intérieur.",
-            "Ajoutez les condiments émincés à la morue.",
-            "Assaisonnez avec du poivre et le jus d&rsquo;un demi-citron. N&rsquo;ajoutez pas de sel, la morue étant déjà salée.",
-            "Mélangez bien le tout et réservez.",
-            "Pour la pâte à accras, mettez la farine, la levure chimique et l&rsquo;eau.",
-            "Mélangez bien jusqu&rsquo;à obtenir une texture lisse et sans grumeaux.",
-            "Ajoutez ensuite la morue à la pâte et mélangez. La texture de la pâte doit être épaisse, non liquide.",
-            "Pour la cuisson, utilisez deux cuillères pour former les boules d&rsquo;accras.",
-            "Faites-les dorer tranquillement dans de l&rsquo;huile bien chaude."
-        ],
-        "tags": [
-            "Afrique",
-            "France",
-            "Poissons et crustacés",
-            "Voilà l'été"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8255",
-        "title": "Couronne croustillante au saumon fumé",
-        "description": "Découvrez une recette festive et facile à réaliser : une couronne croustillante au saumon fumé, parfaite pour l&rsquo;apéritif ou en entrée pendant les fêtes de fin d&rsquo;année. Une pâte feuilletée garnie de fromage frais, de saumon et d&rsquo;anet",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7708427659281239328\" data-video-id=\"7708427659281239328\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7708427659281239328\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥣\n             Pâte à pizza ou feuilletée"
-            },
-            {
-                "quantity": "",
-                "name": "🐟\n             Saumon fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fromage frais"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Aneth"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             Jaune d&rsquo;œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Graines de pavot"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Grenade ou groseilles"
-            }
-        ],
-        "steps": [
-            "Préparez une pâte feuilletée ou une pâte à pizza.",
-            "Étalez du fromage frais sur toute la surface de la pâte.",
-            "Disposez le saumon fumé et ajoutez de l&rsquo;aneth.",
-            "Roulez la pâte fermement pour obtenir un boudin.",
-            "Coupez le boudin en deux dans le sens de la longueur, en laissant une extrémité attachée.",
-            "Tresser les deux morceaux de pâte et connectez les extrémités pour former un cercle.",
-            "Badigeonnez la couronne de jaune d&rsquo;œuf et parsemez de graines de pavot.",
-            "Enfournez pendant 25 minutes à 180°C.",
-            "Après cuisson, disposez un peu de grenade ou de groseilles sur la couronne."
-        ],
-        "tags": [
-            "Noël",
-            "Poissons et crustacés"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8253",
-        "title": "Caramel 13.0",
-        "description": "Découvrez une recette de caramel facile à réaliser, même si vous avez eu des difficultés par le passé. Avec quelques astuces, obtenez une texture parfaite et onctueuse, idéale pour toutes vos pâtisseries.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7707609294874742049\" data-video-id=\"7707609294874742049\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7707609294874742049\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍯\n             250g de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             450g de crème liquide"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             110g de beurre"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             50g de chocolat blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             1 gousse de vanille"
-            }
-        ],
-        "steps": [
-            "Réalisez un caramel à sec avec le sucre, en l&rsquo;ajoutant progressivement. N&rsquo;hésitez pas à mélanger une fois que le caramel commence à se former. Ne le faites pas trop brunir car il continuera de cuire.",
-            "Ajoutez la crème (même froide, cela ne posera pas de problème). Laissez chauffer plusieurs minutes pour que le liquide s&rsquo;évapore suffisamment.",
-            "Hors du feu, incorporez le beurre, le chocolat blanc et les grains de vanille. Le chocolat blanc aidera le caramel à figer.",
-            "Mixez bien la préparation. Placez le caramel au frais pendant au moins 4 heures, ou idéalement une nuit. Avant utilisation, sortez-le 10 minutes à l&rsquo;avance pour qu&rsquo;il remonte en température et soit plus facile à travailler. Vous obtiendrez une texture parfaite que vous pourrez même passer au batteur."
-        ],
-        "tags": [
-            "Desserts",
-            "Sauces"
         ],
         "isFeatured": false,
         "isFavorite": false,
