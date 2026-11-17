@@ -2,11 +2,329 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 17/11/2026 11:47:14
+ * Dernière mise à jour: 17/11/2026 12:10:38
  * Total: 872 recettes
  */
-export const exportSyncId = "1794916034994";
+export const exportSyncId = "1794917438421";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8261",
+        "title": "Sandwich aux œufs et aux sardines",
+        "description": "Un sandwich facile et savoureux à base d&rsquo;œufs mollets écrasés, de sardines, de mayonnaise, de moutarde de Dijon et d&rsquo;herbes fraîches, servi sur du pain au levain grillé. Idéal pour un déjeuner rapide et nutritif.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8261.webp&v=1794919519000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7700108797313846558\" data-video-id=\"7700108797313846558\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7700108797313846558\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs mollets"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 boîte de sardines à l&rsquo;huile d&rsquo;olive extra vierge, égouttées"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Mayonnaise ou Kewpie, au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             Moutarde de Dijon, au goût"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Câpres hachées"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Persil haché"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette hachée"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Zeste de citron et un filet de jus de citron"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignon rouge haché"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Huile de piment, facultatif"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pain au levain"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive extra vierge, pour griller"
+            }
+        ],
+        "steps": [
+            "Écrasez les œufs mollets et les sardines ensemble avec de la mayonnaise ou du Kewpie et un peu de moutarde de Dijon.",
+            "Incorporez les câpres hachées, le persil, la ciboulette, l&rsquo;oignon rouge, le zeste de citron et un filet de jus de citron.",
+            "Faites griller le pain au levain dans de l&rsquo;huile d&rsquo;olive extra vierge jusqu&rsquo;à ce qu&rsquo;il soit doré et croustillant.",
+            "Déposez le mélange d&rsquo;œufs et de sardines sur le pain grillé. Ajoutez de l&rsquo;huile de piment si vous aimez un peu de piquant."
+        ],
+        "tags": [
+            "Healthy",
+            "Pas cher",
+            "Poissons et crustacés",
+            "Sandwichs"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8265",
+        "title": "Pommes de terre caramélisées croustillantes",
+        "description": "Découvrez une recette simple et délicieuse de pommes de terre croustillantes et caramélisées, parfaites pour accompagner vos plats ou à déguster en plat principal végétarien.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8265.webp&v=1794919508000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7705106328083041568\" data-video-id=\"7705106328083041568\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7705106328083041568\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             800 g de pommes de terre (type grenaille de préférence)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             3 cuillères à soupe d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1 cuillère à café d&rsquo;oignon en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 cuillère à café d&rsquo;origan séché"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             3 cuillères à café d&rsquo;ail en poudre"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             1/2 cuillère à café de poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             40 g de parmesan râpé (ou plus, selon votre goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Miel (quantité selon votre goût)"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Fleur de sel"
+            }
+        ],
+        "steps": [
+            "Découpez les pommes de terre.",
+            "Dans un grand saladier, mélangez les pommes de terre découpées avec l&rsquo;huile d&rsquo;olive, l&rsquo;oignon en poudre, l&rsquo;ail en poudre, le poivre, l&rsquo;origan et le parmesan.",
+            "Ajoutez une belle quantité de miel et mélangez bien pour enrober les pommes de terre.",
+            "Faites cuire au four préchauffé à 200°C pendant 35 à 40 minutes, jusqu&rsquo;à ce que les pommes de terre soient dorées et caramélisées.",
+            "Salez avec de la fleur de sel avant de servir."
+        ],
+        "tags": [
+            "Accompagnements",
+            "Pas cher",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8267",
+        "title": "Tarte poire &#038; chocolat",
+        "description": "Cette recette de tarte poire &#038; chocolat met en avant la liberté de création en pâtisserie une fois les bases maîtrisées. Elle se compose d&rsquo;une pâte sucrée marbrée au cacao, d&rsquo;une ganache au chocolat noir, d&rsquo;un financier aux poi",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8267.webp&v=1794919497000",
+        "category": "glaces",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7704244725829602593\" data-video-id=\"7704244725829602593\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7704244725829602593\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍫\n             Pâte sucrée marbrée cacao"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Ganache chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Financier au chocolat et poires"
+            },
+            {
+                "quantity": "",
+                "name": "🍐\n             Gel poire"
+            },
+            {
+                "quantity": "",
+                "name": "🍐\n             Poires fraîches et caramélisées"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             Ganache montée au chocolat noir"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             75 g de beurre noisette (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             25 g de farine (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 g de levure chimique (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🥜\n             60 g de poudre d'amandes (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             50 g de sucre glace (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             80 g de blancs d'œufs (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🍫\n             70 g de chocolat noir (pour le financier)"
+            },
+            {
+                "quantity": "",
+                "name": "🍐\n             250 g de poires (pour le gel)"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             25 g de sucre (pour le gel)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             4 g de pectine NH (pour le gel)"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Le jus d'un demi-citron (pour le gel)"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             De la vanille (pour le gel)"
+            }
+        ],
+        "steps": [
+            "Préchauffer le four à 180 °C.",
+            "Préparer un beurre noisette, puis le filtrer et le laisser tiédir.",
+            "Dans un saladier, mélanger la farine, la levure, la poudre d'amandes et le sucre glace.",
+            "Ajouter les blancs d'œufs et le beurre noisette, puis mélanger jusqu'à obtenir une préparation homogène.",
+            "Faire fondre le chocolat noir, l&rsquo;ajouter à la préparation et mélanger à nouveau.",
+            "Verser dans un moule ou cercle plus large que la tarte et enfourner environ 15 minutes à 180 °C.",
+            "Vérifier la cuisson du financier.",
+            "Laisser refroidir le financier avant de l'intégrer au montage de la tarte.",
+            "Faire cuire les poires coupées en morceaux avec le jus de citron et la vanille, jusqu'à ce qu'elles soient fondantes.",
+            "Mixer les poires pour obtenir une purée lisse.",
+            "Mélanger le sucre et la pectine NH, puis les incorporer à la purée chaude en fouettant.",
+            "Porter le gel à ébullition environ 1 minute.",
+            "Laisser refroidir complètement le gel au réfrigérateur.",
+            "Une fois le gel pris, le mixer à nouveau pour l'assouplir.",
+            "Ajouter les dés de poires fraîches et caramélisées refroidis au gel avant le montage de la tarte."
+        ],
+        "tags": [
+            "France",
+            "Glaces",
+            "pâtisserie",
+            "tarte"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8269",
+        "title": "Gaufres de pommes de terre à la raclette",
+        "description": "Découvrez une manière originale et gourmande de déguster la raclette avec ces gaufres de pommes de terre croustillantes et fondantes au fromage.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8269.webp&v=1794919486000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7707679835191037206\" data-video-id=\"7707679835191037206\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7707679835191037206\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             5 pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             2 cuillères à soupe de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Quelques tranches de fromage à raclette"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Une pincée de noix de muscade"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Un peu d'huile pour le gaufrier"
+            }
+        ],
+        "steps": [
+            "Lavez et épluchez les pommes de terre, puis râpez-les finement.",
+            "Pressez soigneusement les pommes de terre râpées pour retirer un maximum d'eau.",
+            "Dans un saladier, mélangez les pommes de terre râpées avec l'œuf, la farine, le sel, le poivre et une pincée de noix de muscade, jusqu'à obtenir un mélange homogène.",
+            "Huilez légèrement les plaques du gaufrier.",
+            "Déposez une première couche du mélange de pommes de terre sur les plaques du gaufrier.",
+            "Ajoutez quelques tranches de fromage à raclette au centre.",
+            "Recouvrez avec une seconde couche de pommes de terre pour bien emprisonner le fromage.",
+            "Refermez le gaufrier et laissez cuire jusqu'à ce que les gaufres soient bien dorées et croustillantes."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "France",
+            "Végé"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8253",
         "title": "Caramel 13.0",
@@ -260,247 +578,6 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "8269",
-        "title": "Gaufres de pommes de terre à la raclette",
-        "description": "Découvrez une manière originale et gourmande de déguster la raclette avec ces gaufres de pommes de terre croustillantes et fondantes au fromage.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7707679835191037206\" data-video-id=\"7707679835191037206\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7707679835191037206\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍎\n             5 pommes de terre"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             1 œuf"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             2 cuillères à soupe de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Quelques tranches de fromage à raclette"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Une pincée de noix de muscade"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Un peu d'huile pour le gaufrier"
-            }
-        ],
-        "steps": [
-            "Lavez et épluchez les pommes de terre, puis râpez-les finement.",
-            "Pressez soigneusement les pommes de terre râpées pour retirer un maximum d'eau.",
-            "Dans un saladier, mélangez les pommes de terre râpées avec l'œuf, la farine, le sel, le poivre et une pincée de noix de muscade, jusqu'à obtenir un mélange homogène.",
-            "Huilez légèrement les plaques du gaufrier.",
-            "Déposez une première couche du mélange de pommes de terre sur les plaques du gaufrier.",
-            "Ajoutez quelques tranches de fromage à raclette au centre.",
-            "Recouvrez avec une seconde couche de pommes de terre pour bien emprisonner le fromage.",
-            "Refermez le gaufrier et laissez cuire jusqu'à ce que les gaufres soient bien dorées et croustillantes."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "France",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8267",
-        "title": "Tarte poire &#038; chocolat",
-        "description": "Cette recette de tarte poire &#038; chocolat met en avant la liberté de création en pâtisserie une fois les bases maîtrisées. Elle se compose d&rsquo;une pâte sucrée marbrée au cacao, d&rsquo;une ganache au chocolat noir, d&rsquo;un financier aux poi",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "glaces",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7704244725829602593\" data-video-id=\"7704244725829602593\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7704244725829602593\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍫\n             Pâte sucrée marbrée cacao"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             Ganache chocolat noir"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             Financier au chocolat et poires"
-            },
-            {
-                "quantity": "",
-                "name": "🍐\n             Gel poire"
-            },
-            {
-                "quantity": "",
-                "name": "🍐\n             Poires fraîches et caramélisées"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             Ganache montée au chocolat noir"
-            },
-            {
-                "quantity": "",
-                "name": "🧈\n             75 g de beurre noisette (pour le financier)"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             25 g de farine (pour le financier)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 g de levure chimique (pour le financier)"
-            },
-            {
-                "quantity": "",
-                "name": "🥜\n             60 g de poudre d'amandes (pour le financier)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             50 g de sucre glace (pour le financier)"
-            },
-            {
-                "quantity": "",
-                "name": "🥚\n             80 g de blancs d'œufs (pour le financier)"
-            },
-            {
-                "quantity": "",
-                "name": "🍫\n             70 g de chocolat noir (pour le financier)"
-            },
-            {
-                "quantity": "",
-                "name": "🍐\n             250 g de poires (pour le gel)"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             25 g de sucre (pour le gel)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             4 g de pectine NH (pour le gel)"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Le jus d'un demi-citron (pour le gel)"
-            },
-            {
-                "quantity": "",
-                "name": "🍦\n             De la vanille (pour le gel)"
-            }
-        ],
-        "steps": [
-            "Préchauffer le four à 180 °C.",
-            "Préparer un beurre noisette, puis le filtrer et le laisser tiédir.",
-            "Dans un saladier, mélanger la farine, la levure, la poudre d'amandes et le sucre glace.",
-            "Ajouter les blancs d'œufs et le beurre noisette, puis mélanger jusqu'à obtenir une préparation homogène.",
-            "Faire fondre le chocolat noir, l&rsquo;ajouter à la préparation et mélanger à nouveau.",
-            "Verser dans un moule ou cercle plus large que la tarte et enfourner environ 15 minutes à 180 °C.",
-            "Vérifier la cuisson du financier.",
-            "Laisser refroidir le financier avant de l'intégrer au montage de la tarte.",
-            "Faire cuire les poires coupées en morceaux avec le jus de citron et la vanille, jusqu'à ce qu'elles soient fondantes.",
-            "Mixer les poires pour obtenir une purée lisse.",
-            "Mélanger le sucre et la pectine NH, puis les incorporer à la purée chaude en fouettant.",
-            "Porter le gel à ébullition environ 1 minute.",
-            "Laisser refroidir complètement le gel au réfrigérateur.",
-            "Une fois le gel pris, le mixer à nouveau pour l'assouplir.",
-            "Ajouter les dés de poires fraîches et caramélisées refroidis au gel avant le montage de la tarte."
-        ],
-        "tags": [
-            "France",
-            "Glaces",
-            "pâtisserie",
-            "tarte"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8265",
-        "title": "Pommes de terre caramélisées croustillantes",
-        "description": "Découvrez une recette simple et délicieuse de pommes de terre croustillantes et caramélisées, parfaites pour accompagner vos plats ou à déguster en plat principal végétarien.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7705106328083041568\" data-video-id=\"7705106328083041568\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7705106328083041568\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍎\n             800 g de pommes de terre (type grenaille de préférence)"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             3 cuillères à soupe d&rsquo;huile d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1 cuillère à café d&rsquo;oignon en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             1 cuillère à café d&rsquo;origan séché"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             3 cuillères à café d&rsquo;ail en poudre"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             1/2 cuillère à café de poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             40 g de parmesan râpé (ou plus, selon votre goût)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Miel (quantité selon votre goût)"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Fleur de sel"
-            }
-        ],
-        "steps": [
-            "Découpez les pommes de terre.",
-            "Dans un grand saladier, mélangez les pommes de terre découpées avec l&rsquo;huile d&rsquo;olive, l&rsquo;oignon en poudre, l&rsquo;ail en poudre, le poivre, l&rsquo;origan et le parmesan.",
-            "Ajoutez une belle quantité de miel et mélangez bien pour enrober les pommes de terre.",
-            "Faites cuire au four préchauffé à 200°C pendant 35 à 40 minutes, jusqu&rsquo;à ce que les pommes de terre soient dorées et caramélisées.",
-            "Salez avec de la fleur de sel avant de servir."
-        ],
-        "tags": [
-            "Accompagnements",
-            "Pas cher",
-            "Végé"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
         "id": "8263",
         "title": "Pommes Dauphine",
         "description": "Découvrez la recette des pommes dauphine, un classique intemporel apprécié pour sa texture légère et croustillante à l&rsquo;extérieur, et moelleuse à cœur. Composées d&rsquo;une base de pommes de terre et de pâte à choux, elles sont simples, généreu",
@@ -562,83 +639,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "Accompagnements",
             "France"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8261",
-        "title": "Sandwich aux œufs et aux sardines",
-        "description": "Un sandwich facile et savoureux à base d&rsquo;œufs mollets écrasés, de sardines, de mayonnaise, de moutarde de Dijon et d&rsquo;herbes fraîches, servi sur du pain au levain grillé. Idéal pour un déjeuner rapide et nutritif.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7700108797313846558\" data-video-id=\"7700108797313846558\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7700108797313846558\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             2 œufs mollets"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 boîte de sardines à l&rsquo;huile d&rsquo;olive extra vierge, égouttées"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             Mayonnaise ou Kewpie, au goût"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             Moutarde de Dijon, au goût"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Câpres hachées"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Persil haché"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Ciboulette hachée"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Zeste de citron et un filet de jus de citron"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Oignon rouge haché"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Huile de piment, facultatif"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Pain au levain"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive extra vierge, pour griller"
-            }
-        ],
-        "steps": [
-            "Écrasez les œufs mollets et les sardines ensemble avec de la mayonnaise ou du Kewpie et un peu de moutarde de Dijon.",
-            "Incorporez les câpres hachées, le persil, la ciboulette, l&rsquo;oignon rouge, le zeste de citron et un filet de jus de citron.",
-            "Faites griller le pain au levain dans de l&rsquo;huile d&rsquo;olive extra vierge jusqu&rsquo;à ce qu&rsquo;il soit doré et croustillant.",
-            "Déposez le mélange d&rsquo;œufs et de sardines sur le pain grillé. Ajoutez de l&rsquo;huile de piment si vous aimez un peu de piquant."
-        ],
-        "tags": [
-            "Healthy",
-            "Pas cher",
-            "Poissons et crustacés",
-            "Sandwichs"
         ],
         "isFeatured": false,
         "isFavorite": false,
