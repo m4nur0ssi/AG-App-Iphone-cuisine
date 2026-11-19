@@ -2,11 +2,72 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 19/11/2026 11:03:17
- * Total: 872 recettes
+ * Dernière mise à jour: 19/11/2026 23:21:38
+ * Total: 873 recettes
  */
-export const exportSyncId = "1795086197074";
+export const exportSyncId = "1795130498743";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8280",
+        "title": "Sablés",
+        "description": "Une recette simple de biscuits sablés, parfaits pour une pause gourmande.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8280.webp&v=1795133043000",
+        "category": "desserts",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7709815118997097760\" data-video-id=\"7709815118997097760\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7709815118997097760\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             250 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             50 g de sucre blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             50 g de sucre vergeoise"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             ½ sachet de levure chimique"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             2 cuillères à café de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             1 œuf"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             2 gousses de vanille"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             75 g de beurre"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "France",
+            "Pas cher",
+            "pâtisserie"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8263",
         "title": "Pommes Dauphine",
