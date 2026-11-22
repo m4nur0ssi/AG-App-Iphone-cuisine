@@ -2,16 +2,16 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 22/11/2026 22:59:24
+ * Dernière mise à jour: 22/11/2026 23:30:27
  * Total: 876 recettes
  */
-export const exportSyncId = "1795388364017";
+export const exportSyncId = "1795390227606";
 export const mockRecipes: Recipe[] = [
     {
         "id": "8289",
         "title": "Roulés à la cannelle",
         "description": "Découvrez comment préparer de délicieux roulés à la cannelle maison, ultra moelleux et fondants, avec leur cœur parfumé et leur glaçage onctueux. Ce tutoriel détaillé vous guide pas à pas pour un résultat parfait, en insistant sur l&rsquo;importance ",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8289.webp&v=1795392676000",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 15,
