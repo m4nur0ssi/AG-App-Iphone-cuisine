@@ -2,11 +2,79 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 22/11/2026 10:39:46
- * Total: 873 recettes
+ * Dernière mise à jour: 22/11/2026 20:09:48
+ * Total: 874 recettes
  */
-export const exportSyncId = "1795343986143";
+export const exportSyncId = "1795378188256";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8283",
+        "title": "Ragoût de pommes de terre crémeuses à la saucisse fumée et moutarde",
+        "description": "Un plat réconfortant et savoureux, ce ragoût combine des pommes de terre fondantes avec des saucisses fumées, le tout lié par une sauce crémeuse à la moutarde à l&rsquo;ancienne et au paprika.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8283.webp&v=1795380733000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7710941744451407137\" data-video-id=\"7710941744451407137\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7710941744451407137\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             1 kg de pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             4 saucisses fumées"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 échalotes"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             2 gousses d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             20 cl de crème liquide entière"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             25 cl de bouillon de volaille"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 belle cuillère à soupe de moutarde à l&rsquo;ancienne"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 cuillère à café de paprika doux"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 filet d&rsquo;huile d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Ciboulette fraîche"
+            }
+        ],
+        "steps": [
+            "Suivre les instructions dans la vidéo"
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "France"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8280",
         "title": "Sablés",
