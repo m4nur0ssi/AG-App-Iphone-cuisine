@@ -2,11 +2,151 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 22/11/2026 20:09:48
- * Total: 874 recettes
+ * Dernière mise à jour: 22/11/2026 22:59:24
+ * Total: 876 recettes
  */
-export const exportSyncId = "1795378188256";
+export const exportSyncId = "1795388364017";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8289",
+        "title": "Roulés à la cannelle",
+        "description": "Découvrez comment préparer de délicieux roulés à la cannelle maison, ultra moelleux et fondants, avec leur cœur parfumé et leur glaçage onctueux. Ce tutoriel détaillé vous guide pas à pas pour un résultat parfait, en insistant sur l&rsquo;importance ",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "patisserie",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7709263056613805344\" data-video-id=\"7709263056613805344\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7709263056613805344\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             600 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🥚\n             2 œufs"
+            },
+            {
+                "quantity": "",
+                "name": "🥛\n             230 ml de lait tiède"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             100 g de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             75 g de beurre mou (pour la pâte)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             1 sachet de levure de boulanger ou ½ cube de levure fraîche"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             150 g de vergeoise brune ou cassonade"
+            },
+            {
+                "quantity": "",
+                "name": "🧈\n             75 g de beurre mou (pour la garniture)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             10 g de cannelle"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             100 g de sucre glace"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             100 g de fromage frais type Philadelphia"
+            },
+            {
+                "quantity": "",
+                "name": "🍦\n             1 cuillère à café de vanille"
+            }
+        ],
+        "steps": [
+            "Délayez la levure de boulanger dans le lait légèrement tiède avec un peu de sucre. Dans le bol d&rsquo;un robot (ou à la main), mélangez la farine, le sucre et le sel. Ajoutez les œufs battus, puis le lait avec la levure activée. Pétrissez pendant 5 à 6 minutes.",
+            "Incorporez le beurre mou et continuez de pétrir pendant 10 minutes pour obtenir une pâte lisse et souple. Couvrez la pâte et laissez-la lever pendant 1h30 à température ambiante (idéalement entre 22 et 24 °C).",
+            "Dégazez la pâte et étalez-la finement sur un plan de travail fariné pour former un grand rectangle de 3 à 4 mm d&rsquo;épaisseur. Dans un bol, mélangez le beurre mou, la vergeoise brune (ou cassonade) et la cannelle. Étalez cette préparation uniformément sur toute la surface de la pâte.",
+            "Roulez délicatement la pâte sur elle-même dans le sens de la longueur pour former un boudin. Découpez des tronçons d&rsquo;environ 4 cm d&rsquo;épaisseur. Disposez-les dans un plat de cuisson chemisé de papier sulfurisé, en les espaçant légèrement. Couvrez d&rsquo;un torchon propre et laissez lever une seconde fois pendant 1 heure.",
+            "Préchauffez votre four à 180 °C. Badigeonnez les roulés d&rsquo;œuf battu et enfournez pour 15 à 18 minutes, jusqu&rsquo;à ce qu&rsquo;ils soient dorés.",
+            "Pendant la cuisson, fouettez ensemble le sucre glace, le fromage frais (type Philadelphia) et la vanille pour obtenir un glaçage lisse. Étalez généreusement ce glaçage sur les roulés à la cannelle dès leur sortie du four, pendant qu&rsquo;ils sont encore chauds."
+        ],
+        "tags": [
+            "pâtisserie",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8286",
+        "title": "Sandwich Tartiflette Maison",
+        "description": "Découvrez comment préparer un délicieux sandwich tartiflette maison, une alternative économique et savoureuse aux versions souvent trop chères des marchés de Noël. Cette recette vous permettra de savourer ce classique hivernal pour un coût bien plus ",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8286.webp&v=1795390768000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7710930947167833376\" data-video-id=\"7710930947167833376\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7710930947167833376\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍎\n             Pommes de terre"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Oignon"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             Lardons (ou poitrine fumée)"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             Vin blanc (ou vinaigre de cidre)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Reblochon"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Pâton à pizza (fait maison ou acheté)"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            }
+        ],
+        "steps": [
+            "Préparez le pâton à pizza (fait maison ou acheté en boulangerie/pizzeria). Étalez-le, ajoutez un petit filet d&rsquo;huile d&rsquo;olive, refermez-le en le pliant en deux et enfournez-le.",
+            "Pendant ce temps, faites cuire les pommes de terre à la vapeur pendant 15 à 20 minutes.",
+            "Coupez l&rsquo;oignon. Faites-le revenir avec les lardons (ou la poitrine fumée).",
+            "Déglacez la préparation oignon-lardons avec un peu de vin blanc ou de vinaigre de cidre.",
+            "Ajoutez les pommes de terre cuites et laissez fondre un demi-reblochon sur le dessus de la préparation.",
+            "Garnissez le pain chaud avec cette préparation à la tartiflette."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "France",
+            "Pas cher",
+            "Sandwichs"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8283",
         "title": "Ragoût de pommes de terre crémeuses à la saucisse fumée et moutarde",
