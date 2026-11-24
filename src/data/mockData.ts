@@ -2,127 +2,129 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 24/11/2026 18:43:39
- * Total: 886 recettes
+ * Dernière mise à jour: 24/11/2026 19:13:20
+ * Total: 887 recettes
  */
-export const exportSyncId = "1795545819878";
+export const exportSyncId = "1795547600505";
 export const mockRecipes: Recipe[] = [
     {
-        "id": "8315",
-        "title": "Churros maison",
-        "description": "Découvrez comment préparer des churros maison pour moins d&rsquo;un euro, une recette économique et rapide, parfaite pour les fêtes de fin d&rsquo;année. Cette recette vous permettra de réaliser environ 15 gros churros pour seulement 0,70 €.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
+        "id": "8304",
+        "title": "Roulé à la meringue",
+        "description": "Tendre, aérien, avec une croûte croustillante à l&rsquo;extérieur et un cœur moelleux à l&rsquo;intérieur. Associé à une crème onctueuse au fromage frais, c&rsquo;est un coup de foudre dès la première bouchée ! 😍",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8304.webp&v=1795550154000",
+        "category": "desserts",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7711762321231645991\" data-video-id=\"7711762321231645991\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7711762321231645991\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7709100656358853909\" data-video-id=\"7709100656358853909\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7709100656358853909\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🌾\n             250 g de farine"
+                "name": "🥚\n             Blancs d&rsquo;œufs - 200 g"
             },
             {
                 "quantity": "",
-                "name": "💧\n             250 ml d'eau"
+                "name": "🍯\n             Sucre - 280 g"
             },
             {
                 "quantity": "",
-                "name": "🍾\n             1 cuillère à soupe d'huile neutre ou d&rsquo;olive"
+                "name": "🥣\n             Fécule de maïs - 2 cuillères à soupe bombées"
             },
             {
                 "quantity": "",
-                "name": "🧂\n             1 pincée de sel"
+                "name": "🥣\n             Fromage frais (type Philadelphia) - 200 g"
             },
             {
                 "quantity": "",
-                "name": "🍯\n             Du sucre (pour l&rsquo;enrobage)"
+                "name": "🥛\n             Crème liquide - 200 g"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             De l&rsquo;huile (pour la friture)"
+                "name": "🍯\n             Sucre - 50 g"
             }
         ],
         "steps": [
-            "Dans une casserole, faites bouillir l&rsquo;eau avec l&rsquo;huile et le sel.",
-            "Hors du feu, ajoutez la farine d&rsquo;un coup et mélangez énergiquement jusqu&rsquo;à obtenir une boule de pâte lisse.",
-            "Laissez tiédir la pâte pendant environ 5 minutes.",
-            "Transférez la pâte dans un piston spécial churros. Si vous n&rsquo;en avez pas, vous pouvez utiliser une douille et pousser la pâte avec votre pouce, car la pâte est très dense et une poche à douille classique pourrait éclater.",
-            "Faites chauffer l&rsquo;huile de friture à 180 °C.",
-            "Plongez les churros (environ 12 cm de long) dans l&rsquo;huile chaude et faites-les frire pendant 2 à 3 minutes.",
-            "Égouttez les churros et roulez-les immédiatement dans le sucre."
+            "1. Dans un bol sec et propre, fouetter les blancs d&rsquo;œufs avec le sucre jusqu&rsquo;à obtenir une masse claire, dense et stable qui tient bien sa forme.",
+            "2. Ajouter la fécule de maïs et mélanger délicatement au batteur électrique à basse vitesse.",
+            "3. Étaler la meringue sur une plaque de cuisson recouverte de papier sulfurisé et enfourner dans un four préchauffé à 150°C.",
+            "4. Cuire jusqu&rsquo;à formation d&rsquo;une croûte délicate sur le dessus. L&rsquo;intérieur de la meringue doit rester moelleux.",
+            "5. Laisser le biscuit entièrement refroidir avant de procéder à l&rsquo;assemblage du roulé.",
+            "Préparation de la crème : Dans un bol, déposer le fromage frais, la crème liquide et le sucre. Fouetter tous les ingrédients ensemble jusqu&rsquo;à obtenir une crème onctueuse, aérienne et stable.",
+            "Couvrir le biscuit refroidi de crème, rouler délicatement et placer au réfrigérateur pour stabilisation. Déguster ce délicieux dessert ! 🤍"
         ],
         "tags": [
-            "C'est l'hiver",
-            "Espagne",
-            "Noël",
-            "Pas cher"
+            "pâtisserie"
         ],
         "isFeatured": false,
         "isFavorite": false,
         "address": ""
     },
     {
-        "id": "8313",
-        "title": "Poulet Teriyaki",
-        "description": "Découvrez une recette de poulet teriyaki, un grand classique japonais, préparée avec des ingrédients facilement trouvables chez Monoprix. Ce poulet bien doré est enrobé d&rsquo;une sauce teriyaki sucrée-salée, brillante et pleine de saveurs, qui se m",
-        "image": "/images/recipe-placeholder.jpg",
+        "id": "8309",
+        "title": "Riz à la carotte",
+        "description": "Une recette simple et rapide de riz à la carotte, inspirée de la grand-mère de l&rsquo;auteur. Ce plat parfumé aux légumes peut être dégusté seul ou accompagné de viande ou de poisson.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8309.webp&v=1795550147000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7711750257197010209\" data-video-id=\"7711750257197010209\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7711750257197010209\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7711050351331314977\" data-video-id=\"7711050351331314977\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7711050351331314977\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🍗\n             2 cuisses de poulet (environ 400 à 500 g)"
+                "name": "🥕\n             1 carotte"
             },
             {
                 "quantity": "",
-                "name": "💧\n             2 cuillères à soupe de vin blanc"
+                "name": "🧅\n             1 oignon"
             },
             {
                 "quantity": "",
-                "name": "🥫\n             3 cuillères à soupe de sauce soja"
+                "name": "🧄\n             4 gousses d'ail"
             },
             {
                 "quantity": "",
-                "name": "🍯\n             1 cuillère à soupe de miel"
+                "name": "🍚\n             200 g de riz"
             },
             {
                 "quantity": "",
-                "name": "🍯\n             1 cuillère à café de sucre"
+                "name": "💧\n             40 cl d'eau"
             },
             {
                 "quantity": "",
-                "name": "🧄\n             1 gousse d&rsquo;ail"
+                "name": "🥣\n             1 feuille de laurier"
             },
             {
                 "quantity": "",
-                "name": "🍾\n             Un peu d&rsquo;huile de tournesol"
+                "name": "🍾\n             7 cl d'huile d'olive"
             },
             {
                 "quantity": "",
-                "name": "🌶️\n             Une pincée de poivre noir"
+                "name": "🧄\n             1 bouillon de volaille"
             },
             {
                 "quantity": "",
-                "name": "🍋\n             Quelques gouttes de jus de citron (facultatif)"
+                "name": "🧂\n             Sel"
             }
         ],
         "steps": [
-            "Ouvrez les parties les plus épaisses des cuisses de poulet pour obtenir une épaisseur uniforme. Poivrez légèrement.",
-            "Faites chauffer un peu d'huile de tournesol dans une poêle à feu moyen. Déposez le poulet côté peau et faites cuire pendant 5 à 7 minutes, jusqu'à ce que la peau soit bien dorée et croustillante.",
-            "Retournez le poulet et poursuivez la cuisson pendant 4 à 6 minutes, jusqu'à ce qu'il soit bien cuit à cœur.",
-            "Mélangez le vin blanc, la sauce soja, le miel, le sucre et l&rsquo;ail râpé.",
-            "Retirez l'excédent de graisse de la poêle avec du papier absorbant. Ajoutez la sauce et baissez le feu. Retournez plusieurs fois le poulet et laissez mijoter pendant 2 à 3 minutes, jusqu'à ce que la sauce réduise légèrement et devienne brillante.",
-            "Coupez le poulet en morceaux et versez le reste de la sauce par-dessus. Ajoutez éventuellement quelques gouttes de jus de citron selon vos goûts."
+            "Épluchez et taillez les carottes en très petits morceaux.",
+            "Faites de même avec l&rsquo;oignon et l&rsquo;ail (utilisez beaucoup d&rsquo;ail).",
+            "Dans une casserole, versez un bon fond d&rsquo;huile d&rsquo;olive.",
+            "Faites revenir l&rsquo;oignon, les carottes et l&rsquo;ail.",
+            "Ajoutez une feuille de laurier.",
+            "Une fois les légumes bien revenus, ajoutez le riz et faites-le revenir pendant 30 à 40 secondes dans la casserole.",
+            "Ajoutez l&rsquo;eau, un bouillon de volaille et une bonne pincée de sel.",
+            "Faites cuire le tout à couvert pendant 11 à 12 minutes.",
+            "Une fois cuit, retirez la feuille de laurier.",
+            "Servez."
         ],
         "tags": [
-            "Asie",
-            "Cocktails"
+            "Accompagnements",
+            "Healthy",
+            "Pas cher"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -132,7 +134,7 @@ export const mockRecipes: Recipe[] = [
         "id": "8311",
         "title": "Pains au chocolat revisités : 7 façons de les déguster",
         "description": "Découvrez sept façons originales et gourmandes de revisiter le pain au chocolat, inspirées de différentes traditions culinaires à travers le monde.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8311.webp&v=1795550139000",
         "category": "patisserie",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -259,70 +261,215 @@ export const mockRecipes: Recipe[] = [
         "address": ""
     },
     {
-        "id": "8309",
-        "title": "Riz à la carotte",
-        "description": "Une recette simple et rapide de riz à la carotte, inspirée de la grand-mère de l&rsquo;auteur. Ce plat parfumé aux légumes peut être dégusté seul ou accompagné de viande ou de poisson.",
+        "id": "8317",
+        "title": "Mijoté de Patates Douces, Carottes et Champignons",
+        "description": "Découvrez un délicieux mijoté végétalien et rapide à préparer, à base de patates douces, de carottes et de champignons, le tout mijoté dans une sauce onctueuse et parfumée. Une idée de repas sans viande, réconfortante et savoureuse.",
         "image": "/images/recipe-placeholder.jpg",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
         "cookTime": 30,
         "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7711050351331314977\" data-video-id=\"7711050351331314977\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7711050351331314977\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7711409390779239713\" data-video-id=\"7711409390779239713\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7711409390779239713\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "ingredients": [
             {
                 "quantity": "",
-                "name": "🥕\n             1 carotte"
+                "name": "🥔\n             2 patates douces"
             },
             {
                 "quantity": "",
-                "name": "🧅\n             1 oignon"
+                "name": "🥕\n             3 carottes"
             },
             {
                 "quantity": "",
-                "name": "🧄\n             4 gousses d'ail"
+                "name": "🥣\n             250 g de champignons (de Paris blancs)"
             },
             {
                 "quantity": "",
-                "name": "🍚\n             200 g de riz"
+                "name": "🧅\n             2 oignons moyens"
             },
             {
                 "quantity": "",
-                "name": "💧\n             40 cl d'eau"
+                "name": "🧅\n             Quelques morceaux d&rsquo;échalote"
             },
             {
                 "quantity": "",
-                "name": "🥣\n             1 feuille de laurier"
+                "name": "🥫\n             500 ml à 1 litre de bouillon de légumes"
             },
             {
                 "quantity": "",
-                "name": "🍾\n             7 cl d'huile d'olive"
+                "name": "🍅\n             1 bonne cuillère à soupe de concentré de tomates"
             },
             {
                 "quantity": "",
-                "name": "🧄\n             1 bouillon de volaille"
+                "name": "🌾\n             Un peu de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Coriandre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika fumé"
             },
             {
                 "quantity": "",
                 "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 feuilles de laurier"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
             }
         ],
         "steps": [
-            "Épluchez et taillez les carottes en très petits morceaux.",
-            "Faites de même avec l&rsquo;oignon et l&rsquo;ail (utilisez beaucoup d&rsquo;ail).",
-            "Dans une casserole, versez un bon fond d&rsquo;huile d&rsquo;olive.",
-            "Faites revenir l&rsquo;oignon, les carottes et l&rsquo;ail.",
-            "Ajoutez une feuille de laurier.",
-            "Une fois les légumes bien revenus, ajoutez le riz et faites-le revenir pendant 30 à 40 secondes dans la casserole.",
-            "Ajoutez l&rsquo;eau, un bouillon de volaille et une bonne pincée de sel.",
-            "Faites cuire le tout à couvert pendant 11 à 12 minutes.",
-            "Une fois cuit, retirez la feuille de laurier.",
-            "Servez."
+            "Émincez 2 oignons moyens.",
+            "Coupez 3 carottes en rondelles.",
+            "Coupez 250 g de champignons en lamelles.",
+            "Épluchez, lavez et coupez les 2 patates douces en morceaux.",
+            "Dans la cuve de votre autocuiseur, ajoutez un filet d&rsquo;huile d&rsquo;olive.",
+            "Faites revenir les oignons et les carottes pendant 2 petites minutes.",
+            "Ajoutez les champignons et faites revenir le tout jusqu&rsquo;à ce qu&rsquo;ils aient rendu toute leur eau.",
+            "Incorporez une bonne cuillère à soupe de concentré de tomates et mélangez bien.",
+            "Ajoutez un peu de farine, suffisamment pour recouvrir les légumes, et mélangez à nouveau.",
+            "Versez environ 500 ml à 1 litre de bouillon de légumes.",
+            "Assaisonnez avec du poivre, de la coriandre, du paprika fumé et un peu de sel, ainsi que 2 feuilles de laurier.",
+            "Ajoutez les morceaux de patate douce et quelques morceaux d&rsquo;échalote.",
+            "Fermez l&rsquo;autocuiseur et lancez une cuisson sous pression pendant 10 minutes.",
+            "Servez ce délicieux mijoté avec sa sauce onctueuse."
         ],
         "tags": [
-            "Accompagnements",
-            "Healthy",
+            "C'est l'hiver",
+            "Végé",
+            "Végétarien"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8315",
+        "title": "Churros maison",
+        "description": "Découvrez comment préparer des churros maison pour moins d&rsquo;un euro, une recette économique et rapide, parfaite pour les fêtes de fin d&rsquo;année. Cette recette vous permettra de réaliser environ 15 gros churros pour seulement 0,70 €.",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7711762321231645991\" data-video-id=\"7711762321231645991\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7711762321231645991\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             250 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             250 ml d'eau"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe d'huile neutre ou d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Du sucre (pour l&rsquo;enrobage)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             De l&rsquo;huile (pour la friture)"
+            }
+        ],
+        "steps": [
+            "Dans une casserole, faites bouillir l&rsquo;eau avec l&rsquo;huile et le sel.",
+            "Hors du feu, ajoutez la farine d&rsquo;un coup et mélangez énergiquement jusqu&rsquo;à obtenir une boule de pâte lisse.",
+            "Laissez tiédir la pâte pendant environ 5 minutes.",
+            "Transférez la pâte dans un piston spécial churros. Si vous n&rsquo;en avez pas, vous pouvez utiliser une douille et pousser la pâte avec votre pouce, car la pâte est très dense et une poche à douille classique pourrait éclater.",
+            "Faites chauffer l&rsquo;huile de friture à 180 °C.",
+            "Plongez les churros (environ 12 cm de long) dans l&rsquo;huile chaude et faites-les frire pendant 2 à 3 minutes.",
+            "Égouttez les churros et roulez-les immédiatement dans le sucre."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Espagne",
+            "Noël",
             "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8313",
+        "title": "Poulet Teriyaki",
+        "description": "Découvrez une recette de poulet teriyaki, un grand classique japonais, préparée avec des ingrédients facilement trouvables chez Monoprix. Ce poulet bien doré est enrobé d&rsquo;une sauce teriyaki sucrée-salée, brillante et pleine de saveurs, qui se m",
+        "image": "/images/recipe-placeholder.jpg",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7711750257197010209\" data-video-id=\"7711750257197010209\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7711750257197010209\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             2 cuisses de poulet (environ 400 à 500 g)"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             2 cuillères à soupe de vin blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             3 cuillères à soupe de sauce soja"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à café de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Un peu d&rsquo;huile de tournesol"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Une pincée de poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Quelques gouttes de jus de citron (facultatif)"
+            }
+        ],
+        "steps": [
+            "Ouvrez les parties les plus épaisses des cuisses de poulet pour obtenir une épaisseur uniforme. Poivrez légèrement.",
+            "Faites chauffer un peu d'huile de tournesol dans une poêle à feu moyen. Déposez le poulet côté peau et faites cuire pendant 5 à 7 minutes, jusqu'à ce que la peau soit bien dorée et croustillante.",
+            "Retournez le poulet et poursuivez la cuisson pendant 4 à 6 minutes, jusqu'à ce qu'il soit bien cuit à cœur.",
+            "Mélangez le vin blanc, la sauce soja, le miel, le sucre et l&rsquo;ail râpé.",
+            "Retirez l'excédent de graisse de la poêle avec du papier absorbant. Ajoutez la sauce et baissez le feu. Retournez plusieurs fois le poulet et laissez mijoter pendant 2 à 3 minutes, jusqu'à ce que la sauce réduise légèrement et devienne brillante.",
+            "Coupez le poulet en morceaux et versez le reste de la sauce par-dessus. Ajoutez éventuellement quelques gouttes de jus de citron selon vos goûts."
+        ],
+        "tags": [
+            "Asie",
+            "Cocktails"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -604,59 +751,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "C'est l'hiver",
             "Noël",
-            "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8304",
-        "title": "Roulé à la meringue",
-        "description": "Tendre, aérien, avec une croûte croustillante à l&rsquo;extérieur et un cœur moelleux à l&rsquo;intérieur. Associé à une crème onctueuse au fromage frais, c&rsquo;est un coup de foudre dès la première bouchée ! 😍",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "desserts",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7709100656358853909\" data-video-id=\"7709100656358853909\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7709100656358853909\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥚\n             Blancs d&rsquo;œufs - 200 g"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Sucre - 280 g"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fécule de maïs - 2 cuillères à soupe bombées"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Fromage frais (type Philadelphia) - 200 g"
-            },
-            {
-                "quantity": "",
-                "name": "🥛\n             Crème liquide - 200 g"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Sucre - 50 g"
-            }
-        ],
-        "steps": [
-            "1. Dans un bol sec et propre, fouetter les blancs d&rsquo;œufs avec le sucre jusqu&rsquo;à obtenir une masse claire, dense et stable qui tient bien sa forme.",
-            "2. Ajouter la fécule de maïs et mélanger délicatement au batteur électrique à basse vitesse.",
-            "3. Étaler la meringue sur une plaque de cuisson recouverte de papier sulfurisé et enfourner dans un four préchauffé à 150°C.",
-            "4. Cuire jusqu&rsquo;à formation d&rsquo;une croûte délicate sur le dessus. L&rsquo;intérieur de la meringue doit rester moelleux.",
-            "5. Laisser le biscuit entièrement refroidir avant de procéder à l&rsquo;assemblage du roulé.",
-            "Préparation de la crème : Dans un bol, déposer le fromage frais, la crème liquide et le sucre. Fouetter tous les ingrédients ensemble jusqu&rsquo;à obtenir une crème onctueuse, aérienne et stable.",
-            "Couvrir le biscuit refroidi de crème, rouler délicatement et placer au réfrigérateur pour stabilisation. Déguster ce délicieux dessert ! 🤍"
-        ],
-        "tags": [
             "pâtisserie"
         ],
         "isFeatured": false,
