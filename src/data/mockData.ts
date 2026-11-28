@@ -2,16 +2,305 @@ import { Recipe } from '../types';
 
 /**
  * Recettes synchronisées depuis WordPress — App iPhone
- * Dernière mise à jour: 27/11/2026 11:44:37
+ * Dernière mise à jour: 28/11/2026 11:25:06
  * Total: 889 recettes
  */
-export const exportSyncId = "1795779877749";
+export const exportSyncId = "1795865106284";
 export const mockRecipes: Recipe[] = [
+    {
+        "id": "8313",
+        "title": "Poulet Teriyaki",
+        "description": "Découvrez une recette de poulet teriyaki, un grand classique japonais, préparée avec des ingrédients facilement trouvables chez Monoprix. Ce poulet bien doré est enrobé d&rsquo;une sauce teriyaki sucrée-salée, brillante et pleine de saveurs, qui se m",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8313.webp&v=1795867633000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7711750257197010209\" data-video-id=\"7711750257197010209\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7711750257197010209\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🍗\n             2 cuisses de poulet (environ 400 à 500 g)"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             2 cuillères à soupe de vin blanc"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             3 cuillères à soupe de sauce soja"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à soupe de miel"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             1 cuillère à café de sucre"
+            },
+            {
+                "quantity": "",
+                "name": "🧄\n             1 gousse d&rsquo;ail"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Un peu d&rsquo;huile de tournesol"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Une pincée de poivre noir"
+            },
+            {
+                "quantity": "",
+                "name": "🍋\n             Quelques gouttes de jus de citron (facultatif)"
+            }
+        ],
+        "steps": [
+            "Ouvrez les parties les plus épaisses des cuisses de poulet pour obtenir une épaisseur uniforme. Poivrez légèrement.",
+            "Faites chauffer un peu d'huile de tournesol dans une poêle à feu moyen. Déposez le poulet côté peau et faites cuire pendant 5 à 7 minutes, jusqu'à ce que la peau soit bien dorée et croustillante.",
+            "Retournez le poulet et poursuivez la cuisson pendant 4 à 6 minutes, jusqu'à ce qu'il soit bien cuit à cœur.",
+            "Mélangez le vin blanc, la sauce soja, le miel, le sucre et l&rsquo;ail râpé.",
+            "Retirez l'excédent de graisse de la poêle avec du papier absorbant. Ajoutez la sauce et baissez le feu. Retournez plusieurs fois le poulet et laissez mijoter pendant 2 à 3 minutes, jusqu'à ce que la sauce réduise légèrement et devienne brillante.",
+            "Coupez le poulet en morceaux et versez le reste de la sauce par-dessus. Ajoutez éventuellement quelques gouttes de jus de citron selon vos goûts."
+        ],
+        "tags": [
+            "Asie",
+            "Cocktails"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8315",
+        "title": "Churros maison",
+        "description": "Découvrez comment préparer des churros maison pour moins d&rsquo;un euro, une recette économique et rapide, parfaite pour les fêtes de fin d&rsquo;année. Cette recette vous permettra de réaliser environ 15 gros churros pour seulement 0,70 €.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8315.webp&v=1795867627000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7711762321231645991\" data-video-id=\"7711762321231645991\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7711762321231645991\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🌾\n             250 g de farine"
+            },
+            {
+                "quantity": "",
+                "name": "💧\n             250 ml d'eau"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             1 cuillère à soupe d'huile neutre ou d&rsquo;olive"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             1 pincée de sel"
+            },
+            {
+                "quantity": "",
+                "name": "🍯\n             Du sucre (pour l&rsquo;enrobage)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             De l&rsquo;huile (pour la friture)"
+            }
+        ],
+        "steps": [
+            "Dans une casserole, faites bouillir l&rsquo;eau avec l&rsquo;huile et le sel.",
+            "Hors du feu, ajoutez la farine d&rsquo;un coup et mélangez énergiquement jusqu&rsquo;à obtenir une boule de pâte lisse.",
+            "Laissez tiédir la pâte pendant environ 5 minutes.",
+            "Transférez la pâte dans un piston spécial churros. Si vous n&rsquo;en avez pas, vous pouvez utiliser une douille et pousser la pâte avec votre pouce, car la pâte est très dense et une poche à douille classique pourrait éclater.",
+            "Faites chauffer l&rsquo;huile de friture à 180 °C.",
+            "Plongez les churros (environ 12 cm de long) dans l&rsquo;huile chaude et faites-les frire pendant 2 à 3 minutes.",
+            "Égouttez les churros et roulez-les immédiatement dans le sucre."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Espagne",
+            "Noël",
+            "Pas cher"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8317",
+        "title": "Mijoté de Patates Douces, Carottes et Champignons",
+        "description": "Découvrez un délicieux mijoté végétalien et rapide à préparer, à base de patates douces, de carottes et de champignons, le tout mijoté dans une sauce onctueuse et parfumée. Une idée de repas sans viande, réconfortante et savoureuse.",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8317.webp&v=1795867620000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7711409390779239713\" data-video-id=\"7711409390779239713\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7711409390779239713\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥔\n             2 patates douces"
+            },
+            {
+                "quantity": "",
+                "name": "🥕\n             3 carottes"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             250 g de champignons (de Paris blancs)"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             2 oignons moyens"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             Quelques morceaux d&rsquo;échalote"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             500 ml à 1 litre de bouillon de légumes"
+            },
+            {
+                "quantity": "",
+                "name": "🍅\n             1 bonne cuillère à soupe de concentré de tomates"
+            },
+            {
+                "quantity": "",
+                "name": "🌾\n             Un peu de farine"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🌿\n             Coriandre"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Paprika fumé"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 feuilles de laurier"
+            },
+            {
+                "quantity": "",
+                "name": "🍾\n             Huile d&rsquo;olive"
+            }
+        ],
+        "steps": [
+            "Émincez 2 oignons moyens.",
+            "Coupez 3 carottes en rondelles.",
+            "Coupez 250 g de champignons en lamelles.",
+            "Épluchez, lavez et coupez les 2 patates douces en morceaux.",
+            "Dans la cuve de votre autocuiseur, ajoutez un filet d&rsquo;huile d&rsquo;olive.",
+            "Faites revenir les oignons et les carottes pendant 2 petites minutes.",
+            "Ajoutez les champignons et faites revenir le tout jusqu&rsquo;à ce qu&rsquo;ils aient rendu toute leur eau.",
+            "Incorporez une bonne cuillère à soupe de concentré de tomates et mélangez bien.",
+            "Ajoutez un peu de farine, suffisamment pour recouvrir les légumes, et mélangez à nouveau.",
+            "Versez environ 500 ml à 1 litre de bouillon de légumes.",
+            "Assaisonnez avec du poivre, de la coriandre, du paprika fumé et un peu de sel, ainsi que 2 feuilles de laurier.",
+            "Ajoutez les morceaux de patate douce et quelques morceaux d&rsquo;échalote.",
+            "Fermez l&rsquo;autocuiseur et lancez une cuisson sous pression pendant 10 minutes.",
+            "Servez ce délicieux mijoté avec sa sauce onctueuse."
+        ],
+        "tags": [
+            "C'est l'hiver",
+            "Végé",
+            "Végétarien"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
+    {
+        "id": "8322",
+        "title": "Salade Big Mac",
+        "description": "Découvrez une version saine et gourmande de la célèbre salade Big Mac. Cette recette facile à réaliser combine un steak haché, de la salade, des cornichons, de l&rsquo;oignon rouge et une sauce crémeuse à base de Skyr, moutarde et ketchup, le tout ag",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8322.webp&v=1795867613000",
+        "category": "plats",
+        "difficulty": "moyen",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7710255263688822049\" data-video-id=\"7710255263688822049\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7710255263688822049\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "ingredients": [
+            {
+                "quantity": "",
+                "name": "🥩\n             1 steak haché"
+            },
+            {
+                "quantity": "",
+                "name": "🥗\n             1 sucrine (ou autre salade)"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             2 cuillères à soupe de Skyr"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de moutarde"
+            },
+            {
+                "quantity": "",
+                "name": "🥫\n             1 cuillère à soupe de ketchup"
+            },
+            {
+                "quantity": "",
+                "name": "🧂\n             Sel"
+            },
+            {
+                "quantity": "",
+                "name": "🌶️\n             Poivre"
+            },
+            {
+                "quantity": "",
+                "name": "🥣\n             Quelques cornichons"
+            },
+            {
+                "quantity": "",
+                "name": "🧅\n             1/2 oignon rouge"
+            },
+            {
+                "quantity": "",
+                "name": "🥓\n             3 tranches de lard fumé"
+            }
+        ],
+        "steps": [
+            "Préparez la sauce : dans un bol, mélangez le Skyr, la moutarde et le ketchup.",
+            "Assaisonnez avec du sel et du poivre à votre convenance, puis goûtez et ajustez si nécessaire.",
+            "Versez la quantité de sauce souhaitée dans un plat à salade.",
+            "Coupez la moitié d&rsquo;un oignon rouge.",
+            "Coupez finement quelques cornichons.",
+            "Coupez grossièrement la sucrine.",
+            "Faites cuire le steak haché, puis émiettez-le.",
+            "Faites cuire les tranches de lard fumé.",
+            "Ajoutez l&rsquo;oignon rouge, les cornichons, la sucrine coupée, le steak haché émietté et le lard fumé cuit dans le plat.",
+            "Mélangez le tout avant de servir."
+        ],
+        "tags": [
+            "Healthy",
+            "Salades",
+            "USA"
+        ],
+        "isFeatured": false,
+        "isFavorite": false,
+        "address": ""
+    },
     {
         "id": "8324",
         "title": "Bûche Flan de Noël",
         "description": "Découvrez la fameuse bûche flan, un dessert de Noël qui a fait sensation il y a deux ans et qui est de nouveau partagé pour le plaisir de tous. Une recette gourmande et originale, parfaite pour les fêtes de fin d&rsquo;année.",
-        "image": "/images/recipe-placeholder.jpg",
+        "image": "/api/image-proxy?url=http%3A%2F%2F109.221.250.122%2Fwordpress%2Fwp-content%2Fuploads%2F2026%2F11%2Frecette-8324.webp&v=1795867604000",
         "category": "plats",
         "difficulty": "moyen",
         "prepTime": 15,
@@ -94,80 +383,6 @@ export const mockRecipes: Recipe[] = [
             "France",
             "Noël",
             "tarte"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8322",
-        "title": "Salade Big Mac",
-        "description": "Découvrez une version saine et gourmande de la célèbre salade Big Mac. Cette recette facile à réaliser combine un steak haché, de la salade, des cornichons, de l&rsquo;oignon rouge et une sauce crémeuse à base de Skyr, moutarde et ketchup, le tout ag",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7710255263688822049\" data-video-id=\"7710255263688822049\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7710255263688822049\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥩\n             1 steak haché"
-            },
-            {
-                "quantity": "",
-                "name": "🥗\n             1 sucrine (ou autre salade)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 cuillères à soupe de Skyr"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 cuillère à soupe de moutarde"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             1 cuillère à soupe de ketchup"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             Quelques cornichons"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             1/2 oignon rouge"
-            },
-            {
-                "quantity": "",
-                "name": "🥓\n             3 tranches de lard fumé"
-            }
-        ],
-        "steps": [
-            "Préparez la sauce : dans un bol, mélangez le Skyr, la moutarde et le ketchup.",
-            "Assaisonnez avec du sel et du poivre à votre convenance, puis goûtez et ajustez si nécessaire.",
-            "Versez la quantité de sauce souhaitée dans un plat à salade.",
-            "Coupez la moitié d&rsquo;un oignon rouge.",
-            "Coupez finement quelques cornichons.",
-            "Coupez grossièrement la sucrine.",
-            "Faites cuire le steak haché, puis émiettez-le.",
-            "Faites cuire les tranches de lard fumé.",
-            "Ajoutez l&rsquo;oignon rouge, les cornichons, la sucrine coupée, le steak haché émietté et le lard fumé cuit dans le plat.",
-            "Mélangez le tout avant de servir."
-        ],
-        "tags": [
-            "Healthy",
-            "Salades",
-            "USA"
         ],
         "isFeatured": false,
         "isFavorite": false,
@@ -421,221 +636,6 @@ export const mockRecipes: Recipe[] = [
         "tags": [
             "France",
             "pâtisserie"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8317",
-        "title": "Mijoté de Patates Douces, Carottes et Champignons",
-        "description": "Découvrez un délicieux mijoté végétalien et rapide à préparer, à base de patates douces, de carottes et de champignons, le tout mijoté dans une sauce onctueuse et parfumée. Une idée de repas sans viande, réconfortante et savoureuse.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7711409390779239713\" data-video-id=\"7711409390779239713\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7711409390779239713\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🥔\n             2 patates douces"
-            },
-            {
-                "quantity": "",
-                "name": "🥕\n             3 carottes"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             250 g de champignons (de Paris blancs)"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             2 oignons moyens"
-            },
-            {
-                "quantity": "",
-                "name": "🧅\n             Quelques morceaux d&rsquo;échalote"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             500 ml à 1 litre de bouillon de légumes"
-            },
-            {
-                "quantity": "",
-                "name": "🍅\n             1 bonne cuillère à soupe de concentré de tomates"
-            },
-            {
-                "quantity": "",
-                "name": "🌾\n             Un peu de farine"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Poivre"
-            },
-            {
-                "quantity": "",
-                "name": "🌿\n             Coriandre"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Paprika fumé"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             Sel"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             2 feuilles de laurier"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Huile d&rsquo;olive"
-            }
-        ],
-        "steps": [
-            "Émincez 2 oignons moyens.",
-            "Coupez 3 carottes en rondelles.",
-            "Coupez 250 g de champignons en lamelles.",
-            "Épluchez, lavez et coupez les 2 patates douces en morceaux.",
-            "Dans la cuve de votre autocuiseur, ajoutez un filet d&rsquo;huile d&rsquo;olive.",
-            "Faites revenir les oignons et les carottes pendant 2 petites minutes.",
-            "Ajoutez les champignons et faites revenir le tout jusqu&rsquo;à ce qu&rsquo;ils aient rendu toute leur eau.",
-            "Incorporez une bonne cuillère à soupe de concentré de tomates et mélangez bien.",
-            "Ajoutez un peu de farine, suffisamment pour recouvrir les légumes, et mélangez à nouveau.",
-            "Versez environ 500 ml à 1 litre de bouillon de légumes.",
-            "Assaisonnez avec du poivre, de la coriandre, du paprika fumé et un peu de sel, ainsi que 2 feuilles de laurier.",
-            "Ajoutez les morceaux de patate douce et quelques morceaux d&rsquo;échalote.",
-            "Fermez l&rsquo;autocuiseur et lancez une cuisson sous pression pendant 10 minutes.",
-            "Servez ce délicieux mijoté avec sa sauce onctueuse."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Végé",
-            "Végétarien"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8315",
-        "title": "Churros maison",
-        "description": "Découvrez comment préparer des churros maison pour moins d&rsquo;un euro, une recette économique et rapide, parfaite pour les fêtes de fin d&rsquo;année. Cette recette vous permettra de réaliser environ 15 gros churros pour seulement 0,70 €.",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7711762321231645991\" data-video-id=\"7711762321231645991\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7711762321231645991\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🌾\n             250 g de farine"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             250 ml d'eau"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             1 cuillère à soupe d'huile neutre ou d&rsquo;olive"
-            },
-            {
-                "quantity": "",
-                "name": "🧂\n             1 pincée de sel"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             Du sucre (pour l&rsquo;enrobage)"
-            },
-            {
-                "quantity": "",
-                "name": "🥣\n             De l&rsquo;huile (pour la friture)"
-            }
-        ],
-        "steps": [
-            "Dans une casserole, faites bouillir l&rsquo;eau avec l&rsquo;huile et le sel.",
-            "Hors du feu, ajoutez la farine d&rsquo;un coup et mélangez énergiquement jusqu&rsquo;à obtenir une boule de pâte lisse.",
-            "Laissez tiédir la pâte pendant environ 5 minutes.",
-            "Transférez la pâte dans un piston spécial churros. Si vous n&rsquo;en avez pas, vous pouvez utiliser une douille et pousser la pâte avec votre pouce, car la pâte est très dense et une poche à douille classique pourrait éclater.",
-            "Faites chauffer l&rsquo;huile de friture à 180 °C.",
-            "Plongez les churros (environ 12 cm de long) dans l&rsquo;huile chaude et faites-les frire pendant 2 à 3 minutes.",
-            "Égouttez les churros et roulez-les immédiatement dans le sucre."
-        ],
-        "tags": [
-            "C'est l'hiver",
-            "Espagne",
-            "Noël",
-            "Pas cher"
-        ],
-        "isFeatured": false,
-        "isFavorite": false,
-        "address": ""
-    },
-    {
-        "id": "8313",
-        "title": "Poulet Teriyaki",
-        "description": "Découvrez une recette de poulet teriyaki, un grand classique japonais, préparée avec des ingrédients facilement trouvables chez Monoprix. Ce poulet bien doré est enrobé d&rsquo;une sauce teriyaki sucrée-salée, brillante et pleine de saveurs, qui se m",
-        "image": "/images/recipe-placeholder.jpg",
-        "category": "plats",
-        "difficulty": "moyen",
-        "prepTime": 15,
-        "cookTime": 30,
-        "servings": 4,
-        "videoHtml": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/v/7711750257197010209\" data-video-id=\"7711750257197010209\" style=\"max-width: 605px;min-width: 325px;\">\n<section>\n            <a target=\"_blank\" title=\"@tiktok\" href=\"https://www.tiktok.com/v/7711750257197010209\">Regarder la vidéo sur TikTok</a><br />\n        </section>\n</blockquote><script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "ingredients": [
-            {
-                "quantity": "",
-                "name": "🍗\n             2 cuisses de poulet (environ 400 à 500 g)"
-            },
-            {
-                "quantity": "",
-                "name": "💧\n             2 cuillères à soupe de vin blanc"
-            },
-            {
-                "quantity": "",
-                "name": "🥫\n             3 cuillères à soupe de sauce soja"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à soupe de miel"
-            },
-            {
-                "quantity": "",
-                "name": "🍯\n             1 cuillère à café de sucre"
-            },
-            {
-                "quantity": "",
-                "name": "🧄\n             1 gousse d&rsquo;ail"
-            },
-            {
-                "quantity": "",
-                "name": "🍾\n             Un peu d&rsquo;huile de tournesol"
-            },
-            {
-                "quantity": "",
-                "name": "🌶️\n             Une pincée de poivre noir"
-            },
-            {
-                "quantity": "",
-                "name": "🍋\n             Quelques gouttes de jus de citron (facultatif)"
-            }
-        ],
-        "steps": [
-            "Ouvrez les parties les plus épaisses des cuisses de poulet pour obtenir une épaisseur uniforme. Poivrez légèrement.",
-            "Faites chauffer un peu d'huile de tournesol dans une poêle à feu moyen. Déposez le poulet côté peau et faites cuire pendant 5 à 7 minutes, jusqu'à ce que la peau soit bien dorée et croustillante.",
-            "Retournez le poulet et poursuivez la cuisson pendant 4 à 6 minutes, jusqu'à ce qu'il soit bien cuit à cœur.",
-            "Mélangez le vin blanc, la sauce soja, le miel, le sucre et l&rsquo;ail râpé.",
-            "Retirez l'excédent de graisse de la poêle avec du papier absorbant. Ajoutez la sauce et baissez le feu. Retournez plusieurs fois le poulet et laissez mijoter pendant 2 à 3 minutes, jusqu'à ce que la sauce réduise légèrement et devienne brillante.",
-            "Coupez le poulet en morceaux et versez le reste de la sauce par-dessus. Ajoutez éventuellement quelques gouttes de jus de citron selon vos goûts."
-        ],
-        "tags": [
-            "Asie",
-            "Cocktails"
         ],
         "isFeatured": false,
         "isFavorite": false,
